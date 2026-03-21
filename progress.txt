@@ -62,3 +62,47 @@ PHASE 7: Final checks
 - Local filter: tested with 3 sample markets, JSON parsing works
 - .env.example: all keys documented
 - README.md: complete
+
+=== CALIBRATION RUNS ===
+
+Run 1: v1 prompt, 100 markets (25/cat), train set
+  Win rate: 79.0% | Brier: 0.1745
+  Weather: 88% | Economics: 84% | Inflation: 80% | TSA: 64%
+
+Run 2: v1 prompt, 800 markets (200/cat), train set
+  Win rate: 76.2% | Brier: 0.1850
+  Weather: 90.5% | Economics: 79% | Inflation: 76.5% | TSA: 59%
+
+Run 3: v2 prompt (structured), 200 markets, train set — WORSE
+  Win rate: 68.5% | Brier: 0.3054
+  Model echoed market price (avg gap 0.001). Discarded.
+
+Run 4: v3 prompt (independent), 200 markets, train set
+  Win rate: 74.0% | Brier: 0.1917
+  Better than v2, worse than v1.
+
+Run 5: v1 prompt, 400 markets (100/cat), VALIDATION set
+  Win rate: 72.0% | Brier: 0.2196
+  Weather: 79% | Economics: 77% | Inflation: 76% | TSA: 56%
+  Train-val gap: 4.2% (under 5% overfitting threshold)
+
+BEST PROMPT: v1 (prompts/local_filter.txt)
+
+=== ADDITIONAL DATASETS PULLED ===
+
+- Polymarket (from Jon-Becker): 10,332 target markets (9,211 weather, 593 inflation, 528 economics)
+- Combined training set: 24,075 markets (Kalshi + Polymarket)
+- TSA ground truth: 1,096 daily records (2023-2025)
+- Philadelphia Fed SPF: CPI/GDP probability distributions + mean forecasts
+- Manifold Markets: 1,000 resolved target-category markets
+- Kaggle Kalshi: 5,000 markets but mostly esports, not useful for our categories
+- Kalshi API closed: 17,312 recently closed (mostly sports)
+
+=== KEY FINDINGS ===
+
+1. Weather is our strongest category (79-90% WR, 0.07-0.19 Brier)
+2. TSA is weakest (56-64% WR) — needs domain-specific prompt or TSA ground truth integration
+3. Model generalizes well (train-val gap < 5%)
+4. High-gap accuracy on validation only 36% — model doesn't reliably beat market when it disagrees
+5. v1 prompt outperforms v2/v3 — simple > structured for this model
+6. Average confidence too low (0.41) — model is too uncertain, which is actually conservative/safe
