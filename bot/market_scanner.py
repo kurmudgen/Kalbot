@@ -1,0 +1,224 @@
+"""
+Market scanner: polls Kalshi API for open markets in whitelisted categories.
+Writes snapshots to data/live/markets.sqlite every 5 minutes.
+"""
+
+import os
+import sqlite3
+import sys
+import time
+from datetime import datetime, timezone
+
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+
+SCAN_INTERVAL = 300  # 5 minutes
+DB_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "live", "markets.sqlite")
+
+CATEGORY_KEYWORDS = {
+    "economics": ["fed", "federal reserve", "interest rate", "fomc", "gdp", "economic growth"],
+    "inflation": ["inflation", "cpi", "pce", "jobless", "unemployment", "nonfarm", "payroll", "jobs report"],
+    "tsa": ["tsa", "passenger", "airport", "travel volume"],
+    "weather": ["temperature", "weather", "precipitation", "rain", "snow", "heat", "cold", "hurricane", "tornado"],
+}
+
+
+def get_whitelisted_categories() -> list[str]:
+    raw = os.getenv("WHITELISTED_CATEGORIES", "economics,tsa,weather,inflation")
+    return [c.strip().lower() for c in raw.split(",")]
+
+
+def classify_market(title: str, event_ticker: str) -> str | None:
+    text = f"{title} {event_ticker}".lower()
+    whitelist = get_whitelisted_categories()
+    for cat, keywords in CATEGORY_KEYWORDS.items():
+        if cat in whitelist and any(kw in text for kw in keywords):
+            return cat
+    return None
+
+
+def init_db() -> sqlite3.Connection:
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
+    conn = sqlite3.connect(DB_PATH)
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS markets (
+            ticker TEXT PRIMARY KEY,
+            event_ticker TEXT,
+            title TEXT,
+            category TEXT,
+            status TEXT,
+            yes_bid INTEGER,
+            yes_ask INTEGER,
+            last_price INTEGER,
+            volume INTEGER,
+            open_interest INTEGER,
+            close_time TEXT,
+            fetched_at TEXT
+        )
+    """)
+    conn.commit()
+    return conn
+
+
+def scan_markets(conn: sqlite3.Connection) -> int:
+    try:
+        from pykalshi import HttpClient
+
+        api_key = os.getenv("KALSHI_API_KEY", "")
+        private_key = os.getenv("KALSHI_PRIVATE_KEY", "")
+
+        if not api_key or not private_key:
+            # Fall back to public endpoint if no auth
+            return scan_markets_public(conn)
+
+        client = HttpClient(
+            api_key=api_key,
+            private_key=private_key,
+        )
+
+        cursor = None
+        total = 0
+        while True:
+            params = {"status": "open", "limit": 200}
+            if cursor:
+                params["cursor"] = cursor
+
+            response = client.get_markets(**params)
+            markets = response.get("markets", [])
+            cursor = response.get("cursor")
+
+            for m in markets:
+                cat = classify_market(m.get("title", ""), m.get("event_ticker", ""))
+                if cat is None:
+                    continue
+
+                conn.execute(
+                    """INSERT OR REPLACE INTO markets
+                       (ticker, event_ticker, title, category, status,
+                        yes_bid, yes_ask, last_price, volume, open_interest,
+                        close_time, fetched_at)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                    (
+                        m.get("ticker"),
+                        m.get("event_ticker"),
+                        m.get("title"),
+                        cat,
+                        m.get("status"),
+                        m.get("yes_bid"),
+                        m.get("yes_ask"),
+                        m.get("last_price"),
+                        m.get("volume"),
+                        m.get("open_interest"),
+                        m.get("close_time"),
+                        datetime.now(timezone.utc).isoformat(),
+                    ),
+                )
+                total += 1
+
+            conn.commit()
+
+            if not cursor or not markets:
+                break
+
+        return total
+
+    except ImportError:
+        print("pykalshi not installed")
+        return scan_markets_public(conn)
+    except Exception as e:
+        print(f"Kalshi API error: {e}")
+        return scan_markets_public(conn)
+
+
+def scan_markets_public(conn: sqlite3.Connection) -> int:
+    """Fallback: use Kalshi public API (no auth required for market listing)."""
+    import requests
+
+    url = "https://api.elections.kalshi.com/trade-api/v2/markets"
+    total = 0
+    cursor = None
+
+    while True:
+        params = {"status": "open", "limit": 200}
+        if cursor:
+            params["cursor"] = cursor
+
+        try:
+            resp = requests.get(url, params=params, timeout=30)
+            if resp.status_code == 429:
+                print("Rate limited, waiting 60s...")
+                time.sleep(60)
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+        except requests.RequestException as e:
+            print(f"Public API error: {e}")
+            break
+
+        markets = data.get("markets", [])
+        cursor = data.get("cursor")
+
+        for m in markets:
+            cat = classify_market(m.get("title", ""), m.get("event_ticker", ""))
+            if cat is None:
+                continue
+
+            conn.execute(
+                """INSERT OR REPLACE INTO markets
+                   (ticker, event_ticker, title, category, status,
+                    yes_bid, yes_ask, last_price, volume, open_interest,
+                    close_time, fetched_at)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (
+                    m.get("ticker"),
+                    m.get("event_ticker"),
+                    m.get("title"),
+                    cat,
+                    m.get("status"),
+                    m.get("yes_bid"),
+                    m.get("yes_ask"),
+                    m.get("last_price"),
+                    m.get("volume"),
+                    m.get("open_interest"),
+                    m.get("close_time"),
+                    datetime.now(timezone.utc).isoformat(),
+                ),
+            )
+            total += 1
+
+        conn.commit()
+
+        if not cursor or not markets:
+            break
+
+    return total
+
+
+def main():
+    print(f"Market scanner started at {datetime.now(timezone.utc).isoformat()}")
+    print(f"Whitelisted categories: {get_whitelisted_categories()}")
+    print(f"Scan interval: {SCAN_INTERVAL}s")
+
+    conn = init_db()
+
+    try:
+        while True:
+            ts = datetime.now(timezone.utc).isoformat()
+            count = scan_markets(conn)
+            print(f"[{ts}] Scanned {count} whitelisted markets")
+
+            # Check if we should stop (e.g., running for just one scan in test mode)
+            if os.getenv("SCAN_ONCE", "").lower() == "true":
+                break
+
+            time.sleep(SCAN_INTERVAL)
+
+    except KeyboardInterrupt:
+        print("\nScanner stopped by user")
+    finally:
+        conn.close()
+
+
+if __name__ == "__main__":
+    main()

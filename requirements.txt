@@ -1,0 +1,10 @@
+pykalshi
+pandas
+pyarrow
+requests
+feedparser
+python-dotenv
+openai
+google-generativeai
+scikit-learn
+numpy
