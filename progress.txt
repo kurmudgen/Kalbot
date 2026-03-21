@@ -88,15 +88,36 @@ Run 5: v1 prompt, 400 markets (100/cat), VALIDATION set
 
 BEST PROMPT: v1 (prompts/local_filter.txt)
 
-=== ADDITIONAL DATASETS PULLED ===
+=== ALL DATASETS (data/raw/) ===
 
-- Polymarket (from Jon-Becker): 10,332 target markets (9,211 weather, 593 inflation, 528 economics)
-- Combined training set: 24,075 markets (Kalshi + Polymarket)
-- TSA ground truth: 1,096 daily records (2023-2025)
-- Philadelphia Fed SPF: CPI/GDP probability distributions + mean forecasts
-- Manifold Markets: 1,000 resolved target-category markets
-- Kaggle Kalshi: 5,000 markets but mostly esports, not useful for our categories
-- Kalshi API closed: 17,312 recently closed (mostly sports)
+Prediction Markets:
+- Kalshi (Jon-Becker): 7.68M total markets, 22,907 in target categories
+- Polymarket (Jon-Becker): 383,707 closed, 10,332 target (weather/inflation/econ)
+- 2084Collective (HuggingFace): 995,913 total, 58,150 filtered target markets
+- KalshiBench (HuggingFace): 10,016 Kalshi markets + 5M trades
+- Manifold Markets: 1,000 resolved target questions
+- Kalshi API (direct): 17,312 recently closed
+- Good Judgment Project (Harvard Dataverse): 617 questions, 300K+ forecasts, 4 years
+
+Weather Ground Truth:
+- Open-Meteo: 8 cities x 5 years daily high/low/precip (14,608 records)
+- NOAA GHCN-D: 8 stations (NYC, Chicago, Miami, Houston, LA, Denver, Phoenix, Seattle), decades of daily obs
+- NWS Verification: forecast accuracy stats
+
+Economic Indicators:
+- FRED: 15 series (CPI, payrolls, unemployment, fed funds, GDP, PCE, claims, yields, sentiment)
+- BLS API: CPI-U, nonfarm payrolls direct
+- Philly Fed SPF: probability distributions CPI/GDP since 1968
+- Atlanta Fed GDPNow: historical nowcast vintages
+- ALFRED: GDP revision data (advance vs final)
+- UMich Consumer Sentiment: monthly since 2015
+- Treasury Yields: 1Y/2Y/5Y/10Y/30Y daily since 2015
+
+TSA:
+- TSA.gov: 7 years daily passenger volumes (2019-2025)
+
+Combined training set: 24,075 markets (Kalshi + Polymarket)
+Total additional markets available: 58,150+ (2084Collective)
 
 === KEY FINDINGS ===
 
