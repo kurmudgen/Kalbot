@@ -17,10 +17,24 @@ SCAN_INTERVAL = 300  # 5 minutes
 DB_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "live", "markets.sqlite")
 
 CATEGORY_KEYWORDS = {
-    "economics": ["fed", "federal reserve", "interest rate", "fomc", "gdp", "economic growth"],
-    "inflation": ["inflation", "cpi", "pce", "jobless", "unemployment", "nonfarm", "payroll", "jobs report"],
-    "tsa": ["tsa", "passenger", "airport", "travel volume"],
-    "weather": ["temperature", "weather", "precipitation", "rain", "snow", "heat", "cold", "hurricane", "tornado"],
+    "economics": ["fed ", "federal reserve", "interest rate", "fomc", "gdp",
+                   "economic growth", "rate cut", "rate hike", "fed funds",
+                   "monetary policy", "treasury", "recession"],
+    "inflation": ["inflation", " cpi", "consumer price", " pce", "personal consumption",
+                  "jobless claim", "unemployment", "nonfarm", "payroll",
+                  "jobs report", "initial claims", "labor market"],
+    "tsa": ["tsa", "passenger volume", "airport checkpoint", "air travel",
+            "tsa checkpoint"],
+    "weather": ["temperature", "weather", "precipitation", "rain", "snow",
+                "heat", "cold", "hurricane", "tornado", "degree",
+                "fahrenheit", "high of", "low of"],
+}
+
+# Kalshi API categories that map to our target categories
+KALSHI_CATEGORY_MAP = {
+    "Economics": "economics",
+    "Financials": "economics",
+    "Climate and Weather": "weather",
 }
 
 
@@ -29,9 +43,17 @@ def get_whitelisted_categories() -> list[str]:
     return [c.strip().lower() for c in raw.split(",")]
 
 
-def classify_market(title: str, event_ticker: str) -> str | None:
-    text = f"{title} {event_ticker}".lower()
+def classify_market(title: str, event_ticker: str, kalshi_category: str = "") -> str | None:
+    text = f" {title} {event_ticker} ".lower()
     whitelist = get_whitelisted_categories()
+
+    # Check Kalshi's own category first
+    if kalshi_category and kalshi_category in KALSHI_CATEGORY_MAP:
+        mapped = KALSHI_CATEGORY_MAP[kalshi_category]
+        if mapped in whitelist:
+            return mapped
+
+    # Fall back to keyword matching
     for cat, keywords in CATEGORY_KEYWORDS.items():
         if cat in whitelist and any(kw in text for kw in keywords):
             return cat
@@ -89,7 +111,7 @@ def scan_markets(conn: sqlite3.Connection) -> int:
             cursor = response.get("cursor")
 
             for m in markets:
-                cat = classify_market(m.get("title", ""), m.get("event_ticker", ""))
+                cat = classify_market(m.get("title", ""), m.get("event_ticker", ""), m.get("category", ""))
                 if cat is None:
                     continue
 
@@ -160,7 +182,7 @@ def scan_markets_public(conn: sqlite3.Connection) -> int:
         cursor = data.get("cursor")
 
         for m in markets:
-            cat = classify_market(m.get("title", ""), m.get("event_ticker", ""))
+            cat = classify_market(m.get("title", ""), m.get("event_ticker", ""), m.get("category", ""))
             if cat is None:
                 continue
 

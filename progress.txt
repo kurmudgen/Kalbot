@@ -5,7 +5,7 @@ PHASE 0: Project setup complete
 - .gitignore configured
 - requirements.txt created
 
-PHASE 1: IN PROGRESS
+PHASE 1: Repos cloned, datasets downloaded
 - All 5 repos cloned to repos/
   - prediction-market-analysis: 3.4M, 107 files
   - tools-and-analysis: 394K, 37 files
@@ -14,6 +14,51 @@ PHASE 1: IN PROGRESS
   - Awesome-Prediction-Market-Tools: 161K, 29 files
 - pykalshi installed (v0.5.0)
 - forecasting-tools installed (v0.2.85)
-- Jon-Becker dataset: downloading (36GB) - IN PROGRESS
+- Jon-Becker dataset downloaded (36GB compressed, 7.68M markets)
 - kalshi-data-collector: requires Kalshi API key (deferred to Phase 5)
 - All Python dependencies installed
+
+PHASE 2: Data cleaned, filtered, split 60/20/20
+- Total raw markets: 7,682,445
+- Resolved markets: 7,314,386
+- Date range: 2021-06-30 to 2025-11-23
+- Filtered to target categories: 22,907 resolved markets
+  - weather: 15,540
+  - inflation: 3,626
+  - tsa: 2,430
+  - economics: 1,311
+- Split (seed=42, stratified):
+  - Train: 13,743 (60%)
+  - Val: 4,582 (20%)
+  - Test: 4,582 (20%) — DO NOT TOUCH UNTIL CALIBRATION COMPLETE
+- Summaries: calibration/data_summary.txt, calibration/split_summary.txt
+
+PHASE 3: Ollama setup complete
+- Ollama v0.18.2 already installed
+- qwen2.5:14b already available (9.0 GB)
+- GPU: 16GB VRAM (NVIDIA)
+- test_ollama.py: PASS
+- Prompt template: prompts/local_filter.txt
+
+PHASE 4: Calibration framework complete
+- calibration/run_calibration.py (train set, --category flag)
+- calibration/run_validation.py (val set, --category flag)
+- calibration/compare.py (side-by-side with overfitting detection)
+
+PHASE 5: Bot core files complete
+- bot/market_scanner.py (Kalshi API + public fallback)
+- bot/local_filter.py (Ollama + RSS headlines)
+- bot/cloud_analyst.py (DeepSeek + Gemini fallback)
+- bot/executor.py (paper/live with safety limits)
+- bot/run_night.py (overnight orchestration)
+- .env.example with all required keys
+
+PHASE 6: Morning review complete
+- bot/morning_review.py (--days flag for rolling summary)
+
+PHASE 7: Final checks
+- test_ollama.py: PASS
+- Market scanner: verified against Kalshi public API (440+ target events found)
+- Local filter: tested with 3 sample markets, JSON parsing works
+- .env.example: all keys documented
+- README.md: complete

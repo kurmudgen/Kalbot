@@ -1,0 +1,21 @@
+Split Summary (seed=42, stratified by category)
+==================================================
+
+Train (13743 markets):
+  weather: 9323
+  inflation: 2175
+  tsa: 1458
+  economics: 787
+
+Val (4582 markets):
+  weather: 3108
+  inflation: 726
+  tsa: 486
+  economics: 262
+
+Test (4582 markets):
+  weather: 3109
+  inflation: 725
+  tsa: 486
+  economics: 262
+
