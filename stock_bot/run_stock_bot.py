@@ -90,8 +90,39 @@ def run_cycle(session_id: str) -> dict:
         print(f"  Max positions ({MAX_POSITIONS}) reached, skipping scan")
         return stats
 
-    # Scan for candidates (enhanced multi-signal scanner)
-    print("  Scanning for momentum plays...")
+    # Run blue chip / ETF strategy first (lower risk, higher data quality)
+    print("  --- Blue Chip / ETF Strategy ---")
+    try:
+        from blue_chip_strategy import scan_and_analyze, check_pdt_safe
+        from alpaca_executor import get_account_info
+
+        info = get_account_info()
+        account_val = info.get("portfolio_value", 100000)
+
+        blue_signals = scan_and_analyze()
+        for sig in blue_signals:
+            if sig["action"] == "buy" and sig["confidence"] > 0.65:
+                # Position size: volatility-adjusted
+                position_pct = 0.05  # 5% default
+                amount = account_val * position_pct
+                qty = max(1, int(amount / sig["price"]))
+
+                result = execute_stock_trade(
+                    symbol=sig["symbol"],
+                    side="buy",
+                    qty=qty,
+                    strategy=f"bluechip_{sig['category']}",
+                    confidence=sig["confidence"],
+                    reasoning=sig["reasoning"],
+                    session_id=session_id,
+                )
+                if result:
+                    stats["traded"] += 1
+    except Exception as e:
+        print(f"  Blue chip error: {e}")
+
+    # Then run penny stock momentum scanner
+    print("  --- Penny Stock Momentum ---")
     try:
         from enhanced_scanner import run_enhanced_scan
         candidates = run_enhanced_scan()
