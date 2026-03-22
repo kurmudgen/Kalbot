@@ -11,6 +11,7 @@ from datetime import datetime, timezone, timedelta
 
 BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
 STATUS_PATH = os.path.join(BASE_DIR, "dashboard", "status.json")
+PUBLIC_STATUS_PATH = os.path.join(BASE_DIR, "dashboard", "public", "status.json")
 MARKETS_DB = os.path.join(BASE_DIR, "data", "live", "markets.sqlite")
 SCORES_DB = os.path.join(BASE_DIR, "data", "live", "filter_scores.sqlite")
 ANALYST_DB = os.path.join(BASE_DIR, "data", "live", "analyst_scores.sqlite")
@@ -242,13 +243,21 @@ def publish():
     os.makedirs(os.path.dirname(STATUS_PATH), exist_ok=True)
 
     status = generate_status()
+
+    # Write to both locations
     with open(STATUS_PATH, "w") as f:
         json.dump(status, f, indent=2, default=str)
 
-    # Git push
+    # Also write to public folder for Vercel serving
+    os.makedirs(os.path.dirname(PUBLIC_STATUS_PATH), exist_ok=True)
+    with open(PUBLIC_STATUS_PATH, "w") as f:
+        json.dump(status, f, indent=2, default=str)
+
+    # Git push both files
     try:
         cwd = BASE_DIR
-        subprocess.run(["git", "add", "dashboard/status.json"],
+        subprocess.run(["git", "add", "dashboard/status.json",
+                        "dashboard/public/status.json"],
                        cwd=cwd, capture_output=True, timeout=10)
         subprocess.run(["git", "commit", "-m", "Dashboard status update",
                         "--allow-empty"],
@@ -256,7 +265,7 @@ def publish():
         subprocess.run(["git", "push"],
                        cwd=cwd, capture_output=True, timeout=30)
     except Exception:
-        pass  # Don't crash the bot if git fails
+        pass
 
 
 if __name__ == "__main__":

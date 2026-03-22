@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-const STATUS_URL =
-  "https://raw.githubusercontent.com/kurmudgen/Kalbot/master/dashboard/status.json";
+const STATUS_URL = "/status.json";
 
 export interface Status {
   updated_at: string;

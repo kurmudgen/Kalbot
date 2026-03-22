@@ -1,0 +1,993 @@
+{
+  "updated_at": "2026-03-22T23:04:23.998844+00:00",
+  "bot_status": "running",
+  "accounts": {
+    "kalshi": {
+      "balance": 50,
+      "paper_mode": true
+    },
+    "alpaca": {
+      "cash": 100000,
+      "portfolio_value": 100000,
+      "paper_mode": true
+    }
+  },
+  "pnl": {
+    "today": 0,
+    "all_time": 0,
+    "history": [
+      {
+        "date": "2026-03-22",
+        "trades": 99,
+        "deployed": 0.85
+      }
+    ]
+  },
+  "trades": {
+    "total": 50,
+    "executed": 0,
+    "skipped": 50,
+    "recent": [
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.697614894343622,
+        "confidence": 0.7184210526315788,
+        "market_price": 0.74,
+        "price_gap": 0.042385105656377986,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "CPI increased 0.30% MoM in February 2026 (from 325.25 to 326.79 points), with recent monthly changes around 0.2-0.5%[1][5][6]. Trading Economics forecasts CPI at 329.07 by Q2 end (April-June 2026) fro",
+        "category": "inflation",
+        "time": "2026-03-22T23:04:23"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8367796173715929,
+        "confidence": 0.8995705521472392,
+        "market_price": 0.76,
+        "price_gap": 0.07677961737159289,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; traders price out 0.0% as highly improbable given January 2026 YoY CPI at 2.4% and core at 2.5",
+        "category": "inflation",
+        "time": "2026-03-22T23:04:23"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.21121193399919802,
+        "confidence": 0.6832103321033209,
+        "market_price": 0.17,
+        "price_gap": 0.04121193399919801,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Robinhood prediction market prices >0.5% CPI increase for September 2026 at 17\u00a2, matching the given 0.17 implied probability; lower thresholds at >0.4% 33\u00a2, >0.3% 50\u00a2, >0.2% 66\u00a2[1]. J.P. Morgan foreca",
+        "category": "inflation",
+        "time": "2026-03-22T23:04:23"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5062654209158746,
+        "confidence": 0.7381355932203388,
+        "market_price": 0.72,
+        "price_gap": 0.2137345790841254,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts indicate April 2026 CPI YoY at 2.7-3.3%, with market and model consensus around 2.8-3.0%[1]. Kalshi markets show 74% for MoM >0.1%, 55% >0.2%, 26% >0.3%, implying lower MoM >0.5% odds[1]. Ba",
+        "category": "inflation",
+        "time": "2026-03-22T23:04:23"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7178902804293341,
+        "confidence": 0.6999999999999998,
+        "market_price": 0.74,
+        "price_gap": 0.022109719570665876,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "J.P. Morgan forecasts year-over-year CPI inflation to rise from 2.8% in July 2025 to 3.5% by Q4 2025, then drift down to 2.8% by Q4 2026, driven by tariffs, weakening dollar, labor supply constraints,",
+        "category": "inflation",
+        "time": "2026-03-22T22:57:08"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8367796173715929,
+        "confidence": 0.8995705521472392,
+        "market_price": 0.76,
+        "price_gap": 0.07677961737159289,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; strong wage growth, resilient consumer spending, supply chain disruptions, OPEC+ decis",
+        "category": "inflation",
+        "time": "2026-03-22T22:57:08"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.16328535070500994,
+        "confidence": 0.7456691449814127,
+        "market_price": 0.17,
+        "price_gap": 0.006714649294990077,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "The Robinhood prediction market shows a contract price of 17\u00a2 for CPI >0.5% in September 2026, implying a 17% probability[1]. The CBO projects PCE inflation to decrease from 2.8% in 2025 to 2.7% in 20",
+        "category": "inflation",
+        "time": "2026-03-22T22:57:08"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.6927427093770633,
+        "confidence": 0.765282392026578,
+        "market_price": 0.72,
+        "price_gap": 0.027257290622936692,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts indicate April 2026 CPI YoY at 2.7-3.3%, with base case 3.1-3.3% and market expectation around 2.8-3.0%[1]. Prediction markets show 74% for MoM >0.1%, 55% >0.2%, 26% >0.3%, implying high lik",
+        "category": "inflation",
+        "time": "2026-03-22T22:57:08"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7054288837658821,
+        "confidence": 0.765282392026578,
+        "market_price": 0.74,
+        "price_gap": 0.034571116234117905,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Recent CPI data shows monthly increases of 0.3% in Aug/Dec 2025 and Feb 2026, 0.2% in Jan 2026, with YoY at 2.4% in Jan 2026 and 2.5% core in Feb 2026[6][7]. J.P. Morgan forecasts CPI YoY rising to 3.",
+        "category": "inflation",
+        "time": "2026-03-22T22:49:53"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.836203136877731,
+        "confidence": 0.8853115264797509,
+        "market_price": 0.76,
+        "price_gap": 0.07620313687773095,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Octagon AI model and market expect CPI month-over-month in June 2026 to be exactly 0.3%, with no mispricing; sticky inflation around 3% YoY forecasted by RBC, J.P. Morgan due to tight labor market, co",
+        "category": "inflation",
+        "time": "2026-03-22T22:49:53"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.1606244684343296,
+        "confidence": 0.7902631578947368,
+        "market_price": 0.17,
+        "price_gap": 0.00937553156567042,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Bank of America forecasts core PCE inflation at 3.1% in Q3 2026, with month-over-month increases expected to remain modest[3]. The CBO projects overall PCE inflation to slow to 2.7% in 2026[7]. J.P. M",
+        "category": "inflation",
+        "time": "2026-03-22T22:49:53"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.47945441546576767,
+        "confidence": 0.7261281337047353,
+        "market_price": 0.72,
+        "price_gap": 0.2405455845342323,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "April 2026 CPI year-over-year forecasts cluster around 2.7\u20133.2%, with prediction markets and institutional models (JPMorgan, Goldman Sachs) converging on this range[1]. Month-over-month CPI increases ",
+        "category": "inflation",
+        "time": "2026-03-22T22:49:53"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7831548419514429,
+        "confidence": 0.7628260869565218,
+        "market_price": 0.74,
+        "price_gap": 0.043154841951442924,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "J.P. Morgan forecasts year-over-year CPI inflation rising from 2.8% in July 2025 to 3.5% by Q4 2025, then drifting to 2.8% by Q4 2026, driven by tariffs, weakening dollar, labor supply constraints, an",
+        "category": "inflation",
+        "time": "2026-03-22T22:42:34"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8116480934149279,
+        "confidence": 0.8994615384615384,
+        "market_price": 0.76,
+        "price_gap": 0.05164809341492793,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; sticky inflation around 3% YoY throughout 2026 per RBC and J.P. Morgan; J.P. Morgan forecasts CP",
+        "category": "inflation",
+        "time": "2026-03-22T22:42:34"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.15438194175905623,
+        "confidence": 0.7701971326164875,
+        "market_price": 0.17,
+        "price_gap": 0.015618058240943783,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Robinhood prediction market shows 17\u00a2 (0.17 probability) for CPI >0.5% in September 2026[1]. CBO projects CPI inflation of 2.7% for full year 2026[5], with PCE inflation declining from 3.1% in 2025 to",
+        "category": "inflation",
+        "time": "2026-03-22T22:42:34"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5002476706397231,
+        "confidence": 0.7381355932203388,
+        "market_price": 0.72,
+        "price_gap": 0.2197523293602769,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts indicate April 2026 CPI YoY at 2.7-3.3%, with models and markets expecting ~2.8%[1]. Kalshi markets show 74% for MoM >0.1%, 55% >0.2%, 26% >0.3%, implying lower odds for >0.5% MoM[1]. Base e",
+        "category": "inflation",
+        "time": "2026-03-22T22:42:34"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7357954298172772,
+        "confidence": 0.6864714494875549,
+        "market_price": 0.74,
+        "price_gap": 0.0042045701827228,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Latest CPI data shows year-over-year inflation at 2.4% for the 12 months ending February 2026[7][9]. J.P. Morgan forecasts CPI inflation will drift down to 2.8% by Q4 2026, with expectations of a 'low",
+        "category": "inflation",
+        "time": "2026-03-22T22:35:19"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8108121518888174,
+        "confidence": 0.9218656716417912,
+        "market_price": 0.76,
+        "price_gap": 0.05081215188881738,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, far above 0.0%, with no mispricing evidence[1]. Consensus from economists (RBC, J.P. Morgan, PIIE) anticipates stic",
+        "category": "inflation",
+        "time": "2026-03-22T22:35:19"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2220202483283915,
+        "confidence": 0.6832103321033209,
+        "market_price": 0.17,
+        "price_gap": 0.0520202483283915,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Robinhood prediction market prices >0.5% CPI increase for September 2026 at 17\u00a2, matching the given market; >0.4% at 33\u00a2, >0.3% at 50\u00a2[1]. J.P. Morgan forecasts year-over-year CPI inflation at 2.8% by",
+        "category": "inflation",
+        "time": "2026-03-22T22:35:19"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.49125357178363327,
+        "confidence": 0.7097173144876324,
+        "market_price": 0.72,
+        "price_gap": 0.2287464282163667,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts for April 2026 CPI YoY range from 2.7-3.3% base case, with market expectations around 2.8-3.0%; Kalshi markets imply 74% for MoM >0.1%, 55% >0.2%, 26% >0.3%, but no direct MoM >0.5% data; ba",
+        "category": "inflation",
+        "time": "2026-03-22T22:35:19"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7268928550015596,
+        "confidence": 0.7431506849315068,
+        "market_price": 0.74,
+        "price_gap": 0.013107144998440345,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Robinhood prediction market shows 74% probability for CPI >0.1% in July 2026 (unadjusted monthly increase), with >0.0% at 87%[1]. J.P. Morgan forecasts year-over-year CPI at 2.8% in July 2026, implyin",
+        "category": "inflation",
+        "time": "2026-03-22T22:27:57"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8342472918406316,
+        "confidence": 0.8793081761006291,
+        "market_price": 0.76,
+        "price_gap": 0.07424729184063161,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Octagon AI model and market expect CPI month-over-month in June 2026 to be exactly 0.3%, with no mispricing; sticky inflation around 3% YoY forecasted by RBC, J.P. Morgan due to tight labor market, co",
+        "category": "inflation",
+        "time": "2026-03-22T22:27:57"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.22644519081501213,
+        "confidence": 0.6579681274900397,
+        "market_price": 0.17,
+        "price_gap": 0.05644519081501212,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Robinhood prediction market prices >0.5% CPI increase for September 2026 at 17\u00a2, matching the given market[1]. J.P. Morgan forecasts U.S. core CPI at 3.2% for 2026 (annual average), with year-over-yea",
+        "category": "inflation",
+        "time": "2026-03-22T22:27:57"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5103551468881697,
+        "confidence": 0.765282392026578,
+        "market_price": 0.72,
+        "price_gap": 0.20964485311183023,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts indicate April 2026 CPI YoY at 2.7-3.3%, with base case 3.1-3.3%[1]. Octagon AI model and market expect 2.8% YoY[1]. Kalshi markets show 74% for MoM >0.1%, 55% >0.2%, 26% >0.3%[1]. JPMorgan ",
+        "category": "inflation",
+        "time": "2026-03-22T22:27:57"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7642808487978429,
+        "confidence": 0.8607234726688102,
+        "market_price": 0.74,
+        "price_gap": 0.02428084879784287,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Market prices on multiple platforms show high implied probability for CPI rising >0.1% in July 2026: Robinhood at 74\u00a2[3], Kalshi at 68-74\u00a2[7], GJ Open crowd forecast implies near 100% for >0.1% YoY (9",
+        "category": "inflation",
+        "time": "2026-03-22T22:20:35"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.836203136877731,
+        "confidence": 0.8853115264797509,
+        "market_price": 0.76,
+        "price_gap": 0.07620313687773095,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence[1]. J.P. Morgan forecasts CPI YoY accelerating to 3.6% by June 2026 due to tariffs and ",
+        "category": "inflation",
+        "time": "2026-03-22T22:20:35"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.21202413345979437,
+        "confidence": 0.6767441860465117,
+        "market_price": 0.17,
+        "price_gap": 0.04202413345979436,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Robinhood prediction market prices >0.4% at 33\u00a2 and >0.5% implied around 17-20\u00a2, aligning with current market at 17\u00a2[1]. Bank of America forecasts core CPI peaking at 3.2% in Q2 2026, retreating to 2.",
+        "category": "inflation",
+        "time": "2026-03-22T22:20:35"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5062654209158746,
+        "confidence": 0.7381355932203388,
+        "market_price": 0.72,
+        "price_gap": 0.2137345790841254,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts for April 2026 CPI YoY range from 2.7-3.3%, with Octagon AI at 2.7-2.8%, market expectations at 2.8-3.0%, base case 3.1-3.3%, JPMorgan global core at 2.8% with US above 3%, Goldman Sachs cor",
+        "category": "inflation",
+        "time": "2026-03-22T22:20:35"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7284776081317512,
+        "confidence": 0.7343205574912891,
+        "market_price": 0.74,
+        "price_gap": 0.011522391868248771,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Market prices show 74% implied probability on Robinhood for CPI >0.1% in July 2026 and 68% on Kalshi[2][6]. Latest BLS February 2026 data reports CPI-U at 326.785 (1982-84=100), up 0.5% monthly and 2.",
+        "category": "inflation",
+        "time": "2026-03-22T22:13:13"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.836203136877731,
+        "confidence": 0.8853115264797509,
+        "market_price": 0.76,
+        "price_gap": 0.07620313687773095,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Octagon AI model and market forecast CPI month-over-month (MoM) for June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY expected due to tight labor market, wage growth, consu",
+        "category": "inflation",
+        "time": "2026-03-22T22:13:13"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.1606244684343296,
+        "confidence": 0.7902631578947368,
+        "market_price": 0.17,
+        "price_gap": 0.00937553156567042,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Consensus forecasts for recent CPI (e.g., September 2025) expect 0.4% month-over-month increase, below 0.5%[1]. Prediction markets imply low odds for >0.4% in September 2026 at 33% (Robinhood), with e",
+        "category": "inflation",
+        "time": "2026-03-22T22:13:13"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5989903165610945,
+        "confidence": 0.765282392026578,
+        "market_price": 0.72,
+        "price_gap": 0.1210096834389055,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts indicate April 2026 CPI YoY at 2.7-3.3%, with base case 3.1-3.3% and market expectation around 2.8-3.0%[1]. Prediction markets show 74% for MoM >0.1%, 55% >0.2%, 26% >0.3%, implying high lik",
+        "category": "inflation",
+        "time": "2026-03-22T22:13:13"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7727627506732058,
+        "confidence": 0.8607234726688102,
+        "market_price": 0.74,
+        "price_gap": 0.032762750673205776,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Robinhood prediction market prices >0.1% CPI increase for July 2026 at 74\u00a2, aligning with the query's current price[1]. J.P. Morgan forecasts year-over-year CPI inflation at 2.8% in July 2026, well ab",
+        "category": "inflation",
+        "time": "2026-03-22T22:05:56"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8049364516390746,
+        "confidence": 0.9218656716417912,
+        "market_price": 0.76,
+        "price_gap": 0.04493645163907456,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; consensus sees sticky inflation around 3% YoY due to tight labor market, wage growth, ",
+        "category": "inflation",
+        "time": "2026-03-22T22:05:56"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.24524477079690815,
+        "confidence": 0.65,
+        "market_price": 0.17,
+        "price_gap": 0.07524477079690814,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts for recent CPI (Sep 2025) expect 0.4% month-over-month rise, below 0.5% threshold[1]. Bank of America forecasts core PCE peaking at 3.1% in Q1-Q3 2026 before declining to 2.8% by Q4 2026, su",
+        "category": "inflation",
+        "time": "2026-03-22T22:05:56"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.48563571173144615,
+        "confidence": 0.7275862068965517,
+        "market_price": 0.72,
+        "price_gap": 0.23436428826855382,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts for April 2026 CPI YoY center around 2.7-3.3%, with Octagon AI at 2.7-2.8%, market expectations at 2.8-3.0%, JPMorgan projecting US inflation above 3% in 2026, and base case 3.1-3.3%[1]. Pre",
+        "category": "inflation",
+        "time": "2026-03-22T22:05:56"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7424992961294973,
+        "confidence": 0.8330936454849499,
+        "market_price": 0.74,
+        "price_gap": 0.002499296129497286,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Robinhood prediction market prices >0.1% CPI increase for July 2026 at 74\u00a2, matching the query's current price[2]. Kalshi shows similar odds at 68% for >0.1%[6]. J.P. Morgan forecasts year-over-year C",
+        "category": "inflation",
+        "time": "2026-03-22T21:58:36"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8564753012289221,
+        "confidence": 0.9165015015015014,
+        "market_price": 0.76,
+        "price_gap": 0.09647530122892212,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts indicate CPI month-over-month for June 2026 expected at exactly 0.3% by Octagon AI model and market consensus, with analysts like J.P. Morgan projecting YoY CPI accelerating to 3.6% by June ",
+        "category": "inflation",
+        "time": "2026-03-22T21:58:36"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.21678686768617192,
+        "confidence": 0.7097173144876324,
+        "market_price": 0.17,
+        "price_gap": 0.04678686768617191,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Consensus forecasts for recent CPI (e.g., September 2025) expect 0.4% month-over-month rise, below 0.5%[1]. Prediction markets imply low odds for >0.4% in September 2026 at 33% (Robinhood)[2]; Kalshi ",
+        "category": "inflation",
+        "time": "2026-03-22T21:58:36"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5031567847314109,
+        "confidence": 0.6778810408921933,
+        "market_price": 0.72,
+        "price_gap": 0.21684321526858907,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts for April 2026 CPI YoY range from 2.7-3.3% base case, with models and markets expecting around 2.8-3.0%; Kalshi markets imply 74% for MoM >0.1%, 55% >0.2%, 26% >0.3%; base effects from April",
+        "category": "inflation",
+        "time": "2026-03-22T21:58:36"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7886913030189938,
+        "confidence": 0.7778974358974359,
+        "market_price": 0.74,
+        "price_gap": 0.048691303018993826,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "BLS February 2026 CPI-U data shows monthly increase of 0.5% and YoY of 2.4%[4][5]. J.P. Morgan forecasts YoY CPI inflation rising from 2.8% in July 2025 to 3.5% by Q4 2025, then down to 2.8% by Q4 202",
+        "category": "inflation",
+        "time": "2026-03-22T21:51:08"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8293892884126441,
+        "confidence": 0.8853115264797509,
+        "market_price": 0.76,
+        "price_gap": 0.06938928841264413,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Octagon AI model and market expect CPI month-over-month in June 2026 to be exactly 0.3%, with no mispricing; traders price out 0.0% as highly improbable given January 2026 YoY CPI at 2.4% and core at ",
+        "category": "inflation",
+        "time": "2026-03-22T21:51:08"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.226752120157514,
+        "confidence": 0.6681818181818182,
+        "market_price": 0.17,
+        "price_gap": 0.05675212015751399,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Robinhood prediction market prices >0.5% CPI increase for September 2026 at 17\u00a2, matching the given market[1]. J.P. Morgan forecasts U.S. core CPI at 3.2% for 2026 (annual), with year-over-year CPI ri",
+        "category": "inflation",
+        "time": "2026-03-22T21:51:08"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.4248040501052459,
+        "confidence": 0.7690482398956974,
+        "market_price": 0.72,
+        "price_gap": 0.29519594989475406,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasting markets like Kalshi indicate probabilities of April 2026 CPI increasing above 0.1% (74%), above 0.2% (55%), and above 0.3% (26%) month-over-month[1]. The February 2026 Producer Price Index",
+        "category": "inflation",
+        "time": "2026-03-22T21:51:08"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7024728009776028,
+        "confidence": 0.7533670033670034,
+        "market_price": 0.74,
+        "price_gap": 0.037527199022397206,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Market price on Robinhood implies 74% probability for CPI >0.1% in July 2026[3]. J.P. Morgan forecasts CPI inflation at 2.2% YoY by Q4 2026, implying monthly increases well above 0.1%[2]. Plan.be fore",
+        "category": "inflation",
+        "time": "2026-03-22T21:29:41"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.836203136877731,
+        "confidence": 0.8853115264797509,
+        "market_price": 0.76,
+        "price_gap": 0.07620313687773095,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY forecasted by RBC, J.P. Morgan due to tight labor market, tarif",
+        "category": "inflation",
+        "time": "2026-03-22T21:29:41"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.18088234574577508,
+        "confidence": 0.6808823529411765,
+        "market_price": 0.17,
+        "price_gap": 0.010882345745775068,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Multiple forecasts indicate September 2026 CPI will likely remain modest. The Congressional Budget Office projects overall PCE inflation at 2.7% for 2026, down from 2.8% in 2025, with tariff effects w",
+        "category": "inflation",
+        "time": "2026-03-22T21:29:41"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "Will CPI rise more than 0.5% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5284116937750566,
+        "confidence": 0.7824758842443729,
+        "market_price": 0.72,
+        "price_gap": 0.19158830622494338,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts indicate April 2026 CPI YoY at 2.7-3.3%, with base cases around 2.8-3.2% from Octagon AI, JPMorgan, and other models; Kalshi markets show 74% for MoM >0.1%, 55% >0.2%, 26% >0.3%; base effect",
+        "category": "inflation",
+        "time": "2026-03-22T21:29:41"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.1",
+        "title": "Will CPI rise more than 0.1% in July 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7480966813967529,
+        "confidence": 0.7150000000000001,
+        "market_price": 0.74,
+        "price_gap": 0.008096681396752903,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Robinhood prediction market shows 74% probability for CPI >0.1% in July 2026, with >0.0% at 87% and >0.2% at 58%[1]. J.P. Morgan forecasts year-over-year CPI inflation at 2.8% in July 2026, implying a",
+        "category": "inflation",
+        "time": "2026-03-22T21:22:30"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8141392680059045,
+        "confidence": 0.8607234726688102,
+        "market_price": 0.76,
+        "price_gap": 0.05413926800590452,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Market and model consensus expects CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; recent Feb 2026 CPI rose 0.3% SA (all items YoY 2.4%, core 2.5%); analysts (RBC, J.P. Morgan, ",
+        "category": "inflation",
+        "time": "2026-03-22T21:22:30"
+      }
+    ]
+  },
+  "strategies": {
+    "EMERGING": {
+      "trades": 90,
+      "executed": 0,
+      "deployed": 0
+    }
+  },
+  "ensemble": {
+    "models": {
+      "perplexity": {
+        "analyses": 4,
+        "avg_probability": 0.6275000000000001
+      },
+      "claude": {
+        "analyses": 4,
+        "avg_probability": 0.525
+      },
+      "deepseek": {
+        "analyses": 4,
+        "avg_probability": 0.5325
+      }
+    },
+    "consensus_rate": 1.0,
+    "recent_votes": [
+      {
+        "perplexity": 0.68,
+        "claude": 0.78,
+        "deepseek": 0.68,
+        "consensus": true,
+        "time": "2026-03-22T23:04:23"
+      },
+      {
+        "perplexity": 0.97,
+        "claude": 0.82,
+        "deepseek": 0.95,
+        "consensus": true,
+        "time": "2026-03-22T23:04:10"
+      },
+      {
+        "perplexity": 0.18,
+        "claude": 0.22,
+        "deepseek": 0.15,
+        "consensus": true,
+        "time": "2026-03-22T23:03:57"
+      },
+      {
+        "perplexity": 0.68,
+        "claude": 0.28,
+        "deepseek": 0.35,
+        "consensus": true,
+        "time": "2026-03-22T23:03:44"
+      }
+    ]
+  },
+  "scanner": {
+    "total_markets": 573,
+    "with_prices": 430,
+    "passed_filter": 4,
+    "total_scored": 230,
+    "categories": {
+      "economics": 400,
+      "inflation": 173
+    }
+  },
+  "sniper_markets": [
+    {
+      "ticker": "KXINX-26MAR23H1600-T6949.9999",
+      "title": "Will the S&P 500 be above 6949.9999 on Mar 23, 2026 at 4pm EDT?",
+      "price": 1,
+      "close_time": "2026-03-23T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR23H1600-T6250",
+      "title": "Will the S&P 500 be below 6250 on Mar 23, 2026 at 4pm EDT?",
+      "price": 2,
+      "close_time": "2026-03-23T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR23H1600-B6837",
+      "title": "Will the S&P 500 be between 6825 and 6849.9999 on Mar 23, 2026 at 4pm EDT?",
+      "price": 14,
+      "close_time": "2026-03-23T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR23H1600-B6812",
+      "title": "Will the S&P 500 be between 6800 and 6824.9999 on Mar 23, 2026 at 4pm EDT?",
+      "price": 14,
+      "close_time": "2026-03-23T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR23H1600-B6762",
+      "title": "Will the S&P 500 be between 6750 and 6774.9999 on Mar 23, 2026 at 4pm EDT?",
+      "price": 14,
+      "close_time": "2026-03-23T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR23H1600-B6737",
+      "title": "Will the S&P 500 be between 6725 and 6749.9999 on Mar 23, 2026 at 4pm EDT?",
+      "price": 18,
+      "close_time": "2026-03-23T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR23H1600-B6712",
+      "title": "Will the S&P 500 be between 6700 and 6724.9999 on Mar 23, 2026 at 4pm EDT?",
+      "price": 11,
+      "close_time": "2026-03-23T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR23H1600-B6687",
+      "title": "Will the S&P 500 be between 6675 and 6699.9999 on Mar 23, 2026 at 4pm EDT?",
+      "price": 8,
+      "close_time": "2026-03-23T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR23H1600-B6662",
+      "title": "Will the S&P 500 be between 6650 and 6674.9999 on Mar 23, 2026 at 4pm EDT?",
+      "price": 20,
+      "close_time": "2026-03-23T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR23H1600-B6537",
+      "title": "Will the S&P 500 be between 6525 and 6549.9999 on Mar 23, 2026 at 4pm EDT?",
+      "price": 10,
+      "close_time": "2026-03-23T20:00:00Z",
+      "category": "economics"
+    }
+  ],
+  "news": [
+    {
+      "text": "CPI increased 0.30% MoM in February 2026 (from 325.25 to 326.79 points), with recent monthly changes around 0.2-0.5%[1][5][6]. Trading Economics forecasts CPI at 329.07 by Q2 end (April-June 2026) fro",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T23:04:16"
+    },
+    {
+      "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; traders price out 0.0% as highly improbable given January 2026 YoY CPI at 2.4% and core at 2.5",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T23:04:02"
+    },
+    {
+      "text": "Robinhood prediction market prices >0.5% CPI increase for September 2026 at 17\u00a2, matching the given 0.17 implied probability; lower thresholds at >0.4% 33\u00a2, >0.3% 50\u00a2, >0.2% 66\u00a2[1]. J.P. Morgan foreca",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T23:03:49"
+    },
+    {
+      "text": "Forecasts indicate April 2026 CPI YoY at 2.7-3.3%, with market and model consensus around 2.8-3.0%[1]. Kalshi markets show 74% for MoM >0.1%, 55% >0.2%, 26% >0.3%, implying lower MoM >0.5% odds[1]. Ba",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T23:03:36"
+    },
+    {
+      "text": "J.P. Morgan forecasts year-over-year CPI inflation to rise from 2.8% in July 2025 to 3.5% by Q4 2025, then drift down to 2.8% by Q4 2026, driven by tariffs, weakening dollar, labor supply constraints,",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T22:57:00"
+    },
+    {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; strong wage growth, resilient consumer spending, supply chain disruptions, OPEC+ decis",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T22:56:46"
+    },
+    {
+      "text": "The Robinhood prediction market shows a contract price of 17\u00a2 for CPI >0.5% in September 2026, implying a 17% probability[1]. The CBO projects PCE inflation to decrease from 2.8% in 2025 to 2.7% in 20",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T22:56:32"
+    },
+    {
+      "text": "Forecasts indicate April 2026 CPI YoY at 2.7-3.3%, with base case 3.1-3.3% and market expectation around 2.8-3.0%[1]. Prediction markets show 74% for MoM >0.1%, 55% >0.2%, 26% >0.3%, implying high lik",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T22:56:17"
+    },
+    {
+      "text": "Recent CPI data shows monthly increases of 0.3% in Aug/Dec 2025 and Feb 2026, 0.2% in Jan 2026, with YoY at 2.4% in Jan 2026 and 2.5% core in Feb 2026[6][7]. J.P. Morgan forecasts CPI YoY rising to 3.",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T22:49:43"
+    },
+    {
+      "text": "Octagon AI model and market expect CPI month-over-month in June 2026 to be exactly 0.3%, with no mispricing; sticky inflation around 3% YoY forecasted by RBC, J.P. Morgan due to tight labor market, co",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T22:49:30"
+    }
+  ],
+  "alerts": [
+    {
+      "level": "warning",
+      "message": "1 errors this session"
+    }
+  ],
+  "system": {
+    "ollama": "ok",
+    "errors_24h": 1,
+    "cycles": 12,
+    "uptime_hours": 1.4
+  }
+}
