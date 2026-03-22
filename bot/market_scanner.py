@@ -105,13 +105,46 @@ def scan_markets(conn: sqlite3.Connection) -> int:
         )
 
         total = 0
-        markets = client.get_markets(
-            status=MarketStatus.OPEN,
-            limit=200,
-            fetch_all=True,
-        )
 
-        for m in markets:
+        # Scan by series ticker for our target categories
+        # Much faster than fetch_all (which pulls 6K+ junk sports markets)
+        TARGET_SERIES = [
+            "KXHIGH", "KXLOW",           # Weather temperature
+            "KXCPI", "KXPCE",            # Inflation
+            "KXINX", "KXINXD",           # S&P 500
+            "KXBTC",                      # Bitcoin
+            "KXTSA", "TSA",              # TSA
+            "KXFED", "KXFOMC",           # Fed rate
+            "KXGDP",                      # GDP
+            "KXJOBLESS", "KXNFP",        # Jobs
+            "KXGAS",                      # Gas
+            "KXEURUSD", "KXUSDJPY",      # Forex
+            "KXTREAS", "KX10Y",          # Treasury
+        ]
+
+        all_markets = []
+        for series in TARGET_SERIES:
+            try:
+                markets = client.get_markets(
+                    series_ticker=series,
+                    status=MarketStatus.OPEN,
+                    limit=100,
+                )
+                all_markets.extend(markets)
+            except Exception:
+                pass
+
+        # Also do a general keyword scan (smaller batch)
+        try:
+            general = client.get_markets(
+                status=MarketStatus.OPEN,
+                limit=200,
+            )
+            all_markets.extend(general)
+        except Exception:
+            pass
+
+        for m in all_markets:
             cat = classify_market(m.title or "", m.event_ticker or "", "")
             if cat is None:
                 continue
