@@ -1,6 +1,8 @@
 """
 Trade executor: reads analyst scores, applies safety checks, places trades.
 Supports PAPER_TRADE mode (logs only) and LIVE mode (actual API calls).
+Uses Kelly criterion for position sizing — bet more when edge is larger.
+Prioritizes close-to-expiry markets and weather category.
 """
 
 import os
@@ -16,6 +18,18 @@ DECISIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "decisions.
 
 CONFIDENCE_MIN = 0.75
 PRICE_GAP_MIN = 0.08
+
+# Category-specific confidence thresholds (lower = more aggressive)
+CATEGORY_CONFIDENCE = {
+    "weather": 0.70,     # Our strongest category — more aggressive
+    "economics": 0.80,   # Decent but markets are efficient
+    "inflation": 0.80,
+    "tsa": 0.85,         # Weakest category — very conservative
+}
+
+# Kelly fraction — use fractional Kelly to reduce variance
+# Full Kelly is too aggressive; half-Kelly is standard practice
+KELLY_FRACTION = 0.25  # Quarter-Kelly: conservative but still edge-proportional
 
 
 def get_config() -> dict:
@@ -107,14 +121,41 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         price_gap = score["price_gap"]
         reasoning = score.get("cloud_reasoning", "")
 
-        # Determine side
+        # Determine side and Kelly-sized bet
         side = "YES" if cloud_prob > market_price else "NO"
-        amount = min(config["max_trade_size"], config["max_nightly_spend"] - tonight_spend)
+
+        # Kelly criterion: f* = (bp - q) / b
+        # where b = odds, p = our probability, q = 1-p
+        if side == "YES":
+            cost = market_price  # Cost to buy YES
+            payout = 1.0        # Pays $1 if YES
+            our_prob = cloud_prob
+        else:
+            cost = 1.0 - market_price  # Cost to buy NO
+            payout = 1.0
+            our_prob = 1.0 - cloud_prob
+
+        b = (payout / cost) - 1  # Net odds
+        q = 1.0 - our_prob
+        kelly_raw = (b * our_prob - q) / b if b > 0 else 0
+        kelly_bet = max(0, kelly_raw * KELLY_FRACTION)
+
+        # Scale Kelly fraction to dollar amount, capped by max trade size
+        budget_remaining = config["max_nightly_spend"] - tonight_spend
+        amount = min(
+            kelly_bet * config["max_nightly_spend"],  # Kelly-sized
+            config["max_trade_size"],                  # Per-trade cap
+            budget_remaining,                          # Budget remaining
+        )
+        amount = round(max(0, amount), 2)
+
+        # Category-specific confidence threshold
+        cat_conf_min = CATEGORY_CONFIDENCE.get(category, CONFIDENCE_MIN)
 
         # Safety checks
         skip_reason = None
-        if cloud_conf < CONFIDENCE_MIN:
-            skip_reason = f"confidence {cloud_conf:.2f} < {CONFIDENCE_MIN}"
+        if cloud_conf < cat_conf_min:
+            skip_reason = f"confidence {cloud_conf:.2f} < {cat_conf_min} ({category})"
         elif price_gap < PRICE_GAP_MIN:
             skip_reason = f"price gap {price_gap:.2f} < {PRICE_GAP_MIN}"
         elif ticker in open_positions:

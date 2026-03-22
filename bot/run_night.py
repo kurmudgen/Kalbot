@@ -50,8 +50,13 @@ def run_cycle(session_id: str) -> dict:
     """Run one full cycle: scan → filter → analyze → execute."""
     from market_scanner import init_db as init_markets_db, scan_markets
     from local_filter import run_filter
-    from cloud_analyst import analyze_markets
     from executor import execute_trades
+
+    # Use ensemble analyst if API keys are configured, else fall back to single-model
+    if os.getenv("ANTHROPIC_API_KEY") or os.getenv("DEEPSEEK_API_KEY"):
+        from ensemble_analyst import analyze_markets
+    else:
+        from cloud_analyst import analyze_markets
 
     stats = {
         "markets_scanned": 0,
@@ -73,10 +78,25 @@ def run_cycle(session_id: str) -> dict:
         traceback.print_exc()
         stats["errors"] += 1
 
+    # Step 1b: Track prices and find movers
+    try:
+        from price_tracker import snapshot_prices, get_movers, prioritize_markets
+        snapshot_prices()
+        movers = get_movers(hours=1)
+        if movers:
+            print(f"Price movers (last 1hr): {len(movers)}")
+    except Exception as e:
+        print(f"Price tracker error: {e}")
+
     # Step 2: Local filter
     try:
         print("\n--- LOCAL FILTER ---")
         passed = run_filter()
+        # Prioritize: weather first, expiring soon first
+        try:
+            passed = prioritize_markets(passed)
+        except Exception:
+            pass
         stats["markets_filtered"] = len(passed)
         print(f"{len(passed)} markets passed filter")
     except Exception as e:
@@ -85,21 +105,21 @@ def run_cycle(session_id: str) -> dict:
         stats["errors"] += 1
         passed = []
 
-    # Step 3: Cloud analyst
+    # Step 3: Ensemble analyst (Perplexity → Claude + DeepSeek)
     try:
-        print("\n--- CLOUD ANALYST ---")
+        print("\n--- ENSEMBLE ANALYST ---")
         analyzed = analyze_markets(passed)
         stats["markets_analyzed"] = len(analyzed)
-        print(f"{len(analyzed)} markets analyzed")
+        print(f"{len(analyzed)} markets reached consensus")
     except Exception as e:
         print(f"Analyst error: {e}")
         traceback.print_exc()
         stats["errors"] += 1
         analyzed = []
 
-    # Step 4: Execute
+    # Step 4: Execute with Kelly sizing
     try:
-        print("\n--- EXECUTOR ---")
+        print("\n--- EXECUTOR (Kelly sizing) ---")
         trades = execute_trades(analyzed, session_id=session_id)
         stats["trades_placed"] = len(trades)
     except Exception as e:
