@@ -43,17 +43,41 @@ def get_whitelisted_categories() -> list[str]:
     return [c.strip().lower() for c in raw.split(",")]
 
 
+SERIES_CATEGORY_MAP = {
+    "KXHIGH": "weather", "KXLOW": "weather",
+    "KXCPI": "inflation", "KXPCE": "inflation",
+    "KXINX": "economics", "KXINXD": "economics",
+    "KXBTC": "economics", "KXBTCD": "economics",
+    "KXTSA": "tsa", "TSA": "tsa",
+    "KXFED": "economics", "KXFOMC": "economics",
+    "KXGDP": "economics",
+    "KXJOBLESS": "inflation", "KXNFP": "inflation",
+    "KXGAS": "economics",
+    "KXEURUSD": "economics", "KXUSDJPY": "economics",
+    "KXTREAS": "economics", "KX10Y": "economics",
+}
+
+
 def classify_market(title: str, event_ticker: str, kalshi_category: str = "") -> str | None:
     text = f" {title} {event_ticker} ".lower()
     whitelist = get_whitelisted_categories()
+    ticker_upper = (event_ticker or "").upper()
 
-    # Check Kalshi's own category first
+    # Check series ticker prefix first (most reliable)
+    for prefix, cat in SERIES_CATEGORY_MAP.items():
+        if ticker_upper.startswith(prefix) and cat in whitelist:
+            return cat
+
+    # Check Kalshi's own category
     if kalshi_category and kalshi_category in KALSHI_CATEGORY_MAP:
         mapped = KALSHI_CATEGORY_MAP[kalshi_category]
         if mapped in whitelist:
             return mapped
 
-    # Fall back to keyword matching
+    # Fall back to keyword matching (but skip sports multi-game titles)
+    if "kxmve" in text or "multigame" in text or "crosscategory" in text:
+        return None  # These are sports bundles, not our markets
+
     for cat, keywords in CATEGORY_KEYWORDS.items():
         if cat in whitelist and any(kw in text for kw in keywords):
             return cat
