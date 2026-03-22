@@ -1,129 +1,364 @@
-PHASE 0: Project setup complete
-- Directory structure created
-- Git repo initialized
-- Python 3.14.0 venv created at .venv/
-- .gitignore configured
-- requirements.txt created
+KALBOT PROJECT STATUS — Last updated 2026-03-22 ~2:00 AM
+================================================================
 
-PHASE 1: Repos cloned, datasets downloaded
-- All 5 repos cloned to repos/
-  - prediction-market-analysis: 3.4M, 107 files
-  - tools-and-analysis: 394K, 37 files
-  - kalshi-data-collector: 47M, 60 files
-  - forecasting-tools: 50M, 330 files
-  - Awesome-Prediction-Market-Tools: 161K, 29 files
-- pykalshi installed (v0.5.0)
-- forecasting-tools installed (v0.2.85)
-- Jon-Becker dataset downloaded (36GB compressed, 7.68M markets)
-- kalshi-data-collector: requires Kalshi API key (deferred to Phase 5)
-- All Python dependencies installed
+WHAT THIS IS:
+Multi-strategy prediction market trading bot (Kalshi) + stock trading bot (Alpaca).
+Uses 3-model LLM ensemble (Perplexity + Claude + DeepSeek) with local model pre-filter.
+8 Kalshi strategies + 2 stock strategies, dynamically rebalanced.
 
-PHASE 2: Data cleaned, filtered, split 60/20/20
-- Total raw markets: 7,682,445
-- Resolved markets: 7,314,386
-- Date range: 2021-06-30 to 2025-11-23
-- Filtered to target categories: 22,907 resolved markets
-  - weather: 15,540
-  - inflation: 3,626
-  - tsa: 2,430
-  - economics: 1,311
-- Split (seed=42, stratified):
-  - Train: 13,743 (60%)
-  - Val: 4,582 (20%)
-  - Test: 4,582 (20%) — DO NOT TOUCH UNTIL CALIBRATION COMPLETE
-- Summaries: calibration/data_summary.txt, calibration/split_summary.txt
+================================================================
+PHASE 0-7: CORE BUILD (COMPLETE)
+================================================================
 
-PHASE 3: Ollama setup complete
-- Ollama v0.18.2 already installed
-- qwen2.5:14b already available (9.0 GB)
-- GPU: 16GB VRAM (NVIDIA)
-- test_ollama.py: PASS
-- Prompt template: prompts/local_filter.txt
+- Project at ~/kalbot with venv at .venv/
+- Git repo on master branch, ~30 commits
+- Python 3.14.0, all deps installed
+- Ollama v0.18.2 with qwen2.5:7b + llama3.1:8b for dual local filter
+- pykalshi v0.5.0 for Kalshi API (RSA-PSS auth)
+- alpaca-py for stock trading
 
-PHASE 4: Calibration framework complete
-- calibration/run_calibration.py (train set, --category flag)
-- calibration/run_validation.py (val set, --category flag)
-- calibration/compare.py (side-by-side with overfitting detection)
+================================================================
+DATA COLLECTED
+================================================================
 
-PHASE 5: Bot core files complete
-- bot/market_scanner.py (Kalshi API + public fallback)
-- bot/local_filter.py (Ollama + RSS headlines)
-- bot/cloud_analyst.py (DeepSeek + Gemini fallback)
-- bot/executor.py (paper/live with safety limits)
-- bot/run_night.py (overnight orchestration)
-- .env.example with all required keys
-
-PHASE 6: Morning review complete
-- bot/morning_review.py (--days flag for rolling summary)
-
-PHASE 7: Final checks
-- test_ollama.py: PASS
-- Market scanner: verified against Kalshi public API (440+ target events found)
-- Local filter: tested with 3 sample markets, JSON parsing works
-- .env.example: all keys documented
-- README.md: complete
-
-=== CALIBRATION RUNS ===
-
-Run 1: v1 prompt, 100 markets (25/cat), train set
-  Win rate: 79.0% | Brier: 0.1745
-  Weather: 88% | Economics: 84% | Inflation: 80% | TSA: 64%
-
-Run 2: v1 prompt, 800 markets (200/cat), train set
-  Win rate: 76.2% | Brier: 0.1850
-  Weather: 90.5% | Economics: 79% | Inflation: 76.5% | TSA: 59%
-
-Run 3: v2 prompt (structured), 200 markets, train set — WORSE
-  Win rate: 68.5% | Brier: 0.3054
-  Model echoed market price (avg gap 0.001). Discarded.
-
-Run 4: v3 prompt (independent), 200 markets, train set
-  Win rate: 74.0% | Brier: 0.1917
-  Better than v2, worse than v1.
-
-Run 5: v1 prompt, 400 markets (100/cat), VALIDATION set
-  Win rate: 72.0% | Brier: 0.2196
-  Weather: 79% | Economics: 77% | Inflation: 76% | TSA: 56%
-  Train-val gap: 4.2% (under 5% overfitting threshold)
-
-BEST PROMPT: v1 (prompts/local_filter.txt)
-
-=== ALL DATASETS (data/raw/) ===
-
-Prediction Markets:
-- Kalshi (Jon-Becker): 7.68M total markets, 22,907 in target categories
-- Polymarket (Jon-Becker): 383,707 closed, 10,332 target (weather/inflation/econ)
-- 2084Collective (HuggingFace): 995,913 total, 58,150 filtered target markets
-- KalshiBench (HuggingFace): 10,016 Kalshi markets + 5M trades
-- Manifold Markets: 1,000 resolved target questions
-- Kalshi API (direct): 17,312 recently closed
-- Good Judgment Project (Harvard Dataverse): 617 questions, 300K+ forecasts, 4 years
+Prediction Markets (data/raw/, gitignored, ~37GB+):
+- Jon-Becker dataset: 7.68M Kalshi + 383K Polymarket markets (36GB)
+- 2084Collective: 995,913 Kalshi markets from HuggingFace
+- NeurIPS forecasting: 48,754 questions from 5 platforms
+- Predibench: 8,763 LLM predictions from 19 models
+- Good Judgment Project: 617 questions + 300K+ forecasts (Harvard Dataverse)
+- FOReCAst: 2,129 Metaculus questions
+- Manifold Markets: 1,000 resolved questions
 
 Weather Ground Truth:
-- Open-Meteo: 8 cities x 5 years daily high/low/precip (14,608 records)
-- NOAA GHCN-D: 8 stations (NYC, Chicago, Miami, Houston, LA, Denver, Phoenix, Seattle), decades of daily obs
-- NWS Verification: forecast accuracy stats
-
-Economic Indicators:
-- FRED: 15 series (CPI, payrolls, unemployment, fed funds, GDP, PCE, claims, yields, sentiment)
-- BLS API: CPI-U, nonfarm payrolls direct
-- Philly Fed SPF: probability distributions CPI/GDP since 1968
-- Atlanta Fed GDPNow: historical nowcast vintages
-- ALFRED: GDP revision data (advance vs final)
-- UMich Consumer Sentiment: monthly since 2015
-- Treasury Yields: 1Y/2Y/5Y/10Y/30Y daily since 2015
-
-TSA:
+- Open-Meteo: 8 cities x 5yr daily temps
+- Open-Meteo Historical Forecasts: 8 cities, forecast vs actual 2024
+- NOAA GHCN-D: 8 stations, decades of daily obs
+- Iowa Mesonet METAR: 8 airports, 210K hourly obs (2023-2025)
 - TSA.gov: 7 years daily passenger volumes (2019-2025)
 
-Combined training set: 24,075 markets (Kalshi + Polymarket)
-Total additional markets available: 58,150+ (2084Collective)
+Economic Indicators:
+- FRED: 15+ series (CPI, payrolls, rates, yields, GDP, PCE, claims)
+- Philly Fed SPF: probability distributions since 1968
+- Atlanta Fed GDPNow, Cleveland Fed Nowcast
+- BLS API data, WSJ Economic Surveys (4 quarters)
+- Treasury yield curve (Treasury.gov)
 
-=== KEY FINDINGS ===
+Financial:
+- VIX, SKEW, S&P 500 daily (FRED + yfinance)
+- Bitcoin daily (yfinance + CoinGecko)
+- Empirical return distributions computed and saved
 
-1. Weather is our strongest category (79-90% WR, 0.07-0.19 Brier)
-2. TSA is weakest (56-64% WR) — needs domain-specific prompt or TSA ground truth integration
-3. Model generalizes well (train-val gap < 5%)
-4. High-gap accuracy on validation only 36% — model doesn't reliably beat market when it disagrees
-5. v1 prompt outperforms v2/v3 — simple > structured for this model
-6. Average confidence too low (0.41) — model is too uncertain, which is actually conservative/safe
+================================================================
+TRAINING RESULTS (COMPLETE)
+================================================================
+
+Full training: 13,743 markets, v1 prompt (prompts/local_filter.txt)
+  Overall: 83.5% WR, 0.1398 Brier
+  Weather:   9,323 markets, 89.1% WR, 0.1061 Brier
+  Economics:   787 markets, 81.4% WR, 0.1800 Brier
+  Inflation: 2,175 markets, 75.1% WR, 0.2153 Brier
+  TSA:       1,458 markets, 61.1% WR, 0.2205 Brier
+
+Training DB: logs/fast_cal_train_local_filter_20260321_165542.sqlite
+
+Validation (IN PROGRESS ~23% as of 2AM 3/22):
+  DB: logs/fast_cal_val_local_filter_20260322_012613.sqlite
+  Auto-chain will start 48hr paper trading when validation finishes
+
+Weather-specific prompt (prompts/v4_weather.txt):
+  Validation: 87% WR, 0.115 Brier (vs 79% with generic prompt)
+
+Superforecaster prompt (prompts/v5_superforecaster.txt):
+  From jannalulu/llm-forecast ($3K Metaculus winner)
+  Not yet tested — available for calibration runs
+
+Kalshi Market Bias (calibration/kalshi_market_bias.json):
+  20-50c markets systematically overprice YES by 6-10%
+  Integrated into executor for confidence boosting
+
+================================================================
+API KEYS CONFIGURED (.env, gitignored)
+================================================================
+
+- KALSHI_API_KEY: 8680823e... (key ID)
+- KALSHI_PRIVATE_KEY: kalshi_private_key.pem (RSA key, gitignored)
+- PERPLEXITY_API_KEY: pplx-pps... (Sonar Pro, web search)
+- ANTHROPIC_API_KEY: sk-ant-api03-... (Claude Sonnet 4)
+- DEEPSEEK_API_KEY: sk-4387... (DeepSeek Reasoner)
+- ALPACA_API_KEY: PKZOEPY4... (paper trading)
+- ALPACA_SECRET_KEY: AxcKxz... (paper trading)
+- PAPER_TRADE=true (Kalshi)
+- ALPACA_PAPER=true (stocks)
+
+Kalshi balance: $50 real money (PAPER_TRADE=true, no real trades yet)
+Alpaca balance: $100K paper money
+
+================================================================
+KALSHI BOT ARCHITECTURE (bot/)
+================================================================
+
+Every 5 minutes:
+├── Kill switch check (~/kalbot/STOP file)
+├── Pre-trade checks:
+│   ├── Early exit: sell winners (60% profit), cut losers (30% loss)
+│   ├── Polymarket signal: detect sharp PM moves → trade on Kalshi
+│   ├── Market maker: spread orders on thin weather markets
+│   └── Data sniper: pre-research upcoming CPI/payrolls/FOMC
+│
+├── Quantitative strategies (each has its own module):
+│   ├── SP500 (sp500_strategy.py): VIX-implied brackets, VRP haircut
+│   ├── ECON (econ_strategy.py): Cleveland Fed + GDPNow + FedWatch
+│   ├── BITCOIN (bitcoin_strategy.py): DVOL + jump-diffusion Monte Carlo
+│   ├── TREASURY (treasury_strategy.py): yield change distribution
+│   ├── GAS (gas_strategy.py): EIA weekly + crude correlation
+│   └── FOREX (forex_strategy.py): implied vol bracket pricing
+│
+├── Ensemble strategies (local filter → cloud analyst → executor):
+│   ├── WEATHER: dual local model filter → Perplexity + Claude + DeepSeek
+│   └── WILDCARD: all categories, big mispricings, breaking news
+│
+├── Ensemble analyst (ensemble_analyst.py):
+│   ├── Perplexity researches (live web search)
+│   ├── Claude evaluates independently
+│   ├── DeepSeek evaluates independently
+│   ├── Adaptive Brier-score reweighting per model per category
+│   ├── Consensus required (all agree on direction)
+│   └── Calibration pipeline: Platt scaling → edge dampening → spread penalty
+│
+├── Executor (executor.py):
+│   ├── Kill switch check
+│   ├── Kelly criterion position sizing (quarter-Kelly)
+│   ├── Category-specific confidence thresholds
+│   ├── Historical bias adjustment (Kalshi YES overpricing)
+│   ├── Correlation guard (max 2 per weather city group)
+│   ├── Edge dampening (>18% edges are unreliable)
+│   └── Paper/live mode
+│
+├── Strategy rebalancer (strategy_rebalancer.py):
+│   ├── Shifts budget toward winning strategies
+│   ├── 10% min, 70% max per strategy
+│   ├── Rolling 7-day performance window
+│   └── Recalculates every cycle
+│
+├── Auto-scaler (auto_scaler.py):
+│   ├── $50 → $200 → $500 → $1,000 as win rate proves out
+│   └── Auto-downgrades if recent WR < 55%
+│
+├── Weekly repo scanner (weekly_repo_scan.py):
+│   └── Sundays ~6AM: git pull 15 tracked repos, flag changes
+│
+└── Default allocations:
+    WEATHER 30%, SP500 20%, BITCOIN 12%, WILDCARD 12%,
+    ECON 8%, TREASURY 8%, GAS 5%, FOREX 5%
+
+================================================================
+STOCK BOT ARCHITECTURE (stock_bot/)
+================================================================
+
+During market hours (9:30-4:00 ET):
+├── Blue Chip / ETF Strategy (blue_chip_strategy.py):
+│   ├── 30+ stock watchlist (AAPL, MSFT, SPY, QQQ, etc)
+│   ├── Technical ensemble: trend(0.25), mean_reversion(0.20),
+│   │   momentum(0.25), volatility(0.15), stat_arb(0.15)
+│   ├── Fundamental scoring (ROE, P/E, margins, debt)
+│   ├── Combined: technicals 60% + fundamentals 40%
+│   ├── Top 5 → ensemble LLM (Perplexity + Claude)
+│   └── Swing trades (hold 2-5 days, PDT-safe)
+│
+├── Penny Stock Momentum (enhanced_scanner.py):
+│   ├── Volume spikes (finviz relative volume >3x)
+│   ├── Gap-ups (>5% premarket)
+│   ├── Short squeezes (>15% short float + volume)
+│   ├── Reddit sentiment (r/pennystocks + VADER)
+│   ├── Insider buying (SEC filings)
+│   └── Multi-signal boost (2+ signals = priority)
+│
+├── Trade memory (trade_memory.py):
+│   ├── BM25 lexical matching for similar past trades
+│   ├── Stores situation → action → outcome → lesson
+│   └── Injects past lessons into LLM prompts
+│
+└── Safety: 10% stop-loss, 20% take-profit, SWING_MODE=true
+
+================================================================
+SAFETY & SECURITY
+================================================================
+
+Kill switch: create ~/kalbot/STOP to halt ALL trading instantly
+API keys: all in .env (gitignored), no hardcoded secrets
+Key files: .pem, .key, recovery files all gitignored
+Budget caps: per-strategy allocation, quant budget capped
+API timeouts: 60s on all cloud calls
+SQL: parameterized queries (fixed injection in auto_scaler)
+PDT protection: SWING_MODE=true for sub-$25K accounts
+
+================================================================
+REPOS CLONED (repos/, gitignored)
+================================================================
+
+Core:
+- prediction-market-analysis (Jon-Becker) — data + analysis scripts
+- tools-and-analysis (Kalshi official) — API examples
+- kalshi-data-collector (harrodyuan) — data pipeline
+- forecasting-tools (Metaculus) — bot framework + optimizer
+- Awesome-Prediction-Market-Tools — curated tool list
+
+Trading bots (studied and patterns integrated):
+- weatherbots (JHenzi) — per-city MAE, source weighting
+- kalshi-ai-trading-bot (ryanfrigo) — 5-model ensemble, Safe Compounder
+- kalshi-trading-mcp (alexandermazza) — weather MCP, edge dampening
+- Fully-Autonomous-Polymarket-AI-Trading-Bot — Platt scaling, adaptive weights
+- llm-forecast (jannalulu) — $3K Metaculus winner prompts
+
+Quant:
+- kalshi-trading (quantgalore) — S&P RandomForest brackets
+- kalshi-market-making (nikhilnd) — Cauchy distribution market maker
+- Kalshi_Crypto_Monte_Carlo (sansen405) — jump-diffusion for BTC
+- kalshi_crypto (bsun1220) — Binance options-implied pricing
+- polymarket-kalshi-weather-bot (suislanchez) — GFS ensemble
+
+Stock:
+- ai-hedge-fund (virattt, 49K stars) — 18-agent architecture
+- TradingAgents (TauricResearch, 35K stars) — bull/bear debate + BM25 memory
+- UnusualVolumeDetector — volume spike detection
+
+================================================================
+KEY FINDINGS FROM REPO ANALYSIS
+================================================================
+
+1. Economic AI trades had -70% ROI in ryanfrigo's bot (78% of losses)
+   → Our econ strategy requires >12% edge, very conservative
+2. NO-side only was the ONLY consistently profitable Kalshi strategy
+   → NO_SIDE_PREFERENCE flag added
+3. Edge paradox: edges >18% correlate with LOWER win rate
+   → Edge dampening at 18% threshold integrated
+4. NWS-only recommended for weather (Open-Meteo 2-4F off)
+   → Station mapping added, NWS timing multipliers
+5. Kalshi markets 20-50c overprice YES by 6-10% (7.3M market analysis)
+   → Bias adjustment integrated into executor
+6. VIX overestimates actual S&P vol ~60% of the time
+   → VRP haircut applied in S&P strategy
+7. Cauchy distribution better than normal for S&P/BTC (fat tails)
+   → Jump-diffusion Monte Carlo for BTC brackets
+
+================================================================
+WHAT'S RUNNING RIGHT NOW (as of 2AM 3/22/2026)
+================================================================
+
+1. Validation calibration: ~23% done, will take ~45 more min
+   → Auto-chain starts 48hr Kalshi paper trading when done
+2. Stock bot: running, waiting for market open Monday 9:30 ET
+3. Training: COMPLETE (13,743/13,743)
+
+================================================================
+NEXT STEPS
+================================================================
+
+Immediate (happening automatically):
+- Validation finishes → 48hr Kalshi paper trading begins
+- Monday 9:30 ET → stock bot starts scanning + trading (paper)
+
+After 48hr paper trade:
+- Run morning_review.py to see results
+- If Kalshi WR >58%: proven edge, consider going live
+- If stocks show positive paper P&L: continue paper for 1 week
+
+Before going live with real money:
+- Fix auto-scaler to use actual P&L (not confidence proxy)
+- Switch stop-losses to server-side bracket orders
+- Set up Task Scheduler (start_all.bat) for auto-restart
+- Consider: start with weather-only on Kalshi (strongest edge)
+
+To check status anytime:
+- python bot/morning_review.py
+- python bot/morning_review.py --days 7
+- Check logs/latest_checkin.txt
+- Check logs/*.sqlite for raw data
+
+To emergency stop:
+- Create file: ~/kalbot/STOP
+- Or kill Python processes manually
+
+================================================================
+FILE STRUCTURE
+================================================================
+
+kalbot/
+├── bot/                        # Kalshi prediction market bot
+│   ├── dual_strategy.py        # Main runner (8 strategies)
+│   ├── market_scanner.py       # Kalshi API market polling
+│   ├── local_filter.py         # Dual model filter (qwen+llama)
+│   ├── ensemble_analyst.py     # 3-model cloud ensemble
+│   ├── cloud_analyst.py        # Single-model fallback
+│   ├── executor.py             # Trade execution + Kelly sizing
+│   ├── calibration_pipeline.py # Platt + edge dampening
+│   ├── adaptive_weights.py     # Brier-score model reweighting
+│   ├── correlation_guard.py    # Weather city correlation limits
+│   ├── auto_scaler.py          # Budget tier scaling
+│   ├── strategy_rebalancer.py  # Dynamic allocation shifts
+│   ├── price_tracker.py        # Price movement detection
+│   ├── early_exit.py           # Profit taking + stop loss
+│   ├── market_maker.py         # Spread capture on thin markets
+│   ├── data_sniper.py          # Pre-position on data releases
+│   ├── polymarket_signal.py    # PM price moves as Kalshi signal
+│   ├── sp500_strategy.py       # S&P bracket pricing
+│   ├── bitcoin_strategy.py     # BTC jump-diffusion brackets
+│   ├── econ_strategy.py        # Nowcast-based econ trading
+│   ├── treasury_strategy.py    # Yield bracket pricing
+│   ├── gas_strategy.py         # EIA gas price strategy
+│   ├── forex_strategy.py       # FX bracket pricing
+│   ├── kill_switch.py          # Emergency stop
+│   ├── morning_review.py       # Overnight summary report
+│   ├── run_night.py            # Single-strategy runner
+│   └── weekly_repo_scan.py     # Sunday repo update checker
+│
+├── stock_bot/                  # Alpaca stock trading bot
+│   ├── run_stock_bot.py        # Main runner
+│   ├── alpaca_executor.py      # Alpaca API (alpaca-py)
+│   ├── blue_chip_strategy.py   # Real stock swing trades
+│   ├── enhanced_scanner.py     # 5-signal penny scanner
+│   ├── penny_scanner.py        # Basic momentum scanner
+│   ├── stock_analyst.py        # Ensemble LLM stock analysis
+│   ├── technicals.py           # 5-strategy technical ensemble
+│   └── trade_memory.py         # BM25 learning from past trades
+│
+├── calibration/                # Calibration scripts + results
+│   ├── run_fast_calibration.py # Fast parallel calibration
+│   ├── run_persistent.py       # Self-restarting calibration
+│   ├── run_calibration.py      # Original calibration script
+│   ├── run_validation.py       # Validation runner
+│   ├── compare.py              # Train vs val comparison
+│   ├── extract_and_process.py  # Data extraction + splitting
+│   ├── pull_additional_data.py # Additional data sources
+│   ├── enrich_with_trades.py   # Trade history enrichment
+│   ├── test_ollama.py          # Ollama connectivity test
+│   ├── kalshi_market_bias.json # 7.3M market calibration bias
+│   ├── financial_distributions.json # S&P + BTC return distributions
+│   ├── data_summary.txt        # Dataset overview
+│   └── split_summary.txt       # Train/val/test split counts
+│
+├── data/
+│   ├── raw/                    # All downloaded datasets (gitignored)
+│   ├── splits/                 # train/val/test parquet files
+│   └── live/                   # Live market snapshots
+│
+├── prompts/                    # LLM prompt templates
+│   ├── local_filter.txt        # v1 (best overall, used for training)
+│   ├── v2_structured.txt       # v2 (too anchored, discarded)
+│   ├── v3_independent.txt      # v3 (middle, not used)
+│   ├── v4_weather.txt          # v4 (weather-specific, 87% WR)
+│   └── v5_superforecaster.txt  # v5 (Tetlock principles, untested)
+│
+├── logs/                       # SQLite DBs + run logs (gitignored)
+├── repos/                      # Cloned reference repos (gitignored)
+├── start_all.bat               # Windows auto-start script
+├── start_after_training.py     # Auto-chain: train → validate → trade
+├── .env                        # API keys (gitignored)
+├── .env.example                # Template with empty keys
+├── kalshi_private_key.pem      # RSA key (gitignored)
+├── alpaca_recovery.txt         # Recovery code (gitignored)
+├── .gitignore                  # Comprehensive exclusions
+├── requirements.txt            # Python dependencies
+├── README.md                   # Project documentation
+└── progress.txt                # THIS FILE
