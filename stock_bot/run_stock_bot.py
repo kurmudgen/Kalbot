@@ -186,6 +186,18 @@ def main():
     print(f"{'='*50}")
 
     while True:
+        # Kill switch
+        try:
+            import sys
+            sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "bot"))
+            from kill_switch import is_killed
+            if is_killed():
+                print(f"  HALTED: Kill switch active. Delete ~/kalbot/STOP to resume.")
+                time.sleep(60)
+                continue
+        except Exception:
+            pass
+
         try:
             if is_market_open():
                 print(f"\n  {datetime.now().strftime('%H:%M')} — Market OPEN, running cycle...")

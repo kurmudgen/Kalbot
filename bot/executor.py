@@ -111,6 +111,16 @@ def get_analyst_scores() -> list[dict]:
 
 
 def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> list[dict]:
+    # Kill switch check
+    try:
+        from kill_switch import should_trade
+        ok, reason = should_trade()
+        if not ok:
+            print(f"  HALTED: {reason}")
+            return []
+    except Exception:
+        pass
+
     if scores is None:
         scores = get_analyst_scores()
 

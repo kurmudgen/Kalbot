@@ -225,6 +225,17 @@ def main():
             print(f"  CYCLE {totals['cycles']} — {datetime.now(timezone.utc).isoformat()[:19]}")
             print(f"{'='*40}")
 
+            # Kill switch check
+            try:
+                from kill_switch import should_trade
+                ok, reason = should_trade()
+                if not ok:
+                    print(f"\n  !!! {reason} — skipping this cycle !!!")
+                    time.sleep(LOOP_INTERVAL)
+                    continue
+            except Exception:
+                pass
+
             # Step 0: Check for early exits on open positions
             try:
                 from early_exit import check_all_positions
@@ -295,11 +306,19 @@ def main():
                 except Exception as e:
                     print(f"  {strat_name} error: {e}")
 
-            # Execute quant signals through the executor
+            # Execute quant signals through the executor (budget-limited)
             if all_quant_signals:
                 try:
                     from executor import execute_trades
+                    # Cap quant budget to sum of quant strategy allocations
+                    quant_budget = sum(
+                        total_budget * allocs.get(s, 0.05)
+                        for s in QUANT_STRATEGIES
+                    )
+                    orig_spend = os.environ.get("MAX_NIGHTLY_SPEND", "50")
+                    os.environ["MAX_NIGHTLY_SPEND"] = str(quant_budget)
                     quant_trades = execute_trades(all_quant_signals, session_id=f"{session_id}_QUANT")
+                    os.environ["MAX_NIGHTLY_SPEND"] = orig_spend
                 except Exception as e:
                     print(f"  Quant execution error: {e}")
 

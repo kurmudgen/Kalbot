@@ -32,12 +32,16 @@ def get_live_stats(days: int = None) -> dict:
     conn = sqlite3.connect(DECISIONS_DB)
 
     # Count days of live trading
-    query = "SELECT * FROM decisions WHERE mode = 'LIVE' AND executed = 1"
     if days:
         cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
-        query += f" AND decided_at > '{cutoff}'"
-
-    rows = conn.execute(query).fetchall()
+        rows = conn.execute(
+            "SELECT * FROM decisions WHERE mode = 'LIVE' AND executed = 1 AND decided_at > ?",
+            (cutoff,),
+        ).fetchall()
+    else:
+        rows = conn.execute(
+            "SELECT * FROM decisions WHERE mode = 'LIVE' AND executed = 1"
+        ).fetchall()
     conn.close()
 
     if not rows:

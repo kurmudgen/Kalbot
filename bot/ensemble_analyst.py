@@ -115,11 +115,11 @@ def get_filtered_markets() -> list[dict]:
 
 def _call_openai_compatible(api_key: str, base_url: str, model: str,
                              messages: list, temperature: float = 0.3) -> str | None:
-    """Generic OpenAI-compatible API call."""
+    """Generic OpenAI-compatible API call with timeout."""
     try:
         from openai import OpenAI
 
-        client = OpenAI(api_key=api_key, base_url=base_url)
+        client = OpenAI(api_key=api_key, base_url=base_url, timeout=60.0)
         response = client.chat.completions.create(
             model=model,
             messages=messages,
@@ -168,7 +168,7 @@ def call_claude(prompt: str) -> dict | None:
     try:
         import anthropic
 
-        client = anthropic.Anthropic(api_key=api_key)
+        client = anthropic.Anthropic(api_key=api_key, timeout=60.0)
         response = client.messages.create(
             model="claude-sonnet-4-20250514",
             max_tokens=300,

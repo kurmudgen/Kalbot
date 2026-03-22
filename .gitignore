@@ -5,10 +5,11 @@ __pycache__/
 *.pem
 *.key
 kalshi_private_key*
+alpaca_recovery*
 data/raw/
 data/live/
 repos/
-logs/*.sqlite
+logs/
 *.egg-info/
 dist/
 build/
