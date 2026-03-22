@@ -90,9 +90,14 @@ def run_cycle(session_id: str) -> dict:
         print(f"  Max positions ({MAX_POSITIONS}) reached, skipping scan")
         return stats
 
-    # Scan for candidates
+    # Scan for candidates (enhanced multi-signal scanner)
     print("  Scanning for momentum plays...")
-    candidates = find_momentum_plays()
+    try:
+        from enhanced_scanner import run_enhanced_scan
+        candidates = run_enhanced_scan()
+    except Exception:
+        from penny_scanner import find_momentum_plays
+        candidates = find_momentum_plays()
     stats["scanned"] = len(candidates)
 
     if not candidates:
