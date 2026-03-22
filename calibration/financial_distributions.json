@@ -1,0 +1,31 @@
+{
+    "description": "Empirical daily return distributions for S&P 500 and Bitcoin, used for pricing bracket markets on Kalshi",
+    "computed": "2026-03-21",
+    "sp500": {
+        "period": "2015-2026",
+        "mean_abs_return_pct": 0.73,
+        "exceedance_rates": {
+            "0.5": 0.496,
+            "1.0": 0.246,
+            "1.5": 0.117,
+            "2.0": 0.059,
+            "3.0": 0.020,
+            "5.0": 0.005
+        },
+        "note": "VIX/16 gives daily 1-sigma expected move. VIX overestimates actual vol ~60% of time (volatility risk premium). Markets priced at VIX-implied levels tend to overpay for insurance."
+    },
+    "bitcoin": {
+        "period": "2017-2026",
+        "mean_abs_return_pct": 2.40,
+        "exceedance_rates": {
+            "1.0": 0.631,
+            "2.0": 0.411,
+            "3.0": 0.270,
+            "5.0": 0.128,
+            "7.0": 0.061,
+            "10.0": 0.025
+        },
+        "note": "DVOL/sqrt(365) gives daily expected move. BTC has fat tails — use Cauchy or Student-t distribution, not normal. Regime-switching: calm periods have much lower vol than average."
+    },
+    "strategy_implication": "For S&P brackets: short-volatility bias works most of the time (VIX overestimates). For BTC: wider brackets are safer due to fat tails. Both: condition on current VIX/DVOL level, not unconditional distributions."
+}
