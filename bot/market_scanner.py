@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True)
 
 SCAN_INTERVAL = 300  # 5 minutes
 DB_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "live", "markets.sqlite")

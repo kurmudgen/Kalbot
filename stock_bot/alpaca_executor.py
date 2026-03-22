@@ -17,7 +17,7 @@ from datetime import datetime, timezone
 
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True)
 
 STOCK_DECISIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "stock_decisions.sqlite")
 

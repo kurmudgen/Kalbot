@@ -18,7 +18,7 @@ from datetime import datetime, timezone, timedelta
 import numpy as np
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True)
 
 SCANNER_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "enhanced_scanner.sqlite")
 

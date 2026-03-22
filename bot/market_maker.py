@@ -15,7 +15,7 @@ from datetime import datetime, timezone, timedelta
 
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True)
 
 MARKETS_DB = os.path.join(os.path.dirname(__file__), "..", "data", "live", "markets.sqlite")
 MM_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "market_making.sqlite")

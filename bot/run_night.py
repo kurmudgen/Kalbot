@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True)
 
 sys.path.insert(0, os.path.dirname(__file__))
 

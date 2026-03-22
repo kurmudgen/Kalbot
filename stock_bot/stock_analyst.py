@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True)
 
 
 RESEARCH_PROMPT = """You are a stock analyst evaluating a penny stock momentum play.

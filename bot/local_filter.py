@@ -17,7 +17,7 @@ import feedparser
 import requests
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True)
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODELS = ["qwen2.5:7b"]  # Single model for speed (dual was too slow for 6K+ markets)

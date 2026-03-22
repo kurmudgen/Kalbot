@@ -3,7 +3,7 @@ REM KalBot Auto-Start Script
 REM Starts both Kalshi and Stock bots
 REM Called by Windows Task Scheduler on login
 
-cd /d C:\Users\Jacob\kalbot
+cd /d S:\kalbot
 
 REM Start Kalshi bot (runs 24/7)
 start /min "KalBot-Kalshi" .venv\Scripts\python.exe bot\dual_strategy.py

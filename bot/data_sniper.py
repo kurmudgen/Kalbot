@@ -20,7 +20,7 @@ from datetime import datetime, timezone, timedelta
 import requests
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True)
 
 SNIPER_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "sniper.sqlite")
 

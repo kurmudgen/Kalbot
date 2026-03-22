@@ -19,7 +19,7 @@ from datetime import datetime, timezone, timedelta
 
 from dotenv import load_dotenv
 
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True)
 
 BLUECHIP_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "bluechip_strategy.sqlite")
 
