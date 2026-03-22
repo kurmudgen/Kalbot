@@ -75,13 +75,33 @@ def load_prompt_template() -> str:
 
 
 def get_open_markets() -> list[dict]:
+    """Get open markets that haven't been scored in the last hour."""
     if not os.path.exists(MARKETS_DB):
         return []
+
     conn = sqlite3.connect(MARKETS_DB)
     conn.row_factory = sqlite3.Row
-    rows = conn.execute("SELECT * FROM markets WHERE status = 'open'").fetchall()
+
+    # Get already-scored tickers (within last hour) to skip
+    scored_tickers = set()
+    if os.path.exists(SCORES_DB):
+        scores_conn = sqlite3.connect(SCORES_DB)
+        recent = scores_conn.execute(
+            "SELECT ticker FROM filter_scores WHERE scored_at > datetime('now', '-1 hour')"
+        ).fetchall()
+        scored_tickers = {r[0] for r in recent}
+        scores_conn.close()
+
+    rows = conn.execute("SELECT * FROM markets WHERE status IN ('open', 'active')").fetchall()
     conn.close()
-    return [dict(r) for r in rows]
+
+    # Filter out recently scored
+    markets = [dict(r) for r in rows if r["ticker"] not in scored_tickers]
+
+    if scored_tickers:
+        print(f"  Skipping {len(scored_tickers)} recently scored, {len(markets)} to score")
+
+    return markets
 
 
 def query_ollama(prompt: str, model: str = None) -> dict | None:
