@@ -134,15 +134,8 @@ def scan_markets(conn: sqlite3.Connection) -> int:
             except Exception:
                 pass
 
-        # Also do a general keyword scan (smaller batch)
-        try:
-            general = client.get_markets(
-                status=MarketStatus.OPEN,
-                limit=200,
-            )
-            all_markets.extend(general)
-        except Exception:
-            pass
+        # Skip general scan — it pulls thousands of junk sports markets
+        # with null prices. The targeted series scan above is sufficient.
 
         for m in all_markets:
             cat = classify_market(m.title or "", m.event_ticker or "", "")
