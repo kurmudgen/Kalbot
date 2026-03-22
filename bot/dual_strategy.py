@@ -336,6 +336,16 @@ def main():
             if totals["cycles"] > 1 and elapsed_sec % CHECKIN_INTERVAL < LOOP_INTERVAL:
                 print_checkin(totals, start_time.isoformat(), session_id)
 
+            # Weekly repo scan (Sundays at ~6AM)
+            now_local = datetime.now()
+            if now_local.weekday() == 6 and 6 <= now_local.hour < 7 and totals["cycles"] % 12 == 1:
+                try:
+                    from weekly_repo_scan import run_weekly_scan
+                    print("\n--- WEEKLY REPO SCAN ---")
+                    run_weekly_scan()
+                except Exception as e:
+                    print(f"  Repo scan error: {e}")
+
             print(f"\nSleeping {LOOP_INTERVAL}s...")
             time.sleep(LOOP_INTERVAL)
 
