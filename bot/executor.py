@@ -150,22 +150,25 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
             print(f"    conf={cloud_conf:.2f} gap={price_gap:.2f} price={market_price:.2f}")
         else:
             try:
-                from pykalshi import HttpClient
+                from pykalshi import KalshiClient, Side as KalshiSide, OrderType
 
-                client = HttpClient(
-                    api_key=os.getenv("KALSHI_API_KEY", ""),
-                    private_key=os.getenv("KALSHI_PRIVATE_KEY", ""),
+                pk_path = os.getenv("KALSHI_PRIVATE_KEY", "")
+                if not os.path.isabs(pk_path):
+                    pk_path = os.path.join(os.path.dirname(__file__), "..", pk_path)
+
+                client = KalshiClient(
+                    api_key_id=os.getenv("KALSHI_API_KEY", ""),
+                    private_key_path=pk_path,
                 )
-                # Place market order
                 contracts = max(1, int(amount / (market_price * 100)))
-                order_side = "yes" if side == "YES" else "no"
-                client.create_order(
+                order_side = KalshiSide.YES if side == "YES" else KalshiSide.NO
+                client.portfolio.create_order(
                     ticker=ticker,
                     side=order_side,
-                    action="buy",
-                    type="market",
+                    type=OrderType.MARKET,
                     count=contracts,
                 )
+                client.close()
                 executed = True
                 print(f"  LIVE TRADE: {side} ${amount:.2f} ({contracts} contracts) on {title[:50]}...")
             except Exception as e:

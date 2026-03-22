@@ -2,6 +2,9 @@
 __pycache__/
 *.pyc
 .env
+*.pem
+*.key
+kalshi_private_key*
 data/raw/
 data/live/
 repos/

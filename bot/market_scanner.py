@@ -85,64 +85,67 @@ def init_db() -> sqlite3.Connection:
 
 def scan_markets(conn: sqlite3.Connection) -> int:
     try:
-        from pykalshi import HttpClient
+        from pykalshi import KalshiClient, MarketStatus
 
         api_key = os.getenv("KALSHI_API_KEY", "")
-        private_key = os.getenv("KALSHI_PRIVATE_KEY", "")
+        private_key_path = os.getenv("KALSHI_PRIVATE_KEY", "")
 
-        if not api_key or not private_key:
-            # Fall back to public endpoint if no auth
+        if not api_key or not private_key_path:
             return scan_markets_public(conn)
 
-        client = HttpClient(
-            api_key=api_key,
-            private_key=private_key,
+        # Resolve relative path from project root
+        if not os.path.isabs(private_key_path):
+            private_key_path = os.path.join(
+                os.path.dirname(__file__), "..", private_key_path
+            )
+
+        client = KalshiClient(
+            api_key_id=api_key,
+            private_key_path=private_key_path,
         )
 
-        cursor = None
         total = 0
-        while True:
-            params = {"status": "open", "limit": 200}
-            if cursor:
-                params["cursor"] = cursor
+        markets = client.get_markets(
+            status=MarketStatus.OPEN,
+            limit=200,
+            fetch_all=True,
+        )
 
-            response = client.get_markets(**params)
-            markets = response.get("markets", [])
-            cursor = response.get("cursor")
+        for m in markets:
+            cat = classify_market(m.title or "", m.event_ticker or "", "")
+            if cat is None:
+                continue
 
-            for m in markets:
-                cat = classify_market(m.get("title", ""), m.get("event_ticker", ""), m.get("category", ""))
-                if cat is None:
-                    continue
+            # Convert dollars to cents for consistency
+            yes_bid = int(float(m.yes_bid_dollars or 0) * 100)
+            yes_ask = int(float(m.yes_ask_dollars or 0) * 100)
+            last_price = int(float(m.last_price_dollars or 0) * 100)
 
-                conn.execute(
-                    """INSERT OR REPLACE INTO markets
-                       (ticker, event_ticker, title, category, status,
-                        yes_bid, yes_ask, last_price, volume, open_interest,
-                        close_time, fetched_at)
-                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-                    (
-                        m.get("ticker"),
-                        m.get("event_ticker"),
-                        m.get("title"),
-                        cat,
-                        m.get("status"),
-                        m.get("yes_bid"),
-                        m.get("yes_ask"),
-                        m.get("last_price"),
-                        m.get("volume"),
-                        m.get("open_interest"),
-                        m.get("close_time"),
-                        datetime.now(timezone.utc).isoformat(),
-                    ),
-                )
-                total += 1
+            conn.execute(
+                """INSERT OR REPLACE INTO markets
+                   (ticker, event_ticker, title, category, status,
+                    yes_bid, yes_ask, last_price, volume, open_interest,
+                    close_time, fetched_at)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (
+                    m.ticker,
+                    m.event_ticker,
+                    m.title,
+                    cat,
+                    m.status.value if m.status else "open",
+                    yes_bid,
+                    yes_ask,
+                    last_price,
+                    int(m.volume_fp or 0),
+                    int(m.open_interest_fp or 0),
+                    str(m.close_time) if m.close_time else None,
+                    datetime.now(timezone.utc).isoformat(),
+                ),
+            )
+            total += 1
 
-            conn.commit()
-
-            if not cursor or not markets:
-                break
-
+        conn.commit()
+        client.close()
         return total
 
     except ImportError:
