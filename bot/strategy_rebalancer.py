@@ -20,9 +20,14 @@ from datetime import datetime, timezone, timedelta
 DECISIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "decisions.sqlite")
 
 DEFAULT_ALLOCATIONS = {
-    "SAFE": 0.50,
-    "SP500_ECON": 0.25,
-    "WILDCARD": 0.25,
+    "WEATHER": 0.25,
+    "SP500": 0.15,
+    "ECON": 0.15,
+    "BITCOIN": 0.10,
+    "TREASURY": 0.10,
+    "GAS": 0.05,
+    "FOREX": 0.05,
+    "WILDCARD": 0.15,
 }
 
 MIN_ALLOCATION = 0.10

@@ -23,37 +23,34 @@ SESSIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "sessions.sq
 LOOP_INTERVAL = 300  # 5 minutes
 RUN_DURATION_HOURS = float(os.getenv("RUN_DURATION_HOURS", "0"))
 
-# Budget split: 50% safe, 25% S&P/econ, 25% wildcard
-SAFE_BUDGET_FRACTION = 0.50
-SP500_ECON_BUDGET_FRACTION = 0.25
-WILDCARD_BUDGET_FRACTION = 0.25
-
-# Strategy configs
-SAFE_CONFIG = {
-    "name": "SAFE",
-    "categories": ["weather"],
-    "confidence_min": 0.65,
-    "price_gap_min": 0.06,
-    "expiry_hours": 48,
-    "kelly_fraction": 0.30,
+# All strategy configs — rebalancer shifts budget between these
+STRATEGIES = {
+    "WEATHER": {
+        "name": "WEATHER",
+        "categories": ["weather"],
+        "confidence_min": 0.65,
+        "price_gap_min": 0.06,
+        "expiry_hours": 48,
+        "kelly_fraction": 0.30,
+    },
+    "WILDCARD": {
+        "name": "WILDCARD",
+        "categories": ["economics", "inflation", "tsa", "weather"],
+        "confidence_min": 0.80,
+        "price_gap_min": 0.12,
+        "expiry_hours": 168,
+        "kelly_fraction": 0.15,
+    },
 }
 
-SP500_ECON_CONFIG = {
-    "name": "SP500_ECON",
-    "categories": ["economics", "inflation", "sp500"],
-    "confidence_min": 0.70,
-    "price_gap_min": 0.08,
-    "expiry_hours": 24,   # Daily brackets expire same day
-    "kelly_fraction": 0.20,
-}
-
-WILDCARD_CONFIG = {
-    "name": "WILDCARD",
-    "categories": ["economics", "inflation", "tsa", "weather"],
-    "confidence_min": 0.80,
-    "price_gap_min": 0.12,
-    "expiry_hours": 168,
-    "kelly_fraction": 0.15,
+# Quantitative strategies (these have their own analysis modules)
+QUANT_STRATEGIES = {
+    "SP500": {"module": "sp500_strategy", "func": "analyze_sp500_markets"},
+    "ECON": {"module": "econ_strategy", "func": "analyze_econ_markets"},
+    "BITCOIN": {"module": "bitcoin_strategy", "func": "analyze_btc_markets"},
+    "TREASURY": {"module": "treasury_strategy", "func": "analyze_treasury_markets"},
+    "GAS": {"module": "gas_strategy", "func": "analyze_gas_markets"},
+    "FOREX": {"module": "forex_strategy", "func": "analyze_forex_markets"},
 }
 
 
@@ -182,12 +179,13 @@ def main():
     wildcard_budget = total_budget * allocs.get("WILDCARD", 0.25)
 
     print(f"{'='*60}")
-    print(f"  KALBOT TRIPLE STRATEGY")
+    print(f"  KALBOT MULTI-STRATEGY")
     print(f"  Session: {session_id}")
     print(f"  Total budget: ${total_budget:.0f}/night")
-    print(f"  A) Weather: ${safe_budget:.0f} ({allocs.get('SAFE',0):.0%})")
-    print(f"  B) S&P/Econ: ${sp_econ_budget:.0f} ({allocs.get('SP500_ECON',0):.0%})")
-    print(f"  C) Wildcard: ${wildcard_budget:.0f} ({allocs.get('WILDCARD',0):.0%})")
+    print(f"  Strategies: {len(STRATEGIES) + len(QUANT_STRATEGIES)}")
+    for s in sorted(allocs, key=lambda x: -allocs[x]):
+        budget = total_budget * allocs[s]
+        print(f"    {s:<12} ${budget:>6.0f} ({allocs[s]:.0%})")
     if RUN_DURATION_HOURS > 0:
         print(f"  Duration: {RUN_DURATION_HOURS} hours")
     else:
@@ -270,64 +268,55 @@ def main():
             except Exception as e:
                 print(f"  Data sniper error: {e}")
 
-            # Step 0e: S&P 500 bracket analysis
-            sp500_signals = []
-            try:
-                from sp500_strategy import analyze_sp500_markets
-                sp500_signals = analyze_sp500_markets()
-                if sp500_signals:
-                    print(f"  S&P 500 signals: {len(sp500_signals)}")
-            except Exception as e:
-                print(f"  S&P strategy error: {e}")
-
-            # Step 0f: Economic data nowcast analysis
-            econ_signals = []
-            try:
-                from econ_strategy import analyze_econ_markets
-                econ_signals = analyze_econ_markets()
-                if econ_signals:
-                    print(f"  Econ signals: {len(econ_signals)}")
-            except Exception as e:
-                print(f"  Econ strategy error: {e}")
-
-            # Recompute allocations each cycle based on latest performance
+            # Recompute allocations each cycle
             try:
                 from strategy_rebalancer import compute_allocations
                 allocs = compute_allocations()
-                safe_budget = total_budget * allocs.get("SAFE", 0.50)
-                sp_econ_budget = total_budget * allocs.get("SP500_ECON", 0.25)
-                wildcard_budget = total_budget * allocs.get("WILDCARD", 0.25)
             except Exception:
-                pass
+                allocs = {"WEATHER": 0.25, "SP500": 0.15, "ECON": 0.15,
+                          "BITCOIN": 0.10, "TREASURY": 0.10, "GAS": 0.05,
+                          "FOREX": 0.05, "WILDCARD": 0.15}
 
-            # Run Safe strategy (weather)
-            print(f"\n--- BOT A: SAFE (weather, ${safe_budget:.0f}) ---")
-            safe_stats = run_strategy(SAFE_CONFIG, safe_budget, session_id)
+            # Run quantitative strategies (each has its own analysis module)
+            all_quant_signals = []
+            for strat_name, strat_info in QUANT_STRATEGIES.items():
+                budget = total_budget * allocs.get(strat_name, 0.10)
+                if budget < 1:
+                    continue
+                try:
+                    import importlib
+                    mod = importlib.import_module(strat_info["module"])
+                    func = getattr(mod, strat_info["func"])
+                    print(f"\n--- {strat_name} (${budget:.0f}, {allocs.get(strat_name, 0):.0%}) ---")
+                    signals = func()
+                    if signals:
+                        all_quant_signals.extend(signals)
+                        print(f"  {len(signals)} signals")
+                except Exception as e:
+                    print(f"  {strat_name} error: {e}")
 
-            # Run S&P/Econ strategy
-            sp_econ_budget = total_budget * SP500_ECON_BUDGET_FRACTION
-            print(f"\n--- BOT B: S&P/ECON (${sp_econ_budget:.0f}) ---")
-            sp_econ_stats = run_strategy(SP500_ECON_CONFIG, sp_econ_budget, session_id)
-
-            # Execute any direct S&P/econ signals through the executor
-            if sp500_signals or econ_signals:
+            # Execute quant signals through the executor
+            if all_quant_signals:
                 try:
                     from executor import execute_trades
-                    all_quant_signals = sp500_signals + econ_signals
                     quant_trades = execute_trades(all_quant_signals, session_id=f"{session_id}_QUANT")
-                    sp_econ_stats["trades_placed"] = sp_econ_stats.get("trades_placed", 0) + len(quant_trades)
                 except Exception as e:
                     print(f"  Quant execution error: {e}")
 
-            # Run Wildcard strategy
-            print(f"\n--- BOT C: WILDCARD (all cats, ${wildcard_budget:.0f}) ---")
-            wildcard_stats = run_strategy(WILDCARD_CONFIG, wildcard_budget, session_id)
+            # Run ensemble strategies (local filter → cloud analyst → executor)
+            all_strategy_stats = []
+            for strat_name, config in STRATEGIES.items():
+                budget = total_budget * allocs.get(strat_name, 0.15)
+                if budget < 1:
+                    continue
+                print(f"\n--- {strat_name} (${budget:.0f}, {allocs.get(strat_name, 0):.0%}) ---")
+                stats = run_strategy(config, budget, session_id)
+                all_strategy_stats.append(stats)
 
             # Aggregate
-            for key in ["markets_scanned", "markets_filtered", "markets_analyzed", "trades_placed", "errors"]:
-                totals[key] += (safe_stats.get(key, 0) +
-                                sp_econ_stats.get(key, 0) +
-                                wildcard_stats.get(key, 0))
+            for stats in all_strategy_stats:
+                for key in ["markets_scanned", "markets_filtered", "markets_analyzed", "trades_placed", "errors"]:
+                    totals[key] += stats.get(key, 0)
 
             # Update session
             sess_conn.execute(
