@@ -132,34 +132,37 @@ def scan_markets(conn: sqlite3.Connection) -> int:
 
         # Scan by series ticker for our target categories
         # Much faster than fetch_all (which pulls 6K+ junk sports markets)
-        TARGET_SERIES = [
-            "KXHIGH", "KXLOW",           # Weather temperature
-            "KXCPI", "KXPCE",            # Inflation
-            "KXINX", "KXINXD",           # S&P 500
-            "KXBTC",                      # Bitcoin
-            "KXTSA", "TSA",              # TSA
-            "KXFED", "KXFOMC",           # Fed rate
-            "KXGDP",                      # GDP
-            "KXJOBLESS", "KXNFP",        # Jobs
-            "KXGAS",                      # Gas
-            "KXEURUSD", "KXUSDJPY",      # Forex
-            "KXTREAS", "KX10Y",          # Treasury
-        ]
+        # Targeted series scan — ONLY pull our categories
+        TARGET_SERIES = ["KXCPI", "KXPCE", "KXINX", "KXINXD", "KXBTC",
+                         "KXFED", "KXFOMC", "KXGDP", "KXJOBLESS", "KXNFP",
+                         "KXGAS", "KXTREAS", "KX10Y"]
 
         all_markets = []
         for series in TARGET_SERIES:
             try:
-                markets = client.get_markets(
-                    series_ticker=series,
-                    status=MarketStatus.OPEN,
-                    limit=100,
-                )
-                all_markets.extend(markets)
+                batch = client.get_markets(series_ticker=series, limit=50)
+                if batch:
+                    all_markets.extend(batch)
+                    print(f"  {series}: {len(batch)} markets")
             except Exception:
                 pass
 
-        # Skip general scan — it pulls thousands of junk sports markets
-        # with null prices. The targeted series scan above is sufficient.
+        # Also scan events for weather (different ticker pattern)
+        try:
+            events = client.get_events(status=MarketStatus.OPEN, limit=100)
+            for e in events:
+                et = (e.event_ticker or "").upper()
+                if any(kw in et for kw in ["HIGH", "LOW", "TEMP", "WEATHER", "TSA"]):
+                    try:
+                        evt_markets = client.get_markets(event_ticker=e.event_ticker, limit=50)
+                        all_markets.extend(evt_markets)
+                        print(f"  Event {e.event_ticker}: {len(evt_markets)} markets")
+                    except Exception:
+                        pass
+        except Exception:
+            pass
+
+        print(f"  Scanner total: {len(all_markets)} target markets")
 
         for m in all_markets:
             cat = classify_market(m.title or "", m.event_ticker or "", "")
