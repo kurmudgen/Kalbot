@@ -36,10 +36,10 @@ STRATEGIES = {
     "WILDCARD": {
         "name": "WILDCARD",
         "categories": ["economics", "inflation", "tsa", "weather"],
-        "confidence_min": 0.80,
-        "price_gap_min": 0.12,
-        "expiry_hours": 168,
-        "kelly_fraction": 0.15,
+        "confidence_min": 0.70,     # Lower bar — we have more info close to expiry
+        "price_gap_min": 0.08,      # Smaller edge ok when outcome is nearly known
+        "expiry_hours": 6,          # ONLY markets expiring within 6 hours
+        "kelly_fraction": 0.25,     # More aggressive — high certainty near expiry
     },
 }
 
@@ -105,10 +105,17 @@ def run_strategy(strategy: dict, budget: float, session_id: str) -> dict:
 
         # Filter by expiry window
         expiry_hours = strategy.get("expiry_hours", 168)
-        if expiry_hours < 168:
+        if expiry_hours <= 6:
+            # Sniper mode: ONLY include markets expiring within the window
             expiring = get_expiring_soon(expiry_hours)
             expiring_tickers = {m["ticker"] for m in expiring}
-            # Prioritize expiring markets but don't exclude others entirely
+            passed = [m for m in passed if m.get("ticker") in expiring_tickers]
+            if passed:
+                print(f"  [{name}] Sniper: {len(passed)} markets expiring within {expiry_hours}hr")
+        elif expiry_hours < 168:
+            # Soft filter: prioritize expiring but keep others
+            expiring = get_expiring_soon(expiry_hours)
+            expiring_tickers = {m["ticker"] for m in expiring}
             passed = sorted(passed,
                             key=lambda m: (m.get("ticker") in expiring_tickers, m.get("confidence", 0)),
                             reverse=True)
