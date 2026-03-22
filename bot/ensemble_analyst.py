@@ -198,8 +198,10 @@ def call_deepseek(prompt: str) -> dict | None:
     return result
 
 
-def check_consensus(estimates: list[dict], market_price: float) -> dict | None:
-    """Check if models agree on direction and return consensus estimate."""
+def check_consensus(estimates: list[dict], market_price: float,
+                     category: str = "", title: str = "") -> dict | None:
+    """Check if models agree on direction, apply adaptive weighting and
+    calibration pipeline, return consensus estimate."""
     if len(estimates) < MIN_MODELS_REQUIRED:
         return None
 
@@ -220,16 +222,61 @@ def check_consensus(estimates: list[dict], market_price: float) -> dict | None:
     if not (all_yes or all_no):
         return None  # Disagreement on outcome
 
-    # Consensus reached — average the estimates
-    avg_prob = sum(probs) / len(probs)
-    avg_conf = sum(confs) / len(confs)
-    providers = [e.get("_provider", "?") for e in estimates]
+    # Get adaptive weights based on historical per-model performance
+    try:
+        from adaptive_weights import get_adaptive_weights
+        weights = get_adaptive_weights(category)
+    except Exception:
+        weights = {"perplexity": 0.40, "claude": 0.35, "deepseek": 0.25}
+
+    # Weighted average using adaptive weights
+    weighted_prob = 0.0
+    weighted_conf = 0.0
+    total_weight = 0.0
+    providers = []
+
+    for est in estimates:
+        provider = est.get("_provider", "unknown")
+        w = weights.get(provider, 0.2) * max(est["confidence"], 0.1)
+        weighted_prob += est["probability"] * w
+        weighted_conf += est["confidence"] * w
+        total_weight += w
+        providers.append(provider)
+
+    if total_weight > 0:
+        avg_prob = weighted_prob / total_weight
+        avg_conf = weighted_conf / total_weight
+    else:
+        avg_prob = sum(probs) / len(probs)
+        avg_conf = sum(confs) / len(confs)
+
+    # Ensemble spread (disagreement measure)
+    spread = max(probs) - min(probs)
+
+    # Run calibration pipeline
+    try:
+        from calibration_pipeline import calibrate_probability
+        cal = calibrate_probability(
+            raw_prob=avg_prob,
+            confidence=avg_conf,
+            market_price=market_price,
+            ensemble_spread=spread,
+            title=title,
+        )
+        final_prob = cal["calibrated_probability"]
+        dampened_edge = cal["dampened_edge"]
+    except Exception:
+        final_prob = avg_prob
+        dampened_edge = avg_prob - market_price
 
     return {
-        "probability": avg_prob,
+        "probability": final_prob,
         "confidence": avg_conf,
         "providers": providers,
         "individual_probs": probs,
+        "spread": spread,
+        "dampened_edge": dampened_edge,
+        "weights_used": weights,
     }
 
 
@@ -272,8 +319,8 @@ def analyze_market_ensemble(market: dict) -> dict | None:
     if len(estimates) < MIN_MODELS_REQUIRED:
         return None
 
-    # Step 3: Check consensus
-    consensus = check_consensus(estimates, market_price)
+    # Step 3: Check consensus with adaptive weighting + calibration
+    consensus = check_consensus(estimates, market_price, category=category, title=title)
 
     return {
         "perplexity": pplx_result,
