@@ -217,6 +217,8 @@ def main():
                         help="Concurrent Ollama requests")
     parser.add_argument("--prompt", type=str, default=None,
                         help="Path to prompt template (default: prompts/local_filter.txt)")
+    parser.add_argument("--resume", type=str, default=None,
+                        help="Resume a previous run by run_id (skips already-processed markets)")
     args = parser.parse_args()
 
     prompt_path = args.prompt or DEFAULT_PROMPT
@@ -224,7 +226,10 @@ def main():
         template = f.read()
 
     prompt_name = os.path.basename(prompt_path).replace(".txt", "")
-    run_id = f"{args.split}_{prompt_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    if args.resume:
+        run_id = args.resume
+    else:
+        run_id = f"{args.split}_{prompt_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
     df = load_data(args.split, args.category, args.per_category)
     total = len(df)
@@ -247,10 +252,19 @@ def main():
     """)
     conn.commit()
 
+    # Skip already-processed markets (for resume support)
+    existing = set(
+        row[0] for row in conn.execute("SELECT market_id FROM results").fetchall()
+    )
+    all_rows = df.to_dict("records")
+    rows = [r for r in all_rows if r["market_id"] not in existing]
+    if existing:
+        print(f"Resuming: {len(existing)} already done, {len(rows)} remaining")
+
     # Process with thread pool
-    rows = df.to_dict("records")
     results = []
     completed = 0
+    total = len(rows)
     start_time = time.time()
 
     with ThreadPoolExecutor(max_workers=args.workers) as executor:
@@ -283,15 +297,16 @@ def main():
 
             print(f"  [{completed}/{total}] {status} | {rate:.1f}/s | ETA {eta:.0f}s", end="\r")
 
+    print(f"\n\nCompleted {len(results)} new markets in {time.time()-start_time:.0f}s")
+
+    # Load ALL results from DB (including previously completed)
+    all_results_df = pd.read_sql_query("SELECT * FROM results", conn)
     conn.close()
-    print(f"\n\nCompleted {len(results)}/{total} in {time.time()-start_time:.0f}s")
 
-    # Results
-    results_df = pd.DataFrame(results)
     csv_path = os.path.join(BASE_DIR, "calibration", f"fast_{run_id}.csv")
-    results_df.to_csv(csv_path, index=False)
+    all_results_df.to_csv(csv_path, index=False)
 
-    print_results(results_df, f"FAST CALIBRATION: {run_id}")
+    print_results(all_results_df, f"FAST CALIBRATION: {run_id} (total: {len(all_results_df)})")
 
     print(f"\nResults saved to: {csv_path}")
     print(f"SQLite: {db_path}")
