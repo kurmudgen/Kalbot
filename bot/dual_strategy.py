@@ -355,6 +355,14 @@ def main():
             if totals["cycles"] > 1 and elapsed_sec % CHECKIN_INTERVAL < LOOP_INTERVAL:
                 print_checkin(totals, start_time.isoformat(), session_id)
 
+            # Hourly self-diagnostic
+            if totals["cycles"] % 12 == 0:  # Every 12 cycles (~1 hour at 5min intervals)
+                try:
+                    from self_check import run_self_check
+                    run_self_check()
+                except Exception as e:
+                    print(f"  Self-check error: {e}")
+
             # Weekly repo scan (Sundays at ~6AM)
             now_local = datetime.now()
             if now_local.weekday() == 6 and 6 <= now_local.hour < 7 and totals["cycles"] % 12 == 1:
