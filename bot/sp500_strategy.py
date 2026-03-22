@@ -170,7 +170,7 @@ def find_sp500_markets() -> list[dict]:
         WHERE (title LIKE '%S&P%' OR title LIKE '%S&P 500%' OR title LIKE '%SPX%'
                OR title LIKE '%SP500%' OR event_ticker LIKE '%INX%'
                OR event_ticker LIKE '%SPX%' OR event_ticker LIKE '%SP500%')
-        AND status = 'open'
+        AND status IN ('open', 'active')
     """).fetchall()
     conn.close()
 

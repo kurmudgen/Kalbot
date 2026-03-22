@@ -147,7 +147,7 @@ def find_btc_markets() -> list[dict]:
     conn = sqlite3.connect(MARKETS_DB)
     conn.row_factory = sqlite3.Row
     rows = conn.execute("""
-        SELECT * FROM markets WHERE status = 'open'
+        SELECT * FROM markets WHERE status IN ('open', 'active')
         AND (title LIKE '%Bitcoin%' OR title LIKE '%BTC%'
              OR event_ticker LIKE '%BTC%' OR event_ticker LIKE '%BITCOIN%')
     """).fetchall()

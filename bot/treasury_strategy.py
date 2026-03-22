@@ -68,7 +68,7 @@ def find_treasury_markets() -> list[dict]:
     conn = sqlite3.connect(MARKETS_DB)
     conn.row_factory = sqlite3.Row
     rows = conn.execute("""
-        SELECT * FROM markets WHERE status = 'open'
+        SELECT * FROM markets WHERE status IN ('open', 'active')
         AND (title LIKE '%Treasury%' OR title LIKE '%10-year%' OR title LIKE '%10Y%'
              OR title LIKE '%yield%' OR event_ticker LIKE '%TREAS%'
              OR event_ticker LIKE '%10Y%' OR event_ticker LIKE '%BOND%')

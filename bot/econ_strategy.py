@@ -171,7 +171,7 @@ def find_econ_markets() -> list[dict]:
 
     rows = conn.execute("""
         SELECT * FROM markets
-        WHERE status = 'open'
+        WHERE status IN ('open', 'active')
         AND (category IN ('economics', 'inflation')
              OR title LIKE '%CPI%' OR title LIKE '%inflation%'
              OR title LIKE '%GDP%' OR title LIKE '%payroll%'

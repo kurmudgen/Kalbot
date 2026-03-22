@@ -84,7 +84,7 @@ def find_gas_markets() -> list[dict]:
     conn = sqlite3.connect(MARKETS_DB)
     conn.row_factory = sqlite3.Row
     rows = conn.execute("""
-        SELECT * FROM markets WHERE status = 'open'
+        SELECT * FROM markets WHERE status IN ('open', 'active')
         AND (title LIKE '%gas price%' OR title LIKE '%gasoline%'
              OR title LIKE '%gallon%' OR event_ticker LIKE '%GAS%'
              OR event_ticker LIKE '%FUEL%')

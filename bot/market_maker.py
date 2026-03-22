@@ -65,7 +65,7 @@ def find_wide_spread_markets() -> list[dict]:
 
     rows = conn.execute("""
         SELECT * FROM markets
-        WHERE status = 'open'
+        WHERE status IN ('open', 'active')
         AND yes_bid IS NOT NULL AND yes_ask IS NOT NULL
         AND yes_ask > yes_bid
         AND (yes_ask - yes_bid) >= ?

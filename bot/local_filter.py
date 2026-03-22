@@ -75,7 +75,7 @@ def load_prompt_template() -> str:
 
 
 def get_open_markets() -> list[dict]:
-    """Get open markets that haven't been scored in the last hour."""
+    """Get open markets worth scoring. Pre-filters BEFORE Ollama to cut 90% of junk."""
     if not os.path.exists(MARKETS_DB):
         return []
 
@@ -95,11 +95,44 @@ def get_open_markets() -> list[dict]:
     rows = conn.execute("SELECT * FROM markets WHERE status IN ('open', 'active')").fetchall()
     conn.close()
 
-    # Filter out recently scored
-    markets = [dict(r) for r in rows if r["ticker"] not in scored_tickers]
+    # Pre-filter: skip markets that aren't worth sending to Ollama
+    markets = []
+    skipped = {"scored": 0, "no_volume": 0, "resolved": 0, "stale_price": 0}
 
-    if scored_tickers:
-        print(f"  Skipping {len(scored_tickers)} recently scored, {len(markets)} to score")
+    for r in rows:
+        ticker = r["ticker"]
+
+        # Skip recently scored
+        if ticker in scored_tickers:
+            skipped["scored"] += 1
+            continue
+
+        # Skip markets with no trading activity (dead markets)
+        volume = r.get("volume") or 0
+        if volume == 0:
+            skipped["no_volume"] += 1
+            continue
+
+        # Skip effectively resolved markets (price at 0-2 or 98-100)
+        price = r.get("last_price") or 50
+        if price <= 2 or price >= 98:
+            skipped["resolved"] += 1
+            continue
+
+        markets.append(dict(r))
+
+    total_skipped = sum(skipped.values())
+    if total_skipped > 0:
+        print(f"  Pre-filter: {len(markets)} to score, skipped {total_skipped} "
+              f"(scored:{skipped['scored']}, no_vol:{skipped['no_volume']}, "
+              f"resolved:{skipped['resolved']})")
+
+    # Cap at 200 per cycle to keep within time budget (~100 seconds at 2/sec)
+    if len(markets) > 200:
+        # Prioritize by volume (most liquid = most tradeable)
+        markets.sort(key=lambda m: m.get("volume", 0) or 0, reverse=True)
+        markets = markets[:200]
+        print(f"  Capped to top 200 by volume")
 
     return markets
 

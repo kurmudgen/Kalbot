@@ -84,7 +84,7 @@ def find_forex_markets() -> list[dict]:
     conn = sqlite3.connect(MARKETS_DB)
     conn.row_factory = sqlite3.Row
     rows = conn.execute("""
-        SELECT * FROM markets WHERE status = 'open'
+        SELECT * FROM markets WHERE status IN ('open', 'active')
         AND (title LIKE '%EUR/USD%' OR title LIKE '%USD/JPY%'
              OR title LIKE '%GBP/USD%' OR title LIKE '%euro%dollar%'
              OR event_ticker LIKE '%EURUSD%' OR event_ticker LIKE '%USDJPY%'
