@@ -24,6 +24,8 @@ Stock: {symbol}
 Current price: ${price:.4f}
 Today's change: {change_pct:+.1f}%
 Today's volume: {volume:,}
+{technicals_summary}
+{memory_context}
 
 Research this stock NOW and determine:
 1. WHY is it moving? (news, earnings, FDA, contract, or just noise?)
@@ -48,8 +50,44 @@ def analyze_stock(stock: dict) -> dict | None:
     change_pct = stock["change_pct"]
     volume = stock["volume"]
 
+    # Technical analysis
+    technicals_summary = ""
+    try:
+        import yfinance as yf
+        from technicals import analyze_technicals
+
+        ticker = yf.Ticker(symbol)
+        hist = ticker.history(period="1y")
+        if len(hist) >= 50:
+            prices = hist["Close"].tolist()
+            volumes = hist["Volume"].tolist()
+            ta = analyze_technicals(prices, volumes)
+            technicals_summary = (
+                f"\nTechnical Analysis: signal={ta['signal']:+.2f} ({ta['direction']}), "
+                f"confidence={ta['confidence']:.2f}, RSI={ta['rsi']:.0f}, "
+                f"Hurst={ta['hurst']:.2f}"
+            )
+            # If technicals say strong sell, add a warning
+            if ta["signal"] < -0.4:
+                technicals_summary += " ⚠️ TECHNICAL WARNING: Strong sell signal"
+    except Exception:
+        pass
+
+    # Trade memory — recall similar past situations
+    memory_context = ""
+    try:
+        from trade_memory import recall_similar, format_memories_for_prompt
+
+        situation = f"{symbol} {change_pct:+.1f}% on {volume:,} volume"
+        memories = recall_similar(situation, top_k=3)
+        memory_context = format_memories_for_prompt(memories)
+    except Exception:
+        pass
+
     prompt = RESEARCH_PROMPT.format(
         symbol=symbol, price=price, change_pct=change_pct, volume=volume,
+        technicals_summary=technicals_summary,
+        memory_context=memory_context,
     )
 
     estimates = []
