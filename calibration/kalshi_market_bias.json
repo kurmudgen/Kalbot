@@ -1,0 +1,18 @@
+{
+    "description": "Kalshi market calibration bias from 7.3M resolved markets. Positive gap = market underprices YES (buy YES). Negative gap = market overprices YES (buy NO).",
+    "source": "Jon-Becker prediction-market-analysis dataset, computed 2026-03-21",
+    "bins": {
+        "01-10": {"n": 447641, "actual_win_pct": 1.5, "avg_price": 3.3, "bias_pct": -1.81, "edge": "buy NO"},
+        "11-20": {"n": 102580, "actual_win_pct": 8.9, "avg_price": 15.0, "bias_pct": -6.13, "edge": "buy NO"},
+        "21-30": {"n": 57593, "actual_win_pct": 17.0, "avg_price": 25.1, "bias_pct": -8.08, "edge": "buy NO"},
+        "31-40": {"n": 32249, "actual_win_pct": 25.7, "avg_price": 35.1, "bias_pct": -9.42, "edge": "buy NO"},
+        "41-50": {"n": 21564, "actual_win_pct": 35.2, "avg_price": 45.4, "bias_pct": -10.23, "edge": "buy NO"},
+        "51-60": {"n": 11583, "actual_win_pct": 47.4, "avg_price": 55.2, "bias_pct": -7.76, "edge": "buy NO"},
+        "61-70": {"n": 8027, "actual_win_pct": 63.7, "avg_price": 65.6, "bias_pct": -1.92, "edge": "slight NO"},
+        "71-80": {"n": 8798, "actual_win_pct": 78.6, "avg_price": 76.1, "bias_pct": 2.46, "edge": "buy YES"},
+        "81-90": {"n": 13552, "actual_win_pct": 92.1, "avg_price": 86.4, "bias_pct": 5.66, "edge": "buy YES"},
+        "91-99": {"n": 140363, "actual_win_pct": 98.8, "avg_price": 98.0, "bias_pct": 0.78, "edge": "slight YES"}
+    },
+    "key_insight": "Kalshi markets in the 20-50 cent range systematically overstate YES probability by 6-10%. The biggest edge is buying NO on markets priced 40-50 cents (actual YES rate only 35% vs implied 45%).",
+    "strategy_implication": "When the ensemble says NO on a market priced 30-50c, the historical bias supports that trade. When it says YES on a market priced 70-90c, history also supports it."
+}

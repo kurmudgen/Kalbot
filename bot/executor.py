@@ -5,6 +5,7 @@ Uses Kelly criterion for position sizing — bet more when edge is larger.
 Prioritizes close-to-expiry markets and weather category.
 """
 
+import json
 import os
 import sqlite3
 from datetime import datetime, timezone
@@ -30,6 +31,23 @@ CATEGORY_CONFIDENCE = {
 # Kelly fraction — use fractional Kelly to reduce variance
 # Full Kelly is too aggressive; half-Kelly is standard practice
 KELLY_FRACTION = 0.25  # Quarter-Kelly: conservative but still edge-proportional
+
+# Load historical market bias data
+BIAS_PATH = os.path.join(os.path.dirname(__file__), "..", "calibration", "kalshi_market_bias.json")
+MARKET_BIAS = {}
+if os.path.exists(BIAS_PATH):
+    with open(BIAS_PATH) as f:
+        MARKET_BIAS = json.load(f).get("bins", {})
+
+
+def get_historical_bias(market_price_cents: int) -> float:
+    """Get historical calibration bias for a given price level.
+    Returns the bias in percentage points (positive = YES underpriced)."""
+    for bin_key, data in MARKET_BIAS.items():
+        lo, hi = bin_key.split("-")
+        if int(lo) <= market_price_cents <= int(hi):
+            return data.get("bias_pct", 0) / 100.0
+    return 0.0
 
 
 def get_config() -> dict:
@@ -121,8 +139,19 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         price_gap = score["price_gap"]
         reasoning = score.get("cloud_reasoning", "")
 
+        # Check historical bias — boost confidence when model agrees with history
+        price_cents = int(market_price * 100)
+        hist_bias = get_historical_bias(price_cents)
+        # hist_bias > 0 means YES is historically underpriced (buy YES)
+        # hist_bias < 0 means YES is historically overpriced (buy NO)
+
         # Determine side and Kelly-sized bet
         side = "YES" if cloud_prob > market_price else "NO"
+
+        # Boost confidence if historical bias agrees with our direction
+        bias_aligned = (side == "YES" and hist_bias > 0) or (side == "NO" and hist_bias < 0)
+        if bias_aligned:
+            cloud_conf = min(1.0, cloud_conf * 1.1)  # 10% confidence boost
 
         # Kelly criterion: f* = (bp - q) / b
         # where b = odds, p = our probability, q = 1-p
