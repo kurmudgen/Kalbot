@@ -259,8 +259,31 @@ Recent relevant headlines:
                 "reasoning": reasoning,
             })
 
+    # Also include previously-passed markets that haven't been analyzed yet
+    if os.path.exists(SCORES_DB):
+        prev_conn = sqlite3.connect(SCORES_DB)
+        prev_conn.row_factory = sqlite3.Row
+        prev_passed = prev_conn.execute(
+            "SELECT * FROM filter_scores WHERE passed_filter = 1"
+        ).fetchall()
+        prev_conn.close()
+
+        existing_tickers = {p["ticker"] for p in passed}
+        for pp in prev_passed:
+            if pp["ticker"] not in existing_tickers:
+                passed.append({
+                    "ticker": pp["ticker"],
+                    "title": pp["title"],
+                    "category": pp["category"],
+                    "model_probability": pp["model_probability"],
+                    "confidence": pp["confidence"],
+                    "market_price": pp["market_price"],
+                    "price_gap": pp["price_gap"],
+                    "reasoning": pp["reasoning"],
+                })
+
     scores_conn.close()
-    print(f"\n{len(passed)}/{len(markets)} markets passed local filter")
+    print(f"  {len(passed)} markets passed local filter (new + cached)")
     return passed
 
 
