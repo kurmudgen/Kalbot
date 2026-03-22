@@ -160,6 +160,16 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
             skip_reason = f"price gap {price_gap:.2f} < {PRICE_GAP_MIN}"
         elif ticker in open_positions:
             skip_reason = "already in open positions"
+
+        # Correlation check for weather markets
+        if not skip_reason:
+            try:
+                from correlation_guard import check_correlation
+                corr = check_correlation(score)
+                if not corr["allowed"]:
+                    skip_reason = corr["reason"]
+            except Exception:
+                pass
         elif tonight_spend >= config["max_nightly_spend"]:
             skip_reason = f"nightly spend limit reached (${tonight_spend:.2f})"
         elif amount <= 0:

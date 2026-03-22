@@ -206,6 +206,49 @@ def main():
             print(f"  CYCLE {totals['cycles']} — {datetime.now(timezone.utc).isoformat()[:19]}")
             print(f"{'='*40}")
 
+            # Step 0: Check for early exits on open positions
+            try:
+                from early_exit import check_all_positions
+                exits = check_all_positions(session_id)
+                if exits:
+                    print(f"  Early exits: {len(exits)}")
+            except Exception as e:
+                print(f"  Early exit check error: {e}")
+
+            # Step 0b: Polymarket signal detection
+            try:
+                from polymarket_signal import snapshot_and_detect
+                pm_signals = snapshot_and_detect()
+                if pm_signals:
+                    print(f"  Polymarket signals: {len(pm_signals)}")
+            except Exception as e:
+                print(f"  Polymarket signal error: {e}")
+
+            # Step 0c: Market making on thin weather markets
+            try:
+                from market_maker import run_market_maker
+                mm_results = run_market_maker(session_id)
+                if mm_results:
+                    print(f"  Market making: {len(mm_results)} positions")
+            except Exception as e:
+                print(f"  Market making error: {e}")
+
+            # Step 0d: Data release sniping
+            try:
+                from data_sniper import run_sniper
+                import sqlite3 as _sql
+                _mdb = os.path.join(os.path.dirname(__file__), "..", "data", "live", "markets.sqlite")
+                if os.path.exists(_mdb):
+                    _conn = _sql.connect(_mdb)
+                    _conn.row_factory = _sql.Row
+                    _all_markets = [dict(r) for r in _conn.execute("SELECT * FROM markets").fetchall()]
+                    _conn.close()
+                    sniped = run_sniper(_all_markets, session_id)
+                    if sniped:
+                        print(f"  Data sniper: {len(sniped)} flagged")
+            except Exception as e:
+                print(f"  Data sniper error: {e}")
+
             # Run Safe strategy
             print(f"\n--- BOT A: SAFE (weather, ${safe_budget:.0f}) ---")
             safe_stats = run_strategy(SAFE_CONFIG, safe_budget, session_id)
