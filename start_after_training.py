@@ -52,10 +52,10 @@ def run_validation():
 
 def start_paper_trading():
     print("\n" + "=" * 50)
-    print("  STARTING 48-HOUR PAPER TRADING SESSION")
+    print("  STARTING 48-HOUR PAPER TRADING SESSION (DUAL STRATEGY)")
     print("=" * 50)
     subprocess.run(
-        [PYTHON, "bot/run_night.py"],
+        [PYTHON, "bot/dual_strategy.py"],
         cwd=BASE_DIR,
     )
 
