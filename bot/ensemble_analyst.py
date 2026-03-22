@@ -208,19 +208,20 @@ def check_consensus(estimates: list[dict], market_price: float,
     probs = [e["probability"] for e in estimates]
     confs = [e["confidence"] for e in estimates]
 
-    # Check direction agreement: all above or all below market price
-    above = [p > market_price for p in probs]
-    below = [p < market_price for p in probs]
+    # Check direction agreement: 2/3 majority (not unanimous)
+    above = sum(1 for p in probs if p > market_price)
+    below = sum(1 for p in probs if p < market_price)
+    majority = len(probs) / 2
 
-    if not (all(above) or all(below)):
-        return None  # Disagreement on direction
+    if not (above > majority or below > majority):
+        return None  # No majority on direction
 
-    # Check that all are on the same side of 0.5
-    all_yes = all(p > 0.5 for p in probs)
-    all_no = all(p <= 0.5 for p in probs)
+    # Check outcome side: 2/3 majority
+    yes_votes = sum(1 for p in probs if p > 0.5)
+    no_votes = sum(1 for p in probs if p <= 0.5)
 
-    if not (all_yes or all_no):
-        return None  # Disagreement on outcome
+    if not (yes_votes > majority or no_votes > majority):
+        return None  # No majority on outcome
 
     # Get adaptive weights based on historical per-model performance
     try:
