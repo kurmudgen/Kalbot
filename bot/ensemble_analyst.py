@@ -299,9 +299,24 @@ def analyze_market_ensemble(market: dict) -> dict | None:
     if pplx_result:
         research_text = pplx_result.get("research", pplx_result.get("reasoning", ""))
         estimates.append(pplx_result)
+
+        # Store research in shared news pool
+        try:
+            from news_pool import store_research
+            store_research(title, category, research_text, "perplexity")
+        except Exception:
+            pass
     else:
-        # If Perplexity fails, we have no research — use basic prompt
         research_text = "No real-time research available."
+
+    # Inject recent pooled research as additional context
+    try:
+        from news_pool import format_context
+        pooled = format_context(category)
+        if pooled:
+            research_text += "\n\n" + pooled
+    except Exception:
+        pass
 
     # Step 2: Feed research to Claude and DeepSeek independently
     eval_prompt = EVALUATE_PROMPT.format(
