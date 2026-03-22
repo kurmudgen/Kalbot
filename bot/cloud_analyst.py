@@ -1,6 +1,8 @@
 """
-Cloud analyst: sends filtered markets to DeepSeek (or Gemini fallback)
-for deeper analysis. Writes to data/live/analyst_scores.sqlite.
+Cloud analyst: sends filtered markets to Perplexity Sonar Pro (primary)
+with DeepSeek and Gemini as fallbacks.
+Perplexity's built-in web search gives us real-time data for each market.
+Writes to data/live/analyst_scores.sqlite.
 """
 
 import json
@@ -15,7 +17,7 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
 SCORES_DB = os.path.join(os.path.dirname(__file__), "..", "data", "live", "filter_scores.sqlite")
 ANALYST_DB = os.path.join(os.path.dirname(__file__), "..", "data", "live", "analyst_scores.sqlite")
 
-ANALYSIS_PROMPT = """You are an expert prediction market analyst. Analyze this market and provide your probability estimate.
+ANALYSIS_PROMPT = """You are an expert prediction market analyst. Analyze this Kalshi market and provide your probability estimate.
 
 Market: {title}
 Category: {category}
@@ -23,14 +25,15 @@ Current market price (implied probability): {market_price:.2f}
 Local model estimate: {local_prob:.2f} (confidence: {local_conf:.2f})
 Local model reasoning: {reasoning}
 
-Consider:
-1. Base rates for this type of event
-2. Current economic/market conditions
-3. Whether the market price seems efficient or mispriced
-4. Any systematic biases in this type of market
+INSTRUCTIONS:
+1. Search for the latest relevant data — current forecasts, recent economic releases, official reports.
+2. Compare what you find to what the market is pricing.
+3. Consider base rates, seasonal patterns, and consensus expectations.
+4. Give your honest probability estimate. If the market looks efficient, say so.
+5. Only flag a mispricing if you have specific evidence the market is wrong.
 
 Respond ONLY with valid JSON:
-{{"probability": <float 0.0-1.0>, "confidence": <float 0.0-1.0>, "reasoning": "<2-3 sentences>"}}
+{{"probability": <float 0.0-1.0>, "confidence": <float 0.0-1.0>, "reasoning": "<2-3 sentences citing specific data>"}}
 """
 
 
@@ -67,6 +70,44 @@ def get_filtered_markets() -> list[dict]:
     ).fetchall()
     conn.close()
     return [dict(r) for r in rows]
+
+
+def call_perplexity(prompt: str) -> dict | None:
+    api_key = os.getenv("PERPLEXITY_API_KEY", "")
+    if not api_key:
+        return None
+
+    try:
+        from openai import OpenAI
+
+        client = OpenAI(
+            api_key=api_key,
+            base_url="https://api.perplexity.ai",
+        )
+        response = client.chat.completions.create(
+            model="sonar-pro",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are a calibrated prediction market analyst. "
+                    "Search for the latest data relevant to the market question. "
+                    "Respond only with valid JSON.",
+                },
+                {"role": "user", "content": prompt},
+            ],
+            temperature=0.3,
+        )
+        raw = response.choices[0].message.content
+        start = raw.find("{")
+        end = raw.rfind("}") + 1
+        if start == -1 or end == 0:
+            return None
+        result = json.loads(raw[start:end])
+        result["_provider"] = "perplexity"
+        return result
+    except Exception as e:
+        print(f"  Perplexity error: {e}")
+        return None
 
 
 def call_deepseek(prompt: str) -> dict | None:
@@ -156,8 +197,10 @@ def analyze_markets(markets: list[dict] | None = None) -> list[dict]:
 
         print(f"[{i+1}/{len(markets)}] {title[:60]}...", end=" ", flush=True)
 
-        # Try DeepSeek first, fall back to Gemini
-        result = call_deepseek(prompt)
+        # Perplexity first (has web search), then DeepSeek, then Gemini
+        result = call_perplexity(prompt)
+        if result is None:
+            result = call_deepseek(prompt)
         if result is None:
             result = call_gemini(prompt)
         if result is None:
