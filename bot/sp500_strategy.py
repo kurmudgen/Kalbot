@@ -39,6 +39,20 @@ VIX_DAILY_DIVISOR = 15.87
 # VIX overestimates realized vol by ~20-30% on average
 VRP_HAIRCUT = 0.75  # Use 75% of VIX-implied vol as our estimate
 
+# From nikhilnd/kalshi-market-making: use Cauchy distribution (fat tails)
+# with time-decaying scale parameter
+CAUCHY_BASE_GAMMA = 0.000005  # Base scale parameter
+CAUCHY_TIME_EXPONENT = 0.6     # (3/5) — narrows distribution as close approaches
+
+# From quantgalore: trade at 2PM ET, predict afternoon vol
+# The edge is that morning vol predicts afternoon vol
+TRADE_HOUR_ET = 14  # 2:00 PM ET
+
+# From ryanfrigo Safe Compounder: NO-side on near-certain outcomes is most profitable
+# Edge window from alexandermazza: 10-18% (edges >18% are unreliable)
+MIN_EDGE = 0.08
+MAX_EDGE = 0.18  # Edge paradox: larger edges = lower win rate
+
 
 def init_sp500_db() -> sqlite3.Connection:
     os.makedirs(os.path.dirname(SP500_DB), exist_ok=True)

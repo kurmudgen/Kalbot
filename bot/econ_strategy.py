@@ -3,9 +3,12 @@ Economic data release strategy.
 Uses Cleveland Fed Inflation Nowcast and Atlanta Fed GDPNow as
 real-time signals to trade Kalshi CPI, GDP, and jobs markets.
 
-Core edge: These nowcasts update daily and have historically
-outperformed professional forecasters. If Kalshi prices deviate
-from the nowcast-implied probability, that's a tradeable signal.
+WARNING: ryanfrigo's Kalshi bot found economic trades had -70% ROI
+and caused 78% of all losses. This strategy is VERY CONSERVATIVE:
+- Only trades when nowcast signal is extremely strong (>12% edge)
+- Prefers NO-side (near-certain outcomes)
+- Requires higher confidence threshold than weather
+- Edge dampened aggressively (max 18% per edge paradox)
 
 Release schedule:
 - CPI: ~8:30am ET, usually 2nd or 3rd week of the month
@@ -313,18 +316,24 @@ def analyze_econ_markets() -> list[dict]:
              datetime.now(timezone.utc).isoformat()),
         )
 
-        if abs(edge) > 0.06:
-            side = "YES" if edge > 0 else "NO"
-            print(f"  SIGNAL [{match['release_type']}]: {side} edge={edge:+.2f} — {title[:60]}...")
+        # VERY conservative: only trade econ with strong signal (>12% edge)
+        # And cap edge at 18% (edge paradox from alexandermazza)
+        dampened_edge = edge
+        if abs(edge) > 0.18:
+            dampened_edge = 0.18 * (1 if edge > 0 else -1) + (abs(edge) - 0.18) * 0.5 * (1 if edge > 0 else -1)
+
+        if abs(dampened_edge) > 0.12:
+            side = "YES" if dampened_edge > 0 else "NO"
+            print(f"  SIGNAL [{match['release_type']}]: {side} edge={dampened_edge:+.2f} — {title[:60]}...")
             print(f"    Nowcast: {match['nowcast_value']} via {match['nowcast_source']}")
             signals.append({
                 "ticker": ticker,
                 "title": title,
                 "category": "economics",
                 "model_probability": model_prob,
-                "confidence": min(0.9, 0.65 + abs(edge)),
+                "confidence": min(0.85, 0.60 + abs(dampened_edge)),  # Lower max confidence for econ
                 "market_price": market_price,
-                "price_gap": abs(edge),
+                "price_gap": abs(dampened_edge),
                 "reasoning": f"{match['nowcast_source']}: {match['nowcast_value']} → prob={model_prob:.2f}",
             })
 

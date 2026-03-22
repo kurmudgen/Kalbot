@@ -19,15 +19,19 @@ from datetime import datetime, timezone, timedelta
 
 DECISIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "decisions.sqlite")
 
+# Defaults reflect repo findings:
+# - Weather and S&P have proven edges
+# - Econ is risky (-70% ROI in ryanfrigo's bot) — start small
+# - BTC is promising but volatile
 DEFAULT_ALLOCATIONS = {
-    "WEATHER": 0.25,
-    "SP500": 0.15,
-    "ECON": 0.15,
-    "BITCOIN": 0.10,
-    "TREASURY": 0.10,
-    "GAS": 0.05,
-    "FOREX": 0.05,
-    "WILDCARD": 0.15,
+    "WEATHER": 0.30,    # Proven 87% WR, multiple repos confirm edge
+    "SP500": 0.20,      # VIX overestimates vol, quantgalore repo confirms
+    "BITCOIN": 0.12,    # Fat tails but less efficient markets
+    "ECON": 0.08,       # CAUTION: -70% ROI in ryanfrigo's bot, very conservative
+    "TREASURY": 0.08,   # New Kalshi category, less efficient
+    "WILDCARD": 0.12,   # Breaking news plays
+    "GAS": 0.05,        # Thin liquidity
+    "FOREX": 0.05,      # Thin liquidity
 }
 
 MIN_ALLOCATION = 0.10

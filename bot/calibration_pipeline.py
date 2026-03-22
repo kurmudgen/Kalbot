@@ -8,6 +8,14 @@ Pipeline:
 3. Low confidence penalty — pull uncertain estimates toward 0.5
 4. Ensemble spread penalty — high disagreement = lower confidence
 5. Historical bias adjustment — apply Kalshi market-level calibration
+
+Key findings from repos:
+- alexandermazza: NWS-only mode recommended (Open-Meteo differs 2-4F, causes losses)
+- alexandermazza: Edge window 10-18% (edges >18% correlate with LOWER win rate)
+- alexandermazza: Timing multipliers: PRIME 1.3x after NWS model cycles, OFF_PEAK 0.85x
+- ryanfrigo: Economic trades had -70% ROI — use very conservative thresholds
+- ryanfrigo: NO-side on near-certain outcomes is the only consistently profitable strategy
+- nikhilnd: Cauchy distribution better than normal for S&P (fat tails)
 """
 
 import json
@@ -35,6 +43,33 @@ EDGE_DAMPEN_FACTOR = 0.50     # Only 50% of excess edge counts
 
 # Platt scaling shrinkage
 LOGIT_SHRINKAGE = 0.90  # 10% shrinkage toward center
+
+# NWS model cycle timing (from alexandermazza)
+# Markets are most inefficient right after NWS updates
+# PRIME windows (CT): 6-8AM, 12-2PM, 6-11PM → multiply edge by 1.3x
+# OFF_PEAK: overnight → multiply edge by 0.85x
+NWS_PRIME_MULTIPLIER = 1.3
+NWS_OFF_PEAK_MULTIPLIER = 0.85
+
+# Kalshi weather station mapping (must match settlement source)
+KALSHI_WEATHER_STATIONS = {
+    "new york": "KNYC",  # Central Park, NOT JFK
+    "nyc": "KNYC",
+    "chicago": "KORD",
+    "miami": "KMIA",
+    "houston": "KIAH",
+    "los angeles": "KLAX",
+    "denver": "KDEN",
+    "phoenix": "KPHX",
+    "seattle": "KSEA",
+    "philadelphia": "KPHL",
+    "austin": "KAUS",
+}
+
+# NO-side bias: from both ryanfrigo and alexandermazza
+# Buying NO on near-certain outcomes is the most consistently profitable
+# NO at 80+ cents has structural edge due to favorite-longshot bias
+NO_SIDE_PREFERENCE = True
 
 
 def platt_scale(prob: float) -> float:
