@@ -108,105 +108,68 @@ def init_db() -> sqlite3.Connection:
 
 
 def scan_markets(conn: sqlite3.Connection) -> int:
-    try:
-        from pykalshi import KalshiClient, MarketStatus
+    """Scan using raw REST API — pykalshi SDK hangs on some calls."""
+    import requests as req
 
-        api_key = os.getenv("KALSHI_API_KEY", "")
-        private_key_path = os.getenv("KALSHI_PRIVATE_KEY", "")
+    url = "https://api.elections.kalshi.com/trade-api/v2/markets"
+    total = 0
 
-        if not api_key or not private_key_path:
-            return scan_markets_public(conn)
+    TARGET_SERIES = ["KXCPI", "KXPCE", "KXINX", "KXINXD", "KXBTC",
+                     "KXFED", "KXFOMC", "KXGDP", "KXJOBLESS", "KXNFP",
+                     "KXGAS", "KXTREAS", "KX10Y"]
 
-        # Resolve relative path from project root
-        if not os.path.isabs(private_key_path):
-            private_key_path = os.path.join(
-                os.path.dirname(__file__), "..", private_key_path
-            )
-
-        client = KalshiClient(
-            api_key_id=api_key,
-            private_key_path=private_key_path,
-        )
-
-        total = 0
-
-        # Scan by series ticker for our target categories
-        # Much faster than fetch_all (which pulls 6K+ junk sports markets)
-        # Targeted series scan — ONLY pull our categories
-        TARGET_SERIES = ["KXCPI", "KXPCE", "KXINX", "KXINXD", "KXBTC",
-                         "KXFED", "KXFOMC", "KXGDP", "KXJOBLESS", "KXNFP",
-                         "KXGAS", "KXTREAS", "KX10Y"]
-
-        all_markets = []
-        for series in TARGET_SERIES:
-            try:
-                batch = client.get_markets(series_ticker=series, limit=50)
-                if batch:
-                    all_markets.extend(batch)
-                    print(f"  {series}: {len(batch)} markets")
-            except Exception:
-                pass
-
-        # Also scan events for weather (different ticker pattern)
+    for series in TARGET_SERIES:
         try:
-            events = client.get_events(status=MarketStatus.OPEN, limit=100)
-            for e in events:
-                et = (e.event_ticker or "").upper()
-                if any(kw in et for kw in ["HIGH", "LOW", "TEMP", "WEATHER", "TSA"]):
-                    try:
-                        evt_markets = client.get_markets(event_ticker=e.event_ticker, limit=50)
-                        all_markets.extend(evt_markets)
-                        print(f"  Event {e.event_ticker}: {len(evt_markets)} markets")
-                    except Exception:
-                        pass
-        except Exception:
-            pass
-
-        print(f"  Scanner total: {len(all_markets)} target markets")
-
-        for m in all_markets:
-            cat = classify_market(m.title or "", m.event_ticker or "", "")
-            if cat is None:
+            r = req.get(url, params={"series_ticker": series, "limit": 100},
+                        timeout=10)
+            if r.status_code != 200:
+                continue
+            markets = r.json().get("markets", [])
+            if not markets:
                 continue
 
-            # Convert dollars to cents for consistency
-            yes_bid = int(float(m.yes_bid_dollars or 0) * 100)
-            yes_ask = int(float(m.yes_ask_dollars or 0) * 100)
-            last_price = int(float(m.last_price_dollars or 0) * 100)
+            for m in markets:
+                ticker = m.get("ticker", "")
+                event_ticker = m.get("event_ticker", "")
+                title = m.get("title", "")
+                cat = classify_market(title, event_ticker, m.get("category", ""))
+                if cat is None:
+                    for prefix, auto_cat in SERIES_CATEGORY_MAP.items():
+                        if event_ticker.upper().startswith(prefix):
+                            cat = auto_cat
+                            break
+                if cat is None:
+                    continue
 
-            conn.execute(
-                """INSERT OR REPLACE INTO markets
-                   (ticker, event_ticker, title, category, status,
-                    yes_bid, yes_ask, last_price, volume, open_interest,
-                    close_time, fetched_at)
-                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-                (
-                    m.ticker,
-                    m.event_ticker,
-                    m.title,
-                    cat,
-                    m.status.value if m.status else "open",
-                    yes_bid,
-                    yes_ask,
-                    last_price,
-                    int(m.volume_fp or 0),
-                    int(m.open_interest_fp or 0),
-                    str(m.close_time) if m.close_time else None,
-                    datetime.now(timezone.utc).isoformat(),
-                ),
-            )
-            total += 1
+                # API returns dollars — convert to cents for DB
+                yes_bid = int(float(m.get("yes_bid_dollars", 0) or 0) * 100)
+                yes_ask = int(float(m.get("yes_ask_dollars", 0) or 0) * 100)
+                last_price = int(float(m.get("last_price_dollars", 0) or 0) * 100)
+                volume = int(float(m.get("volume_fp", 0) or 0))
+                oi = int(float(m.get("open_interest_fp", 0) or 0))
 
-        conn.commit()
-        client.close()
-        return total
+                conn.execute(
+                    """INSERT OR REPLACE INTO markets
+                       (ticker, event_ticker, title, category, status,
+                        yes_bid, yes_ask, last_price, volume, open_interest,
+                        close_time, fetched_at)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                    (ticker, event_ticker, title, cat,
+                     m.get("status", "active"),
+                     yes_bid, yes_ask, last_price, volume, oi,
+                     m.get("close_time", ""),
+                     datetime.now(timezone.utc).isoformat()),
+                )
+                total += 1
 
-    except ImportError:
-        print("pykalshi not installed")
-        return scan_markets_public(conn)
-    except Exception as e:
-        print(f"Kalshi API error: {e}")
-        return scan_markets_public(conn)
+            print(f"  {series}: {len(markets)} markets")
+        except req.Timeout:
+            print(f"  {series}: timeout")
+        except Exception as e:
+            print(f"  {series}: {e}")
+
+    conn.commit()
+    return total
 
 
 def scan_markets_public(conn: sqlite3.Connection) -> int:
