@@ -20,8 +20,8 @@ from dotenv import load_dotenv
 load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODELS = ["qwen2.5:7b", "llama3.1:8b"]  # Sequential dual-model filter
-MODEL = MODELS[0]  # Primary model (used for single-model fallback)
+MODELS = ["qwen2.5:7b"]  # Single model for speed (dual was too slow for 6K+ markets)
+MODEL = MODELS[0]
 PROMPT_PATH = os.path.join(os.path.dirname(__file__), "..", "prompts", "local_filter.txt")
 MARKETS_DB = os.path.join(os.path.dirname(__file__), "..", "data", "live", "markets.sqlite")
 SCORES_DB = os.path.join(os.path.dirname(__file__), "..", "data", "live", "filter_scores.sqlite")
