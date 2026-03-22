@@ -83,6 +83,15 @@ def run_cycle(session_id: str) -> dict:
     if exits:
         print(f"  Exited {exits} positions")
 
+    # Crypto runs 24/7 (doesn't need market hours)
+    print("  --- Crypto Strategies ---")
+    try:
+        from crypto_strategy import run_crypto_scan
+        crypto_trades = run_crypto_scan(session_id)
+        stats["traded"] += len(crypto_trades)
+    except Exception as e:
+        print(f"  Crypto error: {e}")
+
     # Get current state
     info = get_account_info()
     current_positions = len(info.get("positions", []))

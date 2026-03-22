@@ -89,10 +89,10 @@ export default function Dashboard() {
 
       {/* Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <StatCard label="All-Time P&L" value={`$${status.pnl.all_time.toFixed(2)}`} color={pnlColor} />
-        <StatCard label="Trades Executed" value={String(status.trades.executed)} sub={`${status.trades.skipped} skipped`} />
-        <StatCard label="Kalshi Balance" value={`$${status.accounts.kalshi.balance.toFixed(2)}`} sub={status.accounts.kalshi.paper_mode ? "Paper" : "Live"} />
-        <StatCard label="Alpaca Value" value={`$${status.accounts.alpaca.portfolio_value.toLocaleString()}`} sub={status.accounts.alpaca.paper_mode ? "Paper" : "Live"} />
+        <StatCard label="Money Made" value={`$${status.pnl.all_time.toFixed(2)}`} color={pnlColor} sub="Total profit/loss from all trades" />
+        <StatCard label="Trades Made" value={String(status.trades.executed)} sub={`${status.trades.skipped} opportunities passed on (too risky)`} />
+        <StatCard label="Kalshi Account" value={`$${status.accounts.kalshi.balance.toFixed(2)}`} sub={status.accounts.kalshi.paper_mode ? "Practice mode (no real money)" : "Real money"} />
+        <StatCard label="Stock Account" value={`$${status.accounts.alpaca.portfolio_value.toLocaleString()}`} sub={status.accounts.alpaca.paper_mode ? "Practice mode (no real money)" : "Real money"} />
       </div>
 
       {/* Charts */}
@@ -115,7 +115,7 @@ export default function Dashboard() {
         </div>
 
         <div className="card">
-          <h3 className="text-sm font-semibold text-gray-400 mb-4">Strategy Mix</h3>
+          <h3 className="text-sm font-semibold text-gray-400 mb-4">Where the bot is putting money</h3>
           {stratData.length > 0 ? (
             <>
               <ResponsiveContainer width="100%" height={160}>
@@ -144,11 +144,11 @@ export default function Dashboard() {
       {/* Ensemble + Scanner */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="card">
-          <h3 className="text-sm font-semibold text-gray-400 mb-3">Ensemble</h3>
+          <h3 className="text-sm font-semibold text-gray-400 mb-3">AI Agreement</h3>
           <div className="flex items-center gap-6 mb-3">
             <div>
               <p className="text-3xl font-bold text-blue-400">{(status.ensemble.consensus_rate * 100).toFixed(0)}%</p>
-              <p className="text-xs text-gray-500">Consensus</p>
+              <p className="text-xs text-gray-500">How often the 3 AIs agree</p>
             </div>
             {Object.entries(status.ensemble.models).map(([name, data]) => (
               <div key={name} className="text-center">
@@ -171,12 +171,12 @@ export default function Dashboard() {
         </div>
 
         <div className="card">
-          <h3 className="text-sm font-semibold text-gray-400 mb-3">Scanner</h3>
+          <h3 className="text-sm font-semibold text-gray-400 mb-3">What the bot is watching</h3>
           <div className="grid grid-cols-2 gap-3">
-            <div><p className="text-2xl font-bold">{status.scanner.total_markets}</p><p className="text-xs text-gray-500">Markets</p></div>
-            <div><p className="text-2xl font-bold">{status.scanner.with_prices}</p><p className="text-xs text-gray-500">With prices</p></div>
-            <div><p className="text-2xl font-bold">{status.scanner.total_scored}</p><p className="text-xs text-gray-500">Scored</p></div>
-            <div><p className="text-2xl font-bold text-green-400">{status.scanner.passed_filter}</p><p className="text-xs text-gray-500">Passed</p></div>
+            <div><p className="text-2xl font-bold">{status.scanner.total_markets}</p><p className="text-xs text-gray-500">Markets found</p></div>
+            <div><p className="text-2xl font-bold">{status.scanner.with_prices}</p><p className="text-xs text-gray-500">Worth looking at</p></div>
+            <div><p className="text-2xl font-bold">{status.scanner.total_scored}</p><p className="text-xs text-gray-500">AI analyzed</p></div>
+            <div><p className="text-2xl font-bold text-green-400">{status.scanner.passed_filter}</p><p className="text-xs text-gray-500">Good enough to trade</p></div>
           </div>
           <div className="mt-3 flex flex-wrap gap-2">
             {Object.entries(status.scanner.categories || {}).map(([cat, n]) => (
@@ -188,7 +188,7 @@ export default function Dashboard() {
 
       {/* Recent Trades */}
       <div className="card">
-        <h3 className="text-sm font-semibold text-gray-400 mb-3">Recent Trades</h3>
+        <h3 className="text-sm font-semibold text-gray-400 mb-3">Recent Bets</h3>
         {recentExecuted.length > 0 ? (
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
@@ -217,7 +217,7 @@ export default function Dashboard() {
             </table>
           </div>
         ) : (
-          <p className="text-gray-600 text-sm">No executed trades yet</p>
+          <p className="text-gray-600 text-sm">No bets placed yet. The bot is being picky - it only trades when all the AIs agree it is a good bet.</p>
         )}
       </div>
 
