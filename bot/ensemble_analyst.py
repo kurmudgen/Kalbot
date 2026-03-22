@@ -189,7 +189,7 @@ def call_deepseek(prompt: str) -> dict | None:
     if not api_key:
         return None
     raw = _call_openai_compatible(
-        api_key, "https://api.deepseek.com", "deepseek-reasoner",
+        api_key, "https://api.deepseek.com", "deepseek-chat",
         [{"role": "user", "content": prompt}],
     )
     result = _parse_json(raw)
@@ -344,7 +344,7 @@ def analyze_markets(markets: list[dict] | None = None) -> list[dict]:
     conn = init_analyst_db()
     analyzed = []
 
-    print(f"Ensemble analysis: {len(markets)} markets (Perplexity → Claude + DeepSeek)")
+    print(f"Ensemble analysis: {len(markets)} markets (Perplexity -> Claude + DeepSeek)")
 
     for i, m in enumerate(markets):
         ticker = m["ticker"]
