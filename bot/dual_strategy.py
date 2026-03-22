@@ -365,6 +365,13 @@ def main():
             )
             sess_conn.commit()
 
+            # Publish dashboard status every cycle
+            try:
+                from status_publisher import publish
+                publish()
+            except Exception as e:
+                print(f"  Dashboard publish error: {e}")
+
             # Periodic check-in
             elapsed_sec = (datetime.now(timezone.utc) - start_time).total_seconds()
             if totals["cycles"] > 1 and elapsed_sec % CHECKIN_INTERVAL < LOOP_INTERVAL:
