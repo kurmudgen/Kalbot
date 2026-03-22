@@ -169,15 +169,25 @@ def main():
     start_time = datetime.now(timezone.utc)
 
     total_budget = get_scaled_budget()
-    safe_budget = total_budget * SAFE_BUDGET_FRACTION
-    sp_econ_budget = total_budget * SP500_ECON_BUDGET_FRACTION
-    wildcard_budget = total_budget * WILDCARD_BUDGET_FRACTION
+
+    # Dynamic allocation based on what's performing best
+    try:
+        from strategy_rebalancer import get_current_allocations
+        allocs = get_current_allocations()
+    except Exception:
+        allocs = {"SAFE": 0.50, "SP500_ECON": 0.25, "WILDCARD": 0.25}
+
+    safe_budget = total_budget * allocs.get("SAFE", 0.50)
+    sp_econ_budget = total_budget * allocs.get("SP500_ECON", 0.25)
+    wildcard_budget = total_budget * allocs.get("WILDCARD", 0.25)
 
     print(f"{'='*60}")
     print(f"  KALBOT TRIPLE STRATEGY")
     print(f"  Session: {session_id}")
     print(f"  Total budget: ${total_budget:.0f}/night")
-    print(f"  A) Weather: ${safe_budget:.0f} | B) S&P/Econ: ${sp_econ_budget:.0f} | C) Wildcard: ${wildcard_budget:.0f}")
+    print(f"  A) Weather: ${safe_budget:.0f} ({allocs.get('SAFE',0):.0%})")
+    print(f"  B) S&P/Econ: ${sp_econ_budget:.0f} ({allocs.get('SP500_ECON',0):.0%})")
+    print(f"  C) Wildcard: ${wildcard_budget:.0f} ({allocs.get('WILDCARD',0):.0%})")
     if RUN_DURATION_HOURS > 0:
         print(f"  Duration: {RUN_DURATION_HOURS} hours")
     else:
@@ -279,6 +289,16 @@ def main():
                     print(f"  Econ signals: {len(econ_signals)}")
             except Exception as e:
                 print(f"  Econ strategy error: {e}")
+
+            # Recompute allocations each cycle based on latest performance
+            try:
+                from strategy_rebalancer import compute_allocations
+                allocs = compute_allocations()
+                safe_budget = total_budget * allocs.get("SAFE", 0.50)
+                sp_econ_budget = total_budget * allocs.get("SP500_ECON", 0.25)
+                wildcard_budget = total_budget * allocs.get("WILDCARD", 0.25)
+            except Exception:
+                pass
 
             # Run Safe strategy (weather)
             print(f"\n--- BOT A: SAFE (weather, ${safe_budget:.0f}) ---")
