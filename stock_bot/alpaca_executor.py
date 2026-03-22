@@ -3,12 +3,12 @@ Alpaca stock trading executor.
 Handles buy/sell execution, position tracking, and paper/live modes.
 
 Setup:
-1. Sign up at alpaca.markets
-2. Get API key + secret from dashboard
+1. Sign up at app.alpaca.markets/signup (Trading API)
+2. Get API key + secret from paper trading dashboard
 3. Add to .env: ALPACA_API_KEY, ALPACA_SECRET_KEY
 4. Set ALPACA_PAPER=true for paper trading
 
-pip install alpaca-trade-api
+pip install alpaca-py  (NOT alpaca-trade-api which is deprecated)
 """
 
 import os
@@ -35,10 +35,9 @@ def get_alpaca_client():
     if not api_key or not secret_key:
         raise ValueError("ALPACA_API_KEY and ALPACA_SECRET_KEY required in .env")
 
-    import alpaca_trade_api as tradeapi
+    from alpaca.trading.client import TradingClient
 
-    base_url = ALPACA_PAPER_URL if paper else ALPACA_LIVE_URL
-    return tradeapi.REST(api_key, secret_key, base_url, api_version="v2")
+    return TradingClient(api_key, secret_key, paper=paper)
 
 
 def init_stock_db() -> sqlite3.Connection:
@@ -68,9 +67,9 @@ def init_stock_db() -> sqlite3.Connection:
 def get_account_info() -> dict:
     """Get current account balance and positions."""
     try:
-        api = get_alpaca_client()
-        account = api.get_account()
-        positions = api.list_positions()
+        client = get_alpaca_client()
+        account = client.get_account()
+        positions = client.get_all_positions()
 
         return {
             "cash": float(account.cash),
@@ -106,34 +105,42 @@ def execute_stock_trade(
     conn = init_stock_db()
 
     try:
-        api = get_alpaca_client()
+        from alpaca.trading.requests import MarketOrderRequest
+        from alpaca.trading.enums import OrderSide, TimeInForce
+        from alpaca.data.historical import StockHistoricalDataClient
+        from alpaca.data.requests import StockLatestQuoteRequest
+
+        client = get_alpaca_client()
 
         # Get current price
-        quote = api.get_latest_quote(symbol)
-        price = float(quote.ap) if quote.ap else float(quote.bp)
+        data_client = StockHistoricalDataClient(
+            os.getenv("ALPACA_API_KEY"), os.getenv("ALPACA_SECRET_KEY"),
+        )
+        quote = data_client.get_stock_latest_quote(StockLatestQuoteRequest(symbol_or_symbols=symbol))
+        price = float(quote[symbol].ask_price or quote[symbol].bid_price or 0)
 
         # Check buying power
-        account = api.get_account()
+        account = client.get_account()
         if side == "buy" and float(account.buying_power) < price * qty:
             print(f"  Insufficient buying power for {symbol}")
             return None
 
         # Place order
-        order = api.submit_order(
+        order_data = MarketOrderRequest(
             symbol=symbol,
             qty=qty,
-            side=side,
-            type="market",
-            time_in_force="day",
+            side=OrderSide.BUY if side == "buy" else OrderSide.SELL,
+            time_in_force=TimeInForce.DAY,
         )
+        order = client.submit_order(order_data)
 
         result = {
             "symbol": symbol,
             "side": side,
             "qty": qty,
             "price": price,
-            "order_id": order.id,
-            "status": order.status,
+            "order_id": str(order.id),
+            "status": str(order.status),
         }
 
         conn.execute(
