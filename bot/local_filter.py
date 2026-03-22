@@ -1,7 +1,10 @@
 """
-Local filter: scores markets using Ollama local model.
+Local filter: scores markets using dual Ollama models sequentially.
+Uses qwen2.5:7b then llama3.1:8b — both must agree to pass.
+Peak VRAM ~5GB (Ollama auto-swaps models).
+
 Reads from data/live/markets.sqlite, writes scores to data/live/filter_scores.sqlite.
-Only passes markets with relevance=true AND confidence > 0.6.
+Only passes markets with relevance=true AND confidence > 0.6 from BOTH models.
 """
 
 import json
@@ -17,7 +20,8 @@ from dotenv import load_dotenv
 load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL = "qwen2.5:14b"
+MODELS = ["qwen2.5:7b", "llama3.1:8b"]  # Sequential dual-model filter
+MODEL = MODELS[0]  # Primary model (used for single-model fallback)
 PROMPT_PATH = os.path.join(os.path.dirname(__file__), "..", "prompts", "local_filter.txt")
 MARKETS_DB = os.path.join(os.path.dirname(__file__), "..", "data", "live", "markets.sqlite")
 SCORES_DB = os.path.join(os.path.dirname(__file__), "..", "data", "live", "filter_scores.sqlite")
@@ -80,15 +84,15 @@ def get_open_markets() -> list[dict]:
     return [dict(r) for r in rows]
 
 
-def query_ollama(prompt: str) -> dict | None:
+def query_ollama(prompt: str, model: str = None) -> dict | None:
     try:
         resp = requests.post(
             OLLAMA_URL,
             json={
-                "model": MODEL,
+                "model": model or MODEL,
                 "prompt": prompt,
                 "stream": False,
-                "options": {"temperature": 0.3},
+                "options": {"temperature": 0.3, "num_predict": 150},
             },
             timeout=120,
         )
@@ -114,7 +118,9 @@ def run_filter() -> list[dict]:
     scores_conn = init_scores_db()
     passed = []
 
-    print(f"Scoring {len(markets)} markets with local model...")
+    use_dual = len(MODELS) > 1
+    print(f"Scoring {len(markets)} markets with {'dual' if use_dual else 'single'} local model{'s' if use_dual else ''}...")
+    print(f"Models: {', '.join(MODELS)}")
     print(f"Headlines fetched: {len(headlines)}")
 
     for i, market in enumerate(markets):
@@ -133,8 +139,9 @@ Recent relevant headlines:
 """
 
         print(f"[{i+1}/{len(markets)}] {title[:60]}...", end=" ", flush=True)
-        result = query_ollama(prompt)
 
+        # Query first model
+        result = query_ollama(prompt, model=MODELS[0])
         if result is None:
             print("SKIP")
             continue
@@ -143,9 +150,35 @@ Recent relevant headlines:
         conf = float(result.get("confidence", 0.5))
         relevant = bool(result.get("relevant", False))
         reasoning = str(result.get("reasoning", ""))
-        price_gap = abs(prob - market_price)
 
-        passed_filter = relevant and conf > CONFIDENCE_THRESHOLD
+        # If first model says not relevant or low confidence, skip second model
+        if not relevant or conf <= CONFIDENCE_THRESHOLD:
+            price_gap = abs(prob - market_price)
+            passed_filter = False
+        elif use_dual:
+            # Query second model for confirmation
+            result2 = query_ollama(prompt, model=MODELS[1])
+            if result2 is None:
+                # Second model failed — trust first model alone
+                price_gap = abs(prob - market_price)
+                passed_filter = relevant and conf > CONFIDENCE_THRESHOLD
+            else:
+                prob2 = float(result2.get("probability", 0.5))
+                conf2 = float(result2.get("confidence", 0.5))
+                relevant2 = bool(result2.get("relevant", False))
+
+                # Both must agree on relevance
+                both_relevant = relevant and relevant2
+                avg_conf = (conf + conf2) / 2
+                prob = (prob + prob2) / 2  # Average probability
+                conf = avg_conf
+                relevant = both_relevant
+                reasoning = f"[dual] {reasoning}"
+                price_gap = abs(prob - market_price)
+                passed_filter = both_relevant and avg_conf > CONFIDENCE_THRESHOLD
+        else:
+            price_gap = abs(prob - market_price)
+            passed_filter = relevant and conf > CONFIDENCE_THRESHOLD
 
         scores_conn.execute(
             """INSERT OR REPLACE INTO filter_scores
