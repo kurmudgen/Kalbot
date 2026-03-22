@@ -19,7 +19,10 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 SESSIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "sessions.sqlite")
 LOOP_INTERVAL = 300  # 5 minutes between full cycles
-STOP_HOUR = 6  # Stop at 6am local time
+STOP_HOUR = None  # None = run forever, or set to hour (e.g. 6) to stop at 6am
+RUN_DURATION_HOURS = float(os.getenv("RUN_DURATION_HOURS", "0"))  # 0 = forever
+CHECKIN_INTERVAL = 6 * 3600  # Print status report every 6 hours
+NOTIFY_PHONE = os.getenv("NOTIFY_PHONE", "")  # For future SMS notifications
 
 
 def init_sessions_db() -> sqlite3.Connection:
@@ -107,9 +110,48 @@ def run_cycle(session_id: str) -> dict:
     return stats
 
 
+_start = datetime.now()
+
+
+def print_checkin(totals: dict, start_time: str, session_id: str):
+    """Print a periodic status report. Future: send via SMS/email."""
+    elapsed = datetime.now(timezone.utc) - datetime.fromisoformat(start_time)
+    hours = elapsed.total_seconds() / 3600
+
+    mode = "PAPER" if os.getenv("PAPER_TRADE", "true").lower() == "true" else "LIVE"
+
+    report = f"""
+{'='*50}
+  KALBOT CHECK-IN ({mode} MODE)
+  Session: {session_id}
+  Uptime: {hours:.1f} hours
+  Cycles: {totals['cycles']}
+  Markets scanned: {totals['markets_scanned']}
+  Passed filter: {totals['markets_filtered']}
+  Cloud analyzed: {totals['markets_analyzed']}
+  Trades placed: {totals['trades_placed']}
+  Errors: {totals['errors']}
+{'='*50}"""
+    print(report)
+
+    # Write to a file for easy external monitoring
+    checkin_path = os.path.join(os.path.dirname(__file__), "..", "logs", "latest_checkin.txt")
+    with open(checkin_path, "w") as f:
+        f.write(report)
+
+    # Future: SMS notification via Twilio
+    # if NOTIFY_PHONE:
+    #     send_sms(NOTIFY_PHONE, report)
+
+
 def should_stop() -> bool:
-    now = datetime.now()
-    return now.hour >= STOP_HOUR and now.hour < 12
+    if RUN_DURATION_HOURS > 0:
+        elapsed = (datetime.now() - _start).total_seconds() / 3600
+        return elapsed >= RUN_DURATION_HOURS
+    if STOP_HOUR is not None:
+        now = datetime.now()
+        return now.hour >= STOP_HOUR and now.hour < 12
+    return False  # Run forever
 
 
 def main():
@@ -119,7 +161,12 @@ def main():
     print(f"{'='*60}")
     print(f"  KALBOT NIGHT SESSION: {session_id}")
     print(f"  Started: {start_time}")
-    print(f"  Will stop at {STOP_HOUR}:00 local time")
+    if RUN_DURATION_HOURS > 0:
+        print(f"  Will stop after {RUN_DURATION_HOURS} hours")
+    elif STOP_HOUR is not None:
+        print(f"  Will stop at {STOP_HOUR}:00 local time")
+    else:
+        print(f"  Running continuously (Ctrl+C to stop)")
     print(f"{'='*60}")
 
     sess_conn = init_sessions_db()
@@ -168,6 +215,11 @@ def main():
                  totals["trades_placed"], totals["errors"], session_id),
             )
             sess_conn.commit()
+
+            # Periodic check-in report
+            elapsed_sec = (datetime.now(timezone.utc) - datetime.fromisoformat(start_time)).total_seconds()
+            if totals["cycles"] > 0 and elapsed_sec % CHECKIN_INTERVAL < LOOP_INTERVAL:
+                print_checkin(totals, start_time, session_id)
 
             if should_stop():
                 break
