@@ -33,13 +33,21 @@ STRATEGIES = {
         "expiry_hours": 48,
         "kelly_fraction": 0.30,
     },
-    "WILDCARD": {
-        "name": "WILDCARD",
+    "SNIPER": {
+        "name": "SNIPER",
         "categories": ["economics", "inflation", "tsa", "weather"],
-        "confidence_min": 0.70,     # Lower bar — we have more info close to expiry
-        "price_gap_min": 0.08,      # Smaller edge ok when outcome is nearly known
+        "confidence_min": 0.70,     # Lower bar — outcome is nearly known
+        "price_gap_min": 0.08,      # Smaller edge ok near expiry
         "expiry_hours": 6,          # ONLY markets expiring within 6 hours
-        "kelly_fraction": 0.25,     # More aggressive — high certainty near expiry
+        "kelly_fraction": 0.25,     # More aggressive — high certainty
+    },
+    "EMERGING": {
+        "name": "EMERGING",
+        "categories": ["economics", "inflation", "tsa", "weather"],
+        "confidence_min": 0.75,     # Standard bar
+        "price_gap_min": 0.10,      # Decent edge required
+        "expiry_hours": 168,        # Any timeframe
+        "kelly_fraction": 0.15,     # Conservative — less certain further out
     },
 }
 

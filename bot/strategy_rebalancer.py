@@ -29,7 +29,8 @@ DEFAULT_ALLOCATIONS = {
     "BITCOIN": 0.12,    # Fat tails but less efficient markets
     "ECON": 0.08,       # CAUTION: -70% ROI in ryanfrigo's bot, very conservative
     "TREASURY": 0.08,   # New Kalshi category, less efficient
-    "WILDCARD": 0.12,   # Breaking news plays
+    "SNIPER": 0.08,     # Expiry sniping — outcomes nearly known
+    "EMERGING": 0.06,   # New opportunities, any timeframe
     "GAS": 0.05,        # Thin liquidity
     "FOREX": 0.05,      # Thin liquidity
 }
