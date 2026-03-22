@@ -108,13 +108,13 @@ def get_open_markets() -> list[dict]:
             continue
 
         # Skip markets with no trading activity (dead markets)
-        volume = r.get("volume") or 0
+        volume = r["volume"] or 0
         if volume == 0:
             skipped["no_volume"] += 1
             continue
 
         # Skip effectively resolved markets (price at 0-2 or 98-100)
-        price = r.get("last_price") or 50
+        price = r["last_price"] or 50
         if price <= 2 or price >= 98:
             skipped["resolved"] += 1
             continue
