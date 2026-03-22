@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function TradesPage() {
   const { status, loading } = useStatus();
-  const [filter, setFilter] = useState<"all" | "executed" | "skipped">("all");
+  const [filter, setFilter] = useState<"all" | "executed" | "skipped">("executed");
 
   if (loading || !status) return <div className="text-gray-500 p-8">Loading...</div>;
 
