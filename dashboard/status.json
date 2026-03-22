@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-22T21:40:18.801109+00:00",
+  "updated_at": "2026-03-22T21:43:48.511155+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -855,7 +855,7 @@
     {
       "ticker": "KXINX-26MAR23H1600-T6250",
       "title": "Will the S&P 500 be below 6250 on Mar 23, 2026 at 4pm EDT?",
-      "price": 6,
+      "price": 5,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     },
@@ -916,7 +916,14 @@
       "category": "economics"
     }
   ],
-  "news": [],
+  "news": [
+    {
+      "text": "High-frequency indicators project April 2026 CPI month-over-month change at 0.2%[2]. Cleveland Fed's dynamic nowcasting model forecasts April CPI within 0.1%-0.3% MoM[2]. Prediction markets show conse",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-22T21:43:40"
+    }
+  ],
   "alerts": [
     {
       "level": "warning",
@@ -926,7 +933,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 1,
-    "cycles": 5,
-    "uptime_hours": 0.6
+    "cycles": 1,
+    "uptime_hours": 0.0
   }
 }
