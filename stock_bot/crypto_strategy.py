@@ -326,7 +326,19 @@ def run_crypto_scan(session_id: str = "") -> list[dict]:
 
     all_signals = blue_signals[:3] + micro_signals[:3]  # Top 3 each
 
+    # Get currently held crypto to avoid duplicate buys
+    try:
+        info = get_account_info()
+        held = {p["symbol"] for p in info.get("positions", [])}
+    except Exception:
+        held = set()
+
     for sig in all_signals:
+        # Skip if already holding this crypto
+        alpaca_sym = sig["symbol"].replace("/", "")
+        if alpaca_sym in held or sig["symbol"] in held:
+            continue
+
         print(f"  Analyzing {sig['name']}...", end=" ")
         analysis = analyze_with_llm(sig)
 

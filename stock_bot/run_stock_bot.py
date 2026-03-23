@@ -95,6 +95,8 @@ def run_cycle(session_id: str) -> dict:
     # Get current state
     info = get_account_info()
     current_positions = len(info.get("positions", []))
+    held_symbols = {p["symbol"] for p in info.get("positions", [])}
+
     if current_positions >= MAX_POSITIONS:
         print(f"  Max positions ({MAX_POSITIONS}) reached, skipping scan")
         return stats
@@ -110,10 +112,14 @@ def run_cycle(session_id: str) -> dict:
 
         blue_signals = scan_and_analyze()
         for sig in blue_signals:
+            # Skip if we already hold this stock
+            if sig["symbol"] in held_symbols:
+                continue
+
             if sig["action"] == "buy" and sig["confidence"] > 0.65:
-                # Position size: volatility-adjusted
-                position_pct = 0.05  # 5% default
-                amount = account_val * position_pct
+                # Position size: max $500 per stock (safe for paper + real)
+                max_per_stock = float(os.getenv("STOCK_MAX_POSITION", "10")) * 50  # $500 default
+                amount = min(max_per_stock, account_val * 0.02)  # 2% of portfolio or $500
                 qty = max(1, int(amount / sig["price"]))
 
                 result = execute_stock_trade(
