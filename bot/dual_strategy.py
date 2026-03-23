@@ -403,8 +403,17 @@ def main():
                 except Exception as e:
                     print(f"  Self-check error: {e}")
 
-            # Weekly repo scan (Sundays at ~6AM)
+            # Weekly performance report (Fridays at ~8AM)
             now_local = datetime.now()
+            if now_local.weekday() == 4 and 8 <= now_local.hour < 9 and totals["cycles"] % 12 == 1:
+                try:
+                    from weekly_report import send_weekly_report
+                    print("\n--- WEEKLY REPORT ---")
+                    send_weekly_report()
+                except Exception as e:
+                    print(f"  Weekly report error: {e}")
+
+            # Weekly repo scan (Sundays at ~6AM)
             if now_local.weekday() == 6 and 6 <= now_local.hour < 7 and totals["cycles"] % 12 == 1:
                 try:
                     from weekly_repo_scan import run_weekly_scan
