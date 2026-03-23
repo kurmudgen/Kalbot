@@ -121,14 +121,47 @@ def send_weekly_report():
         print(f"Failed to send report: {e}")
 
     # Save to file
+    import re, json
+    clean = re.sub(r"<[^>]+>", "", report)
+
     report_path = os.path.join(os.path.dirname(__file__), "..", "logs", "weekly_report.txt")
-    with open(report_path, "w") as f:
-        # Strip HTML tags for file version
-        import re
-        clean = re.sub(r"<[^>]+>", "", report)
+    with open(report_path, "w", encoding="utf-8") as f:
         f.write(clean)
 
-    print(report.replace("<b>", "").replace("</b>", ""))
+    # Save to reports archive (JSON for dashboard)
+    archive_path = os.path.join(os.path.dirname(__file__), "..", "dashboard", "reports.json")
+    reports = []
+    if os.path.exists(archive_path):
+        try:
+            with open(archive_path) as f:
+                reports = json.load(f)
+        except Exception:
+            reports = []
+
+    reports.insert(0, {
+        "date": datetime.now().strftime("%Y-%m-%d"),
+        "text": clean,
+        "html": report,
+    })
+    reports = reports[:52]  # Keep last year of weekly reports
+
+    with open(archive_path, "w", encoding="utf-8") as f:
+        json.dump(reports, f, indent=2, ensure_ascii=False)
+
+    # Push to GitHub
+    try:
+        import subprocess
+        cwd = os.path.join(os.path.dirname(__file__), "..")
+        subprocess.run(["git", "add", "dashboard/reports.json"], cwd=cwd, capture_output=True, timeout=10)
+        subprocess.run(["git", "commit", "-m", "Weekly report"], cwd=cwd, capture_output=True, timeout=10)
+        subprocess.run(["git", "push"], cwd=cwd, capture_output=True, timeout=30)
+    except Exception:
+        pass
+
+    try:
+        print(report.replace("<b>", "").replace("</b>", "").encode("ascii", "ignore").decode())
+    except Exception:
+        print("Report generated and sent.")
 
 
 if __name__ == "__main__":
