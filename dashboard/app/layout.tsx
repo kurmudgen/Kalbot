@@ -16,7 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} dark`}>
       <body className="min-h-screen bg-[#0f1117] text-gray-200 flex">
         <Sidebar />
-        <main className="flex-1 ml-16 md:ml-56 p-4 md:p-6 overflow-auto">
+        {/* Desktop: sidebar left margin. Mobile: bottom nav padding */}
+        <main className="flex-1 md:ml-56 p-3 sm:p-4 md:p-6 overflow-auto pb-20 md:pb-6">
           {children}
         </main>
       </body>
