@@ -291,6 +291,17 @@ def scan_and_analyze() -> list[dict]:
             all_symbols.append(s)
             symbol_categories[s] = category
 
+    # Add congressional buys to watchlist (politicians beat the market)
+    try:
+        from market_intelligence import get_congress_buys
+        congress = get_congress_buys()
+        for s in congress[:5]:
+            if s not in symbol_categories:
+                all_symbols.append(s)
+                symbol_categories[s] = "congress"
+    except Exception:
+        pass
+
     print(f"  Blue chip scan: {len(all_symbols)} symbols")
 
     # Score all stocks technically

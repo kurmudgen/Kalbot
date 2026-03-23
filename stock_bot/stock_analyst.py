@@ -77,10 +77,19 @@ def analyze_stock(stock: dict) -> dict | None:
     memory_context = ""
     try:
         from trade_memory import recall_similar, format_memories_for_prompt
-
         situation = f"{symbol} {change_pct:+.1f}% on {volume:,} volume"
         memories = recall_similar(situation, top_k=3)
         memory_context = format_memories_for_prompt(memories)
+    except Exception:
+        pass
+
+    # Market intelligence — Fear & Greed + congressional trades
+    market_intel = ""
+    try:
+        from market_intelligence import get_market_context
+        market_intel = get_market_context()
+        if market_intel:
+            memory_context = f"{memory_context}\n\n{market_intel}" if memory_context else market_intel
     except Exception:
         pass
 
