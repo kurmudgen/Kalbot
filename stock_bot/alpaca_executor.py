@@ -107,30 +107,53 @@ def execute_stock_trade(
     try:
         from alpaca.trading.requests import MarketOrderRequest
         from alpaca.trading.enums import OrderSide, TimeInForce
-        from alpaca.data.historical import StockHistoricalDataClient
-        from alpaca.data.requests import StockLatestQuoteRequest
 
         client = get_alpaca_client()
+        is_crypto = "/" in symbol  # BTC/USD has slash, MSFT doesn't
 
         # Get current price
-        data_client = StockHistoricalDataClient(
-            os.getenv("ALPACA_API_KEY"), os.getenv("ALPACA_SECRET_KEY"),
-        )
-        quote = data_client.get_stock_latest_quote(StockLatestQuoteRequest(symbol_or_symbols=symbol))
-        price = float(quote[symbol].ask_price or quote[symbol].bid_price or 0)
+        price = 0
+        try:
+            if is_crypto:
+                from alpaca.data.historical import CryptoHistoricalDataClient
+                from alpaca.data.requests import CryptoLatestQuoteRequest
+                data_client = CryptoHistoricalDataClient()
+                quote = data_client.get_crypto_latest_quote(CryptoLatestQuoteRequest(symbol_or_symbols=symbol))
+                price = float(quote[symbol].ask_price or quote[symbol].bid_price or 0)
+            else:
+                from alpaca.data.historical import StockHistoricalDataClient
+                from alpaca.data.requests import StockLatestQuoteRequest
+                data_client = StockHistoricalDataClient(
+                    os.getenv("ALPACA_API_KEY"), os.getenv("ALPACA_SECRET_KEY"),
+                )
+                quote = data_client.get_stock_latest_quote(StockLatestQuoteRequest(symbol_or_symbols=symbol))
+                price = float(quote[symbol].ask_price or quote[symbol].bid_price or 0)
+        except Exception:
+            pass  # Price stays 0, will skip trade
+
+        # Skip if price lookup failed
+        if price <= 0:
+            print(f"  Could not get price for {symbol}, skipping")
+            conn.close()
+            return None
+
+        # Enforce $10 minimum for crypto
+        if is_crypto and price * qty < 10:
+            qty = max(qty, 10.0 / price)
 
         # Check buying power
         account = client.get_account()
         if side == "buy" and float(account.buying_power) < price * qty:
             print(f"  Insufficient buying power for {symbol}")
+            conn.close()
             return None
 
-        # Place order
+        # Place order (crypto needs GTC, stocks use DAY)
         order_data = MarketOrderRequest(
             symbol=symbol,
             qty=qty,
             side=OrderSide.BUY if side == "buy" else OrderSide.SELL,
-            time_in_force=TimeInForce.DAY,
+            time_in_force=TimeInForce.GTC if is_crypto else TimeInForce.DAY,
         )
         order = client.submit_order(order_data)
 
