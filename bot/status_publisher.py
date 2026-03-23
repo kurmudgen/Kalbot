@@ -253,14 +253,12 @@ def publish():
     with open(PUBLIC_STATUS_PATH, "w") as f:
         json.dump(status, f, indent=2, default=str)
 
-    # Git push both files
+    # Push status.json to GitHub (public repo — raw URL serves it live)
     try:
         cwd = BASE_DIR
-        subprocess.run(["git", "add", "dashboard/status.json",
-                        "dashboard/public/status.json"],
+        subprocess.run(["git", "add", "dashboard/status.json"],
                        cwd=cwd, capture_output=True, timeout=10)
-        subprocess.run(["git", "commit", "-m", "Dashboard status update",
-                        "--allow-empty"],
+        subprocess.run(["git", "commit", "-m", "status update", "--allow-empty"],
                        cwd=cwd, capture_output=True, timeout=10)
         subprocess.run(["git", "push"],
                        cwd=cwd, capture_output=True, timeout=30)
