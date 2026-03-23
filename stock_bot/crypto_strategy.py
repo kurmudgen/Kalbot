@@ -23,22 +23,28 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True
 
 CRYPTO_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "crypto_strategy.sqlite")
 
-# Blue chip crypto watchlist (ONLY coins Alpaca actually supports)
-# https://alpaca.markets/support/crypto-trading
+# Blue chip crypto (Alpaca supports 73 crypto pairs)
 BLUE_CHIPS = {
     "BTC/USD": "Bitcoin",
     "ETH/USD": "Ethereum",
     "SOL/USD": "Solana",
+    "AVAX/USD": "Avalanche",
+    "LINK/USD": "Chainlink",
+    "DOT/USD": "Polkadot",
     "LTC/USD": "Litecoin",
-    "BCH/USD": "Bitcoin Cash",
+    "ADA/USD": "Cardano",
+    "XRP/USD": "Ripple",
 }
 
-# Micro-cap / meme coins (ONLY coins Alpaca actually supports)
+# Micro-cap / meme coins
 MICRO_CAPS = {
     "DOGE/USD": "Dogecoin",
     "SHIB/USD": "Shiba Inu",
     "UNI/USD": "Uniswap",
     "AAVE/USD": "Aave",
+    "WIF/USD": "dogwifhat",
+    "ONDO/USD": "Ondo",
+    "CRV/USD": "Curve",
 }
 
 STOP_LOSS_PCT = 0.08     # 8% stop loss (crypto is volatile)
@@ -350,7 +356,7 @@ def run_crypto_scan(session_id: str = "") -> list[dict]:
 
         # Execute via Alpaca
         result = execute_stock_trade(
-            symbol=sig["symbol"].replace("/", ""),  # Alpaca uses BTCUSD not BTC/USD
+            symbol=sig["symbol"],  # Alpaca uses BTC/USD with the slash
             side="buy",
             qty=round(qty, 6),
             strategy=f"crypto_{sig['strategy']}",
