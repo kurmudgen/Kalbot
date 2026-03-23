@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-23T00:09:39.389905+00:00",
+  "updated_at": "2026-03-23T00:16:47.520096+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -796,19 +796,33 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.5325
+        "avg_probability": 0.64
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.4825
+        "avg_probability": 0.52
       },
       "deepseek": {
         "analyses": 4,
-        "avg_probability": 0.5175
+        "avg_probability": 0.5675
       }
     },
     "consensus_rate": 1.0,
     "recent_votes": [
+      {
+        "perplexity": 0.15,
+        "claude": 0.2,
+        "deepseek": 0.18,
+        "consensus": true,
+        "time": "2026-03-23T00:16:35"
+      },
+      {
+        "perplexity": 0.68,
+        "claude": 0.25,
+        "deepseek": 0.35,
+        "consensus": true,
+        "time": "2026-03-23T00:16:21"
+      },
       {
         "perplexity": 0.78,
         "claude": 0.78,
@@ -822,20 +836,6 @@
         "deepseek": 0.92,
         "consensus": true,
         "time": "2026-03-23T00:09:23"
-      },
-      {
-        "perplexity": 0.22,
-        "claude": 0.22,
-        "deepseek": 0.18,
-        "consensus": true,
-        "time": "2026-03-23T00:09:07"
-      },
-      {
-        "perplexity": 0.18,
-        "claude": 0.08,
-        "deepseek": 0.15,
-        "consensus": true,
-        "time": "2026-03-23T00:08:53"
       }
     ]
   },
@@ -843,7 +843,7 @@
     "total_markets": 573,
     "with_prices": 430,
     "passed_filter": 4,
-    "total_scored": 231,
+    "total_scored": 232,
     "categories": {
       "economics": 400,
       "inflation": 173
@@ -923,6 +923,24 @@
   ],
   "news": [
     {
+      "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY forecasted by RBC, J.P. Morgan due to tight labor market, consu",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-23T00:16:39"
+    },
+    {
+      "text": "Robinhood prediction market prices >0.4% at 33\u00a2 and >0.5% implied around 17\u00a2, aligning with current market at 0.17; Bank of America forecasts core CPI peaking at 3.2% in Q2 2026, retreating to 2.8% by",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-23T00:16:27"
+    },
+    {
+      "text": "Forecasts indicate April 2026 CPI YoY at 2.7-3.3%, with models and markets expecting ~2.8%[1]. Base effects from prior-year declines provide 13-18pp tailwind, sustaining CPI at 2.8-3.2%[1]. JPMorgan p",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-23T00:16:13"
+    },
+    {
       "text": "Latest CPI data shows February 2026 monthly increase of +0.3%[7]. Year-over-year CPI was 2.4% for January 2026 and 2.5% core inflation in February 2026[6][7]. J.P. Morgan forecasts CPI inflation to ac",
       "category": "inflation",
       "source": "perplexity",
@@ -963,31 +981,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-23T00:01:42"
-    },
-    {
-      "text": "Prediction markets on Kalshi indicate probabilities of April 2026 CPI increasing above 0.1% (74%), above 0.2% (55%), and above 0.3% (26%) month-over-month[1]. The Octagon AI model and market consensus",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-23T00:01:25"
-    },
-    {
-      "text": "Robinhood prediction market shows 74% probability for CPI >0.1% in July 2026, matching the current market price[2]. Kalshi market implies ~71% for a similar >0.1% outcome[6]. BLS February 2026 CPI-U r",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-22T23:54:40"
-    },
-    {
-      "text": "Octagon AI model and market forecast CPI month-over-month for June 2026 at exactly 0.3%, with no mispricing evidence; sticky inflation pressures from tight labor market, wage growth, consumer spending",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-22T23:54:27"
     }
   ],
-  "alerts": [],
+  "alerts": [
+    {
+      "level": "warning",
+      "message": "1 errors this session"
+    }
+  ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 0,
-    "cycles": 7,
-    "uptime_hours": 0.8
+    "errors_24h": 1,
+    "cycles": 8,
+    "uptime_hours": 0.9
   }
 }
