@@ -253,35 +253,15 @@ def publish():
     with open(PUBLIC_STATUS_PATH, "w") as f:
         json.dump(status, f, indent=2, default=str)
 
-    # Upload via GitHub API (updates file without triggering Vercel rebuild)
+    # Push to GitHub (Vercel disconnected — no rebuild trigger)
     try:
-        import requests as req
-        import base64
-
-        token = os.getenv("GITHUB_TOKEN", "")
-        if not token:
-            # Fall back to git push (may trigger rebuilds)
-            subprocess.run(["git", "add", "dashboard/status.json"],
-                           cwd=BASE_DIR, capture_output=True, timeout=10)
-            subprocess.run(["git", "commit", "-m", "status update"],
-                           cwd=BASE_DIR, capture_output=True, timeout=10)
-            subprocess.run(["git", "push"],
-                           cwd=BASE_DIR, capture_output=True, timeout=30)
-        else:
-            # GitHub API file update (doesn't trigger Vercel)
-            api_url = "https://api.github.com/repos/kurmudgen/Kalbot/contents/dashboard/status.json"
-            headers = {"Authorization": f"token {token}", "Accept": "application/vnd.github.v3+json"}
-
-            # Get current file SHA
-            r = req.get(api_url, headers=headers, timeout=10)
-            sha = r.json().get("sha", "") if r.status_code == 200 else ""
-
-            content = base64.b64encode(json.dumps(status, indent=2, default=str).encode()).decode()
-            req.put(api_url, json={
-                "message": "status update",
-                "content": content,
-                "sha": sha,
-            }, headers=headers, timeout=15)
+        cwd = BASE_DIR
+        subprocess.run(["git", "add", "dashboard/status.json"],
+                       cwd=cwd, capture_output=True, timeout=10)
+        subprocess.run(["git", "commit", "-m", "status update"],
+                       cwd=cwd, capture_output=True, timeout=10)
+        subprocess.run(["git", "push"],
+                       cwd=cwd, capture_output=True, timeout=30)
     except Exception:
         pass
 
