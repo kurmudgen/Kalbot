@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-23T18:52:55.389191+00:00",
+  "updated_at": "2026-03-23T18:59:18.873991+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -916,14 +916,14 @@
     {
       "ticker": "KXINX-26MAR23H1600-B6662",
       "title": "Will the S&P 500 be between 6650 and 6674.9999 on Mar 23, 2026 at 4pm EDT?",
-      "price": 6,
+      "price": 7,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR23H1600-B6637",
       "title": "Will the S&P 500 be between 6625 and 6649.9999 on Mar 23, 2026 at 4pm EDT?",
-      "price": 27,
+      "price": 28,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     }
@@ -994,7 +994,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 39,
-    "uptime_hours": 4.1
+    "cycles": 40,
+    "uptime_hours": 4.2
   }
 }
