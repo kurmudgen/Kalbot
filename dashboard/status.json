@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-23T01:00:44.262534+00:00",
+  "updated_at": "2026-03-23T01:16:54.251829+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -842,7 +842,7 @@
   "scanner": {
     "total_markets": 573,
     "with_prices": 430,
-    "passed_filter": 4,
+    "passed_filter": 0,
     "total_scored": 232,
     "categories": {
       "economics": 400,
@@ -992,7 +992,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 3,
-    "cycles": 14,
-    "uptime_hours": 1.6
+    "cycles": 15,
+    "uptime_hours": 1.9
   }
 }
