@@ -139,8 +139,8 @@ def execute_stock_trade(
             "side": side,
             "qty": qty,
             "price": price,
-            "order_id": str(order.id),
-            "status": str(order.status),
+            "order_id": str(order.id) if order.id else "",
+            "status": str(order.status) if order.status else "submitted",
         }
 
         conn.execute(
@@ -148,8 +148,8 @@ def execute_stock_trade(
                (symbol, side, qty, price, strategy, confidence, reasoning,
                 order_id, status, traded_at, session_id)
                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-            (symbol, side, qty, price, strategy, confidence, reasoning,
-             order.id, order.status,
+            (symbol, side, float(qty), float(price), strategy, float(confidence), reasoning,
+             str(order.id) if order.id else "", str(order.status) if order.status else "submitted",
              datetime.now(timezone.utc).isoformat(), session_id),
         )
         conn.commit()

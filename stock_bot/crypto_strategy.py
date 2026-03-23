@@ -23,28 +23,22 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True
 
 CRYPTO_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "crypto_strategy.sqlite")
 
-# Blue chip crypto watchlist (Alpaca-supported)
+# Blue chip crypto watchlist (ONLY coins Alpaca actually supports)
+# https://alpaca.markets/support/crypto-trading
 BLUE_CHIPS = {
     "BTC/USD": "Bitcoin",
     "ETH/USD": "Ethereum",
     "SOL/USD": "Solana",
-    "AVAX/USD": "Avalanche",
-    "LINK/USD": "Chainlink",
-    "DOT/USD": "Polkadot",
-    "ATOM/USD": "Cosmos",
     "LTC/USD": "Litecoin",
+    "BCH/USD": "Bitcoin Cash",
 }
 
-# Micro-cap / meme coins (Alpaca-supported)
+# Micro-cap / meme coins (ONLY coins Alpaca actually supports)
 MICRO_CAPS = {
     "DOGE/USD": "Dogecoin",
     "SHIB/USD": "Shiba Inu",
     "UNI/USD": "Uniswap",
     "AAVE/USD": "Aave",
-    "ALGO/USD": "Algorand",
-    "XLM/USD": "Stellar",
-    "ETC/USD": "Ethereum Classic",
-    "BCH/USD": "Bitcoin Cash",
 }
 
 STOP_LOSS_PCT = 0.08     # 8% stop loss (crypto is volatile)

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-23T07:40:03.545012+00:00",
+  "updated_at": "2026-03-23T14:12:26.653910+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -847,12 +847,12 @@
     ]
   },
   "scanner": {
-    "total_markets": 573,
-    "with_prices": 432,
+    "total_markets": 703,
+    "with_prices": 435,
     "passed_filter": 0,
-    "total_scored": 234,
+    "total_scored": 239,
     "categories": {
-      "economics": 400,
+      "economics": 530,
       "inflation": 173
     }
   },
@@ -867,21 +867,21 @@
     {
       "ticker": "KXINX-26MAR23H1600-T6250",
       "title": "Will the S&P 500 be below 6250 on Mar 23, 2026 at 4pm EDT?",
-      "price": 4,
+      "price": 2,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR23H1600-B6837",
       "title": "Will the S&P 500 be between 6825 and 6849.9999 on Mar 23, 2026 at 4pm EDT?",
-      "price": 14,
+      "price": 1,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR23H1600-B6812",
       "title": "Will the S&P 500 be between 6800 and 6824.9999 on Mar 23, 2026 at 4pm EDT?",
-      "price": 14,
+      "price": 1,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     },
@@ -895,35 +895,35 @@
     {
       "ticker": "KXINX-26MAR23H1600-B6737",
       "title": "Will the S&P 500 be between 6725 and 6749.9999 on Mar 23, 2026 at 4pm EDT?",
-      "price": 18,
+      "price": 5,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR23H1600-B6712",
       "title": "Will the S&P 500 be between 6700 and 6724.9999 on Mar 23, 2026 at 4pm EDT?",
-      "price": 11,
+      "price": 7,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR23H1600-B6687",
       "title": "Will the S&P 500 be between 6675 and 6699.9999 on Mar 23, 2026 at 4pm EDT?",
-      "price": 8,
+      "price": 12,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR23H1600-B6662",
       "title": "Will the S&P 500 be between 6650 and 6674.9999 on Mar 23, 2026 at 4pm EDT?",
-      "price": 20,
+      "price": 17,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR23H1600-B6637",
       "title": "Will the S&P 500 be between 6625 and 6649.9999 on Mar 23, 2026 at 4pm EDT?",
-      "price": 15,
+      "price": 19,
       "close_time": "2026-03-23T20:00:00Z",
       "category": "economics"
     }
@@ -994,7 +994,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 14,
-    "uptime_hours": 1.4
+    "cycles": 62,
+    "uptime_hours": 6.5
   }
 }
