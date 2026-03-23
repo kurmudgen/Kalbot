@@ -149,6 +149,28 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         price_gap = score["price_gap"]
         reasoning = score.get("cloud_reasoning", "")
 
+        # Order book depth check — skip thin markets
+        try:
+            from orderbook_analyzer import is_safe_to_trade
+            if not is_safe_to_trade(ticker):
+                skip_reason = "thin order book (low liquidity)"
+        except Exception:
+            pass
+
+        if skip_reason:
+            pass  # Already have a reason to skip
+        else:
+            pass  # Continue to other checks
+
+        # Seasonal adjustment for weather markets
+        if category == "weather" and not skip_reason:
+            try:
+                from seasonal_adjuster import get_seasonal_multiplier
+                seasonal_mult = get_seasonal_multiplier(title)
+                cloud_conf = cloud_conf * seasonal_mult
+            except Exception:
+                pass
+
         # Check historical bias — boost confidence when model agrees with history
         price_cents = int(market_price * 100)
         hist_bias = get_historical_bias(price_cents)

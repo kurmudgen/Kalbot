@@ -42,6 +42,31 @@ def _count(db_path, table, where=""):
     return n
 
 
+def _build_pnl(total_pnl, pnl_history):
+    """Build P&L section including resolved trade stats."""
+    result = {
+        "today": total_pnl,
+        "all_time": total_pnl,
+        "history": pnl_history,
+        "resolved": {"total_trades": 0, "wins": 0, "losses": 0, "win_rate": 0, "actual_pnl": 0},
+    }
+    try:
+        from resolution_tracker import get_lifetime_stats
+        stats = get_lifetime_stats()
+        if stats["trades"] > 0:
+            result["resolved"] = {
+                "total_trades": stats["trades"],
+                "wins": stats["wins"],
+                "losses": stats["losses"],
+                "win_rate": stats["win_rate"],
+                "actual_pnl": stats["total_pnl"],
+            }
+            result["all_time"] = stats["total_pnl"]
+    except Exception:
+        pass
+    return result
+
+
 def generate_status() -> dict:
     now = datetime.now(timezone.utc).isoformat()
 
@@ -192,11 +217,7 @@ def generate_status() -> dict:
             "kalshi": {"balance": kalshi_balance, "paper_mode": paper_kalshi},
             "alpaca": {**alpaca, "paper_mode": paper_alpaca},
         },
-        "pnl": {
-            "today": total_pnl,
-            "all_time": total_pnl,
-            "history": pnl_history,
-        },
+        "pnl": _build_pnl(total_pnl, pnl_history),
         "trades": {
             "total": len(trades),
             "executed": len(executed),

@@ -251,7 +251,25 @@ def main():
             except Exception:
                 pass
 
-            # Step 0: Check for early exits on open positions
+            # Step 0: Resolve completed trades and track P&L
+            try:
+                from resolution_tracker import resolve_trades
+                resolved = resolve_trades()
+                if resolved["resolved"] > 0:
+                    print(f"  Resolved: {resolved['resolved']} trades, P&L: ${resolved['pnl']:+.2f}")
+            except Exception as e:
+                print(f"  Resolution tracker error: {e}")
+
+            # Step 0a: Cross-market divergence detection
+            try:
+                from cross_market import find_divergences
+                divs = find_divergences()
+                if divs:
+                    print(f"  Cross-market: {len(divs)} divergences found")
+            except Exception:
+                pass
+
+            # Step 0b: Check for early exits on open positions
             try:
                 from early_exit import check_all_positions
                 exits = check_all_positions(session_id)
