@@ -90,7 +90,7 @@ export default function Dashboard() {
       {/* Stats */}
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         <StatCard label="Money Made" value={`$${status.pnl.all_time.toFixed(2)}`} color={pnlColor} sub="Verified profit/loss from resolved trades" />
-        <StatCard label="Win Rate" value={status.pnl.resolved?.total_trades ? `${(status.pnl.resolved.win_rate * 100).toFixed(0)}%` : "—"} color={status.pnl.resolved?.win_rate > 0.55 ? "profit" : ""} sub={status.pnl.resolved?.total_trades ? `${status.pnl.resolved.wins}W / ${status.pnl.resolved.losses}L` : "No resolved trades yet"} />
+        <StatCard label="Win Rate" value={status.pnl.resolved?.total_trades ? `${((status.pnl.resolved?.win_rate ?? 0) * 100).toFixed(0)}%` : "—"} color={(status.pnl.resolved?.win_rate ?? 0) > 0.55 ? "profit" : ""} sub={status.pnl.resolved?.total_trades ? `${status.pnl.resolved?.wins ?? 0}W / ${status.pnl.resolved?.losses ?? 0}L` : "No resolved trades yet"} />
         <StatCard label="Trades Made" value={String(status.trades.executed)} sub={`${status.trades.skipped} passed on (too risky)`} />
         <StatCard label="Kalshi Account" value={`$${status.accounts.kalshi.balance.toFixed(2)}`} sub={status.accounts.kalshi.paper_mode ? "Practice mode (no real money)" : "Real money"} />
         <StatCard label="Stock Account" value={`$${status.accounts.alpaca.portfolio_value.toLocaleString()}`} sub={status.accounts.alpaca.paper_mode ? "Practice mode (no real money)" : "Real money"} />

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-23T06:09:53.606617+00:00",
+  "updated_at": "2026-03-23T06:24:24.635565+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -26,7 +26,14 @@
         "trades": 24,
         "deployed": 0.39
       }
-    ]
+    ],
+    "resolved": {
+      "total_trades": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": 0,
+      "actual_pnl": 0
+    }
   },
   "trades": {
     "total": 50,
@@ -987,7 +994,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 3,
-    "uptime_hours": 0.2
+    "cycles": 2,
+    "uptime_hours": 0.1
   }
 }

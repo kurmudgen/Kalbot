@@ -16,6 +16,13 @@ export interface Status {
     today: number;
     all_time: number;
     history: { date: string; trades: number; deployed: number }[];
+    resolved?: {
+      total_trades: number;
+      wins: number;
+      losses: number;
+      win_rate: number;
+      actual_pnl: number;
+    };
   };
   trades: {
     total: number;
