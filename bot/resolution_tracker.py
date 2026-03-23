@@ -185,6 +185,16 @@ def resolve_trades() -> dict:
         status = "WIN" if result["won"] else "LOSS"
         print(f"  RESOLVED: {status} ${result['pnl']:+.2f} ({result['pnl_pct']:+.1f}%) — {trade.get('title', ticker)[:50]}")
 
+        # Telegram alert
+        try:
+            from telegram_alerts import resolution_alert
+            total_resolved = stats["wins"] + stats["losses"]
+            wr = stats["wins"] / total_resolved if total_resolved > 0 else 0
+            resolution_alert(ticker, trade.get("title", ""), result["won"],
+                           result["pnl"], wr, stats["pnl"])
+        except Exception:
+            pass
+
         # Update trade memory with outcome
         try:
             import sys

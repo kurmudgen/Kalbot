@@ -259,6 +259,11 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         if config["paper_trade"]:
             executed = True
             print(f"  PAPER TRADE: {side} ${amount:.2f} on {title[:50]}...")
+            try:
+                from telegram_alerts import trade_alert
+                trade_alert(ticker, title, side, amount, cloud_conf, price_gap, "PAPER")
+            except Exception:
+                pass
             print(f"    conf={cloud_conf:.2f} gap={price_gap:.2f} price={market_price:.2f}")
         else:
             try:
@@ -283,6 +288,11 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
                 client.close()
                 executed = True
                 print(f"  LIVE TRADE: {side} ${amount:.2f} ({contracts} contracts) on {title[:50]}...")
+                try:
+                    from telegram_alerts import trade_alert
+                    trade_alert(ticker, title, side, amount, cloud_conf, price_gap, "LIVE")
+                except Exception:
+                    pass
             except Exception as e:
                 error = str(e)
                 print(f"  TRADE FAILED: {title[:50]}... — {error}")
