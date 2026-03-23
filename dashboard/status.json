@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-23T15:22:41.720505+00:00",
+  "updated_at": "2026-03-23T15:29:01.460598+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -994,7 +994,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 6,
-    "uptime_hours": 0.6
+    "cycles": 7,
+    "uptime_hours": 0.7
   }
 }
