@@ -47,9 +47,9 @@ MICRO_CAPS = {
     "CRV/USD": "Curve",
 }
 
-STOP_LOSS_PCT = 0.08     # 8% stop loss (crypto is volatile)
-TAKE_PROFIT_PCT = 0.15   # 15% take profit
-SNIPER_TAKE_PROFIT = 0.10  # 10% quick flip for sniping
+STOP_LOSS_PCT = 0.05     # 5% stop loss (tighter — cut losers fast)
+TAKE_PROFIT_PCT = 0.12   # 12% take profit
+SNIPER_TAKE_PROFIT = 0.08  # 8% quick flip for sniping
 
 
 def init_crypto_db() -> sqlite3.Connection:

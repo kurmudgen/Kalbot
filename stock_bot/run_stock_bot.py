@@ -27,6 +27,9 @@ STOP_LOSS_PCT = 0.10  # 10% stop loss
 TAKE_PROFIT_PCT = 0.20  # 20% take profit
 
 
+AVOID_FIRST_30_MIN = True  # Don't trade in the first 30 min after open (noisy)
+
+
 def is_market_open() -> bool:
     """Check if US stock market is open."""
     try:
@@ -35,12 +38,35 @@ def is_market_open() -> bool:
         clock = api.get_clock()
         return clock.is_open
     except Exception:
-        # Rough check: M-F, 9:30-4:00 ET
         now = datetime.now()
         if now.weekday() >= 5:
             return False
         hour = now.hour
         return 9 <= hour < 16
+
+
+def is_safe_to_trade() -> bool:
+    """Check if we're past the noisy first 30 minutes after market open."""
+    if not AVOID_FIRST_30_MIN:
+        return True
+    try:
+        from alpaca_executor import get_alpaca_client
+        api = get_alpaca_client()
+        clock = api.get_clock()
+        if not clock.is_open:
+            return False
+        # Market opens at 9:30 ET. Don't trade until 10:00 ET.
+        import pytz
+        et = pytz.timezone("US/Eastern")
+        now_et = datetime.now(et)
+        if now_et.hour == 9 and now_et.minute < 60:
+            return False  # Before 10:00 ET
+        return True
+    except Exception:
+        # Fallback: just check local time roughly
+        now = datetime.now()
+        # Assume PT = ET - 3
+        return now.hour >= 7  # 7:00 PT = 10:00 ET
 
 
 def check_exits() -> int:
@@ -91,6 +117,11 @@ def run_cycle(session_id: str) -> dict:
         stats["traded"] += len(crypto_trades)
     except Exception as e:
         print(f"  Crypto error: {e}")
+
+    # Don't trade stocks in first 30 min after open (too noisy)
+    if not is_safe_to_trade():
+        print("  Waiting for market to settle (first 30 min)...")
+        return stats
 
     # Get current state
     info = get_account_info()

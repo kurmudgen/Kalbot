@@ -224,13 +224,34 @@ Respond with JSON:
         except Exception:
             pass
 
+    # DeepSeek (third opinion for stocks — require unanimous)
+    api_key = os.getenv("DEEPSEEK_API_KEY", "")
+    if api_key:
+        try:
+            from openai import OpenAI
+            client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com", timeout=60.0)
+            r = client.chat.completions.create(
+                model="deepseek-chat",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.2,
+            )
+            raw = r.choices[0].message.content
+            start = raw.find("{")
+            end = raw.rfind("}") + 1
+            if start >= 0 and end > 0:
+                result = json.loads(raw[start:end])
+                result["_provider"] = "deepseek"
+                estimates.append(result)
+        except Exception:
+            pass
+
+    # Require ALL models to agree for stocks (higher bar than Kalshi)
     if len(estimates) < 2:
         return None
 
-    # Consensus check
     actions = [e.get("action", "hold") for e in estimates]
     if not all(a == actions[0] for a in actions):
-        return None  # Disagreement
+        return None  # Any disagreement = skip
 
     if actions[0] == "hold":
         return None  # No trade
@@ -281,6 +302,13 @@ def scan_and_analyze() -> list[dict]:
 
         tech = analyze_technicals(data["prices"], data["volumes"])
         fund = check_fundamentals(data)
+
+        # Momentum confirmation: skip if price is trending down recently
+        prices = data["prices"]
+        if len(prices) >= 5:
+            recent_trend = (prices[-1] - prices[-5]) / prices[-5]
+            if recent_trend < -0.02:  # Down more than 2% in last 5 days = skip
+                continue
 
         # Combined score: technicals (60%) + fundamentals (40%)
         combined = tech["signal"] * 0.6 + (fund["score"] / max(fund["max_score"], 1)) * 0.4
