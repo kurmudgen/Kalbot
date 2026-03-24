@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T22:55:43.505340+00:00",
+  "updated_at": "2026-03-24T23:08:59.004544+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -14,7 +14,7 @@
   },
   "pnl": {
     "today": 0.0,
-    "all_time": 0.0,
+    "all_time": -29.549999999999997,
     "history": [
       {
         "date": "2026-03-22",
@@ -33,11 +33,11 @@
       }
     ],
     "resolved": {
-      "total_trades": 0,
+      "total_trades": 22,
       "wins": 0,
-      "losses": 0,
-      "win_rate": 0,
-      "actual_pnl": 0
+      "losses": 22,
+      "win_rate": 0.0,
+      "actual_pnl": -29.549999999999997
     }
   },
   "trades": {
@@ -831,7 +831,7 @@
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T22:55:43"
+        "time": "2026-03-24T23:08:58"
       },
       {
         "perplexity": 0.76,
@@ -1003,13 +1003,13 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "28 errors this session"
+      "message": "1 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 28,
-    "cycles": 52,
-    "uptime_hours": 8.6
+    "errors_24h": 1,
+    "cycles": 1,
+    "uptime_hours": 0.1
   }
 }
