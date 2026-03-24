@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T08:37:29.399792+00:00",
+  "updated_at": "2026-03-24T08:44:10.131819+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,11 +803,11 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.5225
+        "avg_probability": 0.53
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.505
+        "avg_probability": 0.5125
       },
       "deepseek": {
         "analyses": 4,
@@ -817,11 +817,11 @@
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.92,
-        "claude": 0.82,
+        "perplexity": 0.95,
+        "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T08:37:29"
+        "time": "2026-03-24T08:44:10"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Latest CPI data from February 2026 shows month-over-month increase of 0.3% seasonally adjusted[4]. Octagon AI's prediction market model and market consensus expect June 2026 CPI month-over-month to be",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T08:44:00"
+    },
+    {
       "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY due to tight labor market, tariffs, fiscal stimulus; J.P. Morga",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T07:44:29"
-    },
-    {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, far above 0.0%, with no mispricing[1]. Recent CPI data shows MoM increases: 0.30% in Feb 2026, 0.20% prior[3]. YoY ",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T07:37:49"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "32 errors this session"
+      "message": "33 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 32,
-    "cycles": 32,
-    "uptime_hours": 3.5
+    "errors_24h": 33,
+    "cycles": 33,
+    "uptime_hours": 3.6
   }
 }
