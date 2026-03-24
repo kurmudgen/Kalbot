@@ -143,11 +143,11 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         ticker = score["ticker"]
         title = score["title"]
         category = score["category"]
-        cloud_prob = score["cloud_probability"]
-        cloud_conf = score["cloud_confidence"]
-        market_price = score["market_price"]
-        price_gap = score["price_gap"]
-        reasoning = score.get("cloud_reasoning", "")
+        cloud_prob = score.get("cloud_probability", score.get("model_probability", 0.5))
+        cloud_conf = score.get("cloud_confidence", score.get("confidence", 0.5))
+        market_price = score.get("market_price", 0.5)
+        price_gap = score.get("price_gap", 0)
+        reasoning = score.get("cloud_reasoning", score.get("reasoning", ""))
 
         # Order book depth check — skip thin markets
         try:
