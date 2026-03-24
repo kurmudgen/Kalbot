@@ -171,6 +171,19 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
             except Exception:
                 pass
 
+        # Bracket deduplication — one trade per underlying event
+        if not skip_reason:
+            try:
+                from bracket_guard import already_traded_event
+                if already_traded_event(ticker, title, session_id):
+                    skip_reason = "already traded this event (bracket dedup)"
+            except Exception:
+                pass
+
+        # Confidence floor — ensemble average must be above 0.65
+        if not skip_reason and cloud_conf < 0.65:
+            skip_reason = f"confidence {cloud_conf:.2f} below ensemble floor (0.65)"
+
         # Check historical bias — boost confidence when model agrees with history
         price_cents = int(market_price * 100)
         hist_bias = get_historical_bias(price_cents)

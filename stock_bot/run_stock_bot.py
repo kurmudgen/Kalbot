@@ -149,6 +149,17 @@ def run_cycle(session_id: str) -> dict:
     except Exception:
         pass
 
+    # Macro event lockout — on CPI/Fed/jobs days, only Kalshi trades
+    try:
+        import sys as _sys
+        _sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "bot"))
+        from bracket_guard import should_block_venue
+        if should_block_venue("alpaca"):
+            print("  Macro event day - deferring to Kalshi")
+            return stats
+    except Exception:
+        pass
+
     # Don't trade stocks in first 30 min after open (too noisy)
     if not is_safe_to_trade():
         print("  Waiting for market to settle (first 30 min)...")

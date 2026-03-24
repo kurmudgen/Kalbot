@@ -216,6 +216,11 @@ def check_consensus(estimates: list[dict], market_price: float,
     if not (above > majority or below > majority):
         return None  # No majority on direction
 
+    # Confidence floor: average confidence must be above 0.65
+    avg_conf_check = sum(confs) / len(confs)
+    if avg_conf_check < 0.65:
+        return None  # Models agree but aren't confident — skip
+
     # Check outcome side: 2/3 majority
     yes_votes = sum(1 for p in probs if p > 0.5)
     no_votes = sum(1 for p in probs if p <= 0.5)
