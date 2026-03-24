@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T14:03:46.714995+00:00",
+  "updated_at": "2026-03-24T14:10:36.942446+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -821,7 +821,7 @@
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T14:03:46"
+        "time": "2026-03-24T14:10:36"
       },
       {
         "perplexity": 0.76,
@@ -848,9 +848,9 @@
   },
   "scanner": {
     "total_markets": 1133,
-    "with_prices": 462,
+    "with_prices": 465,
     "passed_filter": 1,
-    "total_scored": 265,
+    "total_scored": 268,
     "categories": {
       "economics": 960,
       "inflation": 173
@@ -923,12 +923,18 @@
     {
       "ticker": "KXINX-26MAR24H1600-B6612",
       "title": "Will the S&P 500 be between 6600 and 6624.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 8,
+      "price": 12,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     }
   ],
   "news": [
+    {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; strong wage growth, resilient consumer spending, supply chain disruptions, and OPEC+ d",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T14:10:27"
+    },
     {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; J.P. Morgan predicts YoY CPI accelerating to 3.6% by June 2026 due to tariffs and fisc",
       "category": "inflation",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T13:09:56"
-    },
-    {
-      "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY due to tight labor market, tariffs, fiscal stimulus; J.P. Morga",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T13:03:07"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "81 errors this session"
+      "message": "82 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 81,
-    "cycles": 81,
-    "uptime_hours": 8.9
+    "errors_24h": 82,
+    "cycles": 82,
+    "uptime_hours": 9.0
   }
 }
