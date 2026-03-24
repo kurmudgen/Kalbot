@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T05:44:50.310260+00:00",
+  "updated_at": "2026-03-24T05:51:27.507553+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -807,21 +807,21 @@
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.52
+        "avg_probability": 0.495
       },
       "deepseek": {
         "analyses": 4,
-        "avg_probability": 0.5075
+        "avg_probability": 0.5325
       }
     },
     "consensus_rate": 1.0,
     "recent_votes": [
       {
         "perplexity": 0.95,
-        "claude": 0.88,
-        "deepseek": 0.85,
+        "claude": 0.78,
+        "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T05:44:50"
+        "time": "2026-03-24T05:51:27"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, far above 0.0%, with no mispricing evidence; economists anticipate sticky inflation around 3% YoY due to tight labo",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T05:51:17"
+    },
+    {
       "text": "Latest CPI data from February 2026 shows month-over-month increase of 0.3% seasonally adjusted[4]. Octagon AI's prediction market model and market consensus expect June 2026 CPI month-over-month to be",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T04:52:49"
-    },
-    {
-      "text": "Octagon AI model and market expect CPI month-over-month in June 2026 to be exactly 0.3%, with no mispricing; economists (RBC, J.P. Morgan, PIIE) forecast sticky US inflation around 3% YoY or higher du",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T04:46:13"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "6 errors this session"
+      "message": "7 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 6,
-    "cycles": 6,
-    "uptime_hours": 0.6
+    "errors_24h": 7,
+    "cycles": 7,
+    "uptime_hours": 0.7
   }
 }
