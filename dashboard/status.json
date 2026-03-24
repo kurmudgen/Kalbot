@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T05:11:58.424804+00:00",
+  "updated_at": "2026-03-24T05:18:33.593664+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -807,7 +807,7 @@
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.505
+        "avg_probability": 0.5125
       },
       "deepseek": {
         "analyses": 4,
@@ -818,10 +818,10 @@
     "recent_votes": [
       {
         "perplexity": 0.92,
-        "claude": 0.82,
+        "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T05:11:58"
+        "time": "2026-03-24T05:18:33"
       },
       {
         "perplexity": 0.76,
@@ -867,7 +867,7 @@
     {
       "ticker": "KXINX-26MAR24H1600-T6150",
       "title": "Will the S&P 500 be below 6150 on Mar 24, 2026 at 4pm EDT?",
-      "price": 2,
+      "price": 1,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage growth, co",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T05:18:24"
+    },
+    {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; consensus sees sticky inflation around 3% YoY due to tight labor market, wage growth, ",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T04:19:50"
-    },
-    {
-      "text": "Multiple sources confirm CPI month-over-month expectations for June 2026: (1) Octagon AI market consensus expects exactly 0.3% MoM CPI in June 2026[1]. (2) Latest actual data shows February 2026 CPI i",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T04:13:10"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "1 errors this session"
+      "message": "2 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 1,
-    "cycles": 1,
-    "uptime_hours": 0.0
+    "errors_24h": 2,
+    "cycles": 2,
+    "uptime_hours": 0.1
   }
 }
