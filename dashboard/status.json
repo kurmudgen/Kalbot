@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T11:03:26.907808+00:00",
+  "updated_at": "2026-03-24T11:10:01.345414+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,7 +803,7 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.5225
+        "avg_probability": 0.4875
       },
       "claude": {
         "analyses": 4,
@@ -811,17 +811,17 @@
       },
       "deepseek": {
         "analyses": 4,
-        "avg_probability": 0.5325
+        "avg_probability": 0.5075
       }
     },
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.92,
+        "perplexity": 0.78,
         "claude": 0.78,
-        "deepseek": 0.95,
+        "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-24T11:03:26"
+        "time": "2026-03-24T11:10:01"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Market price implies 74% probability of CPI MoM >0.0% in June 2026; Octagon AI model and market expect exactly 0.3% MoM with no mispricing, citing sticky inflation around 3% YoY, strong wage growth, r",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T11:09:52"
+    },
+    {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage g",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T10:09:57"
-    },
-    {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage g",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T10:03:23"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "54 errors this session"
+      "message": "55 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 54,
-    "cycles": 54,
-    "uptime_hours": 5.9
+    "errors_24h": 55,
+    "cycles": 55,
+    "uptime_hours": 6.0
   }
 }
