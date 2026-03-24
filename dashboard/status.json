@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T03:13:49.643416+00:00",
+  "updated_at": "2026-03-24T03:20:23.397836+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,11 +803,11 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.5225
+        "avg_probability": 0.535
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.505
+        "avg_probability": 0.495
       },
       "deepseek": {
         "analyses": 4,
@@ -817,11 +817,11 @@
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.92,
-        "claude": 0.82,
+        "perplexity": 0.97,
+        "claude": 0.78,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T03:13:49"
+        "time": "2026-03-24T03:20:23"
       },
       {
         "perplexity": 0.76,
@@ -860,7 +860,7 @@
     {
       "ticker": "KXINX-26MAR24H1600-T6849.9999",
       "title": "Will the S&P 500 be above 6849.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 14,
+      "price": 11,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
@@ -874,14 +874,14 @@
     {
       "ticker": "KXINX-26MAR24H1600-B6837",
       "title": "Will the S&P 500 be between 6825 and 6849.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 14,
+      "price": 11,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR24H1600-B6812",
       "title": "Will the S&P 500 be between 6800 and 6824.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 14,
+      "price": 11,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
@@ -916,7 +916,7 @@
     {
       "ticker": "KXINX-26MAR24H1600-B6612",
       "title": "Will the S&P 500 be between 6600 and 6624.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 11,
+      "price": 8,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
@@ -929,6 +929,12 @@
     }
   ],
   "news": [
+    {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage g",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T03:20:14"
+    },
     {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent Feb 2026 CPI rose 0.3% SA (BLS), YoY at 2.4%; analysts (RBC, J.P. Morgan, PIIE)",
       "category": "inflation",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T02:19:43"
-    },
-    {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage g",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T02:13:09"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "19 errors this session"
+      "message": "20 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 19,
-    "cycles": 51,
-    "uptime_hours": 5.6
+    "errors_24h": 20,
+    "cycles": 52,
+    "uptime_hours": 5.7
   }
 }
