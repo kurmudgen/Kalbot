@@ -251,6 +251,32 @@ def main():
             except Exception:
                 pass
 
+            # Step -1: Detect market regime (affects all strategies)
+            regime_info = None
+            try:
+                from regime_detector import detect_regime
+                regime_info = detect_regime()
+                if totals["cycles"] % 12 == 1:  # Log regime hourly
+                    print(f"  Regime: {regime_info['regime'].upper()} (vol: {regime_info['volatility']:.0%}, trend: {regime_info['trend_20d']:+.1%})")
+            except Exception:
+                pass
+
+            # Step -0.5: SEC EDGAR filing monitor
+            try:
+                from edgar_monitor import scan_edgar
+                edgar_signals = scan_edgar()
+                if edgar_signals:
+                    print(f"  EDGAR: {len(edgar_signals)} signals")
+                    # Send to Telegram for urgent filings
+                    try:
+                        from telegram_alerts import system_alert
+                        for sig in edgar_signals[:2]:
+                            system_alert(f"SEC 8-K: {sig['direction'].upper()} {sig['ticker']} - {sig['trigger']}", "warning")
+                    except Exception:
+                        pass
+            except Exception:
+                pass
+
             # Step 0: Resolve completed trades and track P&L
             try:
                 from resolution_tracker import resolve_trades

@@ -109,14 +109,45 @@ def run_cycle(session_id: str) -> dict:
     if exits:
         print(f"  Exited {exits} positions")
 
-    # Crypto runs 24/7 (doesn't need market hours)
-    print("  --- Crypto Strategies ---")
+    # Liquidation cascade check (before crypto trades)
     try:
-        from crypto_strategy import run_crypto_scan
-        crypto_trades = run_crypto_scan(session_id)
-        stats["traded"] += len(crypto_trades)
-    except Exception as e:
-        print(f"  Crypto error: {e}")
+        from liquidation_monitor import detect_cascade_risk
+        cascade = detect_cascade_risk()
+        if cascade["risk"] == "high":
+            print(f"  LIQUIDATION WARNING: {cascade['details']}")
+            print(f"  Skipping crypto trades this cycle")
+            try:
+                from telegram_alerts import system_alert
+                system_alert(f"Liquidation cascade risk HIGH: {cascade['details']}", "warning")
+            except Exception:
+                pass
+        else:
+            # Crypto runs 24/7 (doesn't need market hours)
+            print("  --- Crypto Strategies ---")
+            try:
+                from crypto_strategy import run_crypto_scan
+                crypto_trades = run_crypto_scan(session_id)
+                stats["traded"] += len(crypto_trades)
+            except Exception as e:
+                print(f"  Crypto error: {e}")
+    except Exception:
+        # If cascade check fails, still trade crypto
+        print("  --- Crypto Strategies ---")
+        try:
+            from crypto_strategy import run_crypto_scan
+            crypto_trades = run_crypto_scan(session_id)
+            stats["traded"] += len(crypto_trades)
+        except Exception as e:
+            print(f"  Crypto error: {e}")
+
+    # Reddit velocity check (adds trending stocks to scan)
+    try:
+        from reddit_velocity import detect_velocity
+        velocity_alerts = detect_velocity()
+        if velocity_alerts:
+            print(f"  Reddit velocity: {len(velocity_alerts)} alerts")
+    except Exception:
+        pass
 
     # Don't trade stocks in first 30 min after open (too noisy)
     if not is_safe_to_trade():

@@ -201,6 +201,14 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         kelly_raw = (b * our_prob - q) / b if b > 0 else 0
         kelly_bet = max(0, kelly_raw * KELLY_FRACTION)
 
+        # Regime adjustment — scale Kelly by market state
+        try:
+            from regime_detector import detect_regime
+            regime = detect_regime()
+            kelly_bet *= regime.get("kelly_multiplier", 1.0)
+        except Exception:
+            pass
+
         # Scale Kelly fraction to dollar amount, capped by max trade size
         budget_remaining = config["max_nightly_spend"] - tonight_spend
         amount = min(
