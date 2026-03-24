@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T05:58:04.345175+00:00",
+  "updated_at": "2026-03-24T06:04:41.366849+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,7 +803,7 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.53
+        "avg_probability": 0.535
       },
       "claude": {
         "analyses": 4,
@@ -811,17 +811,17 @@
       },
       "deepseek": {
         "analyses": 4,
-        "avg_probability": 0.5075
+        "avg_probability": 0.525
       }
     },
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.95,
+        "perplexity": 0.97,
         "claude": 0.85,
-        "deepseek": 0.85,
+        "deepseek": 0.92,
         "consensus": true,
-        "time": "2026-03-24T05:58:04"
+        "time": "2026-03-24T06:04:41"
       },
       {
         "perplexity": 0.76,
@@ -860,7 +860,7 @@
     {
       "ticker": "KXINX-26MAR24H1600-T6849.9999",
       "title": "Will the S&P 500 be above 6849.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 2,
+      "price": 3,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY forecasted by RBC, J.P. Morgan due to tight labor market, consu",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T06:04:31"
+    },
+    {
       "text": "Latest CPI data shows February 2026 month-over-month increase of 0.3% seasonally adjusted[4]. Octagon AI's prediction market model and market consensus expect June 2026 CPI month-over-month to be exac",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T05:05:59"
-    },
-    {
-      "text": "According to Octagon AI, both the model and market expect CPI month-over-month in June 2026 to be exactly 0.3%[1]. The latest US CPI report for January 2026 showed headline inflation at 3.5%-3.75%[1].",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T04:59:25"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "8 errors this session"
+      "message": "9 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 8,
-    "cycles": 8,
-    "uptime_hours": 0.8
+    "errors_24h": 9,
+    "cycles": 9,
+    "uptime_hours": 0.9
   }
 }
