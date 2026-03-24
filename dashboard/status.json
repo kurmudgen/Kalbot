@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T01:40:29.221987+00:00",
+  "updated_at": "2026-03-24T01:47:00.644810+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -821,7 +821,7 @@
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T01:40:29"
+        "time": "2026-03-24T01:47:00"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Model and market forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage growth, co",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T01:46:51"
+    },
+    {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; strong wage growth, resilient consumer spending, OPEC+ decisions, supply chain disrupt",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-23T00:59:37"
-    },
-    {
-      "text": "Latest CPI data shows February 2026 month-over-month increase of 0.3% seasonally adjusted[4]. Octagon AI's prediction market model and market consensus expect June 2026 CPI month-over-month to be exac",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-23T00:53:00"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "5 errors this session"
+      "message": "6 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 5,
-    "cycles": 37,
-    "uptime_hours": 4.0
+    "errors_24h": 6,
+    "cycles": 38,
+    "uptime_hours": 4.1
   }
 }
