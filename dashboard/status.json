@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T06:04:41.366849+00:00",
+  "updated_at": "2026-03-24T06:11:23.773667+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,25 +803,25 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.535
+        "avg_probability": 0.53
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.5125
+        "avg_probability": 0.52
       },
       "deepseek": {
         "analyses": 4,
-        "avg_probability": 0.525
+        "avg_probability": 0.5325
       }
     },
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.97,
-        "claude": 0.85,
-        "deepseek": 0.92,
+        "perplexity": 0.95,
+        "claude": 0.88,
+        "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T06:04:41"
+        "time": "2026-03-24T06:11:23"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Multiple sources indicate strong consensus that CPI will rise more than 0.0% in June 2026. The Octagon AI market expects CPI month-over-month to be exactly 0.3% in June 2026[1]. Recent February 2026 d",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T06:11:13"
+    },
+    {
       "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY forecasted by RBC, J.P. Morgan due to tight labor market, consu",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T05:11:48"
-    },
-    {
-      "text": "Multiple sources confirm CPI month-over-month for June 2026 is expected to be positive. Octagon AI reports both model and market expect exactly 0.3% MoM CPI in June 2026[1]. The February 2026 CPI repo",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T05:05:59"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "9 errors this session"
+      "message": "10 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 9,
-    "cycles": 9,
-    "uptime_hours": 0.9
+    "errors_24h": 10,
+    "cycles": 10,
+    "uptime_hours": 1.0
   }
 }
