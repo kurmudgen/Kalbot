@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T01:33:55.327663+00:00",
+  "updated_at": "2026-03-24T01:40:29.221987+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,7 +803,7 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.53
+        "avg_probability": 0.5225
       },
       "claude": {
         "analyses": 4,
@@ -817,11 +817,11 @@
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.95,
+        "perplexity": 0.92,
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T01:33:55"
+        "time": "2026-03-24T01:40:29"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; strong wage growth, resilient consumer spending, OPEC+ decisions, supply chain disrupt",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T01:40:20"
+    },
+    {
       "text": "Latest CPI data from February 2026 shows month-over-month increase of 0.3% seasonally adjusted[5]. Octagon AI model and market consensus expect June 2026 CPI month-over-month to be exactly 0.3%[1]. BL",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-23T00:53:00"
-    },
-    {
-      "text": "Robinhood prediction market prices >0.4% at 33\u00a2 and >0.5% implied around 17\u00a2, aligning with current market at 0.17; Bank of America forecasts core CPI peaking at 3.2% in Q2 2026, retreating to 2.8% by",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-23T00:52:44"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "4 errors this session"
+      "message": "5 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 4,
-    "cycles": 36,
-    "uptime_hours": 3.9
+    "errors_24h": 5,
+    "cycles": 37,
+    "uptime_hours": 4.0
   }
 }
