@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T10:03:32.919374+00:00",
+  "updated_at": "2026-03-24T10:10:06.445774+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -821,7 +821,7 @@
         "claude": 0.82,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T10:03:32"
+        "time": "2026-03-24T10:10:06"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY due to tight labor market, tariffs, fiscal stimulus; J.P. Morga",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T10:09:57"
+    },
+    {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage g",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T09:10:26"
-    },
-    {
-      "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; traders price out 0.0% as highly improbable given January 2026 YoY CPI at 2.4% and core at 2.5",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T09:03:49"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "45 errors this session"
+      "message": "46 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 45,
-    "cycles": 45,
-    "uptime_hours": 4.9
+    "errors_24h": 46,
+    "cycles": 46,
+    "uptime_hours": 5.0
   }
 }
