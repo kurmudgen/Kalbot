@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T04:06:36.629711+00:00",
+  "updated_at": "2026-03-24T04:13:20.423959+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -807,7 +807,7 @@
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.505
+        "avg_probability": 0.5125
       },
       "deepseek": {
         "analyses": 4,
@@ -818,10 +818,10 @@
     "recent_votes": [
       {
         "perplexity": 0.95,
-        "claude": 0.82,
+        "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T04:06:36"
+        "time": "2026-03-24T04:13:20"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Multiple sources confirm CPI month-over-month expectations for June 2026: (1) Octagon AI market consensus expects exactly 0.3% MoM CPI in June 2026[1]. (2) Latest actual data shows February 2026 CPI i",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T04:13:10"
+    },
+    {
       "text": "Multiple sources confirm CPI month-over-month for June 2026 is expected to be positive. Octagon AI reports both model and market expect exactly 0.3% MoM[1]. J.P. Morgan forecasts YoY CPI acceleration ",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T03:13:39"
-    },
-    {
-      "text": "Multiple sources indicate consensus that June 2026 CPI month-over-month will be positive. Octagon AI's model and market both expect exactly 0.3% MoM[1]. J.P. Morgan forecasts CPI inflation to accelera",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T03:07:07"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "27 errors this session"
+      "message": "28 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 27,
-    "cycles": 59,
-    "uptime_hours": 6.5
+    "errors_24h": 28,
+    "cycles": 60,
+    "uptime_hours": 6.6
   }
 }
