@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T04:46:22.128361+00:00",
+  "updated_at": "2026-03-24T04:52:57.841646+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,7 +803,7 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.53
+        "avg_probability": 0.5225
       },
       "claude": {
         "analyses": 4,
@@ -817,11 +817,11 @@
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.95,
+        "perplexity": 0.92,
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T04:46:22"
+        "time": "2026-03-24T04:52:57"
       },
       {
         "perplexity": 0.76,
@@ -848,9 +848,9 @@
   },
   "scanner": {
     "total_markets": 703,
-    "with_prices": 455,
+    "with_prices": 456,
     "passed_filter": 1,
-    "total_scored": 259,
+    "total_scored": 260,
     "categories": {
       "economics": 530,
       "inflation": 173
@@ -921,14 +921,20 @@
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR24H1600-B6562",
-      "title": "Will the S&P 500 be between 6550 and 6574.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 30,
+      "ticker": "KXINX-26MAR24H1600-B6587",
+      "title": "Will the S&P 500 be between 6575 and 6599.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 6,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     }
   ],
   "news": [
+    {
+      "text": "Market and model consensus expects CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; J.P. Morgan forecasts YoY CPI accelerating to 3.6% by June 2026 due to tariffs and fi",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T04:52:49"
+    },
     {
       "text": "Octagon AI model and market expect CPI month-over-month in June 2026 to be exactly 0.3%, with no mispricing; economists (RBC, J.P. Morgan, PIIE) forecast sticky US inflation around 3% YoY or higher du",
       "category": "inflation",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T03:53:10"
-    },
-    {
-      "text": "Market price implies 74% chance of CPI MoM >0.0% in June 2026, but Octagon AI model and market expect exactly 0.3% MoM with no mispricing evidence[1]. Recent CPI data: Feb 2026 MoM +0.3% (sa), YoY 2.4",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T03:46:30"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "33 errors this session"
+      "message": "34 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 33,
-    "cycles": 65,
-    "uptime_hours": 7.1
+    "errors_24h": 34,
+    "cycles": 66,
+    "uptime_hours": 7.2
   }
 }
