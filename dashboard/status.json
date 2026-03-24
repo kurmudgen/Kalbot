@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T02:33:04.582340+00:00",
+  "updated_at": "2026-03-24T02:40:18.696102+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,7 +803,7 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.505
+        "avg_probability": 0.4975
       },
       "claude": {
         "analyses": 4,
@@ -817,11 +817,11 @@
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.85,
+        "perplexity": 0.82,
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T02:33:04"
+        "time": "2026-03-24T02:40:18"
       },
       {
         "perplexity": 0.76,
@@ -848,9 +848,9 @@
   },
   "scanner": {
     "total_markets": 703,
-    "with_prices": 435,
+    "with_prices": 450,
     "passed_filter": 1,
-    "total_scored": 240,
+    "total_scored": 255,
     "categories": {
       "economics": 530,
       "inflation": 173
@@ -858,77 +858,83 @@
   },
   "sniper_markets": [
     {
-      "ticker": "KXINX-26MAR27H1600-T6949.9999",
-      "title": "Will the S&P 500 be above 6949.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 3,
-      "close_time": "2026-03-27T20:00:00Z",
+      "ticker": "KXINX-26MAR24H1600-T6849.9999",
+      "title": "Will the S&P 500 be above 6849.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 30,
+      "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR27H1600-T6250",
-      "title": "Will the S&P 500 be below 6250 on Mar 27, 2026 at 4pm EDT?",
-      "price": 4,
-      "close_time": "2026-03-27T20:00:00Z",
+      "ticker": "KXINX-26MAR24H1600-B6837",
+      "title": "Will the S&P 500 be between 6825 and 6849.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 30,
+      "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR27H1600-B6937",
-      "title": "Will the S&P 500 be between 6925 and 6949.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 2,
-      "close_time": "2026-03-27T20:00:00Z",
+      "ticker": "KXINX-26MAR24H1600-B6812",
+      "title": "Will the S&P 500 be between 6800 and 6824.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 30,
+      "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR27H1600-B6912",
-      "title": "Will the S&P 500 be between 6900 and 6924.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 1,
-      "close_time": "2026-03-27T20:00:00Z",
+      "ticker": "KXINX-26MAR24H1600-B6787",
+      "title": "Will the S&P 500 be between 6775 and 6799.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 30,
+      "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR27H1600-B6887",
-      "title": "Will the S&P 500 be between 6875 and 6899.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 3,
-      "close_time": "2026-03-27T20:00:00Z",
+      "ticker": "KXINX-26MAR24H1600-B6737",
+      "title": "Will the S&P 500 be between 6725 and 6749.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 30,
+      "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR27H1600-B6862",
-      "title": "Will the S&P 500 be between 6850 and 6874.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 3,
-      "close_time": "2026-03-27T20:00:00Z",
+      "ticker": "KXINX-26MAR24H1600-B6712",
+      "title": "Will the S&P 500 be between 6700 and 6724.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 30,
+      "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR27H1600-B6837",
-      "title": "Will the S&P 500 be between 6825 and 6849.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 7,
-      "close_time": "2026-03-27T20:00:00Z",
+      "ticker": "KXINX-26MAR24H1600-B6637",
+      "title": "Will the S&P 500 be between 6625 and 6649.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 30,
+      "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR27H1600-B6812",
-      "title": "Will the S&P 500 be between 6800 and 6824.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 8,
-      "close_time": "2026-03-27T20:00:00Z",
+      "ticker": "KXINX-26MAR24H1600-B6612",
+      "title": "Will the S&P 500 be between 6600 and 6624.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 30,
+      "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR27H1600-B6787",
-      "title": "Will the S&P 500 be between 6775 and 6799.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 8,
-      "close_time": "2026-03-27T20:00:00Z",
+      "ticker": "KXINX-26MAR24H1600-B6562",
+      "title": "Will the S&P 500 be between 6550 and 6574.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 30,
+      "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR27H1600-B6762",
-      "title": "Will the S&P 500 be between 6750 and 6774.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 9,
-      "close_time": "2026-03-27T20:00:00Z",
+      "ticker": "KXINX-26MAR24H1600-B6412",
+      "title": "Will the S&P 500 be between 6400 and 6424.9999 on Mar 24, 2026 at 4pm EDT?",
+      "price": 30,
+      "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     }
   ],
   "news": [
+    {
+      "text": "Market and model consensus expects CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; strong wage growth, resilient consumer spending, supply chain disruptions, OPEC+ deci",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T02:40:10"
+    },
     {
       "text": "Model and market consensus from Octagon AI expects CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; sticky inflation around 3% YoY anticipated by RBC Economics, J.P. Mor",
       "category": "inflation",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T01:40:20"
-    },
-    {
-      "text": "Latest CPI data from February 2026 shows month-over-month increase of 0.3% seasonally adjusted[5]. Octagon AI model and market consensus expect June 2026 CPI month-over-month to be exactly 0.3%[1]. BL",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T01:33:45"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "13 errors this session"
+      "message": "14 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 13,
-    "cycles": 45,
-    "uptime_hours": 4.9
+    "errors_24h": 14,
+    "cycles": 46,
+    "uptime_hours": 5.0
   }
 }
