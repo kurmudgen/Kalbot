@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T00:26:59.165868+00:00",
+  "updated_at": "2026-03-24T00:33:19.553057+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -867,7 +867,7 @@
     {
       "ticker": "KXINX-26MAR27H1600-T6250",
       "title": "Will the S&P 500 be below 6250 on Mar 27, 2026 at 4pm EDT?",
-      "price": 13,
+      "price": 4,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
@@ -994,7 +994,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 27,
-    "uptime_hours": 2.8
+    "cycles": 28,
+    "uptime_hours": 2.9
   }
 }
