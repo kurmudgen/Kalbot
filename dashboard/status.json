@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T00:58:32.846459+00:00",
+  "updated_at": "2026-03-24T01:14:10.675561+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,7 +803,7 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.53
+        "avg_probability": 0.5225
       },
       "claude": {
         "analyses": 4,
@@ -817,18 +817,18 @@
     "consensus_rate": 1.0,
     "recent_votes": [
       {
+        "perplexity": 0.92,
+        "claude": 0.85,
+        "deepseek": 0.85,
+        "consensus": true,
+        "time": "2026-03-24T01:14:10"
+      },
+      {
         "perplexity": 0.76,
         "claude": 0.78,
         "deepseek": 0.78,
         "consensus": true,
         "time": "2026-03-23T01:00:44"
-      },
-      {
-        "perplexity": 0.95,
-        "claude": 0.85,
-        "deepseek": 0.85,
-        "consensus": true,
-        "time": "2026-03-23T01:00:28"
       },
       {
         "perplexity": 0.15,
@@ -849,7 +849,7 @@
   "scanner": {
     "total_markets": 703,
     "with_prices": 435,
-    "passed_filter": 0,
+    "passed_filter": 1,
     "total_scored": 240,
     "categories": {
       "economics": 530,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; strong wage growth, resilient consumer spending, OPEC+ decisions, supply chain disrupt",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T01:14:00"
+    },
+    {
       "text": "Robinhood market prices >0.1% CPI increase for July 2026 at 74\u00a2 (implied 74%)[2]. Kalshi shows 71% for a similar CPI July 2026 outcome[6]. BLS Feb 2026 CPI-U monthly increase was 0.5% (not seasonally ",
       "category": "inflation",
       "source": "perplexity",
@@ -982,19 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-23T00:45:40"
-    },
-    {
-      "text": "Forecasts for recent CPI (September 2025) expect 0.4% month-over-month increase, below 0.5% threshold[1]. Robinhood prediction market prices >0.4% at 33\u00a2 for September 2026 CPI, implying low odds for ",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-23T00:45:28"
     }
   ],
-  "alerts": [],
+  "alerts": [
+    {
+      "level": "warning",
+      "message": "1 errors this session"
+    }
+  ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 0,
-    "cycles": 32,
-    "uptime_hours": 3.3
+    "errors_24h": 1,
+    "cycles": 33,
+    "uptime_hours": 3.6
   }
 }
