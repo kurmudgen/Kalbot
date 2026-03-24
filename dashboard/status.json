@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T06:51:36.715254+00:00",
+  "updated_at": "2026-03-24T06:58:13.770696+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,11 +803,11 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.5375
+        "avg_probability": 0.5225
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.52
+        "avg_probability": 0.5125
       },
       "deepseek": {
         "analyses": 4,
@@ -817,11 +817,11 @@
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.98,
-        "claude": 0.88,
+        "perplexity": 0.92,
+        "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T06:51:36"
+        "time": "2026-03-24T06:58:13"
       },
       {
         "perplexity": 0.76,
@@ -888,7 +888,7 @@
     {
       "ticker": "KXINX-26MAR24H1600-B6787",
       "title": "Will the S&P 500 be between 6775 and 6799.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 11,
+      "price": 2,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
@@ -929,6 +929,12 @@
     }
   ],
   "news": [
+    {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; consensus sees sticky inflation around 3% YoY due to tight labor market, wage growth, ",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T06:58:02"
+    },
     {
       "text": "Latest CPI data from February 2026 shows month-over-month increase of 0.3% seasonally adjusted[4]. Year-over-year inflation at 2.4% as of February 2026[4][5]. Octagon AI model and market consensus exp",
       "category": "inflation",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T05:57:55"
-    },
-    {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, far above 0.0%, with no mispricing evidence; economists anticipate sticky inflation around 3% YoY due to tight labo",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T05:51:17"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "16 errors this session"
+      "message": "17 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 16,
-    "cycles": 16,
-    "uptime_hours": 1.7
+    "errors_24h": 17,
+    "cycles": 17,
+    "uptime_hours": 1.8
   }
 }
