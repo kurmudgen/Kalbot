@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T04:19:58.754900+00:00",
+  "updated_at": "2026-03-24T04:26:39.233340+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -821,7 +821,7 @@
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T04:19:58"
+        "time": "2026-03-24T04:26:39"
       },
       {
         "perplexity": 0.76,
@@ -909,7 +909,7 @@
     {
       "ticker": "KXINX-26MAR24H1600-B6637",
       "title": "Will the S&P 500 be between 6625 and 6649.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 14,
+      "price": 11,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
@@ -929,6 +929,12 @@
     }
   ],
   "news": [
+    {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI data shows Feb 2026 at +0.3% MoM and 2.4% YoY, core at 2.5%; economists (RB",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T04:26:30"
+    },
     {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; strong consensus on sticky inflation around 3% YoY due to tight labor market, wage growth, cons",
       "category": "inflation",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T03:26:47"
-    },
-    {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage g",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T03:20:14"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "29 errors this session"
+      "message": "30 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 29,
-    "cycles": 61,
-    "uptime_hours": 6.7
+    "errors_24h": 30,
+    "cycles": 62,
+    "uptime_hours": 6.8
   }
 }
