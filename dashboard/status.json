@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T05:18:33.593664+00:00",
+  "updated_at": "2026-03-24T05:25:04.608344+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY forecasted by RBC, J.P. Morgan; upside risks from tariffs, ener",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T05:24:55"
+    },
+    {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage growth, co",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T04:26:30"
-    },
-    {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; strong consensus on sticky inflation around 3% YoY due to tight labor market, wage growth, cons",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T04:19:50"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "2 errors this session"
+      "message": "3 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 2,
-    "cycles": 2,
-    "uptime_hours": 0.1
+    "errors_24h": 3,
+    "cycles": 3,
+    "uptime_hours": 0.2
   }
 }
