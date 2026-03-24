@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T02:06:42.754011+00:00",
+  "updated_at": "2026-03-24T02:13:17.521523+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -821,7 +821,7 @@
         "claude": 0.78,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-24T02:06:42"
+        "time": "2026-03-24T02:13:17"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage g",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T02:13:09"
+    },
+    {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; consensus sees sticky inflation around 3% YoY due to tight labor market, wage growth, ",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T01:14:00"
-    },
-    {
-      "text": "Robinhood market prices >0.1% CPI increase for July 2026 at 74\u00a2 (implied 74%)[2]. Kalshi shows 71% for a similar CPI July 2026 outcome[6]. BLS Feb 2026 CPI-U monthly increase was 0.5% (not seasonally ",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-23T01:00:35"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "9 errors this session"
+      "message": "10 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 9,
-    "cycles": 41,
-    "uptime_hours": 4.5
+    "errors_24h": 10,
+    "cycles": 42,
+    "uptime_hours": 4.6
   }
 }
