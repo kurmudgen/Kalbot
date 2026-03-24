@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T02:40:18.696102+00:00",
+  "updated_at": "2026-03-24T02:46:58.281136+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,25 +803,25 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.4975
+        "avg_probability": 0.53
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.5125
+        "avg_probability": 0.505
       },
       "deepseek": {
         "analyses": 4,
-        "avg_probability": 0.5325
+        "avg_probability": 0.5075
       }
     },
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.82,
-        "claude": 0.85,
-        "deepseek": 0.95,
+        "perplexity": 0.95,
+        "claude": 0.82,
+        "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-24T02:40:18"
+        "time": "2026-03-24T02:46:58"
       },
       {
         "perplexity": 0.76,
@@ -860,7 +860,7 @@
     {
       "ticker": "KXINX-26MAR24H1600-T6849.9999",
       "title": "Will the S&P 500 be above 6849.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 30,
+      "price": 16,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Latest CPI data shows February 2026 month-over-month increase of 0.3% seasonally adjusted[5]. Octagon AI's prediction market model and market consensus expect June 2026 CPI month-over-month to be exac",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T02:46:47"
+    },
+    {
       "text": "Market and model consensus expects CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; strong wage growth, resilient consumer spending, supply chain disruptions, OPEC+ deci",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T01:46:51"
-    },
-    {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; strong wage growth, resilient consumer spending, OPEC+ decisions, supply chain disrupt",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T01:40:20"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "14 errors this session"
+      "message": "15 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 14,
-    "cycles": 46,
-    "uptime_hours": 5.0
+    "errors_24h": 15,
+    "cycles": 47,
+    "uptime_hours": 5.1
   }
 }
