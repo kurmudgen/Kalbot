@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T20:56:06.732821+00:00",
+  "updated_at": "2026-03-24T21:06:02.915053+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -13,8 +13,8 @@
     }
   },
   "pnl": {
-    "today": 0,
-    "all_time": 0,
+    "today": 0.0,
+    "all_time": 0.0,
     "history": [
       {
         "date": "2026-03-22",
@@ -28,7 +28,7 @@
       },
       {
         "date": "2026-03-24",
-        "trades": 1520,
+        "trades": 1521,
         "deployed": 29.549999999999997
       }
     ],
@@ -42,9 +42,24 @@
   },
   "trades": {
     "total": 50,
-    "executed": 0,
-    "skipped": 50,
+    "executed": 1,
+    "skipped": 49,
     "recent": [
+      {
+        "ticker": "KXCPI-26APR-T0.0",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.99,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 96% of max gain captured ($0.26/contract)",
+        "category": "",
+        "time": "2026-03-24T21:04:47"
+      },
       {
         "ticker": "KXINX-26MAR27H1600-B6462",
         "title": "Will the S&P 500 be between 6450 and 6474.9999 on Mar 27, 2026 at 4pm EDT?",
@@ -779,21 +794,6 @@
         "reasoning": "VIX=26.8, VRP-adjusted prob=0.93 vs market=0.08",
         "category": "sp500",
         "time": "2026-03-24T19:55:25"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6687",
-        "title": "Will the S&P 500 be between 6675 and 6699.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9612361721294241,
-        "confidence": 0.9,
-        "market_price": 0.09,
-        "price_gap": 0.8712361721294242,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=26.8, VRP-adjusted prob=0.96 vs market=0.09",
-        "category": "sp500",
-        "time": "2026-03-24T19:55:25"
       }
     ]
   },
@@ -817,7 +817,7 @@
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.5125
+        "avg_probability": 0.495
       },
       "deepseek": {
         "analyses": 4,
@@ -828,10 +828,10 @@
     "recent_votes": [
       {
         "perplexity": null,
-        "claude": 0.85,
+        "claude": 0.78,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T20:56:06"
+        "time": "2026-03-24T21:06:02"
       },
       {
         "perplexity": 0.76,
@@ -1003,13 +1003,13 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "16 errors this session"
+      "message": "17 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 16,
-    "cycles": 40,
-    "uptime_hours": 6.6
+    "errors_24h": 17,
+    "cycles": 41,
+    "uptime_hours": 6.7
   }
 }
