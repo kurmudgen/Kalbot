@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T11:49:50.318361+00:00",
+  "updated_at": "2026-03-24T11:56:23.061209+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,7 +803,7 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.53
+        "avg_probability": 0.5225
       },
       "claude": {
         "analyses": 4,
@@ -817,11 +817,11 @@
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.95,
+        "perplexity": 0.92,
         "claude": 0.82,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T11:49:50"
+        "time": "2026-03-24T11:56:23"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY due to tight labor market, tariffs, fiscal stimulus; J.P. Morga",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T11:56:13"
+    },
+    {
       "text": "Market and model consensus expects CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent Feb 2026 CPI rose 0.3% SA (BLS), YoY at 2.4%; analysts (RBC, J.P. Morgan, PIIE",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T10:56:37"
-    },
-    {
-      "text": "Model and market forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; consensus sees sticky inflation around 3% YoY due to tight labor market, tariffs, fisc",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T10:50:01"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "61 errors this session"
+      "message": "62 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 61,
-    "cycles": 61,
-    "uptime_hours": 6.7
+    "errors_24h": 62,
+    "cycles": 62,
+    "uptime_hours": 6.8
   }
 }
