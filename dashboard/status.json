@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T01:53:34.414885+00:00",
+  "updated_at": "2026-03-24T02:00:09.263372+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -807,21 +807,21 @@
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.5125
+        "avg_probability": 0.495
       },
       "deepseek": {
         "analyses": 4,
-        "avg_probability": 0.5325
+        "avg_probability": 0.5075
       }
     },
     "consensus_rate": 1.0,
     "recent_votes": [
       {
         "perplexity": 0.92,
-        "claude": 0.85,
-        "deepseek": 0.95,
+        "claude": 0.78,
+        "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-24T01:53:34"
+        "time": "2026-03-24T02:00:09"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Market price implies 74% chance of CPI MoM >0.0% in June 2026, with Octagon AI model and market expecting exactly 0.3% and deeming no mispricing[1]. Economists (RBC, J.P. Morgan, PIIE) forecast sticky",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T01:59:55"
+    },
+    {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, far above 0.0%, with no mispricing evidence[1]. J.P. Morgan forecasts CPI YoY accelerating to 3.6% by June 2026 due",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-23T01:00:05"
-    },
-    {
-      "text": "Robinhood prediction market prices >0.5% CPI increase for September 2026 at 17\u00a2, matching the given 0.17 probability; lower thresholds at >0.4% 33\u00a2, >0.3% 50\u00a2, >0.2% 66\u00a2[1]. J.P. Morgan forecasts U.S.",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-23T00:59:51"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "7 errors this session"
+      "message": "8 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 7,
-    "cycles": 39,
-    "uptime_hours": 4.2
+    "errors_24h": 8,
+    "cycles": 40,
+    "uptime_hours": 4.3
   }
 }
