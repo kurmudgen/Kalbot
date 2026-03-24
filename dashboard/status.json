@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T02:46:58.281136+00:00",
+  "updated_at": "2026-03-24T02:53:45.225964+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,25 +803,25 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.53
+        "avg_probability": 0.5225
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.505
+        "avg_probability": 0.5125
       },
       "deepseek": {
         "analyses": 4,
-        "avg_probability": 0.5075
+        "avg_probability": 0.5325
       }
     },
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.95,
-        "claude": 0.82,
-        "deepseek": 0.85,
+        "perplexity": 0.92,
+        "claude": 0.85,
+        "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T02:46:58"
+        "time": "2026-03-24T02:53:45"
       },
       {
         "perplexity": 0.76,
@@ -848,9 +848,9 @@
   },
   "scanner": {
     "total_markets": 703,
-    "with_prices": 450,
+    "with_prices": 451,
     "passed_filter": 1,
-    "total_scored": 255,
+    "total_scored": 256,
     "categories": {
       "economics": 530,
       "inflation": 173
@@ -909,7 +909,7 @@
     {
       "ticker": "KXINX-26MAR24H1600-B6612",
       "title": "Will the S&P 500 be between 6600 and 6624.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 30,
+      "price": 11,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
@@ -921,14 +921,20 @@
       "category": "economics"
     },
     {
-      "ticker": "KXINX-26MAR24H1600-B6412",
-      "title": "Will the S&P 500 be between 6400 and 6424.9999 on Mar 24, 2026 at 4pm EDT?",
+      "ticker": "KXINX-26MAR24H1600-B6537",
+      "title": "Will the S&P 500 be between 6525 and 6549.9999 on Mar 24, 2026 at 4pm EDT?",
       "price": 30,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     }
   ],
   "news": [
+    {
+      "text": "Multiple sources indicate strong consensus that June 2026 CPI month-over-month will be positive. Octagon AI's model and market both expect exactly 0.3% MoM CPI[1]. J.P. Morgan forecasts YoY CPI accele",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T02:53:33"
+    },
     {
       "text": "Latest CPI data shows February 2026 month-over-month increase of 0.3% seasonally adjusted[5]. Octagon AI's prediction market model and market consensus expect June 2026 CPI month-over-month to be exac",
       "category": "inflation",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T01:53:25"
-    },
-    {
-      "text": "Model and market forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; economists anticipate sticky inflation around 3% YoY due to tight labor market, wage growth, co",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T01:46:51"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "15 errors this session"
+      "message": "16 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 15,
-    "cycles": 47,
-    "uptime_hours": 5.1
+    "errors_24h": 16,
+    "cycles": 48,
+    "uptime_hours": 5.2
   }
 }
