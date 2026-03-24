@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T20:26:17.293514+00:00",
+  "updated_at": "2026-03-24T20:36:14.628192+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -831,7 +831,7 @@
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T20:26:17"
+        "time": "2026-03-24T20:36:14"
       },
       {
         "perplexity": 0.76,
@@ -919,7 +919,7 @@
     {
       "ticker": "KXINX-26MAR27H1600-B6812",
       "title": "Will the S&P 500 be between 6800 and 6824.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 2,
+      "price": 4,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
@@ -1003,13 +1003,13 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "13 errors this session"
+      "message": "14 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 13,
-    "cycles": 37,
-    "uptime_hours": 6.1
+    "errors_24h": 14,
+    "cycles": 38,
+    "uptime_hours": 6.2
   }
 }
