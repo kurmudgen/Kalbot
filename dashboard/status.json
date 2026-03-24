@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T21:46:10.235465+00:00",
+  "updated_at": "2026-03-24T21:56:09.106002+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -831,7 +831,7 @@
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T21:46:10"
+        "time": "2026-03-24T21:56:09"
       },
       {
         "perplexity": 0.76,
@@ -1003,13 +1003,13 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "21 errors this session"
+      "message": "22 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 21,
-    "cycles": 45,
-    "uptime_hours": 7.4
+    "errors_24h": 22,
+    "cycles": 46,
+    "uptime_hours": 7.6
   }
 }
