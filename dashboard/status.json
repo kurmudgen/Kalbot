@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T13:50:19.845064+00:00",
+  "updated_at": "2026-03-24T13:57:00.377331+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,11 +803,11 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.5225
+        "avg_probability": 0.53
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.495
+        "avg_probability": 0.5125
       },
       "deepseek": {
         "analyses": 4,
@@ -817,11 +817,11 @@
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.92,
-        "claude": 0.78,
+        "perplexity": 0.95,
+        "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T13:50:19"
+        "time": "2026-03-24T13:57:00"
       },
       {
         "perplexity": 0.76,
@@ -923,12 +923,18 @@
     {
       "ticker": "KXINX-26MAR24H1600-B6612",
       "title": "Will the S&P 500 be between 6600 and 6624.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 10,
+      "price": 8,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     }
   ],
   "news": [
+    {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI data shows Feb 2026 MoM +0.3% and YoY 2.4%; analysts (RBC, J.P. Morgan, PII",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T13:56:50"
+    },
     {
       "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI data shows Feb 2026 MoM +0.3% (SA), YoY 2.4%, core 2.5%; analysts (RBC, J.P",
       "category": "inflation",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T12:56:28"
-    },
-    {
-      "text": "Market and model expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI data shows Feb 2026 MoM +0.3% SA, YoY 2.4%; analysts (RBC, J.P. Morgan, PIIE) forecas",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T12:49:39"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "79 errors this session"
+      "message": "80 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 79,
-    "cycles": 79,
-    "uptime_hours": 8.7
+    "errors_24h": 80,
+    "cycles": 80,
+    "uptime_hours": 8.8
   }
 }
