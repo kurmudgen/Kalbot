@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T13:03:16.720872+00:00",
+  "updated_at": "2026-03-24T13:10:06.180145+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,11 +803,11 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.53
+        "avg_probability": 0.5225
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.495
+        "avg_probability": 0.5125
       },
       "deepseek": {
         "analyses": 4,
@@ -817,11 +817,11 @@
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.95,
-        "claude": 0.78,
+        "perplexity": 0.92,
+        "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T13:03:16"
+        "time": "2026-03-24T13:10:06"
       },
       {
         "perplexity": 0.76,
@@ -916,7 +916,7 @@
     {
       "ticker": "KXINX-26MAR24H1600-B6637",
       "title": "Will the S&P 500 be between 6625 and 6649.9999 on Mar 24, 2026 at 4pm EDT?",
-      "price": 10,
+      "price": 8,
       "close_time": "2026-03-24T20:00:00Z",
       "category": "economics"
     },
@@ -929,6 +929,12 @@
     }
   ],
   "news": [
+    {
+      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; sticky inflation around 3% YoY persists due to tight labor market, wage growth, consum",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T13:09:56"
+    },
     {
       "text": "Octagon AI model and market expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing; sticky inflation around 3% YoY due to tight labor market, tariffs, fiscal stimulus; J.P. Morga",
       "category": "inflation",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T12:09:20"
-    },
-    {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI data shows +0.3% in Feb 2026 (YoY 2.4%) and +0.2% in Jan 2026; economists a",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T12:02:48"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "72 errors this session"
+      "message": "73 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 72,
-    "cycles": 72,
-    "uptime_hours": 7.9
+    "errors_24h": 73,
+    "cycles": 73,
+    "uptime_hours": 8.0
   }
 }
