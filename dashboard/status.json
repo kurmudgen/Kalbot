@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T06:44:59.187886+00:00",
+  "updated_at": "2026-03-24T06:51:36.715254+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -803,25 +803,25 @@
     "models": {
       "perplexity": {
         "analyses": 4,
-        "avg_probability": 0.53
+        "avg_probability": 0.5375
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.5125
+        "avg_probability": 0.52
       },
       "deepseek": {
         "analyses": 4,
-        "avg_probability": 0.5075
+        "avg_probability": 0.5325
       }
     },
     "consensus_rate": 1.0,
     "recent_votes": [
       {
-        "perplexity": 0.95,
-        "claude": 0.85,
-        "deepseek": 0.85,
+        "perplexity": 0.98,
+        "claude": 0.88,
+        "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T06:44:59"
+        "time": "2026-03-24T06:51:36"
       },
       {
         "perplexity": 0.76,
@@ -930,6 +930,12 @@
   ],
   "news": [
     {
+      "text": "Latest CPI data from February 2026 shows month-over-month increase of 0.3% seasonally adjusted[4]. Year-over-year inflation at 2.4% as of February 2026[4][5]. Octagon AI model and market consensus exp",
+      "category": "inflation",
+      "source": "perplexity",
+      "time": "2026-03-24T06:51:27"
+    },
+    {
       "text": "Latest CPI data from February 2026 shows month-over-month increase of 0.3% seasonally adjusted[4]. Octagon AI's prediction market model and market consensus expect June 2026 CPI month-over-month to be",
       "category": "inflation",
       "source": "perplexity",
@@ -982,24 +988,18 @@
       "category": "inflation",
       "source": "perplexity",
       "time": "2026-03-24T05:51:17"
-    },
-    {
-      "text": "Latest CPI data from February 2026 shows month-over-month increase of 0.3% seasonally adjusted[4]. Octagon AI's prediction market model and market consensus expect June 2026 CPI month-over-month to be",
-      "category": "inflation",
-      "source": "perplexity",
-      "time": "2026-03-24T05:44:41"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "15 errors this session"
+      "message": "16 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 15,
-    "cycles": 15,
-    "uptime_hours": 1.6
+    "errors_24h": 16,
+    "cycles": 16,
+    "uptime_hours": 1.7
   }
 }
