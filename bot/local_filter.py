@@ -191,7 +191,15 @@ def run_filter() -> list[dict]:
                 from weather_nws_feed import get_city_forecast
                 nws = get_city_forecast(title)
                 if nws:
-                    nws_context = f"\n{nws}"
+                    nws_context = (
+                        f"\nCRITICAL — {nws}\n"
+                        f"USE THIS FORECAST AS YOUR PRIMARY INPUT. "
+                        f"If the NWS forecast is far from the threshold (>5F gap), "
+                        f"your confidence should be HIGH and probability should reflect the forecast. "
+                        f"If the forecast is close to the threshold (<3F gap), "
+                        f"your confidence should be LOW (0.3-0.5). "
+                        f"Do NOT just echo the market price."
+                    )
             except Exception:
                 pass
 
