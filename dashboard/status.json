@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T10:27:28.524518+00:00",
+  "updated_at": "2026-03-25T10:55:55.362182+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -822,11 +822,11 @@
       },
       "claude": {
         "analyses": 13,
-        "avg_probability": 0.40076923076923077
+        "avg_probability": 0.4
       },
       "deepseek": {
         "analyses": 13,
-        "avg_probability": 0.4707692307692308
+        "avg_probability": 0.4730769230769231
       }
     },
     "consensus_rate": 0.3076923076923077,
@@ -836,63 +836,63 @@
         "claude": 0.12,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T10:27:28"
+        "time": "2026-03-25T10:55:55"
       },
       {
         "perplexity": null,
-        "claude": 0.72,
+        "claude": 0.75,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T10:27:17"
+        "time": "2026-03-25T10:55:44"
       },
       {
         "perplexity": null,
         "claude": 0.58,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T10:27:08"
+        "time": "2026-03-25T10:55:34"
       },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.82,
         "consensus": false,
-        "time": "2026-03-25T10:26:58"
+        "time": "2026-03-25T10:55:24"
       },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T10:26:46"
+        "time": "2026-03-25T10:55:14"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T10:26:37"
+        "time": "2026-03-25T10:55:04"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-03-25T10:26:25"
+        "time": "2026-03-25T10:54:54"
       },
       {
         "perplexity": null,
         "claude": 0.12,
-        "deepseek": 0.32,
+        "deepseek": 0.35,
         "consensus": false,
-        "time": "2026-03-25T10:26:15"
+        "time": "2026-03-25T10:54:44"
       },
       {
         "perplexity": null,
-        "claude": 0.12,
+        "claude": 0.08,
         "deepseek": 0.12,
         "consensus": false,
-        "time": "2026-03-25T10:26:04"
+        "time": "2026-03-25T10:54:33"
       },
       {
         "perplexity": null,
@@ -907,7 +907,7 @@
     "total_markets": 1944,
     "with_prices": 1148,
     "passed_filter": 9,
-    "total_scored": 303,
+    "total_scored": 304,
     "categories": {
       "economics": 1060,
       "inflation": 173,
@@ -1053,7 +1053,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 9,
-    "uptime_hours": 2.0
+    "cycles": 11,
+    "uptime_hours": 2.5
   }
 }
