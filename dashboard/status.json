@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T07:08:20.091540+00:00",
+  "updated_at": "2026-03-25T07:19:58.370531+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -13,7 +13,7 @@
     }
   },
   "pnl": {
-    "today": 0,
+    "today": 0.0,
     "all_time": -29.549999999999997,
     "history": [
       {
@@ -33,7 +33,7 @@
       },
       {
         "date": "2026-03-25",
-        "trades": 1051,
+        "trades": 1053,
         "deployed": 63.53
       }
     ],
@@ -47,9 +47,39 @@
   },
   "trades": {
     "total": 50,
-    "executed": 0,
-    "skipped": 50,
+    "executed": 2,
+    "skipped": 48,
     "recent": [
+      {
+        "ticker": "KXFED-27APR-T1.50",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.99,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 99% of max gain captured ($0.81/contract)",
+        "category": "",
+        "time": "2026-03-25T07:17:50"
+      },
+      {
+        "ticker": "KXFED-27APR-T0.25",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.99,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 98% of max gain captured ($0.39/contract)",
+        "category": "",
+        "time": "2026-03-25T07:17:50"
+      },
       {
         "ticker": "KXINX-26MAR27H1600-B6462",
         "title": "Will the S&P 500 be between 6450 and 6474.9999 on Mar 27, 2026 at 4pm EDT?",
@@ -769,36 +799,6 @@
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.31",
         "category": "sp500",
         "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-T6924.9999",
-        "title": "Will the S&P 500 be above 6924.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.31,
-        "price_gap": 0.6890000000000001,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.31",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6462",
-        "title": "Will the S&P 500 be between 6450 and 6474.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.1649169473398625,
-        "confidence": 0.7249169473398624,
-        "market_price": 0.04,
-        "price_gap": 0.1249169473398625,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.16 vs market=0.04",
-        "category": "sp500",
-        "time": "2026-03-25T06:20:00"
       }
     ]
   },
@@ -822,7 +822,7 @@
       },
       "claude": {
         "analyses": 10,
-        "avg_probability": 0.489
+        "avg_probability": 0.48600000000000004
       },
       "deepseek": {
         "analyses": 10,
@@ -836,42 +836,42 @@
         "claude": 0.12,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T07:08:20"
+        "time": "2026-03-25T07:19:58"
       },
       {
         "perplexity": null,
         "claude": 0.72,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T07:08:08"
+        "time": "2026-03-25T07:19:48"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T07:07:58"
+        "time": "2026-03-25T07:19:37"
       },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.82,
         "consensus": false,
-        "time": "2026-03-25T07:07:48"
+        "time": "2026-03-25T07:19:27"
       },
       {
         "perplexity": null,
-        "claude": 0.35,
+        "claude": 0.32,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T07:07:38"
+        "time": "2026-03-25T07:19:17"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T07:07:28"
+        "time": "2026-03-25T07:19:07"
       },
       {
         "perplexity": null,
@@ -1051,7 +1051,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 3,
-    "uptime_hours": 0.5
+    "cycles": 4,
+    "uptime_hours": 0.7
   }
 }
