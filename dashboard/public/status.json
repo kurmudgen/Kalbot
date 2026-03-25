@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T22:55:43.505340+00:00",
+  "updated_at": "2026-03-25T02:36:51.706953+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -14,7 +14,7 @@
   },
   "pnl": {
     "today": 0.0,
-    "all_time": 0.0,
+    "all_time": -29.549999999999997,
     "history": [
       {
         "date": "2026-03-22",
@@ -30,21 +30,101 @@
         "date": "2026-03-24",
         "trades": 1521,
         "deployed": 29.549999999999997
+      },
+      {
+        "date": "2026-03-25",
+        "trades": 5,
+        "deployed": 0
       }
     ],
     "resolved": {
-      "total_trades": 0,
+      "total_trades": 22,
       "wins": 0,
-      "losses": 0,
-      "win_rate": 0,
-      "actual_pnl": 0
+      "losses": 22,
+      "win_rate": 0.0,
+      "actual_pnl": -29.549999999999997
     }
   },
   "trades": {
     "total": 50,
-    "executed": 1,
-    "skipped": 49,
+    "executed": 4,
+    "skipped": 46,
     "recent": [
+      {
+        "ticker": "KXCPI-26APR-T0.1",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.98,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 95% of max gain captured ($0.38/contract)",
+        "category": "",
+        "time": "2026-03-25T02:24:06"
+      },
+      {
+        "ticker": "KXGDP-26APR30-T3.0",
+        "title": "",
+        "side": "NO_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.4,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.10/contract (33%)",
+        "category": "",
+        "time": "2026-03-25T02:24:06"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8695619898807415,
+        "confidence": 0.8800000000000001,
+        "market_price": 0.74,
+        "price_gap": 0.12956198988074152,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.\n\n\nRecent research findings:\n- [inflation] Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI ",
+        "category": "inflation",
+        "time": "2026-03-25T00:53:49"
+      },
+      {
+        "ticker": "KXFED-27APR-T2.00",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.94,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 81% of max gain captured ($0.26/contract)",
+        "category": "",
+        "time": "2026-03-25T00:52:33"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8074414858018797,
+        "confidence": 0.8487837837837838,
+        "market_price": 0.74,
+        "price_gap": 0.0674414858018797,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.\n\n\nRecent research findings:\n- [inflation] Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI ",
+        "category": "inflation",
+        "time": "2026-03-25T00:44:16"
+      },
       {
         "ticker": "KXCPI-26APR-T0.0",
         "title": "",
@@ -719,87 +799,12 @@
         "reasoning": "VIX=26.8, VRP-adjusted prob=0.48 vs market=0.08",
         "category": "sp500",
         "time": "2026-03-24T19:55:25"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6562",
-        "title": "Will the S&P 500 be between 6550 and 6574.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.6012111183688915,
-        "confidence": 0.9,
-        "market_price": 0.09,
-        "price_gap": 0.5112111183688915,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=26.8, VRP-adjusted prob=0.60 vs market=0.09",
-        "category": "sp500",
-        "time": "2026-03-24T19:55:25"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6587",
-        "title": "Will the S&P 500 be between 6575 and 6599.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.7116561696799113,
-        "confidence": 0.9,
-        "market_price": 0.09,
-        "price_gap": 0.6216561696799113,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=26.8, VRP-adjusted prob=0.71 vs market=0.09",
-        "category": "sp500",
-        "time": "2026-03-24T19:55:25"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6612",
-        "title": "Will the S&P 500 be between 6600 and 6624.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.8050988279293875,
-        "confidence": 0.9,
-        "market_price": 0.09,
-        "price_gap": 0.7150988279293875,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=26.8, VRP-adjusted prob=0.81 vs market=0.09",
-        "category": "sp500",
-        "time": "2026-03-24T19:55:25"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6637",
-        "title": "Will the S&P 500 be between 6625 and 6649.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.8773258399767736,
-        "confidence": 0.9,
-        "market_price": 0.1,
-        "price_gap": 0.7773258399767736,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=26.8, VRP-adjusted prob=0.88 vs market=0.10",
-        "category": "sp500",
-        "time": "2026-03-24T19:55:25"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6662",
-        "title": "Will the S&P 500 be between 6650 and 6674.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9283303940888603,
-        "confidence": 0.9,
-        "market_price": 0.08,
-        "price_gap": 0.8483303940888604,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=26.8, VRP-adjusted prob=0.93 vs market=0.08",
-        "category": "sp500",
-        "time": "2026-03-24T19:55:25"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 166,
+      "trades": 168,
       "executed": 1,
       "deployed": 0.39
     },
@@ -816,22 +821,64 @@
         "avg_probability": 0.38999999999999996
       },
       "claude": {
-        "analyses": 4,
-        "avg_probability": 0.5125
+        "analyses": 10,
+        "avg_probability": 0.492
       },
       "deepseek": {
-        "analyses": 4,
-        "avg_probability": 0.5325
+        "analyses": 10,
+        "avg_probability": 0.553
       }
     },
-    "consensus_rate": 1.0,
+    "consensus_rate": 0.4,
     "recent_votes": [
+      {
+        "perplexity": null,
+        "claude": 0.12,
+        "deepseek": 0.18,
+        "consensus": false,
+        "time": "2026-03-25T02:36:51"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.75,
+        "deepseek": 0.55,
+        "consensus": false,
+        "time": "2026-03-25T02:36:40"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.65,
+        "deepseek": 0.55,
+        "consensus": false,
+        "time": "2026-03-25T02:36:30"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.85,
+        "deepseek": 0.82,
+        "consensus": false,
+        "time": "2026-03-25T02:36:19"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.35,
+        "deepseek": 0.65,
+        "consensus": false,
+        "time": "2026-03-25T02:36:08"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.15,
+        "deepseek": 0.65,
+        "consensus": false,
+        "time": "2026-03-25T02:35:57"
+      },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T22:55:43"
+        "time": "2026-03-25T00:53:49"
       },
       {
         "perplexity": 0.76,
@@ -858,9 +905,9 @@
   },
   "scanner": {
     "total_markets": 1133,
-    "with_prices": 466,
-    "passed_filter": 1,
-    "total_scored": 269,
+    "with_prices": 468,
+    "passed_filter": 6,
+    "total_scored": 271,
     "categories": {
       "economics": 960,
       "inflation": 173
@@ -868,16 +915,30 @@
   },
   "sniper_markets": [
     {
+      "ticker": "KXINX-26MAR25H1600-T6924.9999",
+      "title": "Will the S&P 500 be above 6924.9999 on Mar 25, 2026 at 4pm EDT?",
+      "price": 31,
+      "close_time": "2026-03-25T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR25H1600-T6225",
+      "title": "Will the S&P 500 be below 6225 on Mar 25, 2026 at 4pm EDT?",
+      "price": 31,
+      "close_time": "2026-03-25T20:00:00Z",
+      "category": "economics"
+    },
+    {
       "ticker": "KXINX-26MAR27H1600-T6949.9999",
       "title": "Will the S&P 500 be above 6949.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 3,
+      "price": 1,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR27H1600-T6250",
       "title": "Will the S&P 500 be below 6250 on Mar 27, 2026 at 4pm EDT?",
-      "price": 6,
+      "price": 8,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
@@ -891,7 +952,7 @@
     {
       "ticker": "KXINX-26MAR27H1600-B6912",
       "title": "Will the S&P 500 be between 6900 and 6924.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 1,
+      "price": 2,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
@@ -905,14 +966,14 @@
     {
       "ticker": "KXINX-26MAR27H1600-B6862",
       "title": "Will the S&P 500 be between 6850 and 6874.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 1,
+      "price": 2,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR27H1600-B6837",
       "title": "Will the S&P 500 be between 6825 and 6849.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 1,
+      "price": 3,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
@@ -920,20 +981,6 @@
       "ticker": "KXINX-26MAR27H1600-B6812",
       "title": "Will the S&P 500 be between 6800 and 6824.9999 on Mar 27, 2026 at 4pm EDT?",
       "price": 4,
-      "close_time": "2026-03-27T20:00:00Z",
-      "category": "economics"
-    },
-    {
-      "ticker": "KXINX-26MAR27H1600-B6787",
-      "title": "Will the S&P 500 be between 6775 and 6799.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 2,
-      "close_time": "2026-03-27T20:00:00Z",
-      "category": "economics"
-    },
-    {
-      "ticker": "KXINX-26MAR27H1600-B6762",
-      "title": "Will the S&P 500 be between 6750 and 6774.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 5,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     }
@@ -1003,13 +1050,13 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "28 errors this session"
+      "message": "16 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 28,
-    "cycles": 52,
-    "uptime_hours": 8.6
+    "errors_24h": 16,
+    "cycles": 21,
+    "uptime_hours": 3.6
   }
 }

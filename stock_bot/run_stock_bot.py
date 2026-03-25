@@ -109,7 +109,17 @@ def run_cycle(session_id: str) -> dict:
     if exits:
         print(f"  Exited {exits} positions")
 
-    # Liquidation cascade check (before crypto trades)
+    # Crypto momentum module (ISOLATED — own budget, own P&L)
+    try:
+        from crypto_momentum import run_momentum_cycle
+        print("  --- Crypto Momentum (isolated) ---")
+        momentum = run_momentum_cycle()
+        if momentum["entries"] or momentum["exits"]:
+            print(f"  Momentum: {momentum['entries']} entries, {momentum['exits']} exits")
+    except Exception as e:
+        print(f"  Momentum error: {e}")
+
+    # Liquidation cascade check (before main crypto trades)
     try:
         from liquidation_monitor import detect_cascade_risk
         cascade = detect_cascade_risk()
