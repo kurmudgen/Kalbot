@@ -437,6 +437,14 @@ def main():
             except Exception as e:
                 print(f"  Dashboard publish error: {e}")
 
+            # API cost monitor (every 12 cycles = ~1 hour)
+            if totals["cycles"] % 12 == 0:
+                try:
+                    from api_cost_monitor import run_cost_check
+                    run_cost_check()
+                except Exception:
+                    pass
+
             # Periodic check-in
             elapsed_sec = (datetime.now(timezone.utc) - start_time).total_seconds()
             if totals["cycles"] > 1 and elapsed_sec % CHECKIN_INTERVAL < LOOP_INTERVAL:

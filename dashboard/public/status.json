@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T08:14:09.424904+00:00",
+  "updated_at": "2026-03-25T14:54:29.788344+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -33,7 +33,7 @@
       },
       {
         "date": "2026-03-25",
-        "trades": 1053,
+        "trades": 1059,
         "deployed": 63.53
       }
     ],
@@ -47,9 +47,99 @@
   },
   "trades": {
     "total": 50,
-    "executed": 2,
-    "skipped": 48,
+    "executed": 8,
+    "skipped": 42,
     "recent": [
+      {
+        "ticker": "KXCPI-26APR-T0.3",
+        "title": "",
+        "side": "YES_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.28,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.54/contract (300%)",
+        "category": "",
+        "time": "2026-03-25T14:44:51"
+      },
+      {
+        "ticker": "KXFED-26SEP-T3.75",
+        "title": "",
+        "side": "YES_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.36,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.41/contract (178%)",
+        "category": "",
+        "time": "2026-03-25T14:26:31"
+      },
+      {
+        "ticker": "KXFED-27APR-T1.00",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.97,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 96% of max gain captured ($0.78/contract)",
+        "category": "",
+        "time": "2026-03-25T11:33:56"
+      },
+      {
+        "ticker": "KXFED-27APR-T3.50",
+        "title": "",
+        "side": "YES_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.07,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.43/contract (86%)",
+        "category": "",
+        "time": "2026-03-25T09:54:55"
+      },
+      {
+        "ticker": "KXFED-27APR-T3.25",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.92,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 83% of max gain captured ($0.38/contract)",
+        "category": "",
+        "time": "2026-03-25T09:54:55"
+      },
+      {
+        "ticker": "KXFED-27APR-T2.75",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.94,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 86% of max gain captured ($0.38/contract)",
+        "category": "",
+        "time": "2026-03-25T09:54:55"
+      },
       {
         "ticker": "KXFED-27APR-T1.50",
         "title": "",
@@ -709,96 +799,6 @@
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
         "category": "sp500",
         "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6812",
-        "title": "Will the S&P 500 be between 6800 and 6824.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.499,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6837",
-        "title": "Will the S&P 500 be between 6825 and 6849.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.499,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6862",
-        "title": "Will the S&P 500 be between 6850 and 6874.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.499,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6887",
-        "title": "Will the S&P 500 be between 6875 and 6899.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.499,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6912",
-        "title": "Will the S&P 500 be between 6900 and 6924.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.499,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-T6225",
-        "title": "Will the S&P 500 be below 6225 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.001,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.31,
-        "price_gap": 0.309,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.31",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
       }
     ]
   },
@@ -817,102 +817,102 @@
   "ensemble": {
     "models": {
       "perplexity": {
-        "analyses": 3,
-        "avg_probability": 0.38999999999999996
+        "analyses": 11,
+        "avg_probability": 0.4690909090909091
       },
       "claude": {
-        "analyses": 12,
-        "avg_probability": 0.4191666666666667
+        "analyses": 20,
+        "avg_probability": 0.2965
       },
       "deepseek": {
-        "analyses": 12,
-        "avg_probability": 0.4975
+        "analyses": 20,
+        "avg_probability": 0.3335
       }
     },
-    "consensus_rate": 0.3333333333333333,
+    "consensus_rate": 0.6,
     "recent_votes": [
       {
-        "perplexity": null,
-        "claude": 0.12,
-        "deepseek": 0.18,
-        "consensus": false,
-        "time": "2026-03-25T08:14:09"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.75,
-        "deepseek": 0.55,
-        "consensus": false,
-        "time": "2026-03-25T08:13:58"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.55,
-        "deepseek": 0.55,
-        "consensus": false,
-        "time": "2026-03-25T08:13:48"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.85,
-        "deepseek": 0.82,
-        "consensus": false,
-        "time": "2026-03-25T08:13:39"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.32,
-        "deepseek": 0.65,
-        "consensus": false,
-        "time": "2026-03-25T08:13:27"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.15,
-        "deepseek": 0.65,
-        "consensus": false,
-        "time": "2026-03-25T08:13:17"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.12,
-        "deepseek": 0.32,
-        "consensus": false,
-        "time": "2026-03-25T08:13:07"
-      },
-      {
-        "perplexity": null,
+        "perplexity": 0.22,
         "claude": 0.12,
         "deepseek": 0.12,
-        "consensus": false,
-        "time": "2026-03-25T08:12:57"
+        "consensus": true,
+        "time": "2026-03-25T14:54:29"
       },
       {
-        "perplexity": null,
+        "perplexity": 0.72,
+        "claude": 0.72,
+        "deepseek": 0.72,
+        "consensus": true,
+        "time": "2026-03-25T14:54:15"
+      },
+      {
+        "perplexity": 0.68,
+        "claude": 0.63,
+        "deepseek": 0.68,
+        "consensus": true,
+        "time": "2026-03-25T14:54:01"
+      },
+      {
+        "perplexity": 0.92,
         "claude": 0.85,
-        "deepseek": 0.95,
+        "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-25T00:53:49"
+        "time": "2026-03-25T14:53:46"
       },
       {
-        "perplexity": 0.76,
-        "claude": 0.78,
-        "deepseek": 0.78,
+        "perplexity": 0.72,
+        "claude": 0.35,
+        "deepseek": 0.35,
         "consensus": true,
-        "time": "2026-03-23T01:00:44"
+        "time": "2026-03-25T14:53:31"
+      },
+      {
+        "perplexity": 0.85,
+        "claude": 0.75,
+        "deepseek": 0.65,
+        "consensus": true,
+        "time": "2026-03-25T14:53:17"
+      },
+      {
+        "perplexity": 0.78,
+        "claude": 0.85,
+        "deepseek": 0.98,
+        "consensus": true,
+        "time": "2026-03-25T14:52:59"
+      },
+      {
+        "perplexity": 0.05,
+        "claude": 0.12,
+        "deepseek": 0.12,
+        "consensus": true,
+        "time": "2026-03-25T14:52:45"
+      },
+      {
+        "perplexity": 0.15,
+        "claude": 0.08,
+        "deepseek": 0.15,
+        "consensus": true,
+        "time": "2026-03-25T14:52:31"
+      },
+      {
+        "perplexity": 0.05,
+        "claude": 0.02,
+        "deepseek": 0.02,
+        "consensus": true,
+        "time": "2026-03-25T14:52:15"
       }
     ]
   },
   "scanner": {
-    "total_markets": 1814,
-    "with_prices": 1148,
-    "passed_filter": 8,
-    "total_scored": 300,
+    "total_markets": 1944,
+    "with_prices": 1176,
+    "passed_filter": 21,
+    "total_scored": 329,
     "categories": {
-      "economics": 960,
+      "economics": 1060,
       "inflation": 173,
       "tsa": 81,
-      "weather": 600
+      "weather": 630
     }
   },
   "sniper_markets": [
@@ -982,78 +982,83 @@
     {
       "ticker": "KXHIGHNY-26MAR25-T58",
       "title": "Will the **high temp in NYC** be >58\u00b0 on Mar 25, 2026?",
-      "price": 6,
+      "price": 1,
       "close_time": "2026-03-26T04:59:00Z",
       "category": "weather"
     }
   ],
   "news": [
     {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI data shows Feb 2026 MoM +0.3% (SA), YoY 2.4%, core 2.5%; analysts (RBC, J.P",
+      "text": "Forecasts indicate US CPI inflation stabilizing in the upper 2% range (y/y) through 2026, with J.P. Morgan projecting 3.2% core CPI for the year, State Street upper 2% range, and EY expecting cooling ",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-24T14:17:06"
+      "time": "2026-03-25T14:54:20"
     },
     {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; strong wage growth, resilient consumer spending, supply chain disruptions, and OPEC+ d",
+      "text": "February 2026 CPI was 326.79 points, up 0.3% MoM from January; recent monthly increases: 0.3% Dec, 0.2% Jan, 0.3% Feb. Trading Economics forecasts CPI at 329.07 by Q1 end (March), implying ~0.4% rise ",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-24T14:10:27"
+      "time": "2026-03-25T14:54:06"
     },
     {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; J.P. Morgan predicts YoY CPI accelerating to 3.6% by June 2026 due to tariffs and fisc",
+      "text": "Robinhood prediction market prices >0.2% CPI increase for September 2026 at 67\u00a2, implying 67% probability[2]. J.P. Morgan forecasts CPI inflation accelerating to 3.6% YoY by June 2026 due to tariffs a",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-24T14:03:36"
+      "time": "2026-03-25T14:53:51"
     },
     {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI data shows Feb 2026 MoM +0.3% and YoY 2.4%; analysts (RBC, J.P. Morgan, PII",
+      "text": "Recent CPI data shows +0.3% MoM in Feb 2026 (BLS), with YoY at 2.4%[2][5][6]. Trading Economics forecasts CPI index rising to 329.07 by Q2 end from 326.79 in Feb[2]. J.P. Morgan expects YoY CPI at 2.8",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-24T13:56:50"
+      "time": "2026-03-25T14:53:36"
     },
     {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI data shows Feb 2026 MoM +0.3% (SA), YoY 2.4%, core 2.5%; analysts (RBC, J.P",
+      "text": "Cleveland Fed dynamic model forecasts April 2026 CPI MoM at 0.1%-0.3%[2]. High-frequency indicators project 0.2% MoM[2]. Prediction markets (Kalshi) show 26% for >0.3% MoM, but current market at 69% l",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-24T13:50:10"
+      "time": "2026-03-25T14:53:22"
     },
     {
-      "text": "Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, far above 0.0%, with no mispricing evidence[1]. Economists anticipate sticky inflation around 3% YoY throughout 202",
+      "text": "Federal Reserve Bank of Cleveland's Inflation Nowcasting tool projects CPI to surge to 3.02% in March 2026, up from 2.4% in February[1]. This projection is driven by a massive spike in energy prices f",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-24T13:43:26"
+      "time": "2026-03-25T14:53:07"
     },
     {
-      "text": "Latest CPI data shows February 2026 month-over-month increase of 0.3% seasonally adjusted[5]. Octagon AI's prediction market model and market consensus expect June 2026 CPI month-over-month to be exac",
-      "category": "inflation",
+      "text": "EaseWeather forecast for Mar 26, 2026 in Denver shows sunny conditions with high of 22\u00b0F (well below 77\u00b0F)[1]. March 2026 has been significantly warmer than historical averages until now, but recent d",
+      "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-24T13:36:49"
+      "time": "2026-03-25T14:52:50"
     },
     {
-      "text": "Multiple sources indicate strong consensus that June 2026 CPI will show positive month-over-month growth. Octagon AI's prediction market model and market consensus expect exactly 0.3% month-over-month",
-      "category": "inflation",
+      "text": "Specific forecast from weathershogun.com predicts 91\u00b0F high in Austin on March 26, 2026[1]. AccuWeather monthly forecast shows 91\u00b0F high for that date[5]. Long-term March averages range 69-72\u00b0F (21-22",
+      "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-24T13:29:59"
+      "time": "2026-03-25T14:52:35"
     },
     {
-      "text": "Model and market forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI data shows Feb 2026 MoM +0.3% (SA), YoY 2.4%, core 2.5%; analysts (RBC, J.P",
-      "category": "inflation",
+      "text": "AccuWeather forecast for March 26, 2026 in Austin shows a high of 91\u00b0F[4]. Historical weather data from March 2026 shows temperatures in the range of 21-22\u00b0C (70-72\u00b0F) daytime averages[2][6]. Recent a",
+      "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-24T13:23:20"
+      "time": "2026-03-25T14:52:22"
     },
     {
-      "text": "Market and model consensus expects CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI data shows Feb 2026 MoM +0.3% and +0.5% unadjusted, YoY 2.4%; forecasts in",
-      "category": "inflation",
+      "text": "EaseWeather forecast for Denver on Mar 26, 2026: Sunny, high of 22\u00b0F (well below 79-80\u00b0F), following warmer days on Mar 24 (25\u00b0F) and Mar 25 (31\u00b0F) but dropping significantly[1]. Current conditions on",
+      "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-24T13:16:37"
+      "time": "2026-03-25T14:52:05"
     }
   ],
-  "alerts": [],
+  "alerts": [
+    {
+      "level": "warning",
+      "message": "1 errors this session"
+    }
+  ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 0,
-    "cycles": 2,
-    "uptime_hours": 0.4
+    "errors_24h": 1,
+    "cycles": 27,
+    "uptime_hours": 6.5
   }
 }
