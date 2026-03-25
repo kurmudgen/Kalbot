@@ -109,10 +109,20 @@ def run_cycle(session_id: str) -> dict:
     if exits:
         print(f"  Exited {exits} positions")
 
+    # BTC Range Trader (ISOLATED — own budget, own P&L)
+    try:
+        from btc_range_trader import run_range_cycle
+        print("  --- BTC Range Trader (isolated) ---")
+        range_stats = run_range_cycle()
+        if range_stats["entries"] or range_stats["exits"]:
+            print(f"  Range: {range_stats['entries']} entries, {range_stats['exits']} exits")
+    except Exception as e:
+        print(f"  Range trader error: {e}")
+
     # Crypto momentum module (ISOLATED — own budget, own P&L)
     try:
         from crypto_momentum import run_momentum_cycle
-        print("  --- Crypto Momentum (isolated) ---")
+        print("  --- Crypto Momentum (isolated, mid-cap) ---")
         momentum = run_momentum_cycle()
         if momentum["entries"] or momentum["exits"]:
             print(f"  Momentum: {momentum['entries']} entries, {momentum['exits']} exits")

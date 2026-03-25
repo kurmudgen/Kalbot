@@ -39,10 +39,12 @@ TAKE_PROFIT = 0.18        # +18% → sell
 STOP_LOSS = -0.10         # -10% → sell
 TIME_STOP_HOURS = 4       # Force exit after 4 hours
 
-# Entry filters
-MIN_24H_VOLUME = 500_000  # $500K minimum volume
-MIN_LISTING_DAYS = 30     # Listed >30 days
-MAX_RECENT_PUMP = 0.20    # Skip if already up >20% in last hour
+# Entry filters — refined for mid-cap (not penny cap)
+MIN_24H_VOLUME = 2_000_000    # $2M minimum volume (was $500K)
+MIN_MARKET_CAP = 50_000_000   # $50M minimum (mid-cap floor)
+MIN_LISTING_DAYS = 180         # Listed >180 days (was 30)
+MAX_RECENT_PUMP = 0.15         # Skip if already up >15% (was 20%)
+BTC_REGIME_GATE = -0.05        # Skip all if BTC down >5% today
 
 
 def init_momentum_db() -> sqlite3.Connection:
@@ -318,6 +320,24 @@ def run_momentum_cycle() -> dict:
     """Run one momentum detection + exit check cycle."""
     conn = init_momentum_db()
     stats = {"signals": 0, "entries": 0, "exits": 0}
+
+    # BTC regime gate — skip all momentum if BTC is crashing
+    try:
+        r = requests.get(
+            "https://api.coingecko.com/api/v3/simple/price",
+            params={"ids": "bitcoin", "vs_currencies": "usd",
+                    "include_24hr_change": "true"},
+            timeout=10,
+        )
+        if r.status_code == 200:
+            btc_change = r.json().get("bitcoin", {}).get("usd_24h_change", 0)
+            if btc_change and btc_change / 100 < BTC_REGIME_GATE:
+                print(f"  BTC down {btc_change:.1f}% — skipping momentum")
+                check_exits(conn)  # Still check exits
+                conn.close()
+                return stats
+    except Exception:
+        pass
 
     # Check exits first (HARDCODED — always runs)
     exits = check_exits(conn)
