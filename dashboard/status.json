@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T21:33:51.260821+00:00",
+  "updated_at": "2026-03-25T21:54:01.069525+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -13,7 +13,7 @@
     }
   },
   "pnl": {
-    "today": 0.5904,
+    "today": 0.0,
     "all_time": -29.549999999999997,
     "history": [
       {
@@ -33,7 +33,7 @@
       },
       {
         "date": "2026-03-25",
-        "trades": 1107,
+        "trades": 1131,
         "deployed": 66.81
       }
     ],
@@ -47,9 +47,369 @@
   },
   "trades": {
     "total": 50,
-    "executed": 15,
-    "skipped": 35,
+    "executed": 5,
+    "skipped": 45,
     "recent": [
+      {
+        "ticker": "KXCPI-26MAY-T0.1",
+        "title": "Will CPI rise more than 0.1% in May 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.6907325619856283,
+        "confidence": 0.7184210526315788,
+        "market_price": 0.66,
+        "price_gap": 0.030732561985628237,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "February 2026 CPI rose 0.3% MoM (seasonally adjusted), with all items up 2.4% YoY; food +0.4%, energy +0.6%, shelter +0.2%[1][2]. CPI for May 2026 scheduled for release June 10, 2026[2][8]. Prediction",
+        "category": "inflation",
+        "time": "2026-03-25T21:54:01"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.2",
+        "title": "Will CPI rise more than 0.2% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.6239448454947226,
+        "confidence": 0.6999999999999998,
+        "market_price": 0.6,
+        "price_gap": 0.023944845494722644,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Market prices on Robinhood show 60\u00a2 for CPI >0.2% in September 2026, matching the current 0.60 implied probability[3]. J.P. Morgan forecasts CPI inflation accelerating to 3.6% YoY by June 2026 due to ",
+        "category": "inflation",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T-0.1",
+        "title": "Will CPI rise more than -0.1% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8035779184739423,
+        "confidence": 0.8119491525423728,
+        "market_price": 0.78,
+        "price_gap": 0.023577918473942305,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "February 2026 CPI rose 0.3% month-over-month (MoM), with YoY at 2.4%[1][5][9]. Prediction markets (Kalshi, Octagon AI) expect June 2026 CPI MoM around 0.2-0.3%, with highest odds at exactly 0.3% and n",
+        "category": "inflation",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.3",
+        "title": "Will CPI rise more than 0.3% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5612332871981864,
+        "confidence": 0.7902631578947368,
+        "market_price": 0.69,
+        "price_gap": 0.1287667128018135,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "February 2026 CPI rose 0.3% month-over-month (MoM), matching the threshold, with shelter (+0.2%), food (+0.4%), and energy (+0.6%) driving gains; core CPI +0.2% MoM[1][3][9]. March 2026 CPI scheduled ",
+        "category": "inflation",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXCPI-26MAR-T0.7",
+        "title": "Will CPI rise more than 0.7% in March 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5472900539174322,
+        "confidence": 0.700179211469534,
+        "market_price": 0.81,
+        "price_gap": 0.2627099460825678,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "February 2026 CPI rose 0.3% month-over-month (MoM), following 0.2% in January; March 2026 CPI data scheduled for release on April 10, 2026[1][7]. FOMC March 18, 2026 projections show median CPI inflat",
+        "category": "inflation",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-T77",
+        "title": "Will the **high temp in Denver** be <77\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2524237041318076,
+        "confidence": 0.6572519083969466,
+        "market_price": 0.16,
+        "price_gap": 0.09242370413180759,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts a high of 83\u00b0F for March 26, 2026, in Denver, well above 77\u00b0F[1]. Similar forecast from Denver International Airport data shows warm late March trends[7]. Recent historic heatwav",
+        "category": "weather",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR26-B88.5",
+        "title": "Will the **high temp in Austin** be 88-89\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.38581411485258055,
+        "confidence": 0.8023809523809523,
+        "market_price": 0.18,
+        "price_gap": 0.20581411485258055,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecast for March 26, 2026 shows a high of 91\u00b0F and low of 65\u00b0F[2]. Historical weather data from Weather25.com indicates March temperatures in Austin typically range from 51\u00b0F low to 69\u00b0F",
+        "category": "weather",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR26-T88",
+        "title": "Will the **high temp in Austin** be <88\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.14491130316091538,
+        "confidence": 0.7596989966555183,
+        "market_price": 0.12,
+        "price_gap": 0.024911303160915388,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts 91\u00b0F high for March 26, 2026 in Austin[2]. WeatherShogun predicts 91\u00b0F day high[3]. Historical March averages show highs around 69-72\u00b0F, but recent days (Mar 23-25) have seen 88-",
+        "category": "weather",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-B79.5",
+        "title": "Will the **high temp in Denver** be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.03751706177297774,
+        "confidence": 0.8994615384615384,
+        "market_price": 0.15,
+        "price_gap": 0.11248293822702225,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "EaseWeather provides a detailed day-by-day forecast for Denver in March 2026, predicting a high of 29\u00b0F (sunny) on Mar 26, well below the 79-80\u00b0F range[5]. Other sources show historical/climatological",
+        "category": "weather",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-T84",
+        "title": "Will the **high temp in Denver** be >84\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.02581069821399636,
+        "confidence": 0.9493478260869568,
+        "market_price": 0.05,
+        "price_gap": 0.024189301786003644,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 29\u00b0F on Mar 26 with sunny conditions and no precipitation or snow[6]. Historical March data shows ave",
+        "category": "weather",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR26-B79.5",
+        "title": "Will the **high temp in Miami** be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.21767362179627708,
+        "confidence": 0.7381355932203388,
+        "market_price": 0.15,
+        "price_gap": 0.06767362179627709,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts for Miami Beach show 81\u00b0F high on Mar 26, 2026[1]; North Miami Beach 83\u00b0F[3]; Miami proper data aligns with mid-80s pattern[8]. Polymarket consensus favors 82-83\u00b0F at 42% and 80-",
+        "category": "weather",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-B79.5",
+        "title": "Will the high temp in Chicago be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.029237257186135027,
+        "confidence": 0.9819662921348316,
+        "market_price": 0.1,
+        "price_gap": 0.07076274281386498,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Multiple weather forecasts for Chicago on March 26, 2026 show consistently cool temperatures. AccuWeather data indicates a high of 70\u00b0F on March 26[1]. MetCheck forecasts a high of 17\u00b0C (approximately",
+        "category": "weather",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-T77",
+        "title": "Will the high temp in Chicago be <77\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7794143134772964,
+        "confidence": 0.8494187425860025,
+        "market_price": 0.48,
+        "price_gap": 0.2994143134772964,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Multiple weather forecasts for Chicago on March 26, 2026 consistently predict high temperatures well below 77\u00b0F. AccuWeather forecasts a high of 62\u00b0F[1]. Weather Shogun predicts a daytime high of 55\u00b0F",
+        "category": "weather",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR25-T51",
+        "title": "Will the **high temp in NYC** be <51\u00b0 on Mar 25, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3774281470330829,
+        "confidence": 0.8351724137931033,
+        "market_price": 0.03,
+        "price_gap": 0.3474281470330829,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Multiple weather sources provide actual observed data for March 25, 2026 in NYC. AccuWeather reports a high of 55\u00b0F[1]. Weather25.com forecasts 50\u00b0F/35\u00b0F[4]. EaseWeather reports 55\u00b0F/39\u00b0F[6]. The most",
+        "category": "weather",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR25-B90.5",
+        "title": "Will the **high temp in Austin** be 90-91\u00b0 on Mar 25, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.6021780267786584,
+        "confidence": 0.7383561643835616,
+        "market_price": 0.34,
+        "price_gap": 0.26217802677865837,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecast for Austin on March 25, 2026, shows a daily high of exactly 90\u00b0F[1]. WeatherSpark reports current conditions at 9 PM UTC (4 PM local) on March 25 at 79.0\u00b0F with mostly cloudy skie",
+        "category": "weather",
+        "time": "2026-03-25T21:54:00"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR25-T51",
+        "title": "Will the **high temp in NYC** be <51\u00b0 on Mar 25, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3434008574531954,
+        "confidence": 0.8988826815642459,
+        "market_price": 0.03,
+        "price_gap": 0.31340085745319535,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Today is March 25, 2026, 9 PM UTC in NYC. Latest weather report at 4:51 PM UTC shows current temp 48\u00b0F (cold, partly cloudy)[3]. Forecasts for Mar 25: AccuWeather shows partial data but trends warmer ",
+        "category": "weather",
+        "time": "2026-03-25T21:48:05"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-T84",
+        "title": "Will the **high temp in Denver** be >84\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.12939082580758515,
+        "confidence": 0.8789855072463767,
+        "market_price": 0.05,
+        "price_gap": 0.07939082580758515,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Multiple weather forecasts for Denver on March 26, 2026 consistently show high temperatures in the upper 20s to low 30s Fahrenheit. EaseWeather forecasts a high of 29\u00b0F on March 26[6]. Weather25.com i",
+        "category": "weather",
+        "time": "2026-03-25T21:48:05"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR26-B83.5",
+        "title": "Will the **high temp in Miami** be 83-84\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.324435013379795,
+        "confidence": 0.7699999999999999,
+        "market_price": 0.4,
+        "price_gap": 0.075564986620205,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts 81\u00b0F high for Miami Beach on Mar 26, 2026[1]. Weather25.com predicts 86\u00b0F high[2]. Polymarket NWS forecast indicates high near 83\u00b0F for Miami on Mar 26, with market favoring 82-8",
+        "category": "weather",
+        "time": "2026-03-25T21:48:05"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-B79.5",
+        "title": "Will the high temp in Chicago be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.057794510380270704,
+        "confidence": 0.8326490066225165,
+        "market_price": 0.1,
+        "price_gap": 0.0422054896197293,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Forecasts for Chicago on March 26, 2026: AccuWeather shows partial March data with highs varying widely (e.g., 32\u00b0F to 74\u00b0F earlier days), no specific 26th[1]; Metcheck predicts max 17\u00b0C (63\u00b0F)[2]; We",
+        "category": "weather",
+        "time": "2026-03-25T21:48:05"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-B79.5",
+        "title": "Will the **high temp in Denver** be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05673129876533964,
+        "confidence": 0.8943846153846154,
+        "market_price": 0.15,
+        "price_gap": 0.09326870123466036,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 29\u00b0F on Mar 26 under sunny conditions[6]. Recent weather reports indicate a heatwave earlier in the w",
+        "category": "weather",
+        "time": "2026-03-25T21:48:05"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-B81.5",
+        "title": "Will the **high temp in Denver** be 81-82\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05226773920793036,
+        "confidence": 0.8843103448275862,
+        "market_price": 0.12,
+        "price_gap": 0.06773226079206963,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 29\u00b0F (about -2\u00b0C) on Mar 26 with sunny conditions and no precipitation[7]. Recent reports note record",
+        "category": "weather",
+        "time": "2026-03-25T21:48:05"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR26-B79.5",
+        "title": "Will the **high temp in Miami** be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.11759296416116721,
+        "confidence": 0.8119491525423728,
+        "market_price": 0.15,
+        "price_gap": 0.03240703583883278,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "National Weather Service (NWS) forecasts a high near 83\u00b0F for Miami on March 26, 2026, with ample sunshine and high pressure[7]. Polymarket consensus favors 82-83\u00b0F at 42% and 80-81\u00b0F at 29%, with 79-",
+        "category": "weather",
+        "time": "2026-03-25T21:48:05"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-T77",
+        "title": "Will the high temp in Chicago be <77\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7432585054497014,
+        "confidence": 0.7381355932203388,
+        "market_price": 0.48,
+        "price_gap": 0.2632585054497014,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecast for March 26, 2026, in Chicago shows high of 62\u00b0F[1]. Metcheck predicts max temp of 17\u00b0C (62.6\u00b0F)[2]. Weathershogun forecasts 55\u00b0F high[4]. WeatherSpark reports current conditions",
+        "category": "weather",
+        "time": "2026-03-25T21:48:05"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR25-B90.5",
+        "title": "Will the **high temp in Austin** be 90-91\u00b0 on Mar 25, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.5495002969829543,
+        "confidence": 0.6832103321033209,
+        "market_price": 0.34,
+        "price_gap": 0.2095002969829543,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecast for March 25, 2026, in Austin shows a daily high of exactly 90\u00b0F[2]. WeatherSpark reports current conditions at 11:53 AM on March 25, 2026 (UTC 16:53), with temperature at 79.0\u00b0F,",
+        "category": "weather",
+        "time": "2026-03-25T21:48:05"
+      },
       {
         "ticker": "KXFED-27APR-T2.50",
         "title": "",
@@ -439,372 +799,12 @@
         "reasoning": "Multiple weather forecasts for March 26, 2026 in Austin, TX show consistent predictions: AccuWeather forecasts a high of 84\u00b0F[1], Weather Shogun forecasts a day high of 79\u00b0F[2], and climate data indic",
         "category": "weather",
         "time": "2026-03-25T20:49:11"
-      },
-      {
-        "ticker": "KXHIGHDEN-26MAR26-B79.5",
-        "title": "Will the **high temp in Denver** be 79-80\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.45,
-        "probability": 0.041483973665985496,
-        "confidence": 0.9652578796561606,
-        "market_price": 0.15,
-        "price_gap": 0.1085160263340145,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "Multiple weather forecasts for Denver on March 26, 2026 show consistent data: EaseWeather predicts a high of 22\u00b0C (72\u00b0F) with sunny conditions[6]. The day-by-day forecast table from EaseWeather shows ",
-        "category": "weather",
-        "time": "2026-03-25T20:49:11"
-      },
-      {
-        "ticker": "KXHIGHDEN-26MAR26-B81.5",
-        "title": "Will the **high temp in Denver** be 81-82\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.020907953372726218,
-        "confidence": 1.0,
-        "market_price": 0.12,
-        "price_gap": 0.09909204662727378,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "EaseWeather provides a detailed day-by-day forecast for Denver in March 2026, predicting a high of 22\u00b0F (about -5.6\u00b0C) on Mar 26 with sunny conditions and no precipitation[6]. Historical and average M",
-        "category": "weather",
-        "time": "2026-03-25T20:49:09"
-      },
-      {
-        "ticker": "KXHIGHDEN-26MAR26-T84",
-        "title": "Will the **high temp in Denver** be >84\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.03015001422642783,
-        "confidence": 0.9449707602339181,
-        "market_price": 0.05,
-        "price_gap": 0.019849985773572172,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 22\u00b0F (equivalent to -5.6\u00b0C) on Mar 26 under sunny conditions, far below 84\u00b0F[7]. Recent weather repor",
-        "category": "weather",
-        "time": "2026-03-25T20:49:09"
-      },
-      {
-        "ticker": "KXHIGHMIA-26MAR26-B79.5",
-        "title": "Will the **high temp in Miami** be 79-80\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.11759296416116721,
-        "confidence": 0.8119491525423728,
-        "market_price": 0.15,
-        "price_gap": 0.03240703583883278,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts 81\u00b0F high for Miami Beach on Mar 26, 2026[1]. Polymarket's related market shows NWS projecting 82-83\u00b0F (42% implied prob), 80-81\u00b0F (29%), with 79-80\u00b0F lower at ~3-5%[7]. Recent o",
-        "category": "weather",
-        "time": "2026-03-25T20:49:09"
-      },
-      {
-        "ticker": "KXHIGHMIA-26MAR26-B83.5",
-        "title": "Will the **high temp in Miami** be 83-84\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.39339953811139394,
-        "confidence": 0.8438157894736842,
-        "market_price": 0.4,
-        "price_gap": 0.0066004618886060795,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "National Weather Service (NWS) forecast for Miami on March 26 projects a high near 83\u00b0F with ample sunshine and high pressure ridge promoting warm, dry conditions[5]. Polymarket prediction market data",
-        "category": "weather",
-        "time": "2026-03-25T20:49:09"
-      },
-      {
-        "ticker": "KXHIGHCHI-26MAR26-B79.5",
-        "title": "Will the high temp in Chicago be 79-80\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.07907646689068057,
-        "confidence": 0.5680528391167192,
-        "market_price": 0.1,
-        "price_gap": 0.020923533109319437,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "AccuWeather shows March 26, 2026, high of ~72\u00b0F (22\u00b0C), below 79-80\u00b0F[1]. Metcheck forecasts max 17\u00b0C (63\u00b0F)[2]. Weathershogun predicts 55\u00b0F day high[4]. WeatherSpark current conditions on Mar 25: 53\u00b0",
-        "category": "weather",
-        "time": "2026-03-25T20:49:09"
-      },
-      {
-        "ticker": "KXHIGHCHI-26MAR26-T77",
-        "title": "Will the high temp in Chicago be <77\u00b0 on Mar 26, 2026?",
-        "side": "YES",
-        "amount": 0.35,
-        "probability": 0.7772055465032721,
-        "confidence": 0.8963539921831379,
-        "market_price": 0.48,
-        "price_gap": 0.29720554650327213,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "Multiple weather forecasts for Chicago on March 26, 2026 consistently predict high temperatures well below 77\u00b0F. AccuWeather forecasts a high of 62\u00b0F[1]. Weather Shogun predicts a daytime high of 55\u00b0F",
-        "category": "weather",
-        "time": "2026-03-25T20:49:09"
-      },
-      {
-        "ticker": "KXHIGHNY-26MAR26-B71.5",
-        "title": "Will the **high temp in NYC** be 71-72\u00b0 on Mar 26, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.37337444644932133,
-        "confidence": 0.5739617940199335,
-        "market_price": 0.15,
-        "price_gap": 0.22337444644932133,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Multiple forecasts for March 26, 2026 in NYC show high temperatures significantly above the 71-72\u00b0F target. AccuWeather forecasts 70\u00b0F high[1]. Weather25.com predicts 64\u00b0F/39\u00b0F[3]. EaseWeather detaile",
-        "category": "weather",
-        "time": "2026-03-25T20:49:07"
-      },
-      {
-        "ticker": "KXHIGHNY-26MAR25-T51",
-        "title": "Will the **high temp in NYC** be <51\u00b0 on Mar 25, 2026?",
-        "side": "YES",
-        "amount": 0.06,
-        "probability": 0.12557163140392713,
-        "confidence": 0.7489795918367347,
-        "market_price": 0.03,
-        "price_gap": 0.09557163140392713,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "AccuWeather forecast for Mar 25 shows incomplete data (29th:52\u00b0 high), Weather25: 50\u00b0/35\u00b0 overcast, EaseWeather: Sunny 15\u00b0C/59\u00b0F high (converted from 15\u00b0 listed), WeatherSpark provides observed hourly",
-        "category": "weather",
-        "time": "2026-03-25T20:49:07"
-      },
-      {
-        "ticker": "KXHIGHAUS-26MAR25-B90.5",
-        "title": "Will the **high temp in Austin** be 90-91\u00b0 on Mar 25, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.16029872485177243,
-        "confidence": 0.7699999999999999,
-        "market_price": 0.34,
-        "price_gap": 0.1797012751482276,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "AccuWeather monthly forecast for March 2026 in Austin shows March 25 low of 67\u00b0F with high not specified; nearby days include March 20 high 90\u00b0F, March 26 high 90\u00b0F, March 24/25 partial data[1]. Weath",
-        "category": "weather",
-        "time": "2026-03-25T20:49:06"
-      },
-      {
-        "ticker": "KXHIGHDEN-26MAR26-T84",
-        "title": "Will the **high temp in Denver** be >84\u00b0 on Mar 26, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.14245737964073088,
-        "confidence": 0.6999999999999998,
-        "market_price": 0.05,
-        "price_gap": 0.09245737964073088,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a sunny day on Mar 26 with high of 22\u00b0C (72\u00b0F) and low of 7\u00b0C (45\u00b0F), well below 84\u00b0F[6]. Recent BoulderCAST re",
-        "category": "weather",
-        "time": "2026-03-25T20:43:00"
-      },
-      {
-        "ticker": "KXHIGHMIA-26MAR26-B83.5",
-        "title": "Will the **high temp in Miami** be 83-84\u00b0 on Mar 26, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.4024838172831201,
-        "confidence": 0.7097173144876324,
-        "market_price": 0.4,
-        "price_gap": 0.002483817283120082,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "NWS forecast projects Miami high near 83\u00b0F on Mar 26, with ample sunshine and high pressure[7]. AccuWeather shows 81-73 for Mar 26 in Miami Beach[1]. Polymarket consensus: 82-83\u00b0F at 42%, 80-81\u00b0F at 2",
-        "category": "weather",
-        "time": "2026-03-25T20:43:00"
-      },
-      {
-        "ticker": "KXHIGHCHI-26MAR26-B79.5",
-        "title": "Will the high temp in Chicago be 79-80\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.04442348508059482,
-        "confidence": 0.935,
-        "market_price": 0.1,
-        "price_gap": 0.055576514919405184,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "AccuWeather forecast for Chicago on Mar 26, 2026: high of 70\u00b0F[1]. Metcheck forecast: max temp of 17\u00b0C (62.6\u00b0F)[2]. West Chicago AccuWeather: 70\u00b0 high[7]. Historical March averages: 33-44\u00b0F, very cold",
-        "category": "weather",
-        "time": "2026-03-25T20:43:00"
-      },
-      {
-        "ticker": "KXHIGHDEN-26MAR26-T77",
-        "title": "Will the **high temp in Denver** be <77\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.0817436003895255,
-        "confidence": 0.8984835505896959,
-        "market_price": 0.16,
-        "price_gap": 0.07825639961047451,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "AccuWeather forecast shows Denver high of 83\u00b0F on March 26[1]. BoulderCAST reports a historic March heatwave with Denver setting a monthly record of 86\u00b0F on March 23, with forecasts indicating daily t",
-        "category": "weather",
-        "time": "2026-03-25T20:43:00"
-      },
-      {
-        "ticker": "KXHIGHAUS-26MAR26-B88.5",
-        "title": "Will the **high temp in Austin** be 88-89\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.16256997463578549,
-        "confidence": 0.8037226277372266,
-        "market_price": 0.18,
-        "price_gap": 0.017430025364214508,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts a high of 90\u00b0F for March 26, 2026 in Austin, TX[1]. WeatherShogun provides a more conservative forecast of 79\u00b0F high for March 26[2]. Historical March weather data shows average ",
-        "category": "weather",
-        "time": "2026-03-25T20:43:00"
-      },
-      {
-        "ticker": "KXHIGHDEN-26MAR26-B79.5",
-        "title": "Will the **high temp in Denver** be 79-80\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.03643204442343351,
-        "confidence": 0.5047587548638132,
-        "market_price": 0.15,
-        "price_gap": 0.11356795557656649,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "EaseWeather provides a day-by-day forecast for March 2026 in Denver, predicting a high of 22\u00b0F (about -6\u00b0C) on Mar 26 with sunny conditions and no precipitation[6]. Historical March averages show high",
-        "category": "weather",
-        "time": "2026-03-25T20:43:00"
-      },
-      {
-        "ticker": "KXHIGHDEN-26MAR26-B81.5",
-        "title": "Will the **high temp in Denver** be 81-82\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 1.27,
-        "probability": 0.03657280079152814,
-        "confidence": 0.8197619047619047,
-        "market_price": 0.12,
-        "price_gap": 0.08342719920847186,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "EaseWeather provides a day-by-day forecast for March 2026 in Denver, predicting a high of 22\u00b0F (about -6\u00b0C) on Mar 26 with sunny conditions and no precipitation[6]. Historical and other monthly data i",
-        "category": "weather",
-        "time": "2026-03-25T20:43:00"
-      },
-      {
-        "ticker": "KXHIGHCHI-26MAR26-T77",
-        "title": "Will the high temp in Chicago be <77\u00b0 on Mar 26, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.7242736586060016,
-        "confidence": 0.4797619047619047,
-        "market_price": 0.48,
-        "price_gap": 0.2442736586060016,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "AccuWeather forecast for March 26, 2026, in Chicago shows high of 62\u00b0F (<77\u00b0F)[1]. Metcheck predicts max temp of 17\u00b0C (62.6\u00b0F) (<77\u00b0F)[2]. Weathershogun forecasts day high of 55\u00b0F (<77\u00b0F), night 41\u00b0F[",
-        "category": "weather",
-        "time": "2026-03-25T20:42:58"
-      },
-      {
-        "ticker": "KXHIGHAUS-26MAR25-B90.5",
-        "title": "Will the **high temp in Austin** be 90-91\u00b0 on Mar 25, 2026?",
-        "side": "NO",
-        "amount": 1.15,
-        "probability": 0.12527390811187583,
-        "confidence": 0.8994615384615384,
-        "market_price": 0.34,
-        "price_gap": 0.2147260918881242,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "Today is March 25, 2026, 8 PM UTC in Austin. Current conditions at KAUS (11:53 AM UTC) show 79\u00b0F with mostly cloudy skies, 56% humidity, SSW winds[2]. AccuWeather forecast lacks specific high for Mar ",
-        "category": "weather",
-        "time": "2026-03-25T20:42:58"
-      },
-      {
-        "ticker": "KXFED-26SEP-T4.00",
-        "title": "",
-        "side": "YES_EXIT_TAKE_PROFIT",
-        "amount": 0.0,
-        "probability": 0.0,
-        "confidence": 0.0,
-        "market_price": 0.71,
-        "price_gap": 0.0,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "Profit target hit: 66% of max gain captured ($0.56/contract)",
-        "category": "",
-        "time": "2026-03-25T17:29:20"
-      },
-      {
-        "ticker": "KXCPI-26MAR-T1.0",
-        "title": "",
-        "side": "NO_EXIT_TAKE_PROFIT",
-        "amount": 0.0,
-        "probability": 0.0,
-        "confidence": 0.0,
-        "market_price": 0.06,
-        "price_gap": 0.0,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "Profit target hit: 73% of max gain captured ($0.16/contract)",
-        "category": "",
-        "time": "2026-03-25T16:28:33"
-      },
-      {
-        "ticker": "KXFED-26DEC-T5.25",
-        "title": "",
-        "side": "YES_EXIT_STOP_LOSS",
-        "amount": 0.0,
-        "probability": 0.0,
-        "confidence": 0.0,
-        "market_price": 0.01,
-        "price_gap": 0.0,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "Stop loss: down $0.52/contract (111%)",
-        "category": "",
-        "time": "2026-03-25T16:28:33"
-      },
-      {
-        "ticker": "KXCPI-26APR-T0.3",
-        "title": "",
-        "side": "YES_EXIT_STOP_LOSS",
-        "amount": 0.0,
-        "probability": 0.0,
-        "confidence": 0.0,
-        "market_price": 0.28,
-        "price_gap": 0.0,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "Stop loss: down $0.54/contract (300%)",
-        "category": "",
-        "time": "2026-03-25T14:44:51"
-      },
-      {
-        "ticker": "KXFED-26SEP-T3.75",
-        "title": "",
-        "side": "YES_EXIT_STOP_LOSS",
-        "amount": 0.0,
-        "probability": 0.0,
-        "confidence": 0.0,
-        "market_price": 0.36,
-        "price_gap": 0.0,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "Stop loss: down $0.41/contract (178%)",
-        "category": "",
-        "time": "2026-03-25T14:26:31"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 199,
+      "trades": 214,
       "executed": 4,
       "deployed": 1.25
     },
@@ -814,7 +814,7 @@
       "deployed": 93.07999999999998
     },
     "WEATHER": {
-      "trades": 9,
+      "trades": 18,
       "executed": 2,
       "deployed": 2.42
     }
@@ -823,88 +823,88 @@
     "models": {
       "perplexity": {
         "analyses": 20,
-        "avg_probability": 0.379
+        "avg_probability": 0.44000000000000006
       },
       "claude": {
         "analyses": 20,
-        "avg_probability": 0.2975
+        "avg_probability": 0.3085
       },
       "deepseek": {
         "analyses": 20,
-        "avg_probability": 0.31
+        "avg_probability": 0.316
       }
     },
-    "consensus_rate": 0.65,
+    "consensus_rate": 0.75,
     "recent_votes": [
       {
-        "perplexity": 0.18,
-        "claude": 0.12,
-        "deepseek": 0.25,
+        "perplexity": 0.22,
+        "claude": 0.22,
+        "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T21:33:51"
+        "time": "2026-03-25T21:54:00"
       },
       {
         "perplexity": 0.68,
         "claude": 0.72,
-        "deepseek": 0.72,
+        "deepseek": 0.75,
         "consensus": true,
-        "time": "2026-03-25T21:33:37"
+        "time": "2026-03-25T21:53:43"
       },
       {
         "perplexity": 0.62,
         "claude": 0.65,
         "deepseek": 0.65,
         "consensus": true,
-        "time": "2026-03-25T21:33:23"
+        "time": "2026-03-25T21:53:30"
       },
       {
-        "perplexity": 0.92,
-        "claude": 0.85,
+        "perplexity": 0.82,
+        "claude": 0.82,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-25T21:33:11"
+        "time": "2026-03-25T21:53:17"
       },
       {
-        "perplexity": 0.45,
+        "perplexity": 0.72,
         "claude": 0.58,
         "deepseek": 0.35,
         "consensus": true,
-        "time": "2026-03-25T21:32:45"
+        "time": "2026-03-25T21:53:04"
       },
       {
-        "perplexity": 0.75,
-        "claude": 0.25,
-        "deepseek": 0.45,
-        "consensus": true,
-        "time": "2026-03-25T21:32:30"
-      },
-      {
-        "perplexity": 0.85,
+        "perplexity": 0.78,
         "claude": 0.25,
         "deepseek": 0.25,
-        "consensus": false,
-        "time": "2026-03-25T21:32:12"
+        "consensus": true,
+        "time": "2026-03-25T21:52:50"
       },
       {
-        "perplexity": 0.12,
-        "claude": 0.15,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-03-25T21:31:59"
+        "perplexity": 0.22,
+        "claude": 0.12,
+        "deepseek": 0.25,
+        "consensus": true,
+        "time": "2026-03-25T21:52:36"
       },
       {
-        "perplexity": 0.09,
+        "perplexity": 0.72,
         "claude": 0.08,
         "deepseek": 0.15,
         "consensus": true,
-        "time": "2026-03-25T21:31:45"
+        "time": "2026-03-25T21:52:23"
       },
       {
-        "perplexity": 0.12,
+        "perplexity": 0.15,
         "claude": 0.08,
+        "deepseek": 0.15,
+        "consensus": true,
+        "time": "2026-03-25T21:52:08"
+      },
+      {
+        "perplexity": 0.02,
+        "claude": 0.02,
         "deepseek": 0.05,
         "consensus": true,
-        "time": "2026-03-25T21:31:33"
+        "time": "2026-03-25T21:51:56"
       }
     ]
   },
@@ -994,64 +994,64 @@
   ],
   "news": [
     {
-      "text": "February 2026 CPI rose 0.3% month-over-month (MoM), with 12-month all-items at 2.4% and core at 2.5%[1][5]. J.P. Morgan forecasts year-over-year (YoY) CPI at 2.8% by Q4 2026, up from 2.8% in July 2025",
+      "text": "Latest CPI data shows February 2026 monthly increase of 0.3% seasonally adjusted (0.5% not seasonally adjusted)[1][3]. Year-over-year inflation at 2.4% as of February 2026[1][3]. Trading Economics pro",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T21:33:42"
+      "time": "2026-03-25T21:53:50"
     },
     {
-      "text": "Latest CPI data shows +0.3% MoM in February 2026 (sa), with YoY at 2.4%; shelter, food (+0.4%), and energy (+0.6%) drove increases[1][2][9]. Trading Economics forecasts CPI index at 329.07 by Q1 end (",
+      "text": "February 2026 CPI rose 0.3% MoM (seasonally adjusted), with all items up 2.4% YoY; food +0.4%, energy +0.6%, shelter +0.2%[1][2]. CPI for May 2026 scheduled for release June 10, 2026[2][8]. Prediction",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T21:33:29"
+      "time": "2026-03-25T21:53:35"
     },
     {
-      "text": "Robinhood prediction market shows 60\u00a2 (60%) for CPI >0.2% in September 2026, matching the queried market[2]. Kalshi has a related market for >0.3%[1]. Forecasts indicate rising inflation pressures: PI",
+      "text": "Market prices on Robinhood show 60\u00a2 for CPI >0.2% in September 2026, matching the current 0.60 implied probability[3]. J.P. Morgan forecasts CPI inflation accelerating to 3.6% YoY by June 2026 due to ",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T21:33:16"
+      "time": "2026-03-25T21:53:22"
     },
     {
-      "text": "Latest CPI data shows February 2026 month-over-month increase of +0.3%[1]. Prediction markets expect June 2026 CPI month-over-month to be in the 0.2%-0.3% range, with both values assigned approximatel",
+      "text": "February 2026 CPI rose 0.3% month-over-month (MoM), with YoY at 2.4%[1][5][9]. Prediction markets (Kalshi, Octagon AI) expect June 2026 CPI MoM around 0.2-0.3%, with highest odds at exactly 0.3% and n",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T21:33:02"
+      "time": "2026-03-25T21:53:09"
     },
     {
-      "text": "February 2026 CPI rose 0.3% month-over-month (MoM), matching the threshold, with shelter (+0.2%), food (+0.4%), and energy (+0.6%) driving gains; core CPI +0.2% MoM[1][3][7]. March 2026 CPI scheduled ",
+      "text": "February 2026 CPI rose 0.3% month-over-month (MoM), matching the threshold, with shelter (+0.2%), food (+0.4%), and energy (+0.6%) driving gains; core CPI +0.2% MoM[1][3][9]. March 2026 CPI scheduled ",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T21:32:36"
+      "time": "2026-03-25T21:52:55"
     },
     {
-      "text": "February 2026 CPI increased 0.3% seasonally adjusted[1]. Year-over-year inflation was 2.4% in February[1]. The March 2026 CPI report is scheduled for release on April 10, 2026[1][2]. A prediction mark",
+      "text": "February 2026 CPI rose 0.3% month-over-month (MoM), following 0.2% in January; March 2026 CPI data scheduled for release on April 10, 2026[1][7]. FOMC March 18, 2026 projections show median CPI inflat",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T21:32:21"
+      "time": "2026-03-25T21:52:42"
     },
     {
-      "text": "EaseWeather provides a detailed day-by-day forecast for Denver in March 2026, showing March 26 as sunny with a high of 29\u00b0C (84\u00b0F), well above 77\u00b0F[5]. Earlier days show cooler temperatures around 10-",
+      "text": "AccuWeather forecasts a high of 83\u00b0F for March 26, 2026, in Denver, well above 77\u00b0F[1]. Similar forecast from Denver International Airport data shows warm late March trends[7]. Recent historic heatwav",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T21:32:04"
+      "time": "2026-03-25T21:52:28"
     },
     {
-      "text": "AccuWeather's March 2026 forecast for Austin lists the high temperature on March 26 as 91\u00b0F, above the 88-89\u00b0F range[1]. No other sources provide specific daily forecasts for March 26, 2026; they offe",
+      "text": "AccuWeather forecast for March 26, 2026 shows a high of 91\u00b0F and low of 65\u00b0F[2]. Historical weather data from Weather25.com indicates March temperatures in Austin typically range from 51\u00b0F low to 69\u00b0F",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T21:31:50"
+      "time": "2026-03-25T21:52:16"
     },
     {
-      "text": "AccuWeather forecast for March 26, 2026, in Austin shows a high of 91\u00b0F, well above 88\u00b0F[2]. WeatherSpark reports current conditions on March 25, 2026, at 79\u00b0F with mostly cloudy skies, warm trend con",
+      "text": "AccuWeather forecasts 91\u00b0F high for March 26, 2026 in Austin[2]. WeatherShogun predicts 91\u00b0F day high[3]. Historical March averages show highs around 69-72\u00b0F, but recent days (Mar 23-25) have seen 88-",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T21:31:38"
+      "time": "2026-03-25T21:52:00"
     },
     {
-      "text": "EaseWeather detailed forecast for March 26, 2026 in Denver predicts sunny weather with high of 29\u00b0F (low 10\u00b0F), no rain or snow[4]. Climate-data.org lists a March 26 forecast of scattered clouds with ",
+      "text": "EaseWeather provides a detailed day-by-day forecast for Denver in March 2026, predicting a high of 29\u00b0F (sunny) on Mar 26, well below the 79-80\u00b0F range[5]. Other sources show historical/climatological",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T21:31:25"
+      "time": "2026-03-25T21:51:48"
     }
   ],
   "alerts": [
@@ -1063,7 +1063,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 35,
-    "cycles": 19,
-    "uptime_hours": 6.5
+    "cycles": 20,
+    "uptime_hours": 6.8
   }
 }
