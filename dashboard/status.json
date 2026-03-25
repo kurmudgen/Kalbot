@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T20:28:54.405964+00:00",
+  "updated_at": "2026-03-25T20:49:11.614742+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -13,7 +13,7 @@
     }
   },
   "pnl": {
-    "today": 0.0,
+    "today": 0.5904,
     "all_time": -29.549999999999997,
     "history": [
       {
@@ -33,8 +33,8 @@
       },
       {
         "date": "2026-03-25",
-        "trades": 1062,
-        "deployed": 63.53
+        "trades": 1088,
+        "deployed": 66.81
       }
     ],
     "resolved": {
@@ -47,9 +47,399 @@
   },
   "trades": {
     "total": 50,
-    "executed": 11,
-    "skipped": 39,
+    "executed": 16,
+    "skipped": 34,
     "recent": [
+      {
+        "ticker": "KXCPI-26MAY-T0.1",
+        "title": "Will CPI rise more than 0.1% in May 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.700068434204489,
+        "confidence": 0.6883211678832117,
+        "market_price": 0.66,
+        "price_gap": 0.04006843420448902,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "February 2026 CPI rose 0.3% MoM (all items), with recent months showing 0.2-0.3% increases; YoY at 2.4%.[1][9] Trading Economics forecasts CPI index to 329.07 by Q1 end (from 326.79 in Feb), implying ",
+        "category": "inflation",
+        "time": "2026-03-25T20:49:11"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.2",
+        "title": "Will CPI rise more than 0.2% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.603225456154218,
+        "confidence": 0.7097173144876324,
+        "market_price": 0.6,
+        "price_gap": 0.003225456154217987,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Prediction markets show 60% probability on Robinhood for CPI >0.2% in September 2026 (similar Kalshi market at >0.3% 47\u00a2); St. Louis Fed survey consensus CPI inflation 2.9% for 2026 (top forecasters 3",
+        "category": "inflation",
+        "time": "2026-03-25T20:49:11"
+      },
+      {
+        "ticker": "KXCPI-26JUN-T-0.1",
+        "title": "Will CPI rise more than -0.1% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8265170108994028,
+        "confidence": 0.8119491525423728,
+        "market_price": 0.78,
+        "price_gap": 0.046517010899402744,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "February 2026 CPI rose 0.3% month-over-month (MoM), with YoY at 2.4%[1][5][10]. Prediction markets and models expect June 2026 CPI MoM at 0.2%-0.3%, with peak odds at exactly 0.3% (16-17% probability ",
+        "category": "inflation",
+        "time": "2026-03-25T20:49:11"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.3",
+        "title": "Will CPI rise more than 0.3% in April 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5018992269780058,
+        "confidence": 0.7806890459363958,
+        "market_price": 0.69,
+        "price_gap": 0.18810077302199413,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "February 2026 CPI rose 0.3% MoM (BLS)[1][4]. March 2026 CPI scheduled for April 10 release[1][4][9]. Prediction markets show 26% prob for April 2026 CPI >0.3% MoM (Kalshi via Octagon AI)[6], 69% marke",
+        "category": "inflation",
+        "time": "2026-03-25T20:49:11"
+      },
+      {
+        "ticker": "KXCPI-26MAR-T0.7",
+        "title": "Will CPI rise more than 0.7% in March 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5548726892024988,
+        "confidence": 0.7381355932203388,
+        "market_price": 0.81,
+        "price_gap": 0.2551273107975013,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "March 2026 CPI data is scheduled for release on April 10, 2026, so no actual figure available yet[1][8]. February 2026 CPI rose 0.3% MoM (SA), with YoY at 2.4%; recent months show 0.3%, 0.2%, 0.3% MoM",
+        "category": "inflation",
+        "time": "2026-03-25T20:49:11"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-T77",
+        "title": "Will the **high temp in Denver** be <77\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.5649817322645195,
+        "confidence": 0.7051601423487543,
+        "market_price": 0.16,
+        "price_gap": 0.4049817322645195,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a sunny day on Mar 26 with high of 22\u00b0C (72\u00b0F) and low of 7\u00b0C (45\u00b0F), well below 77\u00b0F[6]. Recent weather report",
+        "category": "weather",
+        "time": "2026-03-25T20:49:11"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR26-B88.5",
+        "title": "Will the **high temp in Austin** be 88-89\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.15626401535573978,
+        "confidence": 0.6455426045016077,
+        "market_price": 0.18,
+        "price_gap": 0.023735984644260216,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Multiple weather forecasts for March 26, 2026 in Austin, TX show consistent predictions: AccuWeather forecasts a high of 84\u00b0F[1], Weather Shogun forecasts a day high of 79\u00b0F[2], and climate data indic",
+        "category": "weather",
+        "time": "2026-03-25T20:49:11"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-B79.5",
+        "title": "Will the **high temp in Denver** be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.45,
+        "probability": 0.041483973665985496,
+        "confidence": 0.9652578796561606,
+        "market_price": 0.15,
+        "price_gap": 0.1085160263340145,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Multiple weather forecasts for Denver on March 26, 2026 show consistent data: EaseWeather predicts a high of 22\u00b0C (72\u00b0F) with sunny conditions[6]. The day-by-day forecast table from EaseWeather shows ",
+        "category": "weather",
+        "time": "2026-03-25T20:49:11"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-B81.5",
+        "title": "Will the **high temp in Denver** be 81-82\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.020907953372726218,
+        "confidence": 1.0,
+        "market_price": 0.12,
+        "price_gap": 0.09909204662727378,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "EaseWeather provides a detailed day-by-day forecast for Denver in March 2026, predicting a high of 22\u00b0F (about -5.6\u00b0C) on Mar 26 with sunny conditions and no precipitation[6]. Historical and average M",
+        "category": "weather",
+        "time": "2026-03-25T20:49:09"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-T84",
+        "title": "Will the **high temp in Denver** be >84\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.03015001422642783,
+        "confidence": 0.9449707602339181,
+        "market_price": 0.05,
+        "price_gap": 0.019849985773572172,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 22\u00b0F (equivalent to -5.6\u00b0C) on Mar 26 under sunny conditions, far below 84\u00b0F[7]. Recent weather repor",
+        "category": "weather",
+        "time": "2026-03-25T20:49:09"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR26-B79.5",
+        "title": "Will the **high temp in Miami** be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.11759296416116721,
+        "confidence": 0.8119491525423728,
+        "market_price": 0.15,
+        "price_gap": 0.03240703583883278,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts 81\u00b0F high for Miami Beach on Mar 26, 2026[1]. Polymarket's related market shows NWS projecting 82-83\u00b0F (42% implied prob), 80-81\u00b0F (29%), with 79-80\u00b0F lower at ~3-5%[7]. Recent o",
+        "category": "weather",
+        "time": "2026-03-25T20:49:09"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR26-B83.5",
+        "title": "Will the **high temp in Miami** be 83-84\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.39339953811139394,
+        "confidence": 0.8438157894736842,
+        "market_price": 0.4,
+        "price_gap": 0.0066004618886060795,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "National Weather Service (NWS) forecast for Miami on March 26 projects a high near 83\u00b0F with ample sunshine and high pressure ridge promoting warm, dry conditions[5]. Polymarket prediction market data",
+        "category": "weather",
+        "time": "2026-03-25T20:49:09"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-B79.5",
+        "title": "Will the high temp in Chicago be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.07907646689068057,
+        "confidence": 0.5680528391167192,
+        "market_price": 0.1,
+        "price_gap": 0.020923533109319437,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather shows March 26, 2026, high of ~72\u00b0F (22\u00b0C), below 79-80\u00b0F[1]. Metcheck forecasts max 17\u00b0C (63\u00b0F)[2]. Weathershogun predicts 55\u00b0F day high[4]. WeatherSpark current conditions on Mar 25: 53\u00b0",
+        "category": "weather",
+        "time": "2026-03-25T20:49:09"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-T77",
+        "title": "Will the high temp in Chicago be <77\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.35,
+        "probability": 0.7772055465032721,
+        "confidence": 0.8963539921831379,
+        "market_price": 0.48,
+        "price_gap": 0.29720554650327213,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Multiple weather forecasts for Chicago on March 26, 2026 consistently predict high temperatures well below 77\u00b0F. AccuWeather forecasts a high of 62\u00b0F[1]. Weather Shogun predicts a daytime high of 55\u00b0F",
+        "category": "weather",
+        "time": "2026-03-25T20:49:09"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR26-B71.5",
+        "title": "Will the **high temp in NYC** be 71-72\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.37337444644932133,
+        "confidence": 0.5739617940199335,
+        "market_price": 0.15,
+        "price_gap": 0.22337444644932133,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Multiple forecasts for March 26, 2026 in NYC show high temperatures significantly above the 71-72\u00b0F target. AccuWeather forecasts 70\u00b0F high[1]. Weather25.com predicts 64\u00b0F/39\u00b0F[3]. EaseWeather detaile",
+        "category": "weather",
+        "time": "2026-03-25T20:49:07"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR25-T51",
+        "title": "Will the **high temp in NYC** be <51\u00b0 on Mar 25, 2026?",
+        "side": "YES",
+        "amount": 0.06,
+        "probability": 0.12557163140392713,
+        "confidence": 0.7489795918367347,
+        "market_price": 0.03,
+        "price_gap": 0.09557163140392713,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "AccuWeather forecast for Mar 25 shows incomplete data (29th:52\u00b0 high), Weather25: 50\u00b0/35\u00b0 overcast, EaseWeather: Sunny 15\u00b0C/59\u00b0F high (converted from 15\u00b0 listed), WeatherSpark provides observed hourly",
+        "category": "weather",
+        "time": "2026-03-25T20:49:07"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR25-B90.5",
+        "title": "Will the **high temp in Austin** be 90-91\u00b0 on Mar 25, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.16029872485177243,
+        "confidence": 0.7699999999999999,
+        "market_price": 0.34,
+        "price_gap": 0.1797012751482276,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather monthly forecast for March 2026 in Austin shows March 25 low of 67\u00b0F with high not specified; nearby days include March 20 high 90\u00b0F, March 26 high 90\u00b0F, March 24/25 partial data[1]. Weath",
+        "category": "weather",
+        "time": "2026-03-25T20:49:06"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-T84",
+        "title": "Will the **high temp in Denver** be >84\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.14245737964073088,
+        "confidence": 0.6999999999999998,
+        "market_price": 0.05,
+        "price_gap": 0.09245737964073088,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a sunny day on Mar 26 with high of 22\u00b0C (72\u00b0F) and low of 7\u00b0C (45\u00b0F), well below 84\u00b0F[6]. Recent BoulderCAST re",
+        "category": "weather",
+        "time": "2026-03-25T20:43:00"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR26-B83.5",
+        "title": "Will the **high temp in Miami** be 83-84\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.4024838172831201,
+        "confidence": 0.7097173144876324,
+        "market_price": 0.4,
+        "price_gap": 0.002483817283120082,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "NWS forecast projects Miami high near 83\u00b0F on Mar 26, with ample sunshine and high pressure[7]. AccuWeather shows 81-73 for Mar 26 in Miami Beach[1]. Polymarket consensus: 82-83\u00b0F at 42%, 80-81\u00b0F at 2",
+        "category": "weather",
+        "time": "2026-03-25T20:43:00"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-B79.5",
+        "title": "Will the high temp in Chicago be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.04442348508059482,
+        "confidence": 0.935,
+        "market_price": 0.1,
+        "price_gap": 0.055576514919405184,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecast for Chicago on Mar 26, 2026: high of 70\u00b0F[1]. Metcheck forecast: max temp of 17\u00b0C (62.6\u00b0F)[2]. West Chicago AccuWeather: 70\u00b0 high[7]. Historical March averages: 33-44\u00b0F, very cold",
+        "category": "weather",
+        "time": "2026-03-25T20:43:00"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-T77",
+        "title": "Will the **high temp in Denver** be <77\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.0817436003895255,
+        "confidence": 0.8984835505896959,
+        "market_price": 0.16,
+        "price_gap": 0.07825639961047451,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecast shows Denver high of 83\u00b0F on March 26[1]. BoulderCAST reports a historic March heatwave with Denver setting a monthly record of 86\u00b0F on March 23, with forecasts indicating daily t",
+        "category": "weather",
+        "time": "2026-03-25T20:43:00"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR26-B88.5",
+        "title": "Will the **high temp in Austin** be 88-89\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.16256997463578549,
+        "confidence": 0.8037226277372266,
+        "market_price": 0.18,
+        "price_gap": 0.017430025364214508,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts a high of 90\u00b0F for March 26, 2026 in Austin, TX[1]. WeatherShogun provides a more conservative forecast of 79\u00b0F high for March 26[2]. Historical March weather data shows average ",
+        "category": "weather",
+        "time": "2026-03-25T20:43:00"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-B79.5",
+        "title": "Will the **high temp in Denver** be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.03643204442343351,
+        "confidence": 0.5047587548638132,
+        "market_price": 0.15,
+        "price_gap": 0.11356795557656649,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "EaseWeather provides a day-by-day forecast for March 2026 in Denver, predicting a high of 22\u00b0F (about -6\u00b0C) on Mar 26 with sunny conditions and no precipitation[6]. Historical March averages show high",
+        "category": "weather",
+        "time": "2026-03-25T20:43:00"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-B81.5",
+        "title": "Will the **high temp in Denver** be 81-82\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 1.27,
+        "probability": 0.03657280079152814,
+        "confidence": 0.8197619047619047,
+        "market_price": 0.12,
+        "price_gap": 0.08342719920847186,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "EaseWeather provides a day-by-day forecast for March 2026 in Denver, predicting a high of 22\u00b0F (about -6\u00b0C) on Mar 26 with sunny conditions and no precipitation[6]. Historical and other monthly data i",
+        "category": "weather",
+        "time": "2026-03-25T20:43:00"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-T77",
+        "title": "Will the high temp in Chicago be <77\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7242736586060016,
+        "confidence": 0.4797619047619047,
+        "market_price": 0.48,
+        "price_gap": 0.2442736586060016,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecast for March 26, 2026, in Chicago shows high of 62\u00b0F (<77\u00b0F)[1]. Metcheck predicts max temp of 17\u00b0C (62.6\u00b0F) (<77\u00b0F)[2]. Weathershogun forecasts day high of 55\u00b0F (<77\u00b0F), night 41\u00b0F[",
+        "category": "weather",
+        "time": "2026-03-25T20:42:58"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR25-B90.5",
+        "title": "Will the **high temp in Austin** be 90-91\u00b0 on Mar 25, 2026?",
+        "side": "NO",
+        "amount": 1.15,
+        "probability": 0.12527390811187583,
+        "confidence": 0.8994615384615384,
+        "market_price": 0.34,
+        "price_gap": 0.2147260918881242,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Today is March 25, 2026, 8 PM UTC in Austin. Current conditions at KAUS (11:53 AM UTC) show 79\u00b0F with mostly cloudy skies, 56% humidity, SSW winds[2]. AccuWeather forecast lacks specific high for Mar ",
+        "category": "weather",
+        "time": "2026-03-25T20:42:58"
+      },
       {
         "ticker": "KXFED-26SEP-T4.00",
         "title": "",
@@ -409,497 +799,112 @@
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.05",
         "category": "sp500",
         "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6787",
-        "title": "Will the S&P 500 be between 6775 and 6799.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9982362431865435,
-        "confidence": 0.9,
-        "market_price": 0.02,
-        "price_gap": 0.9782362431865435,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.02",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6812",
-        "title": "Will the S&P 500 be between 6800 and 6824.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.04,
-        "price_gap": 0.959,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.04",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6837",
-        "title": "Will the S&P 500 be between 6825 and 6849.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.03,
-        "price_gap": 0.969,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.03",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6862",
-        "title": "Will the S&P 500 be between 6850 and 6874.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.02,
-        "price_gap": 0.979,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.02",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6887",
-        "title": "Will the S&P 500 be between 6875 and 6899.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.01,
-        "price_gap": 0.989,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.01",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6912",
-        "title": "Will the S&P 500 be between 6900 and 6924.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.02,
-        "price_gap": 0.979,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.02",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6937",
-        "title": "Will the S&P 500 be between 6925 and 6949.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.02,
-        "price_gap": 0.979,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.02",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-T6949.9999",
-        "title": "Will the S&P 500 be above 6949.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.01,
-        "price_gap": 0.989,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.01",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6237",
-        "title": "Will the S&P 500 be between 6225 and 6249.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.001,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.499,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6262",
-        "title": "Will the S&P 500 be between 6250 and 6274.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.001,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.499,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6287",
-        "title": "Will the S&P 500 be between 6275 and 6299.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.001069721087531481,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.4989302789124685,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6312",
-        "title": "Will the S&P 500 be between 6300 and 6324.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.0027961739482654452,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.4972038260517346,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6337",
-        "title": "Will the S&P 500 be between 6325 and 6349.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.006729537949042601,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.4932704620509574,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.01 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6362",
-        "title": "Will the S&P 500 be between 6350 and 6374.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.014927912278737854,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.48507208772126215,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.01 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6387",
-        "title": "Will the S&P 500 be between 6375 and 6399.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.03056109381946496,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.469438906180535,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.03 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6412",
-        "title": "Will the S&P 500 be between 6400 and 6424.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.05783357465102439,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.4421664253489756,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.06 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6437",
-        "title": "Will the S&P 500 be between 6425 and 6449.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.10136079947075471,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.3986392005292453,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.10 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:35"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6512",
-        "title": "Will the S&P 500 be between 6500 and 6524.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.35357969713186965,
-        "confidence": 0.8835796971318697,
-        "market_price": 0.07,
-        "price_gap": 0.28357969713186965,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.35 vs market=0.07",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6537",
-        "title": "Will the S&P 500 be between 6525 and 6549.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.4695955851711612,
-        "confidence": 0.9,
-        "market_price": 0.11,
-        "price_gap": 0.3595955851711612,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.47 vs market=0.11",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6562",
-        "title": "Will the S&P 500 be between 6550 and 6574.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.5882714888557828,
-        "confidence": 0.9,
-        "market_price": 0.2,
-        "price_gap": 0.38827148885578283,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.59 vs market=0.20",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6587",
-        "title": "Will the S&P 500 be between 6575 and 6599.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.6993347631087112,
-        "confidence": 0.9,
-        "market_price": 0.17,
-        "price_gap": 0.5293347631087112,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.70 vs market=0.17",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6612",
-        "title": "Will the S&P 500 be between 6600 and 6624.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.794426126045062,
-        "confidence": 0.9,
-        "market_price": 0.06,
-        "price_gap": 0.734426126045062,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.79 vs market=0.06",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6637",
-        "title": "Will the S&P 500 be between 6625 and 6649.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.8689120042235083,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.36891200422350834,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.87 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6662",
-        "title": "Will the S&P 500 be between 6650 and 6674.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9222907605628564,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.4222907605628564,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.92 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6687",
-        "title": "Will the S&P 500 be between 6675 and 6699.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9572871901295634,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.4572871901295634,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.96 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6712",
-        "title": "Will the S&P 500 be between 6700 and 6724.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9782784604962196,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.4782784604962196,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.98 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 168,
-      "executed": 1,
-      "deployed": 0.39
+      "trades": 185,
+      "executed": 4,
+      "deployed": 1.25
     },
     "QUANT": {
       "trades": 2501,
       "executed": 207,
       "deployed": 93.07999999999998
+    },
+    "WEATHER": {
+      "trades": 9,
+      "executed": 2,
+      "deployed": 2.42
     }
   },
   "ensemble": {
     "models": {
       "perplexity": {
         "analyses": 20,
-        "avg_probability": 0.3825
+        "avg_probability": 0.383
       },
       "claude": {
         "analyses": 20,
-        "avg_probability": 0.28900000000000003
+        "avg_probability": 0.292
       },
       "deepseek": {
         "analyses": 20,
-        "avg_probability": 0.325
+        "avg_probability": 0.3065
       }
     },
-    "consensus_rate": 0.75,
+    "consensus_rate": 0.85,
     "recent_votes": [
       {
-        "perplexity": 0.12,
+        "perplexity": 0.25,
         "claude": 0.12,
         "deepseek": 0.12,
-        "consensus": true,
-        "time": "2026-03-25T20:28:54"
-      },
-      {
-        "perplexity": 0.68,
-        "claude": 0.72,
-        "deepseek": 0.72,
-        "consensus": true,
-        "time": "2026-03-25T20:28:42"
+        "consensus": false,
+        "time": "2026-03-25T20:49:06"
       },
       {
         "perplexity": 0.72,
-        "claude": 0.65,
-        "deepseek": 0.65,
+        "claude": 0.72,
+        "deepseek": 0.72,
         "consensus": true,
-        "time": "2026-03-25T20:28:28"
+        "time": "2026-03-25T20:48:48"
       },
       {
-        "perplexity": 0.92,
+        "perplexity": 0.62,
+        "claude": 0.65,
+        "deepseek": 0.55,
+        "consensus": true,
+        "time": "2026-03-25T20:48:34"
+      },
+      {
+        "perplexity": 0.85,
         "claude": 0.85,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-25T20:28:11"
+        "time": "2026-03-25T20:48:22"
       },
       {
-        "perplexity": 0.55,
-        "claude": 0.32,
+        "perplexity": 0.72,
+        "claude": 0.35,
         "deepseek": 0.28,
         "consensus": true,
-        "time": "2026-03-25T20:27:57"
+        "time": "2026-03-25T20:48:07"
       },
       {
-        "perplexity": 0.85,
-        "claude": 0.25,
+        "perplexity": 0.82,
+        "claude": 0.15,
         "deepseek": 0.35,
         "consensus": true,
-        "time": "2026-03-25T20:27:40"
+        "time": "2026-03-25T20:47:54"
       },
       {
-        "perplexity": 0.85,
-        "claude": 0.25,
-        "deepseek": 0.65,
-        "consensus": false,
-        "time": "2026-03-25T20:27:26"
+        "perplexity": 0.84,
+        "claude": 0.75,
+        "deepseek": 0.85,
+        "consensus": true,
+        "time": "2026-03-25T20:47:39"
       },
       {
-        "perplexity": 0.12,
+        "perplexity": 0.15,
         "claude": 0.12,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-03-25T20:27:11"
+        "deepseek": 0.12,
+        "consensus": true,
+        "time": "2026-03-25T20:47:26"
       },
       {
         "perplexity": 0.15,
         "claude": 0.08,
         "deepseek": 0.15,
-        "consensus": true,
-        "time": "2026-03-25T20:26:58"
+        "consensus": false,
+        "time": "2026-03-25T20:47:13"
       },
       {
-        "perplexity": 0.08,
+        "perplexity": 0.02,
         "claude": 0.05,
-        "deepseek": 0.08,
+        "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-03-25T20:26:45"
+        "time": "2026-03-25T20:47:00"
       }
     ]
   },
@@ -989,64 +994,64 @@
   ],
   "news": [
     {
-      "text": "February 2026 CPI rose 0.3% month-over-month, with 12-month all-items inflation steady at 2.4% and core at 2.5%[1][5]. J.P. Morgan forecasts year-over-year CPI inflation rising to 3.5% by Q4 2025 befo",
+      "text": "February 2026 CPI data shows monthly increase of 0.3% seasonally adjusted[1]. J.P. Morgan forecasts CPI inflation to drift down to 2.8% by Q4 2026, with tariff impacts and weakening dollar as upward p",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T20:28:47"
+      "time": "2026-03-25T20:48:57"
     },
     {
-      "text": "February 2026 CPI rose 0.3% MoM (SA), with all items up 2.4% YoY (NSA); core CPI up 0.2% MoM and 2.5% YoY[1][2]. Recent monthly increases: Jan 0.2%, Feb 0.3%; energy +0.6% MoM, food +0.4% MoM[1]. CPI ",
+      "text": "February 2026 CPI rose 0.3% MoM (all items), with recent months showing 0.2-0.3% increases; YoY at 2.4%.[1][9] Trading Economics forecasts CPI index to 329.07 by Q1 end (from 326.79 in Feb), implying ",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T20:28:33"
+      "time": "2026-03-25T20:48:39"
     },
     {
-      "text": "J.P. Morgan forecasts CPI inflation to accelerate to 3.6% year-over-year by June 2026, driven by tariff feedthrough effects and fiscal stimulus[1]. PIIE warns inflation could surprise to the upside, p",
+      "text": "Prediction markets show 60% probability on Robinhood for CPI >0.2% in September 2026 (similar Kalshi market at >0.3% 47\u00a2); St. Louis Fed survey consensus CPI inflation 2.9% for 2026 (top forecasters 3",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T20:28:19"
+      "time": "2026-03-25T20:48:27"
     },
     {
-      "text": "Recent CPI data shows February 2026 MoM increase of +0.3%, with YoY at 2.4%[1][5][10]. Prediction markets (Kalshi, Octagon AI) expect June 2026 CPI MoM around +0.2% to +0.3%, with highest probabilitie",
+      "text": "February 2026 CPI rose 0.3% month-over-month (MoM), with YoY at 2.4%[1][5][10]. Prediction markets and models expect June 2026 CPI MoM at 0.2%-0.3%, with peak odds at exactly 0.3% (16-17% probability ",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T20:28:02"
+      "time": "2026-03-25T20:48:13"
     },
     {
-      "text": "February 2026 CPI increased 0.3% month-over-month on a seasonally adjusted basis[1]. Prediction markets show mixed expectations for April 2026 month-over-month CPI: Kalshi forecasting markets indicate",
+      "text": "February 2026 CPI rose 0.3% MoM (BLS)[1][4]. March 2026 CPI scheduled for April 10 release[1][4][9]. Prediction markets show 26% prob for April 2026 CPI >0.3% MoM (Kalshi via Octagon AI)[6], 69% marke",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T20:27:48"
+      "time": "2026-03-25T20:47:59"
     },
     {
-      "text": "February 2026 CPI rose 0.3% month-over-month (MoM), following 0.2% in January, with 12-month YoY at 2.4%[1][9]. March 2026 CPI data scheduled for release April 10, 2026[1][9]. FOMC March 2026 projecti",
+      "text": "March 2026 CPI data is scheduled for release on April 10, 2026, so no actual figure available yet[1][8]. February 2026 CPI rose 0.3% MoM (SA), with YoY at 2.4%; recent months show 0.3%, 0.2%, 0.3% MoM",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T20:27:31"
+      "time": "2026-03-25T20:47:45"
     },
     {
-      "text": "EaseWeather provides a specific forecast for March 26, 2026, in Denver: Sunny with high of 22\u00b0C (72\u00b0F), low of 7\u00b0C (45\u00b0F), below 77\u00b0F[6]. AccuWeather shows early March highs up to 73\u00b0F but no specific",
+      "text": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a sunny day on Mar 26 with high of 22\u00b0C (72\u00b0F) and low of 7\u00b0C (45\u00b0F), well below 77\u00b0F[6]. Recent weather report",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T20:27:16"
+      "time": "2026-03-25T20:47:31"
     },
     {
-      "text": "AccuWeather's March 2026 forecast for Austin lists the high temperature on March 26 as 90\u00b0F[1]. No other sources provide specific daily forecasts for March 26, 2026; they offer only monthly averages a",
+      "text": "Multiple weather forecasts for March 26, 2026 in Austin, TX show consistent predictions: AccuWeather forecasts a high of 84\u00b0F[1], Weather Shogun forecasts a day high of 79\u00b0F[2], and climate data indic",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T20:27:02"
+      "time": "2026-03-25T20:47:18"
     },
     {
-      "text": "Multiple forecasts for March 26, 2026 in Austin, TX indicate high temperatures around 90-91\u00b0F. Weather Shogun forecasts a high of 91\u00b0F[2]. AccuWeather's daily forecast shows 90\u00b0F for March 26[3]. Hist",
+      "text": "AccuWeather forecast for March 26, 2026, in Austin shows a daily high of 90\u00b0F, well above 88\u00b0F[2]. Current weather on March 25 at 11:53 AM UTC reports 79\u00b0F with mostly cloudy conditions, warm trend co",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T20:26:50"
+      "time": "2026-03-25T20:47:05"
     },
     {
-      "text": "AccuWeather forecast for Denver on March 26, 2026, shows a daily high of 83\u00b0F[1]. Similar forecast for Denver International Airport indicates warm conditions around that date, with highs in the 80s ne",
+      "text": "Multiple weather forecasts for Denver on March 26, 2026 show consistent data: EaseWeather predicts a high of 22\u00b0C (72\u00b0F) with sunny conditions[6]. The day-by-day forecast table from EaseWeather shows ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T20:26:37"
+      "time": "2026-03-25T20:46:52"
     }
   ],
   "alerts": [
@@ -1058,7 +1063,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 32,
-    "cycles": 16,
-    "uptime_hours": 5.4
+    "cycles": 17,
+    "uptime_hours": 5.8
   }
 }
