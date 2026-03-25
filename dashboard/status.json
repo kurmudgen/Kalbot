@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T01:23:34.725568+00:00",
+  "updated_at": "2026-03-25T01:33:57.365955+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -822,7 +822,7 @@
       },
       "claude": {
         "analyses": 10,
-        "avg_probability": 0.523
+        "avg_probability": 0.519
       },
       "deepseek": {
         "analyses": 10,
@@ -833,45 +833,45 @@
     "recent_votes": [
       {
         "perplexity": null,
-        "claude": 0.18,
+        "claude": 0.12,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T01:23:34"
+        "time": "2026-03-25T01:33:57"
       },
       {
         "perplexity": null,
-        "claude": 0.7,
+        "claude": 0.72,
         "deepseek": 0.7,
         "consensus": false,
-        "time": "2026-03-25T01:23:24"
+        "time": "2026-03-25T01:33:47"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T01:23:14"
+        "time": "2026-03-25T01:33:36"
       },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-25T01:23:05"
+        "time": "2026-03-25T01:33:27"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.5,
         "consensus": false,
-        "time": "2026-03-25T01:22:56"
+        "time": "2026-03-25T01:33:17"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-03-25T01:22:46"
+        "time": "2026-03-25T01:33:07"
       },
       {
         "perplexity": null,
@@ -1050,13 +1050,13 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "12 errors this session"
+      "message": "13 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 12,
-    "cycles": 14,
-    "uptime_hours": 2.3
+    "errors_24h": 13,
+    "cycles": 15,
+    "uptime_hours": 2.5
   }
 }
