@@ -193,12 +193,14 @@ def run_filter() -> list[dict]:
                 if nws:
                     nws_context = (
                         f"\nCRITICAL — {nws}\n"
-                        f"USE THIS FORECAST AS YOUR PRIMARY INPUT. "
-                        f"If the NWS forecast is far from the threshold (>5F gap), "
-                        f"your confidence should be HIGH and probability should reflect the forecast. "
-                        f"If the forecast is close to the threshold (<3F gap), "
-                        f"your confidence should be LOW (0.3-0.5). "
-                        f"Do NOT just echo the market price."
+                        f"This is the official settlement source. Base your answer on this forecast.\n"
+                        f"Calibration guide based on gap between NWS forecast and market threshold:\n"
+                        f"  >8F gap: probability 0.05-0.15 (or 0.85-0.95), confidence 0.85-0.95\n"
+                        f"  5-8F gap: probability 0.15-0.30 (or 0.70-0.85), confidence 0.70-0.85\n"
+                        f"  3-5F gap: probability 0.30-0.40 (or 0.60-0.70), confidence 0.50-0.70\n"
+                        f"  <3F gap: probability 0.40-0.60, confidence 0.30-0.50\n"
+                        f"Confidence = how clear the NWS gap is, NOT certainty about the market price.\n"
+                        f"Do NOT echo the market price. Use the NWS forecast."
                     )
             except Exception:
                 pass
