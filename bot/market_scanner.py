@@ -114,9 +114,21 @@ def scan_markets(conn: sqlite3.Connection) -> int:
     url = "https://api.elections.kalshi.com/trade-api/v2/markets"
     total = 0
 
-    TARGET_SERIES = ["KXCPI", "KXPCE", "KXINX", "KXINXD", "KXBTC",
-                     "KXFED", "KXFOMC", "KXGDP", "KXJOBLESS", "KXNFP",
-                     "KXGAS", "KXTREAS", "KX10Y"]
+    TARGET_SERIES = [
+        # Economics
+        "KXCPI", "KXPCE", "KXFED", "KXFOMC", "KXGDP", "KXJOBLESS", "KXNFP",
+        # Financial
+        "KXGAS", "KXTREAS", "KX10Y",
+        # Crypto
+        "KXBTC",
+        # Weather — city-specific high/low temp
+        "KXHIGHNY", "KXHIGHCH", "KXHIGHMI", "KXHIGHHO", "KXHIGHLA",
+        "KXHIGHDE", "KXHIGHPH", "KXHIGHSE", "KXHIGHAU", "KXHIGHSF",
+        "KXLOWNY", "KXLOWCH", "KXLOWMI", "KXLOWHO", "KXLOWLA",
+        "KXLOWDE", "KXLOWPH", "KXLOWSE",
+        # TSA
+        "TSA", "KXTSA",
+    ]
 
     for series in TARGET_SERIES:
         try:

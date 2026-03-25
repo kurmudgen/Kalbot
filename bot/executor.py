@@ -163,6 +163,10 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         price_gap = score.get("price_gap", 0)
         reasoning = score.get("cloud_reasoning", score.get("reasoning", ""))
 
+        # NUCLEAR GUARD: never execute on null/empty signals
+        if cloud_prob == 0.0 or cloud_conf == 0.0 or market_price == 0.0:
+            continue  # Silently skip — these are broken signals
+
         # Order book depth check — skip thin markets
         try:
             from orderbook_analyzer import is_safe_to_trade
