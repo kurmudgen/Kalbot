@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T12:34:04.591047+00:00",
+  "updated_at": "2026-03-25T12:47:47.013958+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -822,7 +822,7 @@
       },
       "claude": {
         "analyses": 13,
-        "avg_probability": 0.40846153846153843
+        "avg_probability": 0.40538461538461534
       },
       "deepseek": {
         "analyses": 13,
@@ -836,63 +836,63 @@
         "claude": 0.12,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T12:34:04"
+        "time": "2026-03-25T12:47:46"
       },
       {
         "perplexity": null,
         "claude": 0.75,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T12:33:53"
+        "time": "2026-03-25T12:47:37"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T12:33:43"
+        "time": "2026-03-25T12:47:26"
       },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.82,
         "consensus": false,
-        "time": "2026-03-25T12:33:33"
+        "time": "2026-03-25T12:47:16"
       },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T12:33:23"
+        "time": "2026-03-25T12:47:06"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T12:33:12"
+        "time": "2026-03-25T12:46:55"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-03-25T12:33:02"
+        "time": "2026-03-25T12:46:45"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.32,
         "consensus": false,
-        "time": "2026-03-25T12:32:52"
+        "time": "2026-03-25T12:46:34"
       },
       {
         "perplexity": null,
-        "claude": 0.12,
+        "claude": 0.08,
         "deepseek": 0.12,
         "consensus": false,
-        "time": "2026-03-25T12:32:42"
+        "time": "2026-03-25T12:46:23"
       },
       {
         "perplexity": null,
@@ -982,7 +982,7 @@
     {
       "ticker": "KXHIGHNY-26MAR25-T58",
       "title": "Will the **high temp in NYC** be >58\u00b0 on Mar 25, 2026?",
-      "price": 3,
+      "price": 2,
       "close_time": "2026-03-26T04:59:00Z",
       "category": "weather"
     }
@@ -1053,7 +1053,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 18,
-    "uptime_hours": 4.1
+    "cycles": 19,
+    "uptime_hours": 4.3
   }
 }
