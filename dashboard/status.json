@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T02:26:14.129712+00:00",
+  "updated_at": "2026-03-25T02:36:51.706953+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -822,7 +822,7 @@
       },
       "claude": {
         "analyses": 10,
-        "avg_probability": 0.495
+        "avg_probability": 0.492
       },
       "deepseek": {
         "analyses": 10,
@@ -833,45 +833,45 @@
     "recent_votes": [
       {
         "perplexity": null,
-        "claude": 0.18,
+        "claude": 0.12,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T02:26:14"
+        "time": "2026-03-25T02:36:51"
       },
       {
         "perplexity": null,
-        "claude": 0.72,
+        "claude": 0.75,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T02:26:02"
+        "time": "2026-03-25T02:36:40"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T02:25:52"
+        "time": "2026-03-25T02:36:30"
       },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.82,
         "consensus": false,
-        "time": "2026-03-25T02:25:43"
+        "time": "2026-03-25T02:36:19"
       },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T02:25:32"
+        "time": "2026-03-25T02:36:08"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T02:25:21"
+        "time": "2026-03-25T02:35:57"
       },
       {
         "perplexity": null,
@@ -905,15 +905,29 @@
   },
   "scanner": {
     "total_markets": 1133,
-    "with_prices": 466,
+    "with_prices": 468,
     "passed_filter": 6,
-    "total_scored": 269,
+    "total_scored": 271,
     "categories": {
       "economics": 960,
       "inflation": 173
     }
   },
   "sniper_markets": [
+    {
+      "ticker": "KXINX-26MAR25H1600-T6924.9999",
+      "title": "Will the S&P 500 be above 6924.9999 on Mar 25, 2026 at 4pm EDT?",
+      "price": 31,
+      "close_time": "2026-03-25T20:00:00Z",
+      "category": "economics"
+    },
+    {
+      "ticker": "KXINX-26MAR25H1600-T6225",
+      "title": "Will the S&P 500 be below 6225 on Mar 25, 2026 at 4pm EDT?",
+      "price": 31,
+      "close_time": "2026-03-25T20:00:00Z",
+      "category": "economics"
+    },
     {
       "ticker": "KXINX-26MAR27H1600-T6949.9999",
       "title": "Will the S&P 500 be above 6949.9999 on Mar 27, 2026 at 4pm EDT?",
@@ -967,20 +981,6 @@
       "ticker": "KXINX-26MAR27H1600-B6812",
       "title": "Will the S&P 500 be between 6800 and 6824.9999 on Mar 27, 2026 at 4pm EDT?",
       "price": 4,
-      "close_time": "2026-03-27T20:00:00Z",
-      "category": "economics"
-    },
-    {
-      "ticker": "KXINX-26MAR27H1600-B6787",
-      "title": "Will the S&P 500 be between 6775 and 6799.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 2,
-      "close_time": "2026-03-27T20:00:00Z",
-      "category": "economics"
-    },
-    {
-      "ticker": "KXINX-26MAR27H1600-B6762",
-      "title": "Will the S&P 500 be between 6750 and 6774.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 5,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     }
@@ -1056,7 +1056,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 16,
-    "cycles": 20,
-    "uptime_hours": 3.4
+    "cycles": 21,
+    "uptime_hours": 3.6
   }
 }
