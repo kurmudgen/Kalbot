@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T02:05:13.667065+00:00",
+  "updated_at": "2026-03-25T02:15:46.451105+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -822,56 +822,56 @@
       },
       "claude": {
         "analyses": 10,
-        "avg_probability": 0.525
+        "avg_probability": 0.516
       },
       "deepseek": {
         "analyses": 10,
-        "avg_probability": 0.541
+        "avg_probability": 0.511
       }
     },
-    "consensus_rate": 0.5,
+    "consensus_rate": 0.4,
     "recent_votes": [
       {
         "perplexity": null,
-        "claude": 0.18,
+        "claude": 0.2,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T02:05:13"
+        "time": "2026-03-25T02:15:46"
       },
       {
         "perplexity": null,
-        "claude": 0.72,
+        "claude": 0.68,
         "deepseek": 0.75,
         "consensus": false,
-        "time": "2026-03-25T02:05:03"
+        "time": "2026-03-25T02:15:34"
       },
       {
         "perplexity": null,
-        "claude": 0.65,
+        "claude": 0.58,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T02:04:52"
+        "time": "2026-03-25T02:15:23"
       },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.85,
-        "consensus": true,
-        "time": "2026-03-25T02:04:41"
+        "consensus": false,
+        "time": "2026-03-25T02:15:12"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.5,
         "consensus": false,
-        "time": "2026-03-25T02:04:30"
+        "time": "2026-03-25T02:15:00"
       },
       {
         "perplexity": null,
         "claude": 0.15,
-        "deepseek": 0.45,
+        "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-03-25T02:04:20"
+        "time": "2026-03-25T02:14:50"
       },
       {
         "perplexity": null,
@@ -1056,7 +1056,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 16,
-    "cycles": 18,
-    "uptime_hours": 3.0
+    "cycles": 19,
+    "uptime_hours": 3.2
   }
 }
