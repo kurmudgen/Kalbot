@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T08:00:53.930904+00:00",
+  "updated_at": "2026-03-25T08:14:09.424904+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -822,7 +822,7 @@
       },
       "claude": {
         "analyses": 12,
-        "avg_probability": 0.43
+        "avg_probability": 0.4191666666666667
       },
       "deepseek": {
         "analyses": 12,
@@ -836,56 +836,56 @@
         "claude": 0.12,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T08:00:53"
+        "time": "2026-03-25T08:14:09"
       },
       {
         "perplexity": null,
         "claude": 0.75,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T08:00:43"
+        "time": "2026-03-25T08:13:58"
       },
       {
         "perplexity": null,
         "claude": 0.55,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T08:00:33"
+        "time": "2026-03-25T08:13:48"
       },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.82,
         "consensus": false,
-        "time": "2026-03-25T08:00:22"
+        "time": "2026-03-25T08:13:39"
       },
       {
         "perplexity": null,
-        "claude": 0.45,
+        "claude": 0.32,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T08:00:11"
+        "time": "2026-03-25T08:13:27"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T08:00:00"
+        "time": "2026-03-25T08:13:17"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.32,
         "consensus": false,
-        "time": "2026-03-25T07:59:50"
+        "time": "2026-03-25T08:13:07"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.12,
         "consensus": false,
-        "time": "2026-03-25T07:59:40"
+        "time": "2026-03-25T08:12:57"
       },
       {
         "perplexity": null,
@@ -1053,7 +1053,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 1,
-    "uptime_hours": 0.1
+    "cycles": 2,
+    "uptime_hours": 0.4
   }
 }
