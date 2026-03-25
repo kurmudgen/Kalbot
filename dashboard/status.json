@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T15:59:43.288208+00:00",
+  "updated_at": "2026-03-25T16:18:56.400548+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -818,88 +818,88 @@
     "models": {
       "perplexity": {
         "analyses": 20,
-        "avg_probability": 0.398
+        "avg_probability": 0.3525
       },
       "claude": {
-        "analyses": 7,
-        "avg_probability": 0.3028571428571429
+        "analyses": 18,
+        "avg_probability": 0.31722222222222224
       },
       "deepseek": {
         "analyses": 20,
-        "avg_probability": 0.2965
+        "avg_probability": 0.34550000000000003
       }
     },
-    "consensus_rate": 0.7,
+    "consensus_rate": 0.85,
     "recent_votes": [
       {
         "perplexity": 0.08,
-        "claude": 0.05,
-        "deepseek": 0.15,
-        "consensus": true,
-        "time": "2026-03-25T15:59:27"
-      },
-      {
-        "perplexity": 0.82,
-        "claude": null,
-        "deepseek": 0.85,
-        "consensus": true,
-        "time": "2026-03-25T15:59:09"
-      },
-      {
-        "perplexity": 0.65,
-        "claude": null,
-        "deepseek": 0.18,
-        "consensus": false,
-        "time": "2026-03-25T15:58:51"
-      },
-      {
-        "perplexity": 0.12,
-        "claude": null,
-        "deepseek": 0.08,
-        "consensus": false,
-        "time": "2026-03-25T15:58:35"
-      },
-      {
-        "perplexity": 0.05,
-        "claude": null,
+        "claude": 0.18,
         "deepseek": 0.35,
         "consensus": true,
-        "time": "2026-03-25T15:58:21"
+        "time": "2026-03-25T16:18:38"
       },
       {
-        "perplexity": 0.92,
-        "claude": null,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-03-25T15:58:05"
-      },
-      {
-        "perplexity": 0.85,
-        "claude": 0.12,
-        "deepseek": 0.35,
-        "consensus": false,
-        "time": "2026-03-25T15:57:49"
-      },
-      {
-        "perplexity": 0.03,
-        "claude": null,
+        "perplexity": 0.02,
+        "claude": 0.02,
         "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-03-25T15:55:48"
-      },
-      {
-        "perplexity": 0.15,
-        "claude": null,
-        "deepseek": 0.25,
-        "consensus": true,
-        "time": "2026-03-25T15:55:34"
+        "time": "2026-03-25T16:18:21"
       },
       {
         "perplexity": 0.08,
-        "claude": 0.05,
-        "deepseek": 0.05,
+        "claude": 0.12,
+        "deepseek": 0.25,
         "consensus": true,
-        "time": "2026-03-25T15:54:30"
+        "time": "2026-03-25T16:18:06"
+      },
+      {
+        "perplexity": 0.35,
+        "claude": 0.35,
+        "deepseek": 0.35,
+        "consensus": false,
+        "time": "2026-03-25T16:17:50"
+      },
+      {
+        "perplexity": 0.02,
+        "claude": 0.02,
+        "deepseek": 0.02,
+        "consensus": true,
+        "time": "2026-03-25T16:17:36"
+      },
+      {
+        "perplexity": 0.92,
+        "claude": 0.85,
+        "deepseek": 0.95,
+        "consensus": true,
+        "time": "2026-03-25T16:17:20"
+      },
+      {
+        "perplexity": 0.05,
+        "claude": 0.15,
+        "deepseek": 0.15,
+        "consensus": true,
+        "time": "2026-03-25T16:17:02"
+      },
+      {
+        "perplexity": 0.08,
+        "claude": 0.08,
+        "deepseek": 0.08,
+        "consensus": true,
+        "time": "2026-03-25T16:16:48"
+      },
+      {
+        "perplexity": 0.05,
+        "claude": 0.15,
+        "deepseek": 0.15,
+        "consensus": true,
+        "time": "2026-03-25T16:16:31"
+      },
+      {
+        "perplexity": 0.85,
+        "claude": 0.85,
+        "deepseek": 0.45,
+        "consensus": true,
+        "time": "2026-03-25T16:16:16"
       }
     ]
   },
@@ -907,7 +907,7 @@
     "total_markets": 1944,
     "with_prices": 1178,
     "passed_filter": 21,
-    "total_scored": 330,
+    "total_scored": 332,
     "categories": {
       "economics": 1060,
       "inflation": 173,
@@ -989,76 +989,76 @@
   ],
   "news": [
     {
-      "text": "AccuWeather Miami Beach forecast shows March 26 without a listed high, but nearby days range 78-87\u00b0F with averages around 83-84\u00b0F; North Miami Beach lists 82\u00b0F high on Mar 26[1][7]. Weather25.com fore",
+      "text": "Multiple weather forecasts for Denver on March 26, 2026 show consistent predictions: AccuWeather (Denver, NC) forecasts 74\u00b0F high[1], EaseWeather forecasts 64\u00b0F high[7], and a detailed day-by-day fore",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T15:59:31"
+      "time": "2026-03-25T16:18:44"
     },
     {
-      "text": "AccuWeather forecast for Chicago on Mar 26, 2026, shows high of 77\u00b0F[1]; West Chicago variant lists 77\u00b0 high[7]. Metcheck forecasts max temp of 17\u00b0C (62.6\u00b0F) for Mar 26[3]. Current conditions on Mar 2",
+      "text": "AccuWeather forecast for Denver shows March 26 high of 83\u00b0F[1]. Denver International Airport AccuWeather forecast shows March 26 high of 82\u00b0F[7]. A historic March heatwave peaked on Saturday (March 22",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T15:59:14"
+      "time": "2026-03-25T16:18:27"
     },
     {
-      "text": "AccuWeather forecasts 62\u00b0F high for March 26, 2026 in Chicago (<77\u00b0F)[1]. Metcheck predicts max 17\u00b0C (62.6\u00b0F)[2]. Weathershogun shows 55\u00b0F day high[3]. Current conditions (Mar 25, 9:53 AM UTC): 53.1\u00b0F",
+      "text": "EaseWeather provides a day-by-day forecast for March 2026 in Denver, predicting a high of 22\u00b0F (equivalent to -5.6\u00b0C) on Mar 26 under sunny conditions[7]. Recent reports note record March heat earlier",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T15:58:55"
+      "time": "2026-03-25T16:18:11"
     },
     {
-      "text": "Forecasts for March 26, 2026, in NYC show: Weather25.com predicts 64\u00b0F high (close but below 67-68\u00b0F)[3]; Easeweather.com forecasts partly cloudy with 17\u00b0C (62.6\u00b0F) high[6]; AccuWeather shows earlier ",
+      "text": "Latest National Weather Service forecasts point to a Miami high of 82-83\u00b0F on March 26, 2026, with trader consensus at 34% for that bin[8]. The next closest outcome is 80-81\u00b0F at 31%[8]. Ensemble mode",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T15:58:40"
+      "time": "2026-03-25T16:17:57"
     },
     {
-      "text": "Easeweather forecasts 17\u00b0C (63\u00b0F) high for Mar 26 in NYC, below 71-72\u00b0F range[6]. Accuweather shows early March highs up to 73\u00b0F on Mar 9 but no Mar 26 data[1]. Weather25 predicts 64\u00b0F high with mist[",
+      "text": "AccuWeather forecasts for Miami Beach and South Miami show March 26, 2026 highs around 82-83\u00b0F, close but not exactly 83-84\u00b0F[1][7]. Weather25 predicts 86\u00b0F high on Mar 26[5]. Metcheck forecasts max t",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T15:58:26"
+      "time": "2026-03-25T16:17:41"
     },
     {
-      "text": "AccuWeather forecast for March 25, 2026, in NYC shows high of 53\u00b0F and low of 45\u00b0F[1]. YouTube short indicates cloudy conditions at 9\u00b0C (48\u00b0F), likely near high temperature[2]. Weather25.com lists Mar",
+      "text": "Multiple weather forecasts for Chicago on March 26, 2026 show significantly cooler temperatures than the market prediction. AccuWeather forecasts a high of 32\u00b0F for March 26[1]. MetCheck predicts a hi",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T15:58:10"
+      "time": "2026-03-25T16:17:26"
     },
     {
-      "text": "According to AccuWeather historical data for March 25, 2026 in Austin, TX, the high temperature recorded was 90\u00b0F[2]. Weather25.com reports moderate to heavy rain shower on Mar 25 with temperatures of",
+      "text": "Multiple weather forecasts for Chicago on March 26, 2026 indicate a high temperature well below 77\u00b0F. AccuWeather's daily forecast shows a high of 62\u00b0F for March 26[1]. MetCheck forecasts a maximum te",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T15:57:56"
+      "time": "2026-03-25T16:17:09"
     },
     {
-      "text": "AccuWeather forecasts a high of 69\u00b0F in Chicago on March 25, 2026, exactly matching the 68-69\u00b0F range[1]. Polymarket's related market shows 84-85.3% implied probability for 68\u00b0F or higher, driven by N",
+      "text": "Forecasts for March 26, 2026, in NYC predict highs of 17\u00b0C/63\u00b0F (easeweather.com[7]), 64\u00b0F (weather25.com[3]), with March generally cool (averages 39-64\u00b0F[1][3][5]). Current temps on Mar 25 are 37-44\u00b0",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T15:57:23"
+      "time": "2026-03-25T16:16:52"
     },
     {
-      "text": "AccuWeather forecast for Mar 25 shows incomplete data (29\u00b0 low visible, high blank)[1]. Weather25.com forecasts 50\u00b0F high (10\u00b0C) on Mar 25, overcast[2]. Easeweather.com explicitly forecasts sunny with",
+      "text": "Multiple weather forecasts for NYC on March 26, 2026 show high temperatures significantly below the 71-72\u00b0F target. AccuWeather's forecast shows 69\u00b0F high on March 8 as the warmest day in their visibl",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T15:55:52"
+      "time": "2026-03-25T16:16:39"
     },
     {
-      "text": "EaseWeather provides a day-by-day forecast for March 2026 in Denver, predicting a sunny day on Mar 26 with high of 22\u00b0F (approx. 5.6\u00b0C), far below 84\u00b0F[6]. Historical March data shows averages of 50-5",
+      "text": "AccuWeather forecast for March 25, 2026, in NYC shows high of 53\u00b0F and low of 45\u00b0F[1]. YouTube short indicates cloudy conditions with 9\u00b0C (48\u00b0F, near high temp)[2]. Weather25.com lists Mar 25 as overc",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T15:55:39"
+      "time": "2026-03-25T16:16:21"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "6 errors this session"
+      "message": "8 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 6,
-    "cycles": 3,
-    "uptime_hours": 0.9
+    "errors_24h": 8,
+    "cycles": 4,
+    "uptime_hours": 1.3
   }
 }
