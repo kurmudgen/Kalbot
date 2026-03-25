@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T00:53:49.982442+00:00",
+  "updated_at": "2026-03-25T01:13:15.449523+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -821,16 +821,58 @@
         "avg_probability": 0.38999999999999996
       },
       "claude": {
-        "analyses": 4,
-        "avg_probability": 0.5125
+        "analyses": 10,
+        "avg_probability": 0.528
       },
       "deepseek": {
-        "analyses": 4,
-        "avg_probability": 0.5325
+        "analyses": 10,
+        "avg_probability": 0.516
       }
     },
-    "consensus_rate": 1.0,
+    "consensus_rate": 0.5,
     "recent_votes": [
+      {
+        "perplexity": null,
+        "claude": 0.18,
+        "deepseek": 0.18,
+        "consensus": false,
+        "time": "2026-03-25T01:13:15"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.75,
+        "deepseek": 0.7,
+        "consensus": false,
+        "time": "2026-03-25T01:13:05"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.65,
+        "deepseek": 0.55,
+        "consensus": false,
+        "time": "2026-03-25T01:12:55"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.85,
+        "deepseek": 0.95,
+        "consensus": true,
+        "time": "2026-03-25T01:12:45"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.65,
+        "deepseek": 0.5,
+        "consensus": false,
+        "time": "2026-03-25T01:12:36"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.15,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-03-25T01:12:26"
+      },
       {
         "perplexity": null,
         "claude": 0.85,
@@ -864,7 +906,7 @@
   "scanner": {
     "total_markets": 1133,
     "with_prices": 466,
-    "passed_filter": 1,
+    "passed_filter": 6,
     "total_scored": 269,
     "categories": {
       "economics": 960,
@@ -1008,13 +1050,13 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "10 errors this session"
+      "message": "11 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 10,
-    "cycles": 12,
-    "uptime_hours": 1.8
+    "errors_24h": 11,
+    "cycles": 13,
+    "uptime_hours": 2.2
   }
 }
