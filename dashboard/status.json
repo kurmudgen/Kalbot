@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T13:57:58.420137+00:00",
+  "updated_at": "2026-03-25T14:16:47.004522+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -817,97 +817,97 @@
   "ensemble": {
     "models": {
       "perplexity": {
-        "analyses": 3,
-        "avg_probability": 0.38999999999999996
+        "analyses": 0,
+        "avg_probability": 0
       },
       "claude": {
-        "analyses": 13,
-        "avg_probability": 0.40846153846153843
+        "analyses": 20,
+        "avg_probability": 0.2325
       },
       "deepseek": {
-        "analyses": 13,
-        "avg_probability": 0.46
+        "analyses": 20,
+        "avg_probability": 0.3025
       }
     },
-    "consensus_rate": 0.3076923076923077,
+    "consensus_rate": 0.0,
     "recent_votes": [
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T13:57:58"
+        "time": "2026-03-25T14:16:46"
       },
       {
         "perplexity": null,
-        "claude": 0.72,
+        "claude": 0.75,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T13:57:48"
+        "time": "2026-03-25T14:16:36"
       },
       {
         "perplexity": null,
-        "claude": 0.65,
+        "claude": 0.45,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T13:57:37"
+        "time": "2026-03-25T14:16:26"
       },
       {
         "perplexity": null,
         "claude": 0.85,
-        "deepseek": 0.65,
+        "deepseek": 0.82,
         "consensus": false,
-        "time": "2026-03-25T13:57:28"
+        "time": "2026-03-25T14:16:16"
       },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T13:57:17"
+        "time": "2026-03-25T14:16:04"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T13:57:06"
+        "time": "2026-03-25T14:15:55"
       },
       {
         "perplexity": null,
-        "claude": 0.15,
+        "claude": 0.12,
+        "deepseek": 0.17,
+        "consensus": false,
+        "time": "2026-03-25T14:15:44"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.25,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-03-25T13:56:55"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.15,
-        "deepseek": 0.35,
-        "consensus": false,
-        "time": "2026-03-25T13:56:44"
+        "time": "2026-03-25T14:15:34"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.12,
         "consensus": false,
-        "time": "2026-03-25T13:56:33"
+        "time": "2026-03-25T14:15:24"
       },
       {
         "perplexity": null,
-        "claude": 0.85,
-        "deepseek": 0.95,
-        "consensus": true,
-        "time": "2026-03-25T00:53:49"
+        "claude": 0.08,
+        "deepseek": 0.08,
+        "consensus": false,
+        "time": "2026-03-25T14:15:13"
       }
     ]
   },
   "scanner": {
     "total_markets": 1944,
-    "with_prices": 1148,
-    "passed_filter": 9,
-    "total_scored": 305,
+    "with_prices": 1169,
+    "passed_filter": 20,
+    "total_scored": 325,
     "categories": {
       "economics": 1060,
       "inflation": 173,
@@ -1053,7 +1053,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 24,
-    "uptime_hours": 5.5
+    "cycles": 25,
+    "uptime_hours": 5.8
   }
 }
