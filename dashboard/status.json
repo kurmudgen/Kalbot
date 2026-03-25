@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T22:10:44.332715+00:00",
+  "updated_at": "2026-03-25T22:24:47.014107+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -823,46 +823,67 @@
     "models": {
       "perplexity": {
         "analyses": 20,
-        "avg_probability": 0.33599999999999997
+        "avg_probability": 0.306
       },
       "claude": {
         "analyses": 20,
-        "avg_probability": 0.329
+        "avg_probability": 0.325
       },
       "deepseek": {
         "analyses": 20,
-        "avg_probability": 0.3295
+        "avg_probability": 0.318
       }
     },
     "consensus_rate": 0.7,
     "recent_votes": [
       {
-        "perplexity": 0.12,
-        "claude": 0.05,
-        "deepseek": 0.08,
+        "perplexity": 0.05,
+        "claude": 0.02,
+        "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-03-25T22:10:32"
+        "time": "2026-03-25T22:24:31"
+      },
+      {
+        "perplexity": 0.85,
+        "claude": 0.85,
+        "deepseek": 0.95,
+        "consensus": true,
+        "time": "2026-03-25T22:24:19"
       },
       {
         "perplexity": 0.15,
-        "claude": 0.75,
-        "deepseek": 0.45,
-        "consensus": true,
-        "time": "2026-03-25T22:10:19"
+        "claude": 0.15,
+        "deepseek": 0.28,
+        "consensus": false,
+        "time": "2026-03-25T22:24:07"
       },
       {
-        "perplexity": 0.11,
-        "claude": 0.15,
+        "perplexity": 0.08,
+        "claude": 0.05,
+        "deepseek": 0.05,
+        "consensus": true,
+        "time": "2026-03-25T22:23:55"
+      },
+      {
+        "perplexity": 0.05,
+        "claude": 0.85,
         "deepseek": 0.15,
         "consensus": true,
-        "time": "2026-03-25T22:10:07"
+        "time": "2026-03-25T22:23:42"
       },
       {
-        "perplexity": 0.72,
-        "claude": 0.25,
-        "deepseek": 0.35,
+        "perplexity": 0.05,
+        "claude": 0.0,
+        "deepseek": 0.05,
+        "consensus": true,
+        "time": "2026-03-25T22:23:29"
+      },
+      {
+        "perplexity": 0.35,
+        "claude": 0.12,
+        "deepseek": 0.25,
         "consensus": false,
-        "time": "2026-03-25T22:09:55"
+        "time": "2026-03-25T22:23:17"
       },
       {
         "perplexity": 0.02,
@@ -879,32 +900,11 @@
         "time": "2026-03-25T22:07:52"
       },
       {
-        "perplexity": 0.05,
-        "claude": 0.02,
-        "deepseek": 0.02,
-        "consensus": true,
-        "time": "2026-03-25T22:07:37"
-      },
-      {
-        "perplexity": 0.18,
-        "claude": 0.15,
-        "deepseek": 0.08,
-        "consensus": false,
-        "time": "2026-03-25T22:07:25"
-      },
-      {
         "perplexity": 0.85,
         "claude": 0.85,
         "deepseek": 0.95,
         "consensus": false,
         "time": "2026-03-25T22:07:12"
-      },
-      {
-        "perplexity": 0.05,
-        "claude": 0.05,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-03-25T22:07:00"
       }
     ]
   },
@@ -994,76 +994,76 @@
   ],
   "news": [
     {
+      "text": "National Weather Service forecasts for Miami on March 26 project a high near 83\u00b0F with ample sunshine and high pressure promoting warm, dry conditions[7]. Polymarket prediction market data shows 82-83",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-25T22:24:38"
+    },
+    {
+      "text": "Forecasts for Chicago on March 26, 2026, show max temperatures of 17\u00b0C (63\u00b0F) [2], 55\u00b0F day [3], and monthly averages of 33-44\u00b0F or 1-7\u00b0C [6][7]. AccuWeather daily forecast lists earlier March dates w",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-25T22:24:23"
+    },
+    {
+      "text": "AccuWeather forecast for March 26, 2026 in Chicago shows high of 62\u00b0F[1]. Metcheck forecasts max temp of 17\u00b0C (62.6\u00b0F)[2]. Weathershogun predicts day high of 55\u00b0F[3]. Other sources provide monthly ave",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-25T22:24:11"
+    },
+    {
+      "text": "AccuWeather forecasts 70\u00b0 high for NYC on Mar 26, 2026[1]. Easeweather predicts 20\u00b0C (68\u00b0F) high, partly cloudy[6]. Weather25 shows 64\u00b0 high with mist[3]. Current conditions on Mar 25 at 4:51 PM: 48\u00b0F",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-25T22:23:59"
+    },
+    {
+      "text": "AccuWeather forecast for NYC shows high of 64\u00b0F on Mar 26[3]. Weather25.com reports mist conditions with high of 64\u00b0F/low of 39\u00b0F for Mar 26[3]. Climate-data.org shows broken clouds on Mar 26 with hig",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-25T22:23:48"
+    },
+    {
+      "text": "Today is March 25, 2026, 10 PM UTC in NYC. Latest report at 4:51 PM UTC from KNYC shows temp 48\u00b0F (cold, dew pt 28.9\u00b0F, partly cloudy)[3]. Forecasts for Mar 25: AccuWeather incomplete but recent days ",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-25T22:23:34"
+    },
+    {
+      "text": "Actual high temperature in Austin on March 25, 2026, was 79\u00b0F (26\u00b0C) at 11:53 AM UTC from KAUS airport report, with no later data indicating a rise to 90-91\u00b0F[1]. AccuWeather forecast listed 89\u00b0 high ",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-25T22:23:22"
+    },
+    {
+      "text": "AccuWeather forecasts a high of 69\u00b0F on March 25, 2026, in Chicago, exactly matching the 68-69\u00b0F range[1]. Weathershogun predicts 54\u00b0F daytime high, below the range[4]. Metcheck indicates around 75\u00b0F ",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-25T22:23:09"
+    },
+    {
+      "text": "AccuWeather's monthly forecast for March 2026 in Chicago lists the high temperature on March 25 as exactly 69\u00b0F, matching the market exactly[1]. Metcheck forecast indicates a max temp of 30\u00b0C (86\u00b0F) f",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-25T22:21:46"
+    },
+    {
       "text": "Forecasts for March 26, 2026, in NYC show: easeweather.com predicts partly cloudy with high of 20\u00b0C (68\u00b0F)[6]; weather25.com lists 64\u00b0F high with mist[3]; AccuWeather shows earlier March highs reachin",
       "category": "weather",
       "source": "perplexity",
       "time": "2026-03-25T22:10:36"
-    },
-    {
-      "text": "Current weather in NYC on Mar 25, 2026 (evening): 48-52\u00b0F with partly cloudy skies, dry conditions, light breeze[2][7]. March 2026 historical/climatological data shows cool conditions: typical highs 4",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-25T22:10:24"
-    },
-    {
-      "text": "AccuWeather forecast for March 25, 2026, in NYC shows incomplete data around that date but nearby days like Mar 24 at 53\u00b0 high and Mar 23 at 50\u00b0 high, suggesting mid-50s[1]. YouTube short reports 9\u00b0C ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-25T22:10:12"
-    },
-    {
-      "text": "AccuWeather forecast for Austin on Mar 25, 2026: high of 89\u00b0F (not 90-91\u00b0F)[1]. WeatherSpark reports current conditions on Mar 25 at 10:53 UTC (KAUS station): 79.0\u00b0F, mostly cloudy, SSW winds, no prec",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-25T22:09:59"
-    },
-    {
-      "text": "Multiple weather forecasts for Chicago on March 25, 2026 converge on a high temperature of 69\u00b0F: AccuWeather reports 69\u00b0F[1], WeatherShogun forecasts 54\u00b0F day temperature (likely referring to a differ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-25T22:09:46"
-    },
-    {
-      "text": "Today is March 25, 2026, 10 PM UTC in NYC. Latest weather report at 4:51 PM UTC from KNYC shows temperature at 48.0\u00b0F (cold), with partly cloudy conditions[2]. AccuWeather forecast for Mar 25 lists in",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-25T22:08:10"
-    },
-    {
-      "text": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 29\u00b0F on Mar 26 under sunny conditions, well below 84\u00b0F. Early March shows cold temperatures (7-13\u00b0F h",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-25T22:07:57"
-    },
-    {
-      "text": "AccuWeather forecasts a high of 81\u00b0F for Miami on March 26, 2026[1][8]. Polymarket's related market shows NWS projecting a high near 83\u00b0F, with trader consensus at 42% for 82-83\u00b0F bin and 29% for 80-8",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-25T22:07:42"
-    },
-    {
-      "text": "AccuWeather forecasts 62\u00b0F high for March 26, 2026 in Chicago[1]. Metcheck predicts max temp of 17\u00b0C (63\u00b0F)[2]. Weathershogun shows 55\u00b0F day high[3]. Historical March normals indicate 50.9\u00b0F high for ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-25T22:07:29"
-    },
-    {
-      "text": "AccuWeather's March 2026 forecast for NYC shows daily highs: Mar 25: 44\u00b0, with no specific forecast for Mar 26 listed (forecast cuts off early); Weather25.com lists Mar 26 as mist with high of 64\u00b0F; W",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-25T22:07:18"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "37 errors this session"
+      "message": "39 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 37,
-    "cycles": 21,
-    "uptime_hours": 7.1
+    "errors_24h": 39,
+    "cycles": 22,
+    "uptime_hours": 7.3
   }
 }
