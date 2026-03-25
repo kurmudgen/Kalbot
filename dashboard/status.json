@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T05:12:14.273825+00:00",
+  "updated_at": "2026-03-25T05:23:47.534650+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -33,7 +33,7 @@
       },
       {
         "date": "2026-03-25",
-        "trades": 703,
+        "trades": 753,
         "deployed": 63.53
       }
     ],
@@ -63,7 +63,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.16 vs market=0.04",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6487",
@@ -78,7 +78,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.25 vs market=0.08",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6512",
@@ -93,7 +93,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.35 vs market=0.07",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6537",
@@ -108,7 +108,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.47 vs market=0.10",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6562",
@@ -123,7 +123,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.59 vs market=0.09",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6587",
@@ -138,7 +138,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.70 vs market=0.09",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6612",
@@ -153,7 +153,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.79 vs market=0.09",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6637",
@@ -168,7 +168,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.87 vs market=0.09",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6662",
@@ -183,7 +183,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.92 vs market=0.07",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6687",
@@ -198,7 +198,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.96 vs market=0.05",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6712",
@@ -213,7 +213,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.98 vs market=0.08",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6737",
@@ -228,7 +228,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.99 vs market=0.05",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6762",
@@ -243,7 +243,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.05",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6787",
@@ -258,7 +258,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.02",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6812",
@@ -273,7 +273,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.04",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6837",
@@ -288,7 +288,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.03",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6862",
@@ -303,7 +303,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.02",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6887",
@@ -318,7 +318,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.01",
         "category": "sp500",
-        "time": "2026-03-25T05:10:27"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6912",
@@ -333,7 +333,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.02",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:59"
       },
       {
         "ticker": "KXINX-26MAR27H1600-B6937",
@@ -348,7 +348,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.02",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR27H1600-T6949.9999",
@@ -363,7 +363,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.01",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6237",
@@ -378,7 +378,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6262",
@@ -393,7 +393,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6287",
@@ -408,7 +408,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6312",
@@ -423,7 +423,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6337",
@@ -438,7 +438,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.01 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6362",
@@ -453,7 +453,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.01 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6387",
@@ -468,7 +468,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.03 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6412",
@@ -483,7 +483,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.06 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6437",
@@ -498,7 +498,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.10 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6462",
@@ -513,7 +513,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.16 vs market=0.08",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6512",
@@ -528,7 +528,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.35 vs market=0.07",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6537",
@@ -537,13 +537,13 @@
         "amount": 0.0,
         "probability": 0.4695955851711612,
         "confidence": 0.9,
-        "market_price": 0.09,
-        "price_gap": 0.3795955851711612,
+        "market_price": 0.11,
+        "price_gap": 0.3595955851711612,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.47 vs market=0.09",
+        "reasoning": "VIX=27.0, VRP-adjusted prob=0.47 vs market=0.11",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6562",
@@ -552,13 +552,13 @@
         "amount": 0.0,
         "probability": 0.5882714888557828,
         "confidence": 0.9,
-        "market_price": 0.2,
-        "price_gap": 0.38827148885578283,
+        "market_price": 0.22,
+        "price_gap": 0.36827148885578287,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.59 vs market=0.20",
+        "reasoning": "VIX=27.0, VRP-adjusted prob=0.59 vs market=0.22",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6587",
@@ -567,13 +567,13 @@
         "amount": 0.0,
         "probability": 0.6993347631087112,
         "confidence": 0.9,
-        "market_price": 0.09,
-        "price_gap": 0.6093347631087113,
+        "market_price": 0.11,
+        "price_gap": 0.5893347631087112,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.70 vs market=0.09",
+        "reasoning": "VIX=27.0, VRP-adjusted prob=0.70 vs market=0.11",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6612",
@@ -582,13 +582,13 @@
         "amount": 0.0,
         "probability": 0.794426126045062,
         "confidence": 0.9,
-        "market_price": 0.05,
-        "price_gap": 0.744426126045062,
+        "market_price": 0.15,
+        "price_gap": 0.644426126045062,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.79 vs market=0.05",
+        "reasoning": "VIX=27.0, VRP-adjusted prob=0.79 vs market=0.15",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6637",
@@ -603,7 +603,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.87 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6662",
@@ -618,7 +618,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.92 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6687",
@@ -633,7 +633,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.96 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6712",
@@ -648,7 +648,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.98 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:26"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6737",
@@ -663,7 +663,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.99 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:25"
+        "time": "2026-03-25T05:21:58"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6762",
@@ -678,7 +678,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:25"
+        "time": "2026-03-25T05:21:57"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6787",
@@ -693,7 +693,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:25"
+        "time": "2026-03-25T05:21:57"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6812",
@@ -708,7 +708,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:25"
+        "time": "2026-03-25T05:21:57"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6837",
@@ -723,7 +723,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:25"
+        "time": "2026-03-25T05:21:57"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6862",
@@ -738,7 +738,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:25"
+        "time": "2026-03-25T05:21:57"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6887",
@@ -753,7 +753,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:25"
+        "time": "2026-03-25T05:21:57"
       },
       {
         "ticker": "KXINX-26MAR25H1600-B6912",
@@ -768,7 +768,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
         "category": "sp500",
-        "time": "2026-03-25T05:10:25"
+        "time": "2026-03-25T05:21:57"
       },
       {
         "ticker": "KXINX-26MAR25H1600-T6225",
@@ -783,7 +783,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.31",
         "category": "sp500",
-        "time": "2026-03-25T05:10:25"
+        "time": "2026-03-25T05:21:57"
       },
       {
         "ticker": "KXINX-26MAR25H1600-T6924.9999",
@@ -798,7 +798,7 @@
         "executed": false,
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.31",
         "category": "sp500",
-        "time": "2026-03-25T05:10:25"
+        "time": "2026-03-25T05:21:57"
       }
     ]
   },
@@ -809,7 +809,7 @@
       "deployed": 0.39
     },
     "QUANT": {
-      "trades": 2153,
+      "trades": 2203,
       "executed": 207,
       "deployed": 93.07999999999998
     }
@@ -822,7 +822,7 @@
       },
       "claude": {
         "analyses": 10,
-        "avg_probability": 0.532
+        "avg_probability": 0.492
       },
       "deepseek": {
         "analyses": 10,
@@ -833,45 +833,45 @@
     "recent_votes": [
       {
         "perplexity": null,
-        "claude": 0.25,
+        "claude": 0.12,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T05:12:14"
+        "time": "2026-03-25T05:23:47"
       },
       {
         "perplexity": null,
-        "claude": 0.72,
+        "claude": 0.75,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T05:12:04"
+        "time": "2026-03-25T05:23:37"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T05:11:54"
+        "time": "2026-03-25T05:23:28"
       },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.82,
         "consensus": false,
-        "time": "2026-03-25T05:11:45"
+        "time": "2026-03-25T05:23:18"
       },
       {
         "perplexity": null,
-        "claude": 0.65,
+        "claude": 0.35,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T05:11:34"
+        "time": "2026-03-25T05:23:07"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T05:11:25"
+        "time": "2026-03-25T05:22:56"
       },
       {
         "perplexity": null,
@@ -938,7 +938,7 @@
     {
       "ticker": "KXINX-26MAR25H1600-B6587",
       "title": "Will the S&P 500 be between 6575 and 6599.9999 on Mar 25, 2026 at 4pm EDT?",
-      "price": 11,
+      "price": 17,
       "close_time": "2026-03-25T20:00:00Z",
       "category": "economics"
     },
@@ -1051,7 +1051,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 1,
-    "uptime_hours": 0.1
+    "cycles": 2,
+    "uptime_hours": 0.3
   }
 }
