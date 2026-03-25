@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T00:06:18.521714+00:00",
+  "updated_at": "2026-03-25T00:15:43.694232+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -817,7 +817,7 @@
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.505
+        "avg_probability": 0.5125
       },
       "deepseek": {
         "analyses": 4,
@@ -828,10 +828,10 @@
     "recent_votes": [
       {
         "perplexity": null,
-        "claude": 0.82,
+        "claude": 0.85,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-25T00:06:18"
+        "time": "2026-03-25T00:15:43"
       },
       {
         "perplexity": 0.76,
@@ -870,14 +870,14 @@
     {
       "ticker": "KXINX-26MAR27H1600-T6949.9999",
       "title": "Will the S&P 500 be above 6949.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 3,
+      "price": 1,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR27H1600-T6250",
       "title": "Will the S&P 500 be below 6250 on Mar 27, 2026 at 4pm EDT?",
-      "price": 5,
+      "price": 7,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
@@ -905,14 +905,14 @@
     {
       "ticker": "KXINX-26MAR27H1600-B6862",
       "title": "Will the S&P 500 be between 6850 and 6874.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 1,
+      "price": 2,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
     {
       "ticker": "KXINX-26MAR27H1600-B6837",
       "title": "Will the S&P 500 be between 6825 and 6849.9999 on Mar 27, 2026 at 4pm EDT?",
-      "price": 1,
+      "price": 3,
       "close_time": "2026-03-27T20:00:00Z",
       "category": "economics"
     },
@@ -1003,13 +1003,13 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "7 errors this session"
+      "message": "8 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 7,
-    "cycles": 7,
-    "uptime_hours": 1.0
+    "errors_24h": 8,
+    "cycles": 8,
+    "uptime_hours": 1.2
   }
 }
