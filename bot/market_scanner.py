@@ -121,11 +121,12 @@ def scan_markets(conn: sqlite3.Connection) -> int:
         "KXGAS", "KXTREAS", "KX10Y",
         # Crypto
         "KXBTC",
-        # Weather — city-specific high/low temp
-        "KXHIGHNY", "KXHIGHCH", "KXHIGHMI", "KXHIGHHO", "KXHIGHLA",
-        "KXHIGHDE", "KXHIGHPH", "KXHIGHSE", "KXHIGHAU", "KXHIGHSF",
-        "KXLOWNY", "KXLOWCH", "KXLOWMI", "KXLOWHO", "KXLOWLA",
-        "KXLOWDE", "KXLOWPH", "KXLOWSE",
+        # Weather — city-specific (full city codes, verified working)
+        "KXHIGHNY", "KXHIGHCHI", "KXHIGHMIA", "KXHIGHHOU",
+        "KXHIGHDEN", "KXHIGHAUS", "KXHIGHLA", "KXHIGHPHX",
+        "KXHIGHSEA", "KXHIGHDFW", "KXHIGHPHI",
+        "KXLOWNY", "KXLOWCHI", "KXLOWMIA", "KXLOWHOU",
+        "KXLOWDEN", "KXLOWAUS",
         # TSA
         "TSA", "KXTSA",
     ]
