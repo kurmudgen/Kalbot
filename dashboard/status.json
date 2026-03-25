@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T23:56:45.208143+00:00",
+  "updated_at": "2026-03-25T00:06:18.521714+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -817,7 +817,7 @@
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.5125
+        "avg_probability": 0.505
       },
       "deepseek": {
         "analyses": 4,
@@ -828,10 +828,10 @@
     "recent_votes": [
       {
         "perplexity": null,
-        "claude": 0.85,
+        "claude": 0.82,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-24T23:56:45"
+        "time": "2026-03-25T00:06:18"
       },
       {
         "perplexity": 0.76,
@@ -1003,13 +1003,13 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "6 errors this session"
+      "message": "7 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 6,
-    "cycles": 6,
-    "uptime_hours": 0.9
+    "errors_24h": 7,
+    "cycles": 7,
+    "uptime_hours": 1.0
   }
 }
