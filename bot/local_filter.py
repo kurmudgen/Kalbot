@@ -182,11 +182,24 @@ def run_filter() -> list[dict]:
         category = market["category"]
         market_price = (market.get("last_price") or 50) / 100.0
 
+        # Inject NWS forecast for weather markets (official Kalshi settlement source)
+        nws_context = ""
+        if category == "weather":
+            try:
+                import sys as _sys
+                _sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "data"))
+                from weather_nws_feed import get_city_forecast
+                nws = get_city_forecast(title)
+                if nws:
+                    nws_context = f"\n{nws}"
+            except Exception:
+                pass
+
         prompt = f"""{template}
 
 Market question: "{title}"
 Category: {category}
-Current YES price: {market_price:.2f}
+Current YES price: {market_price:.2f}{nws_context}
 Recent relevant headlines:
 {headline_text}
 """

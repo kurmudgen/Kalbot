@@ -288,6 +288,16 @@ def main():
             except Exception:
                 pass
 
+            # Update NWS weather forecasts (every 6 cycles = ~30 min)
+            if totals["cycles"] % 6 == 0:
+                try:
+                    import sys as _sys2
+                    _sys2.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "data"))
+                    from weather_nws_feed import update_feed
+                    update_feed()
+                except Exception:
+                    pass
+
             # Step 0: Resolve completed trades and track P&L
             try:
                 from resolution_tracker import resolve_trades
