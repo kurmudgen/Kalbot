@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T22:24:47.014107+00:00",
+  "updated_at": "2026-03-25T22:44:26.269628+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -823,88 +823,88 @@
     "models": {
       "perplexity": {
         "analyses": 20,
-        "avg_probability": 0.306
+        "avg_probability": 0.398
       },
       "claude": {
         "analyses": 20,
-        "avg_probability": 0.325
+        "avg_probability": 0.3685
       },
       "deepseek": {
         "analyses": 20,
-        "avg_probability": 0.318
+        "avg_probability": 0.3545
       }
     },
-    "consensus_rate": 0.7,
+    "consensus_rate": 0.65,
     "recent_votes": [
       {
-        "perplexity": 0.05,
-        "claude": 0.02,
-        "deepseek": 0.02,
+        "perplexity": 0.18,
+        "claude": 0.22,
+        "deepseek": 0.18,
+        "consensus": false,
+        "time": "2026-03-25T22:44:26"
+      },
+      {
+        "perplexity": 0.68,
+        "claude": 0.72,
+        "deepseek": 0.75,
         "consensus": true,
-        "time": "2026-03-25T22:24:31"
+        "time": "2026-03-25T22:44:13"
+      },
+      {
+        "perplexity": 0.72,
+        "claude": 0.68,
+        "deepseek": 0.65,
+        "consensus": true,
+        "time": "2026-03-25T22:44:00"
       },
       {
         "perplexity": 0.85,
-        "claude": 0.85,
-        "deepseek": 0.95,
+        "claude": 0.82,
+        "deepseek": 0.82,
         "consensus": true,
-        "time": "2026-03-25T22:24:19"
+        "time": "2026-03-25T22:43:44"
       },
       {
-        "perplexity": 0.15,
-        "claude": 0.15,
-        "deepseek": 0.28,
-        "consensus": false,
-        "time": "2026-03-25T22:24:07"
-      },
-      {
-        "perplexity": 0.08,
-        "claude": 0.05,
-        "deepseek": 0.05,
+        "perplexity": 0.72,
+        "claude": 0.45,
+        "deepseek": 0.35,
         "consensus": true,
-        "time": "2026-03-25T22:23:55"
+        "time": "2026-03-25T22:43:30"
       },
       {
-        "perplexity": 0.05,
-        "claude": 0.85,
-        "deepseek": 0.15,
+        "perplexity": 0.85,
+        "claude": 0.75,
+        "deepseek": 0.45,
         "consensus": true,
-        "time": "2026-03-25T22:23:42"
+        "time": "2026-03-25T22:43:16"
       },
       {
-        "perplexity": 0.05,
-        "claude": 0.0,
-        "deepseek": 0.05,
-        "consensus": true,
-        "time": "2026-03-25T22:23:29"
-      },
-      {
-        "perplexity": 0.35,
-        "claude": 0.12,
-        "deepseek": 0.25,
-        "consensus": false,
-        "time": "2026-03-25T22:23:17"
-      },
-      {
-        "perplexity": 0.02,
-        "claude": 0.02,
-        "deepseek": 0.01,
-        "consensus": true,
-        "time": "2026-03-25T22:08:05"
-      },
-      {
-        "perplexity": 0.25,
+        "perplexity": 0.84,
         "claude": 0.25,
         "deepseek": 0.25,
         "consensus": true,
-        "time": "2026-03-25T22:07:52"
+        "time": "2026-03-25T22:43:01"
       },
       {
-        "perplexity": 0.85,
-        "claude": 0.85,
-        "deepseek": 0.95,
+        "perplexity": 0.12,
+        "claude": 0.15,
+        "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-03-25T22:07:12"
+        "time": "2026-03-25T22:42:49"
+      },
+      {
+        "perplexity": 0.15,
+        "claude": 0.49,
+        "deepseek": 0.45,
+        "consensus": false,
+        "time": "2026-03-25T22:42:37"
+      },
+      {
+        "perplexity": 0.0,
+        "claude": 0.02,
+        "deepseek": 0.02,
+        "consensus": true,
+        "time": "2026-03-25T22:42:25"
       }
     ]
   },
@@ -994,76 +994,76 @@
   ],
   "news": [
     {
-      "text": "National Weather Service forecasts for Miami on March 26 project a high near 83\u00b0F with ample sunshine and high pressure promoting warm, dry conditions[7]. Polymarket prediction market data shows 82-83",
-      "category": "weather",
+      "text": "February 2026 CPI rose 0.3% month-over-month, with 12-month all-items inflation steady at 2.4%; core at 2.5%.[1][5] J.P. Morgan forecasts CPI inflation to rise to 3.5% YoY by Q4 2025, then drift to 2.",
+      "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T22:24:38"
+      "time": "2026-03-25T22:44:18"
     },
     {
-      "text": "Forecasts for Chicago on March 26, 2026, show max temperatures of 17\u00b0C (63\u00b0F) [2], 55\u00b0F day [3], and monthly averages of 33-44\u00b0F or 1-7\u00b0C [6][7]. AccuWeather daily forecast lists earlier March dates w",
-      "category": "weather",
+      "text": "February 2026 CPI rose 0.3% month-over-month (MoM), with all items up 2.4% YoY; shelter, food, and energy drove increases[1][4]. Current market price implies 66% chance of >0.1% MoM CPI in May 2026. R",
+      "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T22:24:23"
+      "time": "2026-03-25T22:44:05"
     },
     {
-      "text": "AccuWeather forecast for March 26, 2026 in Chicago shows high of 62\u00b0F[1]. Metcheck forecasts max temp of 17\u00b0C (62.6\u00b0F)[2]. Weathershogun predicts day high of 55\u00b0F[3]. Other sources provide monthly ave",
-      "category": "weather",
+      "text": "J.P. Morgan forecasts CPI inflation will accelerate to 3.6% year-over-year by June 2026, driven by tariff feedthrough effects and fiscal stimulus[2]. Professional forecasters consensus predicts 2.9% C",
+      "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T22:24:11"
+      "time": "2026-03-25T22:43:51"
     },
     {
-      "text": "AccuWeather forecasts 70\u00b0 high for NYC on Mar 26, 2026[1]. Easeweather predicts 20\u00b0C (68\u00b0F) high, partly cloudy[6]. Weather25 shows 64\u00b0 high with mist[3]. Current conditions on Mar 25 at 4:51 PM: 48\u00b0F",
-      "category": "weather",
+      "text": "February 2026 CPI rose 0.3% month-over-month (MoM), with YoY at 2.4%[1][5]. Prediction markets (OctagonAI, Kalshi) expect June 2026 CPI MoM at exactly 0.3% (16-17% probability each for 0.2% and 0.3%),",
+      "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T22:23:59"
+      "time": "2026-03-25T22:43:35"
     },
     {
-      "text": "AccuWeather forecast for NYC shows high of 64\u00b0F on Mar 26[3]. Weather25.com reports mist conditions with high of 64\u00b0F/low of 39\u00b0F for Mar 26[3]. Climate-data.org shows broken clouds on Mar 26 with hig",
-      "category": "weather",
+      "text": "February 2026 CPI rose 0.3% month-over-month (MoM), matching the market threshold, with shelter (+0.2%), food (+0.4%), and energy (+0.6%) driving increases; core CPI +0.2% MoM and 2.5% YoY[1][4]. Kals",
+      "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T22:23:48"
+      "time": "2026-03-25T22:43:22"
     },
     {
-      "text": "Today is March 25, 2026, 10 PM UTC in NYC. Latest report at 4:51 PM UTC from KNYC shows temp 48\u00b0F (cold, dew pt 28.9\u00b0F, partly cloudy)[3]. Forecasts for Mar 25: AccuWeather incomplete but recent days ",
-      "category": "weather",
+      "text": "February 2026 CPI rose 0.3% month-over-month, with 12-month rate at 2.4%; March data releases April 10[2]. FOMC March 2026 projections raised 2026 PCE inflation to 2.7% (from 2.4%), core to 2.7% end-2",
+      "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-25T22:23:34"
+      "time": "2026-03-25T22:43:07"
     },
     {
-      "text": "Actual high temperature in Austin on March 25, 2026, was 79\u00b0F (26\u00b0C) at 11:53 AM UTC from KAUS airport report, with no later data indicating a rise to 90-91\u00b0F[1]. AccuWeather forecast listed 89\u00b0 high ",
+      "text": "AccuWeather forecast for Denver on March 26, 2026, shows a high of 83\u00b0F, well above 77\u00b0F[1]. Recent weather pattern indicates a heatwave, with Denver reaching 90\u00b0F on March 25 and setting March record",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T22:23:22"
+      "time": "2026-03-25T22:42:53"
     },
     {
-      "text": "AccuWeather forecasts a high of 69\u00b0F on March 25, 2026, in Chicago, exactly matching the 68-69\u00b0F range[1]. Weathershogun predicts 54\u00b0F daytime high, below the range[4]. Metcheck indicates around 75\u00b0F ",
+      "text": "AccuWeather's specific forecast for March 26, 2026, in Austin shows a high of 91\u00b0F, outside the 88-89\u00b0F range[1]. Current weather on March 25 at 79\u00b0F with mostly cloudy conditions and SSW winds[2]. Ot",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T22:23:09"
+      "time": "2026-03-25T22:42:41"
     },
     {
-      "text": "AccuWeather's monthly forecast for March 2026 in Chicago lists the high temperature on March 25 as exactly 69\u00b0F, matching the market exactly[1]. Metcheck forecast indicates a max temp of 30\u00b0C (86\u00b0F) f",
+      "text": "AccuWeather forecast for March 26, 2026, in Austin shows a high of 88\u00b0F, exactly at the threshold[1]. No other sources provide specific daily forecasts for March 26, 2026; general March averages indic",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T22:21:46"
+      "time": "2026-03-25T22:42:29"
     },
     {
-      "text": "Forecasts for March 26, 2026, in NYC show: easeweather.com predicts partly cloudy with high of 20\u00b0C (68\u00b0F)[6]; weather25.com lists 64\u00b0F high with mist[3]; AccuWeather shows earlier March highs reachin",
+      "text": "EaseWeather provides a detailed day-by-day forecast for Denver in March 2026, showing March 26 as Sunny with high temperature of 29\u00b0F (equivalent to -1.7\u00b0C) and low of 10\u00b0F (-12.2\u00b0C), with 0 mm rain a",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-25T22:10:36"
+      "time": "2026-03-25T22:42:17"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "39 errors this session"
+      "message": "41 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 39,
-    "cycles": 22,
-    "uptime_hours": 7.3
+    "errors_24h": 41,
+    "cycles": 23,
+    "uptime_hours": 7.7
   }
 }
