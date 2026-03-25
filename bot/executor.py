@@ -134,6 +134,9 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
     open_positions = get_open_positions(conn)
     tonight_spend = get_tonight_spend(conn, session_id)
 
+    # Track events traded in THIS batch to prevent bracket flooding
+    _traded_events_this_batch = set()
+
     trades = []
     print(f"Executor mode: {mode}")
     print(f"Tonight spend so far: ${tonight_spend:.2f} / ${config['max_nightly_spend']:.2f}")
@@ -174,9 +177,13 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         # Bracket deduplication — one trade per underlying event
         if not skip_reason:
             try:
-                from bracket_guard import already_traded_event
-                if already_traded_event(ticker, title, session_id):
-                    skip_reason = "already traded this event (bracket dedup)"
+                from bracket_guard import extract_event_key, already_traded_event
+                event_key = extract_event_key(ticker, title)
+                # Check against both DB history AND current batch
+                if event_key in _traded_events_this_batch:
+                    skip_reason = "bracket dedup (same batch)"
+                elif already_traded_event(ticker, title, session_id):
+                    skip_reason = "bracket dedup (prior session)"
             except Exception:
                 pass
 
@@ -279,6 +286,12 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
 
         if config["paper_trade"]:
             executed = True
+            # Track this event in the batch to prevent bracket flooding
+            try:
+                from bracket_guard import extract_event_key
+                _traded_events_this_batch.add(extract_event_key(ticker, title))
+            except Exception:
+                pass
             print(f"  PAPER TRADE: {side} ${amount:.2f} on {title[:50]}...")
             try:
                 from telegram_alerts import trade_alert
