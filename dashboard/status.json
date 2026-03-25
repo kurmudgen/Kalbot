@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T14:16:47.004522+00:00",
+  "updated_at": "2026-03-25T14:35:13.598271+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -33,7 +33,7 @@
       },
       {
         "date": "2026-03-25",
-        "trades": 1057,
+        "trades": 1058,
         "deployed": 63.53
       }
     ],
@@ -47,9 +47,24 @@
   },
   "trades": {
     "total": 50,
-    "executed": 6,
-    "skipped": 44,
+    "executed": 7,
+    "skipped": 43,
     "recent": [
+      {
+        "ticker": "KXFED-26SEP-T3.75",
+        "title": "",
+        "side": "YES_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.36,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.41/contract (178%)",
+        "category": "",
+        "time": "2026-03-25T14:26:31"
+      },
       {
         "ticker": "KXFED-27APR-T1.00",
         "title": "",
@@ -784,21 +799,6 @@
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
         "category": "sp500",
         "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6837",
-        "title": "Will the S&P 500 be between 6825 and 6849.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.499,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
       }
     ]
   },
@@ -822,11 +822,11 @@
       },
       "claude": {
         "analyses": 20,
-        "avg_probability": 0.2325
+        "avg_probability": 0.2505
       },
       "deepseek": {
         "analyses": 20,
-        "avg_probability": 0.3025
+        "avg_probability": 0.3055
       }
     },
     "consensus_rate": 0.0,
@@ -836,78 +836,78 @@
         "claude": 0.12,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T14:16:46"
+        "time": "2026-03-25T14:35:13"
       },
       {
         "perplexity": null,
         "claude": 0.75,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T14:16:36"
+        "time": "2026-03-25T14:35:02"
       },
       {
         "perplexity": null,
-        "claude": 0.45,
+        "claude": 0.65,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T14:16:26"
+        "time": "2026-03-25T14:34:51"
       },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.82,
         "consensus": false,
-        "time": "2026-03-25T14:16:16"
+        "time": "2026-03-25T14:34:40"
       },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T14:16:04"
+        "time": "2026-03-25T14:34:28"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T14:15:55"
+        "time": "2026-03-25T14:34:17"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.25,
+        "deepseek": 0.18,
+        "consensus": false,
+        "time": "2026-03-25T14:34:07"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.17,
         "consensus": false,
-        "time": "2026-03-25T14:15:44"
+        "time": "2026-03-25T14:33:56"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-03-25T14:15:34"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.12,
-        "deepseek": 0.12,
-        "consensus": false,
-        "time": "2026-03-25T14:15:24"
+        "time": "2026-03-25T14:33:44"
       },
       {
         "perplexity": null,
         "claude": 0.08,
-        "deepseek": 0.08,
+        "deepseek": 0.12,
         "consensus": false,
-        "time": "2026-03-25T14:15:13"
+        "time": "2026-03-25T14:33:34"
       }
     ]
   },
   "scanner": {
     "total_markets": 1944,
-    "with_prices": 1169,
-    "passed_filter": 20,
-    "total_scored": 325,
+    "with_prices": 1176,
+    "passed_filter": 21,
+    "total_scored": 329,
     "categories": {
       "economics": 1060,
       "inflation": 173,
@@ -1053,7 +1053,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 25,
-    "uptime_hours": 5.8
+    "cycles": 26,
+    "uptime_hours": 6.1
   }
 }
