@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T09:30:12.005328+00:00",
+  "updated_at": "2026-03-25T09:59:08.611274+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -33,7 +33,7 @@
       },
       {
         "date": "2026-03-25",
-        "trades": 1053,
+        "trades": 1056,
         "deployed": 63.53
       }
     ],
@@ -47,9 +47,54 @@
   },
   "trades": {
     "total": 50,
-    "executed": 2,
-    "skipped": 48,
+    "executed": 5,
+    "skipped": 45,
     "recent": [
+      {
+        "ticker": "KXFED-27APR-T3.50",
+        "title": "",
+        "side": "YES_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.07,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.43/contract (86%)",
+        "category": "",
+        "time": "2026-03-25T09:54:55"
+      },
+      {
+        "ticker": "KXFED-27APR-T3.25",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.92,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 83% of max gain captured ($0.38/contract)",
+        "category": "",
+        "time": "2026-03-25T09:54:55"
+      },
+      {
+        "ticker": "KXFED-27APR-T2.75",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.94,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 86% of max gain captured ($0.38/contract)",
+        "category": "",
+        "time": "2026-03-25T09:54:55"
+      },
       {
         "ticker": "KXFED-27APR-T1.50",
         "title": "",
@@ -754,51 +799,6 @@
         "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
         "category": "sp500",
         "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6887",
-        "title": "Will the S&P 500 be between 6875 and 6899.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.499,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-B6912",
-        "title": "Will the S&P 500 be between 6900 and 6924.9999 on Mar 25, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.999,
-        "confidence": 0.9,
-        "market_price": 0.5,
-        "price_gap": 0.499,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=1.00 vs market=0.50",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
-      },
-      {
-        "ticker": "KXINX-26MAR25H1600-T6225",
-        "title": "Will the S&P 500 be below 6225 on Mar 25, 2026 at 4pm EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.001,
-        "confidence": 0.9900000000000001,
-        "market_price": 0.31,
-        "price_gap": 0.309,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=27.0, VRP-adjusted prob=0.00 vs market=0.31",
-        "category": "sp500",
-        "time": "2026-03-25T06:31:34"
       }
     ]
   },
@@ -826,7 +826,7 @@
       },
       "deepseek": {
         "analyses": 13,
-        "avg_probability": 0.4730769230769231
+        "avg_probability": 0.4707692307692308
       }
     },
     "consensus_rate": 0.3076923076923077,
@@ -836,63 +836,63 @@
         "claude": 0.12,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-25T09:30:11"
+        "time": "2026-03-25T09:59:08"
       },
       {
         "perplexity": null,
-        "claude": 0.72,
+        "claude": 0.75,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T09:30:02"
+        "time": "2026-03-25T09:58:58"
       },
       {
         "perplexity": null,
-        "claude": 0.65,
+        "claude": 0.58,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-25T09:29:52"
+        "time": "2026-03-25T09:58:48"
       },
       {
         "perplexity": null,
         "claude": 0.85,
         "deepseek": 0.82,
         "consensus": false,
-        "time": "2026-03-25T09:29:42"
+        "time": "2026-03-25T09:58:37"
       },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T09:29:31"
+        "time": "2026-03-25T09:58:25"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-25T09:29:21"
+        "time": "2026-03-25T09:58:16"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-03-25T09:29:11"
+        "time": "2026-03-25T09:58:05"
       },
       {
         "perplexity": null,
         "claude": 0.12,
-        "deepseek": 0.35,
+        "deepseek": 0.32,
         "consensus": false,
-        "time": "2026-03-25T09:29:01"
+        "time": "2026-03-25T09:57:54"
       },
       {
         "perplexity": null,
-        "claude": 0.08,
+        "claude": 0.12,
         "deepseek": 0.12,
         "consensus": false,
-        "time": "2026-03-25T09:28:51"
+        "time": "2026-03-25T09:57:43"
       },
       {
         "perplexity": null,
@@ -904,7 +904,7 @@
     ]
   },
   "scanner": {
-    "total_markets": 1914,
+    "total_markets": 1944,
     "with_prices": 1148,
     "passed_filter": 9,
     "total_scored": 303,
@@ -912,7 +912,7 @@
       "economics": 1060,
       "inflation": 173,
       "tsa": 81,
-      "weather": 600
+      "weather": 630
     }
   },
   "sniper_markets": [
@@ -1053,7 +1053,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 5,
-    "uptime_hours": 1.1
+    "cycles": 7,
+    "uptime_hours": 1.5
   }
 }
