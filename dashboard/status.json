@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T00:34:49.128662+00:00",
+  "updated_at": "2026-03-25T00:44:16.486062+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -30,6 +30,11 @@
         "date": "2026-03-24",
         "trades": 1521,
         "deployed": 29.549999999999997
+      },
+      {
+        "date": "2026-03-25",
+        "trades": 1,
+        "deployed": 0
       }
     ],
     "resolved": {
@@ -45,6 +50,21 @@
     "executed": 1,
     "skipped": 49,
     "recent": [
+      {
+        "ticker": "KXCPI-26JUN-T0.0",
+        "title": "Will CPI rise more than 0.0% in June 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8074414858018797,
+        "confidence": 0.8487837837837838,
+        "market_price": 0.74,
+        "price_gap": 0.0674414858018797,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.\n\n\nRecent research findings:\n- [inflation] Market and model forecasts expect CPI month-over-month in June 2026 at exactly 0.3%, with no mispricing evidence; recent CPI ",
+        "category": "inflation",
+        "time": "2026-03-25T00:44:16"
+      },
       {
         "ticker": "KXCPI-26APR-T0.0",
         "title": "",
@@ -779,27 +799,12 @@
         "reasoning": "VIX=26.8, VRP-adjusted prob=0.88 vs market=0.10",
         "category": "sp500",
         "time": "2026-03-24T19:55:25"
-      },
-      {
-        "ticker": "KXINX-26MAR27H1600-B6662",
-        "title": "Will the S&P 500 be between 6650 and 6674.9999 on Mar 27, 2026 at 4pm EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9283303940888603,
-        "confidence": 0.9,
-        "market_price": 0.08,
-        "price_gap": 0.8483303940888604,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "VIX=26.8, VRP-adjusted prob=0.93 vs market=0.08",
-        "category": "sp500",
-        "time": "2026-03-24T19:55:25"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 166,
+      "trades": 167,
       "executed": 1,
       "deployed": 0.39
     },
@@ -817,7 +822,7 @@
       },
       "claude": {
         "analyses": 4,
-        "avg_probability": 0.5125
+        "avg_probability": 0.505
       },
       "deepseek": {
         "analyses": 4,
@@ -828,10 +833,10 @@
     "recent_votes": [
       {
         "perplexity": null,
-        "claude": 0.85,
+        "claude": 0.82,
         "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-25T00:34:49"
+        "time": "2026-03-25T00:44:16"
       },
       {
         "perplexity": 0.76,
@@ -1009,7 +1014,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 10,
-    "cycles": 10,
-    "uptime_hours": 1.5
+    "cycles": 11,
+    "uptime_hours": 1.7
   }
 }
