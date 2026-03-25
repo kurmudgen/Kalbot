@@ -61,8 +61,10 @@ STRATEGIES = {
 }
 
 # Quantitative strategies (these have their own analysis modules)
+# SP500 DISABLED — 0/22 win rate on first resolution, confidence not calibrated
+# Re-enable only after proving edge on paper with bracket dedup active
 QUANT_STRATEGIES = {
-    "SP500": {"module": "sp500_strategy", "func": "analyze_sp500_markets"},
+    # "SP500": {"module": "sp500_strategy", "func": "analyze_sp500_markets"},
     "ECON": {"module": "econ_strategy", "func": "analyze_econ_markets"},
     "BITCOIN": {"module": "bitcoin_strategy", "func": "analyze_btc_markets"},
     "TREASURY": {"module": "treasury_strategy", "func": "analyze_treasury_markets"},
