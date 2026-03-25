@@ -135,7 +135,18 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
     tonight_spend = get_tonight_spend(conn, session_id)
 
     # Track events traded in THIS batch to prevent bracket flooding
+    # Pre-populate from any trades already in DB for this session (crash recovery)
     _traded_events_this_batch = set()
+    try:
+        from bracket_guard import extract_event_key
+        existing = conn.execute(
+            "SELECT ticker, title FROM decisions WHERE executed = 1 AND session_id = ?",
+            (session_id,),
+        ).fetchall()
+        for row in existing:
+            _traded_events_this_batch.add(extract_event_key(row[0], row[1] or ""))
+    except Exception:
+        pass
 
     trades = []
     print(f"Executor mode: {mode}")

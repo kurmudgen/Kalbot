@@ -7,11 +7,20 @@ Both share the same Kalshi account and respect a combined spending limit.
 """
 
 import os
+import signal
 import sqlite3
 import sys
 import time
 import traceback
 from datetime import datetime, timezone
+
+
+# Graceful shutdown — close DB connections before exit
+def _graceful_shutdown(sig, frame):
+    print("\nGraceful shutdown...")
+    sys.exit(0)
+
+signal.signal(signal.SIGTERM, _graceful_shutdown)
 
 from dotenv import load_dotenv
 
