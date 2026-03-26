@@ -407,13 +407,13 @@ def analyze_market_ensemble(market: dict) -> dict | None:
             "escalation_tier": "local_only",
         }
 
-    # ── TIER 2: Gemini only ──
+    # ── TIER 2: Gemini Fast (unlimited daily, cheapest) ──
     gemini_result = None
     try:
-        from ensemble_gemini import call_gemini
+        from ensemble_gemini import call_gemini, call_gemini_quality
         from api_cache import get_cached, store_cached, check_daily_budget
 
-        # Cache check
+        # Cache check for fast model
         cached_raw = get_cached("gemini", title)
         if cached_raw:
             gemini_result = _parse_json(cached_raw)
@@ -435,8 +435,8 @@ def analyze_market_ensemble(market: dict) -> dict | None:
         g_prob = gemini_result.get("probability", 0.5)
         g_conf = gemini_result.get("confidence", 0.5)
 
-        # If Gemini is confident and agrees with local model, accept
-        if g_conf > 0.75 and abs(g_prob - local_prob) < 0.15:
+        # Fast model conf > 0.80 and agrees with local -> accept, done
+        if g_conf > 0.80 and abs(g_prob - local_prob) < 0.15:
             avg_prob = (g_prob + local_prob) / 2
             avg_conf = (g_conf + local_conf) / 2
             return {
@@ -450,13 +450,56 @@ def analyze_market_ensemble(market: dict) -> dict | None:
                     "dampened_edge": avg_prob - market_price,
                     "weights_used": {"local": 0.4, "gemini": 0.6},
                 },
-                "research": "Gemini-only tier: agrees with local model.",
+                "research": "Gemini-fast tier: high confidence, agrees with local.",
                 "estimates": [
                     {"probability": local_prob, "confidence": local_conf, "_provider": "local"},
                     gemini_result,
                 ],
-                "escalation_tier": "gemini_only",
+                "escalation_tier": "gemini_fast_only",
             }
+
+        # Fast model conf 0.65-0.80 -> escalate to Gemini quality model
+        if 0.65 <= g_conf <= 0.80:
+            try:
+                quality_prompt = EVALUATE_PROMPT.format(
+                    title=title, category=category,
+                    market_price=market_price,
+                    research="Use your general knowledge. Provide a careful analysis.",
+                )
+                gemini_quality = call_gemini_quality(quality_prompt)
+                if gemini_quality:
+                    q_prob = gemini_quality.get("probability", 0.5)
+                    q_conf = gemini_quality.get("confidence", 0.5)
+
+                    # Quality model agrees with fast within 0.10 -> accept average
+                    if abs(q_prob - g_prob) < 0.10:
+                        avg_prob = (q_prob + g_prob + local_prob) / 3
+                        avg_conf = (q_conf + g_conf + local_conf) / 3
+                        return {
+                            "perplexity": None, "claude": None, "deepseek": None,
+                            "gemini": gemini_quality,
+                            "consensus": {
+                                "probability": avg_prob,
+                                "confidence": avg_conf,
+                                "providers": ["local", "gemini_fast", "gemini_quality"],
+                                "individual_probs": [local_prob, g_prob, q_prob],
+                                "spread": max(local_prob, g_prob, q_prob) - min(local_prob, g_prob, q_prob),
+                                "dampened_edge": avg_prob - market_price,
+                                "weights_used": {"local": 0.3, "gemini_fast": 0.3, "gemini_quality": 0.4},
+                            },
+                            "research": "Gemini-dual tier: quality confirmed fast model.",
+                            "estimates": [
+                                {"probability": local_prob, "confidence": local_conf, "_provider": "local"},
+                                gemini_result,
+                                gemini_quality,
+                            ],
+                            "escalation_tier": "gemini_dual",
+                        }
+                    # Quality model disagrees -> fall through to DeepSeek (Tier 3)
+            except Exception:
+                pass
+
+        # Fast model conf < 0.65 OR quality disagreed -> fall through to DeepSeek
 
     # ── TIER 3: Gemini + DeepSeek ──
     # Build research context for evaluation
