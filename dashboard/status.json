@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T18:59:45.925927+00:00",
+  "updated_at": "2026-03-26T19:11:51.256958+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-26T18:59:45.925927+00:00",
+    "last_updated": "2026-03-26T19:11:51.256958+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -855,70 +855,70 @@
         "claude": 0.15,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-26T18:58:55"
+        "time": "2026-03-26T19:11:05"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-26T18:58:53"
+        "time": "2026-03-26T19:11:03"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-26T18:58:51"
+        "time": "2026-03-26T19:11:01"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-26T18:58:49"
+        "time": "2026-03-26T19:10:59"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.75,
         "consensus": true,
-        "time": "2026-03-26T18:58:47"
+        "time": "2026-03-26T19:10:57"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-26T18:58:45"
+        "time": "2026-03-26T19:10:55"
       },
       {
         "perplexity": null,
         "claude": 0.75,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-26T18:58:43"
+        "time": "2026-03-26T19:10:53"
       },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-26T18:58:41"
+        "time": "2026-03-26T19:10:51"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-26T18:58:41"
+        "time": "2026-03-26T19:10:51"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-26T18:58:39"
+        "time": "2026-03-26T19:10:47"
       }
     ]
   },
@@ -1072,14 +1072,14 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "8 API retries this session",
-      "detail": "8 non-fatal exceptions across 2 cycles (~4.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "12 API retries this session",
+      "detail": "12 non-fatal exceptions across 3 cycles (~4.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 8,
-    "cycles": 2,
-    "uptime_hours": 0.9
+    "errors_24h": 12,
+    "cycles": 3,
+    "uptime_hours": 1.1
   }
 }
