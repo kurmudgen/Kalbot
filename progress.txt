@@ -246,6 +246,22 @@ Estimated cost reduction:
   After: ~$5-10/day (cache hits + Perplexity gate + budget caps)
 
 ================================================================
+PHASE 2: TIERED ESCALATION — 2026-03-26
+================================================================
+
+Gemini verified: gemini-2.5-flash-lite working (2.0-flash deprecated for new users)
+
+5-tier pipeline in ensemble_analyst.py:
+  Tier 1 (local_only): conf>0.92 + prob extreme -> skip all cloud. $0/market.
+  Tier 2 (gemini_only): Gemini agrees with local within 0.15 -> skip Claude/DS.
+  Tier 3 (gemini_deepseek): Gemini+DS agree within 0.10 -> skip Claude.
+  Tier 4 (full_ensemble): Claude tiebreaker when Gemini/DS disagree.
+  Tier 5 (full_research): + Perplexity for live-data categories, borderline conf.
+
+Each tier only fires if previous couldn't resolve. All calls cached.
+execution_tier logged per market for cost tracking.
+
+================================================================
 TO CHECK STATUS: ask Claude "status"
 TO KILL: create S:\kalbot\STOP
 TO DEPLOY DASHBOARD: cd S:\kalbot\dashboard && npx vercel --prod

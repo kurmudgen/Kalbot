@@ -371,12 +371,15 @@ def check_consensus(estimates: list[dict], market_price: float,
 
 
 def analyze_market_ensemble(market: dict) -> dict | None:
-    """Run the full ensemble pipeline on a single market.
+    """Tiered ensemble escalation pipeline.
 
-    Perplexity priority gate: only called for time-sensitive categories
-    (weather, tsa) when local model shows strong signal. Otherwise
-    Claude + DeepSeek evaluate using pooled research context.
-    All calls are cached — repeated markets within TTL window get instant results.
+    Tier 1: Local-only fast path (conf>0.92, prob extreme) -> skip all cloud
+    Tier 2: Gemini only (agrees with local within 0.15) -> skip Claude/DeepSeek
+    Tier 3: Gemini + DeepSeek (agree within 0.10) -> skip Claude
+    Tier 4: Full ensemble (Gemini + DeepSeek + Claude tiebreaker)
+    Tier 5: Full research (+ Perplexity for live-data categories)
+
+    All calls are cached. Each tier only fires if the previous tier couldn't resolve.
     """
     title = market["title"]
     category = market["category"]
@@ -385,65 +388,158 @@ def analyze_market_ensemble(market: dict) -> dict | None:
     local_prob = market.get("model_probability", 0.5)
     price_gap = abs(local_prob - market_price)
 
-    research_text = ""
-    estimates = []
-    pplx_result = None
-    escalation_tier = "claude_deepseek"
+    # ── TIER 1: Fast path — local model is extremely confident ──
+    if local_conf > 0.92 and (local_prob < 0.08 or local_prob > 0.92):
+        # Obvious market — local model alone is sufficient
+        return {
+            "perplexity": None, "claude": None, "deepseek": None, "gemini": None,
+            "consensus": {
+                "probability": local_prob,
+                "confidence": local_conf,
+                "providers": ["local"],
+                "individual_probs": [local_prob],
+                "spread": 0,
+                "dampened_edge": local_prob - market_price,
+                "weights_used": {"local": 1.0},
+            },
+            "research": "Fast path: local model high confidence on obvious market.",
+            "estimates": [{"probability": local_prob, "confidence": local_conf, "_provider": "local"}],
+            "escalation_tier": "local_only",
+        }
 
-    # Perplexity priority gate: only for live-data categories with strong signal
-    if needs_perplexity(category, local_conf, price_gap):
-        research_prompt = RESEARCH_PROMPT.format(
-            title=title, category=category, market_price=market_price,
-        )
-        pplx_result = call_perplexity(research_prompt, title=title)
+    # ── TIER 2: Gemini only ──
+    gemini_result = None
+    try:
+        from ensemble_gemini import call_gemini
+        from api_cache import get_cached, store_cached, check_daily_budget
 
-        if pplx_result:
-            research_text = pplx_result.get("research", pplx_result.get("reasoning", ""))
-            estimates.append(pplx_result)
-            escalation_tier = "full_ensemble"
+        # Cache check
+        cached_raw = get_cached("gemini", title)
+        if cached_raw:
+            gemini_result = _parse_json(cached_raw)
+            if gemini_result:
+                gemini_result["_provider"] = "gemini"
+                gemini_result["_cached"] = True
+        elif check_daily_budget("gemini"):
+            eval_prompt = EVALUATE_PROMPT.format(
+                title=title, category=category,
+                market_price=market_price, research="Use your general knowledge.",
+            )
+            gemini_result = call_gemini(eval_prompt)
+            if gemini_result:
+                store_cached("gemini", title, json.dumps(gemini_result))
+    except Exception as e:
+        print(f"    Gemini tier error: {e}")
 
-            try:
-                from news_pool import store_research
-                store_research(title, category, research_text, "perplexity")
-            except Exception:
-                pass
+    if gemini_result:
+        g_prob = gemini_result.get("probability", 0.5)
+        g_conf = gemini_result.get("confidence", 0.5)
 
-    if not research_text:
-        research_text = "No real-time research available."
+        # If Gemini is confident and agrees with local model, accept
+        if g_conf > 0.75 and abs(g_prob - local_prob) < 0.15:
+            avg_prob = (g_prob + local_prob) / 2
+            avg_conf = (g_conf + local_conf) / 2
+            return {
+                "perplexity": None, "claude": None, "deepseek": None, "gemini": gemini_result,
+                "consensus": {
+                    "probability": avg_prob,
+                    "confidence": avg_conf,
+                    "providers": ["local", "gemini"],
+                    "individual_probs": [local_prob, g_prob],
+                    "spread": abs(g_prob - local_prob),
+                    "dampened_edge": avg_prob - market_price,
+                    "weights_used": {"local": 0.4, "gemini": 0.6},
+                },
+                "research": "Gemini-only tier: agrees with local model.",
+                "estimates": [
+                    {"probability": local_prob, "confidence": local_conf, "_provider": "local"},
+                    gemini_result,
+                ],
+                "escalation_tier": "gemini_only",
+            }
 
-    # Inject recent pooled research as additional context
+    # ── TIER 3: Gemini + DeepSeek ──
+    # Build research context for evaluation
+    research_text = "No real-time research available."
     try:
         from news_pool import format_context
         pooled = format_context(category)
         if pooled:
-            research_text += "\n\n" + pooled
+            research_text = pooled
     except Exception:
         pass
 
-    # Claude and DeepSeek evaluate independently
     eval_prompt = EVALUATE_PROMPT.format(
         title=title, category=category,
         market_price=market_price, research=research_text,
     )
 
+    deepseek_result = call_deepseek(eval_prompt, title=title)
+
+    if gemini_result and deepseek_result:
+        g_prob = gemini_result.get("probability", 0.5)
+        d_prob = deepseek_result.get("probability", 0.5)
+
+        # If Gemini and DeepSeek agree within 0.10, accept their average
+        if abs(g_prob - d_prob) < 0.10:
+            estimates = [gemini_result, deepseek_result]
+            consensus = check_consensus(estimates, market_price, category=category, title=title)
+            if consensus:
+                return {
+                    "perplexity": None, "claude": None,
+                    "deepseek": deepseek_result, "gemini": gemini_result,
+                    "consensus": consensus,
+                    "research": research_text,
+                    "estimates": estimates,
+                    "escalation_tier": "gemini_deepseek",
+                }
+
+    # ── TIER 4: Full ensemble (+ Claude tiebreaker) ──
     claude_result = call_claude(eval_prompt, title=title)
+
+    estimates = []
+    if gemini_result:
+        estimates.append(gemini_result)
+    if deepseek_result:
+        estimates.append(deepseek_result)
     if claude_result:
         estimates.append(claude_result)
 
-    deepseek_result = call_deepseek(eval_prompt, title=title)
-    if deepseek_result:
-        estimates.append(deepseek_result)
+    pplx_result = None
+    escalation_tier = "full_ensemble"
+
+    # ── TIER 5: Full research (+ Perplexity) ──
+    # Only for live-data categories with borderline confidence across all models
+    if needs_perplexity(category, local_conf, price_gap):
+        all_confs = [e.get("confidence", 0.5) for e in estimates]
+        all_borderline = all(0.65 <= c <= 0.80 for c in all_confs) if all_confs else False
+
+        if all_borderline:
+            research_prompt = RESEARCH_PROMPT.format(
+                title=title, category=category, market_price=market_price,
+            )
+            pplx_result = call_perplexity(research_prompt, title=title)
+            if pplx_result:
+                research_text = pplx_result.get("research", pplx_result.get("reasoning", ""))
+                estimates.append(pplx_result)
+                escalation_tier = "full_research"
+
+                try:
+                    from news_pool import store_research
+                    store_research(title, category, research_text, "perplexity")
+                except Exception:
+                    pass
 
     if len(estimates) < MIN_MODELS_REQUIRED:
         return None
 
-    # Check consensus with adaptive weighting + calibration
     consensus = check_consensus(estimates, market_price, category=category, title=title)
 
     return {
         "perplexity": pplx_result,
         "claude": claude_result,
         "deepseek": deepseek_result,
+        "gemini": gemini_result,
         "consensus": consensus,
         "research": research_text,
         "estimates": estimates,
@@ -463,7 +559,10 @@ def analyze_markets(markets: list[dict] | None = None) -> list[dict]:
     conn = init_analyst_db()
     analyzed = []
 
-    print(f"Ensemble analysis: {len(markets)} markets (Perplexity -> Claude + DeepSeek)")
+    print(f"Tiered ensemble: {len(markets)} markets (local -> gemini -> deepseek -> claude -> perplexity)")
+
+    tier_counts = {"local_only": 0, "gemini_only": 0, "gemini_deepseek": 0,
+                   "full_ensemble": 0, "full_research": 0, "skip": 0}
 
     for i, m in enumerate(markets):
         ticker = m["ticker"]
@@ -479,17 +578,24 @@ def analyze_markets(markets: list[dict] | None = None) -> list[dict]:
 
         if result is None:
             print("  SKIP (insufficient model responses)")
+            tier_counts["skip"] += 1
             continue
+
+        tier = result.get("escalation_tier", "unknown")
+        tier_counts[tier] = tier_counts.get(tier, 0) + 1
 
         # Log individual estimates
         for est in result["estimates"]:
             provider = est.get("_provider", "?")
-            print(f"  {provider}: prob={est['probability']:.2f} conf={est['confidence']:.2f}")
+            cached = " (cached)" if est.get("_cached") else ""
+            print(f"  {provider}: prob={est['probability']:.2f} conf={est['confidence']:.2f}{cached}")
+        print(f"  TIER: {tier}")
 
         # Store ensemble details
         pplx = result.get("perplexity") or {}
         claude = result.get("claude") or {}
         ds = result.get("deepseek") or {}
+        gem = result.get("gemini") or {}
 
         conn.execute(
             """INSERT OR REPLACE INTO ensemble_details
@@ -538,6 +644,7 @@ def analyze_markets(markets: list[dict] | None = None) -> list[dict]:
                 "market_price": market_price,
                 "price_gap": price_gap,
                 "cloud_reasoning": reasoning,
+                "execution_tier": tier,
             })
         else:
             print("  NO CONSENSUS — skipping")
@@ -546,6 +653,7 @@ def analyze_markets(markets: list[dict] | None = None) -> list[dict]:
 
     conn.close()
     print(f"\n{len(analyzed)}/{len(markets)} markets reached consensus")
+    print(f"Tier distribution: {' | '.join(f'{k}:{v}' for k, v in tier_counts.items() if v > 0)}")
     return analyzed
 
 
