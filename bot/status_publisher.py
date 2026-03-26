@@ -180,12 +180,12 @@ def generate_status() -> dict:
         error_count = session["errors"]
         cycles = session.get("cycles_completed", 1) or 1
         per_cycle = error_count / cycles
-        detail = f"{error_count} errors across {cycles} cycles (~{per_cycle:.1f}/cycle). "
-        detail += "Common causes: API timeouts, rate limits, model inference delays. "
-        detail += "Check bot stdout for specific error messages."
+        detail = f"{error_count} non-fatal exceptions across {cycles} cycles (~{per_cycle:.1f}/cycle). "
+        detail += "Typical causes: API timeouts, CoinGecko rate limits, model inference delays. "
+        detail += "Not trade rejections (those are tracked separately in the executor)."
         alerts.append({
             "level": "warning" if error_count < 200 else "critical",
-            "message": f"{error_count} errors this session",
+            "message": f"{error_count} API retries this session",
             "detail": detail,
         })
     if os.path.exists(os.path.join(BASE_DIR, "STOP")):

@@ -12,7 +12,26 @@ import sqlite3
 import sys
 import time
 import traceback
+import atexit
 from datetime import datetime, timezone
+
+# Single-instance lock — prevent duplicate processes
+LOCK_FILE = os.path.join(os.path.dirname(__file__), "..", f"{os.path.basename(__file__)}.lock")
+
+if os.path.exists(LOCK_FILE):
+    with open(LOCK_FILE) as f:
+        existing_pid = f.read().strip()
+    print(f"Already running as PID {existing_pid}. Exiting.")
+    sys.exit(0)
+
+with open(LOCK_FILE, "w") as f:
+    f.write(str(os.getpid()))
+
+def cleanup_lock():
+    if os.path.exists(LOCK_FILE):
+        os.remove(LOCK_FILE)
+
+atexit.register(cleanup_lock)
 
 
 # Graceful shutdown — close DB connections before exit

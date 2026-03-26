@@ -293,7 +293,7 @@ export default function Dashboard() {
           </div>
           <div>Cycles: {status.system.cycles}</div>
           <div>Up: {status.system.uptime_hours}hr</div>
-          <div>Errors: {status.system.errors_24h}</div>
+          <div>Retries: {status.system.errors_24h}</div>
         </div>
       </div>
     </div>

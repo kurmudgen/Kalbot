@@ -17,3 +17,4 @@ dashboard/node_modules/
 dashboard/.next/
 dashboard/public/status.json
 secrets/
+*.lock

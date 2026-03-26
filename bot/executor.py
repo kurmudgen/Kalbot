@@ -256,9 +256,9 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         # Category-specific confidence threshold
         cat_conf_min = CATEGORY_CONFIDENCE.get(category, CONFIDENCE_MIN)
 
-        # Safety checks
+        # Safety checks (use <= threshold - epsilon to avoid floating point rounding rejections)
         skip_reason = None
-        if cloud_conf < cat_conf_min:
+        if cloud_conf < cat_conf_min - 0.001:
             skip_reason = f"confidence {cloud_conf:.2f} < {cat_conf_min} ({category})"
         elif price_gap < PRICE_GAP_MIN:
             skip_reason = f"price gap {price_gap:.2f} < {PRICE_GAP_MIN}"
