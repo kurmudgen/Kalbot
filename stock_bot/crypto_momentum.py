@@ -214,6 +214,10 @@ def check_entry_filters(signal: dict) -> bool:
     """Apply entry filters. Returns True if trade is allowed."""
     if signal.get("volume", 0) < MIN_24H_VOLUME:
         return False
+    if signal.get("market_cap", 0) < MIN_MARKET_CAP:
+        return False
+    if signal.get("price", 0) < 0.01:
+        return False  # Skip sub-penny tokens
     return True
 
 
