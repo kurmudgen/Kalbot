@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T05:11:42.384151+00:00",
+  "updated_at": "2026-03-26T05:18:07.158182+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -11,6 +11,15 @@
       "portfolio_value": 100000,
       "paper_mode": true
     }
+  },
+  "treasury": {
+    "checking_balance": 0,
+    "savings_balance": 0,
+    "total": 0,
+    "last_updated": "2026-03-26T05:18:07.158182+00:00",
+    "daily_burn": 0,
+    "runway_days": 0,
+    "ok": false
   },
   "pnl": {
     "today": 0.0,
@@ -1069,6 +1078,6 @@
     "ollama": "ok",
     "errors_24h": 98,
     "cycles": 42,
-    "uptime_hours": 14.1
+    "uptime_hours": 14.2
   }
 }
