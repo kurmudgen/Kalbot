@@ -144,7 +144,23 @@ def _parse_json(raw: str) -> dict | None:
         return None
 
 
-def call_perplexity(prompt: str) -> dict | None:
+def call_perplexity(prompt: str, title: str = "") -> dict | None:
+    # Cache check
+    try:
+        from api_cache import get_cached, store_cached, check_daily_budget
+        cached = get_cached("perplexity", title)
+        if cached:
+            result = _parse_json(cached)
+            if result:
+                result["_provider"] = "perplexity"
+                result["_cached"] = True
+                return result
+        if not check_daily_budget("perplexity"):
+            print("    Perplexity: daily budget exhausted")
+            return None
+    except Exception:
+        pass
+
     api_key = os.getenv("PERPLEXITY_API_KEY", "")
     if not api_key:
         return None
@@ -155,13 +171,36 @@ def call_perplexity(prompt: str) -> dict | None:
             {"role": "user", "content": prompt},
         ],
     )
+    # Store in cache
+    if raw and title:
+        try:
+            from api_cache import store_cached
+            store_cached("perplexity", title, raw)
+        except Exception:
+            pass
     result = _parse_json(raw)
     if result:
         result["_provider"] = "perplexity"
     return result
 
 
-def call_claude(prompt: str) -> dict | None:
+def call_claude(prompt: str, title: str = "") -> dict | None:
+    # Cache check
+    try:
+        from api_cache import get_cached, store_cached, check_daily_budget
+        cached = get_cached("claude", title)
+        if cached:
+            result = _parse_json(cached)
+            if result:
+                result["_provider"] = "claude"
+                result["_cached"] = True
+                return result
+        if not check_daily_budget("claude"):
+            print("    Claude: daily budget exhausted")
+            return None
+    except Exception:
+        pass
+
     api_key = os.getenv("ANTHROPIC_API_KEY", "")
     if not api_key:
         return None
@@ -175,6 +214,13 @@ def call_claude(prompt: str) -> dict | None:
             messages=[{"role": "user", "content": prompt}],
         )
         raw = response.content[0].text
+        # Store in cache
+        if raw and title:
+            try:
+                from api_cache import store_cached
+                store_cached("claude", title, raw)
+            except Exception:
+                pass
         result = _parse_json(raw)
         if result:
             result["_provider"] = "claude"
@@ -184,7 +230,23 @@ def call_claude(prompt: str) -> dict | None:
         return None
 
 
-def call_deepseek(prompt: str) -> dict | None:
+def call_deepseek(prompt: str, title: str = "") -> dict | None:
+    # Cache check
+    try:
+        from api_cache import get_cached, store_cached, check_daily_budget
+        cached = get_cached("deepseek", title)
+        if cached:
+            result = _parse_json(cached)
+            if result:
+                result["_provider"] = "deepseek"
+                result["_cached"] = True
+                return result
+        if not check_daily_budget("deepseek"):
+            print("    DeepSeek: daily budget exhausted")
+            return None
+    except Exception:
+        pass
+
     api_key = os.getenv("DEEPSEEK_API_KEY", "")
     if not api_key:
         return None
@@ -192,10 +254,32 @@ def call_deepseek(prompt: str) -> dict | None:
         api_key, "https://api.deepseek.com", "deepseek-chat",
         [{"role": "user", "content": prompt}],
     )
+    # Store in cache
+    if raw and title:
+        try:
+            from api_cache import store_cached
+            store_cached("deepseek", title, raw)
+        except Exception:
+            pass
     result = _parse_json(raw)
     if result:
         result["_provider"] = "deepseek"
     return result
+
+
+# Categories that need live web search (Perplexity)
+LIVE_DATA_CATEGORIES = {"weather", "tsa"}
+
+def needs_perplexity(category: str, local_conf: float, price_gap: float) -> bool:
+    """Perplexity priority gate: only fire for time-sensitive data with strong signal."""
+    # Always skip if confidence or gap too low
+    if local_conf < 0.70 or price_gap < 0.10:
+        return False
+    # Only fire for categories with rapidly changing data
+    if category in LIVE_DATA_CATEGORIES:
+        return True
+    # Economic data between releases doesn't need web search
+    return False
 
 
 def check_consensus(estimates: list[dict], market_price: float,
@@ -287,31 +371,44 @@ def check_consensus(estimates: list[dict], market_price: float,
 
 
 def analyze_market_ensemble(market: dict) -> dict | None:
-    """Run the full ensemble pipeline on a single market."""
+    """Run the full ensemble pipeline on a single market.
+
+    Perplexity priority gate: only called for time-sensitive categories
+    (weather, tsa) when local model shows strong signal. Otherwise
+    Claude + DeepSeek evaluate using pooled research context.
+    All calls are cached — repeated markets within TTL window get instant results.
+    """
     title = market["title"]
     category = market["category"]
     market_price = market["market_price"]
-
-    # Step 1: Perplexity researches
-    research_prompt = RESEARCH_PROMPT.format(
-        title=title, category=category, market_price=market_price,
-    )
-    pplx_result = call_perplexity(research_prompt)
+    local_conf = market.get("confidence", 0.5)
+    local_prob = market.get("model_probability", 0.5)
+    price_gap = abs(local_prob - market_price)
 
     research_text = ""
     estimates = []
+    pplx_result = None
+    escalation_tier = "claude_deepseek"
 
-    if pplx_result:
-        research_text = pplx_result.get("research", pplx_result.get("reasoning", ""))
-        estimates.append(pplx_result)
+    # Perplexity priority gate: only for live-data categories with strong signal
+    if needs_perplexity(category, local_conf, price_gap):
+        research_prompt = RESEARCH_PROMPT.format(
+            title=title, category=category, market_price=market_price,
+        )
+        pplx_result = call_perplexity(research_prompt, title=title)
 
-        # Store research in shared news pool
-        try:
-            from news_pool import store_research
-            store_research(title, category, research_text, "perplexity")
-        except Exception:
-            pass
-    else:
+        if pplx_result:
+            research_text = pplx_result.get("research", pplx_result.get("reasoning", ""))
+            estimates.append(pplx_result)
+            escalation_tier = "full_ensemble"
+
+            try:
+                from news_pool import store_research
+                store_research(title, category, research_text, "perplexity")
+            except Exception:
+                pass
+
+    if not research_text:
         research_text = "No real-time research available."
 
     # Inject recent pooled research as additional context
@@ -323,24 +420,24 @@ def analyze_market_ensemble(market: dict) -> dict | None:
     except Exception:
         pass
 
-    # Step 2: Feed research to Claude and DeepSeek independently
+    # Claude and DeepSeek evaluate independently
     eval_prompt = EVALUATE_PROMPT.format(
         title=title, category=category,
         market_price=market_price, research=research_text,
     )
 
-    claude_result = call_claude(eval_prompt)
+    claude_result = call_claude(eval_prompt, title=title)
     if claude_result:
         estimates.append(claude_result)
 
-    deepseek_result = call_deepseek(eval_prompt)
+    deepseek_result = call_deepseek(eval_prompt, title=title)
     if deepseek_result:
         estimates.append(deepseek_result)
 
     if len(estimates) < MIN_MODELS_REQUIRED:
         return None
 
-    # Step 3: Check consensus with adaptive weighting + calibration
+    # Check consensus with adaptive weighting + calibration
     consensus = check_consensus(estimates, market_price, category=category, title=title)
 
     return {
@@ -350,6 +447,7 @@ def analyze_market_ensemble(market: dict) -> dict | None:
         "consensus": consensus,
         "research": research_text,
         "estimates": estimates,
+        "escalation_tier": escalation_tier,
     }
 
 

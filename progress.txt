@@ -214,6 +214,38 @@ Dashboard live, Telegram connected
 Expansion: 6 new data feeds, 3 new strategies, 3 new categories
 
 ================================================================
+PHASE 1: API COST OPTIMIZATION — 2026-03-26
+================================================================
+
+Universal API cache (bot/api_cache.py):
+  - SQLite-backed cache for all cloud API calls
+  - Per-model TTL: Perplexity 4hr, Claude 3hr, DeepSeek 3hr, Gemini 3hr
+  - Cache key: hash of model + market title + date
+  - Daily call budget tracking per model
+  - Cache hit/miss stats logged
+
+Perplexity priority gate:
+  - Only fires for weather + tsa categories (live-changing data)
+  - Requires local_conf > 0.70 AND price_gap > 0.10
+  - Economic data markets skip Perplexity entirely (use Claude+DeepSeek)
+  - PERPLEXITY_DAILY_BUDGET=50 hard cap in .env
+
+Daily API budgets (.env):
+  PERPLEXITY_DAILY_BUDGET=50
+  CLAUDE_DAILY_BUDGET=75
+  DEEPSEEK_DAILY_BUDGET=100
+  GEMINI_DAILY_BUDGET=200
+
+Gemini Flash integration (bot/ensemble_gemini.py):
+  - google-generativeai SDK installed
+  - Model: gemini-2.0-flash
+  - Code functional, needs billing enabled at ai.google.dev
+
+Estimated cost reduction:
+  Before: ~$20-25/day (3,400 API calls, all 3 models on every market)
+  After: ~$5-10/day (cache hits + Perplexity gate + budget caps)
+
+================================================================
 TO CHECK STATUS: ask Claude "status"
 TO KILL: create S:\kalbot\STOP
 TO DEPLOY DASHBOARD: cd S:\kalbot\dashboard && npx vercel --prod
