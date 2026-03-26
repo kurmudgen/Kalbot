@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T07:24:23.475043+00:00",
+  "updated_at": "2026-03-26T18:47:39.414518+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -12,9 +12,18 @@
       "paper_mode": true
     }
   },
+  "treasury": {
+    "checking_balance": 0,
+    "savings_balance": 0,
+    "total": 0,
+    "last_updated": "2026-03-26T18:47:39.414518+00:00",
+    "daily_burn": 0,
+    "runway_days": 0,
+    "ok": false
+  },
   "pnl": {
     "today": 0,
-    "all_time": -27.574199999999998,
+    "all_time": -28.7842,
     "history": [
       {
         "date": "2026-03-22",
@@ -43,11 +52,11 @@
       }
     ],
     "resolved": {
-      "total_trades": 48,
+      "total_trades": 50,
       "wins": 9,
-      "losses": 39,
-      "win_rate": 0.1875,
-      "actual_pnl": -27.574199999999998
+      "losses": 41,
+      "win_rate": 0.18,
+      "actual_pnl": -28.7842
     }
   },
   "trades": {
@@ -827,102 +836,103 @@
   "ensemble": {
     "models": {
       "perplexity": {
-        "analyses": 20,
-        "avg_probability": 0.329
+        "analyses": 0,
+        "avg_probability": 0
       },
       "claude": {
-        "analyses": 20,
-        "avg_probability": 0.2465
+        "analyses": 11,
+        "avg_probability": 0.4018181818181818
       },
       "deepseek": {
-        "analyses": 20,
-        "avg_probability": 0.23450000000000001
+        "analyses": 19,
+        "avg_probability": 0.7447368421052631
       }
     },
-    "consensus_rate": 0.75,
+    "consensus_rate": 0.55,
     "recent_votes": [
       {
-        "perplexity": 0.22,
-        "claude": 0.22,
-        "deepseek": 0.28,
-        "consensus": false,
-        "time": "2026-03-26T07:24:22"
-      },
-      {
-        "perplexity": 0.95,
-        "claude": 0.86,
-        "deepseek": 0.92,
-        "consensus": true,
-        "time": "2026-03-26T07:24:07"
-      },
-      {
-        "perplexity": 0.72,
-        "claude": 0.35,
-        "deepseek": 0.45,
-        "consensus": true,
-        "time": "2026-03-26T07:23:52"
-      },
-      {
-        "perplexity": 0.85,
-        "claude": 0.05,
-        "deepseek": 0.05,
-        "consensus": true,
-        "time": "2026-03-26T07:23:36"
-      },
-      {
-        "perplexity": 0.05,
-        "claude": 0.05,
-        "deepseek": 0.05,
-        "consensus": true,
-        "time": "2026-03-26T07:23:23"
-      },
-      {
-        "perplexity": 0.06,
-        "claude": 0.02,
-        "deepseek": 0.01,
-        "consensus": true,
-        "time": "2026-03-26T07:23:07"
-      },
-      {
-        "perplexity": 0.02,
-        "claude": 0.25,
-        "deepseek": 0.25,
-        "consensus": false,
-        "time": "2026-03-26T07:22:54"
-      },
-      {
-        "perplexity": 0.18,
-        "claude": 0.25,
-        "deepseek": 0.25,
-        "consensus": false,
-        "time": "2026-03-26T07:22:40"
-      },
-      {
-        "perplexity": 0.15,
-        "claude": 0.12,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-03-26T07:22:18"
-      },
-      {
-        "perplexity": 0.95,
+        "perplexity": null,
         "claude": 0.15,
-        "deepseek": 0.15,
+        "deepseek": 0.85,
+        "consensus": false,
+        "time": "2026-03-26T18:46:54"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.15,
+        "deepseek": 0.85,
+        "consensus": false,
+        "time": "2026-03-26T18:46:52"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-26T07:22:04"
+        "time": "2026-03-26T18:46:49"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.85,
+        "consensus": true,
+        "time": "2026-03-26T18:46:47"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.75,
+        "consensus": true,
+        "time": "2026-03-26T18:46:45"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.65,
+        "deepseek": 0.85,
+        "consensus": false,
+        "time": "2026-03-26T18:46:43"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.75,
+        "deepseek": 0.85,
+        "consensus": false,
+        "time": "2026-03-26T18:46:41"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.35,
+        "deepseek": 0.85,
+        "consensus": true,
+        "time": "2026-03-26T18:46:39"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.25,
+        "deepseek": 0.85,
+        "consensus": false,
+        "time": "2026-03-26T18:46:39"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.85,
+        "consensus": true,
+        "time": "2026-03-26T18:46:37"
       }
     ]
   },
   "scanner": {
-    "total_markets": 1944,
-    "with_prices": 1178,
-    "passed_filter": 17,
-    "total_scored": 333,
+    "total_markets": 2374,
+    "with_prices": 1473,
+    "passed_filter": 46,
+    "total_scored": 414,
     "categories": {
-      "economics": 1060,
+      "economics": 1360,
+      "energy": 100,
       "inflation": 173,
       "tsa": 81,
-      "weather": 630
+      "weather": 660
     }
   },
   "sniper_markets": [
@@ -992,7 +1002,7 @@
     {
       "ticker": "KXHIGHNY-26MAR26-T72",
       "title": "Will the **high temp in NYC** be >72\u00b0 on Mar 26, 2026?",
-      "price": 68,
+      "price": 98,
       "close_time": "2026-03-27T04:59:00Z",
       "category": "weather"
     }
@@ -1062,13 +1072,14 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "109 errors this session"
+      "message": "4 API retries this session",
+      "detail": "4 non-fatal exceptions across 1 cycles (~4.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 109,
-    "cycles": 49,
-    "uptime_hours": 16.3
+    "errors_24h": 4,
+    "cycles": 1,
+    "uptime_hours": 0.7
   }
 }
