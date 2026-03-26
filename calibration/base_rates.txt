@@ -1,0 +1,13 @@
+# KalBot training benchmark win rates by category
+# Used by self_calibrator.py Tier 4 weekly benchmark
+# Format: category: win_rate_percent
+# Source: validation run 2026-03-21 (13,743 trained, 4,582 validated)
+
+weather: 89%
+sp500: 50%
+economics: 60%
+inflation: 60%
+tsa: 55%
+treasury: 55%
+gas: 50%
+forex: 50%

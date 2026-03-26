@@ -503,8 +503,41 @@ def main():
                 except Exception as e:
                     print(f"  Self-check error: {e}")
 
+            # Self-calibration Tier 1: hourly market movement reflector
+            if totals["cycles"] % 12 == 0:
+                try:
+                    from self_calibrator import run_tier1
+                    run_tier1()
+                except Exception as e:
+                    print(f"  Self-cal T1 error: {e}")
+
+            # Self-calibration Tier 2: 6-hour pattern analyzer
+            if totals["cycles"] % 72 == 0:  # Every 72 cycles (~6 hours)
+                try:
+                    from self_calibrator import run_tier2
+                    run_tier2()
+                except Exception as e:
+                    print(f"  Self-cal T2 error: {e}")
+
             # Daily performance report (every day at ~8AM)
             now_local = datetime.now()
+
+            # Self-calibration Tier 3: daily adjustment executor (2am)
+            if now_local.hour == 2 and totals["cycles"] % 12 == 0:
+                try:
+                    from self_calibrator import run_tier3
+                    run_tier3()
+                except Exception as e:
+                    print(f"  Self-cal T3 error: {e}")
+
+            # Self-calibration Tier 4: weekly benchmark (Sunday 3am)
+            if now_local.weekday() == 6 and now_local.hour == 3 and totals["cycles"] % 12 == 0:
+                try:
+                    from self_calibrator import run_tier4
+                    run_tier4()
+                except Exception as e:
+                    print(f"  Self-cal T4 error: {e}")
+
             if 8 <= now_local.hour < 9 and totals["cycles"] % 12 == 1:
                 try:
                     from weekly_report import send_weekly_report

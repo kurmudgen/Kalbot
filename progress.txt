@@ -360,6 +360,34 @@ Position limits raised and moved to .env:
 All executor thresholds now read from .env with sensible defaults.
 
 ================================================================
+PHASE 14: SELF-CALIBRATION ENGINE — 2026-03-26
+================================================================
+
+bot/self_calibrator.py — 4-tier reflection loop:
+
+Tier 1 (hourly): Market movement reflector. Checks open positions
+  for >20c adverse price movement. Flags for early exit review.
+  Local 32b model only. No API cost. Tested: found 10 S&P flags.
+
+Tier 2 (6-hour): Pattern analyzer. Groups losses by category/city/
+  confidence bucket. Sends structured JSON to local 32b for pattern
+  identification. Generates hypotheses, logs but does not apply.
+
+Tier 3 (daily 2am): Adjustment executor. Reviews T2 hypotheses with
+  supporting_trades > 5 and confidence medium/high. Applies to staging
+  config with 24hr trial. Auto-reverts if WR doesn't improve by 3pts.
+
+Tier 4 (weekly Sunday 3am): Benchmark comparison. Compares live WR
+  per category against calibration/base_rates.txt. Telegram alert if
+  drift exceeds 15pts. Tested: correctly flagged SP500 31% drift.
+
+Safety: PROTECTED_PARAMS never modified, MAX_THRESHOLD_CHANGE=0.10,
+all changes logged to calibration_history with full audit trail.
+
+.env: SELF_CALIBRATION_ENABLED=true, SELF_CAL_MIN_TRADES=5,
+  SELF_CAL_TRIAL_HOURS=24, SELF_CAL_MAX_THRESHOLD_CHANGE=0.10
+
+================================================================
 TO CHECK STATUS: ask Claude "status"
 TO KILL: create S:\kalbot\STOP
 TO DEPLOY DASHBOARD: cd S:\kalbot\dashboard && npx vercel --prod
