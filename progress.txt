@@ -279,6 +279,20 @@ Economic: event-level dedup, max 3 brackets per event per release.
 Backwards-compatible with executor.py call signature.
 
 ================================================================
+PHASE 4: HOURLY DYNAMIC REBALANCER — 2026-03-26
+================================================================
+
+Rewrote strategy_rebalancer.py:
+  - Rolling 48hr window from resolutions.sqlite (was 7-day from decisions)
+  - 5% floor per active strategy
+  - 70% distributed by win_rate * avg_edge
+  - 25% volatility reserve (conf>0.85 + WR>65%)
+  - Momentum: 3 wins -> +10%, 3 losses -> -50%
+  - New categories (<10 resolved): fixed 8%
+  - Hourly snapshots in rebalancer_history table
+  - SP500 correctly penalized: 19% WR, 5-loss streak -> reduced allocation
+
+================================================================
 TO CHECK STATUS: ask Claude "status"
 TO KILL: create S:\kalbot\STOP
 TO DEPLOY DASHBOARD: cd S:\kalbot\dashboard && npx vercel --prod
