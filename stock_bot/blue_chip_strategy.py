@@ -157,8 +157,18 @@ def analyze_with_ensemble(symbol: str, data: dict, tech_result: dict,
     """Run ensemble LLM analysis on a stock candidate."""
     price = data["current_price"]
 
-    prompt = f"""You are analyzing {symbol} for a swing trade (hold 2-5 days).
+    # Load platform-specific prompt
+    try:
+        import sys as _sys
+        _sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "bot"))
+        from platform_profiles import get_profile
+        profile = get_profile("alpaca_stocks")
+        system_prompt = profile.get_prompt()
+    except Exception:
+        system_prompt = ""
+        profile = None
 
+    market_context = f"""Stock: {symbol}
 Current price: ${price:.2f}
 Sector: {data.get('sector', 'Unknown')}
 P/E: {data.get('pe_ratio', 'N/A')}
@@ -170,6 +180,14 @@ RSI: {tech_result['rsi']:.0f}
 Fundamental score: {fund_result['score']}/{fund_result['max_score']} ({', '.join(fund_result['reasons'][:3])})
 
 Search for any breaking news, earnings expectations, or analyst upgrades/downgrades for {symbol}.
+"""
+
+    if system_prompt:
+        prompt = f"{system_prompt}\n\n{market_context}"
+    else:
+        prompt = f"""You are analyzing {symbol} for a swing trade (hold 2-5 days).
+
+{market_context}
 
 Should a swing trader BUY, SELL, or HOLD this stock for the next 2-5 days?
 
