@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useStatus } from "./components/useStatus";
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer,
@@ -23,6 +24,7 @@ const COLORS = ["#3b82f6", "#22c55e", "#f59e0b", "#ef4444", "#8b5cf6",
 
 export default function Dashboard() {
   const { status, loading, error } = useStatus();
+  const [dismissedAlerts, setDismissedAlerts] = useState<Set<number>>(new Set());
 
   if (loading) return (
     <div className="flex items-center justify-center h-[80vh]">
@@ -71,17 +73,30 @@ export default function Dashboard() {
       </div>
 
       {/* Alerts */}
-      {status.alerts.length > 0 && (
+      {status.alerts.filter((_, i) => !dismissedAlerts.has(i)).length > 0 && (
         <div className="space-y-2">
-          {status.alerts.map((a, i) => (
-            <div key={i} className={`card border-l-4 py-2 ${
-              a.level === "critical" ? "border-red-500 bg-red-500/5" :
-              a.level === "warning" ? "border-yellow-500 bg-yellow-500/5" :
-              "border-blue-500"
-            }`}>
-              <p className="text-xs sm:text-sm">{a.message}</p>
-            </div>
-          ))}
+          {status.alerts.map((a, i) => {
+            if (dismissedAlerts.has(i)) return null;
+            return (
+              <div key={i} className={`card border-l-4 py-2 flex items-start justify-between gap-2 ${
+                a.level === "critical" ? "border-red-500 bg-red-500/5" :
+                a.level === "warning" ? "border-yellow-500 bg-yellow-500/5" :
+                "border-blue-500"
+              }`}>
+                <div className="flex-1 min-w-0">
+                  <p className="text-xs sm:text-sm">{a.message}</p>
+                  {a.detail && <p className="text-[10px] text-gray-500 mt-1">{a.detail}</p>}
+                </div>
+                <button
+                  onClick={() => setDismissedAlerts(prev => new Set([...prev, i]))}
+                  className="text-gray-500 hover:text-gray-300 text-sm px-1 flex-shrink-0"
+                  title="Dismiss"
+                >
+                  x
+                </button>
+              </div>
+            );
+          })}
         </div>
       )}
 

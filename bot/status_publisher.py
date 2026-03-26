@@ -177,9 +177,19 @@ def generate_status() -> dict:
     # Alerts
     alerts = []
     if session.get("errors", 0) > 0:
-        alerts.append({"level": "warning", "message": f"{session['errors']} errors this session"})
+        error_count = session["errors"]
+        cycles = session.get("cycles_completed", 1) or 1
+        per_cycle = error_count / cycles
+        detail = f"{error_count} errors across {cycles} cycles (~{per_cycle:.1f}/cycle). "
+        detail += "Common causes: API timeouts, rate limits, model inference delays. "
+        detail += "Check bot stdout for specific error messages."
+        alerts.append({
+            "level": "warning" if error_count < 200 else "critical",
+            "message": f"{error_count} errors this session",
+            "detail": detail,
+        })
     if os.path.exists(os.path.join(BASE_DIR, "STOP")):
-        alerts.append({"level": "critical", "message": "Kill switch is ACTIVE"})
+        alerts.append({"level": "critical", "message": "Kill switch is ACTIVE", "detail": "Delete S:\\kalbot\\STOP to resume trading."})
 
     # Sniper markets (expiring soon)
     sniper_markets = _query(MARKETS_DB,

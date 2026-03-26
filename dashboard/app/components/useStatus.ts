@@ -88,7 +88,7 @@ export interface Status {
     runway_days: number;
     ok: boolean;
   };
-  alerts: { level: string; message: string }[];
+  alerts: { level: string; message: string; detail?: string }[];
   system: {
     ollama: string;
     errors_24h: number;
