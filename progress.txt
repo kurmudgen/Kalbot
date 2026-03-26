@@ -293,6 +293,20 @@ Rewrote strategy_rebalancer.py:
   - SP500 correctly penalized: 19% WR, 5-loss streak -> reduced allocation
 
 ================================================================
+PHASE 5-6: MODEL UPGRADE + PRE-SCREENER — 2026-03-26
+================================================================
+
+llama3.2:3b: already present (pre-screener model)
+qwen2.5:32b: downloading (~19GB)
+
+Pre-screener (bot/pre_screener.py):
+  - llama3.2:3b via Ollama, 10s timeout
+  - Rejects markets where public data can't predict outcome
+  - Wired into local_filter.py as first step before main model
+  - Tested: passes weather/econ/inflation, rejects entertainment gossip
+  - PRESCREENER_ENABLED=true in .env
+
+================================================================
 TO CHECK STATUS: ask Claude "status"
 TO KILL: create S:\kalbot\STOP
 TO DEPLOY DASHBOARD: cd S:\kalbot\dashboard && npx vercel --prod

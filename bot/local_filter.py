@@ -127,6 +127,23 @@ def get_open_markets() -> list[dict]:
               f"(scored:{skipped['scored']}, no_vol:{skipped['no_volume']}, "
               f"resolved:{skipped['resolved']})")
 
+    # Pre-screener: quick 3b model rejects markets where public data can't help
+    try:
+        from pre_screener import screen_market, ENABLED as PRESCREENER_ON
+        if PRESCREENER_ON:
+            screened = []
+            rejected = 0
+            for m in markets:
+                if screen_market(m["title"], m.get("category", "")):
+                    screened.append(m)
+                else:
+                    rejected += 1
+            if rejected > 0:
+                print(f"  Pre-screener: rejected {rejected}, passed {len(screened)}")
+            markets = screened
+    except Exception:
+        pass
+
     # Cap at 200 per cycle to keep within time budget (~100 seconds at 2/sec)
     if len(markets) > 200:
         # Prioritize by volume (most liquid = most tradeable)
