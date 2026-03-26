@@ -28,6 +28,12 @@ CATEGORY_KEYWORDS = {
     "weather": ["temperature", "weather", "precipitation", "rain", "snow",
                 "heat", "cold", "hurricane", "tornado", "degree",
                 "fahrenheit", "high of", "low of"],
+    "congressional": ["congress", "congressional", "senator", "representative",
+                      "stock act", "insider trading", "disclosure"],
+    "energy": ["oil", "petroleum", "crude", "gasoline", "natural gas",
+               "eia", "opec", "barrel", "energy price"],
+    "entertainment": ["box office", "movie", "opening weekend", "gross",
+                      "streaming", "netflix", "viewership"],
 }
 
 # Kalshi API categories that map to our target categories
@@ -35,26 +41,38 @@ KALSHI_CATEGORY_MAP = {
     "Economics": "economics",
     "Financials": "economics",
     "Climate and Weather": "weather",
+    "Politics": "congressional",
+    "Entertainment": "entertainment",
+    "Energy": "energy",
 }
 
 
 def get_whitelisted_categories() -> list[str]:
-    raw = os.getenv("WHITELISTED_CATEGORIES", "economics,tsa,weather,inflation")
+    raw = os.getenv("WHITELISTED_CATEGORIES", "economics,tsa,weather,inflation,congressional,energy,entertainment")
     return [c.strip().lower() for c in raw.split(",")]
 
 
 SERIES_CATEGORY_MAP = {
+    # Weather
     "KXHIGH": "weather", "KXLOW": "weather",
+    # Inflation / Labor
     "KXCPI": "inflation", "KXPCE": "inflation",
+    "KXJOBLESS": "inflation", "KXNFP": "inflation",
+    # Economics / Financial
     "KXINX": "economics", "KXINXD": "economics",
     "KXBTC": "economics", "KXBTCD": "economics",
-    "KXTSA": "tsa", "TSA": "tsa",
     "KXFED": "economics", "KXFOMC": "economics",
     "KXGDP": "economics",
-    "KXJOBLESS": "inflation", "KXNFP": "inflation",
-    "KXGAS": "economics",
     "KXEURUSD": "economics", "KXUSDJPY": "economics",
     "KXTREAS": "economics", "KX10Y": "economics",
+    # TSA
+    "KXTSA": "tsa", "TSA": "tsa",
+    # Energy
+    "KXGAS": "energy", "KXOIL": "energy", "KXWTI": "energy",
+    # Congressional / Politics
+    "KXCONG": "congressional", "KXSTOCK": "congressional",
+    # Entertainment
+    "KXMOVIE": "entertainment", "KXBOX": "entertainment",
 }
 
 
@@ -115,10 +133,14 @@ def scan_markets(conn: sqlite3.Connection) -> int:
     total = 0
 
     TARGET_SERIES = [
-        # Economics
-        "KXCPI", "KXPCE", "KXFED", "KXFOMC", "KXGDP", "KXJOBLESS", "KXNFP",
-        # Financial
-        "KXGAS", "KXTREAS", "KX10Y",
+        # Economics / Fed / GDP
+        "KXCPI", "KXPCE", "KXFED", "KXFOMC", "KXGDP",
+        # Labor market
+        "KXJOBLESS", "KXNFP",
+        # Financial / Rates
+        "KXTREAS", "KX10Y",
+        # Energy
+        "KXGAS", "KXOIL", "KXWTI",
         # Crypto
         "KXBTC",
         # Weather — city-specific (full city codes, verified working)
@@ -129,6 +151,12 @@ def scan_markets(conn: sqlite3.Connection) -> int:
         "KXLOWDEN", "KXLOWAUS",
         # TSA
         "TSA", "KXTSA",
+        # Congressional / Politics
+        "KXCONG", "KXSTOCK",
+        # Entertainment
+        "KXMOVIE", "KXBOX",
+        # Forex
+        "KXEURUSD", "KXUSDJPY",
     ]
 
     for series in TARGET_SERIES:

@@ -167,6 +167,42 @@ TRAINING RESULTS
   Weather: 89.4% WR (best category)
 
 ================================================================
+EXPANSION — 2026-03-25
+================================================================
+
+New data feed modules (S:\kalbot\data\):
+  - congressional_trades_feed.py — House/Senate stock filings
+  - jobless_claims_feed.py — DOL initial/continuing claims via FRED
+  - eia_petroleum_feed.py — EIA gas prices + crude/gasoline inventory
+  - fed_funds_feed.py — Fed funds rate + yield curve via FRED
+  - treasury_auction_feed.py — Treasury Direct auctions + FRED yields
+  - box_office_feed.py — Weekend box office tracking
+
+Scanner expansion (bot/market_scanner.py):
+  - New categories: congressional, energy, entertainment
+  - New series tickers: KXCONG, KXSTOCK, KXOIL, KXWTI, KXMOVIE, KXBOX
+  - KXEURUSD/KXUSDJPY moved to TARGET_SERIES
+  - KXGAS reclassified to "energy" category
+
+Local filter injection (bot/local_filter.py):
+  - Jobless claims data injected for KXJOBLESS markets
+  - EIA data injected for energy/gas markets
+  - Fed data injected for KXFED/KXFOMC markets
+  - Treasury data injected for yield/treasury markets
+  - Congressional data injected for politics markets
+  - Box office data injected for entertainment markets
+
+Strategy updates:
+  - 3 new strategies in dual_strategy.py: JOBLESS, ENERGY, CONGRESSIONAL
+  - Rebalancer: 15% expansion pool across new categories
+  - Morning review: data feed health check added
+
+API keys needed for full functionality:
+  - FRED_API_KEY (free at fred.stlouisfed.org) — powers jobless + fed + treasury
+  - EIA_API_KEY (free at eia.gov/opendata) — powers petroleum data
+  - Congressional + box office feeds work without API keys
+
+================================================================
 CURRENT STATE
 ================================================================
 
@@ -175,6 +211,7 @@ Kalshi: 2 paper trades, 0 resolved
 Regime: BEAR, Sentiment: Extreme Fear (11/100)
 All 3 LLMs active, all safety guards deployed
 Dashboard live, Telegram connected
+Expansion: 6 new data feeds, 3 new strategies, 3 new categories
 
 ================================================================
 TO CHECK STATUS: ask Claude "status"

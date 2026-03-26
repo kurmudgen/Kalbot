@@ -182,12 +182,15 @@ def run_filter() -> list[dict]:
         category = market["category"]
         market_price = (market.get("last_price") or 50) / 100.0
 
-        # Inject NWS forecast for weather markets (official Kalshi settlement source)
+        # Inject data feed context for each category
         nws_context = ""
+        data_path = os.path.join(os.path.dirname(__file__), "..", "data")
+        import sys as _sys
+        if data_path not in _sys.path:
+            _sys.path.insert(0, data_path)
+
         if category == "weather":
             try:
-                import sys as _sys
-                _sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "data"))
                 from weather_nws_feed import get_city_forecast
                 nws = get_city_forecast(title)
                 if nws:
@@ -202,6 +205,60 @@ def run_filter() -> list[dict]:
                         f"Confidence = how clear the NWS gap is, NOT certainty about the market price.\n"
                         f"Do NOT echo the market price. Use the NWS forecast."
                     )
+            except Exception:
+                pass
+
+        elif category == "inflation" and "jobless" in title.lower():
+            try:
+                from jobless_claims_feed import get_jobless_context
+                ctx = get_jobless_context(title)
+                if ctx:
+                    nws_context = f"\n{ctx}\nUse this DOL data to calibrate your probability."
+            except Exception:
+                pass
+
+        elif category == "energy" or ("gas" in title.lower() and category == "economics"):
+            try:
+                from eia_petroleum_feed import get_gas_context
+                ctx = get_gas_context(title)
+                if ctx:
+                    nws_context = f"\n{ctx}\nUse this EIA data to calibrate your probability."
+            except Exception:
+                pass
+
+        elif category == "economics" and any(kw in title.lower() for kw in ["fed", "fomc", "rate"]):
+            try:
+                from fed_funds_feed import get_fed_context
+                ctx = get_fed_context(title)
+                if ctx:
+                    nws_context = f"\n{ctx}\nUse this Fed data to calibrate your probability."
+            except Exception:
+                pass
+
+        elif category == "economics" and any(kw in title.lower() for kw in ["treasury", "yield", "10y", "10-year"]):
+            try:
+                from treasury_auction_feed import get_treasury_context
+                ctx = get_treasury_context(title)
+                if ctx:
+                    nws_context = f"\n{ctx}\nUse this Treasury data to calibrate your probability."
+            except Exception:
+                pass
+
+        elif category == "congressional":
+            try:
+                from congressional_trades_feed import get_congressional_context
+                ctx = get_congressional_context(title)
+                if ctx:
+                    nws_context = f"\n{ctx}\nUse this congressional trading data to assess the market."
+            except Exception:
+                pass
+
+        elif category == "entertainment":
+            try:
+                from box_office_feed import get_box_office_context
+                ctx = get_box_office_context(title)
+                if ctx:
+                    nws_context = f"\n{ctx}\nUse this box office data to calibrate your probability."
             except Exception:
                 pass
 

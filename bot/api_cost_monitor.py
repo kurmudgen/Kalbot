@@ -121,6 +121,26 @@ def run_cost_check() -> list[str]:
 
             print(f"  API WARNING: {warning}")
 
+    # Mercury balance check + treasury cycle
+    try:
+        from treasury import run_treasury_cycle, get_all_balances
+        run_treasury_cycle()
+        balances = get_all_balances()
+        if balances.get("ok"):
+            checking = balances.get("checking", 0) or 0
+            print(f"  Mercury: checking ${checking:,.2f}")
+            if checking < 50 and checking > 0:
+                warning = f"Mercury checking low: ${checking:,.2f}"
+                warnings.append(warning)
+                _last_warned["Mercury"] = now
+                try:
+                    from telegram_alerts import system_alert
+                    system_alert(f"TREASURY WARNING: {warning}", "warning")
+                except Exception:
+                    pass
+    except Exception:
+        pass
+
     return warnings
 
 

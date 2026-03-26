@@ -5,6 +5,7 @@ Supports --days flag for multi-day rolling summaries.
 
 import argparse
 import os
+import sys
 import sqlite3
 from datetime import datetime, timedelta, timezone
 
@@ -142,6 +143,69 @@ def main():
         print(f"  Sessions:        {len(sessions)}")
         print(f"  Total trades:    {len(all_executed)}")
         print(f"  Total deployed:  ${total:.2f}")
+
+    # Data feed status check
+    print()
+    print("--- DATA FEEDS ---")
+    data_path = os.path.join(os.path.dirname(__file__), "..", "data")
+    sys.path.insert(0, data_path)
+
+    feed_status = {}
+    try:
+        from weather_nws_feed import get_city_forecast
+        nws = get_city_forecast("New York high temperature")
+        feed_status["NWS Weather"] = "OK" if nws else "no data"
+    except Exception as e:
+        feed_status["NWS Weather"] = f"error: {str(e)[:30]}"
+
+    try:
+        from jobless_claims_feed import fetch_claims_data
+        data = fetch_claims_data()
+        feed_status["DOL Jobless"] = "OK" if data.get("initial_claims") else "no FRED key"
+    except Exception as e:
+        feed_status["DOL Jobless"] = f"error: {str(e)[:30]}"
+
+    try:
+        from eia_petroleum_feed import fetch_gas_prices
+        data = fetch_gas_prices()
+        feed_status["EIA Petroleum"] = "OK" if data.get("retail_gas") else "no EIA key"
+    except Exception as e:
+        feed_status["EIA Petroleum"] = f"error: {str(e)[:30]}"
+
+    try:
+        from fed_funds_feed import fetch_fed_data
+        data = fetch_fed_data()
+        feed_status["Fed/FRED"] = "OK" if data.get("fed_funds_rate") else "no FRED key"
+    except Exception as e:
+        feed_status["Fed/FRED"] = f"error: {str(e)[:30]}"
+
+    try:
+        from treasury_auction_feed import fetch_recent_auctions
+        data = fetch_recent_auctions(days=7)
+        feed_status["Treasury Auctions"] = f"OK ({len(data)} recent)" if data else "no data"
+    except Exception as e:
+        feed_status["Treasury Auctions"] = f"error: {str(e)[:30]}"
+
+    try:
+        from congressional_trades_feed import fetch_congressional_trades
+        data = fetch_congressional_trades(days=7)
+        feed_status["Congressional"] = f"OK ({len(data)} trades)" if data else "no data"
+    except Exception as e:
+        feed_status["Congressional"] = f"error: {str(e)[:30]}"
+
+    for name, status in feed_status.items():
+        icon = "+" if status.startswith("OK") else "-"
+        print(f"  [{icon}] {name:<20} {status}")
+
+    # Treasury / Mercury report
+    try:
+        from treasury import print_treasury_report
+        print()
+        print_treasury_report()
+    except Exception as e:
+        print()
+        print("--- TREASURY ---")
+        print(f"  Mercury: error ({str(e)[:40]})")
 
     print()
     print("=" * 50)

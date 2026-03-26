@@ -44,7 +44,8 @@ STRATEGIES = {
     },
     "SNIPER": {
         "name": "SNIPER",
-        "categories": ["economics", "inflation", "tsa", "weather"],
+        "categories": ["economics", "inflation", "tsa", "weather",
+                        "congressional", "energy", "entertainment"],
         "confidence_min": 0.70,     # Lower bar — outcome is nearly known
         "price_gap_min": 0.08,      # Smaller edge ok near expiry
         "expiry_hours": 6,          # ONLY markets expiring within 6 hours
@@ -52,11 +53,36 @@ STRATEGIES = {
     },
     "EMERGING": {
         "name": "EMERGING",
-        "categories": ["economics", "inflation", "tsa", "weather"],
+        "categories": ["economics", "inflation", "tsa", "weather",
+                        "congressional", "energy", "entertainment"],
         "confidence_min": 0.75,     # Standard bar
         "price_gap_min": 0.10,      # Decent edge required
         "expiry_hours": 168,        # Any timeframe
         "kelly_fraction": 0.15,     # Conservative — less certain further out
+    },
+    "JOBLESS": {
+        "name": "JOBLESS",
+        "categories": ["inflation"],
+        "confidence_min": 0.70,
+        "price_gap_min": 0.08,
+        "expiry_hours": 72,         # Weekly claims cycle
+        "kelly_fraction": 0.20,
+    },
+    "ENERGY": {
+        "name": "ENERGY",
+        "categories": ["energy"],
+        "confidence_min": 0.70,
+        "price_gap_min": 0.10,
+        "expiry_hours": 168,
+        "kelly_fraction": 0.15,
+    },
+    "CONGRESSIONAL": {
+        "name": "CONGRESSIONAL",
+        "categories": ["congressional"],
+        "confidence_min": 0.75,     # Higher bar — less certain data
+        "price_gap_min": 0.12,
+        "expiry_hours": 168,
+        "kelly_fraction": 0.10,     # Conservative until proven
     },
 }
 

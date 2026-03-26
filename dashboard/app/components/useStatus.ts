@@ -79,6 +79,15 @@ export interface Status {
     source: string;
     time: string;
   }[];
+  treasury?: {
+    checking_balance: number;
+    savings_balance: number;
+    total: number;
+    last_updated: string;
+    daily_burn: number;
+    runway_days: number;
+    ok: boolean;
+  };
   alerts: { level: string; message: string }[];
   system: {
     ollama: string;

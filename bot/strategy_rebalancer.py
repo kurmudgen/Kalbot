@@ -24,15 +24,22 @@ DECISIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "decisions.
 # - Econ is risky (-70% ROI in ryanfrigo's bot) — start small
 # - BTC is promising but volatile
 DEFAULT_ALLOCATIONS = {
-    "WEATHER": 0.30,    # Proven 87% WR, multiple repos confirm edge
-    "SP500": 0.20,      # VIX overestimates vol, quantgalore repo confirms
-    "BITCOIN": 0.12,    # Fat tails but less efficient markets
-    "ECON": 0.08,       # CAUTION: -70% ROI in ryanfrigo's bot, very conservative
-    "TREASURY": 0.08,   # New Kalshi category, less efficient
-    "SNIPER": 0.08,     # Expiry sniping — outcomes nearly known
-    "EMERGING": 0.06,   # New opportunities, any timeframe
-    "GAS": 0.05,        # Thin liquidity
-    "FOREX": 0.05,      # Thin liquidity
+    # Proven strategies (85% of budget)
+    "WEATHER": 0.25,      # Proven 87% WR, NWS settlement source
+    "SP500": 0.15,        # VIX overestimates vol (DISABLED but keep allocation for rebalancer)
+    "BITCOIN": 0.10,      # Fat tails but less efficient markets
+    "ECON": 0.06,         # CAUTION: -70% ROI in ryanfrigo's bot, very conservative
+    "TREASURY": 0.07,     # Treasury yield brackets + auction data
+    "SNIPER": 0.08,       # Expiry sniping — outcomes nearly known
+    "EMERGING": 0.05,     # New opportunities, any timeframe
+    "GAS": 0.04,          # EIA data feed now injected
+    "FOREX": 0.04,        # Thin liquidity
+    # Expansion categories (15% pool — new data feeds)
+    "JOBLESS": 0.05,      # DOL claims data — weekly, clear settlement
+    "CONGRESSIONAL": 0.03,  # Congressional trade disclosure markets
+    "ENTERTAINMENT": 0.02,  # Box office + streaming (sporadic markets)
+    "ENERGY": 0.03,       # EIA petroleum — crude + gas brackets
+    "FED_RATES": 0.03,    # Fed funds rate decisions — FRED data
 }
 
 MIN_ALLOCATION = 0.10

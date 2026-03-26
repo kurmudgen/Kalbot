@@ -67,17 +67,21 @@ def get_unresolved_trades() -> list[dict]:
     conn = sqlite3.connect(DECISIONS_DB)
     conn.row_factory = sqlite3.Row
 
-    # Get executed trades
+    # Get executed trades (exclude early exit entries — those have EXIT in side)
     rows = conn.execute("""
         SELECT * FROM decisions WHERE executed = 1
+        AND side NOT LIKE '%EXIT%'
+        AND amount > 0
     """).fetchall()
     conn.close()
 
-    # Check which are already resolved
+    # Check which are already resolved (only count entries with actual category data)
     resolved_tickers = set()
     if os.path.exists(RESOLUTIONS_DB):
         rconn = sqlite3.connect(RESOLUTIONS_DB)
-        resolved = rconn.execute("SELECT ticker FROM resolved_trades").fetchall()
+        resolved = rconn.execute(
+            "SELECT ticker FROM resolved_trades WHERE category != '' AND category IS NOT NULL"
+        ).fetchall()
         resolved_tickers = {r[0] for r in resolved}
         rconn.close()
 

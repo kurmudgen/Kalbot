@@ -210,6 +210,30 @@ def generate_status() -> dict:
         except Exception:
             pass
 
+    # Treasury / Mercury
+    treasury_data = {
+        "checking_balance": 0,
+        "savings_balance": 0,
+        "total": 0,
+        "last_updated": now,
+        "daily_burn": 0,
+        "runway_days": 0,
+        "ok": False,
+    }
+    try:
+        from treasury import get_all_balances, get_burn_rate
+        balances = get_all_balances()
+        if balances.get("ok"):
+            treasury_data["checking_balance"] = balances.get("checking") or 0
+            treasury_data["savings_balance"] = balances.get("savings") or 0
+            treasury_data["total"] = balances.get("total") or 0
+            treasury_data["ok"] = True
+            burn = get_burn_rate(days=7)
+            treasury_data["daily_burn"] = round(burn.get("daily_burn", 0), 2)
+            treasury_data["runway_days"] = int(burn.get("runway_days", 0)) if burn.get("runway_days", 0) != float("inf") else 9999
+    except Exception:
+        pass
+
     return {
         "updated_at": now,
         "bot_status": session.get("status", "unknown"),
@@ -217,6 +241,7 @@ def generate_status() -> dict:
             "kalshi": {"balance": kalshi_balance, "paper_mode": paper_kalshi},
             "alpaca": {**alpaca, "paper_mode": paper_alpaca},
         },
+        "treasury": treasury_data,
         "pnl": _build_pnl(total_pnl, pnl_history),
         "trades": {
             "total": len(trades),

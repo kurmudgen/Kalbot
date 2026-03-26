@@ -94,6 +94,34 @@ export default function Dashboard() {
         <StatCard label="Stocks" value={`$${(status.accounts.alpaca.portfolio_value / 1000).toFixed(0)}K`} sub={status.accounts.alpaca.paper_mode ? "Practice" : "Live"} />
       </div>
 
+      {/* Treasury */}
+      {status.treasury?.ok && (
+        <div className="card">
+          <h3 className="text-xs sm:text-sm font-semibold text-gray-400 mb-2">Treasury</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div>
+              <p className="text-[10px] text-gray-500">Checking (...3906)</p>
+              <p className="text-lg font-bold">${status.treasury.checking_balance.toFixed(2)}</p>
+              <p className="text-[10px] text-gray-500">operational</p>
+            </div>
+            <div>
+              <p className="text-[10px] text-gray-500">Savings (...4242)</p>
+              <p className="text-lg font-bold">${status.treasury.savings_balance.toFixed(2)}</p>
+              <p className="text-[10px] text-gray-500">reserve</p>
+            </div>
+            <div>
+              <p className="text-[10px] text-gray-500">Total</p>
+              <p className="text-lg font-bold text-blue-400">${status.treasury.total.toFixed(2)}</p>
+            </div>
+            <div>
+              <p className="text-[10px] text-gray-500">Runway</p>
+              <p className="text-lg font-bold">{status.treasury.runway_days > 9000 ? "\u221E" : `${status.treasury.runway_days}d`}</p>
+              <p className="text-[10px] text-gray-500">${status.treasury.daily_burn.toFixed(2)}/day burn</p>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Charts — stacked on mobile */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className="card lg:col-span-2">
