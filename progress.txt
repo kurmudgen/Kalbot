@@ -262,6 +262,23 @@ Each tier only fires if previous couldn't resolve. All calls cached.
 execution_tier logged per market for cost tracking.
 
 ================================================================
+PHASE 3: SMART CORRELATION GUARD — 2026-03-26
+================================================================
+
+Replaced hardcoded limits (mountain=2, weather/day=5) with bracket
+mutual exclusivity detection in correlation_guard.py.
+
+Weather: parses city+date+bracket from ticker, computes temp ranges,
+  checks overlap. Non-overlapping brackets allowed simultaneously.
+  Max 3 per city per resolution date (from .env).
+  Combined probability cap at 0.90.
+  Global weather cap: MAX_WEATHER_POSITIONS_PER_DAY=10 (from .env).
+
+Economic: event-level dedup, max 3 brackets per event per release.
+
+Backwards-compatible with executor.py call signature.
+
+================================================================
 TO CHECK STATUS: ask Claude "status"
 TO KILL: create S:\kalbot\STOP
 TO DEPLOY DASHBOARD: cd S:\kalbot\dashboard && npx vercel --prod
