@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T21:55:25.411511+00:00",
+  "updated_at": "2026-03-26T22:07:56.047512+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-26T21:55:25.411511+00:00",
+    "last_updated": "2026-03-26T22:07:56.047512+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -47,7 +47,7 @@
       },
       {
         "date": "2026-03-26",
-        "trades": 114,
+        "trades": 129,
         "deployed": 0.1
       }
     ],
@@ -64,6 +64,231 @@
     "executed": 1,
     "skipped": 49,
     "recent": [
+      {
+        "ticker": "KXWTI-26MAR26-T88.99",
+        "title": "Will the WTI front-month settle oil price  be >88.99 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7826618241172367,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.97,
+        "price_gap": 0.18733817588276325,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXWTI-26MAR26-T92.99",
+        "title": "Will the WTI front-month settle oil price  be >92.99 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7826618241172367,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.97,
+        "price_gap": 0.18733817588276325,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXWTI-26MAR26-T93.99",
+        "title": "Will the WTI front-month settle oil price  be >93.99 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7370733795742415,
+        "confidence": 0.6749999999999999,
+        "market_price": 0.89,
+        "price_gap": 0.15292662042575855,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T83.99",
+        "title": "Will the WTI front-month settle oil price  be >83.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7826618241172367,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.97,
+        "price_gap": 0.18733817588276325,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T84.99",
+        "title": "Will the WTI front-month settle oil price  be >84.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7426600883084095,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.92,
+        "price_gap": 0.17733991169159058,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T88.99",
+        "title": "Will the WTI front-month settle oil price  be >88.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7753236482344734,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.91,
+        "price_gap": 0.13467635176552661,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T89.99",
+        "title": "Will the WTI front-month settle oil price  be >89.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7288411627050325,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.89,
+        "price_gap": 0.1611588372949675,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T90.99",
+        "title": "Will the WTI front-month settle oil price  be >90.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.6834108166461447,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.8,
+        "price_gap": 0.11658918335385537,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T91.99",
+        "title": "Will the WTI front-month settle oil price  be >91.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.6491116701739322,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.76,
+        "price_gap": 0.11088832982606778,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXCPI-26JUL-T0.0",
+        "title": "Will CPI rise more than 0.0% in July 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8808092960305166,
+        "confidence": 0.8225373134328359,
+        "market_price": 0.81,
+        "price_gap": 0.07080929603051656,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "inflation",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR27-T93",
+        "title": "Will the **high temp in Austin** be >93\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.12300791112926804,
+        "confidence": 0.7470588235294117,
+        "market_price": 0.03,
+        "price_gap": 0.09300791112926804,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-03-26T22:05:06"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR27-B53.5",
+        "title": "Will the **high temp in Denver** be 53-54\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2827639580266753,
+        "confidence": 0.6618483412322275,
+        "market_price": 0.24,
+        "price_gap": 0.04276395802667532,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-03-26T22:05:05"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR26-T84",
+        "title": "Will the **high temp in Miami** be >84\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3391326584939549,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.12,
+        "price_gap": 0.2191326584939549,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-03-26T22:05:05"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-T77",
+        "title": "Will the high temp in Chicago be <77\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.826517010899403,
+        "confidence": 0.7477611940298508,
+        "market_price": 0.91,
+        "price_gap": 0.08348298910059704,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-03-26T22:05:05"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR25-T51",
+        "title": "Will the **high temp in NYC** be <51\u00b0 on Mar 25, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.17544470678957882,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.03,
+        "price_gap": 0.14544470678957883,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-03-26T22:05:05"
+      },
       {
         "ticker": "KXWTI-26MAR26-T88.99",
         "title": "Will the WTI front-month settle oil price  be >88.99 on Mar 26, 2026?",
@@ -588,237 +813,12 @@
         "reasoning": "No real-time research available.",
         "category": "energy",
         "time": "2026-03-26T20:36:24"
-      },
-      {
-        "ticker": "KXWTI-26MAR26-T93.99",
-        "title": "Will the WTI front-month settle oil price  be >93.99 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7288411627050325,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.89,
-        "price_gap": 0.1611588372949675,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-26T20:36:24"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T84.99",
-        "title": "Will the WTI front-month settle oil price  be >84.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.6549711972884972,
-        "confidence": 0.680188679245283,
-        "market_price": 0.92,
-        "price_gap": 0.26502880271150286,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-26T20:36:24"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T87.99",
-        "title": "Will the WTI front-month settle oil price  be >87.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7753236482344734,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.94,
-        "price_gap": 0.16467635176552653,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-26T20:36:24"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T88.99",
-        "title": "Will the WTI front-month settle oil price  be >88.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7772733307447286,
-        "confidence": 0.7244186046511628,
-        "market_price": 0.91,
-        "price_gap": 0.13272666925527143,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-26T20:36:24"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T89.99",
-        "title": "Will the WTI front-month settle oil price  be >89.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7288411627050325,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.89,
-        "price_gap": 0.1611588372949675,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-26T20:36:23"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T90.99",
-        "title": "Will the WTI front-month settle oil price  be >90.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.6834108166461447,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.8,
-        "price_gap": 0.11658918335385537,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-26T20:36:23"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T91.99",
-        "title": "Will the WTI front-month settle oil price  be >91.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.75,
-        "confidence": 0.75,
-        "market_price": 0.76,
-        "price_gap": 0.010000000000000009,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
-        "category": "energy",
-        "time": "2026-03-26T20:36:23"
-      },
-      {
-        "ticker": "KXCPI-26JUL-T0.0",
-        "title": "Will CPI rise more than 0.0% in July 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.8923965775579314,
-        "confidence": 0.8723417721518988,
-        "market_price": 0.81,
-        "price_gap": 0.0823965775579314,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Market prices on similar platforms show high odds for positive CPI changes: Kalshi market for >0.2% in July 2026 (related market)[1]; Robinhood >0.1% at 70\u00a2, >0.2% at 58\u00a2 for July 2026 MoM[5]. J.P. Mo",
-        "category": "inflation",
-        "time": "2026-03-26T07:24:23"
-      },
-      {
-        "ticker": "KXCPI-26APR-T0.3",
-        "title": "Will CPI rise more than 0.3% in April 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.525057755529281,
-        "confidence": 0.8418106312292358,
-        "market_price": 0.69,
-        "price_gap": 0.16494224447071892,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "February 2026 CPI rose 0.3% month-over-month, with shelter (0.2%), food (0.4%), and energy (0.6%) driving increases; core CPI up 0.2%[1][4]. Kalshi markets imply 26% chance of April 2026 MoM CPI >0.3%",
-        "category": "inflation",
-        "time": "2026-03-26T07:24:23"
-      },
-      {
-        "ticker": "KXHIGHDEN-26MAR26-T77",
-        "title": "Will the **high temp in Denver** be <77\u00b0 on Mar 26, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.3782954652808563,
-        "confidence": 0.8926966292134831,
-        "market_price": 0.15,
-        "price_gap": 0.22829546528085629,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Current weather report at 10:53 PM UTC Mar 26 (4:53 PM local) shows 68\u00b0F in Denver, partly cloudy, wind 13.8 mph SW[1]. Detailed forecast for Mar 26: Sunny, high 29\u00b0C (84\u00b0F), low 10\u00b0C (50\u00b0F), no preci",
-        "category": "weather",
-        "time": "2026-03-26T07:24:23"
-      },
-      {
-        "ticker": "KXHIGHDEN-26MAR26-B77.5",
-        "title": "Will the **high temp in Denver** be 77-78\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.06598931265637922,
-        "confidence": 0.9493478260869568,
-        "market_price": 0.19,
-        "price_gap": 0.12401068734362078,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Current weather at 10:53 PM Mar 26 (UTC 04:53) in Denver: 68\u00b0F, partly cloudy, winds SW 13.8 mph[2]. EaseWeather day-by-day forecast for Mar 26: Sunny, high 29\u00b0C (84\u00b0F), low 10\u00b0C (50\u00b0F), no precip/sno",
-        "category": "weather",
-        "time": "2026-03-26T07:24:23"
-      },
-      {
-        "ticker": "KXHIGHDEN-26MAR26-T84",
-        "title": "Will the **high temp in Denver** be >84\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.04690126453954079,
-        "confidence": 1.0,
-        "market_price": 0.06,
-        "price_gap": 0.013098735460459206,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Current weather report at Denver airport (KDEN) at 10:53 PM Mar 26 shows 68\u00b0F, partly cloudy, with no precipitation or snow expected[2]. Detailed day-by-day forecast for Mar 26 lists sunny conditions ",
-        "category": "weather",
-        "time": "2026-03-26T07:24:23"
-      },
-      {
-        "ticker": "KXHIGHAUS-26MAR26-T88",
-        "title": "Will the **high temp in Austin** be <88\u00b0 on Mar 26, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.37296749566483284,
-        "confidence": 0.802741116751269,
-        "market_price": 0.05,
-        "price_gap": 0.32296749566483285,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "According to AccuWeather's March 2026 forecast for Austin, TX, the high temperature for March 26 is predicted to be 90\u00b0F[1]. The latest weather report from Austin-Bergstrom International Airport as of",
-        "category": "weather",
-        "time": "2026-03-26T07:24:23"
-      },
-      {
-        "ticker": "KXHIGHCHI-26MAR26-B79.5",
-        "title": "Will the high temp in Chicago be 79-80\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.02572867357280844,
-        "confidence": 0.9287982195845697,
-        "market_price": 0.03,
-        "price_gap": 0.004271326427191559,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Forecasts for March 26, 2026, in Chicago show max temperatures of 17\u00b0C (63\u00b0F) from Metcheck[2], with earlier March days ranging 42-74\u00b0F per AccuWeather[1]; historical March averages are 33-44\u00b0F (1-7\u00b0C",
-        "category": "weather",
-        "time": "2026-03-26T07:24:23"
-      },
-      {
-        "ticker": "KXHIGHMIA-26MAR26-B79.5",
-        "title": "Will the **high temp in Miami** be 79-80\u00b0 on Mar 26, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.07294568534465169,
-        "confidence": 0.7,
-        "market_price": 0.03,
-        "price_gap": 0.04294568534465169,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami Beach and Miami International Airport on March 26, 2026: 83\u00b0 high for both locations[1][6]. Weather25.com lists 86\u00b0 high for Mar 26 in Miami[4]. Other sources provide m",
-        "category": "weather",
-        "time": "2026-03-26T07:24:23"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 297,
+      "trades": 312,
       "executed": 5,
       "deployed": 1.35
     },
@@ -855,70 +855,70 @@
         "claude": 0.25,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-26T21:54:40"
+        "time": "2026-03-26T22:07:11"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-26T21:54:38"
+        "time": "2026-03-26T22:07:09"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-26T21:54:36"
+        "time": "2026-03-26T22:07:07"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-26T21:54:34"
+        "time": "2026-03-26T22:07:05"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.72,
         "consensus": true,
-        "time": "2026-03-26T21:54:32"
+        "time": "2026-03-26T22:07:03"
       },
       {
         "perplexity": null,
         "claude": 0.75,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-26T21:54:30"
+        "time": "2026-03-26T22:07:01"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-26T21:54:28"
+        "time": "2026-03-26T22:06:59"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.78,
         "consensus": true,
-        "time": "2026-03-26T21:54:26"
+        "time": "2026-03-26T22:06:57"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-26T21:54:24"
+        "time": "2026-03-26T22:06:55"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-26T21:54:22"
+        "time": "2026-03-26T22:06:53"
       }
     ]
   },
@@ -1072,14 +1072,14 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "60 API retries this session",
-      "detail": "60 non-fatal exceptions across 16 cycles (~3.8/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "63 API retries this session",
+      "detail": "63 non-fatal exceptions across 17 cycles (~3.7/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 60,
-    "cycles": 16,
-    "uptime_hours": 3.8
+    "errors_24h": 63,
+    "cycles": 17,
+    "uptime_hours": 4.0
   }
 }
