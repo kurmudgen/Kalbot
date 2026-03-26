@@ -424,6 +424,15 @@ def run_momentum_cycle() -> dict:
         "SELECT DISTINCT symbol FROM momentum_trades WHERE status = 'open'"
     ).fetchall())
 
+    # Load platform profile for Coinbase momentum
+    try:
+        import sys as _sys
+        _sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "bot"))
+        from platform_profiles import get_profile
+        profile = get_profile("coinbase_momentum")
+    except Exception:
+        profile = None
+
     for sig in signals[:3]:
         if sig["symbol"] in held:
             continue
@@ -438,7 +447,22 @@ def run_momentum_cycle() -> dict:
         if price <= 0:
             continue
 
-        qty = MAX_POSITION / price
+        # Run platform-specific gates
+        if profile:
+            gate_ctx = {
+                "market_cap": sig.get("market_cap", 0),
+                "price": price,
+                "volume": sig.get("volume", 0),
+                "avg_volume_7d": sig.get("volume", 0) / 3,  # Rough estimate
+                "listing_age_verified": True,  # Already checked in entry filters
+            }
+            allowed, reason = profile.check_gates(gate_ctx)
+            if not allowed:
+                print(f"  GATE BLOCKED: {sig['symbol']} — {reason}")
+                continue
+
+        position_size = profile.max_position_size if profile else MAX_POSITION
+        qty = position_size / price
         layers = ", ".join(set(sig["layers"]))
 
         # Paper trade entry (log only)

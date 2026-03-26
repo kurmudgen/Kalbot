@@ -219,6 +219,15 @@ def run_cycle(session_id: str) -> dict:
         from blue_chip_strategy import scan_and_analyze, check_pdt_safe
         from alpaca_executor import get_account_info
 
+        # Load platform profile
+        try:
+            import sys as _sys
+            _sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "bot"))
+            from platform_profiles import get_profile
+            stocks_profile = get_profile("alpaca_stocks")
+        except Exception:
+            stocks_profile = None
+
         info = get_account_info()
         account_val = info.get("portfolio_value", 100000)
 
@@ -228,10 +237,11 @@ def run_cycle(session_id: str) -> dict:
             if sig["symbol"] in held_symbols:
                 continue
 
-            if sig["action"] == "buy" and sig["confidence"] > 0.65:
-                # Position size: max $500 per stock (safe for paper + real)
-                max_per_stock = float(os.getenv("STOCK_MAX_POSITION", "10")) * 50  # $500 default
-                amount = min(max_per_stock, account_val * 0.02)  # 2% of portfolio or $500
+            conf_floor = stocks_profile.confidence_floor if stocks_profile else 0.65
+            max_pos = stocks_profile.max_position_size if stocks_profile else 500
+
+            if sig["action"] == "buy" and sig["confidence"] > conf_floor:
+                amount = min(max_pos, account_val * 0.02)
                 qty = max(1, int(amount / sig["price"]))
 
                 result = execute_stock_trade(
