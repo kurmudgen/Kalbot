@@ -210,14 +210,56 @@ def aggregate_signals() -> list[dict]:
 
 # ── ENTRY LOGIC ──────────────────────────────────────────────
 
+def _check_listing_age(symbol: str) -> bool:
+    """Check if token has been listed long enough via CoinGecko.
+    Rejects unverifiable tokens (fail closed, not open).
+    """
+    try:
+        # CoinGecko coin detail includes genesis_date
+        r = requests.get(
+            f"https://api.coingecko.com/api/v3/coins/{symbol.lower()}",
+            params={"localization": "false", "tickers": "false",
+                    "community_data": "false", "developer_data": "false"},
+            timeout=10,
+        )
+        if r.status_code != 200:
+            return False  # Can't verify — reject
+
+        data = r.json()
+        genesis = data.get("genesis_date")
+        if not genesis:
+            # No genesis date available — reject as unverifiable
+            return False
+
+        from datetime import datetime
+        listed = datetime.strptime(genesis, "%Y-%m-%d")
+        age_days = (datetime.utcnow() - listed).days
+        if age_days < MIN_LISTING_DAYS:
+            return False
+
+        return True
+    except Exception:
+        return False  # Error — reject rather than allow
+
+
 def check_entry_filters(signal: dict) -> bool:
-    """Apply entry filters. Returns True if trade is allowed."""
+    """Apply all entry filters. Returns True if trade is allowed.
+
+    Checks: volume, market cap, sub-penny, and listing age.
+    All filters fail closed — if data is unavailable, trade is rejected.
+    """
     if signal.get("volume", 0) < MIN_24H_VOLUME:
         return False
     if signal.get("market_cap", 0) < MIN_MARKET_CAP:
         return False
     if signal.get("price", 0) < 0.01:
         return False  # Skip sub-penny tokens
+
+    # Listing age — query real data, reject if unverifiable
+    symbol = signal.get("symbol", "")
+    if symbol and not _check_listing_age(symbol):
+        return False
+
     return True
 
 
