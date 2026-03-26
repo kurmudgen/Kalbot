@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T03:34:29.698287+00:00",
+  "updated_at": "2026-03-26T03:53:58.915374+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -38,23 +38,38 @@
       },
       {
         "date": "2026-03-26",
-        "trades": 3,
+        "trades": 4,
         "deployed": 0
       }
     ],
     "resolved": {
-      "total_trades": 78,
+      "total_trades": 48,
       "wins": 9,
-      "losses": 69,
-      "win_rate": 0.11538461538461539,
+      "losses": 39,
+      "win_rate": 0.1875,
       "actual_pnl": -27.574199999999998
     }
   },
   "trades": {
     "total": 50,
-    "executed": 10,
-    "skipped": 40,
+    "executed": 11,
+    "skipped": 39,
     "recent": [
+      {
+        "ticker": "KXFED-27MAR-T3.00",
+        "title": "",
+        "side": "YES_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.3,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.35/contract (100%)",
+        "category": "",
+        "time": "2026-03-26T03:43:44"
+      },
       {
         "ticker": "KXFED-26SEP-T3.50",
         "title": "",
@@ -789,21 +804,6 @@
         "reasoning": "February 2026 CPI rose 0.3% MoM (all items), with recent months showing 0.2-0.3% increases; YoY at 2.4%.[1][9] Trading Economics forecasts CPI index to 329.07 by Q1 end (from 326.79 in Feb), implying ",
         "category": "inflation",
         "time": "2026-03-25T20:49:11"
-      },
-      {
-        "ticker": "KXCPI-26SEP-T0.2",
-        "title": "Will CPI rise more than 0.2% in September 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.603225456154218,
-        "confidence": 0.7097173144876324,
-        "market_price": 0.6,
-        "price_gap": 0.003225456154217987,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Prediction markets show 60% probability on Robinhood for CPI >0.2% in September 2026 (similar Kalshi market at >0.3% 47\u00a2); St. Louis Fed survey consensus CPI inflation 2.9% for 2026 (top forecasters 3",
-        "category": "inflation",
-        "time": "2026-03-25T20:49:11"
       }
     ]
   },
@@ -828,88 +828,88 @@
     "models": {
       "perplexity": {
         "analyses": 20,
-        "avg_probability": 0.27149999999999996
+        "avg_probability": 0.262
       },
       "claude": {
         "analyses": 20,
-        "avg_probability": 0.24699999999999997
+        "avg_probability": 0.2825
       },
       "deepseek": {
         "analyses": 20,
-        "avg_probability": 0.294
+        "avg_probability": 0.26955
       }
     },
-    "consensus_rate": 0.9,
+    "consensus_rate": 0.85,
     "recent_votes": [
       {
         "perplexity": 0.12,
         "claude": 0.12,
         "deepseek": 0.12,
-        "consensus": true,
-        "time": "2026-03-26T03:34:29"
+        "consensus": false,
+        "time": "2026-03-26T03:53:58"
       },
       {
         "perplexity": 0.92,
         "claude": 0.85,
-        "deepseek": 0.92,
+        "deepseek": 0.95,
         "consensus": true,
-        "time": "2026-03-26T03:34:13"
+        "time": "2026-03-26T03:53:44"
       },
       {
-        "perplexity": 0.55,
+        "perplexity": 0.28,
         "claude": 0.28,
-        "deepseek": 0.35,
+        "deepseek": 0.26,
         "consensus": true,
-        "time": "2026-03-26T03:33:57"
-      },
-      {
-        "perplexity": 0.85,
-        "claude": 0.25,
-        "deepseek": 0.35,
-        "consensus": false,
-        "time": "2026-03-26T03:33:31"
+        "time": "2026-03-26T03:53:24"
       },
       {
         "perplexity": 0.05,
         "claude": 0.05,
-        "deepseek": 0.02,
+        "deepseek": 0.05,
         "consensus": true,
-        "time": "2026-03-26T03:33:16"
+        "time": "2026-03-26T03:53:09"
       },
       {
         "perplexity": 0.05,
-        "claude": 0.08,
-        "deepseek": 0.02,
+        "claude": 0.05,
+        "deepseek": 0.05,
         "consensus": true,
-        "time": "2026-03-26T03:33:00"
+        "time": "2026-03-26T03:52:54"
       },
       {
         "perplexity": 0.02,
-        "claude": 0.02,
+        "claude": 0.08,
+        "deepseek": 0.08,
+        "consensus": true,
+        "time": "2026-03-26T03:52:39"
+      },
+      {
+        "perplexity": 0.02,
+        "claude": 0.05,
         "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-03-26T03:32:47"
+        "time": "2026-03-26T03:52:25"
       },
       {
         "perplexity": 0.18,
-        "claude": 0.25,
-        "deepseek": 0.25,
+        "claude": 0.35,
+        "deepseek": 0.35,
         "consensus": true,
-        "time": "2026-03-26T03:32:33"
+        "time": "2026-03-26T03:52:12"
       },
       {
         "perplexity": 0.05,
-        "claude": 0.15,
-        "deepseek": 0.15,
+        "claude": 0.25,
+        "deepseek": 0.25,
         "consensus": true,
-        "time": "2026-03-26T03:32:19"
+        "time": "2026-03-26T03:51:59"
       },
       {
-        "perplexity": 0.12,
-        "claude": 0.08,
-        "deepseek": 0.15,
+        "perplexity": 0.95,
+        "claude": 0.85,
+        "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-03-26T03:32:05"
+        "time": "2026-03-26T03:51:47"
       }
     ]
   },
@@ -999,76 +999,76 @@
   ],
   "news": [
     {
-      "text": "Latest CPI data shows February 2026 month-over-month increase of 0.3%, with YoY at 2.4% unchanged from January[1][9]. Trading Economics forecasts US CPI index rising gradually through 2026 (240.20 in ",
+      "text": "February 2026 CPI rose 0.3% monthly (sa), 2.4% annual; energy +0.5% annual, food +3.1%[1][9]. CPI August 2026 releases Sep 11, 2026[7][10]. Kalshi market for >0.2% Aug 2026 at implied ~50% (different ",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-26T03:34:19"
+      "time": "2026-03-26T03:53:49"
     },
     {
-      "text": "Latest CPI data shows February 2026 all-items index increased 2.4% year-over-year[1]. Monthly seasonally adjusted CPI rose 0.3% in February after 0.2% in January[1]. Energy index increased 0.6% in Feb",
+      "text": "Latest CPI data from February 2026 shows the all items index increased 0.3% seasonally adjusted monthly, with 12-month inflation at 2.4%[1]. J.P. Morgan forecasts U.S. core CPI at 3.2% for 2026, with ",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-26T03:34:04"
+      "time": "2026-03-26T03:53:34"
     },
     {
-      "text": "February 2026 CPI increased 0.3% month-over-month on a seasonally adjusted basis[1]. Prediction markets on Kalshi indicate probabilities of April 2026 CPI increasing above 0.1% (74%), above 0.2% (55%)",
+      "text": "February 2026 CPI rose 0.3% MoM (BLS)[1][3][7]. March 2026 CPI scheduled for April 10, 2026; April 2026 CPI for May 12, 2026[1][8][10]. Kalshi markets indicate 26% prob for April 2026 CPI >0.3% MoM, 5",
       "category": "inflation",
       "source": "perplexity",
-      "time": "2026-03-26T03:33:48"
+      "time": "2026-03-26T03:53:14"
     },
     {
-      "text": "EaseWeather provides a detailed day-by-day forecast for Denver in March 2026, showing March 26 as Sunny with a high of 29\u00b0C (84\u00b0F), which is above 77\u00b0F[7]. AccuWeather monthly data indicates March hig",
+      "text": "Multiple sources confirm Denver experienced exceptionally warm temperatures on March 25-26, 2026. Weather Spark reports the latest observation at 3:53 PM on March 25 showed 87.1\u00b0F[2]. EaseWeather's de",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-26T03:33:21"
+      "time": "2026-03-26T03:53:01"
     },
     {
-      "text": "Latest weather data for Denver on March 26, 2026 shows actual observed conditions and forecasts. According to Weather Spark, the most recent report from 3:53 PM Wed, Mar 25, 2026 recorded a temperatur",
+      "text": "According to the latest weather data from March 25, 2026, Denver's actual observed high temperature was 87.1\u00b0F[1]. For March 26, 2026, the forecast predicts a high of 29\u00b0C (approximately 84\u00b0F) with su",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-26T03:33:07"
+      "time": "2026-03-26T03:52:45"
     },
     {
-      "text": "EaseWeather provides a specific forecast for March 26, 2026, in Denver: Sunny, high of 29\u00b0F (approx. -2\u00b0C), low of 10\u00b0F[6]. Yesterday (Mar 25) was sunny with high of 31\u00b0F, and recent weather on Mar 25",
+      "text": "Search results provide historical and forecasted weather data for Denver in March 2026. WeatherSpark [2] offers hourly temperature history for March 2026, but no specific high for Mar 26 exceeds 84\u00b0F ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-26T03:32:52"
+      "time": "2026-03-26T03:52:30"
     },
     {
-      "text": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 29\u00b0F (about -1.7\u00b0C) on Mar 26 with sunny conditions and no precipitation or snow[6]. Recent weather d",
+      "text": "Search results include a detailed day-by-day forecast for Denver in March 2026 from EaseWeather showing Mar 26 as Sunny with high of 29\u00b0F (about -1.7\u00b0C) and low of 10\u00b0F (-12.2\u00b0C), far below 83-84\u00b0F[6]",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-26T03:32:38"
+      "time": "2026-03-26T03:52:17"
     },
     {
-      "text": "AccuWeather forecasts for Miami on Mar 26, 2026, show a high of 81\u00b0F[6]; Weather25.com lists 86\u00b0F/73\u00b0F partly cloudy[4]. Other sources provide March averages: daytime highs 25-26\u00b0C (77-79\u00b0F)[7], overa",
+      "text": "AccuWeather forecasts for Miami on Mar 26, 2026: Miami Beach shows incomplete daily data but surrounding days 81-87\u00b0F; Miami shows 81\u00b0 high[1][5]. Weather25.com forecasts 86\u00b0F high on Mar 26[4]. Other",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-26T03:32:23"
+      "time": "2026-03-26T03:52:03"
     },
     {
-      "text": "AccuWeather provides a specific forecast for March 26, 2026, in Austin, TX, listing a high temperature of 91\u00b0F, which is above the 88-89\u00b0F range[2]. WeatherSpark reports historical data for March 2026",
+      "text": "AccuWeather's monthly forecast for Austin in March 2026 lists the high temperature on March 26 as 91\u00b0F, outside the 88-89\u00b0F range[1]. Other sources provide general March averages (highs 69-72\u00b0F) or hi",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-26T03:32:10"
+      "time": "2026-03-26T03:51:50"
     },
     {
-      "text": "AccuWeather forecast for March 26, 2026, in Austin shows a daily high of 91\u00b0F, well above 88\u00b0F[1]. WeatherSpark provides historical data for March 26, 2026, noting moderate breeze (15 mph SSE), mostly",
+      "text": "Historical and average March weather data for Austin, TX, shows comfortable temperatures with daytime highs typically 21-22\u00b0C (69-72\u00b0F), well below 88\u00b0F (31\u00b0C). Specific sources: Weather25.com reports",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-26T03:31:56"
+      "time": "2026-03-26T03:51:38"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "83 errors this session"
+      "message": "86 errors this session"
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 83,
-    "cycles": 37,
-    "uptime_hours": 12.5
+    "errors_24h": 86,
+    "cycles": 38,
+    "uptime_hours": 12.8
   }
 }
