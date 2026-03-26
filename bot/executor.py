@@ -17,15 +17,18 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True
 ANALYST_DB = os.path.join(os.path.dirname(__file__), "..", "data", "live", "analyst_scores.sqlite")
 DECISIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "decisions.sqlite")
 
-CONFIDENCE_MIN = 0.75
-PRICE_GAP_MIN = 0.08
+CONFIDENCE_MIN = float(os.getenv("CONFIDENCE_MIN", "0.75"))
+PRICE_GAP_MIN = float(os.getenv("PRICE_GAP_MIN", "0.08"))
 
 # Category-specific confidence thresholds (lower = more aggressive)
 CATEGORY_CONFIDENCE = {
-    "weather": 0.70,     # Our strongest category — more aggressive
-    "economics": 0.80,   # Decent but markets are efficient
-    "inflation": 0.80,
-    "tsa": 0.85,         # Weakest category — very conservative
+    "weather": float(os.getenv("WEATHER_CONFIDENCE", "0.70")),
+    "economics": float(os.getenv("ECON_CONFIDENCE", "0.80")),
+    "inflation": float(os.getenv("INFLATION_CONFIDENCE", "0.80")),
+    "tsa": float(os.getenv("TSA_CONFIDENCE", "0.85")),
+    "congressional": float(os.getenv("CONGRESSIONAL_CONFIDENCE", "0.80")),
+    "energy": float(os.getenv("ENERGY_CONFIDENCE", "0.80")),
+    "entertainment": float(os.getenv("ENTERTAINMENT_CONFIDENCE", "0.85")),
 }
 
 # Kelly fraction — use fractional Kelly to reduce variance

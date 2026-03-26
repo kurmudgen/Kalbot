@@ -207,6 +207,35 @@ def main():
         print("--- TREASURY ---")
         print(f"  Mercury: error ({str(e)[:40]})")
 
+    # API efficiency and cost breakdown
+    print()
+    print("--- API EFFICIENCY ---")
+    COST_PER_CALL = {
+        "perplexity": 0.005, "claude": 0.003,
+        "deepseek": 0.001, "gemini": 0.0001,
+    }
+    try:
+        from api_cache import get_daily_stats
+        stats = get_daily_stats()
+        total_cost = 0
+        total_saved = 0
+        for model in ["gemini", "deepseek", "claude", "perplexity"]:
+            d = stats.get(model, {"calls": 0, "cache_hits": 0})
+            cost = d["calls"] * COST_PER_CALL.get(model, 0.001)
+            saved = d["cache_hits"] * COST_PER_CALL.get(model, 0.001)
+            budget_map = {"perplexity": 50, "claude": 75, "deepseek": 100, "gemini": 200}
+            budget = budget_map.get(model, 100)
+            total_cost += cost
+            total_saved += saved
+            print(f"  {model:<12} {d['calls']:>3} calls / {budget} budget | ${cost:.2f} | {d['cache_hits']} cache hits")
+
+        print(f"  Local only:  $0.00 (pre-screener + fast path)")
+        print(f"  Cache saved: ${total_saved:.2f} estimated")
+        print(f"  Total today: ${total_cost:.2f}")
+        print(f"  Projected monthly: ${total_cost * 30:.2f}")
+    except Exception:
+        print("  No API cache data available yet")
+
     print()
     print("=" * 50)
 
