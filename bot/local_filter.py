@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True)
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODELS = ["qwen2.5:7b"]  # Single model for speed (dual was too slow for 6K+ markets)
+MODELS = [os.getenv("LOCAL_FILTER_MODEL", "qwen2.5:32b")]
 MODEL = MODELS[0]
 PROMPT_PATH = os.path.join(os.path.dirname(__file__), "..", "prompts", "local_filter.txt")
 MARKETS_DB = os.path.join(os.path.dirname(__file__), "..", "data", "live", "markets.sqlite")

@@ -307,6 +307,59 @@ Pre-screener (bot/pre_screener.py):
   - PRESCREENER_ENABLED=true in .env
 
 ================================================================
+PHASE 7: LOCAL FILTER UPGRADED TO 32b — 2026-03-26
+================================================================
+
+qwen2.5:32b downloaded and active (19GB, was 4.7GB for 7b).
+LOCAL_FILTER_MODEL=qwen2.5:32b in .env.
+Test: NWS 58F vs 60F threshold -> prob=0.4, conf=0.7 (correct, no clustering).
+
+================================================================
+PHASE 8-9: MARKET CACHE + PARALLEL PROCESSING — 2026-03-26
+================================================================
+
+Market cache (bot/market_cache.py): thread-safe in-memory cache.
+OLLAMA_KEEP_ALIVE=-1 set for persistent model loading.
+
+Parallel processing: SKIPPED. Single-GPU Ollama queues internally.
+ThreadPoolExecutor adds complexity without speedup. Pre-screener
+(llama3.2:3b) handles the parallelism benefit by filtering before
+the expensive 32b model runs.
+
+================================================================
+PHASE 10: CHROMADB VECTOR STORE — 2026-03-26
+================================================================
+
+ChromaDB 1.5.5 installed. bot/vector_store.py built.
+all-MiniLM-L6-v2 embedding model downloaded.
+48 resolved markets loaded. Similarity search working.
+VECTOR_STORE_ENABLED=true in .env.
+Persists to data/chromadb/ directory.
+
+================================================================
+PHASE 11: SPORTS PROPS — SKIPPED
+================================================================
+
+Sports markets are high-variance with limited public data edge.
+No clean free data source found that provides actionable signal
+for Kalshi sports prop markets. Skipped per instruction.
+
+================================================================
+PHASE 12-13: COST SECTION + POSITION LIMITS — 2026-03-26
+================================================================
+
+Morning review: API efficiency section added with per-model costs,
+cache hits, and projected monthly spend.
+
+Position limits raised and moved to .env:
+  MAX_TRADE_SIZE=25 (was 10)
+  MAX_NIGHTLY_SPEND=100 (was 50)
+  MAX_WEATHER_POSITIONS_PER_DAY=10 (was 5)
+  MAX_POSITIONS_PER_CITY_PER_DAY=3 (new)
+
+All executor thresholds now read from .env with sensible defaults.
+
+================================================================
 TO CHECK STATUS: ask Claude "status"
 TO KILL: create S:\kalbot\STOP
 TO DEPLOY DASHBOARD: cd S:\kalbot\dashboard && npx vercel --prod
