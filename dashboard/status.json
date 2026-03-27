@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T00:34:11.506506+00:00",
+  "updated_at": "2026-03-27T00:48:36.124383+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T00:34:11.506506+00:00",
+    "last_updated": "2026-03-27T00:48:36.124383+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -52,7 +52,7 @@
       },
       {
         "date": "2026-03-27",
-        "trades": 402,
+        "trades": 592,
         "deployed": 34.19
       }
     ],
@@ -82,7 +82,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:34"
       },
       {
         "ticker": "KXWTI-26MAR26-T88.99",
@@ -97,7 +97,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:34"
       },
       {
         "ticker": "KXWTI-26MAR26-T92.99",
@@ -112,7 +112,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:34"
       },
       {
         "ticker": "KXWTI-26MAR26-T93.99",
@@ -127,7 +127,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:34"
       },
       {
         "ticker": "KXWTI-26MAR27-T83.99",
@@ -142,7 +142,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:34"
       },
       {
         "ticker": "KXWTI-26MAR27-T84.99",
@@ -157,7 +157,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:34"
       },
       {
         "ticker": "KXWTI-26MAR27-T88.99",
@@ -172,7 +172,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:34"
       },
       {
         "ticker": "KXWTI-26MAR27-T89.99",
@@ -187,7 +187,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:34"
       },
       {
         "ticker": "KXWTI-26MAR27-T90.99",
@@ -202,7 +202,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:34"
       },
       {
         "ticker": "KXWTI-26MAR27-T91.99",
@@ -217,7 +217,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:34"
       },
       {
         "ticker": "KXCPI-26JUL-T0.0",
@@ -232,7 +232,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "inflation",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:33"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-T93",
@@ -245,9 +245,9 @@
         "price_gap": 0.09300791112926804,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 28\u00b0F (equivalent to -2\u00b0C) on March 26 under sunny c",
         "category": "weather",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:33"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-B53.5",
@@ -260,9 +260,9 @@
         "price_gap": 0.04276395802667532,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 28\u00b0F (equivalent to -2\u00b0C) on March 26 under sunny c",
         "category": "weather",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:33"
       },
       {
         "ticker": "KXHIGHMIA-26MAR26-T84",
@@ -277,22 +277,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-27T00:31:11"
-      },
-      {
-        "ticker": "KXHIGHCHI-26MAR26-T77",
-        "title": "Will the high temp in Chicago be <77\u00b0 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.826517010899403,
-        "confidence": 0.7477611940298508,
-        "market_price": 0.91,
-        "price_gap": 0.08348298910059704,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "weather",
-        "time": "2026-03-27T00:31:11"
+        "time": "2026-03-27T00:45:33"
       },
       {
         "ticker": "KXHIGHNY-26MAR25-T51",
@@ -307,157 +292,172 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-27T00:31:10"
+        "time": "2026-03-27T00:45:33"
+      },
+      {
+        "ticker": "KXUSDJPY-26MAR2710-B158.625",
+        "title": "Will the USD/JPY open price be between 158.500 and 158.749 at Mar 27, 2026 at 10am EDT?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.17227286125885022,
+        "confidence": 0.6322728612588503,
+        "market_price": 0.09,
+        "price_gap": 0.08227286125885022,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "usdjpy=159.7000, prob=0.17",
+        "category": "forex",
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXUSDJPY-26MAR2710-B158.875",
         "title": "Will the USD/JPY open price be between 158.750 and 158.999 at Mar 27, 2026 at 10am EDT?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.23348551143859952,
-        "confidence": 0.7734855114385996,
+        "probability": 0.24298279785601973,
+        "confidence": 0.7829827978560198,
         "market_price": 0.01,
-        "price_gap": 0.22348551143859952,
+        "price_gap": 0.23298279785601972,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=159.7310, prob=0.23",
+        "reasoning": "usdjpy=159.7000, prob=0.24",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXUSDJPY-26MAR2710-B159.125",
         "title": "Will the USD/JPY open price be between 159.000 and 159.249 at Mar 27, 2026 at 10am EDT?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.315975478786764,
+        "probability": 0.3269834681284297,
         "confidence": 0.8,
         "market_price": 0.03,
-        "price_gap": 0.285975478786764,
+        "price_gap": 0.2969834681284297,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=159.7310, prob=0.32",
+        "reasoning": "usdjpy=159.7000, prob=0.33",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXUSDJPY-26MAR2710-B159.375",
         "title": "Will the USD/JPY open price be between 159.250 and 159.499 at Mar 27, 2026 at 10am EDT?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.40883254868526075,
+        "probability": 0.4208277614253756,
         "confidence": 0.8,
         "market_price": 0.06,
-        "price_gap": 0.34883254868526076,
+        "price_gap": 0.3608277614253756,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=159.7310, prob=0.41",
+        "reasoning": "usdjpy=159.7000, prob=0.42",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXUSDJPY-26MAR2710-B159.625",
         "title": "Will the USD/JPY open price be between 159.500 and 159.749 at Mar 27, 2026 at 10am EDT?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.5071344731202707,
+        "probability": 0.5194229886286188,
         "confidence": 0.8,
         "market_price": 0.09,
-        "price_gap": 0.41713447312027074,
+        "price_gap": 0.42942298862861883,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=159.7310, prob=0.51",
+        "reasoning": "usdjpy=159.7000, prob=0.52",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXUSDJPY-26MAR2710-B159.875",
         "title": "Will the USD/JPY open price be between 159.750 and 159.999 at Mar 27, 2026 at 10am EDT?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.6050028338216711,
+        "probability": 0.6168382197792417,
         "confidence": 0.8,
         "market_price": 0.09,
-        "price_gap": 0.5150028338216711,
+        "price_gap": 0.5268382197792417,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=159.7310, prob=0.61",
+        "reasoning": "usdjpy=159.7000, prob=0.62",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXUSDJPY-26MAR2710-B160.125",
         "title": "Will the USD/JPY open price be between 160.000 and 160.249 at Mar 27, 2026 at 10am EDT?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.6966366668535966,
+        "probability": 0.7073532660296865,
         "confidence": 0.8,
         "market_price": 0.07,
-        "price_gap": 0.6266366668535965,
+        "price_gap": 0.6373532660296866,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=159.7310, prob=0.70",
+        "reasoning": "usdjpy=159.7000, prob=0.71",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXUSDJPY-26MAR2710-B160.375",
         "title": "Will the USD/JPY open price be between 160.250 and 160.499 at Mar 27, 2026 at 10am EDT?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.7773234836984639,
+        "probability": 0.7864461782191235,
         "confidence": 0.8,
         "market_price": 0.04,
-        "price_gap": 0.7373234836984639,
+        "price_gap": 0.7464461782191235,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=159.7310, prob=0.78",
+        "reasoning": "usdjpy=159.7000, prob=0.79",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXUSDJPY-26MAR2710-B160.625",
         "title": "Will the USD/JPY open price be between 160.500 and 160.749 at Mar 27, 2026 at 10am EDT?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.8441397791938061,
+        "probability": 0.8514407545650262,
         "confidence": 0.8,
         "market_price": 0.1,
-        "price_gap": 0.7441397791938061,
+        "price_gap": 0.7514407545650262,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=159.7310, prob=0.84",
+        "reasoning": "usdjpy=159.7000, prob=0.85",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXUSDJPY-26MAR2710-B160.875",
         "title": "Will the USD/JPY open price be between 160.750 and 160.999 at Mar 27, 2026 at 10am EDT?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.8961747273048446,
+        "probability": 0.9016679886794665,
         "confidence": 0.8,
         "market_price": 0.08,
-        "price_gap": 0.8161747273048446,
+        "price_gap": 0.8216679886794666,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=159.7310, prob=0.90",
+        "reasoning": "usdjpy=159.7000, prob=0.90",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXUSDJPY-26MAR2710-T160.999",
         "title": "Will the USD/JPY open price be above 160.999 at Mar 27, 2026 at 10am EDT?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.8961747273048446,
+        "probability": 0.9016679886794665,
         "confidence": 0.8,
         "market_price": 0.08,
-        "price_gap": 0.8161747273048446,
+        "price_gap": 0.8216679886794666,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=159.7310, prob=0.90",
+        "reasoning": "usdjpy=159.7000, prob=0.90",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-B1.143",
@@ -472,7 +472,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.97",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-B1.145",
@@ -487,7 +487,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.94",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-B1.147",
@@ -502,7 +502,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.89",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-B1.149",
@@ -517,7 +517,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.81",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-B1.151",
@@ -532,7 +532,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.71",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-B1.153",
@@ -541,13 +541,13 @@
         "amount": 0.0,
         "probability": 0.578130499662277,
         "confidence": 0.8,
-        "market_price": 0.25,
-        "price_gap": 0.32813049966227703,
+        "market_price": 0.26,
+        "price_gap": 0.318130499662277,
         "mode": "PAPER",
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.58",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-B1.155",
@@ -562,7 +562,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.44",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-B1.157",
@@ -577,7 +577,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.31",
         "category": "forex",
-        "time": "2026-03-27T00:26:25"
+        "time": "2026-03-27T00:40:36"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-B1.159",
@@ -592,7 +592,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.20",
         "category": "forex",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-B1.161",
@@ -607,7 +607,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.12",
         "category": "forex",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXEURUSD-26MAR2710-T1.14200",
@@ -622,7 +622,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1531, prob=0.97",
         "category": "forex",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXGDP-26APR30-T2.0",
@@ -637,7 +637,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.50",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXGDP-26APR30-T2.5",
@@ -652,7 +652,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.16",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXGDP-26APR30-T3.0",
@@ -667,7 +667,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.02",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXGDP-26APR30-T3.5",
@@ -682,7 +682,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXGDP-26JUL30-T1.0",
@@ -697,7 +697,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.98",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXGDP-26JUL30-T1.5",
@@ -712,7 +712,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.84",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.5",
@@ -727,108 +727,108 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.16",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXFED-26JUL-T5.00",
         "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Jul 29, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.96,
+        "probability": 0.948,
         "confidence": 0.85,
         "market_price": 0.05,
-        "price_gap": 0.5449999999999999,
+        "price_gap": 0.5389999999999999,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.96 \u2192 prob=0.96",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXFED-26JUL-T5.25",
         "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Jul 29, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.96,
+        "probability": 0.948,
         "confidence": 0.85,
         "market_price": 0.05,
-        "price_gap": 0.5449999999999999,
+        "price_gap": 0.5389999999999999,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.96 \u2192 prob=0.96",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXFED-26JUN-T3.25",
         "title": "Will the upper bound of the federal funds rate be above 3.25% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.96,
-        "confidence": 0.8744999999999999,
+        "probability": 0.948,
+        "confidence": 0.8679,
         "market_price": 0.75,
-        "price_gap": 0.19499999999999998,
+        "price_gap": 0.18899999999999997,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.96 \u2192 prob=0.96",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXFED-26JUN-T3.50",
         "title": "Will the upper bound of the federal funds rate be above 3.50% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.96,
-        "confidence": 0.891,
+        "probability": 0.948,
+        "confidence": 0.8844,
         "market_price": 0.72,
-        "price_gap": 0.21,
+        "price_gap": 0.204,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.96 \u2192 prob=0.96",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXFED-26JUN-T3.75",
         "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.96,
+        "probability": 0.948,
         "confidence": 0.85,
         "market_price": 0.25,
-        "price_gap": 0.445,
+        "price_gap": 0.439,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.96 \u2192 prob=0.96",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       },
       {
         "ticker": "KXFED-26JUN-T4.00",
         "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.96,
+        "probability": 0.948,
         "confidence": 0.85,
         "market_price": 0.02,
-        "price_gap": 0.56,
+        "price_gap": 0.554,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.96 \u2192 prob=0.96",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T00:26:24"
+        "time": "2026-03-27T00:40:35"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 482,
+      "trades": 497,
       "executed": 5,
       "deployed": 1.35
     },
     "QUANT": {
-      "trades": 2855,
+      "trades": 3030,
       "executed": 227,
       "deployed": 127.26999999999998
     },
@@ -860,78 +860,78 @@
         "claude": null,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-27T00:33:26"
+        "time": "2026-03-27T00:47:52"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.35,
         "consensus": false,
-        "time": "2026-03-27T00:33:26"
+        "time": "2026-03-27T00:47:52"
       },
       {
         "perplexity": null,
         "claude": 0.45,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-27T00:33:24"
+        "time": "2026-03-27T00:47:49"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.75,
         "consensus": false,
-        "time": "2026-03-27T00:33:22"
+        "time": "2026-03-27T00:47:47"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-27T00:33:20"
+        "time": "2026-03-27T00:47:46"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-27T00:33:18"
+        "time": "2026-03-27T00:47:43"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-27T00:33:16"
+        "time": "2026-03-27T00:47:42"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-27T00:33:14"
+        "time": "2026-03-27T00:47:39"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-27T00:33:12"
+        "time": "2026-03-27T00:47:37"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-27T00:33:10"
+        "time": "2026-03-27T00:47:35"
       }
     ]
   },
   "scanner": {
     "total_markets": 2389,
-    "with_prices": 1486,
-    "passed_filter": 54,
-    "total_scored": 428,
+    "with_prices": 1487,
+    "passed_filter": 55,
+    "total_scored": 429,
     "categories": {
       "economics": 1360,
       "energy": 115,
@@ -1014,6 +1014,12 @@
   ],
   "news": [
     {
+      "text": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 28\u00b0F (equivalent to -2\u00b0C) on March 26 under sunny conditions with no precipitation or snow[6]. Histor",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T00:44:30"
+    },
+    {
       "text": "February 2026 CPI rose 0.3% month-over-month (MoM), with 12-month all-items at 2.4%; core at 2.5% YoY[1][9]. CPI for August 2026 releases Sep 11, 2026[4]. Robinhood prediction market implies ~32% for ",
       "category": "inflation",
       "source": "perplexity",
@@ -1066,25 +1072,19 @@
       "category": "weather",
       "source": "perplexity",
       "time": "2026-03-26T07:22:08"
-    },
-    {
-      "text": "According to AccuWeather's March 2026 forecast for Austin, TX, the high temperature for March 26 is predicted to be 90\u00b0F[1]. The latest weather report from Austin-Bergstrom International Airport as of",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-26T07:21:55"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "102 API retries this session",
-      "detail": "102 non-fatal exceptions across 28 cycles (~3.6/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "106 API retries this session",
+      "detail": "106 non-fatal exceptions across 29 cycles (~3.7/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 102,
-    "cycles": 28,
-    "uptime_hours": 6.5
+    "errors_24h": 106,
+    "cycles": 29,
+    "uptime_hours": 6.7
   }
 }
