@@ -63,7 +63,8 @@ SERIES_CATEGORY_MAP = {
     "KXBTC": "economics", "KXBTCD": "economics",
     "KXFED": "economics", "KXFOMC": "economics",
     "KXGDP": "economics",
-    "KXEURUSD": "economics", "KXUSDJPY": "economics",
+    # FOREX DISABLED — 1W/8L, bracket flooding, no calibrated edge
+    # "KXEURUSD": "economics", "KXUSDJPY": "economics",
     "KXTREAS": "economics", "KX10Y": "economics",
     # TSA
     "KXTSA": "tsa", "TSA": "tsa",
@@ -155,8 +156,8 @@ def scan_markets(conn: sqlite3.Connection) -> int:
         "KXCONG", "KXSTOCK",
         # Entertainment
         "KXMOVIE", "KXBOX",
-        # Forex
-        "KXEURUSD", "KXUSDJPY",
+        # Forex — DISABLED (1W/8L, -$18.80, bracket flooding)
+        # "KXEURUSD", "KXUSDJPY",
     ]
 
     for series in TARGET_SERIES:

@@ -32,7 +32,7 @@ DEFAULT_ALLOCATIONS = {
     "SNIPER": 0.08,
     "EMERGING": 0.05,
     "GAS": 0.04,
-    "FOREX": 0.04,
+    # "FOREX": 0.00,  # DISABLED — 1W/8L, bracket flooding, no edge
     "JOBLESS": 0.05,
     "CONGRESSIONAL": 0.03,
     "ENTERTAINMENT": 0.02,

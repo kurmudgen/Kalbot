@@ -114,7 +114,7 @@ QUANT_STRATEGIES = {
     "BITCOIN": {"module": "bitcoin_strategy", "func": "analyze_btc_markets"},
     "TREASURY": {"module": "treasury_strategy", "func": "analyze_treasury_markets"},
     "GAS": {"module": "gas_strategy", "func": "analyze_gas_markets"},
-    "FOREX": {"module": "forex_strategy", "func": "analyze_forex_markets"},
+    # "FOREX": {"module": "forex_strategy", "func": "analyze_forex_markets"},  # DISABLED — 1W/8L, -$18.80
 }
 
 
@@ -411,7 +411,7 @@ def main():
             except Exception:
                 allocs = {"WEATHER": 0.25, "SP500": 0.15, "ECON": 0.15,
                           "BITCOIN": 0.10, "TREASURY": 0.10, "GAS": 0.05,
-                          "FOREX": 0.05, "WILDCARD": 0.15}
+                          "WILDCARD": 0.20}
 
             # Run quantitative strategies (each has its own analysis module)
             all_quant_signals = []

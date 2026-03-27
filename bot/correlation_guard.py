@@ -98,6 +98,13 @@ def check_correlation(new_market: dict) -> dict:
 
     positions = get_active_positions()
 
+    # Universal bracket flood check — max 3 trades on same event for ANY category
+    allowed, reason = _check_event_flooding(ticker, positions)
+    if not allowed:
+        result["allowed"] = False
+        result["reason"] = reason
+        return result
+
     if category == "weather":
         allowed, reason = _check_weather(ticker, probability, positions)
         result["allowed"] = allowed
@@ -108,6 +115,31 @@ def check_correlation(new_market: dict) -> dict:
         result["reason"] = reason
 
     return result
+
+
+MAX_SAME_EVENT = 3  # Max brackets on same underlying event, any category
+
+
+def _check_event_flooding(ticker: str, positions: list[dict]) -> tuple[bool, str]:
+    """Universal bracket flooding check — prevents carpet-bombing same event.
+
+    Extracts event key from ticker (series + date portion) and counts
+    how many positions share that event key. Max 3 per event.
+    """
+    # Extract event key: everything before the bracket suffix
+    # KXEURUSD-26MAR2710-B1.153 -> KXEURUSD-26MAR2710
+    # KXHIGHDEN-26MAR26-B81.5 -> KXHIGHDEN-26MAR26
+    parts = ticker.rsplit("-", 1)
+    if len(parts) < 2:
+        return True, ""
+
+    event_key = parts[0]
+    same_event = [p for p in positions if p["ticker"].startswith(event_key)]
+
+    if len(same_event) >= MAX_SAME_EVENT:
+        return False, f"bracket flooding: {len(same_event)} positions on {event_key} (max {MAX_SAME_EVENT})"
+
+    return True, ""
 
 
 def _check_weather(ticker: str, probability: float, positions: list[dict]) -> tuple[bool, str]:

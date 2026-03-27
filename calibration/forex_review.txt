@@ -1,0 +1,31 @@
+FOREX PERFORMANCE REVIEW — 2026-03-27
+========================================
+
+DISABLED: Forex removed from scanner whitelist and rebalancer.
+
+Results: 9 trades, 1W/8L (11% WR), P&L: -$18.80
+All trades were YES on EURUSD brackets for same event (Mar 27 10am).
+Identical confidence 0.80 across all 9 — model not differentiating brackets.
+
+Tickers:
+  KXEURUSD-26MAR2710-T1.14200  YES  no   -$5.02
+  KXEURUSD-26MAR2710-B1.157    YES  no   -$1.63
+  KXEURUSD-26MAR2710-B1.155    YES  no   -$2.17
+  KXEURUSD-26MAR2710-B1.153    YES  yes  +$8.17
+  KXEURUSD-26MAR2710-B1.151    YES  no   -$3.66
+  KXEURUSD-26MAR2710-B1.149    YES  no   -$4.25
+  KXEURUSD-26MAR2710-B1.147    YES  no   -$4.63
+  KXEURUSD-26MAR2710-B1.145    YES  no   -$4.88
+  KXEURUSD-26MAR2710-B1.143    YES  no   -$0.73
+
+Issues:
+1. Bracket flooding — 9 trades on same underlying event, same direction
+2. Identical confidence (0.80) — model not calibrated for forex
+3. YES base rate 11% — massive majority class problem (NO wins 89%)
+4. Smart correlation guard didn't catch this — forex not in its scope
+5. No forex-specific data feed — model has no edge over market price
+
+Re-enable conditions:
+- Build forex-specific data feed (FX futures, central bank divergence)
+- Prove edge on paper with bracket dedup active
+- Minimum 20 resolved trades with >55% WR before re-enabling
