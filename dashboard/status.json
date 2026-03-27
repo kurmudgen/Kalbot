@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T04:11:55.142013+00:00",
+  "updated_at": "2026-03-27T04:27:23.387541+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T04:11:55.142013+00:00",
+    "last_updated": "2026-03-27T04:27:23.387541+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -52,7 +52,7 @@
       },
       {
         "date": "2026-03-27",
-        "trades": 769,
+        "trades": 770,
         "deployed": 34.19
       }
     ],
@@ -69,6 +69,21 @@
     "executed": 2,
     "skipped": 48,
     "recent": [
+      {
+        "ticker": "KXHIGHNY-26MAR27-B66.5",
+        "title": "Will the **high temp in NYC** be 66-67\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.1,
+        "confidence": 0.875,
+        "market_price": 0.05,
+        "price_gap": 0.05,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
+        "category": "weather",
+        "time": "2026-03-27T04:23:37"
+      },
       {
         "ticker": "KXCPI-26APR-T0.4",
         "title": "",
@@ -803,27 +818,12 @@
         "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
         "time": "2026-03-27T00:54:57"
-      },
-      {
-        "ticker": "KXFED-26SEP-T4.50",
-        "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.15,
-        "price_gap": 0.48899999999999993,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-03-27T00:54:57"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 497,
+      "trades": 498,
       "executed": 5,
       "deployed": 1.35
     },
@@ -860,14 +860,14 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-03-27T04:06:43"
+        "time": "2026-03-27T04:22:14"
       },
       {
         "perplexity": 0.25,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T04:06:43"
+        "time": "2026-03-27T04:22:14"
       },
       {
         "perplexity": 0.95,
@@ -1017,6 +1017,18 @@
       "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
       "category": "weather",
       "source": "perplexity",
+      "time": "2026-03-27T04:22:14"
+    },
+    {
+      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T04:19:35"
+    },
+    {
+      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "category": "weather",
+      "source": "perplexity",
       "time": "2026-03-27T04:06:43"
     },
     {
@@ -1060,31 +1072,19 @@
       "category": "weather",
       "source": "perplexity",
       "time": "2026-03-27T03:47:33"
-    },
-    {
-      "text": "March 25, 2026 has already occurred (today is March 27, 2026). Historical weather data from Weather Spark shows the actual observed temperature at NYC Central Park on March 26, 2026 was 68.0\u00b0F at 6:51",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T03:45:44"
-    },
-    {
-      "text": "According to AccuWeather historical data for Austin, TX in March 2026, the high temperature on March 26 was 90\u00b0F[1]. Weather Spark reports the latest observation from Austin-Bergstrom International Ai",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T03:45:42"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "123 API retries this session",
-      "detail": "123 non-fatal exceptions across 35 cycles (~3.5/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "124 API retries this session",
+      "detail": "124 non-fatal exceptions across 36 cycles (~3.4/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 123,
-    "cycles": 35,
-    "uptime_hours": 10.1
+    "errors_24h": 124,
+    "cycles": 36,
+    "uptime_hours": 10.4
   }
 }
