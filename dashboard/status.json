@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T03:18:00.467970+00:00",
+  "updated_at": "2026-03-27T03:37:15.547375+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,13 +16,13 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T03:18:00.467970+00:00",
+    "last_updated": "2026-03-27T03:37:15.547375+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
   },
   "pnl": {
-    "today": 0,
+    "today": 0.0,
     "all_time": -28.7842,
     "history": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "date": "2026-03-27",
-        "trades": 767,
+        "trades": 768,
         "deployed": 34.19
       }
     ],
@@ -66,9 +66,24 @@
   },
   "trades": {
     "total": 50,
-    "executed": 0,
-    "skipped": 50,
+    "executed": 1,
+    "skipped": 49,
     "recent": [
+      {
+        "ticker": "KXCPI-26APR-T0.5",
+        "title": "",
+        "side": "NO_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.96,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.24/contract (33%)",
+        "category": "",
+        "time": "2026-03-27T03:23:33"
+      },
       {
         "ticker": "KXUSDJPY-26MAR2710-B158.625",
         "title": "Will the USD/JPY open price be between 158.500 and 158.749 at Mar 27, 2026 at 10am EDT?",
@@ -803,21 +818,6 @@
         "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
         "time": "2026-03-27T00:54:57"
-      },
-      {
-        "ticker": "KXFED-26SEP-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.55,
-        "price_gap": 0.2889999999999999,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-03-27T00:54:57"
       }
     ]
   },
@@ -858,65 +858,65 @@
       {
         "perplexity": null,
         "claude": null,
-        "deepseek": 0.18,
-        "consensus": false,
-        "time": "2026-03-27T03:15:43"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-03-27T03:09:59"
+        "time": "2026-03-27T03:30:37"
       },
       {
         "perplexity": 0.25,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T03:09:59"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": 0.02,
-        "consensus": false,
-        "time": "2026-03-27T03:09:55"
+        "time": "2026-03-27T03:30:37"
       },
       {
         "perplexity": 0.85,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T03:09:55"
+        "time": "2026-03-27T03:30:33"
       },
       {
         "perplexity": 0.95,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T03:09:50"
+        "time": "2026-03-27T03:30:28"
       },
       {
         "perplexity": 0.02,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-03-27T03:09:49"
+        "time": "2026-03-27T03:30:26"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-27T03:09:46"
+        "time": "2026-03-27T03:30:24"
       },
       {
         "perplexity": 0.02,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T03:09:44"
+        "time": "2026-03-27T03:30:22"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.02,
+        "consensus": false,
+        "time": "2026-03-27T03:26:04"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.18,
+        "consensus": false,
+        "time": "2026-03-27T03:15:43"
       },
       {
         "perplexity": null,
@@ -1017,74 +1017,74 @@
       "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T03:09:59"
+      "time": "2026-03-27T03:30:37"
     },
     {
       "text": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 28\u00b0F (equivalent to -2\u00b0C) on March 26 under sunny conditions with no precipitation or snow[6]. Histor",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T03:09:55"
+      "time": "2026-03-27T03:30:33"
     },
     {
       "text": "According to AccuWeather historical data for Austin, TX in March 2026, the high temperature on March 26 was 90\u00b0F[1]. Weather Spark reports the latest observation from Austin-Bergstrom International Ai",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T03:09:50"
+      "time": "2026-03-27T03:30:28"
     },
     {
       "text": "Forecasts for Chicago on March 26, 2026, show max temperatures of 17\u00b0C (63\u00b0F) [1], 55\u00b0F day high [6], and typical March averages of 33-44\u00b0F (1-7\u00b0C) [7]. Other sources indicate cool, breezy conditions ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T03:09:49"
+      "time": "2026-03-27T03:30:26"
     },
     {
       "text": "March 25, 2026 has already occurred (today is March 27, 2026). Historical weather data from Weather Spark shows the actual observed temperature at NYC Central Park on March 26, 2026 was 68.0\u00b0F at 6:51",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T03:09:44"
+      "time": "2026-03-27T03:30:22"
     },
     {
       "text": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 28\u00b0F (equivalent to -2\u00b0C) on March 26 under sunny conditions with no precipitation or snow[6]. Histor",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T03:08:12"
+      "time": "2026-03-27T03:28:10"
     },
     {
       "text": "According to AccuWeather historical data for Austin, TX in March 2026, the high temperature on March 26 was 90\u00b0F[1]. Weather Spark reports the latest observation from Austin-Bergstrom International Ai",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T03:08:07"
+      "time": "2026-03-27T03:28:06"
     },
     {
       "text": "Forecasts for Chicago on March 26, 2026, show max temperatures of 17\u00b0C (63\u00b0F) [1], 55\u00b0F day high [6], and typical March averages of 33-44\u00b0F (1-7\u00b0C) [7]. Other sources indicate cool, breezy conditions ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T03:08:05"
+      "time": "2026-03-27T03:28:02"
     },
     {
       "text": "March 25, 2026 has already occurred (today is March 27, 2026). Historical weather data from Weather Spark shows the actual observed temperature at NYC Central Park on March 26, 2026 was 68.0\u00b0F at 6:51",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T03:06:31"
+      "time": "2026-03-27T03:26:28"
     },
     {
       "text": "According to AccuWeather historical data for Austin, TX in March 2026, the high temperature on March 26 was 90\u00b0F[1]. Weather Spark reports the latest observation from Austin-Bergstrom International Ai",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T03:06:29"
+      "time": "2026-03-27T03:26:26"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "115 API retries this session",
-      "detail": "115 non-fatal exceptions across 32 cycles (~3.6/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "118 API retries this session",
+      "detail": "118 non-fatal exceptions across 33 cycles (~3.6/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 115,
-    "cycles": 32,
-    "uptime_hours": 9.2
+    "errors_24h": 118,
+    "cycles": 33,
+    "uptime_hours": 9.5
   }
 }
