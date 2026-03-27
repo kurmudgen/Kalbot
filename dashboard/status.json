@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T23:17:19.224470+00:00",
+  "updated_at": "2026-03-27T23:28:22.354052+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T23:17:19.224470+00:00",
+    "last_updated": "2026-03-27T23:28:22.354052+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -52,7 +52,7 @@
       },
       {
         "date": "2026-03-27",
-        "trades": 2007,
+        "trades": 2182,
         "deployed": 35.589999999999996
       }
     ],
@@ -82,7 +82,7 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.04",
         "category": "forex",
-        "time": "2026-03-27T23:12:18"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B158.625",
@@ -97,7 +97,7 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.06",
         "category": "forex",
-        "time": "2026-03-27T23:12:18"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B158.875",
@@ -112,7 +112,7 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.10",
         "category": "forex",
-        "time": "2026-03-27T23:12:18"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B159.125",
@@ -127,7 +127,7 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.15",
         "category": "forex",
-        "time": "2026-03-27T23:12:18"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B159.375",
@@ -142,7 +142,7 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.22",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B159.625",
@@ -157,52 +157,52 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.30",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B159.875",
         "title": "Will the USD/JPY open price be between 159.750 and 159.999 at Mar 30, 2026 at 10am EDT?",
-        "side": "YES",
+        "side": "NO",
         "amount": 0.0,
         "probability": 0.38812483173461304,
         "confidence": 0.8,
-        "market_price": 0.1,
-        "price_gap": 0.288124831734613,
+        "market_price": 0.77,
+        "price_gap": 0.381875168265387,
         "mode": "PAPER",
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.39",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B160.125",
         "title": "Will the USD/JPY open price be between 160.000 and 160.249 at Mar 30, 2026 at 10am EDT?",
-        "side": "YES",
+        "side": "NO",
         "amount": 0.0,
         "probability": 0.4853874671946078,
         "confidence": 0.8,
-        "market_price": 0.09,
-        "price_gap": 0.3953874671946078,
+        "market_price": 0.77,
+        "price_gap": 0.2846125328053922,
         "mode": "PAPER",
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.49",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B160.375",
         "title": "Will the USD/JPY open price be between 160.250 and 160.499 at Mar 30, 2026 at 10am EDT?",
-        "side": "YES",
+        "side": "NO",
         "amount": 0.0,
         "probability": 0.583531768762863,
         "confidence": 0.8,
-        "market_price": 0.11,
-        "price_gap": 0.47353176876286296,
+        "market_price": 0.95,
+        "price_gap": 0.366468231237137,
         "mode": "PAPER",
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.58",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B160.625",
@@ -217,7 +217,7 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.68",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B160.875",
@@ -232,7 +232,7 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.76",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B161.125",
@@ -247,7 +247,7 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.83",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-B161.375",
@@ -262,7 +262,7 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.89",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXUSDJPY-26MAR3010-T161.499",
@@ -277,7 +277,7 @@
         "executed": false,
         "reasoning": "usdjpy=160.2860, prob=0.89",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.141",
@@ -292,7 +292,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.97",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.143",
@@ -307,7 +307,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.94",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:23"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.145",
@@ -322,7 +322,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.89",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.147",
@@ -337,7 +337,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.81",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.149",
@@ -346,13 +346,13 @@
         "amount": 0.0,
         "probability": 0.6996941521573539,
         "confidence": 0.8,
-        "market_price": 0.04,
-        "price_gap": 0.6596941521573538,
+        "market_price": 0.05,
+        "price_gap": 0.6496941521573538,
         "mode": "PAPER",
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.70",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.155",
@@ -367,7 +367,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.30",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.157",
@@ -382,7 +382,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.19",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.159",
@@ -397,7 +397,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.11",
         "category": "forex",
-        "time": "2026-03-27T23:12:17"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.161",
@@ -412,7 +412,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.06",
         "category": "forex",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.163",
@@ -427,7 +427,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.03",
         "category": "forex",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-B1.165",
@@ -442,7 +442,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.01",
         "category": "forex",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-T1.14000",
@@ -457,7 +457,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.97",
         "category": "forex",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXEURUSD-26MAR3010-T1.16599",
@@ -472,7 +472,7 @@
         "executed": false,
         "reasoning": "eurusd=1.1510, prob=0.01",
         "category": "forex",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXGDP-26APR30-T2.0",
@@ -487,7 +487,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.50",
         "category": "economics",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXGDP-26APR30-T2.5",
@@ -502,7 +502,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.16",
         "category": "economics",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXGDP-26APR30-T3.0",
@@ -517,7 +517,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.02",
         "category": "economics",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXGDP-26APR30-T3.5",
@@ -532,7 +532,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXGDP-26JUL30-T1.0",
@@ -547,7 +547,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.98",
         "category": "economics",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:22"
       },
       {
         "ticker": "KXGDP-26JUL30-T1.5",
@@ -562,7 +562,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.84",
         "category": "economics",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.5",
@@ -577,7 +577,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.16",
         "category": "economics",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUL-T5.00",
@@ -590,9 +590,9 @@
         "price_gap": 0.5389999999999999,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUL-T5.25",
@@ -605,9 +605,9 @@
         "price_gap": 0.5389999999999999,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:16"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUN-T3.25",
@@ -620,9 +620,9 @@
         "price_gap": 0.18399999999999997,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUN-T3.50",
@@ -635,9 +635,9 @@
         "price_gap": 0.204,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUN-T3.75",
@@ -650,9 +650,9 @@
         "price_gap": 0.449,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUN-T4.00",
@@ -665,9 +665,9 @@
         "price_gap": 0.454,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUN-T4.25",
@@ -680,9 +680,9 @@
         "price_gap": 0.504,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUN-T4.50",
@@ -695,9 +695,9 @@
         "price_gap": 0.5289999999999999,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUN-T4.75",
@@ -710,9 +710,9 @@
         "price_gap": 0.534,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUN-T5.00",
@@ -725,9 +725,9 @@
         "price_gap": 0.5489999999999999,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26JUN-T5.25",
@@ -740,9 +740,9 @@
         "price_gap": 0.5289999999999999,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26SEP-T2.75",
@@ -755,9 +755,9 @@
         "price_gap": 0.214,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26SEP-T3.00",
@@ -770,9 +770,9 @@
         "price_gap": 0.24899999999999997,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26SEP-T3.25",
@@ -785,9 +785,9 @@
         "price_gap": 0.30399999999999994,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:15"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26SEP-T3.50",
@@ -800,9 +800,9 @@
         "price_gap": 0.204,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:14"
+        "time": "2026-03-27T23:23:21"
       },
       {
         "ticker": "KXFED-26SEP-T3.75",
@@ -815,9 +815,9 @@
         "price_gap": 0.264,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.05, hold=0.948 \u2192 prob=0.95",
+        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
-        "time": "2026-03-27T23:12:14"
+        "time": "2026-03-27T23:23:20"
       }
     ]
   },
@@ -828,7 +828,7 @@
       "deployed": 2.75
     },
     "QUANT": {
-      "trades": 4067,
+      "trades": 4239,
       "executed": 255,
       "deployed": 127.26999999999998
     },
@@ -1078,13 +1078,13 @@
     {
       "level": "warning",
       "message": "147 API retries this session",
-      "detail": "147 non-fatal exceptions across 120 cycles (~1.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "147 non-fatal exceptions across 121 cycles (~1.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 147,
-    "cycles": 120,
-    "uptime_hours": 29.2
+    "cycles": 121,
+    "uptime_hours": 29.4
   }
 }
