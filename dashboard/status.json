@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T12:25:58.009207+00:00",
+  "updated_at": "2026-03-27T12:40:03.298956+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T12:25:58.009207+00:00",
+    "last_updated": "2026-03-27T12:40:03.298956+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -52,7 +52,7 @@
       },
       {
         "date": "2026-03-27",
-        "trades": 1105,
+        "trades": 1108,
         "deployed": 35.589999999999996
       }
     ],
@@ -69,6 +69,51 @@
     "executed": 6,
     "skipped": 44,
     "recent": [
+      {
+        "ticker": "KXHIGHNY-26MAR27-B62.5",
+        "title": "Will the **high temp in NYC** be 62-63\u00b0 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.2258879897708174,
+        "confidence": 0.8075,
+        "market_price": 0.31,
+        "price_gap": 0.0841120102291826,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Today is March 27, 2026, 10 AM UTC in NYC. Latest report from WeatherSpark [3] at 12:51 AM UTC shows current temp 66\u00b0F, 24-hour high 75.9\u00b0F (as of early morning), indicating the daily high has already",
+        "category": "weather",
+        "time": "2026-03-27T12:36:52"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-B83.5",
+        "title": "Will the **high temp in Denver** be 83-84\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.020533926586290496,
+        "confidence": 0.9709615384615384,
+        "market_price": 0.15,
+        "price_gap": 0.1294660734137095,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "According to AccuWeather data for Denver, CO, the high temperature on March 26, 2026 was 84\u00b0F[1]. Weather Spark historical data confirms a temperature reading of 64.9\u00b0F at 3:53 PM on Thursday, March 2",
+        "category": "weather",
+        "time": "2026-03-27T12:36:52"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR26-T88",
+        "title": "Will the **high temp in Austin** be <88\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2619254280085303,
+        "confidence": 0.80625,
+        "market_price": 0.05,
+        "price_gap": 0.21192542800853031,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecast for March 26, 2026, in Austin shows a high of 90\u00b0F[1]. WeatherSpark historical data for March 26, 2026, reports clear skies, SSE winds at 17.3 mph, but no specific temperature[2].",
+        "category": "weather",
+        "time": "2026-03-27T12:36:52"
+      },
       {
         "ticker": "KXHIGHNY-26MAR27-B62.5",
         "title": "Will the **high temp in NYC** be 62-63\u00b0 on Mar 27, 2026?",
@@ -773,57 +818,12 @@
         "reasoning": "No real-time research available.",
         "category": "energy",
         "time": "2026-03-27T10:09:55"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T89.99",
-        "title": "Will the WTI front-month settle oil price  be >89.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7288411627050325,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.83,
-        "price_gap": 0.10115883729496744,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T10:09:55"
-      },
-      {
-        "ticker": "KXWTI-26MAR26-T86.99",
-        "title": "Will the WTI front-month settle oil price  be >86.99 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7836366653723643,
-        "confidence": 0.7244186046511628,
-        "market_price": 0.97,
-        "price_gap": 0.18636333462763566,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T10:09:54"
-      },
-      {
-        "ticker": "KXWTI-26MAR26-T93.99",
-        "title": "Will the WTI front-month settle oil price  be >93.99 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7151162151529592,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.89,
-        "price_gap": 0.1748837848470408,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T10:09:54"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 759,
+      "trades": 762,
       "executed": 8,
       "deployed": 2.75
     },
@@ -860,70 +860,70 @@
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T12:22:11"
+        "time": "2026-03-27T12:36:16"
       },
       {
         "perplexity": 0.12,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-03-27T12:21:51"
+        "time": "2026-03-27T12:35:54"
       },
       {
         "perplexity": 0.25,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T12:21:49"
+        "time": "2026-03-27T12:35:52"
       },
       {
         "perplexity": 0.12,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T12:21:45"
+        "time": "2026-03-27T12:35:47"
       },
       {
         "perplexity": 0.12,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T12:21:43"
+        "time": "2026-03-27T12:35:45"
       },
       {
         "perplexity": 0.85,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T12:21:40"
+        "time": "2026-03-27T12:35:43"
       },
       {
         "perplexity": 0.0,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-03-27T12:21:38"
+        "time": "2026-03-27T12:35:41"
       },
       {
         "perplexity": 0.1,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-03-27T12:21:36"
+        "time": "2026-03-27T12:35:38"
       },
       {
         "perplexity": 0.92,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T12:21:33"
+        "time": "2026-03-27T12:35:36"
       },
       {
         "perplexity": 0.05,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T12:21:31"
+        "time": "2026-03-27T12:35:34"
       }
     ]
   },
@@ -1017,74 +1017,74 @@
       "text": "Multiple weather sources provide observed data for March 27, 2026 in NYC. AccuWeather reports a high of 56\u00b0F for March 27[1]. Weather25.com forecasts 55\u00b0F/37\u00b0F for March 27 with heavy rain[4]. EaseWea",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T12:22:11"
+      "time": "2026-03-27T12:36:16"
     },
     {
       "text": "Today is March 27, 2026, 10 AM UTC in NYC. Latest report from WeatherSpark [3] at 12:51 AM UTC shows current temp 66\u00b0F, 24-hour high 75.9\u00b0F (as of early morning), indicating the daily high has already",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T12:21:51"
+      "time": "2026-03-27T12:35:54"
     },
     {
       "text": "AccuWeather forecasts for Miami Beach and Miami both show high of 81\u00b0 on March 27, 2026[1][7]. WeatherShogun for Miami Gardens forecasts 82\u00b0 day high[8]. March averages are 77\u00b0F, with early month high",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T12:21:49"
+      "time": "2026-03-27T12:35:52"
     },
     {
       "text": "Today is March 27, 2026, 10 AM UTC in NYC. Current conditions at Central Park (KNYC): temp 66\u00b0F, 24-hour high already 75.9\u00b0F, low 45\u00b0F[2]. Forecasts for Mar 27: AccuWeather partial monthly lacks exact",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T12:21:45"
+      "time": "2026-03-27T12:35:47"
     },
     {
       "text": "AccuWeather forecasts 81\u00b0F high for Miami Beach and Miami on March 27, 2026[1][6]; nearby Miami Gardens forecast at 82\u00b0F[8]; monthly averages indicate March highs around 77\u00b0F with early March cooler a",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T12:21:43"
+      "time": "2026-03-27T12:35:45"
     },
     {
       "text": "Market prices >75\u00b0F at 20\u00a2 (implied 20% prob), >82\u00b0F at 8\u00a2, >81\u00b0F at 6\u00a2, suggesting ~80% prob high \u226475\u00b0F and high prob <77\u00b0F[5]. AccuWeather March forecast shows daily highs ranging 43\u00b0-73\u00b0F early-mid",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T12:21:40"
+      "time": "2026-03-27T12:35:43"
     },
     {
       "text": "According to AccuWeather data for Denver, CO, the high temperature on March 26, 2026 was 84\u00b0F[1]. Weather Spark historical data confirms a temperature reading of 64.9\u00b0F at 3:53 PM on Thursday, March 2",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T12:21:38"
+      "time": "2026-03-27T12:35:41"
     },
     {
       "text": "AccuWeather forecast for March 26, 2026, in Austin shows a high of 90\u00b0F[1]. WeatherSpark historical data for March 26, 2026, reports clear skies, SSE winds at 17.3 mph, but no specific temperature[2].",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T12:21:36"
+      "time": "2026-03-27T12:35:38"
     },
     {
       "text": "Forecasts for Chicago on March 26, 2026, show high temperatures ranging from 48\u00b0F (weathershogun.com[4]), 73\u00b0F (AccuWeather[1]), ~62\u00b0F (17\u00b0C, Metcheck[2]), and 64\u00b0F (18\u00b0C, YouTube/Weatheravenue[5]). A",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T12:21:33"
+      "time": "2026-03-27T12:35:36"
     },
     {
       "text": "AccuWeather forecast for March 2026 in NYC shows daily highs around the date near 48-57\u00b0F, with no specific Mar 25 listed but surrounding days above 51\u00b0F[1]. YouTube forecast video for Mar 25, 2026, p",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T12:21:31"
+      "time": "2026-03-27T12:35:34"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "143 API retries this session",
-      "detail": "143 non-fatal exceptions across 66 cycles (~2.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "144 API retries this session",
+      "detail": "144 non-fatal exceptions across 67 cycles (~2.1/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 143,
-    "cycles": 66,
-    "uptime_hours": 18.3
+    "errors_24h": 144,
+    "cycles": 67,
+    "uptime_hours": 18.6
   }
 }
