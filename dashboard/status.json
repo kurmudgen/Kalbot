@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T16:29:53.525834+00:00",
+  "updated_at": "2026-03-27T16:41:14.969390+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T16:29:53.525834+00:00",
+    "last_updated": "2026-03-27T16:41:14.969390+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -1007,7 +1007,7 @@
     {
       "ticker": "KXWTI-26MAR27-T101.99",
       "title": "Will the WTI front-month settle oil price  be >101.99 on Mar 27, 2026?",
-      "price": 1,
+      "price": 12,
       "close_time": "2026-03-27T18:30:00Z",
       "category": "energy"
     }
@@ -1078,13 +1078,13 @@
     {
       "level": "warning",
       "message": "147 API retries this session",
-      "detail": "147 non-fatal exceptions across 85 cycles (~1.7/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "147 non-fatal exceptions across 86 cycles (~1.7/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 147,
-    "cycles": 85,
-    "uptime_hours": 22.4
+    "cycles": 86,
+    "uptime_hours": 22.6
   }
 }
