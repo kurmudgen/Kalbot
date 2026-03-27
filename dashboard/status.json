@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T02:35:48.666303+00:00",
+  "updated_at": "2026-03-27T02:58:29.491550+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T02:35:48.666303+00:00",
+    "last_updated": "2026-03-27T02:58:29.491550+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -841,16 +841,16 @@
   "ensemble": {
     "models": {
       "perplexity": {
-        "analyses": 4,
-        "avg_probability": 0.45999999999999996
+        "analyses": 5,
+        "avg_probability": 0.418
       },
       "claude": {
-        "analyses": 8,
-        "avg_probability": 0.5375
+        "analyses": 7,
+        "avg_probability": 0.5071428571428572
       },
       "deepseek": {
-        "analyses": 15,
-        "avg_probability": 0.6546666666666667
+        "analyses": 13,
+        "avg_probability": 0.6346153846153846
       }
     },
     "consensus_rate": 0.3,
@@ -860,7 +860,63 @@
         "claude": null,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-27T02:32:58"
+        "time": "2026-03-27T02:55:39"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": null,
+        "consensus": true,
+        "time": "2026-03-27T02:49:12"
+      },
+      {
+        "perplexity": 0.25,
+        "claude": null,
+        "deepseek": null,
+        "consensus": false,
+        "time": "2026-03-27T02:49:11"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.02,
+        "consensus": false,
+        "time": "2026-03-27T02:49:07"
+      },
+      {
+        "perplexity": 0.85,
+        "claude": null,
+        "deepseek": null,
+        "consensus": false,
+        "time": "2026-03-27T02:49:07"
+      },
+      {
+        "perplexity": 0.95,
+        "claude": null,
+        "deepseek": null,
+        "consensus": false,
+        "time": "2026-03-27T02:49:03"
+      },
+      {
+        "perplexity": 0.02,
+        "claude": null,
+        "deepseek": null,
+        "consensus": true,
+        "time": "2026-03-27T02:49:01"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.85,
+        "consensus": false,
+        "time": "2026-03-27T02:48:58"
+      },
+      {
+        "perplexity": 0.02,
+        "claude": null,
+        "deepseek": null,
+        "consensus": false,
+        "time": "2026-03-27T02:48:56"
       },
       {
         "perplexity": null,
@@ -868,62 +924,6 @@
         "deepseek": 0.65,
         "consensus": false,
         "time": "2026-03-27T02:32:44"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.45,
-        "deepseek": 0.55,
-        "consensus": false,
-        "time": "2026-03-27T02:32:39"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": 0.35,
-        "consensus": false,
-        "time": "2026-03-27T00:59:49"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.65,
-        "deepseek": 0.75,
-        "consensus": false,
-        "time": "2026-03-27T00:59:45"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.65,
-        "deepseek": 0.65,
-        "consensus": false,
-        "time": "2026-03-27T00:59:41"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.75,
-        "deepseek": 0.85,
-        "consensus": true,
-        "time": "2026-03-27T00:59:39"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": null,
-        "consensus": true,
-        "time": "2026-03-27T00:59:00"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": 0.02,
-        "consensus": false,
-        "time": "2026-03-27T00:58:49"
-      },
-      {
-        "perplexity": 0.85,
-        "claude": null,
-        "deepseek": null,
-        "consensus": false,
-        "time": "2026-03-27T00:58:40"
       }
     ]
   },
@@ -1014,77 +1014,77 @@
   ],
   "news": [
     {
-      "text": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 28\u00b0F (equivalent to -2\u00b0C) on March 26 under sunny conditions with no precipitation or snow[6]. Histor",
+      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T00:58:40"
-    },
-    {
-      "text": "According to AccuWeather historical data for Austin, TX in March 2026, the high temperature on March 26 was 90\u00b0F[1]. Weather Spark reports the latest observation from Austin-Bergstrom International Ai",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T00:58:35"
-    },
-    {
-      "text": "Forecasts for Chicago on March 26, 2026, show max temperatures of 17\u00b0C (63\u00b0F) [1], 55\u00b0F day high [6], and typical March averages of 33-44\u00b0F (1-7\u00b0C) [7]. Other sources indicate cool, breezy conditions ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T00:58:33"
-    },
-    {
-      "text": "March 25, 2026 has already occurred (today is March 27, 2026). Historical weather data from Weather Spark shows the actual observed temperature at NYC Central Park on March 26, 2026 was 68.0\u00b0F at 6:51",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T00:58:29"
-    },
-    {
-      "text": "According to AccuWeather historical data for Austin, TX in March 2026, the high temperature on March 26 was 90\u00b0F[1]. Weather Spark reports the latest observation from Austin-Bergstrom International Ai",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T00:57:40"
-    },
-    {
-      "text": "Forecasts for Chicago on March 26, 2026, show max temperatures of 17\u00b0C (63\u00b0F) [1], 55\u00b0F day high [6], and typical March averages of 33-44\u00b0F (1-7\u00b0C) [7]. Other sources indicate cool, breezy conditions ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T00:57:38"
-    },
-    {
-      "text": "March 25, 2026 has already occurred (today is March 27, 2026). Historical weather data from Weather Spark shows the actual observed temperature at NYC Central Park on March 26, 2026 was 68.0\u00b0F at 6:51",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T00:56:49"
-    },
-    {
-      "text": "According to AccuWeather historical data for Austin, TX in March 2026, the high temperature on March 26 was 90\u00b0F[1]. Weather Spark reports the latest observation from Austin-Bergstrom International Ai",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T00:56:39"
-    },
-    {
-      "text": "Forecasts for Chicago on March 26, 2026, show max temperatures of 17\u00b0C (63\u00b0F) [1], 55\u00b0F day high [6], and typical March averages of 33-44\u00b0F (1-7\u00b0C) [7]. Other sources indicate cool, breezy conditions ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T00:55:57"
+      "time": "2026-03-27T02:49:11"
     },
     {
       "text": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 28\u00b0F (equivalent to -2\u00b0C) on March 26 under sunny conditions with no precipitation or snow[6]. Histor",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T00:55:45"
+      "time": "2026-03-27T02:49:07"
+    },
+    {
+      "text": "According to AccuWeather historical data for Austin, TX in March 2026, the high temperature on March 26 was 90\u00b0F[1]. Weather Spark reports the latest observation from Austin-Bergstrom International Ai",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T02:49:03"
+    },
+    {
+      "text": "Forecasts for Chicago on March 26, 2026, show max temperatures of 17\u00b0C (63\u00b0F) [1], 55\u00b0F day high [6], and typical March averages of 33-44\u00b0F (1-7\u00b0C) [7]. Other sources indicate cool, breezy conditions ",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T02:49:01"
+    },
+    {
+      "text": "March 25, 2026 has already occurred (today is March 27, 2026). Historical weather data from Weather Spark shows the actual observed temperature at NYC Central Park on March 26, 2026 was 68.0\u00b0F at 6:51",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T02:48:56"
+    },
+    {
+      "text": "EaseWeather provides a detailed day-by-day forecast for March 2026 in Denver, predicting a high of 28\u00b0F (equivalent to -2\u00b0C) on March 26 under sunny conditions with no precipitation or snow[6]. Histor",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T02:46:41"
+    },
+    {
+      "text": "According to AccuWeather historical data for Austin, TX in March 2026, the high temperature on March 26 was 90\u00b0F[1]. Weather Spark reports the latest observation from Austin-Bergstrom International Ai",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T02:46:36"
+    },
+    {
+      "text": "Forecasts for Chicago on March 26, 2026, show max temperatures of 17\u00b0C (63\u00b0F) [1], 55\u00b0F day high [6], and typical March averages of 33-44\u00b0F (1-7\u00b0C) [7]. Other sources indicate cool, breezy conditions ",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T02:46:34"
+    },
+    {
+      "text": "March 25, 2026 has already occurred (today is March 27, 2026). Historical weather data from Weather Spark shows the actual observed temperature at NYC Central Park on March 26, 2026 was 68.0\u00b0F at 6:51",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T02:44:18"
+    },
+    {
+      "text": "According to AccuWeather historical data for Austin, TX in March 2026, the high temperature on March 26 was 90\u00b0F[1]. Weather Spark reports the latest observation from Austin-Bergstrom International Ai",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T02:44:15"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "109 API retries this session",
-      "detail": "109 non-fatal exceptions across 30 cycles (~3.6/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "112 API retries this session",
+      "detail": "112 non-fatal exceptions across 31 cycles (~3.6/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 109,
-    "cycles": 30,
-    "uptime_hours": 8.5
+    "errors_24h": 112,
+    "cycles": 31,
+    "uptime_hours": 8.9
   }
 }
