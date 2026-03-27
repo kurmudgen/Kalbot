@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T05:56:19.240140+00:00",
+  "updated_at": "2026-03-27T06:08:52.792469+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T05:56:19.240140+00:00",
+    "last_updated": "2026-03-27T06:08:52.792469+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -1005,10 +1005,10 @@
       "category": "economics"
     },
     {
-      "ticker": "KXHIGHCHI-26MAR26-T84",
-      "title": "Will the high temp in Chicago be >84\u00b0 on Mar 26, 2026?",
+      "ticker": "KXHIGHDEN-26MAR26-T84",
+      "title": "Will the **high temp in Denver** be >84\u00b0 on Mar 26, 2026?",
       "price": 1,
-      "close_time": "2026-03-27T05:59:00Z",
+      "close_time": "2026-03-27T06:59:00Z",
       "category": "weather"
     }
   ],
@@ -1078,13 +1078,13 @@
     {
       "level": "warning",
       "message": "134 API retries this session",
-      "detail": "134 non-fatal exceptions across 42 cycles (~3.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "134 non-fatal exceptions across 43 cycles (~3.1/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 134,
-    "cycles": 42,
-    "uptime_hours": 11.8
+    "cycles": 43,
+    "uptime_hours": 12.0
   }
 }
