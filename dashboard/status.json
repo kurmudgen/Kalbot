@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T22:53:22.019329+00:00",
+  "updated_at": "2026-03-27T23:06:00.039349+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T22:53:22.019329+00:00",
+    "last_updated": "2026-03-27T23:06:00.039349+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -928,13 +928,13 @@
     ]
   },
   "scanner": {
-    "total_markets": 2554,
+    "total_markets": 2569,
     "with_prices": 1531,
-    "passed_filter": 171,
-    "total_scored": 471,
+    "passed_filter": 173,
+    "total_scored": 473,
     "categories": {
       "economics": 1490,
-      "energy": 120,
+      "energy": 135,
       "inflation": 173,
       "tsa": 81,
       "weather": 690
@@ -1078,13 +1078,13 @@
     {
       "level": "warning",
       "message": "147 API retries this session",
-      "detail": "147 non-fatal exceptions across 118 cycles (~1.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "147 non-fatal exceptions across 119 cycles (~1.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 147,
-    "cycles": 118,
-    "uptime_hours": 28.8
+    "cycles": 119,
+    "uptime_hours": 29.0
   }
 }
