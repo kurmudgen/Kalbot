@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T13:57:24.471432+00:00",
+  "updated_at": "2026-03-27T14:17:57.095947+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,14 +16,14 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T13:57:24.471432+00:00",
+    "last_updated": "2026-03-27T14:17:57.095947+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
   },
   "pnl": {
     "today": 0.0504,
-    "all_time": -28.225299999999997,
+    "all_time": -47.025299999999994,
     "history": [
       {
         "date": "2026-03-22",
@@ -57,11 +57,11 @@
       }
     ],
     "resolved": {
-      "total_trades": 55,
-      "wins": 13,
-      "losses": 42,
-      "win_rate": 0.23636363636363636,
-      "actual_pnl": -28.225299999999997
+      "total_trades": 64,
+      "wins": 14,
+      "losses": 50,
+      "win_rate": 0.21875,
+      "actual_pnl": -47.025299999999994
     }
   },
   "trades": {
@@ -929,9 +929,9 @@
   },
   "scanner": {
     "total_markets": 2549,
-    "with_prices": 1488,
-    "passed_filter": 141,
-    "total_scored": 430,
+    "with_prices": 1514,
+    "passed_filter": 163,
+    "total_scored": 452,
     "categories": {
       "economics": 1490,
       "energy": 115,
@@ -1005,11 +1005,11 @@
       "category": "economics"
     },
     {
-      "ticker": "KXEURUSD-26MAR2710-T1.16799",
-      "title": "Will the EUR/USD open price be above 1.16799 at Mar 27, 2026 at 10am EDT?",
-      "price": 3,
-      "close_time": "2026-03-27T14:00:00Z",
-      "category": "economics"
+      "ticker": "KXWTI-26MAR27-T96.99",
+      "title": "Will the WTI front-month settle oil price  be >96.99 on Mar 27, 2026?",
+      "price": 67,
+      "close_time": "2026-03-27T18:30:00Z",
+      "category": "energy"
     }
   ],
   "news": [
@@ -1078,13 +1078,13 @@
     {
       "level": "warning",
       "message": "147 API retries this session",
-      "detail": "147 non-fatal exceptions across 73 cycles (~2.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "147 non-fatal exceptions across 74 cycles (~2.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 147,
-    "cycles": 73,
-    "uptime_hours": 19.9
+    "cycles": 74,
+    "uptime_hours": 20.2
   }
 }
