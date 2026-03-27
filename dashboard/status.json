@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T09:53:47.417042+00:00",
+  "updated_at": "2026-03-27T10:29:54.673987+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,13 +16,13 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T09:53:47.417042+00:00",
+    "last_updated": "2026-03-27T10:29:54.673987+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
   },
   "pnl": {
-    "today": 0,
+    "today": 0.2016,
     "all_time": -28.7842,
     "history": [
       {
@@ -52,8 +52,8 @@
       },
       {
         "date": "2026-03-27",
-        "trades": 1032,
-        "deployed": 34.19
+        "trades": 1078,
+        "deployed": 35.31
       }
     ],
     "resolved": {
@@ -66,99 +66,9 @@
   },
   "trades": {
     "total": 50,
-    "executed": 0,
-    "skipped": 50,
+    "executed": 2,
+    "skipped": 48,
     "recent": [
-      {
-        "ticker": "KXWTI-26MAR27-T85.99",
-        "title": "Will the WTI front-month settle oil price  be >85.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7526773372799329,
-        "confidence": 0.7244186046511628,
-        "market_price": 0.93,
-        "price_gap": 0.17732266272006714,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T09:52:42"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T87.99",
-        "title": "Will the WTI front-month settle oil price  be >87.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7626002594333237,
-        "confidence": 0.7244186046511628,
-        "market_price": 0.86,
-        "price_gap": 0.09739974056667633,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T09:52:42"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T88.99",
-        "title": "Will the WTI front-month settle oil price  be >88.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7753236482344734,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.9,
-        "price_gap": 0.1246763517655266,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T09:52:42"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T89.99",
-        "title": "Will the WTI front-month settle oil price  be >89.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7288411627050325,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.83,
-        "price_gap": 0.10115883729496744,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T09:52:42"
-      },
-      {
-        "ticker": "KXWTI-26MAR26-T86.99",
-        "title": "Will the WTI front-month settle oil price  be >86.99 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7836366653723643,
-        "confidence": 0.7244186046511628,
-        "market_price": 0.97,
-        "price_gap": 0.18636333462763566,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T09:52:42"
-      },
-      {
-        "ticker": "KXWTI-26MAR26-T93.99",
-        "title": "Will the WTI front-month settle oil price  be >93.99 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7151162151529592,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.89,
-        "price_gap": 0.1748837848470408,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T09:52:42"
-      },
       {
         "ticker": "KXFED-27JAN-T0.00",
         "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Jan 27, 2027 meeting?",
@@ -172,7 +82,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-27MAR-T0.00",
@@ -187,7 +97,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-27MAR-T0.75",
@@ -202,7 +112,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-27JAN-T0.50",
@@ -217,7 +127,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-27JAN-T1.50",
@@ -232,7 +142,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXWTI-26MAR27-T85.99",
@@ -247,7 +157,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-27MAR-T1.25",
@@ -262,7 +172,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-26OCT-T3.00",
@@ -277,7 +187,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-27MAR-T1.00",
@@ -292,7 +202,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXWTI-26MAR27-T87.99",
@@ -307,7 +217,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-26DEC-T3.00",
@@ -322,7 +232,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-26JUN-T2.75",
@@ -337,7 +247,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-26JUN-T3.00",
@@ -352,7 +262,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
         "ticker": "KXFED-27APR-T3.75",
@@ -367,22 +277,82 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:26:10"
       },
       {
-        "ticker": "KXFED-27APR-T3.00",
-        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Apr 28, 2027 meeting?",
+        "ticker": "KXHIGHNY-26MAR27-B62.5",
+        "title": "Will the **high temp in NYC** be 62-63\u00b0 on Mar 27, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.6357894423513165,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.78,
-        "price_gap": 0.1442105576486835,
+        "probability": 0.2258879897708174,
+        "confidence": 0.605625,
+        "market_price": 0.31,
+        "price_gap": 0.0841120102291826,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Today is March 27, 2026, 10 AM UTC in NYC. Latest report from WeatherSpark [3] at 12:51 AM UTC shows current temp 66\u00b0F, 24-hour high 75.9\u00b0F (as of early morning), indicating the daily high has already",
+        "category": "weather",
+        "time": "2026-03-27T10:26:10"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-B83.5",
+        "title": "Will the **high temp in Denver** be 83-84\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.89,
+        "probability": 0.020533926586290496,
+        "confidence": 0.9709615384615384,
+        "market_price": 0.15,
+        "price_gap": 0.1294660734137095,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "According to AccuWeather data for Denver, CO, the high temperature on March 26, 2026 was 84\u00b0F[1]. Weather Spark historical data confirms a temperature reading of 64.9\u00b0F at 3:53 PM on Thursday, March 2",
+        "category": "weather",
+        "time": "2026-03-27T10:26:10"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR26-T88",
+        "title": "Will the **high temp in Austin** be <88\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.23,
+        "probability": 0.2619254280085303,
+        "confidence": 0.80625,
+        "market_price": 0.05,
+        "price_gap": 0.21192542800853031,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "AccuWeather forecast for March 26, 2026, in Austin shows a high of 90\u00b0F[1]. WeatherSpark historical data for March 26, 2026, reports clear skies, SSE winds at 17.3 mph, but no specific temperature[2].",
+        "category": "weather",
+        "time": "2026-03-27T10:26:08"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T85.99",
+        "title": "Will the WTI front-month settle oil price  be >85.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7526773372799329,
+        "confidence": 0.7244186046511628,
+        "market_price": 0.93,
+        "price_gap": 0.17732266272006714,
         "mode": "PAPER",
         "executed": false,
         "reasoning": "No real-time research available.",
-        "category": "economics",
-        "time": "2026-03-27T09:49:58"
+        "category": "energy",
+        "time": "2026-03-27T10:09:55"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T87.99",
+        "title": "Will the WTI front-month settle oil price  be >87.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7626002594333237,
+        "confidence": 0.7244186046511628,
+        "market_price": 0.86,
+        "price_gap": 0.09739974056667633,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-27T10:09:55"
       },
       {
         "ticker": "KXWTI-26MAR27-T88.99",
@@ -397,7 +367,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:09:55"
       },
       {
         "ticker": "KXWTI-26MAR27-T89.99",
@@ -412,7 +382,292 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T09:49:58"
+        "time": "2026-03-27T10:09:55"
+      },
+      {
+        "ticker": "KXWTI-26MAR26-T86.99",
+        "title": "Will the WTI front-month settle oil price  be >86.99 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7836366653723643,
+        "confidence": 0.7244186046511628,
+        "market_price": 0.97,
+        "price_gap": 0.18636333462763566,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-27T10:09:54"
+      },
+      {
+        "ticker": "KXWTI-26MAR26-T93.99",
+        "title": "Will the WTI front-month settle oil price  be >93.99 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7151162151529592,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.89,
+        "price_gap": 0.1748837848470408,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-27T10:09:54"
+      },
+      {
+        "ticker": "KXFED-27JAN-T0.00",
+        "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Jan 27, 2027 meeting?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.9625000000000001,
+        "market_price": 0.83,
+        "price_gap": 0.12,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-27MAR-T0.00",
+        "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Mar 17, 2027 meeting?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.925,
+        "confidence": 0.9075,
+        "market_price": 0.85,
+        "price_gap": 0.07500000000000007,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-27MAR-T0.75",
+        "title": "Will the upper bound of the federal funds rate be above 0.75% following the Fed's Mar 17, 2027 meeting?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.875,
+        "confidence": 0.9350000000000002,
+        "market_price": 0.84,
+        "price_gap": 0.03500000000000003,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-27JAN-T0.50",
+        "title": "Will the upper bound of the federal funds rate be above 0.50% following the Fed's Jan 27, 2027 meeting?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.85,
+        "confidence": 0.9075,
+        "market_price": 0.83,
+        "price_gap": 0.020000000000000018,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-27JAN-T1.50",
+        "title": "Will the upper bound of the federal funds rate be above 1.50% following the Fed's Jan 27, 2027 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.6357894423513165,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.8,
+        "price_gap": 0.16421055764868353,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T85.99",
+        "title": "Will the WTI front-month settle oil price  be >85.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7526773372799329,
+        "confidence": 0.7244186046511628,
+        "market_price": 0.93,
+        "price_gap": 0.17732266272006714,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-27MAR-T1.25",
+        "title": "Will the upper bound of the federal funds rate be above 1.25% following the Fed's Mar 17, 2027 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7288411627050325,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.82,
+        "price_gap": 0.09115883729496743,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-26OCT-T3.00",
+        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Oct 28, 2026 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.6357894423513165,
+        "confidence": 0.7735483870967743,
+        "market_price": 0.7,
+        "price_gap": 0.06421055764868344,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-27MAR-T1.00",
+        "title": "Will the upper bound of the federal funds rate be above 1.00% following the Fed's Mar 17, 2027 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7288411627050325,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.83,
+        "price_gap": 0.10115883729496744,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T87.99",
+        "title": "Will the WTI front-month settle oil price  be >87.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7626002594333237,
+        "confidence": 0.7244186046511628,
+        "market_price": 0.86,
+        "price_gap": 0.09739974056667633,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-26DEC-T3.00",
+        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Dec 9, 2026 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.6357894423513165,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.78,
+        "price_gap": 0.1442105576486835,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-26JUN-T2.75",
+        "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Jun 17, 2026 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7753236482344734,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.93,
+        "price_gap": 0.15467635176552663,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-26JUN-T3.00",
+        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Jun 17, 2026 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7288411627050325,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.89,
+        "price_gap": 0.1611588372949675,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-27APR-T3.75",
+        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Apr 28, 2027 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7288411627050325,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.87,
+        "price_gap": 0.14115883729496748,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXFED-27APR-T3.00",
+        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Apr 28, 2027 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.6357894423513165,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.78,
+        "price_gap": 0.1442105576486835,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "economics",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T88.99",
+        "title": "Will the WTI front-month settle oil price  be >88.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7753236482344734,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.9,
+        "price_gap": 0.1246763517655266,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-27T10:07:10"
+      },
+      {
+        "ticker": "KXWTI-26MAR27-T89.99",
+        "title": "Will the WTI front-month settle oil price  be >89.99 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.7288411627050325,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.83,
+        "price_gap": 0.10115883729496744,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-27T10:07:10"
       },
       {
         "ticker": "KXFED-26SEP-T3.50",
@@ -427,7 +682,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T09:49:57"
+        "time": "2026-03-27T10:07:10"
       },
       {
         "ticker": "KXFED-26JUN-T3.50",
@@ -442,7 +697,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-27T09:49:57"
+        "time": "2026-03-27T10:07:09"
       },
       {
         "ticker": "KXWTI-26MAR26-T86.99",
@@ -457,7 +712,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T09:49:57"
+        "time": "2026-03-27T10:07:09"
       },
       {
         "ticker": "KXWTI-26MAR26-T93.99",
@@ -472,7 +727,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T09:49:57"
+        "time": "2026-03-27T10:07:09"
       },
       {
         "ticker": "KXHIGHCHI-26MAR26-T77",
@@ -487,7 +742,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding day\n- [weather",
         "category": "weather",
-        "time": "2026-03-27T09:49:57"
+        "time": "2026-03-27T10:07:09"
       },
       {
         "ticker": "KXHIGHCHI-26MAR26-T77",
@@ -502,7 +757,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding day\n- [weather",
         "category": "weather",
-        "time": "2026-03-27T09:44:12"
+        "time": "2026-03-27T10:01:27"
       },
       {
         "ticker": "KXWTI-26MAR27-T85.99",
@@ -517,7 +772,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T09:35:20"
+        "time": "2026-03-27T09:52:42"
       },
       {
         "ticker": "KXWTI-26MAR27-T87.99",
@@ -532,7 +787,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T09:35:20"
+        "time": "2026-03-27T09:52:42"
       },
       {
         "ticker": "KXWTI-26MAR27-T88.99",
@@ -547,7 +802,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T09:35:19"
+        "time": "2026-03-27T09:52:42"
       },
       {
         "ticker": "KXWTI-26MAR27-T89.99",
@@ -562,270 +817,15 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-27T09:35:19"
-      },
-      {
-        "ticker": "KXWTI-26MAR26-T86.99",
-        "title": "Will the WTI front-month settle oil price  be >86.99 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7836366653723643,
-        "confidence": 0.7244186046511628,
-        "market_price": 0.97,
-        "price_gap": 0.18636333462763566,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T09:35:19"
-      },
-      {
-        "ticker": "KXWTI-26MAR26-T93.99",
-        "title": "Will the WTI front-month settle oil price  be >93.99 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7151162151529592,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.89,
-        "price_gap": 0.1748837848470408,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T09:35:19"
-      },
-      {
-        "ticker": "KXFED-27JAN-T0.00",
-        "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.95,
-        "confidence": 0.9625000000000001,
-        "market_price": 0.83,
-        "price_gap": 0.12,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-27MAR-T0.00",
-        "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Mar 17, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.925,
-        "confidence": 0.9075,
-        "market_price": 0.85,
-        "price_gap": 0.07500000000000007,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-27MAR-T0.75",
-        "title": "Will the upper bound of the federal funds rate be above 0.75% following the Fed's Mar 17, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.875,
-        "confidence": 0.9350000000000002,
-        "market_price": 0.84,
-        "price_gap": 0.03500000000000003,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-27JAN-T0.50",
-        "title": "Will the upper bound of the federal funds rate be above 0.50% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.85,
-        "confidence": 0.9075,
-        "market_price": 0.83,
-        "price_gap": 0.020000000000000018,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-27JAN-T1.50",
-        "title": "Will the upper bound of the federal funds rate be above 1.50% following the Fed's Jan 27, 2027 meeting?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.6357894423513165,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.8,
-        "price_gap": 0.16421055764868353,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T85.99",
-        "title": "Will the WTI front-month settle oil price  be >85.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7526773372799329,
-        "confidence": 0.7244186046511628,
-        "market_price": 0.93,
-        "price_gap": 0.17732266272006714,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-27MAR-T1.25",
-        "title": "Will the upper bound of the federal funds rate be above 1.25% following the Fed's Mar 17, 2027 meeting?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7288411627050325,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.82,
-        "price_gap": 0.09115883729496743,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-26OCT-T3.00",
-        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Oct 28, 2026 meeting?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.6357894423513165,
-        "confidence": 0.7735483870967743,
-        "market_price": 0.7,
-        "price_gap": 0.06421055764868344,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-27MAR-T1.00",
-        "title": "Will the upper bound of the federal funds rate be above 1.00% following the Fed's Mar 17, 2027 meeting?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7288411627050325,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.83,
-        "price_gap": 0.10115883729496744,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T87.99",
-        "title": "Will the WTI front-month settle oil price  be >87.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7626002594333237,
-        "confidence": 0.7244186046511628,
-        "market_price": 0.86,
-        "price_gap": 0.09739974056667633,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-26DEC-T3.00",
-        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Dec 9, 2026 meeting?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.6357894423513165,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.78,
-        "price_gap": 0.1442105576486835,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-26JUN-T2.75",
-        "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Jun 17, 2026 meeting?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7753236482344734,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.93,
-        "price_gap": 0.15467635176552663,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-26JUN-T3.00",
-        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Jun 17, 2026 meeting?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7288411627050325,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.89,
-        "price_gap": 0.1611588372949675,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:34"
-      },
-      {
-        "ticker": "KXFED-27APR-T3.75",
-        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Apr 28, 2027 meeting?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7288411627050325,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.87,
-        "price_gap": 0.14115883729496748,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:33"
-      },
-      {
-        "ticker": "KXFED-27APR-T3.00",
-        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Apr 28, 2027 meeting?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.6357894423513165,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.78,
-        "price_gap": 0.1442105576486835,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "economics",
-        "time": "2026-03-27T09:32:33"
+        "time": "2026-03-27T09:52:42"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 696,
-      "executed": 5,
-      "deployed": 1.35
+      "trades": 735,
+      "executed": 7,
+      "deployed": 2.4699999999999998
     },
     "QUANT": {
       "trades": 3205,
@@ -833,7 +833,7 @@
       "deployed": 127.26999999999998
     },
     "WEATHER": {
-      "trades": 27,
+      "trades": 28,
       "executed": 2,
       "deployed": 2.42
     }
@@ -845,85 +845,85 @@
         "avg_probability": 0
       },
       "claude": {
-        "analyses": 9,
-        "avg_probability": 0.3277777777777778
+        "analyses": 1,
+        "avg_probability": 0.72
       },
       "deepseek": {
         "analyses": 16,
-        "avg_probability": 0.724375
+        "avg_probability": 0.628125
       }
     },
-    "consensus_rate": 0.55,
+    "consensus_rate": 0.6,
     "recent_votes": [
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": null,
+        "consensus": true,
+        "time": "2026-03-27T10:25:46"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": null,
+        "consensus": true,
+        "time": "2026-03-27T10:25:41"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": null,
+        "consensus": true,
+        "time": "2026-03-27T10:25:05"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": null,
+        "consensus": true,
+        "time": "2026-03-27T10:24:59"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.65,
+        "consensus": true,
+        "time": "2026-03-27T10:24:59"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.48,
+        "consensus": false,
+        "time": "2026-03-27T10:24:57"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.08,
+        "consensus": false,
+        "time": "2026-03-27T10:24:55"
+      },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.87,
         "consensus": true,
-        "time": "2026-03-27T09:52:31"
+        "time": "2026-03-27T10:24:55"
       },
       {
         "perplexity": null,
         "claude": null,
-        "deepseek": 0.82,
-        "consensus": true,
-        "time": "2026-03-27T09:52:29"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.15,
-        "deepseek": 0.85,
+        "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-27T09:52:27"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": 0.85,
-        "consensus": true,
-        "time": "2026-03-27T09:52:25"
+        "time": "2026-03-27T10:24:53"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.75,
         "consensus": true,
-        "time": "2026-03-27T09:52:23"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.35,
-        "deepseek": 0.45,
-        "consensus": false,
-        "time": "2026-03-27T09:52:21"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.35,
-        "deepseek": 0.35,
-        "consensus": false,
-        "time": "2026-03-27T09:52:21"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.15,
-        "deepseek": 0.18,
-        "consensus": false,
-        "time": "2026-03-27T09:52:21"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": 0.85,
-        "consensus": true,
-        "time": "2026-03-27T09:52:20"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.25,
-        "deepseek": 0.85,
-        "consensus": false,
-        "time": "2026-03-27T09:52:19"
+        "time": "2026-03-27T10:24:51"
       }
     ]
   },
@@ -1014,77 +1014,77 @@
   ],
   "news": [
     {
-      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "text": "Multiple weather sources provide observed data for March 27, 2026 in NYC. AccuWeather reports a high of 56\u00b0F for March 27[1]. Weather25.com forecasts 55\u00b0F/37\u00b0F for March 27 with heavy rain[4]. EaseWea",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T05:37:58"
+      "time": "2026-03-27T10:23:17"
     },
     {
-      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "text": "Today is March 27, 2026, 10 AM UTC in NYC. Latest report from WeatherSpark [3] at 12:51 AM UTC shows current temp 66\u00b0F, 24-hour high 75.9\u00b0F (as of early morning), indicating the daily high has already",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T05:35:30"
+      "time": "2026-03-27T10:23:00"
     },
     {
-      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "text": "AccuWeather forecasts for Miami Beach and Miami both show high of 81\u00b0 on March 27, 2026[1][7]. WeatherShogun for Miami Gardens forecasts 82\u00b0 day high[8]. March averages are 77\u00b0F, with early month high",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T05:22:47"
+      "time": "2026-03-27T10:22:58"
     },
     {
-      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "text": "Today is March 27, 2026, 10 AM UTC in NYC. Current conditions at Central Park (KNYC): temp 66\u00b0F, 24-hour high already 75.9\u00b0F, low 45\u00b0F[2]. Forecasts for Mar 27: AccuWeather partial monthly lacks exact",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T05:20:14"
+      "time": "2026-03-27T10:22:54"
     },
     {
-      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "text": "AccuWeather forecasts 81\u00b0F high for Miami Beach and Miami on March 27, 2026[1][6]; nearby Miami Gardens forecast at 82\u00b0F[8]; monthly averages indicate March highs around 77\u00b0F with early March cooler a",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T05:08:03"
+      "time": "2026-03-27T10:22:51"
     },
     {
-      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "text": "Market prices >75\u00b0F at 20\u00a2 (implied 20% prob), >82\u00b0F at 8\u00a2, >81\u00b0F at 6\u00a2, suggesting ~80% prob high \u226475\u00b0F and high prob <77\u00b0F[5]. AccuWeather March forecast shows daily highs ranging 43\u00b0-73\u00b0F early-mid",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T05:05:29"
+      "time": "2026-03-27T10:22:48"
     },
     {
-      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "text": "According to AccuWeather data for Denver, CO, the high temperature on March 26, 2026 was 84\u00b0F[1]. Weather Spark historical data confirms a temperature reading of 64.9\u00b0F at 3:53 PM on Thursday, March 2",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T04:52:32"
+      "time": "2026-03-27T10:22:46"
     },
     {
-      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "text": "AccuWeather forecast for March 26, 2026, in Austin shows a high of 90\u00b0F[1]. WeatherSpark historical data for March 26, 2026, reports clear skies, SSE winds at 17.3 mph, but no specific temperature[2].",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T04:49:53"
+      "time": "2026-03-27T10:22:44"
     },
     {
-      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "text": "Forecasts for Chicago on March 26, 2026, show high temperatures ranging from 48\u00b0F (weathershogun.com[4]), 73\u00b0F (AccuWeather[1]), ~62\u00b0F (17\u00b0C, Metcheck[2]), and 64\u00b0F (18\u00b0C, YouTube/Weatheravenue[5]). A",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T04:37:31"
+      "time": "2026-03-27T10:22:41"
     },
     {
-      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "text": "AccuWeather forecast for March 2026 in NYC shows daily highs around the date near 48-57\u00b0F, with no specific Mar 25 listed but surrounding days above 51\u00b0F[1]. YouTube forecast video for Mar 25, 2026, p",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-27T04:34:51"
+      "time": "2026-03-27T10:22:39"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "134 API retries this session",
-      "detail": "134 non-fatal exceptions across 56 cycles (~2.4/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "135 API retries this session",
+      "detail": "135 non-fatal exceptions across 58 cycles (~2.3/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 134,
-    "cycles": 56,
-    "uptime_hours": 15.8
+    "errors_24h": 135,
+    "cycles": 58,
+    "uptime_hours": 16.4
   }
 }
