@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T05:43:15.566831+00:00",
+  "updated_at": "2026-03-27T05:56:19.240140+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T05:43:15.566831+00:00",
+    "last_updated": "2026-03-27T05:56:19.240140+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -52,7 +52,7 @@
       },
       {
         "date": "2026-03-27",
-        "trades": 770,
+        "trades": 771,
         "deployed": 34.19
       }
     ],
@@ -66,9 +66,24 @@
   },
   "trades": {
     "total": 50,
-    "executed": 2,
-    "skipped": 48,
+    "executed": 3,
+    "skipped": 47,
     "recent": [
+      {
+        "ticker": "KXUSDJPY-26MAR2710-B159.875",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.79,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 77% of max gain captured ($0.70/contract)",
+        "category": "",
+        "time": "2026-03-27T05:49:07"
+      },
       {
         "ticker": "KXHIGHNY-26MAR27-B66.5",
         "title": "Will the **high temp in NYC** be 66-67\u00b0 on Mar 27, 2026?",
@@ -803,21 +818,6 @@
         "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
         "time": "2026-03-27T00:54:57"
-      },
-      {
-        "ticker": "KXFED-26SEP-T4.25",
-        "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.2,
-        "price_gap": 0.464,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-03-27T00:54:57"
       }
     ]
   },
@@ -1078,13 +1078,13 @@
     {
       "level": "warning",
       "message": "134 API retries this session",
-      "detail": "134 non-fatal exceptions across 41 cycles (~3.3/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "134 non-fatal exceptions across 42 cycles (~3.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 134,
-    "cycles": 41,
-    "uptime_hours": 11.6
+    "cycles": 42,
+    "uptime_hours": 11.8
   }
 }
