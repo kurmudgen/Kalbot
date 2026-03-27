@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T17:04:35.635182+00:00",
+  "updated_at": "2026-03-27T17:16:00.505024+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T17:04:35.635182+00:00",
+    "last_updated": "2026-03-27T17:16:00.505024+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -52,7 +52,7 @@
       },
       {
         "date": "2026-03-27",
-        "trades": 1320,
+        "trades": 1323,
         "deployed": 35.589999999999996
       }
     ],
@@ -69,6 +69,51 @@
     "executed": 47,
     "skipped": 3,
     "recent": [
+      {
+        "ticker": "KXFED-26DEC-T5.00",
+        "title": "",
+        "side": "YES_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.08,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.45/contract (96%)",
+        "category": "",
+        "time": "2026-03-27T17:09:50"
+      },
+      {
+        "ticker": "KXFED-26DEC-T4.75",
+        "title": "",
+        "side": "YES_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.12,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.47/contract (115%)",
+        "category": "",
+        "time": "2026-03-27T17:09:50"
+      },
+      {
+        "ticker": "KXFED-26OCT-T5.00",
+        "title": "",
+        "side": "YES_EXIT_STOP_LOSS",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.08,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Stop loss: down $0.33/contract (56%)",
+        "category": "",
+        "time": "2026-03-27T17:09:50"
+      },
       {
         "ticker": "KXEURUSD-26MAR3010-T1.16599",
         "title": "",
@@ -773,51 +818,6 @@
         "reasoning": "eurusd=1.1523, prob=0.09",
         "category": "forex",
         "time": "2026-03-27T16:47:07"
-      },
-      {
-        "ticker": "KXEURUSD-26MAR3010-B1.163",
-        "title": "Will the EUR/USD open price be between 1.16200 and 1.16399 at Mar 30, 2026 at 10am EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.04679813379321285,
-        "confidence": 0.8800000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.45320186620678715,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "eurusd=1.1523, prob=0.05",
-        "category": "forex",
-        "time": "2026-03-27T16:47:05"
-      },
-      {
-        "ticker": "KXEURUSD-26MAR3010-B1.165",
-        "title": "Will the EUR/USD open price be between 1.16400 and 1.16599 at Mar 30, 2026 at 10am EDT?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.021493050248922896,
-        "confidence": 0.8800000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.4785069497510771,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "eurusd=1.1523, prob=0.02",
-        "category": "forex",
-        "time": "2026-03-27T16:47:03"
-      },
-      {
-        "ticker": "KXEURUSD-26MAR3010-T1.14000",
-        "title": "Will the EUR/USD open price be below 1.14000 at Mar 30, 2026 at 10am EDT?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9838869601857018,
-        "confidence": 0.8,
-        "market_price": 0.5,
-        "price_gap": 0.48388696018570176,
-        "mode": "PAPER",
-        "executed": true,
-        "reasoning": "eurusd=1.1523, prob=0.98",
-        "category": "forex",
-        "time": "2026-03-27T16:47:01"
       }
     ]
   },
@@ -1007,7 +1007,7 @@
     {
       "ticker": "KXWTI-26MAR27-T101.99",
       "title": "Will the WTI front-month settle oil price  be >101.99 on Mar 27, 2026?",
-      "price": 9,
+      "price": 6,
       "close_time": "2026-03-27T18:30:00Z",
       "category": "energy"
     }
@@ -1078,13 +1078,13 @@
     {
       "level": "warning",
       "message": "147 API retries this session",
-      "detail": "147 non-fatal exceptions across 88 cycles (~1.7/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "147 non-fatal exceptions across 89 cycles (~1.7/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 147,
-    "cycles": 88,
-    "uptime_hours": 23.0
+    "cycles": 89,
+    "uptime_hours": 23.2
   }
 }
