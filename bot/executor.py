@@ -268,7 +268,23 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         elif ticker in open_positions:
             skip_reason = "already in open positions"
 
-        # Correlation check for weather markets
+        # Gate 1: Weather markets with borderline probability need NWS data
+        if not skip_reason and category == "weather":
+            if 0.20 < cloud_prob < 0.80:
+                # Check if NWS data was available (injected via cloud_reasoning)
+                reasoning = score.get("cloud_reasoning", "")
+                has_nws = "NWS" in reasoning or "nws" in reasoning or "official forecast" in reasoning.lower()
+                if not has_nws:
+                    skip_reason = "nws_data_missing: borderline weather trade without settlement source"
+
+        # Gate 2: Borderline probability EV trades need higher confidence
+        if not skip_reason:
+            if 0.20 < cloud_prob < 0.80 and cloud_conf < 0.85 - 0.001:
+                # This is an EV trade on borderline probability — not an obvious call
+                # Require higher confidence to filter noise
+                skip_reason = f"borderline EV trade: prob={cloud_prob:.2f} needs conf>0.85 (has {cloud_conf:.2f})"
+
+        # Correlation check
         if not skip_reason:
             try:
                 from correlation_guard import check_correlation
