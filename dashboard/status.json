@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T04:42:36.599503+00:00",
+  "updated_at": "2026-03-27T04:58:13.549583+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T04:42:36.599503+00:00",
+    "last_updated": "2026-03-27T04:58:13.549583+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -860,14 +860,14 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-03-27T04:37:31"
+        "time": "2026-03-27T04:52:33"
       },
       {
         "perplexity": 0.25,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-03-27T04:37:31"
+        "time": "2026-03-27T04:52:32"
       },
       {
         "perplexity": 0.95,
@@ -1017,6 +1017,18 @@
       "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
       "category": "weather",
       "source": "perplexity",
+      "time": "2026-03-27T04:52:32"
+    },
+    {
+      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-03-27T04:49:53"
+    },
+    {
+      "text": "AccuWeather forecasts for Miami/Miami Beach on March 2026 show daily highs nearby Mar 27 (e.g., Mar 25 ~80\u00b0) but no exact Mar 27 data; surrounding days range 69\u00b0-87\u00b0 with anomalies like 71\u00b0 on Mar 17[",
+      "category": "weather",
+      "source": "perplexity",
       "time": "2026-03-27T04:37:31"
     },
     {
@@ -1060,31 +1072,19 @@
       "category": "weather",
       "source": "perplexity",
       "time": "2026-03-27T03:49:08"
-    },
-    {
-      "text": "Forecasts for Chicago on March 26, 2026, show max temperatures of 17\u00b0C (63\u00b0F) [1], 55\u00b0F day high [6], and typical March averages of 33-44\u00b0F (1-7\u00b0C) [7]. Other sources indicate cool, breezy conditions ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T03:49:06"
-    },
-    {
-      "text": "March 25, 2026 has already occurred (today is March 27, 2026). Historical weather data from Weather Spark shows the actual observed temperature at NYC Central Park on March 26, 2026 was 68.0\u00b0F at 6:51",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-03-27T03:49:04"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "126 API retries this session",
-      "detail": "126 non-fatal exceptions across 37 cycles (~3.4/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "128 API retries this session",
+      "detail": "128 non-fatal exceptions across 38 cycles (~3.4/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 126,
-    "cycles": 37,
-    "uptime_hours": 10.6
+    "errors_24h": 128,
+    "cycles": 38,
+    "uptime_hours": 10.9
   }
 }
