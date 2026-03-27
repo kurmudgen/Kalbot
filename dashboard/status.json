@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T15:52:43.967602+00:00",
+  "updated_at": "2026-03-27T16:06:36.000540+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-27T15:52:43.967602+00:00",
+    "last_updated": "2026-03-27T16:06:36.000540+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -929,9 +929,9 @@
   },
   "scanner": {
     "total_markets": 2554,
-    "with_prices": 1518,
+    "with_prices": 1523,
     "passed_filter": 169,
-    "total_scored": 458,
+    "total_scored": 463,
     "categories": {
       "economics": 1490,
       "energy": 120,
@@ -1005,9 +1005,9 @@
       "category": "economics"
     },
     {
-      "ticker": "KXWTI-26MAR27-T96.99",
-      "title": "Will the WTI front-month settle oil price  be >96.99 on Mar 27, 2026?",
-      "price": 72,
+      "ticker": "KXWTI-26MAR27-T101.99",
+      "title": "Will the WTI front-month settle oil price  be >101.99 on Mar 27, 2026?",
+      "price": 5,
       "close_time": "2026-03-27T18:30:00Z",
       "category": "energy"
     }
@@ -1078,13 +1078,13 @@
     {
       "level": "warning",
       "message": "147 API retries this session",
-      "detail": "147 non-fatal exceptions across 82 cycles (~1.8/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "147 non-fatal exceptions across 83 cycles (~1.8/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 147,
-    "cycles": 82,
-    "uptime_hours": 21.8
+    "cycles": 83,
+    "uptime_hours": 22.0
   }
 }
