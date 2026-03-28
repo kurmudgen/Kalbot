@@ -192,6 +192,14 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
             except Exception:
                 pass
 
+        # Hard block — disabled categories that must never trade
+        BLOCKED_TICKERS = ["KXEURUSD", "KXUSDJPY", "KXINX"]  # forex + S&P disabled
+        if not skip_reason:
+            for blocked in BLOCKED_TICKERS:
+                if ticker.startswith(blocked):
+                    skip_reason = f"blocked category: {blocked} disabled"
+                    break
+
         # Bracket deduplication — one trade per underlying event
         if not skip_reason:
             try:
