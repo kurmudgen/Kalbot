@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T09:46:32.605607+00:00",
+  "updated_at": "2026-03-28T10:03:55.680658+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-28T09:46:32.605607+00:00",
+    "last_updated": "2026-03-28T10:03:55.680658+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -57,7 +57,7 @@
       },
       {
         "date": "2026-03-28",
-        "trades": 389,
+        "trades": 432,
         "deployed": 0.36
       }
     ],
@@ -87,7 +87,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:45:49"
+        "time": "2026-03-28T10:03:12"
       },
       {
         "ticker": "KXWTI-26MAR27-T84.99",
@@ -102,7 +102,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:45:49"
+        "time": "2026-03-28T10:03:12"
       },
       {
         "ticker": "KXWTI-26MAR27-T87.99",
@@ -117,7 +117,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:45:49"
+        "time": "2026-03-28T10:03:12"
       },
       {
         "ticker": "KXWTI-26MAR27-T88.99",
@@ -132,7 +132,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:45:49"
+        "time": "2026-03-28T10:03:12"
       },
       {
         "ticker": "KXWTI-26MAR27-T89.99",
@@ -147,7 +147,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:45:49"
+        "time": "2026-03-28T10:03:12"
       },
       {
         "ticker": "KXWTI-26MAR26-T88.99",
@@ -162,7 +162,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:45:49"
+        "time": "2026-03-28T10:03:12"
       },
       {
         "ticker": "KXWTI-26MAR26-T93.99",
@@ -177,7 +177,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:45:49"
+        "time": "2026-03-28T10:03:12"
       },
       {
         "ticker": "KXWTI-26MAR27-T82.99",
@@ -192,7 +192,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:45:49"
+        "time": "2026-03-28T10:03:12"
       },
       {
         "ticker": "KXFED-27APR-T3.00",
@@ -207,7 +207,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXFED-27JAN-T0.00",
@@ -222,7 +222,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXFED-27MAR-T0.00",
@@ -237,7 +237,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXFED-27MAR-T2.50",
@@ -252,7 +252,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXFED-27JAN-T1.25",
@@ -267,7 +267,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXFED-27APR-T3.25",
@@ -282,7 +282,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXFED-26DEC-T2.75",
@@ -297,7 +297,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXWTI-26MAR30-T95.99",
@@ -312,7 +312,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXWTI-26MAR27-T84.99",
@@ -327,7 +327,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXWTI-26MAR27-T87.99",
@@ -342,7 +342,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXWTI-26MAR27-T88.99",
@@ -357,7 +357,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXWTI-26MAR27-T89.99",
@@ -372,7 +372,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXWTI-26MAR26-T88.99",
@@ -387,7 +387,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXWTI-26MAR26-T93.99",
@@ -402,7 +402,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXWTI-26MAR27-T82.99",
@@ -417,7 +417,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXHIGHDEN-26MAR28-T84",
@@ -432,7 +432,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXHIGHNY-26MAR28-B40.5",
@@ -447,7 +447,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXHIGHMIA-26MAR28-T86",
@@ -462,7 +462,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:21"
+        "time": "2026-03-28T10:00:46"
       },
       {
         "ticker": "KXHIGHCHI-26MAR28-T54",
@@ -477,7 +477,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHAUS-26MAR28-T73",
@@ -492,7 +492,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHMIA-26MAR28-B85.5",
@@ -507,7 +507,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR28-T47",
@@ -522,7 +522,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHMIA-26MAR28-T79",
@@ -537,7 +537,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-T69",
@@ -552,7 +552,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-B92.5",
@@ -567,7 +567,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-B55.5",
@@ -582,7 +582,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-T56",
@@ -597,7 +597,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-T93",
@@ -612,7 +612,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B66.5",
@@ -627,7 +627,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B62.5",
@@ -642,7 +642,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B68.5",
@@ -657,7 +657,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHMIA-26MAR27-B83.5",
@@ -672,7 +672,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHMIA-26MAR26-T84",
@@ -687,7 +687,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHCHI-26MAR26-T77",
@@ -702,7 +702,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:20"
+        "time": "2026-03-28T10:00:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR25-T51",
@@ -717,7 +717,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T09:43:19"
+        "time": "2026-03-28T10:00:44"
       },
       {
         "ticker": "KXWTI-26MAR30-T95.99",
@@ -732,7 +732,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:28:37"
+        "time": "2026-03-28T09:45:49"
       },
       {
         "ticker": "KXWTI-26MAR27-T84.99",
@@ -747,7 +747,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:28:37"
+        "time": "2026-03-28T09:45:49"
       },
       {
         "ticker": "KXWTI-26MAR27-T87.99",
@@ -762,7 +762,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:28:37"
+        "time": "2026-03-28T09:45:49"
       },
       {
         "ticker": "KXWTI-26MAR27-T88.99",
@@ -777,7 +777,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:28:37"
+        "time": "2026-03-28T09:45:49"
       },
       {
         "ticker": "KXWTI-26MAR27-T89.99",
@@ -792,7 +792,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:28:37"
+        "time": "2026-03-28T09:45:49"
       },
       {
         "ticker": "KXWTI-26MAR26-T88.99",
@@ -807,7 +807,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:28:37"
+        "time": "2026-03-28T09:45:49"
       },
       {
         "ticker": "KXWTI-26MAR26-T93.99",
@@ -822,13 +822,13 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T09:28:37"
+        "time": "2026-03-28T09:45:49"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 1086,
+      "trades": 1121,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -865,70 +865,70 @@
         "claude": null,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-28T09:45:25"
+        "time": "2026-03-28T10:02:49"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.65,
         "consensus": true,
-        "time": "2026-03-28T09:45:23"
+        "time": "2026-03-28T10:02:47"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.45,
         "consensus": false,
-        "time": "2026-03-28T09:45:21"
+        "time": "2026-03-28T10:02:45"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.78,
         "consensus": false,
-        "time": "2026-03-28T09:45:20"
+        "time": "2026-03-28T10:02:43"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.45,
         "consensus": false,
-        "time": "2026-03-28T09:45:18"
+        "time": "2026-03-28T10:02:41"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.28,
         "consensus": false,
-        "time": "2026-03-28T09:45:15"
+        "time": "2026-03-28T10:02:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-28T09:45:15"
+        "time": "2026-03-28T10:02:39"
       },
       {
         "perplexity": null,
         "claude": 0.75,
         "deepseek": 0.87,
         "consensus": false,
-        "time": "2026-03-28T09:45:13"
+        "time": "2026-03-28T10:02:37"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.82,
         "consensus": true,
-        "time": "2026-03-28T09:45:12"
+        "time": "2026-03-28T10:02:35"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-28T09:45:10"
+        "time": "2026-03-28T10:02:33"
       }
     ]
   },
@@ -1082,14 +1082,14 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "156 API retries this session",
-      "detail": "156 non-fatal exceptions across 157 cycles (~1.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "157 API retries this session",
+      "detail": "157 non-fatal exceptions across 158 cycles (~1.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 156,
-    "cycles": 157,
-    "uptime_hours": 39.7
+    "errors_24h": 157,
+    "cycles": 158,
+    "uptime_hours": 40.0
   }
 }
