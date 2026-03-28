@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T00:20:56.004563+00:00",
+  "updated_at": "2026-03-28T00:32:44.993639+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,13 +16,13 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-28T00:20:56.004563+00:00",
+    "last_updated": "2026-03-28T00:32:44.993639+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
   },
   "pnl": {
-    "today": 0,
+    "today": 0.0,
     "all_time": -47.025299999999994,
     "history": [
       {
@@ -54,6 +54,11 @@
         "date": "2026-03-27",
         "trades": 2182,
         "deployed": 35.589999999999996
+      },
+      {
+        "date": "2026-03-28",
+        "trades": 1,
+        "deployed": 0
       }
     ],
     "resolved": {
@@ -66,9 +71,24 @@
   },
   "trades": {
     "total": 50,
-    "executed": 0,
-    "skipped": 50,
+    "executed": 1,
+    "skipped": 49,
     "recent": [
+      {
+        "ticker": "KXFED-27JAN-T2.25",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.9,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 73% of max gain captured ($0.27/contract)",
+        "category": "",
+        "time": "2026-03-28T00:26:38"
+      },
       {
         "ticker": "KXUSDJPY-26MAR3010-B158.375",
         "title": "Will the USD/JPY open price be between 158.250 and 158.499 at Mar 30, 2026 at 10am EDT?",
@@ -803,21 +823,6 @@
         "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
         "time": "2026-03-27T23:23:21"
-      },
-      {
-        "ticker": "KXFED-26SEP-T3.75",
-        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.6,
-        "price_gap": 0.264,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-03-27T23:23:20"
       }
     ]
   },
@@ -929,9 +934,9 @@
   },
   "scanner": {
     "total_markets": 2569,
-    "with_prices": 1545,
-    "passed_filter": 180,
-    "total_scored": 487,
+    "with_prices": 1546,
+    "passed_filter": 181,
+    "total_scored": 488,
     "categories": {
       "economics": 1490,
       "energy": 135,
@@ -1078,13 +1083,13 @@
     {
       "level": "warning",
       "message": "147 API retries this session",
-      "detail": "147 non-fatal exceptions across 125 cycles (~1.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "147 non-fatal exceptions across 126 cycles (~1.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 147,
-    "cycles": 125,
-    "uptime_hours": 30.2
+    "cycles": 126,
+    "uptime_hours": 30.4
   }
 }
