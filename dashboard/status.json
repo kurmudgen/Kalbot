@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T07:26:46.426229+00:00",
+  "updated_at": "2026-03-28T07:44:01.242206+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,13 +16,13 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-28T07:26:46.426229+00:00",
+    "last_updated": "2026-03-28T07:44:01.242206+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
   },
   "pnl": {
-    "today": 0.0648,
+    "today": 0.0,
     "all_time": -47.025299999999994,
     "history": [
       {
@@ -57,7 +57,7 @@
       },
       {
         "date": "2026-03-28",
-        "trades": 44,
+        "trades": 88,
         "deployed": 0.36
       }
     ],
@@ -71,8 +71,8 @@
   },
   "trades": {
     "total": 50,
-    "executed": 2,
-    "skipped": 48,
+    "executed": 1,
+    "skipped": 49,
     "recent": [
       {
         "ticker": "KXWTI-26MAR30-T95.99",
@@ -87,7 +87,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:25:51"
+        "time": "2026-03-28T07:43:16"
       },
       {
         "ticker": "KXWTI-26MAR27-T84.99",
@@ -102,7 +102,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:25:51"
+        "time": "2026-03-28T07:43:16"
       },
       {
         "ticker": "KXWTI-26MAR27-T87.99",
@@ -117,7 +117,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:25:51"
+        "time": "2026-03-28T07:43:16"
       },
       {
         "ticker": "KXWTI-26MAR27-T88.99",
@@ -132,7 +132,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:25:51"
+        "time": "2026-03-28T07:43:16"
       },
       {
         "ticker": "KXWTI-26MAR27-T89.99",
@@ -147,7 +147,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:25:51"
+        "time": "2026-03-28T07:43:16"
       },
       {
         "ticker": "KXWTI-26MAR26-T88.99",
@@ -162,7 +162,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:25:50"
+        "time": "2026-03-28T07:43:16"
       },
       {
         "ticker": "KXWTI-26MAR26-T93.99",
@@ -177,7 +177,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:25:50"
+        "time": "2026-03-28T07:43:16"
       },
       {
         "ticker": "KXWTI-26MAR27-T82.99",
@@ -192,7 +192,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:25:50"
+        "time": "2026-03-28T07:43:15"
       },
       {
         "ticker": "KXFED-27JAN-T0.00",
@@ -207,7 +207,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXFED-27MAR-T0.00",
@@ -222,7 +222,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXFED-27MAR-T2.50",
@@ -237,7 +237,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXFED-27JAN-T1.25",
@@ -252,7 +252,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "economics",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXFED-27APR-T3.25",
@@ -267,7 +267,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXFED-26DEC-T2.75",
@@ -282,7 +282,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXWTI-26MAR30-T95.99",
@@ -297,7 +297,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXWTI-26MAR27-T84.99",
@@ -312,7 +312,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXWTI-26MAR27-T87.99",
@@ -327,7 +327,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXFED-27APR-T3.00",
@@ -342,7 +342,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "economics",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXWTI-26MAR27-T88.99",
@@ -357,7 +357,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXWTI-26MAR27-T89.99",
@@ -372,7 +372,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXWTI-26MAR26-T88.99",
@@ -387,7 +387,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXWTI-26MAR26-T93.99",
@@ -402,7 +402,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXWTI-26MAR27-T82.99",
@@ -417,7 +417,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-28T07:23:21"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXHIGHDEN-26MAR28-T84",
@@ -432,7 +432,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:46"
       },
       {
         "ticker": "KXHIGHNY-26MAR28-B40.5",
@@ -447,7 +447,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHMIA-26MAR28-T86",
@@ -462,7 +462,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHCHI-26MAR28-T54",
@@ -477,7 +477,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHAUS-26MAR28-T73",
@@ -492,7 +492,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHMIA-26MAR28-B85.5",
@@ -507,7 +507,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR28-T47",
@@ -522,7 +522,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHMIA-26MAR28-T79",
@@ -537,7 +537,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-T69",
@@ -552,7 +552,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-B92.5",
@@ -567,7 +567,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-B55.5",
@@ -582,7 +582,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-T56",
@@ -597,7 +597,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-T93",
@@ -612,7 +612,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B66.5",
@@ -627,7 +627,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B62.5",
@@ -642,7 +642,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B68.5",
@@ -657,22 +657,22 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:20"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHMIA-26MAR27-B83.5",
         "title": "Will the **high temp in Miami** be 83-84\u00b0 on Mar 27, 2026?",
         "side": "NO",
-        "amount": 0.36,
+        "amount": 0.0,
         "probability": 0.4045364667868566,
         "confidence": 0.7452369668246446,
         "market_price": 0.6,
         "price_gap": 0.19546353321314336,
         "mode": "PAPER",
-        "executed": true,
+        "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:19"
+        "time": "2026-03-28T07:40:45"
       },
       {
         "ticker": "KXHIGHMIA-26MAR26-T84",
@@ -687,7 +687,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:18"
+        "time": "2026-03-28T07:40:44"
       },
       {
         "ticker": "KXHIGHCHI-26MAR26-T77",
@@ -702,7 +702,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:18"
+        "time": "2026-03-28T07:40:44"
       },
       {
         "ticker": "KXHIGHNY-26MAR25-T51",
@@ -717,118 +717,118 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "weather",
-        "time": "2026-03-28T07:23:18"
+        "time": "2026-03-28T07:40:44"
       },
       {
-        "ticker": "KXFED-27JAN-T2.25",
+        "ticker": "KXHIGHMIA-26MAR27-B83.5",
         "title": "",
-        "side": "YES_EXIT_TAKE_PROFIT",
+        "side": "NO_EXIT_STOP_LOSS",
         "amount": 0.0,
         "probability": 0.0,
         "confidence": 0.0,
-        "market_price": 0.9,
+        "market_price": 0.99,
         "price_gap": 0.0,
         "mode": "PAPER",
         "executed": true,
-        "reasoning": "Profit target hit: 73% of max gain captured ($0.27/contract)",
+        "reasoning": "Stop loss: down $0.39/contract (65%)",
         "category": "",
-        "time": "2026-03-28T00:26:38"
+        "time": "2026-03-28T07:32:29"
       },
       {
-        "ticker": "KXUSDJPY-26MAR3010-B158.375",
-        "title": "Will the USD/JPY open price be between 158.250 and 158.499 at Mar 30, 2026 at 10am EDT?",
+        "ticker": "KXWTI-26MAR30-T95.99",
+        "title": "Will the WTI front-month settle oil price  be >95.99 on Mar 30, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.03839275030061395,
-        "confidence": 0.8800000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.46160724969938605,
+        "probability": 0.6595095581207743,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.79,
+        "price_gap": 0.13049044187922576,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=160.2860, prob=0.04",
-        "category": "forex",
-        "time": "2026-03-27T23:23:23"
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-28T07:25:51"
       },
       {
-        "ticker": "KXUSDJPY-26MAR3010-B158.625",
-        "title": "Will the USD/JPY open price be between 158.500 and 158.749 at Mar 30, 2026 at 10am EDT?",
+        "ticker": "KXWTI-26MAR27-T84.99",
+        "title": "Will the WTI front-month settle oil price  be >84.99 on Mar 27, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.06399496454050244,
-        "confidence": 0.8800000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.43600503545949754,
+        "probability": 0.7414120296172406,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.95,
+        "price_gap": 0.20858797038275934,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=160.2860, prob=0.06",
-        "category": "forex",
-        "time": "2026-03-27T23:23:23"
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-28T07:25:51"
       },
       {
-        "ticker": "KXUSDJPY-26MAR3010-B158.875",
-        "title": "Will the USD/JPY open price be between 158.750 and 158.999 at Mar 30, 2026 at 10am EDT?",
+        "ticker": "KXWTI-26MAR27-T87.99",
+        "title": "Will the WTI front-month settle oil price  be >87.99 on Mar 27, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.10124258820520193,
-        "confidence": 0.8800000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.39875741179479807,
+        "probability": 0.7626002594333237,
+        "confidence": 0.7244186046511628,
+        "market_price": 0.86,
+        "price_gap": 0.09739974056667633,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=160.2860, prob=0.10",
-        "category": "forex",
-        "time": "2026-03-27T23:23:23"
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-28T07:25:51"
       },
       {
-        "ticker": "KXUSDJPY-26MAR3010-B159.125",
-        "title": "Will the USD/JPY open price be between 159.000 and 159.249 at Mar 30, 2026 at 10am EDT?",
+        "ticker": "KXWTI-26MAR27-T88.99",
+        "title": "Will the WTI front-month settle oil price  be >88.99 on Mar 27, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.15222677162864373,
-        "confidence": 0.8800000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.34777322837135627,
+        "probability": 0.7753236482344734,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.9,
+        "price_gap": 0.1246763517655266,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=160.2860, prob=0.15",
-        "category": "forex",
-        "time": "2026-03-27T23:23:23"
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-28T07:25:51"
       },
       {
-        "ticker": "KXUSDJPY-26MAR3010-B159.375",
-        "title": "Will the USD/JPY open price be between 159.250 and 159.499 at Mar 30, 2026 at 10am EDT?",
+        "ticker": "KXWTI-26MAR27-T89.99",
+        "title": "Will the WTI front-month settle oil price  be >89.99 on Mar 27, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.21788489692183993,
-        "confidence": 0.8800000000000001,
-        "market_price": 0.5,
-        "price_gap": 0.28211510307816007,
+        "probability": 0.7288411627050325,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.83,
+        "price_gap": 0.10115883729496744,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=160.2860, prob=0.22",
-        "category": "forex",
-        "time": "2026-03-27T23:23:23"
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-28T07:25:51"
       },
       {
-        "ticker": "KXUSDJPY-26MAR3010-B159.625",
-        "title": "Will the USD/JPY open price be between 159.500 and 159.749 at Mar 30, 2026 at 10am EDT?",
+        "ticker": "KXWTI-26MAR26-T88.99",
+        "title": "Will the WTI front-month settle oil price  be >88.99 on Mar 26, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.29743812584092577,
-        "confidence": 0.8278180615749817,
-        "market_price": 0.5,
-        "price_gap": 0.20256187415907423,
+        "probability": 0.7826618241172367,
+        "confidence": 0.7032258064516129,
+        "market_price": 0.97,
+        "price_gap": 0.18733817588276325,
         "mode": "PAPER",
         "executed": false,
-        "reasoning": "usdjpy=160.2860, prob=0.30",
-        "category": "forex",
-        "time": "2026-03-27T23:23:23"
+        "reasoning": "No real-time research available.",
+        "category": "energy",
+        "time": "2026-03-28T07:25:50"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 806,
+      "trades": 841,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -865,70 +865,70 @@
         "claude": null,
         "deepseek": 0.55,
         "consensus": false,
-        "time": "2026-03-28T07:25:26"
+        "time": "2026-03-28T07:42:51"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.65,
         "consensus": true,
-        "time": "2026-03-28T07:25:24"
+        "time": "2026-03-28T07:42:49"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.45,
         "consensus": false,
-        "time": "2026-03-28T07:25:22"
+        "time": "2026-03-28T07:42:47"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.78,
         "consensus": false,
-        "time": "2026-03-28T07:25:20"
+        "time": "2026-03-28T07:42:45"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.45,
         "consensus": false,
-        "time": "2026-03-28T07:25:18"
+        "time": "2026-03-28T07:42:43"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.28,
         "consensus": false,
-        "time": "2026-03-28T07:25:16"
+        "time": "2026-03-28T07:42:41"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-28T07:25:16"
+        "time": "2026-03-28T07:42:41"
       },
       {
         "perplexity": null,
         "claude": 0.75,
         "deepseek": 0.87,
         "consensus": false,
-        "time": "2026-03-28T07:25:14"
+        "time": "2026-03-28T07:42:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.82,
         "consensus": true,
-        "time": "2026-03-28T07:25:12"
+        "time": "2026-03-28T07:42:37"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-28T07:25:10"
+        "time": "2026-03-28T07:42:35"
       }
     ]
   },
@@ -1082,14 +1082,14 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "148 API retries this session",
-      "detail": "148 non-fatal exceptions across 149 cycles (~1.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "149 API retries this session",
+      "detail": "149 non-fatal exceptions across 150 cycles (~1.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 148,
-    "cycles": 149,
-    "uptime_hours": 37.3
+    "errors_24h": 149,
+    "cycles": 150,
+    "uptime_hours": 37.6
   }
 }
