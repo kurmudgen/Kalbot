@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T11:02:36.582572+00:00",
+  "updated_at": "2026-03-28T11:13:12.451008+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,14 +16,14 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-28T11:02:36.582572+00:00",
+    "last_updated": "2026-03-28T11:13:12.451008+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
   },
   "pnl": {
     "today": 0,
-    "all_time": -47.025299999999994,
+    "all_time": -47.3595,
     "history": [
       {
         "date": "2026-03-22",
@@ -62,11 +62,11 @@
       }
     ],
     "resolved": {
-      "total_trades": 64,
-      "wins": 14,
-      "losses": 50,
-      "win_rate": 0.21875,
-      "actual_pnl": -47.025299999999994
+      "total_trades": 67,
+      "wins": 15,
+      "losses": 52,
+      "win_rate": 0.22388059701492538,
+      "actual_pnl": -47.3595
     }
   },
   "trades": {
@@ -1083,13 +1083,13 @@
     {
       "level": "warning",
       "message": "158 API retries this session",
-      "detail": "158 non-fatal exceptions across 163 cycles (~1.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "158 non-fatal exceptions across 164 cycles (~1.0/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 158,
-    "cycles": 163,
-    "uptime_hours": 40.9
+    "cycles": 164,
+    "uptime_hours": 41.1
   }
 }
