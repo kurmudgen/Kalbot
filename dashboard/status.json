@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T11:44:59.523584+00:00",
+  "updated_at": "2026-03-28T11:55:44.741888+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,7 +16,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-28T11:44:59.523584+00:00",
+    "last_updated": "2026-03-28T11:55:44.741888+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -1083,13 +1083,13 @@
     {
       "level": "warning",
       "message": "158 API retries this session",
-      "detail": "158 non-fatal exceptions across 167 cycles (~0.9/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "158 non-fatal exceptions across 168 cycles (~0.9/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 158,
-    "cycles": 167,
-    "uptime_hours": 41.6
+    "cycles": 168,
+    "uptime_hours": 41.8
   }
 }
