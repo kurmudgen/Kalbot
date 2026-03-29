@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-29T21:18:11.103765+00:00",
+  "updated_at": "2026-03-29T21:32:17.055120+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -16,13 +16,13 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-29T21:18:11.103765+00:00",
+    "last_updated": "2026-03-29T21:32:17.055120+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
   },
   "pnl": {
-    "today": 0,
+    "today": 0.0,
     "all_time": -47.3595,
     "history": [
       {
@@ -62,7 +62,7 @@
       },
       {
         "date": "2026-03-29",
-        "trades": 260,
+        "trades": 261,
         "deployed": 0
       }
     ],
@@ -76,9 +76,24 @@
   },
   "trades": {
     "total": 50,
-    "executed": 0,
-    "skipped": 50,
+    "executed": 1,
+    "skipped": 49,
     "recent": [
+      {
+        "ticker": "KXCPI-26MAY-T0.2",
+        "title": "",
+        "side": "YES_EXIT_TAKE_PROFIT",
+        "amount": 0.0,
+        "probability": 0.0,
+        "confidence": 0.0,
+        "market_price": 0.94,
+        "price_gap": 0.0,
+        "mode": "PAPER",
+        "executed": true,
+        "reasoning": "Profit target hit: 85% of max gain captured ($0.34/contract)",
+        "category": "",
+        "time": "2026-03-29T21:24:54"
+      },
       {
         "ticker": "KXWTI-26MAR26-T93.99",
         "title": "Will the WTI front-month settle oil price  be >93.99 on Mar 26, 2026?",
@@ -813,21 +828,6 @@
         "reasoning": "No real-time research available.",
         "category": "energy",
         "time": "2026-03-29T09:33:51"
-      },
-      {
-        "ticker": "KXHIGHMIA-26MAR29-B81.5",
-        "title": "Will the **high temp in Miami** be 81-82\u00b0 on Mar 29, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.3192861733131772,
-        "confidence": 0.7719999999999999,
-        "market_price": 0.47,
-        "price_gap": 0.15071382668682276,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for Mar 27, 2026: high of 65\u00b0F[1]. YouTube forecast video (pre-Mar 27): high near 56\u00b0F, falling to 48\u00b0F in afternoon due to cold \n- [weather",
-        "category": "weather",
-        "time": "2026-03-29T09:33:51"
       }
     ]
   },
@@ -939,9 +939,9 @@
   },
   "scanner": {
     "total_markets": 2919,
-    "with_prices": 1601,
+    "with_prices": 1602,
     "passed_filter": 257,
-    "total_scored": 563,
+    "total_scored": 564,
     "categories": {
       "economics": 1760,
       "energy": 155,
@@ -1088,13 +1088,13 @@
     {
       "level": "warning",
       "message": "166 API retries this session",
-      "detail": "166 non-fatal exceptions across 319 cycles (~0.5/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "166 non-fatal exceptions across 320 cycles (~0.5/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 166,
-    "cycles": 319,
-    "uptime_hours": 75.2
+    "cycles": 320,
+    "uptime_hours": 75.4
   }
 }
