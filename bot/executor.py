@@ -20,6 +20,24 @@ DECISIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "decisions.
 CONFIDENCE_MIN = float(os.getenv("CONFIDENCE_MIN", "0.75"))
 PRICE_GAP_MIN = float(os.getenv("PRICE_GAP_MIN", "0.08"))
 
+# City-specific minimum NWS gap (Fahrenheit) for weather trades
+_city_gap_raw = os.getenv("CITY_MIN_NWS_GAP", '{"default": 3}')
+try:
+    CITY_MIN_NWS_GAP = json.loads(_city_gap_raw)
+except Exception:
+    CITY_MIN_NWS_GAP = {"default": 3}
+
+# Suspended cities — skip all weather trades for these cities pending calibration
+_suspended_raw = os.getenv("SUSPENDED_CITIES", "")
+SUSPENDED_CITIES = [c.strip().lower() for c in _suspended_raw.split(",") if c.strip()]
+
+# City-specific minimum confidence (override category default for harder-to-predict cities)
+_city_conf_raw = os.getenv("CITY_MIN_CONFIDENCE", '{}')
+try:
+    CITY_MIN_CONFIDENCE = json.loads(_city_conf_raw)
+except Exception:
+    CITY_MIN_CONFIDENCE = {}
+
 # Category-specific confidence thresholds (lower = more aggressive)
 CATEGORY_CONFIDENCE = {
     "weather": float(os.getenv("WEATHER_CONFIDENCE", "0.70")),
@@ -41,6 +59,79 @@ MARKET_BIAS = {}
 if os.path.exists(BIAS_PATH):
     with open(BIAS_PATH) as f:
         MARKET_BIAS = json.load(f).get("bins", {})
+
+
+import re
+
+# Known weather cities for extraction from titles
+_WEATHER_CITIES = ["austin", "chicago", "denver", "houston", "miami", "nyc",
+                   "new york", "los angeles", "phoenix", "seattle", "philadelphia"]
+
+
+def extract_weather_city(title: str) -> str | None:
+    """Extract the primary city from a weather market title."""
+    title_lower = title.lower()
+    for city in _WEATHER_CITIES:
+        if city in title_lower:
+            # Normalize "new york" -> "nyc" for config lookup
+            return "nyc" if city == "new york" else city
+    return None
+
+
+def extract_threshold_temp(title: str) -> float | None:
+    """Extract the temperature threshold from a weather market title.
+    Handles formats like '90-91°', '>84°', '<77°', '83-84°'."""
+    # Match patterns: 90-91, >84, <77, etc. (before ° or F)
+    m = re.search(r'[<>]?(\d+)(?:-(\d+))?[°F]', title)
+    if not m:
+        return None
+    lo = int(m.group(1))
+    hi = int(m.group(2)) if m.group(2) else lo
+    return (lo + hi) / 2.0
+
+
+def check_city_nws_gap(title: str) -> tuple[bool, str | None, str | None]:
+    """Check if a weather trade meets the city-specific NWS gap minimum.
+    Returns (passed, skip_reason, city_used)."""
+    city = extract_weather_city(title)
+    if not city:
+        return True, None, None
+
+    threshold = extract_threshold_temp(title)
+    if threshold is None:
+        return True, None, city
+
+    # Load NWS forecast for this city
+    try:
+        import sys as _sys
+        data_path = os.path.join(os.path.dirname(__file__), "..", "data")
+        if data_path not in _sys.path:
+            _sys.path.insert(0, data_path)
+        from weather_nws_feed import load_forecasts
+        forecasts = load_forecasts()
+    except Exception:
+        return True, None, city  # Can't check, allow through
+
+    # Find matching forecast
+    nws_temp = None
+    for city_key, data in forecasts.items():
+        city_name = data.get("city", "").lower()
+        if city == city_key or city == city_name or (city == "nyc" and "new york" in city_name):
+            nws_temp = data.get("high_temp")
+            break
+
+    if nws_temp is None:
+        return True, None, city
+
+    gap = abs(nws_temp - threshold)
+    min_gap = CITY_MIN_NWS_GAP.get(city, CITY_MIN_NWS_GAP.get("default", 3))
+
+    if gap < min_gap:
+        reason = (f"city_nws_gap: {city} gap={gap:.1f}F < min={min_gap}F "
+                  f"(NWS={nws_temp}F, threshold={threshold:.0f}F)")
+        return False, reason, city
+
+    return True, None, city
 
 
 def get_historical_bias(market_price_cents: int) -> float:
@@ -276,6 +367,21 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         elif ticker in open_positions:
             skip_reason = "already in open positions"
 
+        # Gate 0.5: Suspended cities — skip entirely pending calibration
+        city_used = None
+        if not skip_reason and category == "weather":
+            city_used = extract_weather_city(title)
+            if city_used and city_used in SUSPENDED_CITIES:
+                skip_reason = f"suspended_city: {city_used} pending calibration"
+                print(f"  [city gate] SUSPENDED: {city_used} — {ticker}")
+
+        # Gate 0.7: City-specific minimum confidence (Miami=0.85, etc.)
+        if not skip_reason and category == "weather" and city_used:
+            city_conf_min = CITY_MIN_CONFIDENCE.get(city_used)
+            if city_conf_min and cloud_conf < city_conf_min - 0.001:
+                skip_reason = f"city_confidence: {city_used} conf={cloud_conf:.2f} < {city_conf_min}"
+                print(f"  [city gate] CONFIDENCE: {city_used} conf={cloud_conf:.2f} < {city_conf_min} — {ticker}")
+
         # Gate 1: Weather markets with borderline probability need NWS data
         if not skip_reason and category == "weather":
             if 0.20 < cloud_prob < 0.80:
@@ -284,6 +390,14 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
                 has_nws = "NWS" in reasoning or "nws" in reasoning or "official forecast" in reasoning.lower()
                 if not has_nws:
                     skip_reason = "nws_data_missing: borderline weather trade without settlement source"
+
+        # Gate 1.5: City-specific NWS gap minimum (Austin=6F, default=3F)
+        if not skip_reason and category == "weather":
+            passed, gap_reason, city_checked = check_city_nws_gap(title)
+            if not passed:
+                skip_reason = gap_reason
+            if city_checked and not city_used:
+                city_used = city_checked
 
         # Gate 2: Borderline probability EV trades need higher confidence
         if not skip_reason:
@@ -305,6 +419,10 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
             skip_reason = f"nightly spend limit reached (${tonight_spend:.2f})"
         elif amount <= 0:
             skip_reason = "no budget remaining"
+
+        # Append city to reasoning for weather trades (audit trail)
+        if category == "weather" and city_used:
+            reasoning = f"[city={city_used}] {reasoning}"
 
         if skip_reason:
             print(f"  SKIP {title[:50]}... — {skip_reason}")

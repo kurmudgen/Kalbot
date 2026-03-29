@@ -22,6 +22,7 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True
 
 ENABLED = os.getenv("SELF_CALIBRATION_ENABLED", "true").lower() == "true"
 MIN_TRADES = int(os.getenv("SELF_CAL_MIN_TRADES", "5"))
+MIN_TRADES_CITY = int(os.getenv("SELF_CAL_MIN_TRADES_CITY", "3"))
 TRIAL_HOURS = int(os.getenv("SELF_CAL_TRIAL_HOURS", "24"))
 MAX_THRESHOLD_CHANGE = float(os.getenv("SELF_CAL_MAX_THRESHOLD_CHANGE", "0.10"))
 
@@ -187,11 +188,24 @@ def tier1_market_movement() -> list[dict]:
 
 # ── TIER 2: 6-Hour Pattern Analyzer ─────────────────────────
 
+def _extract_city_from_title(title: str) -> str | None:
+    """Extract city name from a weather market title for grouping."""
+    title_lower = title.lower()
+    cities = ["austin", "chicago", "denver", "houston", "miami", "nyc",
+              "new york", "los angeles", "phoenix", "seattle", "philadelphia"]
+    for city in cities:
+        if city in title_lower:
+            return "nyc" if city == "new york" else city
+    return None
+
+
 def tier2_pattern_analyzer() -> list[dict]:
     """Analyze last 24hr of resolved trades for loss patterns.
 
-    Groups losses by category, city (weather), confidence bucket.
-    Sends structured summary to local 32b model for pattern ID.
+    Groups losses by category AND city (for weather). Runs city-level
+    analysis at MIN_TRADES_CITY threshold (default 3) since city-specific
+    patterns have clearer causal mechanisms. Category-level and threshold-level
+    patterns use the standard MIN_TRADES threshold (default 5).
     """
     if not ENABLED or not os.path.exists(RESOLUTIONS_DB):
         return []
@@ -213,19 +227,114 @@ def tier2_pattern_analyzer() -> list[dict]:
     """, (cutoff,)).fetchall()
     conn.close()
 
-    if len(losses) < MIN_TRADES:
-        return []
-
-    # Build structured input for local model
-    loss_lines = []
+    # Group losses by city for weather trades
+    city_losses = {}  # city -> [losses]
+    category_losses = {}  # category -> [losses]
     for l in losses:
-        loss_lines.append(f"  LOSS: {l['title'][:60]} | conf={l['our_confidence']:.2f} | cat={l['category']} | pnl=${l['pnl']:.2f}")
+        cat = l["category"] or "unknown"
+        category_losses.setdefault(cat, []).append(l)
+        if cat == "weather":
+            city = _extract_city_from_title(l["title"])
+            if city:
+                city_losses.setdefault(city, []).append(l)
 
-    win_lines = []
-    for w in wins[:10]:
-        win_lines.append(f"  WIN: {w['title'][:60]} | conf={w['our_confidence']:.2f} | cat={w['category']}")
+    # Group wins by city for context
+    city_wins = {}
+    for w in wins:
+        if (w["category"] or "") == "weather":
+            city = _extract_city_from_title(w["title"])
+            if city:
+                city_wins.setdefault(city, []).append(w)
 
-    prompt = f"""You are analyzing trading performance for a prediction market bot.
+    hypotheses = []
+    now = datetime.now(timezone.utc).isoformat()
+
+    # City-level analysis (lower threshold — clearer causal mechanisms)
+    for city, city_loss_list in city_losses.items():
+        if len(city_loss_list) < MIN_TRADES_CITY:
+            continue
+
+        city_win_list = city_wins.get(city, [])
+        loss_lines = [
+            f"  LOSS: {l['title'][:60]} | conf={l['our_confidence']:.2f} | pnl=${l['pnl']:.2f}"
+            for l in city_loss_list
+        ]
+        win_lines = [
+            f"  WIN: {w['title'][:60]} | conf={w['our_confidence']:.2f}"
+            for w in city_win_list[:5]
+        ]
+
+        prompt = f"""You are analyzing trading performance for a prediction market bot.
+This analysis is specifically for the city of {city.upper()}.
+
+{city.upper()} LOSSES with confidence above 0.70 (last 24 hours):
+{chr(10).join(loss_lines)}
+
+{city.upper()} WINS with confidence above 0.70 (last 24 hours):
+{chr(10).join(win_lines) if win_lines else '  (none)'}
+
+Total: {len(city_loss_list)} losses, {len(city_win_list)} wins for {city.upper()}.
+
+Focus on city-specific factors: Is this city harder to predict due to geography,
+coastal effects, altitude, or microclimate? Should this city require a wider NWS
+gap or higher confidence threshold?
+
+Answer in JSON format:
+{{
+  "city": "{city}",
+  "common_loss_pattern": "<what characteristic do the {city} losses share?>",
+  "causal_mechanism": "<why is {city} specifically harder to predict?>",
+  "recommended_change": "<one specific threshold adjustment for this city>",
+  "affected_parameter": "<e.g. CITY_MIN_NWS_GAP, CITY_MIN_CONFIDENCE, SUSPENDED_CITIES>",
+  "recommended_value": "<new value as string>",
+  "confidence": "<low/medium/high>",
+  "scope": "city"
+}}"""
+
+        result = _query_local_model(prompt)
+        if result:
+            hypothesis = {
+                "pattern": result.get("common_loss_pattern", ""),
+                "recommendation": result.get("recommended_change", ""),
+                "parameter": result.get("affected_parameter", ""),
+                "value": result.get("recommended_value", ""),
+                "confidence": result.get("confidence", "low"),
+                "scope": "city",
+                "city": city,
+                "supporting_trades": len(city_loss_list),
+                "timestamp": now,
+            }
+            hypotheses.append(hypothesis)
+
+            dconn = sqlite3.connect(DECISIONS_DB)
+            _init_tables(dconn)
+            dconn.execute(
+                "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 2, ?, ?, ?)",
+                (now, f"city_pattern_{city}",
+                 json.dumps(result)[:500], "city_hypothesis_generated"),
+            )
+            dconn.commit()
+            dconn.close()
+
+            print(f"  Self-cal T2: city pattern [{city}] — {hypothesis['pattern'][:50]}")
+            print(f"    Mechanism: {result.get('causal_mechanism', 'unknown')[:60]}")
+            print(f"    Recommendation: {hypothesis['recommendation'][:60]}")
+            print(f"    Confidence: {hypothesis['confidence']}, trades: {hypothesis['supporting_trades']}")
+
+    # Category-level analysis (standard threshold)
+    if len(losses) >= MIN_TRADES:
+        loss_lines = []
+        for l in losses:
+            city = _extract_city_from_title(l["title"]) if l["category"] == "weather" else None
+            city_tag = f" [{city}]" if city else ""
+            loss_lines.append(f"  LOSS: {l['title'][:60]}{city_tag} | conf={l['our_confidence']:.2f} | cat={l['category']} | pnl=${l['pnl']:.2f}")
+
+        win_lines = [
+            f"  WIN: {w['title'][:60]} | conf={w['our_confidence']:.2f} | cat={w['category']}"
+            for w in wins[:10]
+        ]
+
+        prompt = f"""You are analyzing trading performance for a prediction market bot.
 
 LOSSES with confidence above 0.70 (last 24 hours):
 {chr(10).join(loss_lines)}
@@ -241,38 +350,37 @@ Answer in JSON format:
   "affected_parameter": "<which parameter to change, e.g. WEATHER_CONFIDENCE>",
   "recommended_value": "<new value as string>",
   "confidence": "<low/medium/high>",
+  "scope": "category",
   "min_trades_to_validate": <integer>
 }}"""
 
-    result = _query_local_model(prompt)
-    hypotheses = []
+        result = _query_local_model(prompt)
+        if result:
+            hypothesis = {
+                "pattern": result.get("common_loss_pattern", ""),
+                "recommendation": result.get("recommended_change", ""),
+                "parameter": result.get("affected_parameter", ""),
+                "value": result.get("recommended_value", ""),
+                "confidence": result.get("confidence", "low"),
+                "scope": "category",
+                "supporting_trades": len(losses),
+                "timestamp": now,
+            }
+            hypotheses.append(hypothesis)
 
-    if result:
-        hypothesis = {
-            "pattern": result.get("common_loss_pattern", ""),
-            "recommendation": result.get("recommended_change", ""),
-            "parameter": result.get("affected_parameter", ""),
-            "value": result.get("recommended_value", ""),
-            "confidence": result.get("confidence", "low"),
-            "supporting_trades": len(losses),
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-        }
-        hypotheses.append(hypothesis)
+            dconn = sqlite3.connect(DECISIONS_DB)
+            _init_tables(dconn)
+            dconn.execute(
+                "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 2, ?, ?, ?)",
+                (now, "pattern_analysis",
+                 json.dumps(result)[:500], "hypothesis_generated"),
+            )
+            dconn.commit()
+            dconn.close()
 
-        # Log hypothesis
-        dconn = sqlite3.connect(DECISIONS_DB)
-        _init_tables(dconn)
-        dconn.execute(
-            "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 2, ?, ?, ?)",
-            (hypothesis["timestamp"], "pattern_analysis",
-             json.dumps(result)[:500], "hypothesis_generated"),
-        )
-        dconn.commit()
-        dconn.close()
-
-        print(f"  Self-cal T2: pattern found — {hypothesis['pattern'][:60]}")
-        print(f"    Recommendation: {hypothesis['recommendation'][:60]}")
-        print(f"    Confidence: {hypothesis['confidence']}, trades: {hypothesis['supporting_trades']}")
+            print(f"  Self-cal T2: category pattern — {hypothesis['pattern'][:60]}")
+            print(f"    Recommendation: {hypothesis['recommendation'][:60]}")
+            print(f"    Confidence: {hypothesis['confidence']}, trades: {hypothesis['supporting_trades']}")
 
     return hypotheses
 
@@ -576,7 +684,8 @@ if __name__ == "__main__":
     print("=== Self-Calibration Engine ===")
     print(f"Enabled: {ENABLED}")
     print(f"Local model: {LOCAL_MODEL}")
-    print(f"Min trades: {MIN_TRADES}")
+    print(f"Min trades (category): {MIN_TRADES}")
+    print(f"Min trades (city): {MIN_TRADES_CITY}")
     print(f"Trial period: {TRIAL_HOURS}hr")
     print(f"Max threshold change: {MAX_THRESHOLD_CHANGE}")
     print()
