@@ -404,6 +404,33 @@ def main():
             except Exception as e:
                 print(f"  Data sniper error: {e}")
 
+            # Options observer: activate on economics-category markets
+            if totals["cycles"] % 6 == 0:  # Every 30 min
+                try:
+                    from options_observer import ENABLED as OPT_ENABLED, update_open_positions
+                    if OPT_ENABLED:
+                        update_open_positions()
+                except Exception:
+                    pass
+                # Observe new economics signals
+                try:
+                    from options_observer import ENABLED as OPT_ENABLED, observe_release, _get_release_type
+                    if OPT_ENABLED:
+                        import sqlite3 as _sql2
+                        _adb = os.path.join(os.path.dirname(__file__), "..", "data", "live", "analyst_scores.sqlite")
+                        if os.path.exists(_adb):
+                            _aconn = _sql2.connect(_adb)
+                            _aconn.row_factory = _sql2.Row
+                            _econ_scores = _aconn.execute(
+                                "SELECT ticker, cloud_probability, cloud_confidence FROM scores WHERE category IN ('economics','inflation','tsa') AND scored_at > datetime('now', '-1 hour')"
+                            ).fetchall()
+                            _aconn.close()
+                            for _es in _econ_scores:
+                                if _get_release_type(_es["ticker"]):
+                                    observe_release(_es["ticker"], _es["cloud_probability"], _es["cloud_confidence"])
+                except Exception:
+                    pass
+
             # Recompute allocations each cycle
             try:
                 from strategy_rebalancer import compute_allocations

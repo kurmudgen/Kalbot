@@ -610,7 +610,84 @@ Answer in JSON format:
             print(f"    Recommendation: {hypothesis['recommendation'][:60]}")
             print(f"    Confidence: {hypothesis['confidence']}, trades: {hypothesis['supporting_trades']}")
 
+    # Options-specific analysis (every 10 new observations)
+    try:
+        options_db = os.path.join(os.path.dirname(__file__), "..", "logs", "options_paper.sqlite")
+        if os.path.exists(options_db):
+            oconn = sqlite3.connect(options_db)
+            obs_count = oconn.execute("SELECT COUNT(*) FROM observations").fetchone()[0]
+            oconn.close()
+            # Fire options analysis every 10 observations
+            if obs_count > 0 and obs_count % 10 == 0:
+                _run_options_pattern_analysis(obs_count)
+    except Exception:
+        pass
+
     return hypotheses
+
+
+def _run_options_pattern_analysis(obs_count: int):
+    """Analyze options observation patterns using local model."""
+    options_db = os.path.join(os.path.dirname(__file__), "..", "logs", "options_paper.sqlite")
+    conn = sqlite3.connect(options_db)
+    conn.row_factory = sqlite3.Row
+
+    # Get recent observations summary
+    rows = conn.execute("""
+        SELECT release_type, COUNT(*) as n,
+               ROUND(AVG(options_edge_gap), 4) as avg_gap,
+               ROUND(AVG(implied_vol), 4) as avg_iv,
+               ROUND(AVG(straddle_implied_prob), 4) as avg_straddle_prob
+        FROM observations
+        GROUP BY release_type
+    """).fetchall()
+    conn.close()
+
+    if not rows:
+        return
+
+    summary = "\n".join(
+        f"  {r['release_type']}: {r['n']} obs, avg_gap={r['avg_gap']:.2%}, avg_iv={r['avg_iv']:.2%}, avg_straddle_prob={r['avg_straddle_prob']:.2%}"
+        for r in rows
+    )
+
+    prompt = f"""You are analyzing options market observations for a prediction market bot.
+
+The bot observes SPY/QQQ options chains around economic releases and compares
+the options-implied probability against its Kalshi probability estimate.
+
+Observations by release type:
+{summary}
+
+Total observations: {obs_count}
+
+Analyze:
+1. Strike selection accuracy — are ATM strikes providing useful signal?
+2. Expiration timing — weekly vs monthly, which shows more edge?
+3. Edge gap threshold — what minimum gap predicts profitable trades?
+4. Which release types generate the strongest options signals?
+
+Answer in JSON format:
+{{
+  "strike_selection": "<assessment>",
+  "best_expiration": "<weekly or monthly>",
+  "min_edge_gap": "<recommended minimum>",
+  "strongest_release": "<cpi, fed, jobless, or tsa>",
+  "confidence": "<low/medium/high>"
+}}"""
+
+    result = _query_local_model(prompt)
+    if result:
+        dconn = sqlite3.connect(DECISIONS_DB)
+        _init_tables(dconn)
+        dconn.execute(
+            "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 2, ?, ?, ?)",
+            (datetime.now(timezone.utc).isoformat(), "options_pattern_analysis",
+             json.dumps(result)[:500], "options_hypothesis_generated"),
+        )
+        dconn.commit()
+        dconn.close()
+        print(f"  Self-cal T2: options pattern — strongest={result.get('strongest_release', '?')}, gap={result.get('min_edge_gap', '?')}")
 
 
 # ── TIER 2.5: Confidence Recalibration (every 25 resolutions) ─
