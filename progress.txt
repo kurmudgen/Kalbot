@@ -1,4 +1,4 @@
-KALBOT PROJECT STATUS — Last updated 2026-03-24 ~11:00 AM
+KALBOT PROJECT STATUS — Last updated 2026-03-29 ~11:00 PM
 ================================================================
 
 WHAT THIS IS:
@@ -386,6 +386,189 @@ all changes logged to calibration_history with full audit trail.
 
 .env: SELF_CALIBRATION_ENABLED=true, SELF_CAL_MIN_TRADES=5,
   SELF_CAL_TRIAL_HOURS=24, SELF_CAL_MAX_THRESHOLD_CHANGE=0.10
+
+================================================================
+PHASE 15: SIMULATION BACKTESTING — 2026-03-27/28
+================================================================
+
+Simulation runner built to replay historical Kalshi markets through the
+full pipeline (Ollama 32b scoring + executor gates) with actual historical
+data injected as settlement source context.
+
+calibration/simulation_runner.py — Weather simulation (1000 markets)
+  Data source: Open-Meteo historical TMAX (free, no auth)
+  Batch prefetches all city temps upfront (10 API calls total)
+  Status: RUNNING at ~3.3 markets/min, ~95% win rate at 419/1000
+
+calibration/simulation_categories.py — Multi-category simulator
+  Waits for weather to complete, then runs sequentially:
+  1. TSA (1255 markets) — data from local CSV data/raw/tsa/tsa_daily_volumes.csv
+  2. CPI/Inflation (1371 markets) — data from FRED CPIAUCSL/CPIUFDSL/CPILFESL
+  3. Jobless Claims (121 markets) — data from FRED ICSA
+  4. Fed Rate (102 markets) — data from FRED DFEDTARU
+  SKIPPED: EIA (0 markets in training data), Box Office (0 markets in training data)
+
+Output databases (all separate from live):
+  calibration/simulation_decisions.sqlite (weather)
+  calibration/simulation_tsa.sqlite
+  calibration/simulation_cpi.sqlite
+  calibration/simulation_jobless.sqlite
+  calibration/simulation_fed.sqlite
+
+Weather interim results (419/1000):
+  63 executed, 60W/3L, 95.2% WR
+  All 3 losses under 3F NWS gap
+  100% WR on 3-5F and 5-8F gaps (small sample)
+
+IMPORTANT: Live bot is running independently. Simulations share Ollama
+but do not touch decisions.sqlite, resolutions.sqlite, or any live DBs.
+
+Simulation results (COMPLETE):
+  Weather: 149 exec, 140W/9L, 94.0% WR, $1183 PnL
+  TSA:     678 exec, 634W/44L, 93.5% WR, $6984 PnL
+  CPI:     456 exec, 383W/73L, 84.0% WR, $3434 PnL
+  Jobless:  67 exec, 31W/36L, 46.3% WR — NOT DEPLOYABLE
+  Fed:      14 exec, 2W/12L, 14.3% WR — NOT DEPLOYABLE
+
+City simulation running separately (calibration/simulation_city_level.py)
+
+================================================================
+PHASE 16: CITY-SPECIFIC WEATHER GATES — 2026-03-29
+================================================================
+
+Austin pattern confirmed across 3 live losses ($1.48 total loss).
+NWS forecast accuracy for Austin specifically is lower due to
+Hill Country geography and afternoon convection patterns.
+
+bot/executor.py — Three new city-level gates:
+  Gate 0.5: SUSPENDED_CITIES — blocks all trades for listed cities
+    Austin suspended pending city simulation calibration
+  Gate 0.7: CITY_MIN_CONFIDENCE — per-city confidence floor override
+    Miami raised to 0.85 (coastal effects, sea breeze uncertainty)
+  Gate 1.5: CITY_MIN_NWS_GAP — per-city NWS gap minimum
+    Austin=6F (was 3F default)
+
+.env config:
+  SUSPENDED_CITIES=austin
+  CITY_MIN_CONFIDENCE={"miami": 0.85}
+  CITY_MIN_NWS_GAP={"austin": 6, "default": 3}
+
+Debug logging: prints [city gate] SUSPENDED or CONFIDENCE when triggered.
+Denver and Chicago are clean cities — system focuses weather capital there.
+
+================================================================
+PHASE 17: RESOLUTION-COUNT CALIBRATION TRIGGERS — 2026-03-29
+================================================================
+
+Replaced time-based self-calibration triggers with resolution-count cascade.
+Primary triggers fire from resolution_tracker.py after each resolved trade.
+Time-based fallback (72hr) kept in dual_strategy.py as safety net.
+
+calibration_counters table in decisions.sqlite:
+  tier, last_fired_at_count, current_count, threshold, last_fired_at
+
+Tier thresholds:
+  Tier 0:   every 1 resolution  — instant sanity check (high-conf losses)
+  Tier 1.5: every 3             — market movement reflector
+  Tier 2:   every 10            — pattern analyzer (category + city)
+  Tier 2.5: every 25            — confidence recalibration
+  Tier 3:   every 50            — adjustment executor (trial + auto-revert)
+  Tier 3.5: every 200           — deep pattern review with LLM
+  Tier 4:   every 500           — benchmark comparison
+  Tier 5:   every 2000          — full system review + Telegram milestone
+
+Self-calibrator Tier 2 city analysis:
+  SELF_CAL_MIN_TRADES_CITY=3 (lower threshold for city-specific patterns)
+  City-level prompt asks about geography, coastal effects, microclimate
+  Category-level prompt now includes [city] tags on weather losses
+
+Counters seeded at current resolution count (67) to prevent mass firing.
+
+================================================================
+PHASE 18: OPTIONS OBSERVER — 2026-03-29
+================================================================
+
+bot/options_observer.py — paper trading observation module:
+  Pulls SPY/QQQ/sector ETF options chains on economic release signals
+  Computes ATM straddle implied probability vs Kalshi probability
+  Records options_edge_gap for correlation analysis
+  Simulates paper positions when edge gap >= 5%
+  Tracks positions every 30 min with Greeks snapshots
+  Tables: observations, simulated_positions, outcomes, greeks_history
+  OPTIONS_OBSERVER_ENABLED=true in .env
+
+calibration/options_simulation.py — historical backtester:
+  48 CPI release dates (2022-2025) + 30 Fed meeting dates
+  Downloads historical SPY prices via yfinance
+  Simulates straddle and directional paper trades
+  Run: python calibration/options_simulation.py
+
+Wired into dual_strategy.py (every 30 min alongside economics scanner)
+Wired into self_calibrator Tier 2 (options pattern analysis every 10 obs)
+
+================================================================
+PHASE 19: DYNAMIC CAPITAL MANAGEMENT — 2026-03-29
+================================================================
+
+Replaced static MAX_NIGHTLY_SPEND with dynamic live balance system.
+
+Capital tracking:
+  Paper mode: $350 starting balance + resolved P&L = $302.64 current
+  Live mode: calls Kalshi API via pykalshi for real balance
+  capital_tracker table in decisions.sqlite logs every cycle
+
+Floor protection:
+  ACCOUNT_FLOOR_PCT=0.30 — floor = peak * 70%
+  Available capital = balance - floor
+  Current: $302.64 balance, $211.85 floor, $90.79 available
+  Catastrophic halt at DRAWDOWN_HALT_PCT=0.25 + Telegram alert
+
+Continuous performance score (10-100, starts 50):
+  High-confidence win (>=0.85): +3 points
+  Standard win: +2 points
+  Any loss: -5 points
+  Position multiplier = score/50 (1.0x at 50, 2.0x at 100)
+  Daily deployment cap = (score/100) * 1.2 * available_capital
+  Score persists across sessions, only changes on resolutions
+
+Position sizing:
+  Quarter-Kelly against effective available capital
+  Effective capital = available * score_multiplier
+  Per-trade cap: MAX_SINGLE_TRADE_PCT=0.20 (20% of effective)
+  Category liquidity caps: weather=$150, TSA=$200, CPI=$400
+  Minimum position: MIN_POSITION_SIZE=$15
+
+.env config (replaces MAX_TRADE_SIZE / MAX_NIGHTLY_SPEND):
+  PAPER_STARTING_BALANCE=350
+  ACCOUNT_FLOOR_PCT=0.30
+  DRAWDOWN_HALT_PCT=0.25
+  MAX_SINGLE_TRADE_PCT=0.20
+  MIN_POSITION_SIZE=15
+  MAX_POSITION_SIZE_WEATHER=150
+  MAX_POSITION_SIZE_TSA=200
+  MAX_POSITION_SIZE_CPI=400
+
+Morning review shows capital status, score trend, drawdown proximity.
+Dashboard status.json includes capital_status for live monitoring.
+
+================================================================
+LIVE RESOLUTION SUMMARY — 67 resolved trades
+================================================================
+
+Overall: 15W/52L, 22.4% WR, -$47.36 PnL
+  Forex: 49 trades, -$29.55 (pre-hard-block, disabled)
+  Weather: 10 trades, 5W/5L, -$0.99
+    Denver: 3W/0L (clean)
+    Chicago: 1W/0L (clean)
+    NYC: 1W/1L ($0.06 loss, pre-gate)
+    Austin: 0W/3L, -$1.48 (SUSPENDED)
+    Miami: 0W/1L, -$0.36 (conf raised to 0.85)
+
+Deployable categories (from simulation):
+  1. Weather — 94.0% WR (focus Denver/Chicago)
+  2. TSA — 93.5% WR (set 10%+ gap minimum)
+  3. CPI — 84.0% WR (set 0.5pp+ gap minimum)
+  NOT deployable: Jobless (46.3%), Fed (14.3%)
 
 ================================================================
 TO CHECK STATUS: ask Claude "status"
