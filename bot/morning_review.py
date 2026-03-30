@@ -207,6 +207,50 @@ def main():
         print("--- TREASURY ---")
         print(f"  Mercury: error ({str(e)[:40]})")
 
+    # Capital management status
+    print()
+    print("--- CAPITAL STATUS ---")
+    try:
+        cap_conn = sqlite3.connect(DECISIONS_DB)
+        cap_conn.row_factory = sqlite3.Row
+        cap_row = cap_conn.execute(
+            "SELECT * FROM capital_tracker ORDER BY id DESC LIMIT 1"
+        ).fetchone()
+        if cap_row:
+            bal = cap_row["balance"]
+            peak = cap_row["peak_balance"]
+            floor = cap_row["floor_balance"]
+            avail = cap_row["available_capital"]
+            score = cap_row["performance_score"]
+            mult = cap_row["score_multiplier"]
+            drawdown_pct = (1 - bal / peak) * 100 if peak > 0 else 0
+            halt_dist = (os.environ.get("DRAWDOWN_HALT_PCT") or "0.25")
+            halt_threshold = peak * (1 - float(halt_dist))
+            print(f"  Balance:     ${bal:.2f}")
+            print(f"  Peak:        ${peak:.2f}")
+            print(f"  Floor:       ${floor:.2f} ({float(os.environ.get('ACCOUNT_FLOOR_PCT', '0.30'))*100:.0f}% protection)")
+            print(f"  Available:   ${avail:.2f}")
+            print(f"  Score:       {score:.1f}/100 (multiplier: {mult:.2f}x)")
+            print(f"  Effective:   ${avail * mult:.2f}")
+            print(f"  Drawdown:    {drawdown_pct:.1f}% (halt at {float(halt_dist)*100:.0f}% = ${halt_threshold:.2f})")
+            print(f"  Daily used:  ${cap_row['daily_deployed']:.2f} / ${cap_row['daily_cap']:.2f}")
+            print(f"  Status:      {cap_row['cycle_status']}")
+
+            # Score trend (last 7 days)
+            scores = cap_conn.execute(
+                "SELECT timestamp, performance_score FROM capital_tracker WHERE timestamp > datetime('now', '-7 days') ORDER BY id"
+            ).fetchall()
+            if len(scores) > 1:
+                first_score = scores[0]["performance_score"]
+                last_score = scores[-1]["performance_score"]
+                trend = "↑" if last_score > first_score else ("↓" if last_score < first_score else "→")
+                print(f"  Score trend: {first_score:.0f} {trend} {last_score:.0f} (7d)")
+        else:
+            print("  No capital tracker data yet")
+        cap_conn.close()
+    except Exception as e:
+        print(f"  Capital tracker: {e}")
+
     # API efficiency and cost breakdown
     print()
     print("--- API EFFICIENCY ---")

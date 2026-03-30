@@ -227,6 +227,18 @@ def resolve_trades() -> dict:
         except Exception:
             pass
 
+        # Update performance score for dynamic capital management
+        try:
+            from executor import update_performance_score, DECISIONS_DB as EXEC_DECISIONS_DB
+            dconn = sqlite3.connect(EXEC_DECISIONS_DB)
+            new_score = update_performance_score(
+                dconn, result["won"], trade.get("cloud_confidence", 0)
+            )
+            dconn.close()
+            print(f"  Performance score: {new_score:.1f} ({'↑' if result['won'] else '↓'})")
+        except Exception:
+            pass
+
         # Trigger self-calibration cascade on each resolution
         try:
             from self_calibrator import on_resolution

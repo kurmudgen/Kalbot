@@ -244,6 +244,28 @@ def generate_status() -> dict:
     except Exception:
         pass
 
+    # Capital management status
+    capital_status = {}
+    try:
+        cap_rows = _query(DECISIONS_DB,
+            "SELECT * FROM capital_tracker ORDER BY id DESC LIMIT 1")
+        if cap_rows:
+            c = cap_rows[0]
+            capital_status = {
+                "balance": c.get("balance", 0),
+                "peak_balance": c.get("peak_balance", 0),
+                "floor_balance": c.get("floor_balance", 0),
+                "available_capital": c.get("available_capital", 0),
+                "performance_score": c.get("performance_score", 50),
+                "score_multiplier": c.get("score_multiplier", 1.0),
+                "daily_deployed": c.get("daily_deployed", 0),
+                "daily_cap": c.get("daily_cap", 0),
+                "cycle_status": c.get("cycle_status", "unknown"),
+            }
+            kalshi_balance = c.get("balance", 50)
+    except Exception:
+        pass
+
     return {
         "updated_at": now,
         "bot_status": session.get("status", "unknown"),
@@ -251,6 +273,7 @@ def generate_status() -> dict:
             "kalshi": {"balance": kalshi_balance, "paper_mode": paper_kalshi},
             "alpaca": {**alpaca, "paper_mode": paper_alpaca},
         },
+        "capital_status": capital_status,
         "treasury": treasury_data,
         "pnl": _build_pnl(total_pnl, pnl_history),
         "trades": {

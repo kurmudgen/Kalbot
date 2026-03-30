@@ -50,8 +50,35 @@ CATEGORY_CONFIDENCE = {
 }
 
 # Kelly fraction — use fractional Kelly to reduce variance
-# Full Kelly is too aggressive; half-Kelly is standard practice
 KELLY_FRACTION = 0.25  # Quarter-Kelly: conservative but still edge-proportional
+
+# Dynamic capital management
+PAPER_STARTING_BALANCE = float(os.getenv("PAPER_STARTING_BALANCE", "350"))
+ACCOUNT_FLOOR_PCT = float(os.getenv("ACCOUNT_FLOOR_PCT", "0.30"))
+DRAWDOWN_HALT_PCT = float(os.getenv("DRAWDOWN_HALT_PCT", "0.25"))
+MAX_SINGLE_TRADE_PCT = float(os.getenv("MAX_SINGLE_TRADE_PCT", "0.20"))
+MIN_POSITION_SIZE = float(os.getenv("MIN_POSITION_SIZE", "15"))
+
+# Category-specific liquidity caps
+MAX_POS_WEATHER = float(os.getenv("MAX_POSITION_SIZE_WEATHER", "150"))
+MAX_POS_TSA = float(os.getenv("MAX_POSITION_SIZE_TSA", "200"))
+MAX_POS_CPI = float(os.getenv("MAX_POSITION_SIZE_CPI", "400"))
+CATEGORY_POS_CAPS = {
+    "weather": MAX_POS_WEATHER,
+    "tsa": MAX_POS_TSA,
+    "inflation": MAX_POS_CPI,
+    "economics": MAX_POS_CPI,
+}
+
+# Performance score (10-100, starts at 50)
+PERF_SCORE_FLOOR = 10
+PERF_SCORE_CEILING = 100
+PERF_SCORE_START = 50
+PERF_HIGH_CONF_WIN = 3   # +3 for win with conf >= 0.85
+PERF_STANDARD_WIN = 2    # +2 for standard win
+PERF_LOSS_PENALTY = 5    # -5 for any loss
+
+RESOLUTIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "resolutions.sqlite")
 
 # Load historical market bias data
 BIAS_PATH = os.path.join(os.path.dirname(__file__), "..", "calibration", "kalshi_market_bias.json")
@@ -147,9 +174,168 @@ def get_historical_bias(market_price_cents: int) -> float:
 def get_config() -> dict:
     return {
         "paper_trade": os.getenv("PAPER_TRADE", "true").lower() == "true",
-        "max_trade_size": float(os.getenv("MAX_TRADE_SIZE", "10")),
-        "max_nightly_spend": float(os.getenv("MAX_NIGHTLY_SPEND", "50")),
     }
+
+
+def _init_capital_tracker(conn: sqlite3.Connection):
+    """Create capital_tracker table if it doesn't exist."""
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS capital_tracker (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            timestamp TEXT,
+            balance REAL,
+            peak_balance REAL,
+            floor_balance REAL,
+            available_capital REAL,
+            performance_score REAL DEFAULT 50,
+            score_multiplier REAL DEFAULT 1.0,
+            daily_deployed REAL DEFAULT 0,
+            daily_cap REAL,
+            cycle_status TEXT
+        )
+    """)
+    conn.commit()
+
+
+def get_live_kalshi_balance() -> float | None:
+    """Get current Kalshi account balance via API."""
+    try:
+        from pykalshi import KalshiClient
+        pk_path = os.getenv("KALSHI_PRIVATE_KEY", "")
+        if not os.path.isabs(pk_path):
+            pk_path = os.path.join(os.path.dirname(__file__), "..", pk_path)
+        client = KalshiClient(
+            api_key_id=os.getenv("KALSHI_API_KEY", ""),
+            private_key_path=pk_path,
+        )
+        balance = client.portfolio.get_balance()
+        client.close()
+        # Balance is in cents
+        return balance.available_balance / 100.0 if hasattr(balance, 'available_balance') else float(balance) / 100.0
+    except Exception as e:
+        print(f"  Capital: Kalshi balance API error: {e}")
+        return None
+
+
+def get_paper_balance() -> float:
+    """Simulate balance for paper trading by summing resolved P&L."""
+    balance = PAPER_STARTING_BALANCE
+    if os.path.exists(RESOLUTIONS_DB):
+        try:
+            conn = sqlite3.connect(RESOLUTIONS_DB)
+            pnl = conn.execute("SELECT COALESCE(SUM(pnl), 0) FROM resolved_trades").fetchone()[0]
+            conn.close()
+            balance += pnl
+        except Exception:
+            pass
+    return balance
+
+
+def get_capital_state(conn: sqlite3.Connection, is_paper: bool) -> dict:
+    """Compute current capital state for this cycle.
+
+    Returns dict with: balance, peak_balance, floor_balance, available_capital,
+    performance_score, score_multiplier, daily_deployed, daily_cap, halt_reason
+    """
+    _init_capital_tracker(conn)
+
+    # Get current balance
+    if is_paper:
+        balance = get_paper_balance()
+    else:
+        balance = get_live_kalshi_balance()
+        if balance is None:
+            balance = get_paper_balance()  # Fallback
+
+    # Get previous peak from tracker
+    row = conn.execute(
+        "SELECT peak_balance, performance_score, daily_deployed FROM capital_tracker ORDER BY id DESC LIMIT 1"
+    ).fetchone()
+
+    if row:
+        peak_balance = max(row[0], balance)
+        performance_score = row[1] or PERF_SCORE_START
+        # Reset daily deployed if new day
+        last_row = conn.execute(
+            "SELECT timestamp FROM capital_tracker ORDER BY id DESC LIMIT 1"
+        ).fetchone()
+        if last_row and last_row[0][:10] != datetime.now(timezone.utc).isoformat()[:10]:
+            daily_deployed = 0
+        else:
+            daily_deployed = row[2] or 0
+    else:
+        peak_balance = balance
+        performance_score = PERF_SCORE_START
+        daily_deployed = 0
+
+    # Floor protection
+    floor_balance = peak_balance * (1 - ACCOUNT_FLOOR_PCT)
+    available_capital = max(0, balance - floor_balance)
+
+    # Performance score multiplier: score/50 (1.0 at 50, 2.0 at 100)
+    score_multiplier = performance_score / 50.0
+
+    # Daily deployment cap: (score/100) * 1.2 * available_capital
+    daily_cap = (performance_score / 100.0) * 1.2 * available_capital
+
+    # Check halt conditions
+    halt_reason = None
+    if available_capital <= 0:
+        halt_reason = "floor_protection_halt"
+    elif balance < peak_balance * (1 - DRAWDOWN_HALT_PCT):
+        halt_reason = "catastrophic_drawdown_halt"
+
+    state = {
+        "balance": round(balance, 2),
+        "peak_balance": round(peak_balance, 2),
+        "floor_balance": round(floor_balance, 2),
+        "available_capital": round(available_capital, 2),
+        "performance_score": round(performance_score, 1),
+        "score_multiplier": round(score_multiplier, 2),
+        "daily_deployed": round(daily_deployed, 2),
+        "daily_cap": round(daily_cap, 2),
+        "halt_reason": halt_reason,
+    }
+
+    # Log this cycle's capital state
+    conn.execute(
+        """INSERT INTO capital_tracker
+           (timestamp, balance, peak_balance, floor_balance, available_capital,
+            performance_score, score_multiplier, daily_deployed, daily_cap, cycle_status)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+        (datetime.now(timezone.utc).isoformat(),
+         state["balance"], state["peak_balance"], state["floor_balance"],
+         state["available_capital"], state["performance_score"],
+         state["score_multiplier"], state["daily_deployed"], state["daily_cap"],
+         halt_reason or "active"),
+    )
+    conn.commit()
+
+    return state
+
+
+def update_performance_score(conn: sqlite3.Connection, won: bool, confidence: float):
+    """Update performance score after a resolution."""
+    _init_capital_tracker(conn)
+    row = conn.execute(
+        "SELECT performance_score FROM capital_tracker ORDER BY id DESC LIMIT 1"
+    ).fetchone()
+    score = row[0] if row else PERF_SCORE_START
+
+    if won:
+        delta = PERF_HIGH_CONF_WIN if confidence >= 0.85 else PERF_STANDARD_WIN
+    else:
+        delta = -PERF_LOSS_PENALTY
+
+    score = max(PERF_SCORE_FLOOR, min(PERF_SCORE_CEILING, score + delta))
+
+    # Update the most recent tracker row
+    conn.execute(
+        "UPDATE capital_tracker SET performance_score = ? WHERE id = (SELECT MAX(id) FROM capital_tracker)",
+        (score,),
+    )
+    conn.commit()
+    return score
 
 
 def init_decisions_db() -> sqlite3.Connection:
@@ -177,14 +363,6 @@ def init_decisions_db() -> sqlite3.Connection:
     """)
     conn.commit()
     return conn
-
-
-def get_tonight_spend(conn: sqlite3.Connection, session_id: str) -> float:
-    row = conn.execute(
-        "SELECT COALESCE(SUM(amount), 0) FROM decisions WHERE session_id = ? AND executed = 1",
-        (session_id,),
-    ).fetchone()
-    return row[0] if row else 0.0
 
 
 def get_open_positions(conn: sqlite3.Connection) -> set[str]:
@@ -225,11 +403,31 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
     if not session_id:
         session_id = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
+    # Dynamic capital state — replaces fixed MAX_NIGHTLY_SPEND
+    capital = get_capital_state(conn, config["paper_trade"])
+
+    # Check for halt conditions
+    if capital["halt_reason"]:
+        print(f"  CAPITAL HALT: {capital['halt_reason']} — balance=${capital['balance']}, floor=${capital['floor_balance']}")
+        if capital["halt_reason"] == "catastrophic_drawdown_halt":
+            try:
+                from telegram_alerts import system_alert
+                system_alert(
+                    f"CATASTROPHIC DRAWDOWN HALT\n"
+                    f"Balance: ${capital['balance']}\n"
+                    f"Peak: ${capital['peak_balance']}\n"
+                    f"Drawdown: {(1 - capital['balance']/capital['peak_balance'])*100:.1f}%\n"
+                    f"Manual restart required.",
+                    "critical",
+                )
+            except Exception:
+                pass
+        conn.close()
+        return []
+
     open_positions = get_open_positions(conn)
-    tonight_spend = get_tonight_spend(conn, session_id)
 
     # Track events traded in THIS batch to prevent bracket flooding
-    # Pre-populate from any trades already in DB for this session (crash recovery)
     _traded_events_this_batch = set()
     try:
         from bracket_guard import extract_event_key
@@ -243,8 +441,12 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         pass
 
     trades = []
+    effective_capital = capital["available_capital"] * capital["score_multiplier"]
+    daily_remaining = capital["daily_cap"] - capital["daily_deployed"]
     print(f"Executor mode: {mode}")
-    print(f"Tonight spend so far: ${tonight_spend:.2f} / ${config['max_nightly_spend']:.2f}")
+    print(f"Capital: ${capital['balance']} (peak=${capital['peak_balance']}, floor=${capital['floor_balance']})")
+    print(f"Available: ${capital['available_capital']} x{capital['score_multiplier']:.1f} = ${effective_capital:.2f} effective")
+    print(f"Score: {capital['performance_score']}, Daily: ${capital['daily_deployed']:.2f}/${capital['daily_cap']:.2f}")
     print(f"Evaluating {len(scores)} scored markets...\n")
 
     for score in scores:
@@ -261,6 +463,8 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         if cloud_prob == 0.0 or cloud_conf == 0.0 or market_price == 0.0:
             continue  # Silently skip — these are broken signals
 
+        skip_reason = None
+
         # Order book depth check — skip thin markets
         try:
             from orderbook_analyzer import is_safe_to_trade
@@ -268,11 +472,6 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
                 skip_reason = "thin order book (low liquidity)"
         except Exception:
             pass
-
-        if skip_reason:
-            pass  # Already have a reason to skip
-        else:
-            pass  # Continue to other checks
 
         # Seasonal adjustment for weather markets
         if category == "weather" and not skip_reason:
@@ -346,21 +545,29 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         except Exception:
             pass
 
-        # Scale Kelly fraction to dollar amount, capped by max trade size
-        budget_remaining = config["max_nightly_spend"] - tonight_spend
+        # Dynamic position sizing against effective available capital
+        # Position size multiplier scales with performance score (score/50)
+        pos_multiplier = capital["score_multiplier"]
+        max_single = effective_capital * MAX_SINGLE_TRADE_PCT * pos_multiplier
+        category_cap = CATEGORY_POS_CAPS.get(category, MAX_POS_WEATHER)
+
         amount = min(
-            kelly_bet * config["max_nightly_spend"],  # Kelly-sized
-            config["max_trade_size"],                  # Per-trade cap
-            budget_remaining,                          # Budget remaining
+            kelly_bet * effective_capital,   # Quarter-Kelly against effective capital
+            max_single,                       # % of effective capital per trade
+            category_cap,                     # Category liquidity cap
+            daily_remaining,                  # Daily deployment cap remaining
         )
         amount = round(max(0, amount), 2)
+
+        # Enforce minimum position size — don't bother with $3 bets
+        if 0 < amount < MIN_POSITION_SIZE:
+            amount = MIN_POSITION_SIZE if effective_capital >= MIN_POSITION_SIZE * 2 else 0
 
         # Category-specific confidence threshold
         cat_conf_min = CATEGORY_CONFIDENCE.get(category, CONFIDENCE_MIN)
 
         # Safety checks (use <= threshold - epsilon to avoid floating point rounding rejections)
-        skip_reason = None
-        if cloud_conf < cat_conf_min - 0.001:
+        if not skip_reason and cloud_conf < cat_conf_min - 0.001:
             skip_reason = f"confidence {cloud_conf:.2f} < {cat_conf_min} ({category})"
         elif price_gap < PRICE_GAP_MIN:
             skip_reason = f"price gap {price_gap:.2f} < {PRICE_GAP_MIN}"
@@ -415,10 +622,12 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
                     skip_reason = corr["reason"]
             except Exception:
                 pass
-        elif tonight_spend >= config["max_nightly_spend"]:
-            skip_reason = f"nightly spend limit reached (${tonight_spend:.2f})"
-        elif amount <= 0:
-            skip_reason = "no budget remaining"
+
+        # Daily deployment cap check
+        if not skip_reason and daily_remaining <= 0:
+            skip_reason = f"daily deployment cap reached (${capital['daily_deployed']:.2f}/${capital['daily_cap']:.2f})"
+        elif not skip_reason and amount <= 0:
+            skip_reason = "no budget remaining (insufficient capital)"
 
         # Append city to reasoning for weather trades (audit trail)
         if category == "weather" and city_used:
@@ -505,7 +714,14 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         conn.commit()
 
         if executed:
-            tonight_spend += amount
+            daily_remaining -= amount
+            capital["daily_deployed"] += amount
+            # Update daily_deployed in latest tracker row
+            conn.execute(
+                "UPDATE capital_tracker SET daily_deployed = ? WHERE id = (SELECT MAX(id) FROM capital_tracker)",
+                (capital["daily_deployed"],),
+            )
+            conn.commit()
             trades.append({
                 "ticker": ticker,
                 "title": title,
@@ -516,7 +732,8 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
 
     conn.close()
     print(f"\n{len(trades)} trades {'placed' if not config['paper_trade'] else 'logged (paper)'}.")
-    print(f"Total deployed tonight: ${tonight_spend:.2f}")
+    print(f"Deployed this cycle: ${capital['daily_deployed']:.2f} / ${capital['daily_cap']:.2f} daily cap")
+    print(f"Score: {capital['performance_score']} | Effective capital: ${effective_capital:.2f}")
     return trades
 
 
