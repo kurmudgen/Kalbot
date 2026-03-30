@@ -1,0 +1,50 @@
+======================================================================
+KALBOT MULTI-CATEGORY SIMULATION RUNNER
+Model: qwen2.5:32b
+======================================================================
+
+######################################################################
+# Starting JOBLESS simulation
+######################################################################
+  Fetching ICSA data from FRED...
+    ICSA: 325 observations loaded
+
+======================================================================
+SIMULATION: JOBLESS
+Model: qwen2.5:32b
+Target: 1000 markets
+Output: S:\kalbot\calibration\simulation_jobless.sqlite
+======================================================================
+
+Loading S:\kalbot\data\splits\train.parquet...
+Filtered markets: 121
+Selected for simulation: 121
+
+======================================================================
+SIMULATION JOBLESS COMPLETE
+======================================================================
+Markets processed: 0
+Executed trades: 0
+Win rate: 0.0%
+Total P&L: $0.00
+Gap breakdown: low=3W/3L (50%) | med=4W/3L (57%) | high=24W/30L (44%)
+Top rejection reason: N/A
+Tier 2 hypothesis: N/A
+Committing to calibration/jobless_results.txt
+
+Completed in 0.0 minutes.
+
+Pausing 30s before next simulation...
+
+
+======================================================================
+SIMULATION RESULTS SUMMARY
+======================================================================
+
+Category       Trades   Win Rate    Avg Gap        P&L Hypothesis
+------------------------------------------------------------------------------------------
+jobless             0       0.0%       0.00 $    0.00 N/A
+
+Master summary saved to: S:\kalbot\calibration\simulation_master_summary.txt
+
+All simulations complete.

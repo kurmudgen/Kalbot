@@ -1,0 +1,93 @@
+======================================================================
+KALBOT CITY-LEVEL SIMULATION RUNNER
+Model: qwen2.5:32b
+City gap config: {'austin': 6, 'default': 3}
+Started: 2026-03-28T21:30:20.069592
+======================================================================
+
+Loading S:\kalbot\data\splits\train.parquet...
+
+######################################################################
+# WEATHER — ALL CITIES (SINGLE PASS)
+# Output: S:\kalbot\calibration\simulation_weather_cities.sqlite
+######################################################################
+Total unique weather markets: 9323
+
+Prefetching all city temps (2024-12-12 to 2025-11-22)...
+  Denver: 346 days
+  Chicago: 346 days
+  New York City: 346 days
+  Miami: 346 days
+  Austin: 346 days
+  Houston: 346 days
+  Philadelphia: 346 days
+  Seattle: 346 days
+  Total cached: 2768
+  [1/9323] (10403.8/min, ETA 1min) executed=0 wins=0 WR=0.0%
+  [100/9323] (4.3/min, ETA 2125min) executed=2 wins=2 WR=100.0%
+  [200/9323] (4.4/min, ETA 2069min) executed=4 wins=4 WR=100.0%
+  [300/9323] (4.4/min, ETA 2063min) executed=6 wins=6 WR=100.0%
+  [400/9323] (4.3/min, ETA 2060min) executed=11 wins=11 WR=100.0%
+  [500/9323] (4.3/min, ETA 2054min) executed=16 wins=16 WR=100.0%
+  [600/9323] (4.3/min, ETA 2034min) executed=21 wins=21 WR=100.0%
+  [700/9323] (4.3/min, ETA 1999min) executed=25 wins=25 WR=100.0%
+  [800/9323] (4.3/min, ETA 1968min) executed=28 wins=27 WR=96.4%
+  [900/9323] (4.3/min, ETA 1947min) executed=28 wins=27 WR=96.4%
+  [1000/9323] (4.4/min, ETA 1908min) executed=30 wins=29 WR=96.7%
+  [1100/9323] (4.4/min, ETA 1885min) executed=30 wins=29 WR=96.7%
+  [1200/9323] (4.4/min, ETA 1852min) executed=31 wins=30 WR=96.8%
+  [1300/9323] (4.4/min, ETA 1841min) executed=32 wins=31 WR=96.9%
+  [1400/9323] (4.4/min, ETA 1813min) executed=36 wins=35 WR=97.2%
+  [1500/9323] (4.4/min, ETA 1797min) executed=42 wins=41 WR=97.6%
+  [1600/9323] (4.4/min, ETA 1762min) executed=44 wins=43 WR=97.7%
+  [1700/9323] (4.4/min, ETA 1740min) executed=48 wins=47 WR=97.9%
+  [1800/9323] (4.4/min, ETA 1713min) executed=51 wins=50 WR=98.0%
+  [1900/9323] (4.4/min, ETA 1691min) executed=54 wins=52 WR=96.3%
+  [2000/9323] (4.4/min, ETA 1669min) executed=58 wins=56 WR=96.6%
+  [2100/9323] (4.4/min, ETA 1647min) executed=60 wins=58 WR=96.7%
+  [2200/9323] (4.4/min, ETA 1623min) executed=62 wins=60 WR=96.8%
+  [2300/9323] (4.4/min, ETA 1600min) executed=65 wins=63 WR=96.9%
+  [2400/9323] (4.4/min, ETA 1577min) executed=69 wins=67 WR=97.1%
+  [2500/9323] (4.4/min, ETA 1556min) executed=72 wins=70 WR=97.2%
+  [2600/9323] (4.4/min, ETA 1545min) executed=74 wins=72 WR=97.3%
+  [2700/9323] (4.4/min, ETA 1518min) executed=76 wins=74 WR=97.4%
+  [2800/9323] (4.4/min, ETA 1487min) executed=77 wins=75 WR=97.4%
+  [2900/9323] (4.4/min, ETA 1458min) executed=83 wins=81 WR=97.6%
+  [3000/9323] (4.4/min, ETA 1432min) executed=85 wins=83 WR=97.6%
+  [3100/9323] (4.4/min, ETA 1403min) executed=85 wins=83 WR=97.6%
+  [3200/9323] (4.5/min, ETA 1374min) executed=87 wins=85 WR=97.7%
+  [3300/9323] (4.5/min, ETA 1350min) executed=91 wins=89 WR=97.8%
+  [3400/9323] (4.5/min, ETA 1326min) executed=97 wins=94 WR=96.9%
+  [3500/9323] (4.5/min, ETA 1300min) executed=99 wins=96 WR=97.0%
+  [3600/9323] (4.5/min, ETA 1276min) executed=103 wins=100 WR=97.1%
+  [3700/9323] (4.5/min, ETA 1254min) executed=105 wins=101 WR=96.2%
+  [3800/9323] (4.5/min, ETA 1230min) executed=106 wins=102 WR=96.2%
+  [3900/9323] (4.5/min, ETA 1205min) executed=109 wins=105 WR=96.3%
+  [4000/9323] (4.5/min, ETA 1180min) executed=112 wins=108 WR=96.4%
+  [4100/9323] (4.5/min, ETA 1156min) executed=114 wins=110 WR=96.5%
+  [4200/9323] (4.5/min, ETA 1131min) executed=116 wins=112 WR=96.6%
+  [4300/9323] (4.5/min, ETA 1106min) executed=116 wins=112 WR=96.6%
+  [4400/9323] (4.6/min, ETA 1080min) executed=118 wins=114 WR=96.6%
+  [4500/9323] (4.6/min, ETA 1055min) executed=122 wins=118 WR=96.7%
+  [4600/9323] (4.6/min, ETA 1032min) executed=123 wins=119 WR=96.7%
+  [4700/9323] (4.6/min, ETA 1010min) executed=124 wins=120 WR=96.8%
+  [4800/9323] (4.6/min, ETA 989min) executed=125 wins=121 WR=96.8%
+  [4900/9323] (4.6/min, ETA 964min) executed=129 wins=125 WR=96.9%
+  [5000/9323] (4.6/min, ETA 941min) executed=133 wins=128 WR=96.2%
+  [5100/9323] (4.6/min, ETA 918min) executed=134 wins=129 WR=96.3%
+  [5200/9323] (4.6/min, ETA 897min) executed=136 wins=131 WR=96.3%
+  [5300/9323] (4.6/min, ETA 874min) executed=138 wins=133 WR=96.4%
+  [5400/9323] (4.6/min, ETA 852min) executed=139 wins=134 WR=96.4%
+  [5500/9323] (4.6/min, ETA 829min) executed=143 wins=138 WR=96.5%
+  [5600/9323] (4.6/min, ETA 806min) executed=147 wins=142 WR=96.6%
+  [5700/9323] (4.6/min, ETA 783min) executed=149 wins=144 WR=96.6%
+  [5800/9323] (4.6/min, ETA 767min) executed=150 wins=145 WR=96.7%
+  [5900/9323] (4.6/min, ETA 752min) executed=150 wins=145 WR=96.7%
+  [6000/9323] (4.5/min, ETA 737min) executed=152 wins=147 WR=96.7%
+  [6100/9323] (4.5/min, ETA 719min) executed=154 wins=149 WR=96.8%
+  [6200/9323] (4.4/min, ETA 702min) executed=156 wins=151 WR=96.8%
+  [6300/9323] (4.4/min, ETA 684min) executed=159 wins=154 WR=96.9%
+  [6400/9323] (4.4/min, ETA 666min) executed=160 wins=155 WR=96.9%
+  [6500/9323] (4.4/min, ETA 642min) executed=163 wins=157 WR=96.3%
+  [6600/9323] (4.4/min, ETA 620min) executed=165 wins=159 WR=96.4%
+  [6700/9323] (4.4/min, ETA 597min) executed=166 wins=160 WR=96.4%

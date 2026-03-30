@@ -1,0 +1,12 @@
+SIMULATION TSA RESULTS
+==================================================
+Date: 2026-03-28T07:31:26.980742
+Markets processed: 915
+Executed trades: 678
+Wins: 634, Losses: 44
+Win rate: 93.5%
+Total P&L: $6984.37
+Avg data gap: 15.18
+Gap breakdown: low=16W/16L (50%) | med=32W/13L (71%) | high=586W/15L (98%)
+Top skip reason: confidence_too_low
+Tier 2 hypothesis: High confidence predictions for high passenger screening numbers (above 2300000)

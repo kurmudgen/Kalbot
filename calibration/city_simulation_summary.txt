@@ -1,0 +1,17 @@
+CITY-LEVEL SIMULATION SUMMARY
+Date: 2026-03-30T12:25:25.491857
+Model: qwen2.5:32b
+City gap config: {'austin': 6, 'default': 3}
+======================================================================
+
+WEATHER BY CITY
+  Denver: 103 trades, 99.0% WR, $877.75 PnL
+  Chicago: 98 trades, 98.0% WR, $817.00 PnL
+  New York City: 137 trades, 96.4% WR, $1098.17 PnL
+  Miami: 73 trades, 95.9% WR, $585.00 PnL
+  Austin: 54 trades, 94.4% WR, $415.25 PnL
+  Houston: 66 trades, 93.9% WR, $504.00 PnL
+  Philadelphia: 61 trades, 96.7% WR, $487.42 PnL
+  Seattle: 0 trades, 0.0% WR, $0.00 PnL
+
+TSA: 901 trades, 99.0% WR, $10166.17 PnL

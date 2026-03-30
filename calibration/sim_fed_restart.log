@@ -1,0 +1,92 @@
+======================================================================
+KALBOT MULTI-CATEGORY SIMULATION RUNNER
+Model: qwen2.5:32b
+======================================================================
+
+######################################################################
+# Starting FED simulation
+######################################################################
+  Fetching DFEDTARU data from FRED...
+    DFEDTARU: 2279 observations loaded
+
+======================================================================
+SIMULATION: FED
+Model: qwen2.5:32b
+Target: 1000 markets
+Output: S:\kalbot\calibration\simulation_fed.sqlite
+======================================================================
+
+Loading S:\kalbot\data\splits\train.parquet...
+Filtered markets: 102
+Selected for simulation: 102
+
+[3/102] (119590.5/min, ETA 0min) SKIP (parse failure)
+
+[5/102] (82995.3/min, ETA 0min) SKIP (parse failure)
+
+[6/102] (38313.9/min, ETA 0min) SKIP (parse failure)
+
+[7/102] (40223.0/min, ETA 0min) SKIP (parse failure)
+
+[18/102] (66173.6/min, ETA 0min) SKIP (parse failure)
+
+[22/102] (75705.3/min, ETA 0min) SKIP (parse failure)
+
+[34/102] (103877.4/min, ETA 0min) SKIP (parse failure)
+
+[39/102] (112177.9/min, ETA 0min) SKIP (parse failure)
+
+[51/102] (128898.7/min, ETA 0min) SKIP (parse failure)
+
+[53/102] (131777.8/min, ETA 0min) SKIP (parse failure)
+
+[54/102] (132896.0/min, ETA 0min) SKIP (parse failure)
+
+[56/102] (135688.3/min, ETA 0min) SKIP (parse failure)
+
+[58/102] (138461.3/min, ETA 0min) SKIP (parse failure)
+
+[65/102] (147999.4/min, ETA 0min) SKIP (parse failure)
+
+[68/102] (151610.8/min, ETA 0min) SKIP (parse failure)
+
+[70/102] (153809.2/min, ETA 0min) SKIP (parse failure)
+
+[80/102] (165420.4/min, ETA 0min) SKIP (parse failure)
+
+[87/102] (173820.6/min, ETA 0min) SKIP (parse failure)
+
+[89/102] (172054.8/min, ETA 0min) SKIP (parse failure)
+
+[94/102] (158792.0/min, ETA 0min) SKIP (parse failure)
+
+[96/102] (156648.0/min, ETA 0min) SKIP (parse failure)
+
+======================================================================
+SIMULATION FED COMPLETE
+======================================================================
+Markets processed: 0
+Executed trades: 0
+Win rate: 0.0%
+Total P&L: $0.00
+Gap breakdown: low=2W/12L (14%)
+Top rejection reason: N/A
+Tier 2 hypothesis: N/A
+Committing to calibration/fed_results.txt
+
+Completed in 0.0 minutes.
+
+Pausing 30s before next simulation...
+
+
+======================================================================
+SIMULATION RESULTS SUMMARY
+======================================================================
+
+Category       Trades   Win Rate    Avg Gap        P&L Hypothesis
+------------------------------------------------------------------------------------------
+fed                 0       0.0%       0.00 $    0.00 N/A
+
+Master summary saved to: S:\kalbot\calibration\simulation_master_summary.txt
+
+All simulations complete.
