@@ -1,10 +1,18 @@
 """
-Self-calibration engine — 4-tier reflection loop.
+Self-calibration engine — resolution-count-driven trigger cascade.
 
-Tier 1: Hourly market movement reflector (local 32b, no API cost)
-Tier 2: 6-hour pattern analyzer (local 32b, structured JSON)
-Tier 3: Daily adjustment executor (2am, 24hr trial + auto-revert)
-Tier 4: Weekly benchmark (Sunday 3am, compare vs training base rates)
+Primary triggers fire based on resolution count (not time):
+  Tier 0:   every 1 resolution  — instant sanity check on new trade
+  Tier 1.5: every 3 resolutions — market movement reflector
+  Tier 2:   every 10            — pattern analyzer (category + city)
+  Tier 2.5: every 25            — confidence recalibration
+  Tier 3:   every 50            — adjustment executor (trial + auto-revert)
+  Tier 3.5: every 200           — deep pattern review
+  Tier 4:   every 500           — benchmark comparison
+  Tier 5:   every 2000          — full system review
+
+Time-based fallback: if any tier goes 72hr without firing, it fires
+anyway on whatever data exists (logged as time_fallback_trigger).
 
 Safety: never modifies financial risk params, max 0.10 threshold change,
 full audit trail in calibration_history table.
@@ -32,6 +40,21 @@ BASE_RATES_PATH = os.path.join(os.path.dirname(__file__), "..", "calibration", "
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 LOCAL_MODEL = os.getenv("LOCAL_FILTER_MODEL", "qwen2.5:32b")
+
+# Resolution-count thresholds for each tier
+TIER_THRESHOLDS = {
+    "0":   1,
+    "1.5": 3,
+    "2":   10,
+    "2.5": 25,
+    "3":   50,
+    "3.5": 200,
+    "4":   500,
+    "5":   2000,
+}
+
+# Time-based fallback: fire if tier hasn't run in this many hours
+FALLBACK_HOURS = 72
 
 # Protected parameters — self-calibrator can NEVER modify these
 PROTECTED_PARAMS = {
@@ -80,6 +103,23 @@ def _init_tables(conn: sqlite3.Connection):
             verdict TEXT
         )
     """)
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS calibration_counters (
+            tier TEXT PRIMARY KEY,
+            last_fired_at_count INTEGER DEFAULT 0,
+            current_count INTEGER DEFAULT 0,
+            threshold INTEGER,
+            last_fired_at TEXT
+        )
+    """)
+    # Seed tier rows if missing
+    for tier, threshold in TIER_THRESHOLDS.items():
+        conn.execute(
+            """INSERT OR IGNORE INTO calibration_counters
+               (tier, last_fired_at_count, current_count, threshold, last_fired_at)
+               VALUES (?, 0, 0, ?, ?)""",
+            (tier, threshold, datetime.now(timezone.utc).isoformat()),
+        )
     conn.commit()
 
 
@@ -107,7 +147,195 @@ def _query_local_model(prompt: str) -> dict | None:
     return None
 
 
-# ── TIER 1: Hourly Market Movement Reflector ─────────────────
+# ── Resolution Counter + Cascade ───────────────────────────────
+
+def _increment_counter(conn: sqlite3.Connection) -> int:
+    """Increment resolution count across all tiers. Returns new count."""
+    conn.execute("UPDATE calibration_counters SET current_count = current_count + 1")
+    count = conn.execute(
+        "SELECT current_count FROM calibration_counters LIMIT 1"
+    ).fetchone()[0]
+    conn.commit()
+    return count
+
+
+def _get_due_tiers(conn: sqlite3.Connection) -> list[str]:
+    """Return list of tier names that should fire based on count or time fallback."""
+    rows = conn.execute(
+        "SELECT tier, last_fired_at_count, current_count, threshold, last_fired_at FROM calibration_counters"
+    ).fetchall()
+
+    due = []
+    now = datetime.now(timezone.utc)
+
+    for row in rows:
+        tier = row[0]
+        last_count = row[1]
+        current = row[2]
+        threshold = row[3]
+        last_fired = row[4]
+
+        # Count-based trigger
+        if current - last_count >= threshold:
+            due.append(tier)
+            continue
+
+        # Time-based fallback
+        if last_fired:
+            try:
+                last_dt = datetime.fromisoformat(last_fired.replace("Z", "+00:00"))
+                if (now - last_dt).total_seconds() > FALLBACK_HOURS * 3600:
+                    due.append(tier)
+                    print(f"  Self-cal: time_fallback_trigger for tier {tier} ({FALLBACK_HOURS}hr)")
+            except Exception:
+                pass
+
+    return sorted(due, key=lambda t: float(t))
+
+
+def _mark_tier_fired(conn: sqlite3.Connection, tier: str):
+    """Update counter after a tier fires."""
+    now = datetime.now(timezone.utc).isoformat()
+    conn.execute(
+        """UPDATE calibration_counters
+           SET last_fired_at_count = current_count, last_fired_at = ?
+           WHERE tier = ?""",
+        (now, tier),
+    )
+    conn.commit()
+
+
+# ── Tier dispatch ─────────────────────────────────────────────
+
+# Map tier names to their handler functions (defined below)
+_TIER_HANDLERS = {}  # populated after function definitions
+
+
+def _run_tier(tier: str, is_fallback: bool = False):
+    """Execute a single tier's handler."""
+    handler = _TIER_HANDLERS.get(tier)
+    if not handler:
+        return
+
+    trigger_type = "time_fallback_trigger" if is_fallback else "count_trigger"
+    print(f"  Self-cal: firing tier {tier} ({trigger_type})")
+
+    try:
+        handler()
+    except Exception as e:
+        print(f"  Self-cal tier {tier} error: {e}")
+
+    # Log the trigger
+    try:
+        conn = sqlite3.connect(DECISIONS_DB)
+        _init_tables(conn)
+        conn.execute(
+            "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, ?, ?, ?, ?)",
+            (datetime.now(timezone.utc).isoformat(), tier, f"tier_{tier}_trigger",
+             f"Tier {tier} fired via {trigger_type}", trigger_type),
+        )
+        _mark_tier_fired(conn, tier)
+        conn.commit()
+        conn.close()
+    except Exception:
+        pass
+
+
+def on_resolution(resolved_trade: dict | None = None):
+    """Called by resolution_tracker after each new resolved trade.
+
+    Increments the global counter, checks which tiers are due,
+    and fires them in order. This is the primary trigger mechanism.
+    """
+    if not ENABLED:
+        return
+
+    conn = sqlite3.connect(DECISIONS_DB)
+    _init_tables(conn)
+
+    count = _increment_counter(conn)
+    due = _get_due_tiers(conn)
+    conn.close()
+
+    if due:
+        print(f"  Self-cal: resolution #{count}, firing tiers: {due}")
+
+    for tier in due:
+        _run_tier(tier)
+
+
+def check_time_fallbacks():
+    """Called from dual_strategy.py on each cycle as safety net.
+
+    Only fires tiers that haven't run in FALLBACK_HOURS due to
+    insufficient resolution count.
+    """
+    if not ENABLED or not os.path.exists(DECISIONS_DB):
+        return
+
+    conn = sqlite3.connect(DECISIONS_DB)
+    _init_tables(conn)
+
+    now = datetime.now(timezone.utc)
+    rows = conn.execute(
+        "SELECT tier, last_fired_at FROM calibration_counters"
+    ).fetchall()
+    conn.close()
+
+    for row in rows:
+        tier, last_fired = row
+        if not last_fired:
+            continue
+        try:
+            last_dt = datetime.fromisoformat(last_fired.replace("Z", "+00:00"))
+            if (now - last_dt).total_seconds() > FALLBACK_HOURS * 3600:
+                _run_tier(tier, is_fallback=True)
+        except Exception:
+            pass
+
+
+# ── TIER 0: Instant Sanity Check ──────────────────────────────
+
+def tier0_sanity_check():
+    """Quick check on the most recent resolution.
+
+    Fires on every single resolution. Lightweight — no model calls.
+    Checks if the result contradicts a high-confidence prediction.
+    """
+    if not os.path.exists(RESOLUTIONS_DB):
+        return
+
+    conn = sqlite3.connect(RESOLUTIONS_DB)
+    conn.row_factory = sqlite3.Row
+    row = conn.execute(
+        "SELECT * FROM resolved_trades ORDER BY id DESC LIMIT 1"
+    ).fetchone()
+    conn.close()
+
+    if not row:
+        return
+
+    pnl = row["pnl"]
+    conf = row["our_confidence"]
+    ticker = row["ticker"]
+    category = row["category"] or "unknown"
+
+    # Flag high-confidence losses — the model was very sure and wrong
+    if pnl <= 0 and conf >= 0.85:
+        print(f"  Self-cal T0: HIGH-CONF LOSS — {ticker} conf={conf:.2f} pnl=${pnl:.2f} [{category}]")
+        dconn = sqlite3.connect(DECISIONS_DB)
+        _init_tables(dconn)
+        dconn.execute(
+            "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 0, ?, ?, ?)",
+            (datetime.now(timezone.utc).isoformat(), ticker,
+             f"High-confidence loss: conf={conf:.2f}, pnl=${pnl:.2f}, cat={category}",
+             "high_conf_loss_flagged"),
+        )
+        dconn.commit()
+        dconn.close()
+
+
+# ── TIER 1.5: Market Movement Reflector (was Tier 1) ──────────
 
 def tier1_market_movement() -> list[dict]:
     """Check open positions for market price movement contradicting prediction.
@@ -163,7 +391,7 @@ def tier1_market_movement() -> list[dict]:
                 observation = f"NO bet on {ticker}: YES price rose {movement:.0f}c since entry ({entry_price:.2f} -> {current:.2f})"
                 flags.append({"ticker": ticker, "observation": observation, "movement": movement})
                 conn.execute(
-                    "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 1, ?, ?, ?)",
+                    "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 1.5, ?, ?, ?)",
                     (now, ticker, observation, "flagged_for_review"),
                 )
         elif side == "YES":
@@ -173,7 +401,7 @@ def tier1_market_movement() -> list[dict]:
                 observation = f"YES bet on {ticker}: YES price dropped {movement:.0f}c since entry ({entry_price:.2f} -> {current:.2f})"
                 flags.append({"ticker": ticker, "observation": observation, "movement": movement})
                 conn.execute(
-                    "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 1, ?, ?, ?)",
+                    "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 1.5, ?, ?, ?)",
                     (now, ticker, observation, "flagged_for_review"),
                 )
 
@@ -186,7 +414,7 @@ def tier1_market_movement() -> list[dict]:
     return flags
 
 
-# ── TIER 2: 6-Hour Pattern Analyzer ─────────────────────────
+# ── TIER 2: Pattern Analyzer (every 10 resolutions) ─────────
 
 def _extract_city_from_title(title: str) -> str | None:
     """Extract city name from a weather market title for grouping."""
@@ -385,7 +613,72 @@ Answer in JSON format:
     return hypotheses
 
 
-# ── TIER 3: Daily Adjustment Executor (2am) ──────────────────
+# ── TIER 2.5: Confidence Recalibration (every 25 resolutions) ─
+
+def tier25_confidence_recalibration():
+    """Analyze confidence calibration across recent resolutions.
+
+    Checks if high-confidence trades are actually winning at a higher
+    rate than low-confidence trades. If not, confidence scoring is
+    miscalibrated and thresholds need adjustment.
+    """
+    if not os.path.exists(RESOLUTIONS_DB):
+        return
+
+    conn = sqlite3.connect(RESOLUTIONS_DB)
+    conn.row_factory = sqlite3.Row
+
+    rows = conn.execute("""
+        SELECT our_confidence, pnl, category
+        FROM resolved_trades
+        ORDER BY id DESC LIMIT 25
+    """).fetchall()
+    conn.close()
+
+    if len(rows) < 10:
+        return
+
+    # Bucket by confidence
+    high_conf = [r for r in rows if r["our_confidence"] >= 0.85]
+    mid_conf = [r for r in rows if 0.70 <= r["our_confidence"] < 0.85]
+    low_conf = [r for r in rows if r["our_confidence"] < 0.70]
+
+    def wr(bucket):
+        if not bucket:
+            return 0, 0
+        wins = sum(1 for r in bucket if r["pnl"] > 0)
+        return wins / len(bucket), len(bucket)
+
+    high_wr, high_n = wr(high_conf)
+    mid_wr, mid_n = wr(mid_conf)
+    low_wr, low_n = wr(low_conf)
+
+    observation = (
+        f"Confidence calibration (last 25): "
+        f"high(≥0.85)={high_wr:.0%} n={high_n}, "
+        f"mid(0.70-0.85)={mid_wr:.0%} n={mid_n}, "
+        f"low(<0.70)={low_wr:.0%} n={low_n}"
+    )
+    print(f"  Self-cal T2.5: {observation}")
+
+    # Flag if high-confidence is NOT beating mid-confidence
+    miscalibrated = high_n >= 3 and mid_n >= 3 and high_wr <= mid_wr
+    action = "miscalibration_flagged" if miscalibrated else "calibration_ok"
+
+    if miscalibrated:
+        print(f"  Self-cal T2.5: WARNING — high-conf WR ({high_wr:.0%}) <= mid-conf WR ({mid_wr:.0%})")
+
+    dconn = sqlite3.connect(DECISIONS_DB)
+    _init_tables(dconn)
+    dconn.execute(
+        "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 2.5, ?, ?, ?)",
+        (datetime.now(timezone.utc).isoformat(), "conf_recalibration", observation, action),
+    )
+    dconn.commit()
+    dconn.close()
+
+
+# ── TIER 3: Adjustment Executor (every 50 resolutions) ───────
 
 def tier3_daily_executor() -> list[dict]:
     """Review T2 hypotheses, apply qualifying adjustments with 24hr trial.
@@ -536,7 +829,87 @@ def tier3_daily_executor() -> list[dict]:
     return applied
 
 
-# ── TIER 4: Weekly Benchmark (Sunday 3am) ────────────────────
+# ── TIER 3.5: Deep Pattern Review (every 200 resolutions) ────
+
+def tier35_deep_pattern_review():
+    """Deep analysis across all resolved trades using local model.
+
+    Looks at category-level performance trends, systematic biases,
+    and whether specific market types are consistently unprofitable.
+    """
+    if not os.path.exists(RESOLUTIONS_DB):
+        return
+
+    conn = sqlite3.connect(RESOLUTIONS_DB)
+    conn.row_factory = sqlite3.Row
+
+    # Category breakdown across all resolutions
+    rows = conn.execute("""
+        SELECT category,
+               COUNT(*) as total,
+               SUM(CASE WHEN pnl > 0 THEN 1 ELSE 0 END) as wins,
+               ROUND(SUM(pnl), 2) as total_pnl,
+               ROUND(AVG(our_confidence), 3) as avg_conf
+        FROM resolved_trades
+        GROUP BY category
+        ORDER BY total DESC
+    """).fetchall()
+    conn.close()
+
+    if not rows:
+        return
+
+    summary_lines = []
+    unprofitable = []
+    for r in rows:
+        cat = r["category"] or "unknown"
+        wr = r["wins"] / r["total"] if r["total"] > 0 else 0
+        summary_lines.append(
+            f"  {cat}: {r['total']} trades, {wr:.0%} WR, ${r['total_pnl']} PnL, avg_conf={r['avg_conf']}"
+        )
+        if r["total"] >= 10 and wr < 0.40:
+            unprofitable.append(cat)
+
+    prompt = f"""You are reviewing the complete trading history of a prediction market bot.
+
+Category performance (all time):
+{chr(10).join(summary_lines)}
+
+Unprofitable categories (>10 trades, <40% WR): {unprofitable if unprofitable else 'none'}
+
+Analyze the overall system health. Which categories should be:
+1. Expanded (consistently profitable)?
+2. Tightened (profitable but noisy)?
+3. Suspended (consistently unprofitable)?
+
+Answer in JSON format:
+{{
+  "expand": ["<category names>"],
+  "tighten": ["<category names>"],
+  "suspend": ["<category names>"],
+  "reasoning": "<brief explanation>",
+  "confidence": "<low/medium/high>"
+}}"""
+
+    result = _query_local_model(prompt)
+    observation = json.dumps(result)[:500] if result else "model_unavailable"
+
+    print(f"  Self-cal T3.5: Deep review — {len(rows)} categories analyzed")
+    if unprofitable:
+        print(f"  Self-cal T3.5: Unprofitable categories: {unprofitable}")
+
+    dconn = sqlite3.connect(DECISIONS_DB)
+    _init_tables(dconn)
+    dconn.execute(
+        "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 3.5, ?, ?, ?)",
+        (datetime.now(timezone.utc).isoformat(), "deep_pattern_review",
+         observation, "deep_review_completed"),
+    )
+    dconn.commit()
+    dconn.close()
+
+
+# ── TIER 4: Benchmark Comparison (every 500 resolutions) ─────
 
 def tier4_weekly_benchmark() -> dict:
     """Compare live win rates against training benchmarks.
@@ -638,20 +1011,88 @@ def tier4_weekly_benchmark() -> dict:
     return {"results": results, "alerts": alerts}
 
 
-# ── Runner ────────────────────────────────────────────────────
+# ── TIER 5: Full System Review (every 2000 resolutions) ──────
+
+def tier5_full_system_review():
+    """Comprehensive system review at major milestones.
+
+    Evaluates overall system ROI, category allocation efficiency,
+    and whether the system should scale up, down, or restructure.
+    """
+    if not os.path.exists(RESOLUTIONS_DB):
+        return
+
+    conn = sqlite3.connect(RESOLUTIONS_DB)
+    conn.row_factory = sqlite3.Row
+
+    total = conn.execute("SELECT COUNT(*) FROM resolved_trades").fetchone()[0]
+    wins = conn.execute("SELECT COUNT(*) FROM resolved_trades WHERE pnl > 0").fetchone()[0]
+    total_pnl = conn.execute("SELECT COALESCE(SUM(pnl), 0) FROM resolved_trades").fetchone()[0]
+
+    # Per-category stats
+    cats = conn.execute("""
+        SELECT category,
+               COUNT(*) as n,
+               SUM(CASE WHEN pnl > 0 THEN 1 ELSE 0 END) as w,
+               ROUND(SUM(pnl), 2) as pnl
+        FROM resolved_trades GROUP BY category
+    """).fetchall()
+    conn.close()
+
+    wr = wins / total if total > 0 else 0
+    observation = (
+        f"MILESTONE: {total} resolutions, {wr:.1%} WR, ${total_pnl:.2f} PnL. "
+        f"Categories: {', '.join(str(r['category']) + '=' + str(r['n']) + 't/' + str(r['w']) + 'w/$' + str(r['pnl']) for r in cats)}"
+    )
+
+    print(f"  Self-cal T5: FULL SYSTEM REVIEW — {total} trades, {wr:.1%} WR, ${total_pnl:.2f} PnL")
+
+    dconn = sqlite3.connect(DECISIONS_DB)
+    _init_tables(dconn)
+    dconn.execute(
+        "INSERT INTO calibration_reflections (timestamp, tier, trade_id, observation, action_taken) VALUES (?, 5, ?, ?, ?)",
+        (datetime.now(timezone.utc).isoformat(), f"system_review_{total}",
+         observation[:500], "full_review_completed"),
+    )
+    dconn.commit()
+    dconn.close()
+
+    # Telegram alert for milestone
+    try:
+        from telegram_alerts import system_alert
+        system_alert(f"System milestone: {total} resolutions\n{wr:.1%} WR, ${total_pnl:.2f} PnL", "info")
+    except Exception:
+        pass
+
+
+# ── Tier Handler Registry ─────────────────────────────────────
+
+_TIER_HANDLERS.update({
+    "0":   tier0_sanity_check,
+    "1.5": tier1_market_movement,
+    "2":   tier2_pattern_analyzer,
+    "2.5": tier25_confidence_recalibration,
+    "3":   tier3_daily_executor,
+    "3.5": tier35_deep_pattern_review,
+    "4":   tier4_weekly_benchmark,
+    "5":   tier5_full_system_review,
+})
+
+
+# ── Runner (legacy compat — kept for dual_strategy.py calls) ──
 
 def run_tier1():
-    """Run from hourly cycle in dual_strategy.py."""
+    """Legacy: run tier 1.5 market movement."""
     if not ENABLED:
         return
     try:
         tier1_market_movement()
     except Exception as e:
-        print(f"  Self-cal T1 error: {e}")
+        print(f"  Self-cal T1.5 error: {e}")
 
 
 def run_tier2():
-    """Run from 6-hour cycle in dual_strategy.py."""
+    """Legacy: run tier 2 pattern analyzer."""
     if not ENABLED:
         return
     try:
@@ -661,7 +1102,7 @@ def run_tier2():
 
 
 def run_tier3():
-    """Run at 2am from dual_strategy.py."""
+    """Legacy: run tier 3 daily executor."""
     if not ENABLED:
         return
     try:
@@ -671,7 +1112,7 @@ def run_tier3():
 
 
 def run_tier4():
-    """Run Sunday 3am from dual_strategy.py."""
+    """Legacy: run tier 4 weekly benchmark."""
     if not ENABLED:
         return
     try:
@@ -688,15 +1129,30 @@ if __name__ == "__main__":
     print(f"Min trades (city): {MIN_TRADES_CITY}")
     print(f"Trial period: {TRIAL_HOURS}hr")
     print(f"Max threshold change: {MAX_THRESHOLD_CHANGE}")
+    print(f"Tier thresholds: {TIER_THRESHOLDS}")
+    print(f"Fallback hours: {FALLBACK_HOURS}")
     print()
 
-    print("--- Tier 1: Market Movement ---")
+    print("--- Counter Status ---")
+    if os.path.exists(DECISIONS_DB):
+        conn = sqlite3.connect(DECISIONS_DB)
+        _init_tables(conn)
+        rows = conn.execute("SELECT tier, last_fired_at_count, current_count, threshold, last_fired_at FROM calibration_counters ORDER BY CAST(tier AS REAL)").fetchall()
+        for r in rows:
+            delta = r[2] - r[1]
+            print(f"  Tier {r[0]:>3}: count={r[2]}, last_fired_at={r[1]}, threshold={r[3]}, delta={delta}, last={r[4][:16] if r[4] else 'never'}")
+        conn.close()
+
+    print("\n--- Tier 1.5: Market Movement ---")
     flags = tier1_market_movement()
     print(f"Flags: {len(flags)}")
 
     print("\n--- Tier 2: Pattern Analyzer ---")
     hypotheses = tier2_pattern_analyzer()
     print(f"Hypotheses: {len(hypotheses)}")
+
+    print("\n--- Tier 2.5: Confidence Recalibration ---")
+    tier25_confidence_recalibration()
 
     print("\n--- Tier 4: Weekly Benchmark ---")
     benchmark = tier4_weekly_benchmark()

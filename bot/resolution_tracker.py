@@ -227,6 +227,19 @@ def resolve_trades() -> dict:
         except Exception:
             pass
 
+        # Trigger self-calibration cascade on each resolution
+        try:
+            from self_calibrator import on_resolution
+            on_resolution({
+                "ticker": ticker,
+                "category": trade.get("category", ""),
+                "won": result["won"],
+                "pnl": result["pnl"],
+                "confidence": trade.get("cloud_confidence", 0),
+            })
+        except Exception:
+            pass
+
     # Update daily summary
     if stats["resolved"] > 0:
         today = datetime.now().strftime("%Y-%m-%d")
