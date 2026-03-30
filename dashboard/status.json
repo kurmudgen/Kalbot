@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-30T09:46:45.558484+00:00",
+  "updated_at": "2026-03-30T10:04:37.213846+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-30T09:46:45.558484+00:00",
+    "last_updated": "2026-03-30T10:04:37.213846+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -78,7 +78,7 @@
       },
       {
         "date": "2026-03-30",
-        "trades": 2529,
+        "trades": 2727,
         "deployed": 0
       }
     ],
@@ -108,7 +108,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:46:00"
+        "time": "2026-03-30T10:03:50"
       },
       {
         "ticker": "KXWTI-26MAR31-T97.99",
@@ -123,7 +123,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:46:00"
+        "time": "2026-03-30T10:03:50"
       },
       {
         "ticker": "KXWTI-26MAR30-T90.99",
@@ -138,7 +138,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:46:00"
+        "time": "2026-03-30T10:03:50"
       },
       {
         "ticker": "KXWTI-26MAR30-T93.99",
@@ -153,7 +153,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:45:59"
+        "time": "2026-03-30T10:03:50"
       },
       {
         "ticker": "KXWTI-26MAR30-T95.99",
@@ -168,7 +168,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:45:59"
+        "time": "2026-03-30T10:03:50"
       },
       {
         "ticker": "KXWTI-26MAR30-T94.99",
@@ -183,7 +183,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:45:59"
+        "time": "2026-03-30T10:03:49"
       },
       {
         "ticker": "KXWTI-26MAR30-T97.99",
@@ -198,142 +198,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:45:59"
-      },
-      {
-        "ticker": "KXWTI-26MAR30-T98.99",
-        "title": "Will the WTI front-month settle oil price  be >98.99 on Mar 30, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.6834108166461447,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.82,
-        "price_gap": 0.13658918335385528,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-30T09:45:59"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T87.99",
-        "title": "Will the WTI front-month settle oil price  be >87.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7626002594333237,
-        "confidence": 0.7244186046511628,
-        "market_price": 0.86,
-        "price_gap": 0.09739974056667633,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-30T09:45:59"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T86.99",
-        "title": "Will the WTI front-month settle oil price  be >86.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7753236482344734,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.92,
-        "price_gap": 0.14467635176552662,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-30T09:45:59"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T88.99",
-        "title": "Will the WTI front-month settle oil price  be >88.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7753236482344734,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.9,
-        "price_gap": 0.1246763517655266,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-30T09:45:59"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T89.99",
-        "title": "Will the WTI front-month settle oil price  be >89.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7288411627050325,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.83,
-        "price_gap": 0.10115883729496744,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-30T09:45:59"
-      },
-      {
-        "ticker": "KXWTI-26MAR26-T86.99",
-        "title": "Will the WTI front-month settle oil price  be >86.99 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7826618241172367,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.97,
-        "price_gap": 0.18733817588276325,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-30T09:45:59"
-      },
-      {
-        "ticker": "KXWTI-26MAR26-T93.99",
-        "title": "Will the WTI front-month settle oil price  be >93.99 on Mar 26, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7145506725147467,
-        "confidence": 0.7244186046511628,
-        "market_price": 0.89,
-        "price_gap": 0.17544932748525333,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-30T09:45:59"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T82.99",
-        "title": "Will the WTI front-month settle oil price  be >82.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7753236482344734,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.95,
-        "price_gap": 0.17467635176552654,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-30T09:45:59"
-      },
-      {
-        "ticker": "KXWTI-26MAR27-T83.99",
-        "title": "Will the WTI front-month settle oil price  be >83.99 on Mar 27, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.7826618241172367,
-        "confidence": 0.7032258064516129,
-        "market_price": 0.97,
-        "price_gap": 0.18733817588276325,
-        "mode": "PAPER",
-        "executed": false,
-        "reasoning": "No real-time research available.",
-        "category": "energy",
-        "time": "2026-03-30T09:45:59"
+        "time": "2026-03-30T10:03:49"
       },
       {
         "ticker": "KXWTI-26MAR30-T91.99",
@@ -348,7 +213,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:21"
+        "time": "2026-03-30T10:01:45"
       },
       {
         "ticker": "KXWTI-26MAR31-T97.99",
@@ -363,7 +228,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:21"
+        "time": "2026-03-30T10:01:45"
       },
       {
         "ticker": "KXWTI-26MAR30-T90.99",
@@ -378,7 +243,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:21"
+        "time": "2026-03-30T10:01:45"
       },
       {
         "ticker": "KXWTI-26MAR30-T93.99",
@@ -393,7 +258,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:21"
+        "time": "2026-03-30T10:01:45"
       },
       {
         "ticker": "KXWTI-26MAR30-T95.99",
@@ -408,7 +273,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:45"
       },
       {
         "ticker": "KXWTI-26MAR30-T94.99",
@@ -423,7 +288,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:45"
       },
       {
         "ticker": "KXWTI-26MAR30-T97.99",
@@ -438,7 +303,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXWTI-26MAR30-T98.99",
@@ -453,7 +318,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXWTI-26MAR27-T87.99",
@@ -468,7 +333,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXWTI-26MAR27-T86.99",
@@ -483,7 +348,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXWTI-26MAR27-T88.99",
@@ -498,7 +363,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXWTI-26MAR27-T89.99",
@@ -513,7 +378,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXWTI-26MAR26-T86.99",
@@ -528,7 +393,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXWTI-26MAR26-T93.99",
@@ -543,7 +408,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXWTI-26MAR27-T82.99",
@@ -558,7 +423,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXWTI-26MAR27-T83.99",
@@ -573,7 +438,7 @@
         "executed": false,
         "reasoning": "No real-time research available.",
         "category": "energy",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXHIGHMIA-26MAR30-T83",
@@ -588,7 +453,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXHIGHDEN-26MAR30-T83",
@@ -603,7 +468,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXHIGHCHI-26MAR30-B80.5",
@@ -618,7 +483,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:20"
+        "time": "2026-03-30T10:01:44"
       },
       {
         "ticker": "KXHIGHNY-26MAR30-B62.5",
@@ -633,7 +498,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHNY-26MAR30-B64.5",
@@ -648,7 +513,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHCHI-26MAR28-B47.5",
@@ -663,7 +528,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHNY-26MAR29-T50",
@@ -678,7 +543,7 @@
         "executed": false,
         "reasoning": "Metcheck forecasts 7\u00b0C (45\u00b0F) high for NYC on Mar 29, 2026[1]. Weather25 predicts 59\u00b0F high, clear skies[5]. Robinhood prediction market prices >50\u00b0F at 96\u00a2 (4% implied prob <50\u00b0F), >51\u00b0F at 99\u00a2[3]. W",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHMIA-26MAR29-T82",
@@ -693,7 +558,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Forecasts for March 28, 2026, in Austin, TX, show daytime highs of 72\u00b0 (AccuWeather/Weathershogun) and 73\u00b0 (Weathershogun variant)[1][2]. Prediction m\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHDEN-26MAR28-T84",
@@ -708,7 +573,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] March 28, 2026 has already occurred (2 days ago from current date March 30, 2026). Historical weather data from Weather Spark shows the latest report \n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHCHI-26MAR28-T54",
@@ -723,7 +588,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] March 28, 2026 has already occurred (2 days ago from current date March 30, 2026). Historical weather data from Weather Spark shows the latest report \n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHMIA-26MAR28-T79",
@@ -738,7 +603,7 @@
         "executed": false,
         "reasoning": "Multiple weather forecasts for Miami on March 28, 2026 show high temperatures ranging from 77-85\u00b0F. AccuWeather data for Miami Beach shows 85\u00b0F high[1], while South Miami shows 85\u00b0F[2]. Weather25.com ",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-T69",
@@ -753,7 +618,7 @@
         "executed": false,
         "reasoning": "AccuWeather forecast shows high of 65\u00b0F on Mar 27, 2026[1]. YouTube forecast video predicts high near 56\u00b0F with a cold front bringing showers and cooldown[2]. Robinhood prediction market implies 2% fo",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-T93",
@@ -768,7 +633,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >89\u00b0 at 96\u00a2 (4% for <88\u00b0 implied), AccuWeather forecasts 90\u00b0 high on Mar 26, WeatherShogun predicts 91\u00b0 day high, h\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHMIA-26MAR27-T84",
@@ -783,7 +648,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >89\u00b0 at 96\u00a2 (4% for <88\u00b0 implied), AccuWeather forecasts 90\u00b0 high on Mar 26, WeatherShogun predicts 91\u00b0 day high, h\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B68.5",
@@ -798,7 +663,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >89\u00b0 at 96\u00a2 (4% for <88\u00b0 implied), AccuWeather forecasts 90\u00b0 high on Mar 26, WeatherShogun predicts 91\u00b0 day high, h\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHCHI-26MAR26-T77",
@@ -813,7 +678,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Forecasts for March 25, 2026, in NYC indicate highs near 52\u00b0F [2][3][4], with one source listing 48\u00b0F [5]. A cold front is expected late-week, bringin\n- [weather",
         "category": "weather",
-        "time": "2026-03-30T09:43:19"
+        "time": "2026-03-30T10:01:43"
       },
       {
         "ticker": "KXHIGHNY-26MAR29-T50",
@@ -828,7 +693,7 @@
         "executed": false,
         "reasoning": "Metcheck forecasts 7\u00b0C (45\u00b0F) high for NYC on Mar 29, 2026[1]. Weather25 predicts 59\u00b0F high, clear skies[5]. Robinhood prediction market prices >50\u00b0F at 96\u00a2 (4% implied prob <50\u00b0F), >51\u00b0F at 99\u00a2[3]. W",
         "category": "weather",
-        "time": "2026-03-30T09:37:24"
+        "time": "2026-03-30T09:55:44"
       },
       {
         "ticker": "KXHIGHMIA-26MAR28-T79",
@@ -843,23 +708,158 @@
         "executed": false,
         "reasoning": "Multiple weather forecasts for Miami on March 28, 2026 show high temperatures ranging from 77-85\u00b0F. AccuWeather data for Miami Beach shows 85\u00b0F high[1], while South Miami shows 85\u00b0F[2]. Weather25.com ",
         "category": "weather",
-        "time": "2026-03-30T09:37:24"
+        "time": "2026-03-30T09:55:44"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR27-T69",
+        "title": "Will the **high temp in NYC** be >69\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2691845639856128,
+        "confidence": 0.6999999999999998,
+        "market_price": 0.03,
+        "price_gap": 0.2391845639856128,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "AccuWeather forecast shows high of 65\u00b0F on Mar 27, 2026[1]. YouTube forecast video predicts high near 56\u00b0F with a cold front bringing showers and cooldown[2]. Robinhood prediction market implies 2% fo",
+        "category": "weather",
+        "time": "2026-03-30T09:55:44"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR27-B68.5",
+        "title": "Will the **high temp in NYC** be 68-69\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.14110579381284202,
+        "confidence": 0.6777777777777777,
+        "market_price": 0.03,
+        "price_gap": 0.11110579381284202,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
+        "category": "weather",
+        "time": "2026-03-30T09:55:44"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-T77",
+        "title": "Will the high temp in Chicago be <77\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.826517010899403,
+        "confidence": 0.7477611940298508,
+        "market_price": 0.91,
+        "price_gap": 0.08348298910059704,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
+        "category": "weather",
+        "time": "2026-03-30T09:55:44"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR28-B47.5",
+        "title": "Will the high temp in Chicago be 47-48\u00b0 on Mar 28, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.6005152084882612,
+        "confidence": 0.7228070175438597,
+        "market_price": 0.94,
+        "price_gap": 0.3394847915117387,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
+        "category": "weather",
+        "time": "2026-03-30T09:55:44"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR29-T82",
+        "title": "Will the **high temp in Miami** be >82\u00b0 on Mar 29, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3987693254048357,
+        "confidence": 0.7491525423728813,
+        "market_price": 0.07,
+        "price_gap": 0.32876932540483567,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
+        "category": "weather",
+        "time": "2026-03-30T09:55:43"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR28-T84",
+        "title": "Will the **high temp in Denver** be >84\u00b0 on Mar 28, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.17958837257958488,
+        "confidence": 0.6777777777777777,
+        "market_price": 0.03,
+        "price_gap": 0.14958837257958488,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
+        "category": "weather",
+        "time": "2026-03-30T09:55:43"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR28-T54",
+        "title": "Will the high temp in Chicago be >54\u00b0 on Mar 28, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3720576001359877,
+        "confidence": 0.7018181818181817,
+        "market_price": 0.05,
+        "price_gap": 0.3220576001359877,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
+        "category": "weather",
+        "time": "2026-03-30T09:55:43"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR27-T93",
+        "title": "Will the **high temp in Austin** be >93\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.11948455191420226,
+        "confidence": 0.7278260869565217,
+        "market_price": 0.03,
+        "price_gap": 0.08948455191420226,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
+        "category": "weather",
+        "time": "2026-03-30T09:55:43"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR27-T84",
+        "title": "Will the **high temp in Miami** be >84\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3182457163838292,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.11,
+        "price_gap": 0.20824571638382922,
+        "mode": "PAPER",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction mar\n- [weather",
+        "category": "weather",
+        "time": "2026-03-30T09:55:43"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 1620,
+      "trades": 1652,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
     "QUANT": {
-      "trades": 6551,
+      "trades": 6694,
       "executed": 257,
       "deployed": 127.26999999999998
     },
     "WEATHER": {
-      "trades": 183,
+      "trades": 199,
       "executed": 2,
       "deployed": 2.42
     }
@@ -886,70 +886,70 @@
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-03-30T09:45:58"
+        "time": "2026-03-30T10:03:49"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-03-30T09:45:56"
+        "time": "2026-03-30T10:03:47"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.04,
         "consensus": false,
-        "time": "2026-03-30T09:45:56"
+        "time": "2026-03-30T10:03:47"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.65,
         "consensus": true,
-        "time": "2026-03-30T09:45:56"
+        "time": "2026-03-30T10:03:47"
       },
       {
         "perplexity": null,
         "claude": 0.18,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-03-30T09:45:54"
+        "time": "2026-03-30T10:03:45"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-30T09:45:54"
+        "time": "2026-03-30T10:03:45"
       },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.48,
         "consensus": false,
-        "time": "2026-03-30T09:45:52"
+        "time": "2026-03-30T10:03:42"
       },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-03-30T09:45:52"
+        "time": "2026-03-30T10:03:42"
       },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.45,
         "consensus": false,
-        "time": "2026-03-30T09:45:49"
+        "time": "2026-03-30T10:03:40"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-03-30T09:45:49"
+        "time": "2026-03-30T10:03:40"
       }
     ]
   },
@@ -1043,68 +1043,68 @@
       "text": "AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction market prices >89\u00b0 at 4\u00a2 (implied 4%), >83\u00b0 at 25\u00a2[2]",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T09:40:24"
+      "time": "2026-03-30T09:58:46"
     },
     {
       "text": "Metcheck forecasts 7\u00b0C (45\u00b0F) high for NYC on Mar 29, 2026[1]. Weather25 predicts 59\u00b0F high, clear skies[5]. Robinhood prediction market prices >50\u00b0F at 96\u00a2 (4% implied prob <50\u00b0F), >51\u00b0F at 99\u00a2[3]. W",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T09:40:08"
+      "time": "2026-03-30T09:58:29"
     },
     {
       "text": "Forecasts for March 28, 2026, in Austin, TX, show daytime highs of 72\u00b0 (AccuWeather/Weathershogun) and 73\u00b0 (Weathershogun variant)[1][2]. Prediction market on Robinhood prices >71\u00b0 at 99\u00a2 and >68\u00b0 at ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T09:40:03"
+      "time": "2026-03-30T09:58:24"
     },
     {
       "text": "Polymarket reports National Weather Service preliminary climate summary confirming a maximum of 45\u00b0F at 2:26 PM local time at O'Hare (KORD) on March 27, 2026, with trader consensus at 100% for 44-45\u00b0F",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T09:40:01"
+      "time": "2026-03-30T09:58:22"
     },
     {
       "text": "March 28, 2026 has already occurred (2 days ago from current date March 30, 2026). Historical weather data from Weather Spark shows the latest report from Austin-Bergstrom International Airport (KAUS)",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T09:39:39"
+      "time": "2026-03-30T09:58:02"
     },
     {
       "text": "AccuWeather forecasts for South Miami on March 28, 2026, show a high of exactly 85\u00b0F[3]. Miami Beach AccuWeather lists highs around 85\u00b0F on nearby dates (e.g., 85\u00b0 on Mar 9-10), with partial visibilit",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T09:39:37"
+      "time": "2026-03-30T09:57:59"
     },
     {
       "text": "Official National Weather Service observations from Central Park recorded a maximum temperature of 43\u00b0F on March 28, 2026, at 3:51 PM[7]. Pre-event forecasts predicted a high near 44\u00b0F with mostly sun",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T09:39:35"
+      "time": "2026-03-30T09:57:57"
     },
     {
       "text": "Multiple weather forecasts for Miami on March 28, 2026 show high temperatures ranging from 77-85\u00b0F. AccuWeather data for Miami Beach shows 85\u00b0F high[1], while South Miami shows 85\u00b0F[2]. Weather25.com ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T09:39:33"
+      "time": "2026-03-30T09:57:55"
     },
     {
       "text": "AccuWeather forecast shows high of 65\u00b0F on Mar 27, 2026[1]. YouTube forecast video predicts high near 56\u00b0F with a cold front bringing showers and cooldown[2]. Robinhood prediction market implies 2% fo",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T09:39:30"
+      "time": "2026-03-30T09:57:53"
     },
     {
       "text": "Robinhood prediction market prices >89\u00b0 at 96\u00a2 (4% for <88\u00b0 implied), AccuWeather forecasts 90\u00b0 high on Mar 26, WeatherShogun predicts 91\u00b0 day high, historical March data shows variable weather with r",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T09:39:02"
+      "time": "2026-03-30T09:57:26"
     }
   ],
   "alerts": [],
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 14,
-    "uptime_hours": 3.8
+    "cycles": 15,
+    "uptime_hours": 4.1
   }
 }
