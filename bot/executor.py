@@ -268,8 +268,9 @@ def get_capital_state(conn: sqlite3.Connection, is_paper: bool) -> dict:
         performance_score = PERF_SCORE_START
         daily_deployed = 0
 
-    # Floor protection
-    floor_balance = peak_balance * (1 - ACCOUNT_FLOOR_PCT)
+    # Floor protection — lower floor % for small accounts
+    floor_pct = 0.20 if balance < 200 else ACCOUNT_FLOOR_PCT
+    floor_balance = peak_balance * (1 - floor_pct)
     available_capital = max(0, balance - floor_balance)
 
     # Performance score multiplier: score/50 (1.0 at 50, 2.0 at 100)
@@ -572,8 +573,10 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         amount = round(max(0, amount), 2)
 
         # Enforce minimum position size — don't bother with $3 bets
-        if 0 < amount < MIN_POSITION_SIZE:
-            amount = MIN_POSITION_SIZE if effective_capital >= MIN_POSITION_SIZE * 2 else 0
+        # Minimum position — lower for small accounts
+        min_pos = 10 if capital["balance"] < 100 else MIN_POSITION_SIZE
+        if 0 < amount < min_pos:
+            amount = min_pos if effective_capital >= min_pos * 2 else 0
 
         # Category-specific confidence threshold
         cat_conf_min = CATEGORY_CONFIDENCE.get(category, CONFIDENCE_MIN)
