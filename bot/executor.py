@@ -270,9 +270,10 @@ def get_capital_state(conn: sqlite3.Connection, is_paper: bool) -> dict:
         performance_score = PERF_SCORE_START
         daily_deployed = 0
 
-    # Floor protection — lower floor % for small accounts
+    # Floor protection — floor_pct of peak is protected (untouchable)
+    # Lower floor % for small accounts so more capital is available
     floor_pct = 0.20 if balance < 200 else ACCOUNT_FLOOR_PCT
-    floor_balance = peak_balance * (1 - floor_pct)
+    floor_balance = peak_balance * floor_pct
     available_capital = max(0, balance - floor_balance)
 
     # Performance score multiplier: score/50 (1.0 at 50, 2.0 at 100)
