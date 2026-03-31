@@ -247,16 +247,36 @@ def get_capital_state(conn: sqlite3.Connection, is_paper: bool) -> dict:
     else:
         balance = get_live_kalshi_balance()
         if balance is None:
-            balance = get_paper_balance()  # Fallback
+            # Do NOT fall back to paper balance in live mode — wrong numbers
+            # Use last known live balance from tracker instead
+            last = conn.execute(
+                "SELECT balance FROM capital_tracker WHERE cycle_status != 'api_fallback' ORDER BY id DESC LIMIT 1"
+            ).fetchone()
+            if last:
+                balance = last[0]
+                print(f"  Capital: API failed, using last known balance ${balance:.2f}")
+            else:
+                balance = float(os.getenv("PAPER_STARTING_BALANCE", "50"))
+                print(f"  Capital: API failed, no history, using starting balance ${balance:.2f}")
 
     # Get previous peak from tracker
     row = conn.execute(
-        "SELECT peak_balance, performance_score, daily_deployed FROM capital_tracker ORDER BY id DESC LIMIT 1"
+        "SELECT peak_balance, performance_score, daily_deployed, cycle_status FROM capital_tracker ORDER BY id DESC LIMIT 1"
     ).fetchone()
 
     if row:
-        peak_balance = max(row[0], balance)
+        prev_peak = row[0]
         performance_score = row[1] or PERF_SCORE_START
+
+        # Auto-reset peak on paper-to-live transition: if previous peak is from
+        # paper trading (much higher than live balance), reset to current balance
+        if not is_paper and prev_peak > balance * 2:
+            print(f"  Capital: peak reset {prev_peak:.2f} -> {balance:.2f} (paper-to-live transition)")
+            prev_peak = balance
+            performance_score = PERF_SCORE_START  # Reset score too
+
+        peak_balance = max(prev_peak, balance)
+
         # Reset daily deployed if new day
         last_row = conn.execute(
             "SELECT timestamp FROM capital_tracker ORDER BY id DESC LIMIT 1"
@@ -717,7 +737,7 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
             print(f"    conf={cloud_conf:.2f} gap={price_gap:.2f} price={market_price:.2f}")
         else:
             try:
-                from pykalshi import KalshiClient, Side as KalshiSide, OrderType
+                from pykalshi import KalshiClient, Side as KalshiSide, Action as KalshiAction
 
                 pk_path = os.getenv("KALSHI_PRIVATE_KEY", "")
                 if not os.path.isabs(pk_path):
@@ -727,17 +747,24 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
                     api_key_id=os.getenv("KALSHI_API_KEY", ""),
                     private_key_path=pk_path,
                 )
-                contracts = max(1, int(amount / (market_price * 100)))
+                # Contracts cost market_price each (in dollars, 0-1 range)
+                # For YES: cost per contract = market_price
+                # For NO: cost per contract = 1 - market_price
+                cost_per = market_price if side == "YES" else (1.0 - market_price)
+                contracts = max(1, int(amount / cost_per)) if cost_per > 0 else 1
                 order_side = KalshiSide.YES if side == "YES" else KalshiSide.NO
-                client.portfolio.create_order(
+                # buy_max_cost_dollars provides slippage protection for market orders
+                max_cost = f"{amount:.2f}"
+                client.portfolio.place_order(
                     ticker=ticker,
+                    action=KalshiAction.BUY,
                     side=order_side,
-                    type=OrderType.MARKET,
-                    count=contracts,
+                    count_fp=f"{contracts}.00",
+                    buy_max_cost_dollars=max_cost,
                 )
                 client.close()
                 executed = True
-                print(f"  LIVE TRADE: {side} ${amount:.2f} ({contracts} contracts) on {title[:50]}...")
+                print(f"  LIVE TRADE: {side} ${amount:.2f} ({contracts} contracts @ ~${cost_per:.2f}/ea) on {title[:50]}...")
                 try:
                     from telegram_alerts import trade_alert
                     trade_alert(ticker, title, side, amount, cloud_conf, price_gap, "LIVE")
