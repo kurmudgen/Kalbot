@@ -482,13 +482,25 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
             except Exception:
                 pass
 
-        # Hard block — disabled categories that must never trade
-        BLOCKED_TICKERS = ["KXEURUSD", "KXUSDJPY", "KXINX"]  # forex + S&P disabled
+        # Hard block — disabled tickers that must never trade
+        BLOCKED_TICKERS = ["KXEURUSD", "KXUSDJPY", "KXINX", "KXGDP"]  # forex, S&P, GDP disabled
         if not skip_reason:
             for blocked in BLOCKED_TICKERS:
                 if ticker.startswith(blocked):
-                    skip_reason = f"blocked category: {blocked} disabled"
+                    skip_reason = f"blocked ticker: {blocked} disabled (no simulation validation)"
                     break
+
+        # Category whitelist — only execute on simulation-validated categories
+        # CPI maps to both "inflation" and "economics" in the scanner, so allow both
+        VALIDATED_CATEGORIES = {"weather", "tsa", "inflation"}
+        # Also allow economics only for CPI tickers (KXCPI/KXPCE), block all other economics
+        if not skip_reason:
+            if category in VALIDATED_CATEGORIES:
+                pass  # Allowed
+            elif category == "economics" and any(ticker.startswith(p) for p in ["KXCPI", "KXPCE"]):
+                pass  # CPI under economics category — allowed
+            else:
+                skip_reason = f"unvalidated category: {category} (only weather/tsa/cpi have simulation backing)"
 
         # Bracket deduplication — one trade per underlying event
         if not skip_reason:
