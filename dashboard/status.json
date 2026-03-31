@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-31T06:57:51.701041+00:00",
+  "updated_at": "2026-03-31T07:34:19.216932+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-31T06:57:51.701041+00:00",
+    "last_updated": "2026-03-31T07:34:19.216932+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -872,89 +872,89 @@
   "ensemble": {
     "models": {
       "perplexity": {
-        "analyses": 4,
-        "avg_probability": 0.1925
+        "analyses": 0,
+        "avg_probability": 0
       },
       "claude": {
-        "analyses": 17,
-        "avg_probability": 0.1452941176470588
+        "analyses": 18,
+        "avg_probability": 0.14055555555555554
       },
       "deepseek": {
-        "analyses": 16,
-        "avg_probability": 0.168125
+        "analyses": 19,
+        "avg_probability": 0.11473684210526316
       }
     },
-    "consensus_rate": 0.15,
+    "consensus_rate": 0.2,
     "recent_votes": [
       {
-        "perplexity": 0.12,
+        "perplexity": null,
         "claude": null,
         "deepseek": null,
-        "consensus": false,
-        "time": "2026-03-30T10:27:37"
-      },
-      {
-        "perplexity": 0.4,
-        "claude": null,
-        "deepseek": null,
-        "consensus": false,
-        "time": "2026-03-30T10:27:35"
-      },
-      {
-        "perplexity": 0.25,
-        "claude": null,
-        "deepseek": null,
-        "consensus": false,
-        "time": "2026-03-30T10:27:30"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.08,
-        "deepseek": 0.12,
-        "consensus": false,
-        "time": "2026-03-30T10:16:45"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.06,
-        "deepseek": 0.02,
-        "consensus": false,
-        "time": "2026-03-30T10:16:43"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.1,
-        "deepseek": 0.08,
-        "consensus": false,
-        "time": "2026-03-30T10:16:43"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.08,
-        "deepseek": 0.32,
-        "consensus": false,
-        "time": "2026-03-30T10:16:40"
+        "consensus": true,
+        "time": "2026-03-31T07:32:22"
       },
       {
         "perplexity": null,
         "claude": 0.75,
         "deepseek": 0.15,
         "consensus": true,
-        "time": "2026-03-30T10:16:40"
+        "time": "2026-03-31T07:28:27"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.05,
+        "deepseek": 0.04,
+        "consensus": false,
+        "time": "2026-03-31T07:28:25"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.05,
+        "deepseek": 0.02,
+        "consensus": false,
+        "time": "2026-03-31T07:28:23"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.06,
+        "deepseek": 0.04,
+        "consensus": false,
+        "time": "2026-03-31T07:28:23"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.08,
+        "deepseek": 0.12,
+        "consensus": false,
+        "time": "2026-03-31T07:28:21"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.08,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-03-31T07:28:21"
       },
       {
         "perplexity": null,
         "claude": 0.05,
         "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-03-30T10:16:38"
+        "time": "2026-03-31T07:28:21"
       },
       {
         "perplexity": null,
-        "claude": 0.06,
-        "deepseek": 0.18,
-        "consensus": true,
-        "time": "2026-03-30T10:16:38"
+        "claude": 0.12,
+        "deepseek": 0.28,
+        "consensus": false,
+        "time": "2026-03-31T07:28:21"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.12,
+        "deepseek": 0.12,
+        "consensus": false,
+        "time": "2026-03-31T07:28:21"
       }
     ]
   },
@@ -1045,71 +1045,71 @@
   ],
   "news": [
     {
-      "text": "Robinhood prediction market prices >89\u00b0 at 96\u00a2 (4% for <88\u00b0 implied), AccuWeather forecasts 90\u00b0 high on Mar 26, WeatherShogun predicts 91\u00b0 day high, historical March data shows variable weather with r",
+      "text": "Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3][8]. AccuWeather March 2026 forecasts show early M",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T10:27:37"
+      "time": "2026-03-31T07:27:53"
     },
     {
-      "text": "Forecasts for March 25, 2026, in NYC indicate highs near 52\u00b0F [2][3][4], with one source listing 48\u00b0F [5]. A cold front is expected late-week, bringing cooler conditions but highs still around 50-52\u00b0F",
+      "text": "Multiple weather sources provide data for March 30, 2026 in Denver. Weather Shogun forecasted a high of 66\u00b0F for March 30[2]. AccuWeather's historical data shows March 30 with a high of 84\u00b0F[5]. The D",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T10:27:35"
+      "time": "2026-03-31T07:27:42"
     },
     {
-      "text": "AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction market prices >89\u00b0 at 4\u00a2 (implied 4%), >83\u00b0 at 25\u00a2[2]",
+      "text": "AccuWeather forecasts for Denver International Airport and Denver city show March 2026 daily highs peaking at 85\u00b0F on March 19 but no specific data for March 30; earlier March days include highs of 81",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T10:27:30"
+      "time": "2026-03-31T07:27:38"
     },
     {
-      "text": "AccuWeather forecast for March 30, 2026, in NYC shows high of 67\u00b0F and low of 59\u00b0F[1]. WeatherSpark provides METAR report for March 30, 2026, at 08:51Z showing temperature 09/02\u00b0C (48.2\u00b0F/35.6\u00b0F), con",
+      "text": "Historical data for March 2026 in Austin shows variable temperatures with some days exceeding 89\u00b0F, but specific high for Mar 29 not detailed in WeatherSpark[1]. Robinhood prediction market prices >89",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T10:16:29"
+      "time": "2026-03-31T07:27:15"
     },
     {
-      "text": "AccuWeather forecasts 84\u00b0F high for March 29, 2026 in Austin[1]. Weathershogun predicts 79\u00b0F day high (86\u00b0F possible max)[3]. Robinhood prediction market prices >89\u00b0 at 4\u00a2 (implied 4%), >83\u00b0 at 25\u00a2[2]",
+      "text": "Weather Underground historical data for March 29, 2026, in NYC shows overnight lows around 38\u00b0F rising through the morning, with no high explicitly stated but contextual forecasts indicating a warm-up",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T10:16:20"
+      "time": "2026-03-31T07:27:04"
     },
     {
-      "text": "Metcheck forecasts 7\u00b0C (45\u00b0F) high for NYC on Mar 29, 2026[1]. Weather25 predicts 59\u00b0F high, clear skies[5]. Robinhood prediction market prices >50\u00b0F at 96\u00a2 (4% implied prob <50\u00b0F), >51\u00b0F at 99\u00a2[3]. W",
+      "text": "Forecasts for NYC high temperature on March 27, 2026, indicate cool conditions due to a cold front: YouTube forecast predicts high near 56\u00b0F falling to 48\u00b0F[1]; Weathershogun shows 48\u00b0F day high[3]; R",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T10:16:04"
+      "time": "2026-03-31T07:26:30"
     },
     {
-      "text": "Forecasts for March 28, 2026, in Austin, TX, show daytime highs of 72\u00b0 (AccuWeather/Weathershogun) and 73\u00b0 (Weathershogun variant)[1][2]. Prediction market on Robinhood prices >71\u00b0 at 99\u00a2 and >68\u00b0 at ",
+      "text": "Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun forecasts 91\u00b0 high on Mar 26, 2026[3]. AccuWeather Ma",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T10:15:59"
+      "time": "2026-03-31T07:26:04"
     },
     {
-      "text": "Polymarket reports National Weather Service preliminary climate summary confirming a maximum of 45\u00b0F at 2:26 PM local time at O'Hare (KORD) on March 27, 2026, with trader consensus at 100% for 44-45\u00b0F",
+      "text": "A YouTube weather forecast video for NYC on Mar 25, 2026, predicts partly sunny conditions with a **high near 52\u00b0F**[1]. Weather25.com lists Mar 25 as overcast with 48\u00b0/37\u00b0 (high 48\u00b0F)[3]. AccuWeather",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T10:15:56"
+      "time": "2026-03-31T07:25:53"
     },
     {
-      "text": "March 28, 2026 has already occurred (2 days ago from current date March 30, 2026). Historical weather data from Weather Spark shows the latest report from Austin-Bergstrom International Airport (KAUS)",
+      "text": "Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun forecasts 91\u00b0 high on Mar 26, 2026[3]. AccuWeather Ma",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T10:15:35"
+      "time": "2026-03-31T07:23:54"
     },
     {
-      "text": "AccuWeather forecasts for South Miami on March 28, 2026, show a high of exactly 85\u00b0F[3]. Miami Beach AccuWeather lists highs around 85\u00b0F on nearby dates (e.g., 85\u00b0 on Mar 9-10), with partial visibilit",
+      "text": "A YouTube weather forecast video for NYC on Mar 25, 2026, predicts partly sunny conditions with a **high near 52\u00b0F**[1]. Weather25.com lists Mar 25 as overcast with 48\u00b0/37\u00b0 (high 48\u00b0F)[3]. AccuWeather",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-30T10:15:33"
+      "time": "2026-03-31T07:23:44"
     }
   ],
   "alerts": [],
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 1,
-    "uptime_hours": 0.1
+    "cycles": 2,
+    "uptime_hours": 0.7
   }
 }
