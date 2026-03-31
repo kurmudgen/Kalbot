@@ -112,7 +112,7 @@ def get_scaled_budget() -> float:
         return float(os.getenv("MAX_NIGHTLY_SPEND", "50"))
 
     tier = get_current_tier()
-    print(f"  Auto-scale: {tier['reason']} → ${tier['budget']}/night")
+    print(f"  Auto-scale: {tier['reason']} -> ${tier['budget']}/night")
     return tier["budget"]
 
 

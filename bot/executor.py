@@ -198,7 +198,7 @@ def _init_capital_tracker(conn: sqlite3.Connection):
 
 
 def get_live_kalshi_balance() -> float | None:
-    """Get current Kalshi account balance via API."""
+    """Get current Kalshi account balance via API. Returns dollars."""
     try:
         from pykalshi import KalshiClient
         pk_path = os.getenv("KALSHI_PRIVATE_KEY", "")
@@ -208,12 +208,14 @@ def get_live_kalshi_balance() -> float | None:
             api_key_id=os.getenv("KALSHI_API_KEY", ""),
             private_key_path=pk_path,
         )
-        balance = client.portfolio.get_balance()
+        bal = client.portfolio.get_balance()
         client.close()
-        # Balance is in cents
-        return balance.available_balance / 100.0 if hasattr(balance, 'available_balance') else float(balance) / 100.0
+        # bal.balance is in cents
+        dollars = bal.balance / 100.0
+        print(f"  Capital: Kalshi balance = ${dollars:.2f} (portfolio_value=${bal.portfolio_value / 100.0:.2f})")
+        return dollars
     except Exception as e:
-        print(f"  Capital: Kalshi balance API error: {e}")
+        print(f"  Capital: Kalshi balance API error: {type(e).__name__}: {e}")
         return None
 
 
@@ -367,10 +369,39 @@ def init_decisions_db() -> sqlite3.Connection:
 
 
 def get_open_positions(conn: sqlite3.Connection) -> set[str]:
-    rows = conn.execute(
-        "SELECT DISTINCT ticker FROM decisions WHERE executed = 1"
+    """Get tickers with open (unresolved) positions only.
+
+    Excludes resolved trades and early exits. Only blocks re-entry
+    on markets that are actually still open.
+    """
+    # Get all executed tickers (non-exit)
+    all_executed = conn.execute(
+        "SELECT DISTINCT ticker FROM decisions WHERE executed = 1 AND side NOT LIKE '%EXIT%'"
     ).fetchall()
-    return {r[0] for r in rows}
+    all_tickers = {r[0] for r in all_executed}
+
+    # Remove resolved tickers
+    resolved_tickers = set()
+    if os.path.exists(RESOLUTIONS_DB):
+        try:
+            rconn = sqlite3.connect(RESOLUTIONS_DB)
+            rows = rconn.execute("SELECT DISTINCT ticker FROM resolved_trades").fetchall()
+            resolved_tickers = {r[0] for r in rows}
+            rconn.close()
+        except Exception:
+            pass
+
+    # Remove exited tickers (take-profit / stop-loss)
+    exited = conn.execute(
+        "SELECT DISTINCT ticker FROM decisions WHERE executed = 1 AND side LIKE '%EXIT%'"
+    ).fetchall()
+    exited_tickers = set()
+    for r in exited:
+        # Extract base ticker from exit entries (they use the same ticker)
+        exited_tickers.add(r[0])
+
+    open_positions = all_tickers - resolved_tickers - exited_tickers
+    return open_positions
 
 
 def get_analyst_scores() -> list[dict]:
