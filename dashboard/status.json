@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-31T18:04:29.107866+00:00",
+  "updated_at": "2026-03-31T18:15:37.205738+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-31T18:04:29.107866+00:00",
+    "last_updated": "2026-03-31T18:15:37.205738+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -83,7 +83,7 @@
       },
       {
         "date": "2026-03-31",
-        "trades": 10309,
+        "trades": 10311,
         "deployed": 0
       }
     ],
@@ -100,6 +100,36 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHCHI-26APR01-T40",
+        "title": "Will the high temp in Chicago be <40\u00b0 on Apr 1, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05,
+        "confidence": 0.6174999999999999,
+        "market_price": 0.95,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-03-31T18:13:09"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR01-T40",
+        "title": "Will the high temp in Chicago be <40\u00b0 on Apr 1, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05,
+        "confidence": 0.6174999999999999,
+        "market_price": 0.95,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-03-31T18:11:12"
+      },
       {
         "ticker": "KXHIGHCHI-26APR01-T40",
         "title": "Will the high temp in Chicago be <40\u00b0 on Apr 1, 2026?",
@@ -819,42 +849,12 @@
         "reasoning": "CME FedWatch: cut=0.0, hold=0.917 \u2192 prob=0.92",
         "category": "economics",
         "time": "2026-03-31T17:59:00"
-      },
-      {
-        "ticker": "KXFED-27JAN-T0.50",
-        "title": "Will the upper bound of the federal funds rate be above 0.50% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.917,
-        "confidence": 0.8327000000000001,
-        "market_price": 0.76,
-        "price_gap": 0.15700000000000003,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.917 \u2192 prob=0.92",
-        "category": "economics",
-        "time": "2026-03-31T17:59:00"
-      },
-      {
-        "ticker": "KXFED-27JAN-T2.50",
-        "title": "Will the upper bound of the federal funds rate be above 2.50% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.917,
-        "confidence": 0.7997000000000001,
-        "market_price": 0.79,
-        "price_gap": 0.127,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.917 \u2192 prob=0.92",
-        "category": "economics",
-        "time": "2026-03-31T17:59:00"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 1810,
+      "trades": 1811,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -864,7 +864,7 @@
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 359,
+      "trades": 360,
       "executed": 2,
       "deployed": 2.42
     }
@@ -891,7 +891,7 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-03-31T18:01:52"
+        "time": "2026-03-31T18:12:56"
       },
       {
         "perplexity": null,
@@ -1109,7 +1109,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 16,
-    "uptime_hours": 3.0
+    "cycles": 17,
+    "uptime_hours": 3.2
   }
 }
