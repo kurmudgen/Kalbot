@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-31T09:58:23.532055+00:00",
+  "updated_at": "2026-03-31T10:17:14.107506+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-03-31T09:58:23.532055+00:00",
+    "last_updated": "2026-03-31T10:17:14.107506+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -83,7 +83,7 @@
       },
       {
         "date": "2026-03-31",
-        "trades": 4407,
+        "trades": 4593,
         "deployed": 0
       }
     ],
@@ -113,7 +113,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "energy",
-        "time": "2026-03-31T09:57:26"
+        "time": "2026-03-31T10:16:18"
       },
       {
         "ticker": "KXWTI-26MAR26-T93.99",
@@ -128,112 +128,7 @@
         "executed": false,
         "reasoning": "Gemini-fast tier: high confidence, agrees with local.",
         "category": "energy",
-        "time": "2026-03-31T09:54:15"
-      },
-      {
-        "ticker": "KXHIGHMIA-26MAR31-T84",
-        "title": "Will the **high temp in Miami** be >84\u00b0 on Mar 31, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.37876932540483566,
-        "confidence": 0.561864406779661,
-        "market_price": 0.03,
-        "price_gap": 0.34876932540483563,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
-        "category": "weather",
-        "time": "2026-03-31T09:54:15"
-      },
-      {
-        "ticker": "KXHIGHCHI-26MAR31-T81",
-        "title": "Will the high temp in Chicago be >81\u00b0 on Mar 31, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.056608793080794306,
-        "confidence": 0.44055555555555553,
-        "market_price": 0.03,
-        "price_gap": 0.026608793080794307,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
-        "category": "weather",
-        "time": "2026-03-31T09:54:15"
-      },
-      {
-        "ticker": "KXHIGHCHI-26MAR31-B78.5",
-        "title": "Will the high temp in Chicago be 78-79\u00b0 on Mar 31, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.06598931265637922,
-        "confidence": 0.486044776119403,
-        "market_price": 0.06,
-        "price_gap": 0.005989312656379225,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
-        "category": "weather",
-        "time": "2026-03-31T09:54:15"
-      },
-      {
-        "ticker": "KXHIGHNY-26MAR31-B72.5",
-        "title": "Will the **high temp in NYC** be 72-73\u00b0 on Mar 31, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.019678827420094882,
-        "confidence": 0.6169029850746269,
-        "market_price": 0.03,
-        "price_gap": 0.010321172579905117,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
-        "category": "weather",
-        "time": "2026-03-31T09:54:15"
-      },
-      {
-        "ticker": "KXHIGHNY-26MAR31-T77",
-        "title": "Will the **high temp in NYC** be >77\u00b0 on Mar 31, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.5019687601294285,
-        "confidence": 0.5421052631578948,
-        "market_price": 0.71,
-        "price_gap": 0.20803123987057148,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
-        "category": "weather",
-        "time": "2026-03-31T09:54:15"
-      },
-      {
-        "ticker": "KXHIGHNY-26MAR31-B70.5",
-        "title": "Will the **high temp in NYC** be 70-71\u00b0 on Mar 31, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.03637181008201854,
-        "confidence": 0.5775000000000001,
-        "market_price": 0.05,
-        "price_gap": 0.01362818991798146,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather sources provide data for March 30, 2026 in Denver. Weather Shogun forecasted a high of 66\u00b0F for March 30[2]. AccuWeather's historical\n- [weather",
-        "category": "weather",
-        "time": "2026-03-31T09:54:15"
-      },
-      {
-        "ticker": "KXHIGHMIA-26MAR31-T77",
-        "title": "Will the **high temp in Miami** be <77\u00b0 on Mar 31, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.12207100777250779,
-        "confidence": 0.5039719626168224,
-        "market_price": 0.06,
-        "price_gap": 0.06207100777250779,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather sources provide data for March 30, 2026 in Denver. Weather Shogun forecasted a high of 66\u00b0F for March 30[2]. AccuWeather's historical\n- [weather",
-        "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHDEN-26MAR30-T83",
@@ -248,7 +143,7 @@
         "executed": false,
         "reasoning": "AccuWeather forecasts for Denver International Airport and Denver city show March 2026 daily highs peaking at 85\u00b0F on March 19 but no specific data for March 30; earlier March days include highs of 81",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHCHI-26MAR30-T81",
@@ -263,7 +158,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Historical data for March 2026 in Austin shows variable temperatures with some days exceeding 89\u00b0F, but specific high for Mar 29 not detailed in Weath\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHCHI-26MAR28-B47.5",
@@ -278,7 +173,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Historical data for March 2026 in Austin shows variable temperatures with some days exceeding 89\u00b0F, but specific high for Mar 29 not detailed in Weath\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHNY-26MAR29-T50",
@@ -293,7 +188,7 @@
         "executed": false,
         "reasoning": "Weather Underground historical data for March 29, 2026, in NYC shows overnight lows around 38\u00b0F rising through the morning, with no high explicitly stated but contextual forecasts indicating a warm-up",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHMIA-26MAR29-T82",
@@ -308,7 +203,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Forecasts for NYC high temperature on March 27, 2026, indicate cool conditions due to a cold front: YouTube forecast predicts high near 56\u00b0F falling t\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHCHI-26MAR27-B43.5",
@@ -323,7 +218,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Forecasts for NYC high temperature on March 27, 2026, indicate cool conditions due to a cold front: YouTube forecast predicts high near 56\u00b0F falling t\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHDEN-26MAR28-T84",
@@ -338,7 +233,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Forecasts for NYC high temperature on March 27, 2026, indicate cool conditions due to a cold front: YouTube forecast predicts high near 56\u00b0F falling t\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHCHI-26MAR28-T54",
@@ -353,7 +248,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Forecasts for NYC high temperature on March 27, 2026, indicate cool conditions due to a cold front: YouTube forecast predicts high near 56\u00b0F falling t\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-T69",
@@ -368,7 +263,7 @@
         "executed": false,
         "reasoning": "Forecasts for NYC high temperature on March 27, 2026, indicate cool conditions due to a cold front: YouTube forecast predicts high near 56\u00b0F falling to 48\u00b0F[1]; Weathershogun shows 48\u00b0F day high[3]; R",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-B92.5",
@@ -383,7 +278,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun for\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-B55.5",
@@ -398,7 +293,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun for\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-B49.5",
@@ -413,7 +308,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun for\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-T56",
@@ -428,7 +323,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun for\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-T93",
@@ -443,7 +338,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun for\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHMIA-26MAR27-T84",
@@ -458,7 +353,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun for\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:18"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B66.5",
@@ -473,7 +368,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun for\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:17"
       },
       {
         "ticker": "KXHIGHCHI-26MAR27-T44",
@@ -488,7 +383,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun for\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:17"
       },
       {
         "ticker": "KXHIGHMIA-26MAR27-B83.5",
@@ -503,7 +398,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun for\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:54:14"
+        "time": "2026-03-31T10:13:17"
       },
       {
         "ticker": "KXHIGHDEN-26MAR30-T83",
@@ -518,7 +413,7 @@
         "executed": false,
         "reasoning": "AccuWeather forecasts for Denver International Airport and Denver city show March 2026 daily highs peaking at 85\u00b0F on March 19 but no specific data for March 30; earlier March days include highs of 81",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHNY-26MAR29-T50",
@@ -533,7 +428,7 @@
         "executed": false,
         "reasoning": "Weather Underground historical data for March 29, 2026, in NYC shows overnight lows around 38\u00b0F rising through the morning, with no high explicitly stated but contextual forecasts indicating a warm-up",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHCHI-26MAR27-B43.5",
@@ -548,7 +443,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Forecasts for NYC high temperature on March 27, 2026, indicate cool conditions due to a cold front: YouTube forecast predicts high near 56\u00b0F falling t\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-T69",
@@ -563,7 +458,7 @@
         "executed": false,
         "reasoning": "Forecasts for NYC high temperature on March 27, 2026, indicate cool conditions due to a cold front: YouTube forecast predicts high near 56\u00b0F falling to 48\u00b0F[1]; Weathershogun shows 48\u00b0F day high[3]; R",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-B92.5",
@@ -578,7 +473,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-B55.5",
@@ -593,7 +488,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-B49.5",
@@ -608,7 +503,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-T56",
@@ -623,7 +518,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B66.5",
@@ -638,7 +533,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHCHI-26MAR27-T44",
@@ -653,7 +548,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHMIA-26MAR27-B83.5",
@@ -668,7 +563,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHCHI-26MAR30-T81",
@@ -683,7 +578,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHCHI-26MAR28-B47.5",
@@ -698,7 +593,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:57"
       },
       {
         "ticker": "KXHIGHMIA-26MAR29-T82",
@@ -713,7 +608,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:56"
       },
       {
         "ticker": "KXHIGHDEN-26MAR28-T84",
@@ -728,7 +623,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:58"
+        "time": "2026-03-31T10:07:56"
       },
       {
         "ticker": "KXHIGHCHI-26MAR28-T54",
@@ -743,7 +638,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:57"
+        "time": "2026-03-31T10:07:56"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-T93",
@@ -758,7 +653,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:57"
+        "time": "2026-03-31T10:07:56"
       },
       {
         "ticker": "KXHIGHMIA-26MAR27-T84",
@@ -773,7 +668,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:57"
+        "time": "2026-03-31T10:07:56"
       },
       {
         "ticker": "KXHIGHNY-26MAR31-T77",
@@ -788,7 +683,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:57"
+        "time": "2026-03-31T10:07:56"
       },
       {
         "ticker": "KXHIGHMIA-26MAR31-T84",
@@ -803,7 +698,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:57"
+        "time": "2026-03-31T10:07:56"
       },
       {
         "ticker": "KXHIGHCHI-26MAR31-T81",
@@ -818,7 +713,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:57"
+        "time": "2026-03-31T10:07:56"
       },
       {
         "ticker": "KXHIGHCHI-26MAR31-B78.5",
@@ -833,7 +728,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:57"
+        "time": "2026-03-31T10:07:56"
       },
       {
         "ticker": "KXHIGHNY-26MAR31-B72.5",
@@ -848,23 +743,128 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3]\n- [weather",
         "category": "weather",
-        "time": "2026-03-31T09:47:57"
+        "time": "2026-03-31T10:07:56"
+      },
+      {
+        "ticker": "KXGDP-26APR30-T2.0",
+        "title": "Will **real GDP** increase by more than 2.0% in Q1 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5,
+        "confidence": 0.8470000000000001,
+        "market_price": 0.67,
+        "price_gap": 0.17000000000000004,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.50",
+        "category": "economics",
+        "time": "2026-03-31T10:04:20"
+      },
+      {
+        "ticker": "KXGDP-26APR30-T2.5",
+        "title": "Will **real GDP** increase by more than 2.5% in Q1 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.15865525393145707,
+        "confidence": 0.935,
+        "market_price": 0.48,
+        "price_gap": 0.2506723730342715,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.16",
+        "category": "economics",
+        "time": "2026-03-31T10:04:20"
+      },
+      {
+        "ticker": "KXGDP-26APR30-T3.0",
+        "title": "Will **real GDP** increase by more than 3.0% in Q1 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.0227501319481792,
+        "confidence": 0.9279874274285014,
+        "market_price": 0.33,
+        "price_gap": 0.2436249340259104,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.02",
+        "category": "economics",
+        "time": "2026-03-31T10:04:20"
+      },
+      {
+        "ticker": "KXGDP-26APR30-T3.5",
+        "title": "Will **real GDP** increase by more than 3.5% in Q1 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.001349898031630093,
+        "confidence": 0.8125151121652069,
+        "market_price": 0.14,
+        "price_gap": 0.1386501019683699,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.00",
+        "category": "economics",
+        "time": "2026-03-31T10:04:20"
+      },
+      {
+        "ticker": "KXGDP-26JUL30-T1.0",
+        "title": "Will **real GDP** increase by more than 1.0% in Q2 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9772498680518208,
+        "confidence": 0.832974854857003,
+        "market_price": 0.82,
+        "price_gap": 0.15724986805182084,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.98",
+        "category": "economics",
+        "time": "2026-03-31T10:04:20"
+      },
+      {
+        "ticker": "KXGDP-26JUL30-T1.5",
+        "title": "Will **real GDP** increase by more than 1.5% in Q2 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.8413447460685429,
+        "confidence": 0.7934792206753973,
+        "market_price": 0.72,
+        "price_gap": 0.12134474606854295,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.84",
+        "category": "economics",
+        "time": "2026-03-31T10:04:20"
+      },
+      {
+        "ticker": "KXGDP-26JUL30-T2.5",
+        "title": "Will **real GDP** increase by more than 2.5% in Q2 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.15865525393145707,
+        "confidence": 0.8752396103376986,
+        "market_price": 0.37,
+        "price_gap": 0.19567237303427146,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Atlanta Fed GDPNow: 2.0 \u2192 prob=0.16",
+        "category": "economics",
+        "time": "2026-03-31T10:04:20"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 1770,
+      "trades": 1789,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
     "QUANT": {
-      "trades": 21078,
+      "trades": 21221,
       "executed": 258,
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 315,
+      "trades": 338,
       "executed": 2,
       "deployed": 2.42
     }
@@ -872,89 +872,89 @@
   "ensemble": {
     "models": {
       "perplexity": {
-        "analyses": 0,
-        "avg_probability": 0
+        "analyses": 5,
+        "avg_probability": 0.08199999999999999
       },
       "claude": {
-        "analyses": 18,
-        "avg_probability": 0.14055555555555554
+        "analyses": 7,
+        "avg_probability": 0.1842857142857143
       },
       "deepseek": {
-        "analyses": 19,
-        "avg_probability": 0.11473684210526316
+        "analyses": 14,
+        "avg_probability": 0.21214285714285713
       }
     },
-    "consensus_rate": 0.2,
+    "consensus_rate": 0.35,
     "recent_votes": [
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-03-31T09:56:23"
+        "time": "2026-03-31T10:15:14"
       },
       {
-        "perplexity": null,
-        "claude": 0.75,
-        "deepseek": 0.15,
+        "perplexity": 0.02,
+        "claude": null,
+        "deepseek": null,
+        "consensus": false,
+        "time": "2026-03-31T10:11:46"
+      },
+      {
+        "perplexity": 0.15,
+        "claude": null,
+        "deepseek": null,
+        "consensus": false,
+        "time": "2026-03-31T10:11:42"
+      },
+      {
+        "perplexity": 0.05,
+        "claude": null,
+        "deepseek": null,
         "consensus": true,
-        "time": "2026-03-31T09:52:42"
+        "time": "2026-03-31T10:11:37"
       },
       {
         "perplexity": null,
-        "claude": 0.05,
-        "deepseek": 0.04,
-        "consensus": false,
-        "time": "2026-03-31T09:52:40"
+        "claude": 0.02,
+        "deepseek": 0.08,
+        "consensus": true,
+        "time": "2026-03-31T10:11:33"
       },
       {
         "perplexity": null,
-        "claude": 0.05,
-        "deepseek": 0.02,
+        "claude": 0.15,
+        "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-03-31T09:52:37"
+        "time": "2026-03-31T10:11:33"
       },
       {
         "perplexity": null,
         "claude": 0.06,
-        "deepseek": 0.04,
-        "consensus": false,
-        "time": "2026-03-31T09:52:37"
+        "deepseek": 0.85,
+        "consensus": true,
+        "time": "2026-03-31T10:11:19"
       },
       {
         "perplexity": null,
         "claude": 0.08,
-        "deepseek": 0.12,
+        "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-03-31T09:52:35"
+        "time": "2026-03-31T10:11:17"
+      },
+      {
+        "perplexity": 0.15,
+        "claude": null,
+        "deepseek": null,
+        "consensus": false,
+        "time": "2026-03-31T10:11:15"
       },
       {
         "perplexity": null,
-        "claude": 0.08,
+        "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-03-31T09:52:35"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.05,
-        "deepseek": 0.02,
-        "consensus": true,
-        "time": "2026-03-31T09:52:35"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.12,
-        "deepseek": 0.28,
-        "consensus": false,
-        "time": "2026-03-31T09:52:35"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.12,
-        "deepseek": 0.12,
-        "consensus": false,
-        "time": "2026-03-31T09:52:35"
+        "time": "2026-03-31T10:11:10"
       }
     ]
   },
@@ -1048,68 +1048,68 @@
       "text": "Robinhood prediction market prices >77\u00b0F at 99\u00a2, >78\u00b0F at 14\u00a2, >80\u00b0F at 5\u00a2, implying <76\u00b0F at ~3%[1]. Historical March averages: 25\u00b0C (77\u00b0F) max[2][3][8]. AccuWeather March 2026 forecasts show early M",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-31T09:52:04"
+      "time": "2026-03-31T10:11:46"
     },
     {
       "text": "Multiple weather sources provide data for March 30, 2026 in Denver. Weather Shogun forecasted a high of 66\u00b0F for March 30[2]. AccuWeather's historical data shows March 30 with a high of 84\u00b0F[5]. The D",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-31T09:51:54"
+      "time": "2026-03-31T10:11:42"
     },
     {
       "text": "AccuWeather forecasts for Denver International Airport and Denver city show March 2026 daily highs peaking at 85\u00b0F on March 19 but no specific data for March 30; earlier March days include highs of 81",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-31T09:51:49"
+      "time": "2026-03-31T10:11:37"
     },
     {
       "text": "Historical data for March 2026 in Austin shows variable temperatures with some days exceeding 89\u00b0F, but specific high for Mar 29 not detailed in WeatherSpark[1]. Robinhood prediction market prices >89",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-31T09:51:24"
+      "time": "2026-03-31T10:11:15"
     },
     {
       "text": "Weather Underground historical data for March 29, 2026, in NYC shows overnight lows around 38\u00b0F rising through the morning, with no high explicitly stated but contextual forecasts indicating a warm-up",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-31T09:51:13"
+      "time": "2026-03-31T10:11:03"
     },
     {
       "text": "Forecasts for NYC high temperature on March 27, 2026, indicate cool conditions due to a cold front: YouTube forecast predicts high near 56\u00b0F falling to 48\u00b0F[1]; Weathershogun shows 48\u00b0F day high[3]; R",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-31T09:50:38"
+      "time": "2026-03-31T10:10:28"
     },
     {
       "text": "Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun forecasts 91\u00b0 high on Mar 26, 2026[3]. AccuWeather Ma",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-31T09:50:10"
+      "time": "2026-03-31T10:10:01"
     },
     {
       "text": "A YouTube weather forecast video for NYC on Mar 25, 2026, predicts partly sunny conditions with a **high near 52\u00b0F**[1]. Weather25.com lists Mar 25 as overcast with 48\u00b0/37\u00b0 (high 48\u00b0F)[3]. AccuWeather",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-31T09:50:00"
+      "time": "2026-03-31T10:09:50"
     },
     {
       "text": "Robinhood prediction market prices >86\u00b0 at 96\u00a2 (4% for <87\u00b0 implied), >89\u00b0 at 8\u00a2, >93\u00b0 at 8\u00a2, aligning with market's 5% for <88\u00b0[2]. Weathershogun forecasts 91\u00b0 high on Mar 26, 2026[3]. AccuWeather Ma",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-31T09:47:55"
+      "time": "2026-03-31T10:07:54"
     },
     {
       "text": "A YouTube weather forecast video for NYC on Mar 25, 2026, predicts partly sunny conditions with a **high near 52\u00b0F**[1]. Weather25.com lists Mar 25 as overcast with 48\u00b0/37\u00b0 (high 48\u00b0F)[3]. AccuWeather",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-03-31T09:47:45"
+      "time": "2026-03-31T10:07:52"
     }
   ],
   "alerts": [],
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 4,
-    "uptime_hours": 1.4
+    "cycles": 5,
+    "uptime_hours": 1.7
   }
 }
