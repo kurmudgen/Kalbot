@@ -479,6 +479,10 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         return []
 
     open_positions = get_open_positions(conn)
+    print(f"  Open positions blocking dedup: {len(open_positions)}")
+    if open_positions and len(open_positions) <= 10:
+        for t in open_positions:
+            print(f"    {t}")
 
     # Track events traded in THIS batch to prevent bracket flooding
     _traded_events_this_batch = set()
@@ -532,6 +536,31 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
                 from seasonal_adjuster import get_seasonal_multiplier
                 seasonal_mult = get_seasonal_multiplier(title)
                 cloud_conf = cloud_conf * seasonal_mult
+            except Exception:
+                pass
+
+        # Extreme gap override for weather — obvious calls where model undershoots confidence
+        # 30F gap with p=0.05 is near-certain, low confidence is model hedging not genuine uncertainty
+        extreme_gap_applied = False
+        if category == "weather" and not skip_reason:
+            try:
+                _city = extract_weather_city(title)
+                _threshold = extract_threshold_temp(title)
+                if _city and _threshold:
+                    from weather_nws_feed import load_forecasts
+                    _forecasts = load_forecasts()
+                    _nws_temp = None
+                    for _ck, _cd in _forecasts.items():
+                        _cn = _cd.get("city", "").lower()
+                        if _city == _ck or _city == _cn or (_city == "nyc" and "new york" in _cn):
+                            _nws_temp = _cd.get("high_temp")
+                            break
+                    if _nws_temp is not None:
+                        _gap = abs(_nws_temp - _threshold)
+                        if _gap >= 15 and (cloud_prob < 0.15 or cloud_prob > 0.85):
+                            cloud_conf = 0.90
+                            extreme_gap_applied = True
+                            print(f"  [extreme gap] {_city} gap={_gap:.0f}F p={cloud_prob:.2f} -> conf overridden to 0.90")
             except Exception:
                 pass
 
@@ -696,9 +725,11 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         elif not skip_reason and amount <= 0:
             skip_reason = "no budget remaining (insufficient capital)"
 
-        # Append city to reasoning for weather trades (audit trail)
+        # Append city and extreme gap to reasoning for weather trades (audit trail)
         if category == "weather" and city_used:
             reasoning = f"[city={city_used}] {reasoning}"
+        if extreme_gap_applied:
+            reasoning = f"[extreme_gap_override] {reasoning}"
 
         if skip_reason:
             print(f"  SKIP {title[:50]}... — {skip_reason}")
