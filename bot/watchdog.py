@@ -30,9 +30,15 @@ BOTS = [
 def is_running(marker: str) -> bool:
     """Check if a process with the given marker is running."""
     try:
-        result = subprocess.run(
-            ["ps", "aux"], capture_output=True, text=True, timeout=5,
-        )
+        if os.name == "nt":
+            result = subprocess.run(
+                ["wmic", "process", "where", "name='python.exe'", "get", "commandline"],
+                capture_output=True, text=True, timeout=10,
+            )
+        else:
+            result = subprocess.run(
+                ["ps", "aux"], capture_output=True, text=True, timeout=5,
+            )
         return marker in result.stdout
     except Exception:
         return False
