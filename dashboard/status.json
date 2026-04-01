@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-01T07:25:53.381570+00:00",
+  "updated_at": "2026-04-01T07:48:35.364554+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,14 +27,14 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-01T07:25:53.381570+00:00",
+    "last_updated": "2026-04-01T07:48:35.364554+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
   },
   "pnl": {
-    "today": 0,
-    "all_time": -47.3595,
+    "today": -0.9853,
+    "all_time": -0.9853,
     "history": [
       {
         "date": "2026-03-22",
@@ -88,16 +88,16 @@
       },
       {
         "date": "2026-04-01",
-        "trades": 3610,
+        "trades": 3936,
         "deployed": 0
       }
     ],
     "resolved": {
-      "total_trades": 196,
-      "wins": 15,
-      "losses": 181,
-      "win_rate": 0.07653061224489796,
-      "actual_pnl": -47.3595
+      "total_trades": 10,
+      "wins": 5,
+      "losses": 5,
+      "win_rate": 0.5,
+      "actual_pnl": -0.9853
     }
   },
   "trades": {
@@ -118,7 +118,7 @@
         "executed": false,
         "reasoning": "Polymarket prediction market shows 42-43\u00b0F as frontrunner (42% implied probability) with 44-45\u00b0F at 24%. National Weather Service forecasts project peaks near 41-46\u00b0F. AccuWeather shows 46\u00b0F high for ",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:20"
       },
       {
         "ticker": "KXHIGHNY-26APR01-T72",
@@ -133,7 +133,7 @@
         "executed": false,
         "reasoning": "April 1, 2026, high temperature forecasts for NYC/Brooklyn from AccuWeather show 60\u00b0F[3] or 44\u00b0F[4], both below 72\u00b0F (22\u00b0C). Long-term April averages indicate daytime highs of 13-16\u00b0C (55-61\u00b0F)[1][2][",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:20"
       },
       {
         "ticker": "KXHIGHMIA-26APR01-T77",
@@ -148,7 +148,7 @@
         "executed": false,
         "reasoning": "Multiple weather forecasts for Miami on April 1, 2026 consistently show high temperatures well above 77\u00b0F (25\u00b0C). PeoplesWeather reports an afternoon high of 25\u00b0C (77\u00b0F)[1]. WeatherShogun forecasts a ",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:20"
       },
       {
         "ticker": "KXHIGHCHI-26MAR31-B80.5",
@@ -163,7 +163,7 @@
         "executed": false,
         "reasoning": "March 31, 2026 has already occurred (current date is April 1, 2026). Historical weather data shows the actual high temperature in Chicago on March 31, 2026 was 69\u00b0F[3]. AccuWeather's forecast for Marc",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHMIA-26MAR30-T76",
@@ -178,7 +178,7 @@
         "executed": false,
         "reasoning": "Forecasts for March 30, 2026, in Miami show highs of 75\u00b0F (weathershogun.com)[1], 77\u00b0F (weather25.com)[3], 79\u00b0F South Miami/80\u00b0F Miami Beach (AccuWeather)[5][6]. Robinhood prediction market prices <76",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHNY-26MAR29-T50",
@@ -191,9 +191,9 @@
         "price_gap": 0.14544470678957883,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHMIA-26MAR29-T82",
@@ -206,9 +206,9 @@
         "price_gap": 0.3448983069362487,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHMIA-26MAR29-T75",
@@ -221,9 +221,9 @@
         "price_gap": 0.09602526949266736,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHCHI-26MAR27-B43.5",
@@ -236,9 +236,9 @@
         "price_gap": 0.4091565751019899,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHDEN-26MAR28-B83.5",
@@ -251,9 +251,9 @@
         "price_gap": 0.014537729306593868,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHDEN-26MAR28-T84",
@@ -266,9 +266,9 @@
         "price_gap": 0.1066658237727475,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHMIA-26MAR28-T86",
@@ -281,9 +281,9 @@
         "price_gap": 0.3295133823737946,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHNY-26MAR28-B44.5",
@@ -296,9 +296,9 @@
         "price_gap": 0.002258677794033326,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHMIA-26MAR28-B85.5",
@@ -311,9 +311,9 @@
         "price_gap": 0.2223452402046654,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHNY-26MAR28-T47",
@@ -326,9 +326,9 @@
         "price_gap": 0.3063305686373089,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:10"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-T69",
@@ -341,9 +341,9 @@
         "price_gap": 0.14544470678957883,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:09"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-B92.5",
@@ -356,9 +356,9 @@
         "price_gap": 0.015302545243304252,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:09"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHDEN-26MAR27-B49.5",
@@ -371,9 +371,9 @@
         "price_gap": 0.04745263414985801,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:09"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHAUS-26MAR27-T93",
@@ -386,9 +386,9 @@
         "price_gap": 0.008269558903198554,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:09"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHMIA-26MAR27-T84",
@@ -401,9 +401,9 @@
         "price_gap": 0.2912176399164106,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:09"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B66.5",
@@ -416,9 +416,9 @@
         "price_gap": 0.007496665187917653,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:09"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHNY-26MAR27-B68.5",
@@ -431,9 +431,9 @@
         "price_gap": 0.11110579381284202,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:09"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHMIA-26MAR26-T84",
@@ -446,9 +446,9 @@
         "price_gap": 0.2191326584939549,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:09"
+        "time": "2026-04-01T07:45:19"
       },
       {
         "ticker": "KXHIGHCHI-26MAR26-T77",
@@ -461,9 +461,369 @@
         "price_gap": 0.08348298910059704,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "No real-time research available.",
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provi\n- [weather",
         "category": "weather",
-        "time": "2026-04-01T07:22:09"
+        "time": "2026-04-01T07:45:19"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR31-B80.5",
+        "title": "Will the high temp in Chicago be 80-81\u00b0 on Mar 31, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.029237257186135016,
+        "confidence": 0.886875,
+        "market_price": 0.04,
+        "price_gap": 0.010762742813864985,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "March 31, 2026 has already occurred (current date is April 1, 2026). Historical weather data shows the actual high temperature in Chicago on March 31, 2026 was 69\u00b0F[3]. AccuWeather's forecast for Marc",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR30-T76",
+        "title": "Will the **high temp in Miami** be <76\u00b0 on Mar 30, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.13612839555671963,
+        "confidence": 0.8062499999999999,
+        "market_price": 0.03,
+        "price_gap": 0.10612839555671963,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Forecasts for March 30, 2026, in Miami show highs of 75\u00b0F (weathershogun.com)[1], 77\u00b0F (weather25.com)[3], 79\u00b0F South Miami/80\u00b0F Miami Beach (AccuWeather)[5][6]. Robinhood prediction market prices <76",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR29-T50",
+        "title": "Will the **high temp in NYC** be <50\u00b0 on Mar 29, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.17544470678957882,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.03,
+        "price_gap": 0.14544470678957883,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR29-T75",
+        "title": "Will the **high temp in Miami** be <75\u00b0 on Mar 29, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.14602526949266736,
+        "confidence": 0.7228070175438597,
+        "market_price": 0.05,
+        "price_gap": 0.09602526949266736,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR27-B43.5",
+        "title": "Will the high temp in Chicago be 43-44\u00b0 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5208434248980102,
+        "confidence": 0.7228070175438597,
+        "market_price": 0.93,
+        "price_gap": 0.4091565751019899,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR28-T86",
+        "title": "Will the **high temp in Miami** be >86\u00b0 on Mar 28, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3795133823737946,
+        "confidence": 0.7228070175438597,
+        "market_price": 0.05,
+        "price_gap": 0.3295133823737946,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR28-B44.5",
+        "title": "Will the **high temp in NYC** be 44-45\u00b0 on Mar 28, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.2777413222059667,
+        "confidence": 0.7719999999999999,
+        "market_price": 0.28,
+        "price_gap": 0.002258677794033326,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR28-B85.5",
+        "title": "Will the **high temp in Miami** be 85-86\u00b0 on Mar 28, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.47765475979533456,
+        "confidence": 0.7950877192982457,
+        "market_price": 0.7,
+        "price_gap": 0.2223452402046654,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR28-T47",
+        "title": "Will the **high temp in NYC** be >47\u00b0 on Mar 28, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3363305686373089,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.03,
+        "price_gap": 0.3063305686373089,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR27-T69",
+        "title": "Will the **high temp in NYC** be >69\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.17544470678957882,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.03,
+        "price_gap": 0.14544470678957883,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR27-B92.5",
+        "title": "Will the **high temp in Austin** be 92-93\u00b0 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.044697454756695745,
+        "confidence": 0.7700000000000001,
+        "market_price": 0.06,
+        "price_gap": 0.015302545243304252,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR27-B49.5",
+        "title": "Will the **high temp in Denver** be 49-50\u00b0 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.092547365850142,
+        "confidence": 0.7950877192982457,
+        "market_price": 0.14,
+        "price_gap": 0.04745263414985801,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR27-B66.5",
+        "title": "Will the **high temp in NYC** be 66-67\u00b0 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.04250333481208235,
+        "confidence": 0.8225373134328359,
+        "market_price": 0.05,
+        "price_gap": 0.007496665187917653,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHNY-26MAR27-B68.5",
+        "title": "Will the **high temp in NYC** be 68-69\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.14110579381284202,
+        "confidence": 0.6777777777777777,
+        "market_price": 0.03,
+        "price_gap": 0.11110579381284202,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:40"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR26-T84",
+        "title": "Will the **high temp in Miami** be >84\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3391326584939549,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.12,
+        "price_gap": 0.2191326584939549,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:39"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-T77",
+        "title": "Will the high temp in Chicago be <77\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.826517010899403,
+        "confidence": 0.7477611940298508,
+        "market_price": 0.91,
+        "price_gap": 0.08348298910059704,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:39"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR29-T82",
+        "title": "Will the **high temp in Miami** be >82\u00b0 on Mar 29, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.4148983069362487,
+        "confidence": 0.7491525423728813,
+        "market_price": 0.07,
+        "price_gap": 0.3448983069362487,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:39"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR28-B83.5",
+        "title": "Will the **high temp in Denver** be 83-84\u00b0 on Mar 28, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.035462270693406135,
+        "confidence": 0.7735483870967743,
+        "market_price": 0.05,
+        "price_gap": 0.014537729306593868,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:39"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR28-T84",
+        "title": "Will the **high temp in Denver** be >84\u00b0 on Mar 28, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.1366658237727475,
+        "confidence": 0.6777777777777777,
+        "market_price": 0.03,
+        "price_gap": 0.1066658237727475,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:39"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR27-T93",
+        "title": "Will the **high temp in Austin** be >93\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.03826955890319855,
+        "confidence": 0.7470588235294117,
+        "market_price": 0.03,
+        "price_gap": 0.008269558903198554,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:39"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR27-T84",
+        "title": "Will the **high temp in Miami** be >84\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.4012176399164106,
+        "confidence": 0.7228070175438597,
+        "market_price": 0.11,
+        "price_gap": 0.2912176399164106,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. Acc\n- [weather",
+        "category": "weather",
+        "time": "2026-04-01T07:39:39"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR01-T40",
+        "title": "Will the high temp in Chicago be <40\u00b0 on Apr 1, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.1734829891005971,
+        "confidence": 0.5643749999999998,
+        "market_price": 0.03,
+        "price_gap": 0.1434829891005971,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Polymarket prediction market shows 42-43\u00b0F as frontrunner (42% implied probability) with 44-45\u00b0F at 24%. National Weather Service forecasts project peaks near 41-46\u00b0F. AccuWeather shows 46\u00b0F high for ",
+        "category": "weather",
+        "time": "2026-04-01T07:39:39"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR01-T72",
+        "title": "Will the **high temp in NYC** be <72\u00b0 on Apr 1, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.1525828499920915,
+        "confidence": 0.5138636363636363,
+        "market_price": 0.03,
+        "price_gap": 0.12258284999209151,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "April 1, 2026, high temperature forecasts for NYC/Brooklyn from AccuWeather show 60\u00b0F[3] or 44\u00b0F[4], both below 72\u00b0F (22\u00b0C). Long-term April averages indicate daytime highs of 13-16\u00b0C (55-61\u00b0F)[1][2][",
+        "category": "weather",
+        "time": "2026-04-01T07:39:39"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR01-T77",
+        "title": "Will the **high temp in Miami** be <77\u00b0 on Apr 1, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.06598931265637922,
+        "confidence": 0.6178846153846154,
+        "market_price": 0.03,
+        "price_gap": 0.035989312656379224,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Multiple weather forecasts for Miami on April 1, 2026 consistently show high temperatures well above 77\u00b0F (25\u00b0C). PeoplesWeather reports an afternoon high of 25\u00b0C (77\u00b0F)[1]. WeatherShogun forecasts a ",
+        "category": "weather",
+        "time": "2026-04-01T07:39:39"
       },
       {
         "ticker": "KXGDP-26APR30-T3.0",
@@ -478,7 +838,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.3 \u2192 prob=0.08",
         "category": "economics",
-        "time": "2026-04-01T06:57:46"
+        "time": "2026-04-01T07:35:30"
       },
       {
         "ticker": "KXGDP-26JUL30-T1.0",
@@ -493,383 +853,23 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 2.3 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-01T06:57:46"
-      },
-      {
-        "ticker": "KXGDP-26JUL30-T1.5",
-        "title": "Will **real GDP** increase by more than 1.5% in Q2 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.945200708300442,
-        "confidence": 0.812600354150221,
-        "market_price": 0.7,
-        "price_gap": 0.21260035415022102,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Atlanta Fed GDPNow: 2.3 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:46"
-      },
-      {
-        "ticker": "KXGDP-26JUL30-T2.0",
-        "title": "Will **real GDP** increase by more than 2.0% in Q2 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.7257468822499263,
-        "confidence": 0.7657468822499263,
-        "market_price": 0.56,
-        "price_gap": 0.1657468822499263,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Atlanta Fed GDPNow: 2.3 \u2192 prob=0.73",
-        "category": "economics",
-        "time": "2026-04-01T06:57:46"
-      },
-      {
-        "ticker": "KXFED-26JUL-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Jul 29, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.05,
-        "price_gap": 0.5389999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:46"
-      },
-      {
-        "ticker": "KXFED-26JUL-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Jul 29, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.05,
-        "price_gap": 0.5389999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:46"
-      },
-      {
-        "ticker": "KXFED-26JUN-T3.75",
-        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.12,
-        "price_gap": 0.504,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:46"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.00",
-        "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.02,
-        "price_gap": 0.554,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:46"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.25",
-        "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.07,
-        "price_gap": 0.5289999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.50",
-        "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.03,
-        "price_gap": 0.5489999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.75",
-        "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.03,
-        "price_gap": 0.5489999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26JUN-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.03,
-        "price_gap": 0.5489999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26JUN-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.07,
-        "price_gap": 0.5289999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26SEP-T3.00",
-        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.839,
-        "market_price": 0.65,
-        "price_gap": 0.23899999999999996,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26SEP-T3.75",
-        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.35,
-        "price_gap": 0.389,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26SEP-T4.00",
-        "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.3,
-        "price_gap": 0.4139999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26SEP-T4.25",
-        "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.19,
-        "price_gap": 0.46900000000000003,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26SEP-T4.50",
-        "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.15,
-        "price_gap": 0.48899999999999993,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26SEP-T4.75",
-        "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.03,
-        "price_gap": 0.5489999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26SEP-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.55,
-        "price_gap": 0.2889999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26SEP-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.6,
-        "price_gap": 0.264,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26OCT-T3.25",
-        "title": "Will the upper bound of the federal funds rate be above 3.25% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.62,
-        "price_gap": 0.254,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26OCT-T3.50",
-        "title": "Will the upper bound of the federal funds rate be above 3.50% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.839,
-        "market_price": 0.65,
-        "price_gap": 0.23899999999999996,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26OCT-T3.75",
-        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.6,
-        "price_gap": 0.264,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26OCT-T4.00",
-        "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.08,
-        "price_gap": 0.524,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
-      },
-      {
-        "ticker": "KXFED-26OCT-T4.25",
-        "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.02,
-        "price_gap": 0.554,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.0, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-01T06:57:45"
+        "time": "2026-04-01T07:35:30"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 1870,
+      "trades": 1894,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
     "QUANT": {
-      "trades": 34505,
+      "trades": 34783,
       "executed": 258,
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 395,
+      "trades": 419,
       "executed": 2,
       "deployed": 2.42
     }
@@ -896,70 +896,70 @@
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-01T07:21:07"
+        "time": "2026-04-01T07:44:31"
       },
       {
         "perplexity": 0.15,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-01T07:20:45"
+        "time": "2026-04-01T07:44:23"
       },
       {
         "perplexity": 0.12,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-01T07:20:20"
+        "time": "2026-04-01T07:44:13"
       },
       {
         "perplexity": 0.12,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-01T07:20:08"
+        "time": "2026-04-01T07:44:08"
       },
       {
         "perplexity": 0.15,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-01T07:20:01"
+        "time": "2026-04-01T07:44:06"
       },
       {
         "perplexity": 0.02,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-01T07:19:45"
+        "time": "2026-04-01T07:44:02"
       },
       {
         "perplexity": 0.05,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-01T07:19:38"
+        "time": "2026-04-01T07:44:00"
       },
       {
         "perplexity": 0.02,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-01T07:19:13"
+        "time": "2026-04-01T07:43:49"
       },
       {
         "perplexity": 0.72,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-01T07:18:45"
+        "time": "2026-04-01T07:43:35"
       },
       {
         "perplexity": 0.75,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-01T07:18:34"
+        "time": "2026-04-01T07:43:33"
       }
     ]
   },
@@ -1053,68 +1053,68 @@
       "text": "Multiple weather forecasts for April 1, 2026 in NYC show high temperatures in the 72-76\u00b0F range. AccuWeather[4] forecasts 75\u00b0F high for April 1st. AccuWeather[3] also shows 75\u00b0F for April 1st. These a",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-01T07:21:07"
+      "time": "2026-04-01T07:44:31"
     },
     {
       "text": "Polymarket prediction market shows 42-43\u00b0F as frontrunner (42% implied probability) with 44-45\u00b0F at 24%. National Weather Service forecasts project peaks near 41-46\u00b0F. AccuWeather shows 46\u00b0F high for ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-01T07:20:45"
+      "time": "2026-04-01T07:44:23"
     },
     {
       "text": "Forecasts for April 1, 2026, in Miami show varying high temperatures: EaseWeather predicts 25\u00b0C (77\u00b0F) overcast with 0.1mm rain[1]; WeatherShogun forecasts 75\u00b0F day high[2]; AccuWeather South Miami sh",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-01T07:20:20"
+      "time": "2026-04-01T07:44:13"
     },
     {
       "text": "April 1, 2026, high temperature forecasts for NYC/Brooklyn from AccuWeather show 60\u00b0F[3] or 44\u00b0F[4], both below 72\u00b0F (22\u00b0C). Long-term April averages indicate daytime highs of 13-16\u00b0C (55-61\u00b0F)[1][2][",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-01T07:20:08"
+      "time": "2026-04-01T07:44:08"
     },
     {
       "text": "Polymarket prediction market shows 42-43\u00b0F at 42% implied probability (frontrunner), 44-45\u00b0F at 24%, 40-41\u00b0F at 20.1%, and 46-47\u00b0F at 11%. National Weather Service forecasts project peaks near 41-46\u00b0F",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-01T07:20:01"
+      "time": "2026-04-01T07:44:06"
     },
     {
       "text": "Forecasts for April 1, 2026, in Austin show highs of 31\u00b0C (88\u00b0F) on easeweather.com, 81\u00b0F on weathershogun.com, and coldest day low of 13\u00b0C (55\u00b0F) on climate-data.org; general April averages are 26\u00b0C ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-01T07:19:45"
+      "time": "2026-04-01T07:44:02"
     },
     {
       "text": "Multiple weather forecasts for Miami on April 1, 2026 consistently show high temperatures well above 77\u00b0F (25\u00b0C). PeoplesWeather reports an afternoon high of 25\u00b0C (77\u00b0F)[1]. WeatherShogun forecasts a ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-01T07:19:38"
+      "time": "2026-04-01T07:44:00"
     },
     {
       "text": "March 31, 2026 has already occurred (current date is April 1, 2026). Historical weather data shows the actual high temperature in Chicago on March 31, 2026 was 69\u00b0F[3]. AccuWeather's forecast for Marc",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-01T07:19:13"
+      "time": "2026-04-01T07:43:49"
     },
     {
       "text": "Multiple weather sources provide data for March 31, 2026 in NYC. AccuWeather forecasts for both NYC and Manhattan show a high of 59\u00b0F on March 31[2][4]. Weather Shogun reports March 31, 2026 with a da",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-01T07:18:45"
+      "time": "2026-04-01T07:43:35"
     },
     {
       "text": "AccuWeather forecast for March 31, 2026, in NYC shows a high of 80\u00b0F[2]. WeatherShogun lists 72\u00b0F high with 100% precipitation[1]. Other sources provide general March averages (highs ~45-49\u00b0F) or hist",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-01T07:18:34"
+      "time": "2026-04-01T07:43:33"
     }
   ],
   "alerts": [],
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 21,
-    "uptime_hours": 5.2
+    "cycles": 1,
+    "uptime_hours": 0.2
   }
 }
