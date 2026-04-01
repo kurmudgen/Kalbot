@@ -107,11 +107,15 @@ def extract_weather_city(title: str) -> str | None:
 
 def extract_threshold_temp(title: str) -> float | None:
     """Extract the temperature threshold from a weather market title.
-    Handles formats like '90-91°', '>84°', '<77°', '83-84°'."""
-    # Match patterns: 90-91, >84, <77, etc. (before ° or F)
-    m = re.search(r'[<>]?(\d+)(?:-(\d+))?[°F]', title)
+    Handles formats like '90-91°', '>84°', '<77°', '83-84°', '<40�'."""
+    # Match patterns: 90-91, >84, <77, etc. (before °, F, or mangled degree symbol)
+    m = re.search(r'[<>]?(\d+)(?:-(\d+))?[°F�\ufffd]', title)
     if not m:
-        return None
+        # Fallback: try matching bare number after < or > in weather context
+        m = re.search(r'[<>](\d+)', title)
+        if not m:
+            return None
+        return float(m.group(1))
     lo = int(m.group(1))
     hi = int(m.group(2)) if m.group(2) else lo
     return (lo + hi) / 2.0
