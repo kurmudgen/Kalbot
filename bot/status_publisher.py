@@ -87,14 +87,23 @@ def generate_status() -> dict:
         paper_kalshi = True
         paper_alpaca = True
 
-    # Trades
+    # Trades — only validated categories, exclude expired paper
     trades = _query(DECISIONS_DB,
-        "SELECT * FROM decisions ORDER BY decided_at DESC LIMIT 50")
+        """SELECT * FROM decisions
+           WHERE category IN ('weather', 'tsa', 'inflation', 'economics')
+           AND side NOT LIKE '%EXIT%'
+           ORDER BY decided_at DESC LIMIT 50""")
     executed = [t for t in trades if t.get("executed")]
     skipped = [t for t in trades if not t.get("executed")]
 
-    # P&L (simplified — counts executed trades)
-    total_pnl = sum(t.get("amount", 0) * 0.18 for t in executed)  # Rough estimate
+    # P&L from actual resolutions (not estimates)
+    total_pnl = 0
+    try:
+        from resolution_tracker import get_lifetime_stats
+        lstats = get_lifetime_stats()
+        total_pnl = lstats.get("total_pnl", 0)
+    except Exception:
+        pass
 
     # P&L history
     pnl_history = []

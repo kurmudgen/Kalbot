@@ -278,15 +278,20 @@ def resolve_trades() -> dict:
 
 
 def get_lifetime_stats() -> dict:
-    """Get overall lifetime performance stats."""
+    """Get overall lifetime performance stats (validated categories only).
+
+    Excludes expired_paper entries and non-validated categories (forex, sp500, etc).
+    """
     if not os.path.exists(RESOLUTIONS_DB):
         return {"trades": 0, "wins": 0, "losses": 0, "win_rate": 0, "total_pnl": 0}
 
     conn = sqlite3.connect(RESOLUTIONS_DB)
-    total = conn.execute("SELECT COUNT(*) FROM resolved_trades").fetchone()[0]
-    wins = conn.execute("SELECT COUNT(*) FROM resolved_trades WHERE pnl > 0").fetchone()[0]
-    losses = conn.execute("SELECT COUNT(*) FROM resolved_trades WHERE pnl <= 0").fetchone()[0]
-    pnl = conn.execute("SELECT COALESCE(SUM(pnl), 0) FROM resolved_trades").fetchone()[0]
+    # Only count real resolutions in validated categories
+    _filter = "WHERE result != 'expired_paper' AND category IN ('weather', 'tsa', 'inflation', 'economics')"
+    total = conn.execute(f"SELECT COUNT(*) FROM resolved_trades {_filter}").fetchone()[0]
+    wins = conn.execute(f"SELECT COUNT(*) FROM resolved_trades {_filter} AND pnl > 0").fetchone()[0]
+    losses = conn.execute(f"SELECT COUNT(*) FROM resolved_trades {_filter} AND pnl <= 0").fetchone()[0]
+    pnl = conn.execute(f"SELECT COALESCE(SUM(pnl), 0) FROM resolved_trades {_filter}").fetchone()[0]
     conn.close()
 
     return {
