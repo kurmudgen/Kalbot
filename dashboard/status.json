@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T19:04:27.685256+00:00",
+  "updated_at": "2026-04-02T19:04:58.504666+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-02T19:04:27.685256+00:00",
+    "last_updated": "2026-04-02T19:04:58.504666+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -93,7 +93,7 @@
       },
       {
         "date": "2026-04-02",
-        "trades": 20488,
+        "trades": 20489,
         "deployed": 0
       }
     ],
@@ -110,6 +110,21 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-02T19:04:36"
+      },
       {
         "ticker": "KXHIGHMIA-26APR03-B78.5",
         "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
@@ -844,27 +859,12 @@
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
         "time": "2026-04-02T19:00:02"
-      },
-      {
-        "ticker": "KXFED-26DEC-T4.75",
-        "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.12,
-        "price_gap": 0.5005,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-02T19:00:02"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 2944,
+      "trades": 2945,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -1119,7 +1119,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 41,
+    "cycles": 42,
     "uptime_hours": 11.5
   }
 }
