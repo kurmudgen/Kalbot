@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T10:23:24.175937+00:00",
+  "updated_at": "2026-04-02T10:27:06.348601+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-02T10:23:24.175937+00:00",
+    "last_updated": "2026-04-02T10:27:06.348601+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -970,9 +970,9 @@
   },
   "scanner": {
     "total_markets": 3915,
-    "with_prices": 1777,
+    "with_prices": 1778,
     "passed_filter": 348,
-    "total_scored": 737,
+    "total_scored": 738,
     "categories": {
       "economics": 2560,
       "energy": 230,
