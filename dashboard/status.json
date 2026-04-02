@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T09:12:27.409353+00:00",
+  "updated_at": "2026-04-02T09:15:24.776155+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-02T09:12:27.409353+00:00",
+    "last_updated": "2026-04-02T09:15:24.776155+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -93,7 +93,7 @@
       },
       {
         "date": "2026-04-02",
-        "trades": 6265,
+        "trades": 6280,
         "deployed": 0
       }
     ],
@@ -882,89 +882,89 @@
   "ensemble": {
     "models": {
       "perplexity": {
-        "analyses": 9,
-        "avg_probability": 0.16333333333333333
+        "analyses": 8,
+        "avg_probability": 0.125
       },
       "claude": {
-        "analyses": 8,
-        "avg_probability": 0.30125
+        "analyses": 6,
+        "avg_probability": 0.26166666666666666
       },
       "deepseek": {
-        "analyses": 11,
-        "avg_probability": 0.35000000000000003
+        "analyses": 12,
+        "avg_probability": 0.6516666666666666
       }
     },
-    "consensus_rate": 0.45,
+    "consensus_rate": 0.25,
     "recent_votes": [
       {
         "perplexity": 0.0,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-02T09:12:27"
+        "time": "2026-04-02T09:15:25"
+      },
+      {
+        "perplexity": 0.02,
+        "claude": null,
+        "deepseek": null,
+        "consensus": true,
+        "time": "2026-04-02T09:15:22"
+      },
+      {
+        "perplexity": 0.93,
+        "claude": null,
+        "deepseek": null,
+        "consensus": false,
+        "time": "2026-04-02T09:15:18"
+      },
+      {
+        "perplexity": 0.03,
+        "claude": null,
+        "deepseek": null,
+        "consensus": false,
+        "time": "2026-04-02T09:15:13"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-04-02T09:15:07"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.85,
+        "consensus": false,
+        "time": "2026-04-02T09:15:05"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.35,
+        "deepseek": 0.85,
+        "consensus": false,
+        "time": "2026-04-02T09:15:02"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.12,
+        "deepseek": 0.04,
+        "consensus": false,
+        "time": "2026-04-02T09:14:59"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.15,
+        "deepseek": 0.85,
+        "consensus": false,
+        "time": "2026-04-02T09:14:59"
       },
       {
         "perplexity": 0.0,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-02T09:12:24"
-      },
-      {
-        "perplexity": 0.02,
-        "claude": null,
-        "deepseek": null,
-        "consensus": false,
-        "time": "2026-04-02T09:12:22"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.02,
-        "deepseek": 0.01,
-        "consensus": true,
-        "time": "2026-04-02T09:12:13"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.75,
-        "deepseek": 0.05,
-        "consensus": true,
-        "time": "2026-04-02T09:12:13"
-      },
-      {
-        "perplexity": 0.48,
-        "claude": null,
-        "deepseek": null,
-        "consensus": true,
-        "time": "2026-04-02T09:12:04"
-      },
-      {
-        "perplexity": 0.55,
-        "claude": null,
-        "deepseek": null,
-        "consensus": true,
-        "time": "2026-04-02T09:12:02"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.85,
-        "deepseek": 0.99,
-        "consensus": true,
-        "time": "2026-04-02T09:11:57"
-      },
-      {
-        "perplexity": 0.22,
-        "claude": null,
-        "deepseek": null,
-        "consensus": false,
-        "time": "2026-04-02T09:11:57"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": 0.02,
-        "consensus": true,
-        "time": "2026-04-02T09:11:55"
+        "time": "2026-04-02T09:14:57"
       }
     ]
   },
@@ -1055,64 +1055,64 @@
   ],
   "news": [
     {
+      "text": "Official observations from Miami International Airport (KMIA) confirm the highest temperature on March 29, 2026, was 78\u00b0F at 1:53 PM, amid cloudy skies, rain, and winds, 4\u00b0F below the 82\u00b0F climatologi",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-02T09:15:25"
+    },
+    {
+      "text": "Forecasts for March 28, 2026, in Chicago show temperatures far below 49-50\u00b0F: YouTube short predicts sunny 5\u00b0C (41\u00b0F)[1]; WeatherShogun forecasts day high 52\u00b0F (close but slightly above, night 34\u00b0F, 2",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-02T09:15:22"
+    },
+    {
+      "text": "National Weather Service official preliminary climate summary confirms maximum high temperature of 45\u00b0F at O'Hare (KORD) on March 27, 2026[1][5]. Polymarket consensus at 100% for 44-45\u00b0F, aligning wit",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-02T09:15:18"
+    },
+    {
+      "text": "Forecasts for March 28, 2026, in Austin, TX: Weathershogun predicts day high of 72-73\u00b0F[2]; AccuWeather March 2026 monthly shows highs mostly 74-89\u00b0F, with one day at 68\u00b0F but no specific for Mar 28[3",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-02T09:15:13"
+    },
+    {
+      "text": "Official observations from Miami International Airport (KMIA) via National Weather Service and Weather Underground confirm a peak temperature of 84\u00b0F on March 28, 2026. The Polymarket for this event h",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-02T09:14:57"
+    },
+    {
       "text": "Official National Weather Service observations from Central Park recorded a maximum temperature of 43\u00b0F on March 28, 2026, at 3:51 PM[1]. Polymarket market for highest temperature resolved to 42-43\u00b0F ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T09:12:27"
+      "time": "2026-04-02T09:14:55"
     },
     {
       "text": "Official observations from Miami International Airport (KMIA) confirm a peak temperature of 84\u00b0F on March 28, 2026, as reported by National Weather Service and Weather Underground data[1][2]. Polymark",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T09:12:24"
+      "time": "2026-04-02T09:14:53"
     },
     {
       "text": "Multiple weather data sources confirm that the high temperature in NYC on March 27, 2026 was approximately 52-65\u00b0F, well below the 69\u00b0F threshold. Weather Underground historical data shows a high of 5",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T09:12:22"
+      "time": "2026-04-02T09:14:50"
     },
     {
       "text": "A YouTube forecast predicts overcast conditions with 1\u00b0C (34\u00b0F) high on March 27, 2026, in Chicago[1]. AccuWeather forecasts a high of 44\u00b0F exactly for March 27[6]. Weather25.com indicates March avera",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T09:12:04"
+      "time": "2026-04-02T09:14:33"
     },
     {
       "text": "Polymarket market for Miami high temp on Mar 27, 2026, shows significant trading volume ($118.7K) but no specific outcome prices listed; related Mar 28 market resolved at 84\u00b0F (100% for 84-85\u00b0F bin)[1",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T09:12:02"
-    },
-    {
-      "text": "AccuWeather forecasts for Denver on March 26, 2026: 73\u00b0F high at central Denver[3] and 78\u00b0F high at Denver International Airport[4]. WeatherSpark reports actual high temperature of 61\u00b0F on March 26, 2",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-02T09:11:57"
-    },
-    {
-      "text": "Market closed with >89\u00b0 at 8\u00a2 and 86\u00b0 at 96\u00a2, implying low odds for 88-89\u00b0[1]. AccuWeather forecast shows 90\u00b0 high on Mar 26, 2026[4]. Weathershogun forecasts 91\u00b0 day high[3]. March 2026 was record wa",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-02T09:11:53"
-    },
-    {
-      "text": "Polymarket market has resolved with 100% probability on 66-67\u00b0F high temperature at Chicago's O'Hare on March 26, 2026, based on official NWS observations[1]. Weather history sites confirm the high wa",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-02T09:11:51"
-    },
-    {
-      "text": "March 26, 2026 has already occurred. Multiple weather data sources confirm the actual high temperature in Chicago on March 26, 2026 was 73\u00b0F[4]. One source reports March 26 conditions as 'Cloudy, 18\u00b0C",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-02T09:11:49"
-    },
-    {
-      "text": "Actual recorded high temperature in NYC on March 29, 2026, was 52\u00b0F at Central Park (official climatological station) and LaGuardia Airport, per Polymarket resolution, Weather Underground, and Weather",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-02T09:09:37"
+      "time": "2026-04-02T09:14:30"
     }
   ],
   "alerts": [],
