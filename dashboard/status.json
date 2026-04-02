@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T20:20:12.951808+00:00",
+  "updated_at": "2026-04-02T20:20:31.588671+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-02T20:20:12.951808+00:00",
+    "last_updated": "2026-04-02T20:20:31.588671+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -93,7 +93,7 @@
       },
       {
         "date": "2026-04-02",
-        "trades": 22609,
+        "trades": 22611,
         "deployed": 0
       }
     ],
@@ -110,6 +110,36 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-02T20:20:28"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-02T20:20:15"
+      },
       {
         "ticker": "KXGDP-26APR30-T1.5",
         "title": "Will **real GDP** increase by more than 1.5% in Q1 2026?",
@@ -829,42 +859,12 @@
         "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
         "category": "economics",
         "time": "2026-04-02T20:18:59"
-      },
-      {
-        "ticker": "KXFED-26DEC-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.85,
-        "market_price": 0.02,
-        "price_gap": 0.554,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-02T20:18:59"
-      },
-      {
-        "ticker": "KXFED-27JAN-T0.00",
-        "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.948,
-        "confidence": 0.839,
-        "market_price": 0.65,
-        "price_gap": 0.23899999999999996,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.052, hold=0.948 \u2192 prob=0.95",
-        "category": "economics",
-        "time": "2026-04-02T20:18:59"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 2966,
+      "trades": 2967,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -874,7 +874,7 @@
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1157,
+      "trades": 1158,
       "executed": 2,
       "deployed": 2.42
     }
