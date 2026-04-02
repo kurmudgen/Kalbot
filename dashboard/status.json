@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T22:02:45.093780+00:00",
+  "updated_at": "2026-04-02T22:06:47.953556+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-02T22:02:45.093780+00:00",
+    "last_updated": "2026-04-02T22:06:47.953556+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -93,7 +93,7 @@
       },
       {
         "date": "2026-04-02",
-        "trades": 26564,
+        "trades": 26568,
         "deployed": 0
       }
     ],
@@ -110,6 +110,66 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-02T22:05:35"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-02T22:05:03"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-02T22:04:39"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-02T22:02:53"
+      },
       {
         "ticker": "KXHIGHMIA-26APR03-B78.5",
         "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
@@ -799,72 +859,12 @@
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
         "time": "2026-04-02T22:00:42"
-      },
-      {
-        "ticker": "KXFED-26DEC-T3.75",
-        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.33,
-        "price_gap": 0.3554999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-02T22:00:42"
-      },
-      {
-        "ticker": "KXFED-26DEC-T4.00",
-        "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.54,
-        "price_gap": 0.25049999999999994,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-02T22:00:41"
-      },
-      {
-        "ticker": "KXFED-26DEC-T4.25",
-        "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.48,
-        "price_gap": 0.28049999999999997,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-02T22:00:41"
-      },
-      {
-        "ticker": "KXFED-26DEC-T4.50",
-        "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.2,
-        "price_gap": 0.4205,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-02T22:00:41"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 3006,
+      "trades": 3010,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -901,7 +901,7 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-02T22:02:42"
+        "time": "2026-04-02T22:05:21"
       },
       {
         "perplexity": 0.01,
@@ -1119,7 +1119,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 6,
-    "uptime_hours": 1.6
+    "cycles": 7,
+    "uptime_hours": 1.7
   }
 }
