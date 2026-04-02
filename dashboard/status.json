@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T08:33:14.382500+00:00",
+  "updated_at": "2026-04-02T08:38:21.228580+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-02T08:33:14.382500+00:00",
+    "last_updated": "2026-04-02T08:38:21.228580+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -93,7 +93,7 @@
       },
       {
         "date": "2026-04-02",
-        "trades": 5086,
+        "trades": 5134,
         "deployed": 0
       }
     ],
@@ -110,6 +110,276 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHAUS-26APR02-T89",
+        "title": "Will the **high temp in Austin** be >89\u00b0 on Apr 2, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.22601724770113757,
+        "confidence": 0.5291525423728813,
+        "market_price": 0.06,
+        "price_gap": 0.16601724770113757,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Polymarket shows 99.5-100% probability for 59\u00b0F or below, aligned with NWS forecast of upper 40s to mid-50s high under cloudy skies and cool air mass;\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:53"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR02-B77.5",
+        "title": "Will the **high temp in Miami** be 77-78\u00b0 on Apr 2, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.1608933323819592,
+        "confidence": 0.5140909090909089,
+        "market_price": 0.08,
+        "price_gap": 0.08089333238195918,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Polymarket shows 99.5-100% probability for 59\u00b0F or below, aligned with NWS forecast of upper 40s to mid-50s high under cloudy skies and cool air mass;\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR02-T84",
+        "title": "Will the **high temp in Miami** be >84\u00b0 on Apr 2, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.23533770192872708,
+        "confidence": 0.6306097560975609,
+        "market_price": 0.03,
+        "price_gap": 0.20533770192872708,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Polymarket shows 99.5-100% probability for 59\u00b0F or below, aligned with NWS forecast of upper 40s to mid-50s high under cloudy skies and cool air mass;\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR02-T73",
+        "title": "Will the high temp in Chicago be >73\u00b0 on Apr 2, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2569578732195977,
+        "confidence": 0.47037383177570086,
+        "market_price": 0.04,
+        "price_gap": 0.21695787321959767,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] March 26, 2026 has already occurred. Multiple weather data sources confirm the actual high temperature in Chicago on March 26, 2026 was 73\u00b0F[4]. One s\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR02-B71.5",
+        "title": "Will the **high temp in Denver** be 71-72\u00b0 on Apr 2, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.250607681414276,
+        "confidence": 0.4707887755102041,
+        "market_price": 0.26,
+        "price_gap": 0.009392318585724035,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] March 2026 climate summary from NWS shows Chicago average high of 54.9\u00b0F, 7.9\u00b0F above normal, with record highs of 73\u00b0F on Mar 9 and 81\u00b0F on Mar 30; A\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR02-B54.5",
+        "title": "Will the **high temp in NYC** be 54-55\u00b0 on Apr 2, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.3311837585639026,
+        "confidence": 0.517411214953271,
+        "market_price": 0.37,
+        "price_gap": 0.03881624143609741,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] March 2026 climate summary from NWS shows Chicago average high of 54.9\u00b0F, 7.9\u00b0F above normal, with record highs of 73\u00b0F on Mar 9 and 81\u00b0F on Mar 30; A\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR02-T54",
+        "title": "Will the **high temp in NYC** be <54\u00b0 on Apr 2, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.6262817902821656,
+        "confidence": 0.513931623931624,
+        "market_price": 0.44,
+        "price_gap": 0.18628179028216557,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Polymarket shows 99.5-100% probability for 59\u00b0F or below, aligned with NWS forecast of upper 40s to mid-50s high under cloudy skies and cool air mass;\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR28-B49.5",
+        "title": "Will the high temp in Chicago be 49-50\u00b0 on Mar 28, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.029237257186135037,
+        "confidence": 0.7699999999999999,
+        "market_price": 0.04,
+        "price_gap": 0.010762742813864964,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Forecasts for March 28, 2026, in Chicago show temperatures far below 49-50\u00b0F: YouTube short predicts sunny 5\u00b0C (41\u00b0F)[1]; WeatherShogun forecasts day high 52\u00b0F (close but slightly above, night 34\u00b0F, 2",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR28-B83.5",
+        "title": "Will the **high temp in Denver** be 83-84\u00b0 on Mar 28, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.021477589252103465,
+        "confidence": 0.9442857142857144,
+        "market_price": 0.05,
+        "price_gap": 0.028522410747896538,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Forecasts for March 28, 2026, in Austin, TX: Weathershogun predicts day high of 72-73\u00b0F[2]; AccuWeather March 2026 monthly shows highs mostly 74-89\u00b0F,\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR27-T93",
+        "title": "Will the **high temp in Austin** be >93\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.11737491416903126,
+        "confidence": 0.8208171206225681,
+        "market_price": 0.03,
+        "price_gap": 0.08737491416903126,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] A YouTube forecast predicts overcast conditions with 1\u00b0C (34\u00b0F) high on March 27, 2026, in Chicago[1]. AccuWeather forecasts a high of 44\u00b0F exactly fo\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR27-T84",
+        "title": "Will the **high temp in Miami** be >84\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.38606458941131633,
+        "confidence": 0.7470588235294117,
+        "market_price": 0.11,
+        "price_gap": 0.27606458941131634,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] A YouTube forecast predicts overcast conditions with 1\u00b0C (34\u00b0F) high on March 27, 2026, in Chicago[1]. AccuWeather forecasts a high of 44\u00b0F exactly fo\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR27-T44",
+        "title": "Will the high temp in Chicago be >44\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.45136736956374013,
+        "confidence": 0.6675,
+        "market_price": 0.25,
+        "price_gap": 0.20136736956374013,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "A YouTube forecast predicts overcast conditions with 1\u00b0C (34\u00b0F) high on March 27, 2026, in Chicago[1]. AccuWeather forecasts a high of 44\u00b0F exactly for March 27[6]. Weather25.com indicates March avera",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR27-B83.5",
+        "title": "Will the **high temp in Miami** be 83-84\u00b0 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5450285790209984,
+        "confidence": 0.8075,
+        "market_price": 0.6,
+        "price_gap": 0.05497142097900154,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Polymarket market for Miami high temp on Mar 27, 2026, shows significant trading volume ($118.7K) but no specific outcome prices listed; related Mar 28 market resolved at 84\u00b0F (100% for 84-85\u00b0F bin)[1",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-T77",
+        "title": "Will the **high temp in Denver** be <77\u00b0 on Mar 26, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.5208875139456111,
+        "confidence": 0.7786307053941908,
+        "market_price": 0.15,
+        "price_gap": 0.37088751394561104,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Denver on March 26, 2026: 73\u00b0F high at central Denver[3] and 78\u00b0F high at Denver International Airport[4]. WeatherSpark repo\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHDEN-26MAR26-B83.5",
+        "title": "Will the **high temp in Denver** be 83-84\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.06467035534237654,
+        "confidence": 0.835751879699248,
+        "market_price": 0.15,
+        "price_gap": 0.08532964465762345,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Market closed with >89\u00b0 at 8\u00a2 and 86\u00b0 at 96\u00a2, implying low odds for 88-89\u00b0[1]. AccuWeather forecast shows 90\u00b0 high on Mar 26, 2026[4]. Weathershogun f\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-B79.5",
+        "title": "Will the high temp in Chicago be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 1.0,
+        "market_price": 0.03,
+        "price_gap": 0.014258807335888784,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Polymarket market has resolved with 100% probability on 66-67\u00b0F high temperature at Chicago's O'Hare on March 26, 2026, based on official NWS observations[1]. Weather history sites confirm the high wa",
+        "category": "weather",
+        "time": "2026-04-02T08:33:52"
+      },
+      {
+        "ticker": "KXHIGHAUS-26MAR25-B90.5",
+        "title": "Will the **high temp in Austin** be 90-91\u00b0 on Mar 25, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.23045895722092224,
+        "confidence": 0.8637449392712552,
+        "market_price": 0.34,
+        "price_gap": 0.10954104277907778,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Polymarket shows 99.5-100% probability for 59\u00b0F or below, aligned with NWS forecast of upper 40s to mid-50s high under cloudy skies and cool air mass;\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:51"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR25-B68.5",
+        "title": "Will the high temp in Chicago be 68-69\u00b0 on Mar 25, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2176294217479678,
+        "confidence": 0.8023809523809523,
+        "market_price": 0.15,
+        "price_gap": 0.0676294217479678,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Polymarket shows 99.5-100% probability for 59\u00b0F or below, aligned with NWS forecast of upper 40s to mid-50s high under cloudy skies and cool air mass;\n- [weather",
+        "category": "weather",
+        "time": "2026-04-02T08:33:51"
+      },
       {
         "ticker": "KXHIGHCHI-26MAR28-B49.5",
         "title": "Will the high temp in Chicago be 49-50\u00b0 on Mar 28, 2026?",
@@ -589,282 +859,12 @@
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
         "time": "2026-04-02T08:29:38"
-      },
-      {
-        "ticker": "KXCPI-26JUN-T0.4",
-        "title": "Will CPI rise more than 0.4% in June 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9998408914098424,
-        "confidence": 0.85,
-        "market_price": 0.28,
-        "price_gap": 0.44992044570492123,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:38"
-      },
-      {
-        "ticker": "KXCPI-26JUN-T0.5",
-        "title": "Will CPI rise more than 0.5% in June 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9953388119762813,
-        "confidence": 0.85,
-        "market_price": 0.22,
-        "price_gap": 0.4776694059881406,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:38"
-      },
-      {
-        "ticker": "KXCPI-26JUL-T0.0",
-        "title": "Will CPI rise more than 0.0% in July 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999999999999852,
-        "confidence": 0.8139999999999838,
-        "market_price": 0.86,
-        "price_gap": 0.13999999999998525,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:38"
-      },
-      {
-        "ticker": "KXCPI-26JUL-T0.1",
-        "title": "Will CPI rise more than 0.1% in July 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999999999794421,
-        "confidence": 0.8799999999886933,
-        "market_price": 0.78,
-        "price_gap": 0.19999999998972104,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:38"
-      },
-      {
-        "ticker": "KXCPI-26JUL-T0.2",
-        "title": "Will CPI rise more than 0.2% in July 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999999892824097,
-        "confidence": 0.85,
-        "market_price": 0.56,
-        "price_gap": 0.30999999464120487,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:38"
-      },
-      {
-        "ticker": "KXCPI-26JUL-T0.3",
-        "title": "Will CPI rise more than 0.3% in July 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999978875452975,
-        "confidence": 0.85,
-        "market_price": 0.34,
-        "price_gap": 0.4199989437726487,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:38"
-      },
-      {
-        "ticker": "KXCPI-26JUL-T0.4",
-        "title": "Will CPI rise more than 0.4% in July 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9998408914098424,
-        "confidence": 0.85,
-        "market_price": 0.24,
-        "price_gap": 0.46992044570492125,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:38"
-      },
-      {
-        "ticker": "KXCPI-26JUL-T0.5",
-        "title": "Will CPI rise more than 0.5% in July 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9953388119762813,
-        "confidence": 0.85,
-        "market_price": 0.09,
-        "price_gap": 0.5426694059881407,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:38"
-      },
-      {
-        "ticker": "KXCPI-26AUG-T0.0",
-        "title": "Will CPI rise more than 0.0% in August 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999999999999852,
-        "confidence": 0.8359999999999839,
-        "market_price": 0.84,
-        "price_gap": 0.15999999999998527,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:38"
-      },
-      {
-        "ticker": "KXCPI-26AUG-T0.1",
-        "title": "Will CPI rise more than 0.1% in August 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999999999794421,
-        "confidence": 0.9019999999886933,
-        "market_price": 0.74,
-        "price_gap": 0.21999999998972106,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:37"
-      },
-      {
-        "ticker": "KXCPI-26AUG-T0.2",
-        "title": "Will CPI rise more than 0.2% in August 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999999892824097,
-        "confidence": 0.85,
-        "market_price": 0.53,
-        "price_gap": 0.3249999946412049,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:37"
-      },
-      {
-        "ticker": "KXCPI-26AUG-T0.3",
-        "title": "Will CPI rise more than 0.3% in August 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999978875452975,
-        "confidence": 0.85,
-        "market_price": 0.32,
-        "price_gap": 0.4299989437726487,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:37"
-      },
-      {
-        "ticker": "KXCPI-26AUG-T0.4",
-        "title": "Will CPI rise more than 0.4% in August 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9998408914098424,
-        "confidence": 0.85,
-        "market_price": 0.28,
-        "price_gap": 0.44992044570492123,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:37"
-      },
-      {
-        "ticker": "KXCPI-26AUG-T0.5",
-        "title": "Will CPI rise more than 0.5% in August 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9953388119762813,
-        "confidence": 0.85,
-        "market_price": 0.21,
-        "price_gap": 0.4826694059881406,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:37"
-      },
-      {
-        "ticker": "KXCPI-26SEP-T0.1",
-        "title": "Will CPI rise more than 0.1% in September 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999999999794421,
-        "confidence": 0.8634999999886932,
-        "market_price": 0.81,
-        "price_gap": 0.18499999998972103,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:37"
-      },
-      {
-        "ticker": "KXCPI-26SEP-T0.2",
-        "title": "Will CPI rise more than 0.2% in September 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999999892824097,
-        "confidence": 0.85,
-        "market_price": 0.61,
-        "price_gap": 0.28499999464120485,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:37"
-      },
-      {
-        "ticker": "KXCPI-26SEP-T0.3",
-        "title": "Will CPI rise more than 0.3% in September 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999978875452975,
-        "confidence": 0.85,
-        "market_price": 0.48,
-        "price_gap": 0.34999894377264873,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:37"
-      },
-      {
-        "ticker": "KXCPI-26SEP-T0.4",
-        "title": "Will CPI rise more than 0.4% in September 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9998408914098424,
-        "confidence": 0.85,
-        "market_price": 0.32,
-        "price_gap": 0.42992044570492116,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-02T08:29:37"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 2268,
+      "trades": 2301,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -882,89 +882,89 @@
   "ensemble": {
     "models": {
       "perplexity": {
-        "analyses": 5,
-        "avg_probability": 0.198
+        "analyses": 0,
+        "avg_probability": 0
       },
       "claude": {
-        "analyses": 6,
-        "avg_probability": 0.26166666666666666
+        "analyses": 8,
+        "avg_probability": 0.425
       },
       "deepseek": {
-        "analyses": 15,
-        "avg_probability": 0.6799999999999999
+        "analyses": 20,
+        "avg_probability": 0.7555
       }
     },
-    "consensus_rate": 0.4,
+    "consensus_rate": 0.6,
     "recent_votes": [
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-04-02T08:33:00"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": 0.85,
-        "consensus": false,
-        "time": "2026-04-02T08:32:58"
-      },
-      {
-        "perplexity": 0.01,
-        "claude": null,
-        "deepseek": null,
-        "consensus": false,
-        "time": "2026-04-02T08:32:58"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.35,
-        "deepseek": 0.85,
-        "consensus": false,
-        "time": "2026-04-02T08:32:56"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.12,
-        "deepseek": 0.04,
-        "consensus": false,
-        "time": "2026-04-02T08:32:53"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.15,
-        "deepseek": 0.85,
-        "consensus": false,
-        "time": "2026-04-02T08:32:53"
-      },
-      {
-        "perplexity": 0.0,
-        "claude": null,
-        "deepseek": null,
-        "consensus": false,
-        "time": "2026-04-02T08:32:53"
-      },
       {
         "perplexity": null,
         "claude": 0.35,
         "deepseek": 0.45,
         "consensus": false,
-        "time": "2026-04-02T08:32:51"
+        "time": "2026-04-02T08:38:19"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-04-02T08:32:51"
+        "time": "2026-04-02T08:38:19"
       },
       {
-        "perplexity": 0.02,
+        "perplexity": null,
         "claude": null,
-        "deepseek": null,
+        "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-04-02T08:32:51"
+        "time": "2026-04-02T08:38:17"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.85,
+        "consensus": true,
+        "time": "2026-04-02T08:38:15"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.35,
+        "deepseek": 0.48,
+        "consensus": false,
+        "time": "2026-04-02T08:38:13"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.75,
+        "consensus": true,
+        "time": "2026-04-02T08:38:13"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.85,
+        "consensus": true,
+        "time": "2026-04-02T08:38:11"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.85,
+        "consensus": true,
+        "time": "2026-04-02T08:38:09"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.78,
+        "consensus": true,
+        "time": "2026-04-02T08:38:07"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.75,
+        "consensus": true,
+        "time": "2026-04-02T08:38:05"
       }
     ]
   },
@@ -1055,64 +1055,64 @@
   ],
   "news": [
     {
+      "text": "Polymarket shows 99.5-100% probability for 59\u00b0F or below, aligned with NWS forecast of upper 40s to mid-50s high under cloudy skies and cool air mass; current morning lows near 40\u00b0F with overcast cond",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-02T08:37:20"
+    },
+    {
+      "text": "March 2026 climate summary from NWS shows Chicago average high of 54.9\u00b0F, 7.9\u00b0F above normal, with record highs of 73\u00b0F on Mar 9 and 81\u00b0F on Mar 30; AccuWeather forecast listed 48\u00b0 high on Mar 28; Wea",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-02T08:36:38"
+    },
+    {
       "text": "Actual recorded high temperature in NYC on March 29, 2026, was 52\u00b0F at Central Park (official climatological station) and LaGuardia Airport, per Polymarket resolution, Weather Underground, and Weather",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T08:32:58"
+      "time": "2026-04-02T08:36:31"
     },
     {
       "text": "Official observations from Miami International Airport (KMIA) confirm the highest temperature on March 29, 2026, was 78\u00b0F at 1:53 PM, amid cloudy skies, rain, and winds, 4\u00b0F below the 82\u00b0F climatologi",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T08:32:53"
+      "time": "2026-04-02T08:36:22"
     },
     {
       "text": "Forecasts for March 28, 2026, in Chicago show temperatures far below 49-50\u00b0F: YouTube short predicts sunny 5\u00b0C (41\u00b0F)[1]; WeatherShogun forecasts day high 52\u00b0F (close but slightly above, night 34\u00b0F, 2",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T08:32:51"
+      "time": "2026-04-02T08:36:20"
     },
     {
       "text": "National Weather Service official preliminary climate summary confirms maximum high temperature of 45\u00b0F at O'Hare (KORD) on March 27, 2026[1][5]. Polymarket consensus at 100% for 44-45\u00b0F, aligning wit",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T08:32:47"
+      "time": "2026-04-02T08:36:15"
     },
     {
       "text": "Forecasts for March 28, 2026, in Austin, TX: Weathershogun predicts day high of 72-73\u00b0F[2]; AccuWeather March 2026 monthly shows highs mostly 74-89\u00b0F, with one day at 68\u00b0F but no specific for Mar 28[3",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T08:32:43"
+      "time": "2026-04-02T08:36:09"
     },
     {
       "text": "Official observations from Miami International Airport (KMIA) via National Weather Service and Weather Underground confirm a peak temperature of 84\u00b0F on March 28, 2026. The Polymarket for this event h",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T08:32:27"
+      "time": "2026-04-02T08:35:53"
     },
     {
       "text": "Official National Weather Service observations from Central Park recorded a maximum temperature of 43\u00b0F on March 28, 2026, at 3:51 PM[1]. Polymarket market for highest temperature resolved to 42-43\u00b0F ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T08:32:24"
+      "time": "2026-04-02T08:35:50"
     },
     {
       "text": "Official observations from Miami International Airport (KMIA) confirm a peak temperature of 84\u00b0F on March 28, 2026, as reported by National Weather Service and Weather Underground data[1][2]. Polymark",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T08:32:21"
-    },
-    {
-      "text": "Multiple weather data sources confirm that the high temperature in NYC on March 27, 2026 was approximately 52-65\u00b0F, well below the 69\u00b0F threshold. Weather Underground historical data shows a high of 5",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-02T08:32:19"
-    },
-    {
-      "text": "A YouTube forecast predicts overcast conditions with 1\u00b0C (34\u00b0F) high on March 27, 2026, in Chicago[1]. AccuWeather forecasts a high of 44\u00b0F exactly for March 27[6]. Weather25.com indicates March avera",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-02T08:32:03"
+      "time": "2026-04-02T08:35:48"
     }
   ],
   "alerts": [],
@@ -1120,6 +1120,6 @@
     "ollama": "ok",
     "errors_24h": 0,
     "cycles": 1,
-    "uptime_hours": 0.9
+    "uptime_hours": 1.0
   }
 }
