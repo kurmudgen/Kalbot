@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T10:08:14.073310+00:00",
+  "updated_at": "2026-04-02T10:11:38.914139+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-02T10:08:14.073310+00:00",
+    "last_updated": "2026-04-02T10:11:38.914139+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -93,7 +93,7 @@
       },
       {
         "date": "2026-04-02",
-        "trades": 7910,
+        "trades": 7916,
         "deployed": 0
       }
     ],
@@ -110,6 +110,96 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHCHI-26MAR28-B49.5",
+        "title": "Will the high temp in Chicago be 49-50\u00b0 on Mar 28, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.029237257186135037,
+        "confidence": 0.7699999999999999,
+        "market_price": 0.04,
+        "price_gap": 0.010762742813864964,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Forecasts for March 28, 2026, in Chicago show temperatures far below 49-50\u00b0F: YouTube short predicts sunny 5\u00b0C (41\u00b0F)[1]; WeatherShogun forecasts day high 52\u00b0F (close but slightly above, night 34\u00b0F, 2",
+        "category": "weather",
+        "time": "2026-04-02T10:10:09"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR28-B49.5",
+        "title": "Will the high temp in Chicago be 49-50\u00b0 on Mar 28, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.029237257186135037,
+        "confidence": 0.7699999999999999,
+        "market_price": 0.04,
+        "price_gap": 0.010762742813864964,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Forecasts for March 28, 2026, in Chicago show temperatures far below 49-50\u00b0F: YouTube short predicts sunny 5\u00b0C (41\u00b0F)[1]; WeatherShogun forecasts day high 52\u00b0F (close but slightly above, night 34\u00b0F, 2",
+        "category": "weather",
+        "time": "2026-04-02T10:09:51"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR28-B49.5",
+        "title": "Will the high temp in Chicago be 49-50\u00b0 on Mar 28, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.029237257186135037,
+        "confidence": 0.7699999999999999,
+        "market_price": 0.04,
+        "price_gap": 0.010762742813864964,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Forecasts for March 28, 2026, in Chicago show temperatures far below 49-50\u00b0F: YouTube short predicts sunny 5\u00b0C (41\u00b0F)[1]; WeatherShogun forecasts day high 52\u00b0F (close but slightly above, night 34\u00b0F, 2",
+        "category": "weather",
+        "time": "2026-04-02T10:08:29"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR27-T44",
+        "title": "Will the high temp in Chicago be >44\u00b0 on Mar 27, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.45136736956374013,
+        "confidence": 0.6675,
+        "market_price": 0.25,
+        "price_gap": 0.20136736956374013,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "A YouTube forecast predicts overcast conditions with 1\u00b0C (34\u00b0F) high on March 27, 2026, in Chicago[1]. AccuWeather forecasts a high of 44\u00b0F exactly for March 27[6]. Weather25.com indicates March avera",
+        "category": "weather",
+        "time": "2026-04-02T10:08:29"
+      },
+      {
+        "ticker": "KXHIGHMIA-26MAR27-B83.5",
+        "title": "Will the **high temp in Miami** be 83-84\u00b0 on Mar 27, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5450285790209984,
+        "confidence": 0.8075,
+        "market_price": 0.6,
+        "price_gap": 0.05497142097900154,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Polymarket market for Miami high temp on Mar 27, 2026, shows significant trading volume ($118.7K) but no specific outcome prices listed; related Mar 28 market resolved at 84\u00b0F (100% for 84-85\u00b0F bin)[1",
+        "category": "weather",
+        "time": "2026-04-02T10:08:29"
+      },
+      {
+        "ticker": "KXHIGHCHI-26MAR26-B79.5",
+        "title": "Will the high temp in Chicago be 79-80\u00b0 on Mar 26, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 1.0,
+        "market_price": 0.03,
+        "price_gap": 0.014258807335888784,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Polymarket market has resolved with 100% probability on 66-67\u00b0F high temperature at Chicago's O'Hare on March 26, 2026, based on official NWS observations[1]. Weather history sites confirm the high wa",
+        "category": "weather",
+        "time": "2026-04-02T10:08:28"
+      },
       {
         "ticker": "KXGDP-26APR30-T2.0",
         "title": "Will **real GDP** increase by more than 2.0% in Q1 2026?",
@@ -769,102 +859,12 @@
         "reasoning": "CME FedWatch: cut=0.04, hold=0.968 \u2192 prob=0.97",
         "category": "economics",
         "time": "2026-04-02T10:07:41"
-      },
-      {
-        "ticker": "KXFED-26DEC-T4.50",
-        "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.968,
-        "confidence": 0.85,
-        "market_price": 0.2,
-        "price_gap": 0.47400000000000003,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.968 \u2192 prob=0.97",
-        "category": "economics",
-        "time": "2026-04-02T10:07:41"
-      },
-      {
-        "ticker": "KXFED-26DEC-T4.75",
-        "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.968,
-        "confidence": 0.85,
-        "market_price": 0.12,
-        "price_gap": 0.514,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.968 \u2192 prob=0.97",
-        "category": "economics",
-        "time": "2026-04-02T10:07:41"
-      },
-      {
-        "ticker": "KXFED-26DEC-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.968,
-        "confidence": 0.85,
-        "market_price": 0.08,
-        "price_gap": 0.534,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.968 \u2192 prob=0.97",
-        "category": "economics",
-        "time": "2026-04-02T10:07:41"
-      },
-      {
-        "ticker": "KXFED-26DEC-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.968,
-        "confidence": 0.85,
-        "market_price": 0.02,
-        "price_gap": 0.5640000000000001,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.968 \u2192 prob=0.97",
-        "category": "economics",
-        "time": "2026-04-02T10:07:41"
-      },
-      {
-        "ticker": "KXFED-27JAN-T0.00",
-        "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.968,
-        "confidence": 0.849,
-        "market_price": 0.65,
-        "price_gap": 0.24899999999999997,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.968 \u2192 prob=0.97",
-        "category": "economics",
-        "time": "2026-04-02T10:07:41"
-      },
-      {
-        "ticker": "KXFED-27JAN-T0.25",
-        "title": "Will the upper bound of the federal funds rate be above 0.25% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.968,
-        "confidence": 0.85,
-        "market_price": 0.53,
-        "price_gap": 0.30899999999999994,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.04, hold=0.968 \u2192 prob=0.97",
-        "category": "economics",
-        "time": "2026-04-02T10:07:41"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 2862,
+      "trades": 2867,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -874,7 +874,7 @@
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1057,
+      "trades": 1058,
       "executed": 2,
       "deployed": 2.42
     }
@@ -901,63 +901,63 @@
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-02T10:07:53"
+        "time": "2026-04-02T10:09:50"
       },
       {
         "perplexity": 0.0,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-02T10:07:48"
+        "time": "2026-04-02T10:09:46"
       },
       {
         "perplexity": 0.02,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-02T10:07:46"
+        "time": "2026-04-02T10:09:44"
       },
       {
         "perplexity": 0.93,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-02T10:07:42"
+        "time": "2026-04-02T10:09:39"
       },
       {
         "perplexity": 0.03,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-02T10:07:38"
+        "time": "2026-04-02T10:09:35"
       },
       {
         "perplexity": 0.0,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-02T10:07:21"
+        "time": "2026-04-02T10:09:20"
       },
       {
         "perplexity": 0.0,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-02T10:07:19"
+        "time": "2026-04-02T10:09:18"
       },
       {
         "perplexity": 0.0,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-02T10:07:17"
+        "time": "2026-04-02T10:09:05"
       },
       {
         "perplexity": 0.02,
         "claude": null,
         "deepseek": null,
         "consensus": false,
-        "time": "2026-04-02T10:07:15"
+        "time": "2026-04-02T10:09:02"
       },
       {
         "perplexity": 0.48,
@@ -1058,61 +1058,61 @@
       "text": "Actual recorded high temperature in NYC on March 29, 2026, was 52\u00b0F at Central Park (official climatological station) and LaGuardia Airport, per Polymarket resolution, Weather Underground, and Weather",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T10:07:53"
+      "time": "2026-04-02T10:09:50"
     },
     {
       "text": "Official observations from Miami International Airport (KMIA) confirm the highest temperature on March 29, 2026, was 78\u00b0F at 1:53 PM, amid cloudy skies, rain, and winds, 4\u00b0F below the 82\u00b0F climatologi",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T10:07:48"
+      "time": "2026-04-02T10:09:46"
     },
     {
       "text": "Forecasts for March 28, 2026, in Chicago show temperatures far below 49-50\u00b0F: YouTube short predicts sunny 5\u00b0C (41\u00b0F)[1]; WeatherShogun forecasts day high 52\u00b0F (close but slightly above, night 34\u00b0F, 2",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T10:07:46"
+      "time": "2026-04-02T10:09:44"
+    },
+    {
+      "text": "Actual recorded high temperature in NYC on March 29, 2026, was 52\u00b0F at Central Park (official climatological station) and LaGuardia Airport, per Polymarket resolution, Weather Underground, and Weather",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-02T10:09:42"
     },
     {
       "text": "National Weather Service official preliminary climate summary confirms maximum high temperature of 45\u00b0F at O'Hare (KORD) on March 27, 2026[1][5]. Polymarket consensus at 100% for 44-45\u00b0F, aligning wit",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T10:07:42"
+      "time": "2026-04-02T10:09:39"
+    },
+    {
+      "text": "Official observations from Miami International Airport (KMIA) confirm the highest temperature on March 29, 2026, was 78\u00b0F at 1:53 PM, amid cloudy skies, rain, and winds, 4\u00b0F below the 82\u00b0F climatologi",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-02T10:09:36"
     },
     {
       "text": "Forecasts for March 28, 2026, in Austin, TX: Weathershogun predicts day high of 72-73\u00b0F[2]; AccuWeather March 2026 monthly shows highs mostly 74-89\u00b0F, with one day at 68\u00b0F but no specific for Mar 28[3",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T10:07:38"
+      "time": "2026-04-02T10:09:35"
     },
     {
-      "text": "Official observations from Miami International Airport (KMIA) via National Weather Service and Weather Underground confirm a peak temperature of 84\u00b0F on March 28, 2026. The Polymarket for this event h",
+      "text": "Forecasts for March 28, 2026, in Chicago show temperatures far below 49-50\u00b0F: YouTube short predicts sunny 5\u00b0C (41\u00b0F)[1]; WeatherShogun forecasts day high 52\u00b0F (close but slightly above, night 34\u00b0F, 2",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T10:07:21"
+      "time": "2026-04-02T10:09:34"
     },
     {
-      "text": "Official National Weather Service observations from Central Park recorded a maximum temperature of 43\u00b0F on March 28, 2026, at 3:51 PM[1]. Polymarket market for highest temperature resolved to 42-43\u00b0F ",
+      "text": "National Weather Service official preliminary climate summary confirms maximum high temperature of 45\u00b0F at O'Hare (KORD) on March 27, 2026[1][5]. Polymarket consensus at 100% for 44-45\u00b0F, aligning wit",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T10:07:19"
+      "time": "2026-04-02T10:09:30"
     },
     {
-      "text": "Official observations from Miami International Airport (KMIA) confirm a peak temperature of 84\u00b0F on March 28, 2026, as reported by National Weather Service and Weather Underground data[1][2]. Polymark",
+      "text": "Forecasts for March 28, 2026, in Austin, TX: Weathershogun predicts day high of 72-73\u00b0F[2]; AccuWeather March 2026 monthly shows highs mostly 74-89\u00b0F, with one day at 68\u00b0F but no specific for Mar 28[3",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-02T10:07:17"
-    },
-    {
-      "text": "Multiple weather data sources confirm that the high temperature in NYC on March 27, 2026 was approximately 52-65\u00b0F, well below the 69\u00b0F threshold. Weather Underground historical data shows a high of 5",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-02T10:07:15"
-    },
-    {
-      "text": "A YouTube forecast predicts overcast conditions with 1\u00b0C (34\u00b0F) high on March 27, 2026, in Chicago[1]. AccuWeather forecasts a high of 44\u00b0F exactly for March 27[6]. Weather25.com indicates March avera",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-02T10:06:59"
+      "time": "2026-04-02T10:09:25"
     }
   ],
   "alerts": [],
@@ -1120,6 +1120,6 @@
     "ollama": "ok",
     "errors_24h": 0,
     "cycles": 6,
-    "uptime_hours": 2.5
+    "uptime_hours": 2.6
   }
 }
