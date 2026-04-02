@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T23:27:21.850104+00:00",
+  "updated_at": "2026-04-02T23:28:11.342482+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-02T23:27:21.850104+00:00",
+    "last_updated": "2026-04-02T23:28:11.342482+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -901,7 +901,7 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-02T23:24:26"
+        "time": "2026-04-02T23:28:06"
       },
       {
         "perplexity": 0.01,
@@ -1120,6 +1120,6 @@
     "ollama": "ok",
     "errors_24h": 0,
     "cycles": 12,
-    "uptime_hours": 3.0
+    "uptime_hours": 3.1
   }
 }
