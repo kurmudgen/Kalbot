@@ -9,25 +9,25 @@ from datetime import datetime
 # Monthly forecast accuracy multipliers (based on NOAA verification data)
 # Higher = more predictable = more confident
 SEASONAL_ACCURACY = {
-    1: 0.85,   # January — cold, stable patterns
-    2: 0.85,   # February — cold, stable
-    3: 0.75,   # March — transition, unpredictable
-    4: 0.70,   # April — spring storms, volatile
-    5: 0.80,   # May — settling into summer
-    6: 0.90,   # June — summer, very predictable
-    7: 0.95,   # July — peak summer, most predictable
-    8: 0.95,   # August — peak summer
-    9: 0.85,   # September — early fall
-    10: 0.75,  # October — fall transition
-    11: 0.80,  # November — settling into winter
-    12: 0.85,  # December — winter, stable
+    1: 0.95,   # January — cold, stable patterns
+    2: 0.95,   # February — cold, stable
+    3: 0.90,   # March — transition, moderate haircut
+    4: 0.88,   # April — spring storms, slight haircut
+    5: 0.92,   # May — settling into summer
+    6: 0.98,   # June — summer, very predictable
+    7: 1.00,   # July — peak summer, no haircut
+    8: 1.00,   # August — peak summer
+    9: 0.95,   # September — early fall
+    10: 0.90,  # October — fall transition
+    11: 0.92,  # November — settling into winter
+    12: 0.95,  # December — winter, stable
 }
 
-# City-specific adjustments
+# City-specific adjustments (modest reductions, not confidence-killing)
 CITY_SEASONAL = {
-    "denver": {3: 0.60, 4: 0.55, 10: 0.60},   # Mountain weather is wild in transitions
-    "chicago": {3: 0.65, 11: 0.70},              # Lake effect makes fall/spring hard
-    "miami": {6: 0.80, 7: 0.80, 8: 0.80, 9: 0.75, 10: 0.75},  # Hurricane season
+    "denver": {3: 0.85, 4: 0.82, 10: 0.85},   # Mountain transitions
+    "chicago": {3: 0.87, 11: 0.90},              # Lake effect
+    "miami": {6: 0.92, 7: 0.92, 8: 0.92, 9: 0.90, 10: 0.90},  # Hurricane season
 }
 
 
