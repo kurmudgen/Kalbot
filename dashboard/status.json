@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-03T21:58:05.205411+00:00",
+  "updated_at": "2026-04-03T22:17:58.467208+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-03T21:58:05.205411+00:00",
+    "last_updated": "2026-04-03T22:17:58.467208+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -98,7 +98,7 @@
       },
       {
         "date": "2026-04-03",
-        "trades": 9846,
+        "trades": 10090,
         "deployed": 0
       }
     ],
@@ -116,6 +116,306 @@
     "skipped": 50,
     "recent": [
       {
+        "ticker": "KXHIGHMIA-26APR04-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2463417714505888,
+        "confidence": 0.680390243902439,
+        "market_price": 0.04,
+        "price_gap": 0.2063417714505888,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
+        "category": "weather",
+        "time": "2026-04-03T22:17:58"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR04-T75",
+        "title": "Will the **high temp in NYC** be >75\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.26136087604995223,
+        "confidence": 0.616,
+        "market_price": 0.03,
+        "price_gap": 0.23136087604995223,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
+        "category": "weather",
+        "time": "2026-04-03T22:17:58"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.10962766827988162,
+        "confidence": 0.6776000000000002,
+        "market_price": 0.13,
+        "price_gap": 0.02037233172011839,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
+        "category": "weather",
+        "time": "2026-04-03T22:17:58"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T78",
+        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.13262475404712348,
+        "confidence": 0.6313488372093023,
+        "market_price": 0.03,
+        "price_gap": 0.10262475404712348,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
+        "category": "weather",
+        "time": "2026-04-03T22:17:58"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR03-B66.5",
+        "title": "Will the high temp in Chicago be 66-67\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.02336454714980007,
+        "confidence": 0.6776000000000002,
+        "market_price": 0.03,
+        "price_gap": 0.006635452850199928,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-03T22:17:57"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-B51.5",
+        "title": "Will the **high temp in Denver** be 51-52\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.14269609086347054,
+        "confidence": 0.6061102803738317,
+        "market_price": 0.17,
+        "price_gap": 0.02730390913652947,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-03T22:17:57"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3895133823737946,
+        "confidence": 0.6360701754385966,
+        "market_price": 0.07,
+        "price_gap": 0.3195133823737946,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-03T22:17:57"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR03-B62.5",
+        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5562395916987531,
+        "confidence": 0.6208440366972477,
+        "market_price": 0.9,
+        "price_gap": 0.3437604083012469,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-03T22:17:57"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B69.5",
+        "title": "Will the **high temp in NYC** be 69-70\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.13938974054075412,
+        "confidence": 0.6504598130841122,
+        "market_price": 0.14,
+        "price_gap": 0.0006102594592458932,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-03T22:17:57"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.33129880185352,
+        "confidence": 0.5913271028037382,
+        "market_price": 0.03,
+        "price_gap": 0.30129880185352,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-03T22:17:57"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2463417714505888,
+        "confidence": 0.680390243902439,
+        "market_price": 0.04,
+        "price_gap": 0.2063417714505888,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
+        "category": "weather",
+        "time": "2026-04-03T22:15:16"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR04-T75",
+        "title": "Will the **high temp in NYC** be >75\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.26136087604995223,
+        "confidence": 0.616,
+        "market_price": 0.03,
+        "price_gap": 0.23136087604995223,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6",
+        "category": "weather",
+        "time": "2026-04-03T22:15:16"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.10962766827988162,
+        "confidence": 0.6776000000000002,
+        "market_price": 0.13,
+        "price_gap": 0.02037233172011839,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6",
+        "category": "weather",
+        "time": "2026-04-03T22:15:16"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T78",
+        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.13262475404712348,
+        "confidence": 0.6313488372093023,
+        "market_price": 0.03,
+        "price_gap": 0.10262475404712348,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
+        "category": "weather",
+        "time": "2026-04-03T22:15:16"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR03-B66.5",
+        "title": "Will the high temp in Chicago be 66-67\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.02336454714980007,
+        "confidence": 0.6776000000000002,
+        "market_price": 0.03,
+        "price_gap": 0.006635452850199928,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-04-03T22:15:16"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-B51.5",
+        "title": "Will the **high temp in Denver** be 51-52\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.14269609086347054,
+        "confidence": 0.6061102803738317,
+        "market_price": 0.17,
+        "price_gap": 0.02730390913652947,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-04-03T22:15:16"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3895133823737946,
+        "confidence": 0.6360701754385966,
+        "market_price": 0.07,
+        "price_gap": 0.3195133823737946,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-04-03T22:15:16"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR03-B62.5",
+        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5562395916987531,
+        "confidence": 0.6208440366972477,
+        "market_price": 0.9,
+        "price_gap": 0.3437604083012469,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-04-03T22:15:16"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B69.5",
+        "title": "Will the **high temp in NYC** be 69-70\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.13938974054075412,
+        "confidence": 0.6504598130841122,
+        "market_price": 0.14,
+        "price_gap": 0.0006102594592458932,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-04-03T22:15:15"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.33129880185352,
+        "confidence": 0.5913271028037382,
+        "market_price": 0.03,
+        "price_gap": 0.30129880185352,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "No real-time research available.",
+        "category": "weather",
+        "time": "2026-04-03T22:15:15"
+      },
+      {
         "ticker": "KXGDP-26APR30-T1.5",
         "title": "Will **real GDP** increase by more than 1.5% in Q1 2026?",
         "side": "NO",
@@ -128,7 +428,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXGDP-26APR30-T2.0",
@@ -143,7 +443,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXGDP-26APR30-T2.5",
@@ -158,7 +458,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXGDP-26APR30-T3.0",
@@ -173,7 +473,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXGDP-26JUL30-T1.5",
@@ -188,7 +488,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.0",
@@ -203,7 +503,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.5",
@@ -218,7 +518,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXFED-26JUL-T5.00",
@@ -233,7 +533,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXFED-26JUL-T5.25",
@@ -248,7 +548,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXFED-26JUN-T3.75",
@@ -263,7 +563,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXFED-26JUN-T4.00",
@@ -278,7 +578,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXFED-26JUN-T4.25",
@@ -293,7 +593,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXFED-26JUN-T4.50",
@@ -308,7 +608,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:55"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXFED-26JUN-T4.75",
@@ -323,7 +623,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXFED-26JUN-T5.00",
@@ -338,7 +638,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:21"
       },
       {
         "ticker": "KXFED-26JUN-T5.25",
@@ -353,7 +653,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T2.75",
@@ -368,7 +668,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T3.00",
@@ -383,7 +683,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T3.25",
@@ -392,13 +692,13 @@
         "amount": 0.0,
         "probability": 0.941,
         "confidence": 0.85,
-        "market_price": 0.51,
-        "price_gap": 0.3055,
+        "market_price": 0.5,
+        "price_gap": 0.3105,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T3.50",
@@ -407,13 +707,13 @@
         "amount": 0.0,
         "probability": 0.941,
         "confidence": 0.85,
-        "market_price": 0.26,
-        "price_gap": 0.43049999999999994,
+        "market_price": 0.3,
+        "price_gap": 0.4105,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T3.75",
@@ -422,13 +722,13 @@
         "amount": 0.0,
         "probability": 0.941,
         "confidence": 0.85,
-        "market_price": 0.12,
-        "price_gap": 0.5005,
+        "market_price": 0.14,
+        "price_gap": 0.4905,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T4.00",
@@ -443,7 +743,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T4.25",
@@ -458,7 +758,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T4.50",
@@ -473,7 +773,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T4.75",
@@ -488,7 +788,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T5.00",
@@ -503,7 +803,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26SEP-T5.25",
@@ -518,7 +818,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26OCT-T2.75",
@@ -533,7 +833,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26OCT-T3.00",
@@ -548,7 +848,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
+        "time": "2026-04-03T22:07:20"
       },
       {
         "ticker": "KXFED-26OCT-T3.25",
@@ -563,323 +863,23 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T21:52:54"
-      },
-      {
-        "ticker": "KXFED-26OCT-T3.50",
-        "title": "Will the upper bound of the federal funds rate be above 3.50% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.42,
-        "price_gap": 0.3504999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:54"
-      },
-      {
-        "ticker": "KXFED-26OCT-T3.75",
-        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.35,
-        "price_gap": 0.38549999999999995,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:54"
-      },
-      {
-        "ticker": "KXFED-26OCT-T4.00",
-        "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.04,
-        "price_gap": 0.5405,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:54"
-      },
-      {
-        "ticker": "KXFED-26OCT-T4.25",
-        "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.02,
-        "price_gap": 0.5505,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:54"
-      },
-      {
-        "ticker": "KXFED-26OCT-T4.50",
-        "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.02,
-        "price_gap": 0.5505,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:54"
-      },
-      {
-        "ticker": "KXFED-26OCT-T4.75",
-        "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.17,
-        "price_gap": 0.4755,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:54"
-      },
-      {
-        "ticker": "KXFED-26OCT-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.05,
-        "price_gap": 0.5354999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:54"
-      },
-      {
-        "ticker": "KXFED-26OCT-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.48,
-        "price_gap": 0.3205,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T2.75",
-        "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8404999999999999,
-        "market_price": 0.64,
-        "price_gap": 0.24049999999999996,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T3.00",
-        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8454999999999999,
-        "market_price": 0.63,
-        "price_gap": 0.24549999999999997,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T3.25",
-        "title": "Will the upper bound of the federal funds rate be above 3.25% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.57,
-        "price_gap": 0.27549999999999997,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T3.50",
-        "title": "Will the upper bound of the federal funds rate be above 3.50% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.57,
-        "price_gap": 0.27549999999999997,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T3.75",
-        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.12,
-        "price_gap": 0.5005,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T4.00",
-        "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.28,
-        "price_gap": 0.4205,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T4.25",
-        "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.31,
-        "price_gap": 0.40549999999999997,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T4.50",
-        "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.2,
-        "price_gap": 0.46049999999999996,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T4.75",
-        "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.12,
-        "price_gap": 0.5005,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.08,
-        "price_gap": 0.5205,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-26DEC-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.02,
-        "price_gap": 0.5505,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
-      },
-      {
-        "ticker": "KXFED-27JAN-T0.00",
-        "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8261,
-        "market_price": 0.79,
-        "price_gap": 0.1509999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T21:52:53"
+        "time": "2026-04-03T22:07:20"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 3091,
+      "trades": 3101,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
     "QUANT": {
-      "trades": 82287,
+      "trades": 82510,
       "executed": 258,
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1283,
+      "trades": 1294,
       "executed": 2,
       "deployed": 2.42
     }
@@ -887,89 +887,89 @@
   "ensemble": {
     "models": {
       "perplexity": {
-        "analyses": 0,
-        "avg_probability": 0
+        "analyses": 1,
+        "avg_probability": 0.02
       },
       "claude": {
-        "analyses": 17,
-        "avg_probability": 0.2011764705882353
+        "analyses": 19,
+        "avg_probability": 0.17105263157894737
       },
       "deepseek": {
         "analyses": 20,
-        "avg_probability": 0.40650000000000003
+        "avg_probability": 0.0975
       }
     },
-    "consensus_rate": 0.45,
+    "consensus_rate": 0.15,
     "recent_votes": [
       {
         "perplexity": null,
+        "claude": 0.15,
+        "deepseek": 0.02,
+        "consensus": false,
+        "time": "2026-04-03T22:17:55"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.15,
+        "deepseek": 0.02,
+        "consensus": true,
+        "time": "2026-04-03T22:17:53"
+      },
+      {
+        "perplexity": 0.02,
+        "claude": 0.15,
+        "deepseek": 0.02,
+        "consensus": false,
+        "time": "2026-04-03T22:17:51"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.12,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-04-03T22:17:48"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.11,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-04-03T22:17:48"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.14,
+        "deepseek": 0.08,
+        "consensus": false,
+        "time": "2026-04-03T22:17:48"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.15,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-04-03T22:17:48"
+      },
+      {
+        "perplexity": null,
         "claude": 0.25,
-        "deepseek": 0.25,
+        "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-04-03T10:22:39"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.08,
-        "deepseek": 0.15,
-        "consensus": true,
-        "time": "2026-04-03T10:22:37"
+        "time": "2026-04-03T22:17:48"
       },
       {
         "perplexity": null,
         "claude": 0.12,
-        "deepseek": 0.05,
-        "consensus": true,
-        "time": "2026-04-03T10:22:37"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": 0.05,
-        "consensus": true,
-        "time": "2026-04-03T10:22:37"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.15,
-        "deepseek": 0.65,
-        "consensus": true,
-        "time": "2026-04-03T10:12:06"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.15,
-        "deepseek": 0.85,
-        "consensus": false,
-        "time": "2026-04-03T10:12:04"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.15,
         "deepseek": 0.15,
-        "consensus": true,
-        "time": "2026-04-03T10:12:02"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.15,
-        "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-04-03T10:12:00"
+        "time": "2026-04-03T22:17:46"
       },
       {
         "perplexity": null,
-        "claude": null,
+        "claude": 0.18,
         "deepseek": 0.15,
-        "consensus": true,
-        "time": "2026-04-03T10:11:57"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.12,
-        "deepseek": 0.05,
         "consensus": false,
-        "time": "2026-04-03T10:11:56"
+        "time": "2026-04-03T22:17:46"
       }
     ]
   },
@@ -1060,6 +1060,30 @@
   ],
   "news": [
     {
+      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-03T22:17:51"
+    },
+    {
+      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-03T22:17:31"
+    },
+    {
+      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-03T22:14:34"
+    },
+    {
+      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-03T22:11:29"
+    },
+    {
       "text": "Polymarket prediction markets show 84-85\u00b0F at 11-18% implied probability across multiple snapshots. National Weather Service forecasts a high near 81\u00b0F for Miami International Airport on April 3 under",
       "category": "weather",
       "source": "perplexity",
@@ -1094,43 +1118,13 @@
       "category": "weather",
       "source": "perplexity",
       "time": "2026-04-03T08:12:10"
-    },
-    {
-      "text": "AccuWeather's March 2026 forecast for Austin shows the high temperature on March 28 at 90\u00b0[3]. Robinhood prediction market data indicates market participants are pricing odds for temperatures >69\u00b0 at ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T08:11:52"
-    },
-    {
-      "text": "Polymarket market resolved to 84-85\u00b0F with 100% probability based on official KMIA observation of peak 84\u00b0F on March 28, 2026[1]. Pre-event NWS forecast projected 84\u00b0F[1]. AccuWeather forecast showed ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T08:11:49"
-    },
-    {
-      "text": "Official National Weather Service observations from Central Park ASOS station recorded a maximum temperature of 43\u00b0F at 3:51 PM on March 28, 2026, with hourly readings from 38\u00b0F at noon to 41\u00b0F early ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T08:11:47"
-    },
-    {
-      "text": "Polymarket market resolved with 100% probability on 84-85\u00b0F high temp in Miami on March 28, 2026, based on official KMIA observations of 84\u00b0F[1]. Robinhood market closed with >84 outcomes favored[2]. ",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T08:11:45"
     }
   ],
-  "alerts": [
-    {
-      "level": "warning",
-      "message": "18 API retries this session",
-      "detail": "18 non-fatal exceptions across 65 cycles (~0.3/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
-    }
-  ],
+  "alerts": [],
   "system": {
     "ollama": "ok",
-    "errors_24h": 18,
-    "cycles": 65,
-    "uptime_hours": 13.9
+    "errors_24h": 0,
+    "cycles": 1,
+    "uptime_hours": 0.2
   }
 }
