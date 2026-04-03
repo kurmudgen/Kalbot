@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-03T00:17:04.885815+00:00",
+  "updated_at": "2026-04-03T00:19:49.152436+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-03T00:17:04.885815+00:00",
+    "last_updated": "2026-04-03T00:19:49.152436+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -98,7 +98,7 @@
       },
       {
         "date": "2026-04-03",
-        "trades": 575,
+        "trades": 662,
         "deployed": 0
       }
     ],
@@ -128,52 +128,7 @@
         "executed": false,
         "reasoning": "Fast path: local model high confidence on obvious market.",
         "category": "weather",
-        "time": "2026-04-03T00:16:40"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR03-B78.5",
-        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.95,
-        "confidence": 0.6649999999999999,
-        "market_price": 0.05,
-        "price_gap": 0.8999999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Fast path: local model high confidence on obvious market.",
-        "category": "weather",
-        "time": "2026-04-03T00:13:03"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR03-B78.5",
-        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.95,
-        "confidence": 0.6649999999999999,
-        "market_price": 0.05,
-        "price_gap": 0.8999999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Fast path: local model high confidence on obvious market.",
-        "category": "weather",
-        "time": "2026-04-03T00:12:34"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR03-B78.5",
-        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.95,
-        "confidence": 0.6649999999999999,
-        "market_price": 0.05,
-        "price_gap": 0.8999999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Fast path: local model high confidence on obvious market.",
-        "category": "weather",
-        "time": "2026-04-03T00:12:15"
+        "time": "2026-04-03T00:19:10"
       },
       {
         "ticker": "KXGDP-26APR30-T1.5",
@@ -188,7 +143,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXGDP-26APR30-T2.0",
@@ -203,7 +158,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXGDP-26APR30-T2.5",
@@ -218,7 +173,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXGDP-26APR30-T3.0",
@@ -233,7 +188,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.0",
@@ -248,7 +203,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.5",
@@ -263,7 +218,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26JUL-T5.00",
@@ -278,7 +233,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26JUL-T5.25",
@@ -293,7 +248,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26JUN-T3.75",
@@ -308,7 +263,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26JUN-T4.00",
@@ -323,7 +278,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26JUN-T4.25",
@@ -338,7 +293,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26JUN-T4.50",
@@ -353,7 +308,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26JUN-T4.75",
@@ -368,7 +323,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26JUN-T5.00",
@@ -383,7 +338,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26JUN-T5.25",
@@ -398,7 +353,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:41"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26SEP-T2.75",
@@ -413,7 +368,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:17"
       },
       {
         "ticker": "KXFED-26SEP-T3.00",
@@ -428,7 +383,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26SEP-T3.25",
@@ -443,7 +398,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26SEP-T3.50",
@@ -458,7 +413,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26SEP-T3.75",
@@ -473,7 +428,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26SEP-T4.00",
@@ -488,7 +443,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26SEP-T4.25",
@@ -503,7 +458,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26SEP-T4.50",
@@ -518,7 +473,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26SEP-T4.75",
@@ -533,7 +488,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26SEP-T5.00",
@@ -548,7 +503,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26SEP-T5.25",
@@ -563,7 +518,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T2.75",
@@ -578,7 +533,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T3.00",
@@ -593,7 +548,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T3.25",
@@ -608,7 +563,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T3.50",
@@ -623,7 +578,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T3.75",
@@ -638,7 +593,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T4.00",
@@ -653,7 +608,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T4.25",
@@ -668,7 +623,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T4.50",
@@ -683,7 +638,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T4.75",
@@ -698,7 +653,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T5.00",
@@ -713,7 +668,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:40"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26OCT-T5.25",
@@ -728,7 +683,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:39"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26DEC-T2.75",
@@ -743,7 +698,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:39"
+        "time": "2026-04-03T00:17:16"
       },
       {
         "ticker": "KXFED-26DEC-T3.00",
@@ -758,7 +713,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:39"
+        "time": "2026-04-03T00:17:15"
       },
       {
         "ticker": "KXFED-26DEC-T3.25",
@@ -773,7 +728,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:39"
+        "time": "2026-04-03T00:17:15"
       },
       {
         "ticker": "KXFED-26DEC-T3.50",
@@ -788,7 +743,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:39"
+        "time": "2026-04-03T00:17:15"
       },
       {
         "ticker": "KXFED-26DEC-T3.75",
@@ -803,7 +758,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:39"
+        "time": "2026-04-03T00:17:15"
       },
       {
         "ticker": "KXFED-26DEC-T4.00",
@@ -818,7 +773,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:39"
+        "time": "2026-04-03T00:17:15"
       },
       {
         "ticker": "KXFED-26DEC-T4.25",
@@ -833,7 +788,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:39"
+        "time": "2026-04-03T00:17:15"
       },
       {
         "ticker": "KXFED-26DEC-T4.50",
@@ -848,7 +803,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:39"
+        "time": "2026-04-03T00:17:15"
       },
       {
         "ticker": "KXFED-26DEC-T4.75",
@@ -863,7 +818,52 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-03T00:11:39"
+        "time": "2026-04-03T00:17:15"
+      },
+      {
+        "ticker": "KXFED-26DEC-T5.00",
+        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Dec 9, 2026 meeting?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.941,
+        "confidence": 0.85,
+        "market_price": 0.08,
+        "price_gap": 0.5205,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "category": "economics",
+        "time": "2026-04-03T00:17:15"
+      },
+      {
+        "ticker": "KXFED-26DEC-T5.25",
+        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Dec 9, 2026 meeting?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.941,
+        "confidence": 0.85,
+        "market_price": 0.02,
+        "price_gap": 0.5505,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "category": "economics",
+        "time": "2026-04-03T00:17:15"
+      },
+      {
+        "ticker": "KXFED-27JAN-T0.00",
+        "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Jan 27, 2027 meeting?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.941,
+        "confidence": 0.8354999999999999,
+        "market_price": 0.65,
+        "price_gap": 0.23549999999999996,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "category": "economics",
+        "time": "2026-04-03T00:17:15"
       }
     ]
   },
@@ -874,12 +874,12 @@
       "deployed": 3.1100000000000003
     },
     "QUANT": {
-      "trades": 73322,
+      "trades": 73408,
       "executed": 258,
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1251,
+      "trades": 1252,
       "executed": 2,
       "deployed": 2.42
     }
@@ -906,7 +906,7 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-03T00:16:26"
+        "time": "2026-04-03T00:18:50"
       },
       {
         "perplexity": 0.01,
@@ -975,9 +975,9 @@
   },
   "scanner": {
     "total_markets": 3930,
-    "with_prices": 1821,
+    "with_prices": 1822,
     "passed_filter": 377,
-    "total_scored": 781,
+    "total_scored": 782,
     "categories": {
       "economics": 2560,
       "energy": 245,
