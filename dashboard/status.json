@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-03T22:38:19.557241+00:00",
+  "updated_at": "2026-04-03T22:48:26.096546+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-03T22:38:19.557241+00:00",
+    "last_updated": "2026-04-03T22:48:26.096546+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -98,7 +98,7 @@
       },
       {
         "date": "2026-04-03",
-        "trades": 10297,
+        "trades": 10394,
         "deployed": 0
       }
     ],
@@ -128,7 +128,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
         "category": "weather",
-        "time": "2026-04-03T22:38:19"
+        "time": "2026-04-03T22:48:26"
       },
       {
         "ticker": "KXHIGHNY-26APR04-T75",
@@ -143,7 +143,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:38:19"
+        "time": "2026-04-03T22:48:25"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
@@ -158,7 +158,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:38:19"
+        "time": "2026-04-03T22:48:25"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T78",
@@ -173,7 +173,7 @@
         "executed": false,
         "reasoning": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
         "category": "weather",
-        "time": "2026-04-03T22:38:19"
+        "time": "2026-04-03T22:48:25"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B66.5",
@@ -188,7 +188,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:38:19"
+        "time": "2026-04-03T22:48:25"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B51.5",
@@ -203,7 +203,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:38:18"
+        "time": "2026-04-03T22:48:25"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
@@ -218,7 +218,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:38:18"
+        "time": "2026-04-03T22:48:25"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B62.5",
@@ -233,7 +233,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:38:18"
+        "time": "2026-04-03T22:48:25"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B69.5",
@@ -248,7 +248,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:38:18"
+        "time": "2026-04-03T22:48:25"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T72",
@@ -263,7 +263,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:38:18"
+        "time": "2026-04-03T22:48:24"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T85",
@@ -278,7 +278,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
         "category": "weather",
-        "time": "2026-04-03T22:35:46"
+        "time": "2026-04-03T22:45:51"
       },
       {
         "ticker": "KXHIGHNY-26APR04-T75",
@@ -293,7 +293,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:35:46"
+        "time": "2026-04-03T22:45:51"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
@@ -308,7 +308,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:35:46"
+        "time": "2026-04-03T22:45:50"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T78",
@@ -323,7 +323,7 @@
         "executed": false,
         "reasoning": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
         "category": "weather",
-        "time": "2026-04-03T22:35:46"
+        "time": "2026-04-03T22:45:50"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B66.5",
@@ -338,7 +338,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:35:46"
+        "time": "2026-04-03T22:45:50"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B51.5",
@@ -353,7 +353,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:35:45"
+        "time": "2026-04-03T22:45:50"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
@@ -368,7 +368,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:35:45"
+        "time": "2026-04-03T22:45:50"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B62.5",
@@ -383,7 +383,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:35:45"
+        "time": "2026-04-03T22:45:50"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B69.5",
@@ -398,7 +398,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:35:45"
+        "time": "2026-04-03T22:45:50"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T72",
@@ -413,7 +413,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T22:35:45"
+        "time": "2026-04-03T22:45:50"
       },
       {
         "ticker": "KXGDP-26APR30-T1.5",
@@ -428,7 +428,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXGDP-26APR30-T2.0",
@@ -443,7 +443,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXGDP-26APR30-T2.5",
@@ -458,7 +458,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXGDP-26APR30-T3.0",
@@ -473,7 +473,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXGDP-26JUL30-T1.5",
@@ -488,7 +488,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.0",
@@ -503,7 +503,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.5",
@@ -518,368 +518,368 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26JUL-T5.00",
         "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Jul 29, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.05,
-        "price_gap": 0.5354999999999999,
+        "price_gap": 0.4955,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26JUL-T5.25",
         "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Jul 29, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.05,
-        "price_gap": 0.5354999999999999,
+        "price_gap": 0.4955,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
+      },
+      {
+        "ticker": "KXFED-26JUN-T2.75",
+        "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Jun 17, 2026 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.861,
+        "confidence": 0.729,
+        "market_price": 0.99,
+        "price_gap": 0.129,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
+        "category": "economics",
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26JUN-T3.75",
         "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.11,
-        "price_gap": 0.5055000000000001,
+        "price_gap": 0.46549999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26JUN-T4.00",
         "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.01,
-        "price_gap": 0.5554999999999999,
+        "price_gap": 0.5155000000000001,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26JUN-T4.25",
         "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.04,
-        "price_gap": 0.5405,
+        "price_gap": 0.5005,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26JUN-T4.50",
         "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.01,
-        "price_gap": 0.5554999999999999,
+        "price_gap": 0.5155000000000001,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26JUN-T4.75",
         "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.03,
-        "price_gap": 0.5454999999999999,
+        "price_gap": 0.5055000000000001,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26JUN-T5.00",
         "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.03,
-        "price_gap": 0.5454999999999999,
+        "price_gap": 0.5055000000000001,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26JUN-T5.25",
         "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.07,
-        "price_gap": 0.5255000000000001,
+        "price_gap": 0.4855,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26SEP-T2.75",
         "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8105,
+        "probability": 0.861,
+        "confidence": 0.761,
         "market_price": 0.7,
-        "price_gap": 0.2105,
+        "price_gap": 0.16100000000000003,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:03"
       },
       {
         "ticker": "KXFED-26SEP-T3.00",
         "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8354999999999999,
-        "market_price": 0.65,
-        "price_gap": 0.23549999999999996,
+        "probability": 0.861,
+        "confidence": 0.7855,
+        "market_price": 0.67,
+        "price_gap": 0.18549999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26SEP-T3.25",
         "title": "Will the upper bound of the federal funds rate be above 3.25% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.48,
-        "price_gap": 0.3205,
+        "price_gap": 0.28049999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26SEP-T3.50",
         "title": "Will the upper bound of the federal funds rate be above 3.50% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.28,
-        "price_gap": 0.4205,
+        "price_gap": 0.38049999999999995,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:54"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26SEP-T3.75",
         "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.14,
-        "price_gap": 0.4905,
+        "price_gap": 0.45049999999999996,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:53"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26SEP-T4.00",
         "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.03,
-        "price_gap": 0.5454999999999999,
+        "price_gap": 0.5055000000000001,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:53"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26SEP-T4.25",
         "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.19,
-        "price_gap": 0.46549999999999997,
+        "price_gap": 0.4255,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:53"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26SEP-T4.50",
         "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.15,
-        "price_gap": 0.4855,
+        "price_gap": 0.44549999999999995,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:53"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26SEP-T4.75",
         "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.02,
-        "price_gap": 0.5505,
+        "price_gap": 0.5105,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:53"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26SEP-T5.00",
         "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
+        "probability": 0.861,
+        "confidence": 0.8454999999999999,
         "market_price": 0.55,
-        "price_gap": 0.2855,
+        "price_gap": 0.24549999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:53"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26SEP-T5.25",
         "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
+        "probability": 0.861,
+        "confidence": 0.8205,
         "market_price": 0.6,
-        "price_gap": 0.26049999999999995,
+        "price_gap": 0.2205,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:53"
-      },
-      {
-        "ticker": "KXFED-26OCT-T2.75",
-        "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Oct 28, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8481,
-        "market_price": 0.77,
-        "price_gap": 0.17099999999999993,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T22:33:53"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26OCT-T3.00",
         "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8204999999999999,
+        "probability": 0.861,
+        "confidence": 0.7805,
         "market_price": 0.68,
-        "price_gap": 0.22049999999999995,
+        "price_gap": 0.18049999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:53"
+        "time": "2026-04-03T22:44:02"
       },
       {
         "ticker": "KXFED-26OCT-T3.25",
         "title": "Will the upper bound of the federal funds rate be above 3.25% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.54,
-        "price_gap": 0.2905,
+        "price_gap": 0.25049999999999994,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T22:33:53"
+        "time": "2026-04-03T22:44:02"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 3121,
+      "trades": 3131,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
     "QUANT": {
-      "trades": 82677,
+      "trades": 82754,
       "executed": 258,
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1314,
+      "trades": 1324,
       "executed": 2,
       "deployed": 2.42
     }
@@ -906,70 +906,70 @@
         "claude": 0.15,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-04-03T22:38:16"
+        "time": "2026-04-03T22:48:23"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-04-03T22:38:14"
+        "time": "2026-04-03T22:48:20"
       },
       {
         "perplexity": 0.02,
         "claude": 0.15,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-04-03T22:38:12"
+        "time": "2026-04-03T22:48:18"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-03T22:38:10"
+        "time": "2026-04-03T22:48:16"
       },
       {
         "perplexity": null,
         "claude": 0.11,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-03T22:38:10"
+        "time": "2026-04-03T22:48:16"
       },
       {
         "perplexity": null,
         "claude": 0.14,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-03T22:38:10"
+        "time": "2026-04-03T22:48:16"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-03T22:38:10"
+        "time": "2026-04-03T22:48:16"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-04-03T22:38:10"
+        "time": "2026-04-03T22:48:16"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-03T22:38:08"
+        "time": "2026-04-03T22:48:14"
       },
       {
         "perplexity": null,
         "claude": 0.18,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-03T22:38:08"
+        "time": "2026-04-03T22:48:14"
       }
     ]
   },
@@ -1063,6 +1063,30 @@
       "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
       "category": "weather",
       "source": "perplexity",
+      "time": "2026-04-03T22:48:18"
+    },
+    {
+      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-03T22:47:58"
+    },
+    {
+      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-03T22:45:44"
+    },
+    {
+      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-03T22:45:27"
+    },
+    {
+      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
+      "category": "weather",
+      "source": "perplexity",
       "time": "2026-04-03T22:38:12"
     },
     {
@@ -1094,37 +1118,13 @@
       "category": "weather",
       "source": "perplexity",
       "time": "2026-04-03T22:27:41"
-    },
-    {
-      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T22:25:28"
-    },
-    {
-      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T22:25:11"
-    },
-    {
-      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T22:17:51"
-    },
-    {
-      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T22:17:31"
     }
   ],
   "alerts": [],
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 3,
-    "uptime_hours": 0.5
+    "cycles": 4,
+    "uptime_hours": 0.7
   }
 }
