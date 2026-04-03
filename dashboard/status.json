@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-03T07:41:21.842432+00:00",
+  "updated_at": "2026-04-03T07:59:03.290967+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-03T07:41:21.842432+00:00",
+    "last_updated": "2026-04-03T07:59:03.290967+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -98,7 +98,7 @@
       },
       {
         "date": "2026-04-03",
-        "trades": 3656,
+        "trades": 3762,
         "deployed": 0
       }
     ],
@@ -128,7 +128,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXGDP-26APR30-T2.0",
@@ -143,7 +143,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXGDP-26APR30-T2.5",
@@ -158,7 +158,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXGDP-26APR30-T3.0",
@@ -173,7 +173,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.0",
@@ -188,7 +188,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.5",
@@ -203,667 +203,667 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXFED-26JUL-T5.00",
         "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Jul 29, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.05,
-        "price_gap": 0.5354999999999999,
+        "price_gap": 0.4955,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXFED-26JUL-T5.25",
         "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Jul 29, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.05,
-        "price_gap": 0.5354999999999999,
+        "price_gap": 0.4955,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
+      },
+      {
+        "ticker": "KXFED-26JUN-T2.75",
+        "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Jun 17, 2026 meeting?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.861,
+        "confidence": 0.729,
+        "market_price": 0.99,
+        "price_gap": 0.129,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
+        "category": "economics",
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXFED-26JUN-T3.75",
         "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.04,
-        "price_gap": 0.5405,
+        "price_gap": 0.5005,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXFED-26JUN-T4.00",
         "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.01,
-        "price_gap": 0.5554999999999999,
+        "price_gap": 0.5155000000000001,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXFED-26JUN-T4.25",
         "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.04,
-        "price_gap": 0.5405,
+        "price_gap": 0.5005,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXFED-26JUN-T4.50",
         "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.01,
-        "price_gap": 0.5554999999999999,
+        "price_gap": 0.5155000000000001,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXFED-26JUN-T4.75",
         "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.03,
-        "price_gap": 0.5454999999999999,
+        "price_gap": 0.5055000000000001,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:55"
+        "time": "2026-04-03T07:47:36"
       },
       {
         "ticker": "KXFED-26JUN-T5.00",
         "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.03,
-        "price_gap": 0.5454999999999999,
+        "price_gap": 0.5055000000000001,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26JUN-T5.25",
         "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Jun 17, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.07,
-        "price_gap": 0.5255000000000001,
+        "price_gap": 0.4855,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T2.75",
         "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8105,
+        "probability": 0.861,
+        "confidence": 0.761,
         "market_price": 0.7,
-        "price_gap": 0.2105,
+        "price_gap": 0.16100000000000003,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T3.00",
         "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8354999999999999,
+        "probability": 0.861,
+        "confidence": 0.7955,
         "market_price": 0.65,
-        "price_gap": 0.23549999999999996,
+        "price_gap": 0.19549999999999998,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T3.25",
         "title": "Will the upper bound of the federal funds rate be above 3.25% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8454999999999999,
+        "probability": 0.861,
+        "confidence": 0.8055,
         "market_price": 0.63,
-        "price_gap": 0.24549999999999997,
+        "price_gap": 0.2055,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T3.50",
         "title": "Will the upper bound of the federal funds rate be above 3.50% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.23,
-        "price_gap": 0.44549999999999995,
+        "price_gap": 0.40549999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T3.75",
         "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.05,
-        "price_gap": 0.5354999999999999,
+        "price_gap": 0.4955,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T4.00",
         "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.03,
-        "price_gap": 0.5454999999999999,
+        "price_gap": 0.5055000000000001,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T4.25",
         "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.19,
-        "price_gap": 0.46549999999999997,
+        "price_gap": 0.4255,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T4.50",
         "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.15,
-        "price_gap": 0.4855,
+        "price_gap": 0.44549999999999995,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T4.75",
         "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.17,
-        "price_gap": 0.4755,
+        "price_gap": 0.43549999999999994,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T5.00",
         "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
+        "probability": 0.861,
+        "confidence": 0.8454999999999999,
         "market_price": 0.55,
-        "price_gap": 0.2855,
+        "price_gap": 0.24549999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26SEP-T5.25",
         "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Sep 16, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
+        "probability": 0.861,
+        "confidence": 0.8205,
         "market_price": 0.6,
-        "price_gap": 0.26049999999999995,
+        "price_gap": 0.2205,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26OCT-T2.75",
         "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8304999999999999,
+        "probability": 0.861,
+        "confidence": 0.7905,
         "market_price": 0.66,
-        "price_gap": 0.23049999999999995,
+        "price_gap": 0.19049999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26OCT-T3.00",
         "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8304999999999999,
+        "probability": 0.861,
+        "confidence": 0.7905,
         "market_price": 0.66,
-        "price_gap": 0.23049999999999995,
+        "price_gap": 0.19049999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26OCT-T3.25",
         "title": "Will the upper bound of the federal funds rate be above 3.25% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.54,
-        "price_gap": 0.2905,
+        "price_gap": 0.25049999999999994,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26OCT-T3.50",
         "title": "Will the upper bound of the federal funds rate be above 3.50% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.44,
-        "price_gap": 0.3404999999999999,
+        "price_gap": 0.3005,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26OCT-T3.75",
         "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.35,
-        "price_gap": 0.38549999999999995,
+        "price_gap": 0.34550000000000003,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26OCT-T4.00",
         "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.04,
-        "price_gap": 0.5405,
+        "price_gap": 0.5005,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26OCT-T4.25",
         "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.02,
-        "price_gap": 0.5505,
+        "price_gap": 0.5105,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26OCT-T4.50",
         "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.02,
-        "price_gap": 0.5505,
+        "price_gap": 0.5105,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26OCT-T4.75",
         "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.17,
-        "price_gap": 0.4755,
+        "price_gap": 0.43549999999999994,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:54"
+        "time": "2026-04-03T07:47:35"
       },
       {
         "ticker": "KXFED-26OCT-T5.00",
         "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.05,
-        "price_gap": 0.5354999999999999,
+        "price_gap": 0.4955,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26OCT-T5.25",
         "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Oct 28, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.48,
-        "price_gap": 0.3205,
+        "price_gap": 0.28049999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T2.75",
         "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8304999999999999,
+        "probability": 0.861,
+        "confidence": 0.7905,
         "market_price": 0.66,
-        "price_gap": 0.23049999999999995,
+        "price_gap": 0.19049999999999997,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T3.00",
         "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8454999999999999,
+        "probability": 0.861,
+        "confidence": 0.8055,
         "market_price": 0.63,
-        "price_gap": 0.24549999999999997,
+        "price_gap": 0.2055,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T3.25",
         "title": "Will the upper bound of the federal funds rate be above 3.25% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.5,
-        "price_gap": 0.3105,
+        "price_gap": 0.27049999999999996,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T3.50",
         "title": "Will the upper bound of the federal funds rate be above 3.50% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.52,
-        "price_gap": 0.3005,
+        "price_gap": 0.26049999999999995,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T3.75",
         "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.33,
-        "price_gap": 0.39549999999999996,
+        "price_gap": 0.3554999999999999,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T4.00",
         "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.54,
-        "price_gap": 0.2905,
+        "price_gap": 0.25049999999999994,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T4.25",
         "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
+        "probability": 0.861,
+        "confidence": 0.8205,
         "market_price": 0.6,
-        "price_gap": 0.26049999999999995,
+        "price_gap": 0.2205,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T4.50",
         "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.2,
-        "price_gap": 0.46049999999999996,
+        "price_gap": 0.4205,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T4.75",
         "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.12,
-        "price_gap": 0.5005,
+        "price_gap": 0.46049999999999996,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T5.00",
         "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.08,
-        "price_gap": 0.5205,
+        "price_gap": 0.4805,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-26DEC-T5.25",
         "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Dec 9, 2026 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
+        "probability": 0.861,
         "confidence": 0.85,
         "market_price": 0.02,
-        "price_gap": 0.5505,
+        "price_gap": 0.5105,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       },
       {
         "ticker": "KXFED-27JAN-T0.00",
         "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Jan 27, 2027 meeting?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8354999999999999,
+        "probability": 0.861,
+        "confidence": 0.7955,
         "market_price": 0.65,
-        "price_gap": 0.23549999999999996,
+        "price_gap": 0.19549999999999998,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
+        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T07:21:53"
-      },
-      {
-        "ticker": "KXFED-27JAN-T0.25",
-        "title": "Will the upper bound of the federal funds rate be above 0.25% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.53,
-        "price_gap": 0.2955,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T07:21:53"
+        "time": "2026-04-03T07:47:34"
       }
     ]
   },
@@ -874,7 +874,7 @@
       "deployed": 3.1100000000000003
     },
     "QUANT": {
-      "trades": 76293,
+      "trades": 76375,
       "executed": 258,
       "deployed": 142.26999999999998
     },
@@ -906,70 +906,70 @@
         "claude": null,
         "deepseek": 0.85,
         "consensus": true,
-        "time": "2026-04-03T07:40:03"
+        "time": "2026-04-03T07:57:50"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.65,
         "consensus": true,
-        "time": "2026-04-03T07:40:01"
+        "time": "2026-04-03T07:57:48"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-04-03T07:39:59"
+        "time": "2026-04-03T07:57:46"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": true,
-        "time": "2026-04-03T07:39:57"
+        "time": "2026-04-03T07:57:44"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-04-03T07:39:55"
+        "time": "2026-04-03T07:57:41"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.15,
         "consensus": true,
-        "time": "2026-04-03T07:39:53"
+        "time": "2026-04-03T07:57:39"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.05,
         "consensus": false,
-        "time": "2026-04-03T07:39:51"
+        "time": "2026-04-03T07:57:38"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.45,
         "consensus": false,
-        "time": "2026-04-03T07:39:51"
+        "time": "2026-04-03T07:57:38"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.65,
         "consensus": false,
-        "time": "2026-04-03T07:39:49"
+        "time": "2026-04-03T07:57:36"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-03T07:39:47"
+        "time": "2026-04-03T07:57:34"
       }
     ]
   },
@@ -1063,74 +1063,74 @@
       "text": "Polymarket prediction markets show 84-85\u00b0F at 11-18% implied probability across multiple snapshots. National Weather Service forecasts a high near 81\u00b0F for Miami International Airport on April 3 under",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-03T07:35:07"
+      "time": "2026-04-03T07:53:20"
     },
     {
       "text": "NOAA National Weather Service forecasts indicate a high near 81-82\u00b0F on April 3, 2026, at Miami International Airport under partly sunny skies with east winds 11-15 mph[1][2]. Polymarket consensus pro",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-03T07:35:04"
+      "time": "2026-04-03T07:53:18"
     },
     {
       "text": "March 28, 2026 has already occurred (today is April 3, 2026). Historical data shows the actual high temperature in Chicago on March 28, 2026 was 49\u00b0F according to North Chicago AccuWeather data[4], an",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-03T07:34:16"
+      "time": "2026-04-03T07:52:52"
     },
     {
       "text": "The actual highest temperature in NYC (Central Park) on March 29, 2026, was 52\u00b0F, as recorded by the National Weather Service and confirmed by Polymarket resolution[1]. Polymarket traders priced '52-5",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-03T07:33:36"
+      "time": "2026-04-03T07:52:33"
     },
     {
       "text": "Forecasts for Austin on March 28, 2026, indicate highs of 72\u00b0 (Weathershogun[3]), with March averages and daily highs ranging 68\u00b0-97\u00b0 but mostly 70\u00b0+ (AccuWeather[4]). Robinhood prediction market pric",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-03T07:33:19"
+      "time": "2026-04-03T07:52:26"
     },
     {
       "text": "Polymarket resolved the market for Chicago's highest temperature on March 27, 2026, at 44-45\u00b0F (100% implied probability) based on National Weather Service preliminary climate summary confirming 45\u00b0F ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-03T07:33:11"
+      "time": "2026-04-03T07:52:24"
     },
     {
       "text": "AccuWeather's March 2026 forecast for Austin shows the high temperature on March 28 at 90\u00b0[3]. Robinhood prediction market data indicates market participants are pricing odds for temperatures >69\u00b0 at ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-03T07:32:27"
+      "time": "2026-04-03T07:52:07"
     },
     {
       "text": "Polymarket market resolved to 84-85\u00b0F with 100% probability based on official KMIA observation of peak 84\u00b0F on March 28, 2026[1]. Pre-event NWS forecast projected 84\u00b0F[1]. AccuWeather forecast showed ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-03T07:32:17"
+      "time": "2026-04-03T07:52:04"
     },
     {
       "text": "Official National Weather Service observations from Central Park ASOS station recorded a maximum temperature of 43\u00b0F at 3:51 PM on March 28, 2026, with hourly readings from 38\u00b0F at noon to 41\u00b0F early ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-03T07:32:10"
+      "time": "2026-04-03T07:52:02"
     },
     {
       "text": "Polymarket market resolved with 100% probability on 84-85\u00b0F high temp in Miami on March 28, 2026, based on official KMIA observations of 84\u00b0F[1]. Robinhood market closed with >84 outcomes favored[2]. ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-03T07:32:03"
+      "time": "2026-04-03T07:52:00"
     }
   ],
   "alerts": [
     {
       "level": "warning",
-      "message": "2 API retries this session",
-      "detail": "2 non-fatal exceptions across 11 cycles (~0.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "4 API retries this session",
+      "detail": "4 non-fatal exceptions across 12 cycles (~0.3/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 2,
-    "cycles": 11,
-    "uptime_hours": 2.9
+    "errors_24h": 4,
+    "cycles": 12,
+    "uptime_hours": 3.2
   }
 }
