@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-03T00:25:50.809316+00:00",
+  "updated_at": "2026-04-03T00:31:24.081986+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-03T00:25:50.809316+00:00",
+    "last_updated": "2026-04-03T00:31:24.081986+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -98,7 +98,7 @@
       },
       {
         "date": "2026-04-03",
-        "trades": 996,
+        "trades": 1000,
         "deployed": 0
       }
     ],
@@ -115,6 +115,66 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-03T00:27:39"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-03T00:27:06"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-03T00:26:48"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.05,
+        "price_gap": 0.8999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-03T00:26:42"
+      },
       {
         "ticker": "KXGDP-26APR30-T1.5",
         "title": "Will **real GDP** increase by more than 1.5% in Q1 2026?",
@@ -804,72 +864,12 @@
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
         "time": "2026-04-03T00:25:32"
-      },
-      {
-        "ticker": "KXFED-26DEC-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.08,
-        "price_gap": 0.5205,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T00:25:32"
-      },
-      {
-        "ticker": "KXFED-26DEC-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Dec 9, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.02,
-        "price_gap": 0.5505,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T00:25:32"
-      },
-      {
-        "ticker": "KXFED-27JAN-T0.00",
-        "title": "Will the upper bound of the federal funds rate be above 0.00% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8354999999999999,
-        "market_price": 0.65,
-        "price_gap": 0.23549999999999996,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T00:25:32"
-      },
-      {
-        "ticker": "KXFED-27JAN-T0.25",
-        "title": "Will the upper bound of the federal funds rate be above 0.25% following the Fed's Jan 27, 2027 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.53,
-        "price_gap": 0.2955,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-03T00:25:32"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 3062,
+      "trades": 3065,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -879,7 +879,7 @@
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1256,
+      "trades": 1257,
       "executed": 2,
       "deployed": 2.42
     }
@@ -906,7 +906,7 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-03T00:24:11"
+        "time": "2026-04-03T00:27:26"
       },
       {
         "perplexity": 0.01,
@@ -975,9 +975,9 @@
   },
   "scanner": {
     "total_markets": 3930,
-    "with_prices": 1822,
-    "passed_filter": 377,
-    "total_scored": 782,
+    "with_prices": 1826,
+    "passed_filter": 379,
+    "total_scored": 786,
     "categories": {
       "economics": 2560,
       "energy": 245,
@@ -1125,6 +1125,6 @@
     "ollama": "ok",
     "errors_24h": 0,
     "cycles": 16,
-    "uptime_hours": 4.0
+    "uptime_hours": 4.1
   }
 }
