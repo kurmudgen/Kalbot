@@ -692,11 +692,28 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         # Gate 1: Weather markets with borderline probability need NWS data
         if not skip_reason and category == "weather":
             if 0.20 < cloud_prob < 0.80:
-                # Check if NWS data was available (injected via cloud_reasoning)
-                reasoning = score.get("cloud_reasoning", "")
-                has_nws = "NWS" in reasoning or "nws" in reasoning or "official forecast" in reasoning.lower()
+                # Check if NWS forecast data is actually available for this city
+                # (NWS data is injected into the prompt by local_filter, models don't always echo "NWS" in response)
+                _nws_city = extract_weather_city(title)
+                has_nws = False
+                if _nws_city:
+                    try:
+                        import sys as _sys
+                        _dp = os.path.join(os.path.dirname(__file__), "..", "data")
+                        if _dp not in _sys.path:
+                            _sys.path.insert(0, _dp)
+                        from weather_nws_feed import load_forecasts
+                        _fc = load_forecasts()
+                        has_nws = any(
+                            _nws_city == k or _nws_city in v.get("city", "").lower()
+                            for k, v in _fc.items()
+                        ) if _fc else False
+                    except Exception:
+                        has_nws = True  # Can't check — allow through
+                else:
+                    has_nws = True  # Can't identify city — allow through
                 if not has_nws:
-                    skip_reason = "nws_data_missing: borderline weather trade without settlement source"
+                    skip_reason = "nws_data_missing: no NWS forecast available for this city"
 
         # Gate 1.5: City-specific NWS gap minimum (Austin=6F, default=3F)
         if not skip_reason and category == "weather":
