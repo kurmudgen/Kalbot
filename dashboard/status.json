@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-04T10:23:01.541794+00:00",
+  "updated_at": "2026-04-04T10:30:17.620554+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
-      "balance": 150.75,
+      "balance": 131.9,
       "paper_mode": false
     },
     "alpaca": {
@@ -13,21 +13,21 @@
     }
   },
   "capital_status": {
-    "balance": 150.75,
+    "balance": 131.9,
     "peak_balance": 200.0,
     "floor_balance": 40.0,
-    "available_capital": 110.75,
+    "available_capital": 91.9,
     "performance_score": 50.0,
     "score_multiplier": 1.0,
     "daily_deployed": 93.12,
-    "daily_cap": 66.45,
-    "cycle_status": "active"
+    "daily_cap": 55.14,
+    "cycle_status": "catastrophic_drawdown_halt"
   },
   "treasury": {
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T10:23:01.541794+00:00",
+    "last_updated": "2026-04-04T10:30:17.620554+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -103,7 +103,7 @@
       },
       {
         "date": "2026-04-04",
-        "trades": 5742,
+        "trades": 5793,
         "deployed": 93.12
       }
     ],
@@ -121,379 +121,19 @@
     "skipped": 50,
     "recent": [
       {
-        "ticker": "KXHIGHMIA-26APR04-T85",
-        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
+        "ticker": "KXHIGHDEN-26APR03-B53.5",
+        "title": "Will the **high temp in Denver** be 53-54\u00b0 on Apr 3, 2026?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.49,
-        "confidence": 0.779,
-        "market_price": 0.03,
-        "price_gap": 0.45999999999999996,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:01"
-      },
-      {
-        "ticker": "KXHIGHAUS-26APR04-T80",
-        "title": "Will the **high temp in Austin** be >80\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.25,
-        "confidence": 0.722,
-        "market_price": 0.06,
-        "price_gap": 0.19,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "[city=austin] Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:01"
-      },
-      {
-        "ticker": "KXHIGHDEN-26APR04-B65.5",
-        "title": "Will the **high temp in Denver** be 65-66\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.09,
-        "confidence": 0.6232,
-        "market_price": 0.06,
-        "price_gap": 0.03,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:01"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B78.5",
-        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.072,
-        "confidence": 0.722,
-        "market_price": 0.03,
-        "price_gap": 0.041999999999999996,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:01"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR04-B57.5",
-        "title": "Will the high temp in Chicago be 57-58\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.12,
-        "confidence": 0.7942,
-        "market_price": 0.15,
-        "price_gap": 0.03,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:00"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR04-T55",
-        "title": "Will the high temp in Chicago be <55\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.15,
-        "confidence": 0.6649999999999999,
-        "market_price": 0.07,
-        "price_gap": 0.07999999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:00"
-      },
-      {
-        "ticker": "KXHIGHDEN-26APR04-B63.5",
-        "title": "Will the **high temp in Denver** be 63-64\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.21,
-        "confidence": 0.574,
-        "market_price": 0.17,
-        "price_gap": 0.03999999999999998,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:00"
-      },
-      {
-        "ticker": "KXHIGHDEN-26APR04-T68",
-        "title": "Will the **high temp in Denver** be >68\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.33,
-        "confidence": 0.6232,
-        "market_price": 0.03,
-        "price_gap": 0.30000000000000004,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:00"
-      },
-      {
-        "ticker": "KXHIGHAUS-26APR04-B75.5",
-        "title": "Will the **high temp in Austin** be 75-76\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.33,
-        "confidence": 0.6649999999999999,
-        "market_price": 0.3,
-        "price_gap": 0.030000000000000027,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:00"
-      },
-      {
-        "ticker": "KXHIGHAUS-26APR04-B77.5",
-        "title": "Will the **high temp in Austin** be 77-78\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.232,
-        "confidence": 0.6897000000000001,
-        "market_price": 0.26,
-        "price_gap": 0.027999999999999997,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:00"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR04-B74.5",
-        "title": "Will the **high temp in NYC** be 74-75\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.09,
-        "confidence": 0.6649999999999999,
-        "market_price": 0.04,
-        "price_gap": 0.049999999999999996,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:23:00"
-      },
-      {
-        "ticker": "KXHIGHAUS-26APR04-T73",
-        "title": "Will the **high temp in Austin** be <73\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.13,
-        "confidence": 0.722,
-        "market_price": 0.08,
-        "price_gap": 0.05,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:59"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR04-B59.5",
-        "title": "Will the high temp in Chicago be 59-60\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.21,
-        "confidence": 0.7106000000000001,
-        "market_price": 0.21,
-        "price_gap": 0.0,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:59"
-      },
-      {
-        "ticker": "KXHIGHAUS-26APR04-B79.5",
-        "title": "Will the **high temp in Austin** be 79-80\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.15,
-        "confidence": 0.6649999999999999,
-        "market_price": 0.03,
-        "price_gap": 0.12,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "[city=austin] Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:59"
-      },
-      {
-        "ticker": "KXHIGHAUS-26APR04-B73.5",
-        "title": "Will the **high temp in Austin** be 73-74\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.27,
-        "confidence": 0.7314999999999999,
-        "market_price": 0.28,
-        "price_gap": 0.010000000000000009,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:59"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR04-B55.5",
-        "title": "Will the high temp in Chicago be 55-56\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.09,
-        "confidence": 0.779,
-        "market_price": 0.06,
-        "price_gap": 0.03,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:59"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B80.5",
-        "title": "Will the **high temp in Miami** be 80-81\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.21,
-        "confidence": 0.6649999999999999,
-        "market_price": 0.13,
-        "price_gap": 0.07999999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:59"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR04-B72.5",
-        "title": "Will the **high temp in NYC** be 72-73\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.09,
-        "confidence": 0.7942,
-        "market_price": 0.12,
-        "price_gap": 0.03,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:59"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR04-T75",
-        "title": "Will the **high temp in NYC** be >75\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.27,
-        "confidence": 0.722,
-        "market_price": 0.03,
-        "price_gap": 0.24000000000000002,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:58"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR04-B70.5",
-        "title": "Will the **high temp in NYC** be 70-71\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.27,
-        "confidence": 0.6649999999999999,
-        "market_price": 0.26,
-        "price_gap": 0.010000000000000009,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:58"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR04-B61.5",
-        "title": "Will the high temp in Chicago be 61-62\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.33,
-        "confidence": 0.6649999999999999,
+        "probability": 0.39,
+        "confidence": 0.6399999999999999,
         "market_price": 0.31,
-        "price_gap": 0.020000000000000018,
+        "price_gap": 0.08000000000000002,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:58"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR04-B68.5",
-        "title": "Will the **high temp in NYC** be 68-69\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.27,
-        "confidence": 0.7314999999999999,
-        "market_price": 0.28,
-        "price_gap": 0.010000000000000009,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:58"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR04-T62",
-        "title": "Will the high temp in Chicago be >62\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.27,
-        "confidence": 0.7314999999999999,
-        "market_price": 0.28,
-        "price_gap": 0.010000000000000009,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:58"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR04-T68",
-        "title": "Will the **high temp in NYC** be <68\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.382,
-        "confidence": 0.627,
-        "market_price": 0.31,
-        "price_gap": 0.07200000000000001,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:58"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.3,
-        "confidence": 0.7314999999999999,
-        "market_price": 0.45,
-        "price_gap": 0.15000000000000002,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "[city=miami] Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:58"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B67.5",
@@ -508,7 +148,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B65.5",
@@ -523,7 +163,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-T92",
@@ -538,22 +178,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.15,
-        "confidence": 0.722,
-        "market_price": 0.03,
-        "price_gap": 0.12,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "[city=miami] Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B66.5",
@@ -568,7 +193,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-T67",
@@ -583,7 +208,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-B85.5",
@@ -598,7 +223,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-B89.5",
@@ -613,7 +238,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-B91.5",
@@ -628,7 +253,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-T85",
@@ -643,7 +268,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B51.5",
@@ -658,22 +283,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
-      },
-      {
-        "ticker": "KXHIGHDEN-26APR03-B53.5",
-        "title": "Will the **high temp in Denver** be 53-54\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.39,
-        "confidence": 0.6399999999999999,
-        "market_price": 0.31,
-        "price_gap": 0.08000000000000002,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
-        "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B55.5",
@@ -688,7 +298,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B57.5",
@@ -703,7 +313,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-T51",
@@ -718,7 +328,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-T58",
@@ -733,7 +343,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:57"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B78.5",
@@ -748,7 +358,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:56"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B80.5",
@@ -763,7 +373,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:56"
+        "time": "2026-04-04T10:29:24"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B84.5",
@@ -778,7 +388,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:56"
+        "time": "2026-04-04T10:29:23"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
@@ -793,7 +403,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:56"
+        "time": "2026-04-04T10:29:23"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B62.5",
@@ -808,7 +418,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:56"
+        "time": "2026-04-04T10:29:23"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B64.5",
@@ -823,7 +433,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:56"
+        "time": "2026-04-04T10:29:23"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B69.5",
@@ -838,7 +448,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:56"
+        "time": "2026-04-04T10:29:23"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B71.5",
@@ -853,7 +463,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:56"
+        "time": "2026-04-04T10:29:23"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T65",
@@ -868,7 +478,397 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T10:22:56"
+        "time": "2026-04-04T10:29:23"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.27,
+        "confidence": 0.76,
+        "market_price": 0.03,
+        "price_gap": 0.24000000000000002,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:23"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR04-B77.5",
+        "title": "Will the **high temp in Austin** be 77-78\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.232,
+        "confidence": 0.6897000000000001,
+        "market_price": 0.26,
+        "price_gap": 0.027999999999999997,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:23"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR04-T68",
+        "title": "Will the **high temp in NYC** be <68\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.382,
+        "confidence": 0.627,
+        "market_price": 0.31,
+        "price_gap": 0.07200000000000001,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:23"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR04-B59.5",
+        "title": "Will the high temp in Chicago be 59-60\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.21,
+        "confidence": 0.7106000000000001,
+        "market_price": 0.21,
+        "price_gap": 0.0,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:23"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.49,
+        "confidence": 0.779,
+        "market_price": 0.03,
+        "price_gap": 0.45999999999999996,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:23"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR04-T80",
+        "title": "Will the **high temp in Austin** be >80\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.25,
+        "confidence": 0.722,
+        "market_price": 0.06,
+        "price_gap": 0.19,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=austin] Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:23"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR04-B65.5",
+        "title": "Will the **high temp in Denver** be 65-66\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.09,
+        "confidence": 0.6232,
+        "market_price": 0.06,
+        "price_gap": 0.03,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:22"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.072,
+        "confidence": 0.722,
+        "market_price": 0.03,
+        "price_gap": 0.041999999999999996,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:22"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR04-B57.5",
+        "title": "Will the high temp in Chicago be 57-58\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.12,
+        "confidence": 0.7942,
+        "market_price": 0.15,
+        "price_gap": 0.03,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:22"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR04-T55",
+        "title": "Will the high temp in Chicago be <55\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.15,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.07,
+        "price_gap": 0.07999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:22"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR04-B63.5",
+        "title": "Will the **high temp in Denver** be 63-64\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.21,
+        "confidence": 0.574,
+        "market_price": 0.17,
+        "price_gap": 0.03999999999999998,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:22"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR04-T68",
+        "title": "Will the **high temp in Denver** be >68\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.33,
+        "confidence": 0.6232,
+        "market_price": 0.03,
+        "price_gap": 0.30000000000000004,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:22"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR04-B75.5",
+        "title": "Will the **high temp in Austin** be 75-76\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.33,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.3,
+        "price_gap": 0.030000000000000027,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:22"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR04-B74.5",
+        "title": "Will the **high temp in NYC** be 74-75\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.09,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.04,
+        "price_gap": 0.049999999999999996,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:22"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR04-T73",
+        "title": "Will the **high temp in Austin** be <73\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.13,
+        "confidence": 0.722,
+        "market_price": 0.08,
+        "price_gap": 0.05,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:21"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR04-B79.5",
+        "title": "Will the **high temp in Austin** be 79-80\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.15,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.03,
+        "price_gap": 0.12,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=austin] Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:21"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR04-B73.5",
+        "title": "Will the **high temp in Austin** be 73-74\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.27,
+        "confidence": 0.7314999999999999,
+        "market_price": 0.28,
+        "price_gap": 0.010000000000000009,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:21"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR04-B55.5",
+        "title": "Will the high temp in Chicago be 55-56\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.09,
+        "confidence": 0.779,
+        "market_price": 0.06,
+        "price_gap": 0.03,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:21"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-B80.5",
+        "title": "Will the **high temp in Miami** be 80-81\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.21,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.13,
+        "price_gap": 0.07999999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:21"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR04-B72.5",
+        "title": "Will the **high temp in NYC** be 72-73\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.09,
+        "confidence": 0.7942,
+        "market_price": 0.12,
+        "price_gap": 0.03,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:21"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR04-T75",
+        "title": "Will the **high temp in NYC** be >75\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.27,
+        "confidence": 0.722,
+        "market_price": 0.03,
+        "price_gap": 0.24000000000000002,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:21"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR04-B70.5",
+        "title": "Will the **high temp in NYC** be 70-71\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.27,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.26,
+        "price_gap": 0.010000000000000009,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:21"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR04-B61.5",
+        "title": "Will the high temp in Chicago be 61-62\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.33,
+        "confidence": 0.6649999999999999,
+        "market_price": 0.31,
+        "price_gap": 0.020000000000000018,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:20"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR04-B68.5",
+        "title": "Will the **high temp in NYC** be 68-69\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.27,
+        "confidence": 0.7314999999999999,
+        "market_price": 0.28,
+        "price_gap": 0.010000000000000009,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:20"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR04-T62",
+        "title": "Will the high temp in Chicago be >62\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.27,
+        "confidence": 0.7314999999999999,
+        "market_price": 0.28,
+        "price_gap": 0.010000000000000009,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:20"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.3,
+        "confidence": 0.7314999999999999,
+        "market_price": 0.45,
+        "price_gap": 0.15000000000000002,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] Weather NWS tier: Gemini + local with NWS data.",
+        "category": "weather",
+        "time": "2026-04-04T10:29:20"
       }
     ]
   },
@@ -884,7 +884,7 @@
       "deployed": 205.39
     },
     "WEATHER": {
-      "trades": 2890,
+      "trades": 2941,
       "executed": 4,
       "deployed": 32.42
     },
@@ -916,70 +916,70 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T10:22:54"
+        "time": "2026-04-04T10:30:14"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T10:22:54"
+        "time": "2026-04-04T10:30:14"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T10:22:54"
+        "time": "2026-04-04T10:30:14"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T10:22:54"
+        "time": "2026-04-04T10:30:14"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T10:22:54"
+        "time": "2026-04-04T10:30:14"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T10:22:54"
+        "time": "2026-04-04T10:30:14"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T10:22:54"
+        "time": "2026-04-04T10:30:14"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T10:22:54"
+        "time": "2026-04-04T10:30:14"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T10:22:54"
+        "time": "2026-04-04T10:30:14"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T10:22:54"
+        "time": "2026-04-04T10:30:14"
       }
     ]
   },
@@ -1132,7 +1132,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 22,
-    "uptime_hours": 2.6
+    "cycles": 23,
+    "uptime_hours": 2.8
   }
 }
