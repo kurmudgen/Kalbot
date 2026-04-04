@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T14:44:45.415236+00:00",
+  "updated_at": "2026-04-04T14:51:53.302978+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -14,20 +14,20 @@
   },
   "capital_status": {
     "balance": 131.9,
-    "peak_balance": 200.0,
-    "floor_balance": 40.0,
-    "available_capital": 91.9,
+    "peak_balance": 213.42,
+    "floor_balance": 42.68,
+    "available_capital": 89.22,
     "performance_score": 50.0,
     "score_multiplier": 1.0,
     "daily_deployed": 93.12,
-    "daily_cap": 55.14,
+    "daily_cap": 53.53,
     "cycle_status": "catastrophic_drawdown_halt"
   },
   "treasury": {
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T14:44:45.415236+00:00",
+    "last_updated": "2026-04-04T14:51:53.302978+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -916,70 +916,70 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:44:42"
+        "time": "2026-04-04T14:51:50"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:44:42"
+        "time": "2026-04-04T14:51:50"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:44:42"
+        "time": "2026-04-04T14:51:50"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:44:42"
+        "time": "2026-04-04T14:51:50"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:44:42"
+        "time": "2026-04-04T14:51:50"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:44:42"
+        "time": "2026-04-04T14:51:50"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:44:42"
+        "time": "2026-04-04T14:51:50"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:44:42"
+        "time": "2026-04-04T14:51:50"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:44:42"
+        "time": "2026-04-04T14:51:50"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:44:42"
+        "time": "2026-04-04T14:51:50"
       }
     ]
   },
@@ -1005,42 +1005,42 @@
     {
       "ticker": "KXHIGHNY-26APR04-T68",
       "title": "Will the **high temp in NYC** be <68\u00b0 on Apr 4, 2026?",
-      "price": 4,
+      "price": 2,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR04-B74.5",
       "title": "Will the **high temp in NYC** be 74-75\u00b0 on Apr 4, 2026?",
-      "price": 21,
+      "price": 20,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR04-B72.5",
       "title": "Will the **high temp in NYC** be 72-73\u00b0 on Apr 4, 2026?",
-      "price": 30,
+      "price": 44,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR04-B70.5",
       "title": "Will the **high temp in NYC** be 70-71\u00b0 on Apr 4, 2026?",
-      "price": 34,
+      "price": 31,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR04-B68.5",
       "title": "Will the **high temp in NYC** be 68-69\u00b0 on Apr 4, 2026?",
-      "price": 11,
+      "price": 10,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHMIA-26APR04-T85",
       "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
-      "price": 7,
+      "price": 5,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1054,7 +1054,7 @@
     {
       "ticker": "KXHIGHMIA-26APR04-B84.5",
       "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-      "price": 35,
+      "price": 32,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1132,7 +1132,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 56,
-    "uptime_hours": 7.0
+    "cycles": 57,
+    "uptime_hours": 7.1
   }
 }
