@@ -723,12 +723,13 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
             if city_checked and not city_used:
                 city_used = city_checked
 
-        # Gate 2: Borderline probability EV trades need higher confidence
+        # Gate 2: Borderline probability EV trades need moderate confidence
+        # Lowered from 0.85 to 0.70 — the 0.85 requirement after seasonal
+        # adjustment (0.88x) required 0.97 raw confidence which is unreachable.
+        # Other gates (NWS gap, city confidence, ensemble floor) provide protection.
         if not skip_reason:
-            if 0.20 < cloud_prob < 0.80 and cloud_conf < 0.85 - 0.001:
-                # This is an EV trade on borderline probability — not an obvious call
-                # Require higher confidence to filter noise
-                skip_reason = f"borderline EV trade: prob={cloud_prob:.2f} needs conf>0.85 (has {cloud_conf:.2f})"
+            if 0.20 < cloud_prob < 0.80 and cloud_conf < 0.70 - 0.001:
+                skip_reason = f"borderline EV trade: prob={cloud_prob:.2f} needs conf>0.70 (has {cloud_conf:.2f})"
 
         # Correlation check
         if not skip_reason:
