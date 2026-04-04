@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-04T21:46:55.940056+00:00",
+  "updated_at": "2026-04-04T21:54:20.551485+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
-      "balance": 171.2,
+      "balance": 170.88,
       "paper_mode": false
     },
     "alpaca": {
@@ -13,21 +13,21 @@
     }
   },
   "capital_status": {
-    "balance": 171.2,
+    "balance": 170.88,
     "peak_balance": 218.42,
     "floor_balance": 43.68,
-    "available_capital": 127.52,
+    "available_capital": 127.2,
     "performance_score": 50.0,
     "score_multiplier": 1.0,
     "daily_deployed": 108.12,
-    "daily_cap": 76.51,
+    "daily_cap": 76.32,
     "cycle_status": "active"
   },
   "treasury": {
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T21:46:55.940056+00:00",
+    "last_updated": "2026-04-04T21:54:20.551485+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -103,7 +103,7 @@
       },
       {
         "date": "2026-04-04",
-        "trades": 8565,
+        "trades": 8571,
         "deployed": 108.12
       }
     ],
@@ -120,6 +120,96 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHMIA-26APR04-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.2831513759522865,
+        "confidence": 0.7115220588235295,
+        "market_price": 0.45,
+        "price_gap": 0.1668486240477134,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
+        "category": "weather",
+        "time": "2026-04-04T21:54:20"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T78",
+        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05784893404110852,
+        "confidence": 0.8016249999999999,
+        "market_price": 0.03,
+        "price_gap": 0.0,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
+        "category": "weather",
+        "time": "2026-04-04T21:54:20"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 0.9995652173913044,
+        "market_price": 0.03,
+        "price_gap": 0.014258807335888801,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
+        "category": "weather",
+        "time": "2026-04-04T21:54:20"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 0.9995652173913044,
+        "market_price": 0.03,
+        "price_gap": 0.014258807335888801,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
+        "category": "weather",
+        "time": "2026-04-04T21:53:23"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.2831513759522865,
+        "confidence": 0.7115220588235295,
+        "market_price": 0.45,
+        "price_gap": 0.1668486240477134,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
+        "category": "weather",
+        "time": "2026-04-04T21:53:22"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T78",
+        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05784893404110852,
+        "confidence": 0.8016249999999999,
+        "market_price": 0.03,
+        "price_gap": 0.0,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
+        "category": "weather",
+        "time": "2026-04-04T21:53:22"
+      },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
         "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
@@ -779,102 +869,12 @@
         "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
         "category": "weather",
         "time": "2026-04-04T20:54:25"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.015741192664111215,
-        "confidence": 0.9995652173913044,
-        "market_price": 0.03,
-        "price_gap": 0.014258807335888801,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
-        "category": "weather",
-        "time": "2026-04-04T20:54:25"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.015741192664111215,
-        "confidence": 0.9995652173913044,
-        "market_price": 0.03,
-        "price_gap": 0.014258807335888801,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
-        "category": "weather",
-        "time": "2026-04-04T20:53:27"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.2831513759522865,
-        "confidence": 0.7115220588235295,
-        "market_price": 0.45,
-        "price_gap": 0.1668486240477134,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
-        "category": "weather",
-        "time": "2026-04-04T20:53:27"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.05784893404110852,
-        "confidence": 0.8016249999999999,
-        "market_price": 0.03,
-        "price_gap": 0.0,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
-        "category": "weather",
-        "time": "2026-04-04T20:53:27"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.2831513759522865,
-        "confidence": 0.7115220588235295,
-        "market_price": 0.45,
-        "price_gap": 0.1668486240477134,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
-        "category": "weather",
-        "time": "2026-04-04T20:46:54"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.05784893404110852,
-        "confidence": 0.8016249999999999,
-        "market_price": 0.03,
-        "price_gap": 0.0,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
-        "category": "weather",
-        "time": "2026-04-04T20:46:53"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 5874,
+      "trades": 5877,
       "executed": 10,
       "deployed": 18.11
     },
@@ -884,7 +884,7 @@
       "deployed": 205.39
     },
     "WEATHER": {
-      "trades": 4132,
+      "trades": 4135,
       "executed": 4,
       "deployed": 32.42
     },
@@ -916,70 +916,70 @@
         "claude": 0.15,
         "deepseek": 0.25,
         "consensus": false,
-        "time": "2026-04-04T21:46:50"
+        "time": "2026-04-04T21:54:15"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-04T21:46:50"
+        "time": "2026-04-04T21:54:15"
       },
       {
         "perplexity": null,
         "claude": 0.18,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-04-04T21:46:50"
+        "time": "2026-04-04T21:54:14"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-04T21:46:50"
+        "time": "2026-04-04T21:54:14"
       },
       {
         "perplexity": 0.03,
         "claude": 0.15,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-04-04T21:46:50"
+        "time": "2026-04-04T21:54:14"
       },
       {
         "perplexity": null,
         "claude": 0.2,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T21:46:50"
+        "time": "2026-04-04T21:54:14"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.05,
         "consensus": false,
-        "time": "2026-04-04T21:46:50"
+        "time": "2026-04-04T21:54:14"
       },
       {
         "perplexity": null,
         "claude": 0.3,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T21:46:49"
+        "time": "2026-04-04T21:54:14"
       },
       {
         "perplexity": null,
         "claude": 0.3,
         "deepseek": 0.28,
         "consensus": false,
-        "time": "2026-04-04T21:46:49"
+        "time": "2026-04-04T21:54:14"
       },
       {
         "perplexity": 0.32,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": true,
-        "time": "2026-04-04T21:46:49"
+        "time": "2026-04-04T21:54:14"
       }
     ]
   },
@@ -1071,68 +1071,68 @@
       "text": "Polymarket traders assign 100% probability to NYC high of 58\u00b0F or higher on Apr 4, 2026, with NOAA GFS/NAM models forecasting 65-68\u00b0F under high-pressure ridge; current midday temps in low 60s\u00b0F at 7 ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T21:46:50"
+      "time": "2026-04-04T21:54:14"
     },
     {
       "text": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T21:46:49"
+      "time": "2026-04-04T21:54:14"
     },
     {
       "text": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T21:46:49"
+      "time": "2026-04-04T21:54:13"
     },
     {
       "text": "Polymarket shows 100% probability for 58\u00b0F or higher at O'Hare on April 3, 2026, with NWS forecasting high near 62\u00b0F under cloudy, breezy conditions; KORD METARs confirmed midday >58\u00b0F. Robinhood mark",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T21:46:48"
+      "time": "2026-04-04T21:54:12"
     },
     {
       "text": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T21:46:47"
+      "time": "2026-04-04T21:54:11"
     },
     {
       "text": "Polymarket shows 100% probability for 58\u00b0F or higher at O'Hare on April 3, 2026, with NWS forecasting high near 62\u00b0F under cloudy, breezy conditions; KORD METARs confirmed midday >58\u00b0F. Robinhood mark",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T21:45:55"
+      "time": "2026-04-04T21:53:19"
     },
     {
       "text": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T21:45:54"
+      "time": "2026-04-04T21:53:19"
     },
     {
       "text": "Polymarket traders assign 100% probability to NYC high of 58\u00b0F or higher on Apr 4, 2026, with NOAA GFS/NAM models forecasting 65-68\u00b0F under high-pressure ridge; current midday temps in low 60s\u00b0F at 7 ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T21:45:51"
+      "time": "2026-04-04T21:53:15"
     },
     {
       "text": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T21:45:50"
+      "time": "2026-04-04T21:53:15"
     },
     {
       "text": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T21:45:50"
+      "time": "2026-04-04T21:53:14"
     }
   ],
   "alerts": [],
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 10,
-    "uptime_hours": 1.2
+    "cycles": 11,
+    "uptime_hours": 1.3
   }
 }
