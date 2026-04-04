@@ -506,10 +506,19 @@ def main():
                 except Exception as e:
                     print(f"  Self-check error: {e}")
 
+            # Pipeline health monitor — detects and auto-fixes operational issues
+            # Runs every 12 cycles (~1 hour). Catches API budget waste, stale
+            # caches, gate miscalibration, and zero-trade periods.
+            if totals["cycles"] % 12 == 0:
+                try:
+                    from pipeline_health import run_health_check
+                    run_health_check()
+                except Exception as e:
+                    print(f"  Pipeline health error: {e}")
+
             # Self-calibration: primary triggers are resolution-count-driven
             # (fired from resolution_tracker.py -> self_calibrator.on_resolution).
-            # This cycle check is the time-based fallback safety net — fires any
-            # tier that hasn't run in 72hr due to insufficient resolution count.
+            # This cycle check is the time-based fallback safety net.
             if totals["cycles"] % 12 == 0:
                 try:
                     from self_calibrator import check_time_fallbacks
