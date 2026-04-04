@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-04T19:40:01.896955+00:00",
+  "updated_at": "2026-04-04T19:50:33.598385+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
-      "balance": 193.39,
+      "balance": 172.16,
       "paper_mode": false
     },
     "alpaca": {
@@ -13,21 +13,21 @@
     }
   },
   "capital_status": {
-    "balance": 193.39,
+    "balance": 172.16,
     "peak_balance": 218.42,
     "floor_balance": 43.68,
-    "available_capital": 149.71,
+    "available_capital": 128.48,
     "performance_score": 50.0,
     "score_multiplier": 1.0,
     "daily_deployed": 108.12,
-    "daily_cap": 89.82,
+    "daily_cap": 77.09,
     "cycle_status": "active"
   },
   "treasury": {
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T19:40:01.896955+00:00",
+    "last_updated": "2026-04-04T19:50:33.598385+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -103,7 +103,7 @@
       },
       {
         "date": "2026-04-04",
-        "trades": 8295,
+        "trades": 8301,
         "deployed": 108.12
       }
     ],
@@ -120,6 +120,96 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHMIA-26APR04-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.2831513759522865,
+        "confidence": 0.7115220588235295,
+        "market_price": 0.45,
+        "price_gap": 0.1668486240477134,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
+        "category": "weather",
+        "time": "2026-04-04T19:50:33"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T78",
+        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05784893404110852,
+        "confidence": 0.8016249999999999,
+        "market_price": 0.03,
+        "price_gap": 0.0,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
+        "category": "weather",
+        "time": "2026-04-04T19:50:33"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 0.9995652173913044,
+        "market_price": 0.03,
+        "price_gap": 0.014258807335888801,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
+        "category": "weather",
+        "time": "2026-04-04T19:50:33"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 0.9995652173913044,
+        "market_price": 0.03,
+        "price_gap": 0.014258807335888801,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
+        "category": "weather",
+        "time": "2026-04-04T19:49:36"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.2831513759522865,
+        "confidence": 0.7115220588235295,
+        "market_price": 0.45,
+        "price_gap": 0.1668486240477134,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
+        "category": "weather",
+        "time": "2026-04-04T19:49:36"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T78",
+        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05784893404110852,
+        "confidence": 0.8016249999999999,
+        "market_price": 0.03,
+        "price_gap": 0.0,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
+        "category": "weather",
+        "time": "2026-04-04T19:49:35"
+      },
       {
         "ticker": "KXCPI-26APR-T0.4",
         "title": "Will CPI rise more than 0.4% in April 2026?",
@@ -779,102 +869,12 @@
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
         "time": "2026-04-04T18:18:12"
-      },
-      {
-        "ticker": "KXCPI-26NOV-T0.3",
-        "title": "Will CPI rise more than 0.3% in November 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999978875452975,
-        "confidence": 0.85,
-        "market_price": 0.37,
-        "price_gap": 0.6299978875452975,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-04T18:18:12"
-      },
-      {
-        "ticker": "KXCPI-26NOV-T0.4",
-        "title": "Will CPI rise more than 0.4% in November 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9998408914098424,
-        "confidence": 0.85,
-        "market_price": 0.33,
-        "price_gap": 0.6698408914098424,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-04T18:18:12"
-      },
-      {
-        "ticker": "KXCPI-26NOV-T0.5",
-        "title": "Will CPI rise more than 0.5% in November 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9953388119762813,
-        "confidence": 0.85,
-        "market_price": 0.22,
-        "price_gap": 0.7753388119762813,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-04T18:18:12"
-      },
-      {
-        "ticker": "KXCPI-26MAR-T0.7",
-        "title": "Will CPI rise more than 0.7% in March 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.7257468822499266,
-        "confidence": 0.8878392147625405,
-        "market_price": 0.96,
-        "price_gap": 0.0,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=0.73",
-        "category": "economics",
-        "time": "2026-04-04T18:18:12"
-      },
-      {
-        "ticker": "KXCPI-26MAR-T0.8",
-        "title": "Will CPI rise more than 0.8% in March 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.3445782583896757,
-        "confidence": 0.85,
-        "market_price": 0.72,
-        "price_gap": 0.37542174161032427,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=0.34",
-        "category": "economics",
-        "time": "2026-04-04T18:18:11"
-      },
-      {
-        "ticker": "KXCPI-26MAR-T0.9",
-        "title": "Will CPI rise more than 0.9% in March 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.08075665923377107,
-        "confidence": 0.935,
-        "market_price": 0.5,
-        "price_gap": 0.41924334076622893,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=0.08",
-        "category": "economics",
-        "time": "2026-04-04T18:18:11"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 5823,
+      "trades": 5826,
       "executed": 10,
       "deployed": 18.11
     },
@@ -884,7 +884,7 @@
       "deployed": 205.39
     },
     "WEATHER": {
-      "trades": 4081,
+      "trades": 4084,
       "executed": 4,
       "deployed": 32.42
     },
@@ -902,84 +902,84 @@
       },
       "claude": {
         "analyses": 20,
-        "avg_probability": 0.22399999999999998
+        "avg_probability": 0.2125
       },
       "deepseek": {
         "analyses": 20,
-        "avg_probability": 0.178
+        "avg_probability": 0.1915
       }
     },
     "consensus_rate": 0.0,
     "recent_votes": [
       {
         "perplexity": null,
-        "claude": 0.08,
-        "deepseek": 0.12,
+        "claude": 0.12,
+        "deepseek": 0.05,
         "consensus": false,
-        "time": "2026-04-04T19:40:01"
+        "time": "2026-04-04T19:50:31"
       },
       {
         "perplexity": null,
         "claude": 0.15,
-        "deepseek": 0.18,
+        "deepseek": 0.28,
         "consensus": false,
-        "time": "2026-04-04T19:40:01"
+        "time": "2026-04-04T19:50:31"
       },
       {
         "perplexity": null,
-        "claude": 0.65,
+        "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T19:40:01"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.08,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-04-04T19:40:01"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.18,
-        "deepseek": 0.08,
-        "consensus": false,
-        "time": "2026-04-04T19:40:01"
+        "time": "2026-04-04T19:50:31"
       },
       {
         "perplexity": null,
         "claude": 0.22,
-        "deepseek": 0.25,
+        "deepseek": 0.22,
         "consensus": false,
-        "time": "2026-04-04T19:40:01"
+        "time": "2026-04-04T19:50:31"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.12,
+        "deepseek": 0.32,
+        "consensus": false,
+        "time": "2026-04-04T19:50:31"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T19:40:01"
+        "time": "2026-04-04T19:50:31"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.08,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-04-04T19:50:31"
       },
       {
         "perplexity": null,
         "claude": 0.12,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-04-04T19:40:01"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.12,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-04-04T19:40:01"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.16,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-04T19:40:00"
+        "time": "2026-04-04T19:50:31"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.12,
+        "deepseek": 0.35,
+        "consensus": false,
+        "time": "2026-04-04T19:50:31"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.12,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-04-04T19:50:30"
       }
     ]
   },
@@ -1012,14 +1012,14 @@
     {
       "ticker": "KXHIGHNY-26APR04-B74.5",
       "title": "Will the **high temp in NYC** be 74-75\u00b0 on Apr 4, 2026?",
-      "price": 2,
+      "price": 6,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR04-B72.5",
       "title": "Will the **high temp in NYC** be 72-73\u00b0 on Apr 4, 2026?",
-      "price": 94,
+      "price": 95,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1061,84 +1061,84 @@
     {
       "ticker": "KXHIGHMIA-26APR04-B82.5",
       "title": "Will the **high temp in Miami** be 82-83\u00b0 on Apr 4, 2026?",
-      "price": 95,
+      "price": 86,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     }
   ],
   "news": [
     {
-      "text": "No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS data at KDEN amid cold front and gusty winds[1][4].",
+      "text": "Polymarket traders assign 100% probability to NYC high of 58\u00b0F or higher on Apr 4, 2026, with NOAA GFS/NAM models forecasting 65-68\u00b0F under high-pressure ridge; current midday temps in low 60s\u00b0F at 7 ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T06:50:13"
+      "time": "2026-04-04T19:50:28"
     },
     {
-      "text": "ThorntonWeather.com forecasts highs in the mid-60s for Saturday (April 4, 2026), with sunny skies and breezy winds[4]. AccuWeather's April 2026 monthly forecast shows daily highs ranging 55-80\u00b0F, aver",
+      "text": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T06:50:06"
+      "time": "2026-04-04T19:50:27"
     },
     {
-      "text": "Polymarket trader consensus for NYC high temp on April 4, 2026, at LaGuardia Airport shows 99.8-100% implied probability for 58\u00b0F or higher, with NWS guidance projecting mid-to-upper 60s\u00b0F under a per",
+      "text": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T06:49:55"
+      "time": "2026-04-04T19:50:27"
     },
     {
-      "text": "Yesterday (April 3, 2026), Austin's high temperature reached 84\u00b0F per official KAUS report at 6:53 PM UTC, below the 92\u00b0F threshold[1]. Robinhood prediction market prices >83\u00b0 at implied ~12%, >84\u00b0 lo",
+      "text": "Polymarket shows 100% probability for 58\u00b0F or higher at O'Hare on April 3, 2026, with NWS forecasting high near 62\u00b0F under cloudy, breezy conditions; KORD METARs confirmed midday >58\u00b0F. Robinhood mark",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T06:49:43"
+      "time": "2026-04-04T19:50:26"
     },
     {
-      "text": "Forecasts for April 4, 2026, in Miami show high temperatures of 77\u00b0F (EaseWeather[1]), 76\u00b0F (AccuWeather Miami Beach[6]), 84\u00b0F (AccuWeather North Miami Beach[8]), and 77\u00b0F (Weathershogun[4]). Historic",
+      "text": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T06:49:41"
+      "time": "2026-04-04T19:50:25"
     },
     {
-      "text": "Actual high temperature in Denver on April 3, 2026, was 41\u00b0F at 8:53 AM UTC (14:53 local), with very cold conditions, dry air (dew point 7\u00b0F), 24% humidity, strong WNW winds at 25.3 mph gusting to 44 ",
+      "text": "Polymarket shows 100% probability for 58\u00b0F or higher at O'Hare on April 3, 2026, with NWS forecasting high near 62\u00b0F under cloudy, breezy conditions; KORD METARs confirmed midday >58\u00b0F. Robinhood mark",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T06:49:32"
+      "time": "2026-04-04T19:49:21"
     },
     {
-      "text": "Actual high temperature in Chicago on April 3, 2026, was 54\u00b0F at 1:53 PM per WeatherSpark report from KMDW (Midway Airport), cooler than the 62-63\u00b0F range[5]. April normals show average high of 54\u00b0F[6",
+      "text": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T06:49:25"
+      "time": "2026-04-04T19:48:59"
     },
     {
-      "text": "Prediction market data from Polymarket shows 64-65\u00b0F at 85% implied probability for NYC's April 3 high, with 66-67\u00b0F at 9%. Weather forecasts from multiple sources indicate highs between 57-72\u00b0F for A",
+      "text": "Polymarket traders assign 100% probability to NYC high of 58\u00b0F or higher on Apr 4, 2026, with NOAA GFS/NAM models forecasting 65-68\u00b0F under high-pressure ridge; current midday temps in low 60s\u00b0F at 7 ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T06:49:20"
+      "time": "2026-04-04T19:47:25"
     },
     {
-      "text": "Official observations from National Weather Service at Central Park and LaGuardia Airport (KLGA ASOS) recorded a high of 65\u00b0F on April 3, 2026, confirmed by METAR reports and preliminary hourly data[1",
+      "text": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T06:49:16"
+      "time": "2026-04-04T19:46:41"
     },
     {
-      "text": "Actual high temperature in Denver on April 3, 2026, was 41\u00b0F at 8:53 AM UTC (14:53 local), with very cold conditions, dry air (dew point 7\u00b0F), 24% humidity, strong WNW winds at 25.3 mph gusting to 44 ",
+      "text": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T06:48:01"
+      "time": "2026-04-04T19:46:28"
     }
   ],
   "alerts": [
     {
       "level": "warning",
       "message": "48 API retries this session",
-      "detail": "48 non-fatal exceptions across 38 cycles (~1.3/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "48 non-fatal exceptions across 39 cycles (~1.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 48,
-    "cycles": 38,
-    "uptime_hours": 4.7
+    "cycles": 39,
+    "uptime_hours": 4.9
   }
 }
