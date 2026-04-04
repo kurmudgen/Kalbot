@@ -30,10 +30,14 @@ BOTS = [
 def is_running(marker: str) -> bool:
     """Check if a process with the given marker is running."""
     try:
+        no_window = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
         if os.name == "nt":
             result = subprocess.run(
-                ["wmic", "process", "where", "name='python.exe'", "get", "commandline"],
+                ["wmic", "process", "where",
+                 "name='python.exe' or name='pythonw.exe'",
+                 "get", "commandline"],
                 capture_output=True, text=True, timeout=10,
+                creationflags=no_window,
             )
         else:
             result = subprocess.run(
