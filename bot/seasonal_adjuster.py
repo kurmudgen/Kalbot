@@ -12,7 +12,7 @@ SEASONAL_ACCURACY = {
     1: 0.95,   # January — cold, stable patterns
     2: 0.95,   # February — cold, stable
     3: 0.90,   # March — transition, moderate haircut
-    4: 0.88,   # April — spring storms, slight haircut
+    4: 0.95,   # April — slight seasonal noise, minimal haircut
     5: 0.92,   # May — settling into summer
     6: 0.98,   # June — summer, very predictable
     7: 1.00,   # July — peak summer, no haircut

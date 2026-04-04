@@ -728,8 +728,8 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         # adjustment (0.88x) required 0.97 raw confidence which is unreachable.
         # Other gates (NWS gap, city confidence, ensemble floor) provide protection.
         if not skip_reason:
-            if 0.20 < cloud_prob < 0.80 and cloud_conf < 0.70 - 0.001:
-                skip_reason = f"borderline EV trade: prob={cloud_prob:.2f} needs conf>0.70 (has {cloud_conf:.2f})"
+            if 0.20 < cloud_prob < 0.80 and cloud_conf < 0.65 - 0.001:
+                skip_reason = f"borderline EV trade: prob={cloud_prob:.2f} needs conf>0.65 (has {cloud_conf:.2f})"
 
         # Correlation check
         if not skip_reason:
@@ -806,15 +806,31 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
                 cost_per = market_price if side == "YES" else (1.0 - market_price)
                 contracts = max(1, int(amount / cost_per)) if cost_per > 0 else 1
                 order_side = KalshiSide.YES if side == "YES" else KalshiSide.NO
-                # buy_max_cost_dollars provides slippage protection for market orders
-                max_cost = f"{amount:.2f}"
-                client.portfolio.place_order(
-                    ticker=ticker,
-                    action=KalshiAction.BUY,
-                    side=order_side,
-                    count_fp=f"{contracts}.00",
-                    buy_max_cost_dollars=max_cost,
-                )
+                # Use limit order at current price with slippage buffer
+                # YES price = market_price, NO price = 1 - market_price
+                # Add 2c slippage buffer for guaranteed fill
+                if side == "YES":
+                    limit_price = min(0.99, market_price + 0.02)
+                    price_str = f"{limit_price:.2f}"
+                    client.portfolio.place_order(
+                        ticker=ticker,
+                        action=KalshiAction.BUY,
+                        side=order_side,
+                        count_fp=f"{contracts}.00",
+                        yes_price_dollars=price_str,
+                        buy_max_cost_dollars=f"{amount:.2f}",
+                    )
+                else:
+                    limit_price = min(0.99, (1.0 - market_price) + 0.02)
+                    price_str = f"{limit_price:.2f}"
+                    client.portfolio.place_order(
+                        ticker=ticker,
+                        action=KalshiAction.BUY,
+                        side=order_side,
+                        count_fp=f"{contracts}.00",
+                        no_price_dollars=price_str,
+                        buy_max_cost_dollars=f"{amount:.2f}",
+                    )
                 client.close()
                 executed = True
                 print(f"  LIVE TRADE: {side} ${amount:.2f} ({contracts} contracts @ ~${cost_per:.2f}/ea) on {title[:50]}...")

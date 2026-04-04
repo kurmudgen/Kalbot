@@ -113,19 +113,65 @@ def get_filtered_markets() -> list[dict]:
     return [dict(r) for r in rows]
 
 
+import time
+import random
+
+# Retry on transient errors (429, 500, 502, 503, 529)
+RETRYABLE_STATUSES = {429, 500, 502, 503, 529}
+MAX_RETRIES = 2
+
+
+def _should_retry(e: Exception) -> bool:
+    """Check if an API error is retryable."""
+    status = getattr(e, "status_code", None) or getattr(e, "status", None)
+    if status and int(status) in RETRYABLE_STATUSES:
+        return True
+    err_str = str(e).lower()
+    if any(code in err_str for code in ("overloaded", "rate_limit", "529", "429", "502", "503")):
+        return True
+    return False
+
+
+def _retry_delay(attempt: int, err: Exception) -> float:
+    """Exponential backoff with jitter. Respects Retry-After header."""
+    retry_after = getattr(err, "headers", {})
+    if hasattr(retry_after, "get"):
+        ra = retry_after.get("retry-after")
+        if ra:
+            try:
+                return float(ra)
+            except ValueError:
+                pass
+    base = min(2 ** attempt, 30)
+    return base * (0.5 + random.random() * 0.5)
+
+
 def _call_openai_compatible(api_key: str, base_url: str, model: str,
                              messages: list, temperature: float = 0.3) -> str | None:
-    """Generic OpenAI-compatible API call with timeout."""
+    """Generic OpenAI-compatible API call with timeout and retry."""
     try:
         from openai import OpenAI
 
         client = OpenAI(api_key=api_key, base_url=base_url, timeout=60.0)
-        response = client.chat.completions.create(
-            model=model,
-            messages=messages,
-            temperature=temperature,
-        )
-        return response.choices[0].message.content
+
+        last_error = None
+        for attempt in range(MAX_RETRIES + 1):
+            try:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=messages,
+                    temperature=temperature,
+                )
+                return response.choices[0].message.content
+            except Exception as e:
+                last_error = e
+                if attempt < MAX_RETRIES and _should_retry(e):
+                    delay = _retry_delay(attempt, e)
+                    print(f"    Retry {attempt + 1}/{MAX_RETRIES} for {base_url} after {delay:.1f}s — {e}")
+                    time.sleep(delay)
+                else:
+                    raise
+        return None
     except Exception as e:
         print(f"    API error ({base_url}): {e}")
         return None
@@ -208,23 +254,36 @@ def call_claude(prompt: str, title: str = "") -> dict | None:
         import anthropic
 
         client = anthropic.Anthropic(api_key=api_key, timeout=60.0)
-        response = client.messages.create(
-            model="claude-sonnet-4-20250514",
-            max_tokens=300,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        raw = response.content[0].text
-        # Store in cache
-        if raw and title:
+
+        last_error = None
+        for attempt in range(MAX_RETRIES + 1):
             try:
-                from api_cache import store_cached
-                store_cached("claude", title, raw)
-            except Exception:
-                pass
-        result = _parse_json(raw)
-        if result:
-            result["_provider"] = "claude"
-        return result
+                response = client.messages.create(
+                    model="claude-sonnet-4-20250514",
+                    max_tokens=300,
+                    messages=[{"role": "user", "content": prompt}],
+                )
+                raw = response.content[0].text
+                # Store in cache
+                if raw and title:
+                    try:
+                        from api_cache import store_cached
+                        store_cached("claude", title, raw)
+                    except Exception:
+                        pass
+                result = _parse_json(raw)
+                if result:
+                    result["_provider"] = "claude"
+                return result
+            except Exception as e:
+                last_error = e
+                if attempt < MAX_RETRIES and _should_retry(e):
+                    delay = _retry_delay(attempt, e)
+                    print(f"    Claude retry {attempt + 1}/{MAX_RETRIES} after {delay:.1f}s — {e}")
+                    time.sleep(delay)
+                else:
+                    raise
+        return None
     except Exception as e:
         print(f"    Claude error: {e}")
         return None
@@ -434,6 +493,42 @@ def analyze_market_ensemble(market: dict) -> dict | None:
     if gemini_result:
         g_prob = gemini_result.get("probability", 0.5)
         g_conf = gemini_result.get("confidence", 0.5)
+
+        # Weather with NWS data: accept Gemini at 0.60+ without escalation
+        # NWS forecast is the settlement source — multi-model consensus is
+        # redundant when the answer is deterministic from NWS data.
+        if category == "weather" and g_conf >= 0.60:
+            try:
+                import sys as _sys
+                _dp = os.path.join(os.path.dirname(__file__), "..", "data")
+                if _dp not in _sys.path:
+                    _sys.path.insert(0, _dp)
+                from weather_nws_feed import load_forecasts
+                _fc = load_forecasts()
+                if _fc and len(_fc) > 0:
+                    avg_prob = (g_prob * 0.6 + local_prob * 0.4)
+                    avg_conf = (g_conf * 0.6 + local_conf * 0.4)
+                    return {
+                        "perplexity": None, "claude": None, "deepseek": None,
+                        "gemini": gemini_result,
+                        "consensus": {
+                            "probability": avg_prob,
+                            "confidence": avg_conf,
+                            "providers": ["local", "gemini"],
+                            "individual_probs": [local_prob, g_prob],
+                            "spread": abs(g_prob - local_prob),
+                            "dampened_edge": avg_prob - market_price,
+                            "weights_used": {"local": 0.4, "gemini": 0.6},
+                        },
+                        "research": "Weather NWS tier: Gemini + local with NWS data.",
+                        "estimates": [
+                            {"probability": local_prob, "confidence": local_conf, "_provider": "local"},
+                            gemini_result,
+                        ],
+                        "escalation_tier": "weather_nws_gemini",
+                    }
+            except Exception:
+                pass
 
         # Fast model conf > 0.80 and agrees with local -> accept, done
         if g_conf > 0.80 and abs(g_prob - local_prob) < 0.15:

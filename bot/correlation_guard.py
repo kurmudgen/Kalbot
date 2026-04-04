@@ -63,9 +63,10 @@ def brackets_overlap(a: dict, b: dict) -> bool:
 
 
 def get_active_positions() -> list[dict]:
-    """Get currently active (non-exited) positions."""
+    """Get currently active (non-exited, non-resolved) positions."""
     if not os.path.exists(DECISIONS_DB):
         return []
+
     conn = sqlite3.connect(DECISIONS_DB)
     conn.row_factory = sqlite3.Row
     rows = conn.execute("""
@@ -75,7 +76,30 @@ def get_active_positions() -> list[dict]:
         ORDER BY decided_at DESC
     """).fetchall()
     conn.close()
-    return [dict(r) for r in rows]
+
+    # Filter out resolved and exited tickers
+    resolved = set()
+    resolutions_db = os.path.join(os.path.dirname(__file__), "..", "logs", "resolutions.sqlite")
+    if os.path.exists(resolutions_db):
+        try:
+            rconn = sqlite3.connect(resolutions_db)
+            resolved = {r[0] for r in rconn.execute("SELECT DISTINCT ticker FROM resolved_trades").fetchall()}
+            rconn.close()
+        except Exception:
+            pass
+
+    exited = set()
+    if os.path.exists(DECISIONS_DB):
+        try:
+            econn = sqlite3.connect(DECISIONS_DB)
+            exited = {r[0] for r in econn.execute(
+                "SELECT DISTINCT ticker FROM decisions WHERE executed=1 AND side LIKE '%EXIT%'"
+            ).fetchall()}
+            econn.close()
+        except Exception:
+            pass
+
+    return [dict(r) for r in rows if r["ticker"] not in resolved and r["ticker"] not in exited]
 
 
 def check_correlation(new_market: dict) -> dict:
