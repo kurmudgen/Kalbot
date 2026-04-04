@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T19:50:33.598385+00:00",
+  "updated_at": "2026-04-04T19:58:06.091614+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T19:50:33.598385+00:00",
+    "last_updated": "2026-04-04T19:58:06.091614+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -103,7 +103,7 @@
       },
       {
         "date": "2026-04-04",
-        "trades": 8301,
+        "trades": 8363,
         "deployed": 108.12
       }
     ],
@@ -126,14 +126,14 @@
         "side": "NO",
         "amount": 0.0,
         "probability": 0.2831513759522865,
-        "confidence": 0.7115220588235295,
+        "confidence": 0.7489705882352942,
         "market_price": 0.45,
         "price_gap": 0.1668486240477134,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
         "category": "weather",
-        "time": "2026-04-04T19:50:33"
+        "time": "2026-04-04T19:58:06"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T78",
@@ -148,7 +148,7 @@
         "executed": false,
         "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
         "category": "weather",
-        "time": "2026-04-04T19:50:33"
+        "time": "2026-04-04T19:58:06"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T72",
@@ -163,7 +163,7 @@
         "executed": false,
         "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
         "category": "weather",
-        "time": "2026-04-04T19:50:33"
+        "time": "2026-04-04T19:58:05"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T72",
@@ -178,7 +178,7 @@
         "executed": false,
         "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
         "category": "weather",
-        "time": "2026-04-04T19:49:36"
+        "time": "2026-04-04T19:57:08"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
@@ -186,14 +186,14 @@
         "side": "NO",
         "amount": 0.0,
         "probability": 0.2831513759522865,
-        "confidence": 0.7115220588235295,
+        "confidence": 0.7489705882352942,
         "market_price": 0.45,
         "price_gap": 0.1668486240477134,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
         "category": "weather",
-        "time": "2026-04-04T19:49:36"
+        "time": "2026-04-04T19:57:08"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T78",
@@ -208,7 +208,22 @@
         "executed": false,
         "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
         "category": "weather",
-        "time": "2026-04-04T19:49:35"
+        "time": "2026-04-04T19:57:08"
+      },
+      {
+        "ticker": "KXCPI-26APR-T0.2",
+        "title": "Will CPI rise more than 0.2% in April 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999892824097,
+        "confidence": 0.8029999882106508,
+        "market_price": 0.87,
+        "price_gap": 0.12999998928240974,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-04T19:56:36"
       },
       {
         "ticker": "KXCPI-26APR-T0.4",
@@ -223,7 +238,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:17"
+        "time": "2026-04-04T19:56:36"
       },
       {
         "ticker": "KXCPI-26APR-T0.5",
@@ -238,7 +253,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:17"
+        "time": "2026-04-04T19:56:36"
       },
       {
         "ticker": "KXCPI-26MAY-T0.0",
@@ -253,7 +268,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:17"
+        "time": "2026-04-04T19:56:36"
       },
       {
         "ticker": "KXCPI-26MAY-T-0.1",
@@ -268,7 +283,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:17"
+        "time": "2026-04-04T19:56:36"
       },
       {
         "ticker": "KXCPI-26MAY-T0.2",
@@ -283,7 +298,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:17"
+        "time": "2026-04-04T19:56:35"
       },
       {
         "ticker": "KXCPI-26MAY-T0.3",
@@ -298,7 +313,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:17"
+        "time": "2026-04-04T19:56:35"
       },
       {
         "ticker": "KXCPI-26MAY-T0.4",
@@ -313,7 +328,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:17"
+        "time": "2026-04-04T19:56:35"
       },
       {
         "ticker": "KXCPI-26MAY-T0.5",
@@ -322,13 +337,13 @@
         "amount": 0.0,
         "probability": 0.9953388119762813,
         "confidence": 0.85,
-        "market_price": 0.17,
-        "price_gap": 0.8253388119762812,
+        "market_price": 0.19,
+        "price_gap": 0.8053388119762812,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:17"
+        "time": "2026-04-04T19:56:35"
       },
       {
         "ticker": "KXCPI-26JUN-T0.0",
@@ -343,7 +358,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:16"
+        "time": "2026-04-04T19:56:35"
       },
       {
         "ticker": "KXCPI-26JUN-T-0.1",
@@ -358,7 +373,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:16"
+        "time": "2026-04-04T19:56:35"
       },
       {
         "ticker": "KXCPI-26JUN-T0.1",
@@ -373,7 +388,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:16"
+        "time": "2026-04-04T19:56:35"
       },
       {
         "ticker": "KXCPI-26JUN-T0.2",
@@ -388,7 +403,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:16"
+        "time": "2026-04-04T19:56:35"
       },
       {
         "ticker": "KXCPI-26JUN-T0.3",
@@ -403,7 +418,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:16"
+        "time": "2026-04-04T19:56:35"
       },
       {
         "ticker": "KXCPI-26JUN-T0.4",
@@ -418,7 +433,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:16"
+        "time": "2026-04-04T19:56:35"
       },
       {
         "ticker": "KXCPI-26JUN-T0.5",
@@ -433,7 +448,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:16"
+        "time": "2026-04-04T19:56:34"
       },
       {
         "ticker": "KXCPI-26JUL-T0.0",
@@ -448,7 +463,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:16"
+        "time": "2026-04-04T19:56:34"
       },
       {
         "ticker": "KXCPI-26JUL-T-0.1",
@@ -463,7 +478,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:15"
+        "time": "2026-04-04T19:56:34"
       },
       {
         "ticker": "KXCPI-26JUL-T0.1",
@@ -478,7 +493,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:15"
+        "time": "2026-04-04T19:56:34"
       },
       {
         "ticker": "KXCPI-26JUL-T0.2",
@@ -493,7 +508,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:15"
+        "time": "2026-04-04T19:56:34"
       },
       {
         "ticker": "KXCPI-26JUL-T0.3",
@@ -508,7 +523,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:15"
+        "time": "2026-04-04T19:56:34"
       },
       {
         "ticker": "KXCPI-26JUL-T0.4",
@@ -523,7 +538,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:15"
+        "time": "2026-04-04T19:56:34"
       },
       {
         "ticker": "KXCPI-26JUL-T0.5",
@@ -538,7 +553,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:15"
+        "time": "2026-04-04T19:56:33"
       },
       {
         "ticker": "KXCPI-26AUG-T0.0",
@@ -553,7 +568,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:14"
+        "time": "2026-04-04T19:56:33"
       },
       {
         "ticker": "KXCPI-26AUG-T0.1",
@@ -568,7 +583,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:14"
+        "time": "2026-04-04T19:56:33"
       },
       {
         "ticker": "KXCPI-26AUG-T0.2",
@@ -583,7 +598,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:14"
+        "time": "2026-04-04T19:56:33"
       },
       {
         "ticker": "KXCPI-26AUG-T0.3",
@@ -598,7 +613,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:14"
+        "time": "2026-04-04T19:56:33"
       },
       {
         "ticker": "KXCPI-26AUG-T0.4",
@@ -613,7 +628,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:14"
+        "time": "2026-04-04T19:56:33"
       },
       {
         "ticker": "KXCPI-26AUG-T0.5",
@@ -628,7 +643,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:14"
+        "time": "2026-04-04T19:56:33"
       },
       {
         "ticker": "KXCPI-26SEP-T0.0",
@@ -643,7 +658,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:14"
+        "time": "2026-04-04T19:56:32"
       },
       {
         "ticker": "KXCPI-26SEP-T0.1",
@@ -658,7 +673,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:14"
+        "time": "2026-04-04T19:56:32"
       },
       {
         "ticker": "KXCPI-26SEP-T0.2",
@@ -673,7 +688,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:13"
+        "time": "2026-04-04T19:56:32"
       },
       {
         "ticker": "KXCPI-26SEP-T0.3",
@@ -688,7 +703,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:13"
+        "time": "2026-04-04T19:56:32"
       },
       {
         "ticker": "KXCPI-26SEP-T0.4",
@@ -703,7 +718,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:13"
+        "time": "2026-04-04T19:56:32"
       },
       {
         "ticker": "KXCPI-26SEP-T0.5",
@@ -712,13 +727,13 @@
         "amount": 0.0,
         "probability": 0.9953388119762813,
         "confidence": 0.85,
-        "market_price": 0.19,
-        "price_gap": 0.8053388119762812,
+        "market_price": 0.18,
+        "price_gap": 0.8153388119762812,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:13"
+        "time": "2026-04-04T19:56:32"
       },
       {
         "ticker": "KXCPI-26OCT-T-0.1",
@@ -733,7 +748,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:13"
+        "time": "2026-04-04T19:56:32"
       },
       {
         "ticker": "KXCPI-26OCT-T0.1",
@@ -748,7 +763,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:13"
+        "time": "2026-04-04T19:56:32"
       },
       {
         "ticker": "KXCPI-26OCT-T0.2",
@@ -763,7 +778,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:13"
+        "time": "2026-04-04T19:56:32"
       },
       {
         "ticker": "KXCPI-26OCT-T0.3",
@@ -778,7 +793,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:12"
+        "time": "2026-04-04T19:56:31"
       },
       {
         "ticker": "KXCPI-26OCT-T0.4",
@@ -787,13 +802,13 @@
         "amount": 0.0,
         "probability": 0.9998408914098424,
         "confidence": 0.85,
-        "market_price": 0.35,
-        "price_gap": 0.6498408914098425,
+        "market_price": 0.28,
+        "price_gap": 0.7198408914098424,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:12"
+        "time": "2026-04-04T19:56:31"
       },
       {
         "ticker": "KXCPI-26OCT-T0.5",
@@ -802,13 +817,13 @@
         "amount": 0.0,
         "probability": 0.9953388119762813,
         "confidence": 0.85,
-        "market_price": 0.18,
-        "price_gap": 0.8153388119762812,
+        "market_price": 0.17,
+        "price_gap": 0.8253388119762812,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:12"
+        "time": "2026-04-04T19:56:31"
       },
       {
         "ticker": "KXCPI-26NOV-T0.0",
@@ -823,7 +838,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:12"
+        "time": "2026-04-04T19:56:31"
       },
       {
         "ticker": "KXCPI-26NOV-T-0.1",
@@ -838,7 +853,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:12"
+        "time": "2026-04-04T19:56:31"
       },
       {
         "ticker": "KXCPI-26NOV-T0.1",
@@ -853,38 +868,23 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T18:18:12"
-      },
-      {
-        "ticker": "KXCPI-26NOV-T0.2",
-        "title": "Will CPI rise more than 0.2% in November 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9999999892824097,
-        "confidence": 0.85,
-        "market_price": 0.6,
-        "price_gap": 0.39999998928240976,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-04T18:18:12"
+        "time": "2026-04-04T19:56:31"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 5826,
+      "trades": 5829,
       "executed": 10,
       "deployed": 18.11
     },
     "QUANT": {
-      "trades": 86138,
+      "trades": 86194,
       "executed": 262,
       "deployed": 205.39
     },
     "WEATHER": {
-      "trades": 4084,
+      "trades": 4087,
       "executed": 4,
       "deployed": 32.42
     },
@@ -916,70 +916,70 @@
         "claude": 0.12,
         "deepseek": 0.05,
         "consensus": false,
-        "time": "2026-04-04T19:50:31"
+        "time": "2026-04-04T19:58:04"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.28,
         "consensus": false,
-        "time": "2026-04-04T19:50:31"
+        "time": "2026-04-04T19:58:04"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T19:50:31"
+        "time": "2026-04-04T19:58:04"
       },
       {
         "perplexity": null,
         "claude": 0.22,
         "deepseek": 0.22,
         "consensus": false,
-        "time": "2026-04-04T19:50:31"
+        "time": "2026-04-04T19:58:04"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.32,
         "consensus": false,
-        "time": "2026-04-04T19:50:31"
+        "time": "2026-04-04T19:58:04"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T19:50:31"
+        "time": "2026-04-04T19:58:03"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T19:50:31"
+        "time": "2026-04-04T19:58:03"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-04T19:50:31"
+        "time": "2026-04-04T19:58:03"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.35,
         "consensus": false,
-        "time": "2026-04-04T19:50:31"
+        "time": "2026-04-04T19:58:03"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T19:50:30"
+        "time": "2026-04-04T19:58:03"
       }
     ]
   },
@@ -1012,14 +1012,14 @@
     {
       "ticker": "KXHIGHNY-26APR04-B74.5",
       "title": "Will the **high temp in NYC** be 74-75\u00b0 on Apr 4, 2026?",
-      "price": 6,
+      "price": 1,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR04-B72.5",
       "title": "Will the **high temp in NYC** be 72-73\u00b0 on Apr 4, 2026?",
-      "price": 95,
+      "price": 98,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1054,14 +1054,14 @@
     {
       "ticker": "KXHIGHMIA-26APR04-B84.5",
       "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-      "price": 5,
+      "price": 15,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHMIA-26APR04-B82.5",
       "title": "Will the **high temp in Miami** be 82-83\u00b0 on Apr 4, 2026?",
-      "price": 86,
+      "price": 87,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     }
@@ -1071,74 +1071,74 @@
       "text": "Polymarket traders assign 100% probability to NYC high of 58\u00b0F or higher on Apr 4, 2026, with NOAA GFS/NAM models forecasting 65-68\u00b0F under high-pressure ridge; current midday temps in low 60s\u00b0F at 7 ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T19:50:28"
+      "time": "2026-04-04T19:58:00"
     },
     {
       "text": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T19:50:27"
+      "time": "2026-04-04T19:57:59"
     },
     {
       "text": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T19:50:27"
+      "time": "2026-04-04T19:57:59"
     },
     {
       "text": "Polymarket shows 100% probability for 58\u00b0F or higher at O'Hare on April 3, 2026, with NWS forecasting high near 62\u00b0F under cloudy, breezy conditions; KORD METARs confirmed midday >58\u00b0F. Robinhood mark",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T19:50:26"
+      "time": "2026-04-04T19:57:58"
     },
     {
       "text": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T19:50:25"
+      "time": "2026-04-04T19:57:57"
     },
     {
       "text": "Polymarket shows 100% probability for 58\u00b0F or higher at O'Hare on April 3, 2026, with NWS forecasting high near 62\u00b0F under cloudy, breezy conditions; KORD METARs confirmed midday >58\u00b0F. Robinhood mark",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T19:49:21"
+      "time": "2026-04-04T19:57:05"
     },
     {
       "text": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T19:48:59"
+      "time": "2026-04-04T19:57:04"
     },
     {
       "text": "Polymarket traders assign 100% probability to NYC high of 58\u00b0F or higher on Apr 4, 2026, with NOAA GFS/NAM models forecasting 65-68\u00b0F under high-pressure ridge; current midday temps in low 60s\u00b0F at 7 ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T19:47:25"
+      "time": "2026-04-04T19:57:01"
     },
     {
       "text": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T19:46:41"
+      "time": "2026-04-04T19:57:00"
     },
     {
       "text": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-04T19:46:28"
+      "time": "2026-04-04T19:57:00"
     }
   ],
   "alerts": [
     {
       "level": "warning",
       "message": "48 API retries this session",
-      "detail": "48 non-fatal exceptions across 39 cycles (~1.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "48 non-fatal exceptions across 40 cycles (~1.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 48,
-    "cycles": 39,
-    "uptime_hours": 4.9
+    "cycles": 40,
+    "uptime_hours": 5.0
   }
 }
