@@ -54,7 +54,7 @@ TIER_THRESHOLDS = {
 }
 
 # Time-based fallback: fire if tier hasn't run in this many hours
-FALLBACK_HOURS = 72
+FALLBACK_HOURS = 12
 
 # Protected parameters — self-calibrator can NEVER modify these
 PROTECTED_PARAMS = {
