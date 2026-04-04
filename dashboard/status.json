@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-04T07:24:25.040861+00:00",
+  "updated_at": "2026-04-04T07:33:02.277899+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
-      "balance": 50.0,
+      "balance": 200.0,
       "paper_mode": false
     },
     "alpaca": {
@@ -13,21 +13,21 @@
     }
   },
   "capital_status": {
-    "balance": 50.0,
-    "peak_balance": 50.0,
-    "floor_balance": 10.0,
-    "available_capital": 40.0,
+    "balance": 200.0,
+    "peak_balance": 200.0,
+    "floor_balance": 40.0,
+    "available_capital": 160.0,
     "performance_score": 50.0,
     "score_multiplier": 1.0,
     "daily_deployed": 0.0,
-    "daily_cap": 24.0,
+    "daily_cap": 84.0,
     "cycle_status": "active"
   },
   "treasury": {
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T07:24:25.040861+00:00",
+    "last_updated": "2026-04-04T07:33:02.277899+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -103,7 +103,7 @@
       },
       {
         "date": "2026-04-04",
-        "trades": 3212,
+        "trades": 3230,
         "deployed": 0
       }
     ],
@@ -120,6 +120,276 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHMIA-26APR04-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2687244190012211,
+        "confidence": 0.6402758620689655,
+        "market_price": 0.03,
+        "price_gap": 0.23872441900122113,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:33:02"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B65.5",
+        "title": "Will the **high temp in NYC** be 65-66\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5517452448194323,
+        "confidence": 0.7491525423728813,
+        "market_price": 0.94,
+        "price_gap": 0.3882547551805676,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:33:02"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR03-T92",
+        "title": "Will the **high temp in Austin** be >92\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.21125799420674365,
+        "confidence": 0.7728571428571428,
+        "market_price": 0.03,
+        "price_gap": 0.18125799420674366,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:33:02"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T78",
+        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.28180883449315963,
+        "confidence": 0.5913271028037382,
+        "market_price": 0.03,
+        "price_gap": 0.2518088344931596,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:33:02"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-B55.5",
+        "title": "Will the **high temp in Denver** be 55-56\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.27491406531242635,
+        "confidence": 0.7999302325581396,
+        "market_price": 0.31,
+        "price_gap": 0.03508593468757365,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:33:01"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-T58",
+        "title": "Will the **high temp in Denver** be >58\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.38333550553129736,
+        "confidence": 0.6983253588516747,
+        "market_price": 0.05,
+        "price_gap": 0.33333550553129737,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:33:01"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2820591814678247,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.07,
+        "price_gap": 0.2120591814678247,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:33:01"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR03-B62.5",
+        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5270500759488046,
+        "confidence": 0.7228070175438597,
+        "market_price": 0.9,
+        "price_gap": 0.3729499240511954,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:33:01"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2520542508377275,
+        "confidence": 0.66,
+        "market_price": 0.03,
+        "price_gap": 0.22205425083772748,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:33:01"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B65.5",
+        "title": "Will the **high temp in NYC** be 65-66\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5517452448194323,
+        "confidence": 0.7491525423728813,
+        "market_price": 0.94,
+        "price_gap": 0.3882547551805676,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:31:21"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR03-T92",
+        "title": "Will the **high temp in Austin** be >92\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.21125799420674365,
+        "confidence": 0.7728571428571428,
+        "market_price": 0.03,
+        "price_gap": 0.18125799420674366,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:31:21"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-B55.5",
+        "title": "Will the **high temp in Denver** be 55-56\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.27491406531242635,
+        "confidence": 0.7999302325581396,
+        "market_price": 0.31,
+        "price_gap": 0.03508593468757365,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:31:21"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-T58",
+        "title": "Will the **high temp in Denver** be >58\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.38333550553129736,
+        "confidence": 0.6983253588516747,
+        "market_price": 0.05,
+        "price_gap": 0.33333550553129737,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:31:21"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2820591814678247,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.07,
+        "price_gap": 0.2120591814678247,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:31:21"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR03-B62.5",
+        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5270500759488046,
+        "confidence": 0.7228070175438597,
+        "market_price": 0.9,
+        "price_gap": 0.3729499240511954,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:31:21"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2520542508377275,
+        "confidence": 0.66,
+        "market_price": 0.03,
+        "price_gap": 0.22205425083772748,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:31:21"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2687244190012211,
+        "confidence": 0.6402758620689655,
+        "market_price": 0.03,
+        "price_gap": 0.23872441900122113,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:31:21"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T78",
+        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.28180883449315963,
+        "confidence": 0.5913271028037382,
+        "market_price": 0.03,
+        "price_gap": 0.2518088344931596,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:31:21"
+      },
       {
         "ticker": "KXHIGHMIA-26APR04-T85",
         "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
@@ -599,282 +869,12 @@
         "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
         "category": "weather",
         "time": "2026-04-04T07:14:02"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR03-B62.5",
-        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.5270500759488046,
-        "confidence": 0.7228070175438597,
-        "market_price": 0.9,
-        "price_gap": 0.3729499240511954,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:14:02"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.2520542508377275,
-        "confidence": 0.66,
-        "market_price": 0.03,
-        "price_gap": 0.22205425083772748,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:14:02"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T85",
-        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.2687244190012211,
-        "confidence": 0.6402758620689655,
-        "market_price": 0.03,
-        "price_gap": 0.23872441900122113,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:14:02"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.28180883449315963,
-        "confidence": 0.5913271028037382,
-        "market_price": 0.03,
-        "price_gap": 0.2518088344931596,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:14:02"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-B65.5",
-        "title": "Will the **high temp in NYC** be 65-66\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.5517452448194323,
-        "confidence": 0.7491525423728813,
-        "market_price": 0.94,
-        "price_gap": 0.3882547551805676,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:11:08"
-      },
-      {
-        "ticker": "KXHIGHAUS-26APR03-T92",
-        "title": "Will the **high temp in Austin** be >92\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.21125799420674365,
-        "confidence": 0.7728571428571428,
-        "market_price": 0.03,
-        "price_gap": 0.18125799420674366,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:11:08"
-      },
-      {
-        "ticker": "KXHIGHDEN-26APR03-B55.5",
-        "title": "Will the **high temp in Denver** be 55-56\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.27491406531242635,
-        "confidence": 0.7999302325581396,
-        "market_price": 0.31,
-        "price_gap": 0.03508593468757365,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:11:08"
-      },
-      {
-        "ticker": "KXHIGHDEN-26APR03-T58",
-        "title": "Will the **high temp in Denver** be >58\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.38333550553129736,
-        "confidence": 0.6983253588516747,
-        "market_price": 0.05,
-        "price_gap": 0.33333550553129737,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:11:08"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR03-T85",
-        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.2820591814678247,
-        "confidence": 0.6719626168224299,
-        "market_price": 0.07,
-        "price_gap": 0.2120591814678247,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:11:08"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR03-B62.5",
-        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.5270500759488046,
-        "confidence": 0.7228070175438597,
-        "market_price": 0.9,
-        "price_gap": 0.3729499240511954,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:11:07"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.2520542508377275,
-        "confidence": 0.66,
-        "market_price": 0.03,
-        "price_gap": 0.22205425083772748,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:11:07"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T85",
-        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.2687244190012211,
-        "confidence": 0.6402758620689655,
-        "market_price": 0.03,
-        "price_gap": 0.23872441900122113,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:11:07"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.28180883449315963,
-        "confidence": 0.5913271028037382,
-        "market_price": 0.03,
-        "price_gap": 0.2518088344931596,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T07:11:07"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.09900303792372622,
-        "confidence": 0.7094999999999999,
-        "market_price": 0.03,
-        "price_gap": 0.06900303792372622,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show high temperatures of 77\u00b0F (EaseWeather[1]), 76\u00b0F (AccuWeather Miami Beach[6]), 84\u00b0F (AccuWeather North Miami Beach[8]), and 77\u00b0F (Weathershogun[4]). Historic",
-        "category": "weather",
-        "time": "2026-04-04T06:50:21"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-B71.5",
-        "title": "Will the **high temp in NYC** be 71-72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.02923725718613503,
-        "confidence": 0.9453070866141733,
-        "market_price": 0.04,
-        "price_gap": 0.01076274281386497,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Prediction market data from Polymarket shows 64-65\u00b0F at 85% implied probability for NYC's April 3 high, with 66-67\u00b0F at 9%. Weather forecasts from multiple sources indicate highs between 57-72\u00b0F for A",
-        "category": "weather",
-        "time": "2026-04-04T06:50:21"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-B71.5",
-        "title": "Will the **high temp in NYC** be 71-72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.02923725718613503,
-        "confidence": 0.9453070866141733,
-        "market_price": 0.04,
-        "price_gap": 0.01076274281386497,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Prediction market data from Polymarket shows 64-65\u00b0F at 85% implied probability for NYC's April 3 high, with 66-67\u00b0F at 9%. Weather forecasts from multiple sources indicate highs between 57-72\u00b0F for A",
-        "category": "weather",
-        "time": "2026-04-04T06:46:45"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.09900303792372622,
-        "confidence": 0.7094999999999999,
-        "market_price": 0.03,
-        "price_gap": 0.06900303792372622,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show high temperatures of 77\u00b0F (EaseWeather[1]), 76\u00b0F (AccuWeather Miami Beach[6]), 84\u00b0F (AccuWeather North Miami Beach[8]), and 77\u00b0F (Weathershogun[4]). Historic",
-        "category": "weather",
-        "time": "2026-04-04T06:46:45"
-      },
-      {
-        "ticker": "KXGDP-26APR30-T1.5",
-        "title": "Will **real GDP** increase by more than 1.5% in Q1 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.5792597094391031,
-        "confidence": 0.7853701452804485,
-        "market_price": 0.77,
-        "price_gap": 0.18537014528044846,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
-        "category": "economics",
-        "time": "2026-04-04T06:44:29"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 3450,
+      "trades": 3459,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -884,7 +884,7 @@
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1657,
+      "trades": 1666,
       "executed": 2,
       "deployed": 2.42
     },
@@ -916,70 +916,70 @@
         "claude": 0.15,
         "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-04-04T07:24:22"
+        "time": "2026-04-04T07:33:00"
       },
       {
         "perplexity": null,
         "claude": 0.75,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:24:20"
+        "time": "2026-04-04T07:32:58"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:24:18"
+        "time": "2026-04-04T07:32:56"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:24:18"
+        "time": "2026-04-04T07:32:56"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:24:18"
+        "time": "2026-04-04T07:32:56"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-04T07:24:18"
+        "time": "2026-04-04T07:32:56"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:24:18"
+        "time": "2026-04-04T07:32:56"
       },
       {
         "perplexity": null,
         "claude": 0.22,
         "deepseek": 0.22,
         "consensus": false,
-        "time": "2026-04-04T07:24:18"
+        "time": "2026-04-04T07:32:56"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:24:18"
+        "time": "2026-04-04T07:32:55"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:24:16"
+        "time": "2026-04-04T07:32:53"
       }
     ]
   },
@@ -1005,7 +1005,7 @@
     {
       "ticker": "KXHIGHNY-26APR04-T68",
       "title": "Will the **high temp in NYC** be <68\u00b0 on Apr 4, 2026?",
-      "price": 26,
+      "price": 27,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1132,7 +1132,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 2,
-    "uptime_hours": 0.2
+    "cycles": 3,
+    "uptime_hours": 0.3
   }
 }
