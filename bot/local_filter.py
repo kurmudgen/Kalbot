@@ -97,7 +97,13 @@ def get_open_markets() -> list[dict]:
 
     # Pre-filter: skip markets that aren't worth sending to Ollama
     markets = []
-    skipped = {"scored": 0, "no_volume": 0, "resolved": 0, "stale_price": 0}
+    skipped = {"scored": 0, "no_volume": 0, "resolved": 0, "stale_price": 0, "stale_date": 0}
+
+    import re as _re
+    from datetime import date as _date
+    _MONTHS = {"JAN":1,"FEB":2,"MAR":3,"APR":4,"MAY":5,"JUN":6,
+                "JUL":7,"AUG":8,"SEP":9,"OCT":10,"NOV":11,"DEC":12}
+    _today = _date.today()
 
     for r in rows:
         ticker = r["ticker"]
@@ -106,6 +112,19 @@ def get_open_markets() -> list[dict]:
         if ticker in scored_tickers:
             skipped["scored"] += 1
             continue
+
+        # Skip markets whose resolution date has already passed
+        _dm = _re.search(r'(\d{2})([A-Z]{3})(\d{2})', ticker)
+        if _dm:
+            try:
+                _yr = 2000 + int(_dm.group(1))
+                _mo = _MONTHS.get(_dm.group(2), 0)
+                _dy = int(_dm.group(3))
+                if _mo and _dy and _date(_yr, _mo, _dy) < _today:
+                    skipped["stale_date"] += 1
+                    continue
+            except Exception:
+                pass
 
         # Skip markets with no trading activity (dead markets)
         volume = r["volume"] or 0
@@ -125,7 +144,7 @@ def get_open_markets() -> list[dict]:
     if total_skipped > 0:
         print(f"  Pre-filter: {len(markets)} to score, skipped {total_skipped} "
               f"(scored:{skipped['scored']}, no_vol:{skipped['no_volume']}, "
-              f"resolved:{skipped['resolved']})")
+              f"resolved:{skipped['resolved']}, stale_date:{skipped['stale_date']})")
 
     # Pre-screener: quick 3b model rejects markets where public data can't help
     try:

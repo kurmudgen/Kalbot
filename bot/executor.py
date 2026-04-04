@@ -526,6 +526,24 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
 
         skip_reason = None
 
+        # Stale market filter — skip markets whose resolution date has passed
+        try:
+            import re as _re
+            import calendar as _cal
+            _MONTHS = {"JAN":1,"FEB":2,"MAR":3,"APR":4,"MAY":5,"JUN":6,
+                        "JUL":7,"AUG":8,"SEP":9,"OCT":10,"NOV":11,"DEC":12}
+            _dm = _re.search(r'(\d{2})([A-Z]{3})(\d{2})', ticker)
+            if _dm:
+                _yr = 2000 + int(_dm.group(1))
+                _mo = _MONTHS.get(_dm.group(2), 0)
+                _dy = int(_dm.group(3))
+                if _mo and _dy:
+                    from datetime import date as _date
+                    if _date(_yr, _mo, _dy) < _date.today():
+                        skip_reason = f"stale market: resolution date {_yr}-{_mo:02d}-{_dy:02d} already passed"
+        except Exception:
+            pass
+
         # Order book depth check — skip thin markets
         try:
             from orderbook_analyzer import is_safe_to_trade
