@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T14:15:25.208274+00:00",
+  "updated_at": "2026-04-04T14:22:37.754970+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T14:15:25.208274+00:00",
+    "last_updated": "2026-04-04T14:22:37.754970+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -916,70 +916,70 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:15:22"
+        "time": "2026-04-04T14:22:34"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:15:21"
+        "time": "2026-04-04T14:22:34"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:15:19"
+        "time": "2026-04-04T14:22:34"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:15:17"
+        "time": "2026-04-04T14:22:34"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:15:16"
+        "time": "2026-04-04T14:22:34"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:15:13"
+        "time": "2026-04-04T14:22:34"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:15:12"
+        "time": "2026-04-04T14:22:34"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:15:11"
+        "time": "2026-04-04T14:22:34"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:15:11"
+        "time": "2026-04-04T14:22:34"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T14:15:11"
+        "time": "2026-04-04T14:22:34"
       }
     ]
   },
@@ -1005,7 +1005,7 @@
     {
       "ticker": "KXHIGHNY-26APR04-T68",
       "title": "Will the **high temp in NYC** be <68\u00b0 on Apr 4, 2026?",
-      "price": 4,
+      "price": 9,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1019,7 +1019,7 @@
     {
       "ticker": "KXHIGHNY-26APR04-B72.5",
       "title": "Will the **high temp in NYC** be 72-73\u00b0 on Apr 4, 2026?",
-      "price": 23,
+      "price": 26,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1040,7 +1040,7 @@
     {
       "ticker": "KXHIGHMIA-26APR04-T85",
       "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
-      "price": 10,
+      "price": 7,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1054,7 +1054,7 @@
     {
       "ticker": "KXHIGHMIA-26APR04-B84.5",
       "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-      "price": 33,
+      "price": 36,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1132,7 +1132,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 52,
-    "uptime_hours": 6.5
+    "cycles": 53,
+    "uptime_hours": 6.6
   }
 }
