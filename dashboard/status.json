@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T00:55:51.836120+00:00",
+  "updated_at": "2026-04-04T02:36:20.391627+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T00:55:51.836120+00:00",
+    "last_updated": "2026-04-04T02:36:20.391627+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -103,7 +103,7 @@
       },
       {
         "date": "2026-04-04",
-        "trades": 543,
+        "trades": 725,
         "deployed": 0
       }
     ],
@@ -121,379 +121,574 @@
     "skipped": 50,
     "recent": [
       {
-        "ticker": "KXHIGHMIA-26APR04-T85",
-        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
-        "side": "YES",
+        "ticker": "KXHIGHAUS-26APR04-B75.5",
+        "title": "Will the **high temp in Austin** be 75-76\u00b0 on Apr 4, 2026?",
+        "side": "NO",
         "amount": 0.0,
-        "probability": 0.2463417714505888,
-        "confidence": 0.680390243902439,
-        "market_price": 0.04,
-        "price_gap": 0.2063417714505888,
+        "probability": 0.27351000583773033,
+        "confidence": 0.67936,
+        "market_price": 0.3,
+        "price_gap": 0.02648999416226966,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:55:51"
+        "time": "2026-04-04T02:36:20"
       },
       {
-        "ticker": "KXHIGHNY-26APR04-T75",
-        "title": "Will the **high temp in NYC** be >75\u00b0 on Apr 4, 2026?",
-        "side": "YES",
+        "ticker": "KXHIGHAUS-26APR04-B73.5",
+        "title": "Will the **high temp in Austin** be 73-74\u00b0 on Apr 4, 2026?",
+        "side": "NO",
         "amount": 0.0,
-        "probability": 0.26136087604995223,
-        "confidence": 0.616,
-        "market_price": 0.03,
-        "price_gap": 0.23136087604995223,
+        "probability": 0.27351000583773033,
+        "confidence": 0.67936,
+        "market_price": 0.28,
+        "price_gap": 0.006489994162269697,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:55:51"
+        "time": "2026-04-04T02:36:20"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
         "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.10962766827988162,
-        "confidence": 0.6776000000000002,
-        "market_price": 0.13,
-        "price_gap": 0.02037233172011839,
+        "probability": 0.27105600687361325,
+        "confidence": 0.7309012658227847,
+        "market_price": 0.45,
+        "price_gap": 0.17894399312638676,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T00:55:51"
+        "time": "2026-04-04T02:36:20"
       },
       {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.13262475404712348,
-        "confidence": 0.6313488372093023,
-        "market_price": 0.03,
-        "price_gap": 0.10262475404712348,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
-        "category": "weather",
-        "time": "2026-04-04T00:55:51"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR03-B66.5",
-        "title": "Will the high temp in Chicago be 66-67\u00b0 on Apr 3, 2026?",
+        "ticker": "KXHIGHNY-26APR03-B67.5",
+        "title": "Will the **high temp in NYC** be 67-68\u00b0 on Apr 3, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.02336454714980007,
-        "confidence": 0.6776000000000002,
-        "market_price": 0.03,
-        "price_gap": 0.006635452850199928,
+        "probability": 0.01574119266411121,
+        "confidence": 0.7715269406392696,
+        "market_price": 0.05,
+        "price_gap": 0.03425880733588879,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:55:51"
+        "time": "2026-04-04T02:36:19"
       },
       {
-        "ticker": "KXHIGHDEN-26APR03-B51.5",
-        "title": "Will the **high temp in Denver** be 51-52\u00b0 on Apr 3, 2026?",
+        "ticker": "KXHIGHNY-26APR03-B65.5",
+        "title": "Will the **high temp in NYC** be 65-66\u00b0 on Apr 3, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.14269609086347054,
-        "confidence": 0.6061102803738317,
-        "market_price": 0.17,
-        "price_gap": 0.02730390913652947,
+        "probability": 0.5361121682755642,
+        "confidence": 0.7328141592920354,
+        "market_price": 0.94,
+        "price_gap": 0.40388783172443576,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "reasoning": "[city=nyc] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami",
         "category": "weather",
-        "time": "2026-04-04T00:55:51"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR03-T85",
-        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.3895133823737946,
-        "confidence": 0.6360701754385966,
-        "market_price": 0.07,
-        "price_gap": 0.3195133823737946,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T00:55:51"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR03-B62.5",
-        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.5562395916987531,
-        "confidence": 0.6208440366972477,
-        "market_price": 0.9,
-        "price_gap": 0.3437604083012469,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T00:55:50"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-B69.5",
-        "title": "Will the **high temp in NYC** be 69-70\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.13938974054075412,
-        "confidence": 0.6504598130841122,
-        "market_price": 0.14,
-        "price_gap": 0.0006102594592458932,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T00:55:50"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.33129880185352,
-        "confidence": 0.5913271028037382,
-        "market_price": 0.03,
-        "price_gap": 0.30129880185352,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T00:55:50"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR03-B66.5",
-        "title": "Will the high temp in Chicago be 66-67\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.02336454714980007,
-        "confidence": 0.6776000000000002,
-        "market_price": 0.03,
-        "price_gap": 0.006635452850199928,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T00:54:02"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR03-T85",
-        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.3895133823737946,
-        "confidence": 0.6360701754385966,
-        "market_price": 0.07,
-        "price_gap": 0.3195133823737946,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T00:54:02"
-      },
-      {
-        "ticker": "KXHIGHCHI-26APR03-B62.5",
-        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.5562395916987531,
-        "confidence": 0.6208440366972477,
-        "market_price": 0.9,
-        "price_gap": 0.3437604083012469,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T00:54:02"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-B69.5",
-        "title": "Will the **high temp in NYC** be 69-70\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.13938974054075412,
-        "confidence": 0.6504598130841122,
-        "market_price": 0.14,
-        "price_gap": 0.0006102594592458932,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T00:54:02"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.33129880185352,
-        "confidence": 0.5913271028037382,
-        "market_price": 0.03,
-        "price_gap": 0.30129880185352,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T00:54:02"
+        "time": "2026-04-04T02:36:19"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T85",
         "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.2463417714505888,
-        "confidence": 0.680390243902439,
+        "probability": 0.25094886800962946,
+        "confidence": 0.6845190839694657,
         "market_price": 0.04,
-        "price_gap": 0.2063417714505888,
+        "price_gap": 0.21094886800962945,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
+        "reasoning": "[city=miami] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami[4], and AccuWeather's main Miami for",
         "category": "weather",
-        "time": "2026-04-04T00:52:48"
+        "time": "2026-04-04T02:36:19"
       },
       {
-        "ticker": "KXHIGHNY-26APR04-T75",
-        "title": "Will the **high temp in NYC** be >75\u00b0 on Apr 4, 2026?",
+        "ticker": "KXHIGHAUS-26APR03-B91.5",
+        "title": "Will the **high temp in Austin** be 91-92\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 0.8695866666666668,
+        "market_price": 0.03,
+        "price_gap": 0.014258807335888784,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T02:36:19"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR03-T85",
+        "title": "Will the **high temp in Austin** be <85\u00b0 on Apr 3, 2026?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.26136087604995223,
-        "confidence": 0.616,
-        "market_price": 0.03,
-        "price_gap": 0.23136087604995223,
+        "probability": 0.5250757901333595,
+        "confidence": 0.7848284697508898,
+        "market_price": 0.14,
+        "price_gap": 0.38507579013335946,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
+        "reasoning": "[city=austin] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mi",
         "category": "weather",
-        "time": "2026-04-04T00:52:48"
+        "time": "2026-04-04T02:36:19"
       },
       {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.10962766827988162,
-        "confidence": 0.6776000000000002,
-        "market_price": 0.13,
-        "price_gap": 0.02037233172011839,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
-        "category": "weather",
-        "time": "2026-04-04T00:52:48"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "ticker": "KXHIGHDEN-26APR03-T58",
+        "title": "Will the **high temp in Denver** be >58\u00b0 on Apr 3, 2026?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.13262475404712348,
-        "confidence": 0.6313488372093023,
-        "market_price": 0.03,
-        "price_gap": 0.10262475404712348,
+        "probability": 0.4464205647745985,
+        "confidence": 0.6828495575221238,
+        "market_price": 0.05,
+        "price_gap": 0.3964205647745985,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
+        "reasoning": "[city=denver] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mi",
         "category": "weather",
-        "time": "2026-04-04T00:52:48"
+        "time": "2026-04-04T02:36:19"
       },
       {
-        "ticker": "KXHIGHCHI-26APR03-B66.5",
-        "title": "Will the high temp in Chicago be 66-67\u00b0 on Apr 3, 2026?",
-        "side": "NO",
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
         "amount": 0.0,
-        "probability": 0.02336454714980007,
-        "confidence": 0.6776000000000002,
-        "market_price": 0.03,
-        "price_gap": 0.006635452850199928,
+        "probability": 0.3822997000675113,
+        "confidence": 0.6944000000000001,
+        "market_price": 0.04,
+        "price_gap": 0.3422997000675113,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T00:52:48"
+        "time": "2026-04-04T02:36:19"
       },
       {
-        "ticker": "KXHIGHDEN-26APR03-B51.5",
-        "title": "Will the **high temp in Denver** be 51-52\u00b0 on Apr 3, 2026?",
+        "ticker": "KXHIGHMIA-26APR03-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 3, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.14269609086347054,
-        "confidence": 0.6061102803738317,
+        "probability": 0.08769456991585786,
+        "confidence": 0.7309012658227847,
         "market_price": 0.17,
-        "price_gap": 0.02730390913652947,
+        "price_gap": 0.08230543008414215,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T00:52:48"
+        "time": "2026-04-04T02:36:19"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
         "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.3895133823737946,
-        "confidence": 0.6360701754385966,
+        "probability": 0.26131719252614216,
+        "confidence": 0.7239087452471483,
         "market_price": 0.07,
-        "price_gap": 0.3195133823737946,
+        "price_gap": 0.19131719252614215,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T00:52:47"
+        "time": "2026-04-04T02:36:18"
       },
       {
-        "ticker": "KXHIGHCHI-26APR03-B62.5",
-        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
+        "ticker": "KXHIGHNY-26APR03-B71.5",
+        "title": "Will the **high temp in NYC** be 71-72\u00b0 on Apr 3, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.5562395916987531,
-        "confidence": 0.6208440366972477,
-        "market_price": 0.9,
-        "price_gap": 0.3437604083012469,
+        "probability": 0.015741192664111215,
+        "confidence": 0.7715269406392696,
+        "market_price": 0.04,
+        "price_gap": 0.024258807335888786,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:52:47"
+        "time": "2026-04-04T02:36:18"
       },
       {
-        "ticker": "KXHIGHNY-26APR03-B69.5",
-        "title": "Will the **high temp in NYC** be 69-70\u00b0 on Apr 3, 2026?",
+        "ticker": "KXHIGHNY-26APR03-T65",
+        "title": "Will the **high temp in NYC** be <65\u00b0 on Apr 3, 2026?",
         "side": "NO",
         "amount": 0.0,
-        "probability": 0.13938974054075412,
-        "confidence": 0.6504598130841122,
-        "market_price": 0.14,
-        "price_gap": 0.0006102594592458932,
+        "probability": 0.24149158754528466,
+        "confidence": 0.8006508474576272,
+        "market_price": 0.25,
+        "price_gap": 0.008508412454715342,
         "mode": "LIVE",
         "executed": false,
-        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:52:47"
+        "time": "2026-04-04T02:36:18"
       },
       {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "ticker": "KXHIGHNY-26APR03-B67.5",
+        "title": "Will the **high temp in NYC** be 67-68\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.01574119266411121,
+        "confidence": 0.7715269406392696,
+        "market_price": 0.05,
+        "price_gap": 0.03425880733588879,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T02:32:57"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B65.5",
+        "title": "Will the **high temp in NYC** be 65-66\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5361121682755642,
+        "confidence": 0.7328141592920354,
+        "market_price": 0.94,
+        "price_gap": 0.40388783172443576,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=nyc] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami",
+        "category": "weather",
+        "time": "2026-04-04T02:32:56"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR03-B91.5",
+        "title": "Will the **high temp in Austin** be 91-92\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 0.8695866666666668,
+        "market_price": 0.03,
+        "price_gap": 0.014258807335888784,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T02:32:56"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR03-T85",
+        "title": "Will the **high temp in Austin** be <85\u00b0 on Apr 3, 2026?",
         "side": "YES",
         "amount": 0.0,
-        "probability": 0.33129880185352,
-        "confidence": 0.5913271028037382,
+        "probability": 0.5250757901333595,
+        "confidence": 0.7848284697508898,
+        "market_price": 0.14,
+        "price_gap": 0.38507579013335946,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=austin] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mi",
+        "category": "weather",
+        "time": "2026-04-04T02:32:56"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-T58",
+        "title": "Will the **high temp in Denver** be >58\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.4464205647745985,
+        "confidence": 0.6828495575221238,
+        "market_price": 0.05,
+        "price_gap": 0.3964205647745985,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=denver] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mi",
+        "category": "weather",
+        "time": "2026-04-04T02:32:56"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3822997000675113,
+        "confidence": 0.6944000000000001,
+        "market_price": 0.04,
+        "price_gap": 0.3422997000675113,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
+        "category": "weather",
+        "time": "2026-04-04T02:32:56"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.08769456991585786,
+        "confidence": 0.7309012658227847,
+        "market_price": 0.17,
+        "price_gap": 0.08230543008414215,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
+        "category": "weather",
+        "time": "2026-04-04T02:32:56"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.26131719252614216,
+        "confidence": 0.7239087452471483,
+        "market_price": 0.07,
+        "price_gap": 0.19131719252614215,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
+        "category": "weather",
+        "time": "2026-04-04T02:32:56"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B71.5",
+        "title": "Will the **high temp in NYC** be 71-72\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 0.7715269406392696,
+        "market_price": 0.04,
+        "price_gap": 0.024258807335888786,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T02:32:55"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T65",
+        "title": "Will the **high temp in NYC** be <65\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.24149158754528466,
+        "confidence": 0.8006508474576272,
+        "market_price": 0.25,
+        "price_gap": 0.008508412454715342,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T02:32:55"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.25094886800962946,
+        "confidence": 0.6845190839694657,
+        "market_price": 0.04,
+        "price_gap": 0.21094886800962945,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami[4], and AccuWeather's main Miami for",
+        "category": "weather",
+        "time": "2026-04-04T02:15:30"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR03-B91.5",
+        "title": "Will the **high temp in Austin** be 91-92\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 0.8695866666666668,
         "market_price": 0.03,
-        "price_gap": 0.30129880185352,
+        "price_gap": 0.014258807335888784,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:52:47"
+        "time": "2026-04-04T02:15:30"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR03-T85",
+        "title": "Will the **high temp in Austin** be <85\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.5250757901333595,
+        "confidence": 0.7848284697508898,
+        "market_price": 0.14,
+        "price_gap": 0.38507579013335946,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=austin] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weat",
+        "category": "weather",
+        "time": "2026-04-04T02:15:30"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-T58",
+        "title": "Will the **high temp in Denver** be >58\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.4464205647745985,
+        "confidence": 0.6828495575221238,
+        "market_price": 0.05,
+        "price_gap": 0.3964205647745985,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=denver] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weat",
+        "category": "weather",
+        "time": "2026-04-04T02:15:30"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B78.5",
+        "title": "Will the **high temp in Miami** be 78-79\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.3822997000675113,
+        "confidence": 0.6944000000000001,
+        "market_price": 0.04,
+        "price_gap": 0.3422997000675113,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
+        "category": "weather",
+        "time": "2026-04-04T02:15:30"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.08769456991585786,
+        "confidence": 0.7309012658227847,
+        "market_price": 0.17,
+        "price_gap": 0.08230543008414215,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
+        "category": "weather",
+        "time": "2026-04-04T02:15:30"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.26131719252614216,
+        "confidence": 0.7239087452471483,
+        "market_price": 0.07,
+        "price_gap": 0.19131719252614215,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
+        "category": "weather",
+        "time": "2026-04-04T02:15:30"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B71.5",
+        "title": "Will the **high temp in NYC** be 71-72\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 0.7715269406392696,
+        "market_price": 0.04,
+        "price_gap": 0.024258807335888786,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T02:15:30"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T65",
+        "title": "Will the **high temp in NYC** be <65\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.24149158754528466,
+        "confidence": 0.8006508474576272,
+        "market_price": 0.25,
+        "price_gap": 0.008508412454715342,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T02:15:30"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR04-B75.5",
+        "title": "Will the **high temp in Austin** be 75-76\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.27351000583773033,
+        "confidence": 0.67936,
+        "market_price": 0.3,
+        "price_gap": 0.02648999416226966,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T02:15:29"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR04-B73.5",
+        "title": "Will the **high temp in Austin** be 73-74\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.27351000583773033,
+        "confidence": 0.67936,
+        "market_price": 0.28,
+        "price_gap": 0.006489994162269697,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T02:15:29"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-B84.5",
+        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.27105600687361325,
+        "confidence": 0.7309012658227847,
+        "market_price": 0.45,
+        "price_gap": 0.17894399312638676,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
+        "category": "weather",
+        "time": "2026-04-04T02:15:29"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B67.5",
+        "title": "Will the **high temp in NYC** be 67-68\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.01574119266411121,
+        "confidence": 0.7715269406392696,
+        "market_price": 0.05,
+        "price_gap": 0.03425880733588879,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T02:15:29"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B65.5",
+        "title": "Will the **high temp in NYC** be 65-66\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5361121682755642,
+        "confidence": 0.7328141592920354,
+        "market_price": 0.94,
+        "price_gap": 0.40388783172443576,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=nyc] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather",
+        "category": "weather",
+        "time": "2026-04-04T02:15:29"
       },
       {
         "ticker": "KXGDP-26APR30-T1.5",
@@ -508,7 +703,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXGDP-26APR30-T2.0",
@@ -523,7 +718,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXGDP-26APR30-T2.5",
@@ -538,7 +733,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXGDP-26APR30-T3.0",
@@ -553,7 +748,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXGDP-26APR30-T3.5",
@@ -568,7 +763,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXGDP-26JUL30-T1.5",
@@ -583,7 +778,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.0",
@@ -598,7 +793,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.5",
@@ -613,7 +808,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXFED-26JUL-T5.00",
@@ -628,7 +823,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXFED-26JUL-T5.25",
@@ -643,7 +838,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXFED-26JUN-T3.75",
@@ -658,7 +853,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
+        "time": "2026-04-04T01:01:49"
       },
       {
         "ticker": "KXFED-26JUN-T4.00",
@@ -673,223 +868,28 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
         "category": "economics",
-        "time": "2026-04-04T00:51:00"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.25",
-        "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.04,
-        "price_gap": 0.5405,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.50",
-        "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.01,
-        "price_gap": 0.5554999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.75",
-        "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.03,
-        "price_gap": 0.5454999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26JUN-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.03,
-        "price_gap": 0.5454999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26JUN-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.07,
-        "price_gap": 0.5255000000000001,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26SEP-T2.75",
-        "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8105,
-        "market_price": 0.7,
-        "price_gap": 0.2105,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26SEP-T3.00",
-        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.8254999999999999,
-        "market_price": 0.67,
-        "price_gap": 0.22549999999999995,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26SEP-T3.25",
-        "title": "Will the upper bound of the federal funds rate be above 3.25% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.48,
-        "price_gap": 0.3205,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26SEP-T3.50",
-        "title": "Will the upper bound of the federal funds rate be above 3.50% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.27,
-        "price_gap": 0.4255,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26SEP-T3.75",
-        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.14,
-        "price_gap": 0.4905,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26SEP-T4.00",
-        "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.03,
-        "price_gap": 0.5454999999999999,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26SEP-T4.25",
-        "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.19,
-        "price_gap": 0.46549999999999997,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
-      },
-      {
-        "ticker": "KXFED-26SEP-T4.50",
-        "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.941,
-        "confidence": 0.85,
-        "market_price": 0.15,
-        "price_gap": 0.4855,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.059, hold=0.941 \u2192 prob=0.94",
-        "category": "economics",
-        "time": "2026-04-04T00:50:59"
+        "time": "2026-04-04T01:01:48"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 3251,
+      "trades": 3265,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
     "QUANT": {
-      "trades": 83729,
+      "trades": 83873,
       "executed": 258,
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1444,
+      "trades": 1458,
       "executed": 2,
       "deployed": 2.42
     },
     "SNIPER": {
-      "trades": 45,
+      "trades": 55,
       "executed": 0,
       "deployed": 0
     }
@@ -897,96 +897,96 @@
   "ensemble": {
     "models": {
       "perplexity": {
-        "analyses": 1,
-        "avg_probability": 0.02
+        "analyses": 0,
+        "avg_probability": 0
       },
       "claude": {
-        "analyses": 19,
-        "avg_probability": 0.17105263157894737
+        "analyses": 12,
+        "avg_probability": 0.13
       },
       "deepseek": {
         "analyses": 20,
-        "avg_probability": 0.0975
+        "avg_probability": 0.152
       }
     },
-    "consensus_rate": 0.15,
+    "consensus_rate": 0.1,
     "recent_votes": [
       {
         "perplexity": null,
-        "claude": 0.15,
+        "claude": null,
+        "deepseek": 0.85,
+        "consensus": false,
+        "time": "2026-04-04T02:36:16"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-04-04T00:55:48"
+        "time": "2026-04-04T02:36:15"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.48,
+        "consensus": false,
+        "time": "2026-04-04T02:36:13"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-04-04T02:36:13"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-04-04T02:36:10"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-04-04T02:36:08"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.15,
+        "deepseek": 0.15,
+        "consensus": false,
+        "time": "2026-04-04T02:36:08"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.02,
+        "consensus": false,
+        "time": "2026-04-04T02:36:06"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.15,
+        "deepseek": 0.15,
         "consensus": true,
-        "time": "2026-04-04T00:55:46"
-      },
-      {
-        "perplexity": 0.02,
-        "claude": 0.15,
-        "deepseek": 0.02,
-        "consensus": false,
-        "time": "2026-04-04T00:55:44"
+        "time": "2026-04-04T02:36:03"
       },
       {
         "perplexity": null,
-        "claude": 0.12,
+        "claude": null,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T00:55:42"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.11,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-04-04T00:55:42"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.14,
-        "deepseek": 0.08,
-        "consensus": false,
-        "time": "2026-04-04T00:55:42"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.15,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-04-04T00:55:42"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.25,
-        "deepseek": 0.02,
-        "consensus": true,
-        "time": "2026-04-04T00:55:42"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.12,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-04-04T00:55:39"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.18,
-        "deepseek": 0.15,
-        "consensus": false,
-        "time": "2026-04-04T00:55:39"
+        "time": "2026-04-04T02:36:03"
       }
     ]
   },
   "scanner": {
     "total_markets": 4160,
     "with_prices": 1860,
-    "passed_filter": 196,
+    "passed_filter": 191,
     "total_scored": 555,
     "categories": {
       "economics": 2760,
@@ -1070,6 +1070,18 @@
   ],
   "news": [
     {
+      "text": "Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami[4], and AccuWeather's main Miami forecast indicat",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-04T02:35:48"
+    },
+    {
+      "text": "Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami[4], and AccuWeather's main Miami forecast indicat",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-04T02:15:07"
+    },
+    {
       "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
       "category": "weather",
       "source": "perplexity",
@@ -1116,25 +1128,13 @@
       "category": "weather",
       "source": "perplexity",
       "time": "2026-04-04T00:43:22"
-    },
-    {
-      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-04T00:42:05"
-    },
-    {
-      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-04T00:41:48"
     }
   ],
   "alerts": [],
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 16,
-    "uptime_hours": 2.8
+    "cycles": 17,
+    "uptime_hours": 4.5
   }
 }
