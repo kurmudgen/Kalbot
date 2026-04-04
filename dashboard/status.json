@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T07:15:44.463589+00:00",
+  "updated_at": "2026-04-04T07:24:25.040861+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T07:15:44.463589+00:00",
+    "last_updated": "2026-04-04T07:24:25.040861+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -103,7 +103,7 @@
       },
       {
         "date": "2026-04-04",
-        "trades": 3194,
+        "trades": 3212,
         "deployed": 0
       }
     ],
@@ -120,6 +120,276 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHMIA-26APR04-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2687244190012211,
+        "confidence": 0.6402758620689655,
+        "market_price": 0.03,
+        "price_gap": 0.23872441900122113,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:24:25"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B65.5",
+        "title": "Will the **high temp in NYC** be 65-66\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5517452448194323,
+        "confidence": 0.7491525423728813,
+        "market_price": 0.94,
+        "price_gap": 0.3882547551805676,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:24:24"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR03-T92",
+        "title": "Will the **high temp in Austin** be >92\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.21125799420674365,
+        "confidence": 0.7728571428571428,
+        "market_price": 0.03,
+        "price_gap": 0.18125799420674366,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:24:24"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T78",
+        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.28180883449315963,
+        "confidence": 0.5913271028037382,
+        "market_price": 0.03,
+        "price_gap": 0.2518088344931596,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:24:24"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-B55.5",
+        "title": "Will the **high temp in Denver** be 55-56\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.27491406531242635,
+        "confidence": 0.7999302325581396,
+        "market_price": 0.31,
+        "price_gap": 0.03508593468757365,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:24:24"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-T58",
+        "title": "Will the **high temp in Denver** be >58\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.38333550553129736,
+        "confidence": 0.6983253588516747,
+        "market_price": 0.05,
+        "price_gap": 0.33333550553129737,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:24:24"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2820591814678247,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.07,
+        "price_gap": 0.2120591814678247,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:24:24"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR03-B62.5",
+        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5270500759488046,
+        "confidence": 0.7228070175438597,
+        "market_price": 0.9,
+        "price_gap": 0.3729499240511954,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:24:24"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2520542508377275,
+        "confidence": 0.66,
+        "market_price": 0.03,
+        "price_gap": 0.22205425083772748,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:24:24"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B65.5",
+        "title": "Will the **high temp in NYC** be 65-66\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5517452448194323,
+        "confidence": 0.7491525423728813,
+        "market_price": 0.94,
+        "price_gap": 0.3882547551805676,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:22:42"
+      },
+      {
+        "ticker": "KXHIGHAUS-26APR03-T92",
+        "title": "Will the **high temp in Austin** be >92\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.21125799420674365,
+        "confidence": 0.7728571428571428,
+        "market_price": 0.03,
+        "price_gap": 0.18125799420674366,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:22:42"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-B55.5",
+        "title": "Will the **high temp in Denver** be 55-56\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.27491406531242635,
+        "confidence": 0.7999302325581396,
+        "market_price": 0.31,
+        "price_gap": 0.03508593468757365,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:22:42"
+      },
+      {
+        "ticker": "KXHIGHDEN-26APR03-T58",
+        "title": "Will the **high temp in Denver** be >58\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.38333550553129736,
+        "confidence": 0.6983253588516747,
+        "market_price": 0.05,
+        "price_gap": 0.33333550553129737,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:22:42"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR03-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2820591814678247,
+        "confidence": 0.6719626168224299,
+        "market_price": 0.07,
+        "price_gap": 0.2120591814678247,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:22:42"
+      },
+      {
+        "ticker": "KXHIGHCHI-26APR03-B62.5",
+        "title": "Will the high temp in Chicago be 62-63\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.5270500759488046,
+        "confidence": 0.7228070175438597,
+        "market_price": 0.9,
+        "price_gap": 0.3729499240511954,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:22:42"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2520542508377275,
+        "confidence": 0.66,
+        "market_price": 0.03,
+        "price_gap": 0.22205425083772748,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:22:42"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T85",
+        "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.2687244190012211,
+        "confidence": 0.6402758620689655,
+        "market_price": 0.03,
+        "price_gap": 0.23872441900122113,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:22:42"
+      },
+      {
+        "ticker": "KXHIGHMIA-26APR04-T78",
+        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.28180883449315963,
+        "confidence": 0.5913271028037382,
+        "market_price": 0.03,
+        "price_gap": 0.2518088344931596,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] No specific forecasts available for April 4, 2026 high temperature in Denver; yesterday (April 3) recorded ~52-53\u00b0F per Polymarket consensus and NWS d\n- [weather",
+        "category": "weather",
+        "time": "2026-04-04T07:22:42"
+      },
       {
         "ticker": "KXHIGHMIA-26APR04-T85",
         "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
@@ -599,282 +869,12 @@
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
         "time": "2026-04-04T06:44:29"
-      },
-      {
-        "ticker": "KXGDP-26APR30-T2.0",
-        "title": "Will **real GDP** increase by more than 2.0% in Q1 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.21185539858339675,
-        "confidence": 0.935,
-        "market_price": 0.6,
-        "price_gap": 0.2840723007083016,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
-        "category": "economics",
-        "time": "2026-04-04T06:44:29"
-      },
-      {
-        "ticker": "KXGDP-26APR30-T2.5",
-        "title": "Will **real GDP** increase by more than 2.5% in Q1 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.03593031911292581,
-        "confidence": 0.935,
-        "market_price": 0.45,
-        "price_gap": 0.2970348404435371,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXGDP-26APR30-T3.0",
-        "title": "Will **real GDP** increase by more than 3.0% in Q1 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.002555130330427932,
-        "confidence": 0.8675946783182646,
-        "market_price": 0.2,
-        "price_gap": 0.18872243483478604,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.00",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXGDP-26JUL30-T1.5",
-        "title": "Will **real GDP** increase by more than 1.5% in Q2 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.5792597094391031,
-        "confidence": 0.7307402905608968,
-        "market_price": 0.71,
-        "price_gap": 0.13074029056089687,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXGDP-26JUL30-T2.0",
-        "title": "Will **real GDP** increase by more than 2.0% in Q2 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.21185539858339675,
-        "confidence": 0.9229795307791319,
-        "market_price": 0.51,
-        "price_gap": 0.23907230070830163,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXGDP-26JUL30-T2.5",
-        "title": "Will **real GDP** increase by more than 2.5% in Q2 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.03593031911292581,
-        "confidence": 0.9262383244878908,
-        "market_price": 0.34,
-        "price_gap": 0.2420348404435371,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26JUL-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Jul 29, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.05,
-        "price_gap": 0.4955,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26JUL-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Jul 29, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.05,
-        "price_gap": 0.4955,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26JUN-T2.75",
-        "title": "Will the upper bound of the federal funds rate be above 2.75% following the Fed's Jun 17, 2026 meeting?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.729,
-        "market_price": 0.99,
-        "price_gap": 0.129,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26JUN-T3.75",
-        "title": "Will the upper bound of the federal funds rate be above 3.75% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.03,
-        "price_gap": 0.5055000000000001,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.00",
-        "title": "Will the upper bound of the federal funds rate be above 4.00% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.01,
-        "price_gap": 0.5155000000000001,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.25",
-        "title": "Will the upper bound of the federal funds rate be above 4.25% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.04,
-        "price_gap": 0.5005,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.50",
-        "title": "Will the upper bound of the federal funds rate be above 4.50% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.01,
-        "price_gap": 0.5155000000000001,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26JUN-T4.75",
-        "title": "Will the upper bound of the federal funds rate be above 4.75% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.03,
-        "price_gap": 0.5055000000000001,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26JUN-T5.00",
-        "title": "Will the upper bound of the federal funds rate be above 5.00% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.03,
-        "price_gap": 0.5055000000000001,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26JUN-T5.25",
-        "title": "Will the upper bound of the federal funds rate be above 5.25% following the Fed's Jun 17, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.07,
-        "price_gap": 0.4855,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26SEP-T3.00",
-        "title": "Will the upper bound of the federal funds rate be above 3.00% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.7855,
-        "market_price": 0.67,
-        "price_gap": 0.18549999999999997,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
-      },
-      {
-        "ticker": "KXFED-26SEP-T3.25",
-        "title": "Will the upper bound of the federal funds rate be above 3.25% following the Fed's Sep 16, 2026 meeting?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.861,
-        "confidence": 0.85,
-        "market_price": 0.5,
-        "price_gap": 0.27049999999999996,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
-        "category": "economics",
-        "time": "2026-04-04T06:44:28"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 3441,
+      "trades": 3450,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -884,7 +884,7 @@
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1648,
+      "trades": 1657,
       "executed": 2,
       "deployed": 2.42
     },
@@ -916,70 +916,70 @@
         "claude": 0.15,
         "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-04-04T07:15:42"
+        "time": "2026-04-04T07:24:22"
       },
       {
         "perplexity": null,
         "claude": 0.75,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:15:40"
+        "time": "2026-04-04T07:24:20"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:15:37"
+        "time": "2026-04-04T07:24:18"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:15:37"
+        "time": "2026-04-04T07:24:18"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:15:37"
+        "time": "2026-04-04T07:24:18"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-04T07:15:37"
+        "time": "2026-04-04T07:24:18"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:15:37"
+        "time": "2026-04-04T07:24:18"
       },
       {
         "perplexity": null,
         "claude": 0.22,
         "deepseek": 0.22,
         "consensus": false,
-        "time": "2026-04-04T07:15:37"
+        "time": "2026-04-04T07:24:18"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:15:37"
+        "time": "2026-04-04T07:24:18"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T07:15:35"
+        "time": "2026-04-04T07:24:16"
       }
     ]
   },
@@ -1005,7 +1005,7 @@
     {
       "ticker": "KXHIGHNY-26APR04-T68",
       "title": "Will the **high temp in NYC** be <68\u00b0 on Apr 4, 2026?",
-      "price": 27,
+      "price": 26,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1033,7 +1033,7 @@
     {
       "ticker": "KXHIGHNY-26APR04-B68.5",
       "title": "Will the **high temp in NYC** be 68-69\u00b0 on Apr 4, 2026?",
-      "price": 35,
+      "price": 34,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1047,7 +1047,7 @@
     {
       "ticker": "KXHIGHMIA-26APR04-T78",
       "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-      "price": 1,
+      "price": 2,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1061,7 +1061,7 @@
     {
       "ticker": "KXHIGHMIA-26APR04-B82.5",
       "title": "Will the **high temp in Miami** be 82-83\u00b0 on Apr 4, 2026?",
-      "price": 56,
+      "price": 55,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     }
@@ -1132,7 +1132,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 1,
-    "uptime_hours": 0.1
+    "cycles": 2,
+    "uptime_hours": 0.2
   }
 }
