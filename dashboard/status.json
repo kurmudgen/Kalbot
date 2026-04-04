@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T03:55:14.584268+00:00",
+  "updated_at": "2026-04-04T04:07:53.560776+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T03:55:14.584268+00:00",
+    "last_updated": "2026-04-04T04:07:53.560776+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -103,7 +103,7 @@
       },
       {
         "date": "2026-04-04",
-        "trades": 1517,
+        "trades": 1629,
         "deployed": 0
       }
     ],
@@ -133,7 +133,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:55:14"
+        "time": "2026-04-04T04:07:53"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-B73.5",
@@ -148,7 +148,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:55:14"
+        "time": "2026-04-04T04:07:53"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
@@ -163,7 +163,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:55:14"
+        "time": "2026-04-04T04:07:53"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B67.5",
@@ -178,7 +178,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:55:14"
+        "time": "2026-04-04T04:07:53"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B65.5",
@@ -193,7 +193,7 @@
         "executed": false,
         "reasoning": "[city=nyc] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami",
         "category": "weather",
-        "time": "2026-04-04T03:55:14"
+        "time": "2026-04-04T04:07:52"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-B91.5",
@@ -208,7 +208,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:55:13"
+        "time": "2026-04-04T04:07:52"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-T85",
@@ -223,7 +223,7 @@
         "executed": false,
         "reasoning": "[city=austin] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mi",
         "category": "weather",
-        "time": "2026-04-04T03:55:13"
+        "time": "2026-04-04T04:07:52"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-T58",
@@ -238,7 +238,7 @@
         "executed": false,
         "reasoning": "[city=denver] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mi",
         "category": "weather",
-        "time": "2026-04-04T03:55:13"
+        "time": "2026-04-04T04:07:52"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B78.5",
@@ -253,7 +253,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:55:13"
+        "time": "2026-04-04T04:07:52"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B84.5",
@@ -268,7 +268,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:55:13"
+        "time": "2026-04-04T04:07:52"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
@@ -283,7 +283,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:55:13"
+        "time": "2026-04-04T04:07:52"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B71.5",
@@ -298,7 +298,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:55:13"
+        "time": "2026-04-04T04:07:52"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T65",
@@ -313,7 +313,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:55:12"
+        "time": "2026-04-04T04:07:51"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B67.5",
@@ -328,7 +328,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:52:56"
+        "time": "2026-04-04T04:05:37"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B65.5",
@@ -343,7 +343,7 @@
         "executed": false,
         "reasoning": "[city=nyc] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami",
         "category": "weather",
-        "time": "2026-04-04T03:52:56"
+        "time": "2026-04-04T04:05:37"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-B91.5",
@@ -358,7 +358,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:52:56"
+        "time": "2026-04-04T04:05:37"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-T85",
@@ -373,7 +373,7 @@
         "executed": false,
         "reasoning": "[city=austin] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mi",
         "category": "weather",
-        "time": "2026-04-04T03:52:56"
+        "time": "2026-04-04T04:05:37"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-T58",
@@ -388,7 +388,7 @@
         "executed": false,
         "reasoning": "[city=denver] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mi",
         "category": "weather",
-        "time": "2026-04-04T03:52:56"
+        "time": "2026-04-04T04:05:37"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B78.5",
@@ -403,7 +403,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:52:56"
+        "time": "2026-04-04T04:05:37"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B84.5",
@@ -418,7 +418,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:52:55"
+        "time": "2026-04-04T04:05:37"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
@@ -433,7 +433,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:52:55"
+        "time": "2026-04-04T04:05:37"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B71.5",
@@ -448,7 +448,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:52:55"
+        "time": "2026-04-04T04:05:36"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T65",
@@ -463,7 +463,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:52:55"
+        "time": "2026-04-04T04:05:36"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-B75.5",
@@ -478,7 +478,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:51:08"
+        "time": "2026-04-04T04:03:49"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-B73.5",
@@ -493,7 +493,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:51:08"
+        "time": "2026-04-04T04:03:49"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
@@ -508,7 +508,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:51:07"
+        "time": "2026-04-04T04:03:49"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B67.5",
@@ -523,7 +523,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:51:07"
+        "time": "2026-04-04T04:03:49"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B65.5",
@@ -538,7 +538,7 @@
         "executed": false,
         "reasoning": "[city=nyc] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami",
         "category": "weather",
-        "time": "2026-04-04T03:51:07"
+        "time": "2026-04-04T04:03:49"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-B91.5",
@@ -553,7 +553,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:51:07"
+        "time": "2026-04-04T04:03:49"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-T85",
@@ -568,7 +568,7 @@
         "executed": false,
         "reasoning": "[city=austin] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mi",
         "category": "weather",
-        "time": "2026-04-04T03:51:07"
+        "time": "2026-04-04T04:03:48"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-T58",
@@ -583,7 +583,7 @@
         "executed": false,
         "reasoning": "[city=denver] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mi",
         "category": "weather",
-        "time": "2026-04-04T03:51:07"
+        "time": "2026-04-04T04:03:48"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B78.5",
@@ -598,7 +598,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:51:07"
+        "time": "2026-04-04T04:03:48"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B84.5",
@@ -613,7 +613,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:51:07"
+        "time": "2026-04-04T04:03:48"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
@@ -628,7 +628,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Mia",
         "category": "weather",
-        "time": "2026-04-04T03:51:06"
+        "time": "2026-04-04T04:03:48"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B71.5",
@@ -643,7 +643,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:51:06"
+        "time": "2026-04-04T04:03:48"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T65",
@@ -658,7 +658,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple weather forecasts for April 4, 2026 in Miami show: AccuWeather predicts a high of 77\u00b0 for Miami Beach[7], WeatherShogun reports 77\u00b0 for Miami\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T03:51:06"
+        "time": "2026-04-04T04:03:48"
       },
       {
         "ticker": "KXGDP-26APR30-T1.5",
@@ -673,7 +673,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXGDP-26APR30-T2.0",
@@ -688,7 +688,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXGDP-26APR30-T2.5",
@@ -703,7 +703,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXGDP-26APR30-T3.0",
@@ -718,7 +718,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXGDP-26JUL30-T1.5",
@@ -733,7 +733,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.0",
@@ -748,7 +748,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.5",
@@ -756,14 +756,14 @@
         "side": "NO",
         "amount": 0.0,
         "probability": 0.03593031911292581,
-        "confidence": 0.9207383244878908,
-        "market_price": 0.33,
-        "price_gap": 0.2370348404435371,
+        "confidence": 0.9262383244878908,
+        "market_price": 0.34,
+        "price_gap": 0.2420348404435371,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXFED-26JUL-T5.00",
@@ -778,7 +778,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXFED-26JUL-T5.25",
@@ -793,7 +793,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXFED-26JUN-T2.75",
@@ -808,7 +808,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXFED-26JUN-T3.75",
@@ -823,7 +823,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXFED-26JUN-T4.00",
@@ -838,7 +838,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXFED-26JUN-T4.25",
@@ -853,7 +853,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       },
       {
         "ticker": "KXFED-26JUN-T4.50",
@@ -868,28 +868,28 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-04T03:48:47"
+        "time": "2026-04-04T04:01:27"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 3343,
+      "trades": 3356,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
     "QUANT": {
-      "trades": 84449,
+      "trades": 84525,
       "executed": 258,
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1536,
+      "trades": 1549,
       "executed": 2,
       "deployed": 2.42
     },
     "SNIPER": {
-      "trades": 115,
+      "trades": 125,
       "executed": 0,
       "deployed": 0
     }
@@ -916,70 +916,70 @@
         "claude": null,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-04-04T03:55:11"
+        "time": "2026-04-04T04:07:49"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.85,
         "consensus": false,
-        "time": "2026-04-04T03:55:09"
+        "time": "2026-04-04T04:07:47"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-04-04T03:55:06"
+        "time": "2026-04-04T04:07:45"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.48,
         "consensus": false,
-        "time": "2026-04-04T03:55:04"
+        "time": "2026-04-04T04:07:43"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T03:55:04"
+        "time": "2026-04-04T04:07:43"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T03:55:02"
+        "time": "2026-04-04T04:07:42"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T03:55:00"
+        "time": "2026-04-04T04:07:40"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T03:55:00"
+        "time": "2026-04-04T04:07:39"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-04-04T03:54:58"
+        "time": "2026-04-04T04:07:37"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": true,
-        "time": "2026-04-04T03:54:56"
+        "time": "2026-04-04T04:07:35"
       }
     ]
   },
@@ -1134,7 +1134,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 23,
-    "uptime_hours": 5.8
+    "cycles": 24,
+    "uptime_hours": 6.0
   }
 }
