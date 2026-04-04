@@ -630,8 +630,17 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         # hist_bias > 0 means YES is historically underpriced (buy YES)
         # hist_bias < 0 means YES is historically overpriced (buy NO)
 
-        # Determine side and Kelly-sized bet
-        side = "YES" if cloud_prob > market_price else "NO"
+        # Determine side — model probability determines direction
+        # Buy YES only when model says > 50% chance of YES
+        # Buy NO only when model says < 50% chance of YES
+        # This prevents buying YES at 3c on markets the model thinks will resolve NO
+        side = "YES" if cloud_prob > 0.50 else "NO"
+
+        # Recalculate price gap for the actual trade direction
+        if side == "YES":
+            price_gap = max(0, cloud_prob - market_price)
+        else:
+            price_gap = max(0, (1.0 - cloud_prob) - (1.0 - market_price))
 
         # Boost confidence if historical bias agrees with our direction
         bias_aligned = (side == "YES" and hist_bias > 0) or (side == "NO" and hist_bias < 0)
