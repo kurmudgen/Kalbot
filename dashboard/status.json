@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T13:11:39.702627+00:00",
+  "updated_at": "2026-04-04T13:19:00.859291+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T13:11:39.702627+00:00",
+    "last_updated": "2026-04-04T13:19:00.859291+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -916,70 +916,70 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T13:11:36"
+        "time": "2026-04-04T13:18:57"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T13:11:36"
+        "time": "2026-04-04T13:18:57"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T13:11:36"
+        "time": "2026-04-04T13:18:57"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T13:11:36"
+        "time": "2026-04-04T13:18:57"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T13:11:36"
+        "time": "2026-04-04T13:18:57"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T13:11:36"
+        "time": "2026-04-04T13:18:57"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T13:11:36"
+        "time": "2026-04-04T13:18:57"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T13:11:36"
+        "time": "2026-04-04T13:18:57"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T13:11:36"
+        "time": "2026-04-04T13:18:57"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T13:11:36"
+        "time": "2026-04-04T13:18:57"
       }
     ]
   },
@@ -998,21 +998,21 @@
     {
       "ticker": "KXHIGHNY-26APR04-T75",
       "title": "Will the **high temp in NYC** be >75\u00b0 on Apr 4, 2026?",
-      "price": 1,
+      "price": 3,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR04-T68",
       "title": "Will the **high temp in NYC** be <68\u00b0 on Apr 4, 2026?",
-      "price": 12,
+      "price": 11,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR04-B74.5",
       "title": "Will the **high temp in NYC** be 74-75\u00b0 on Apr 4, 2026?",
-      "price": 8,
+      "price": 7,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1033,14 +1033,14 @@
     {
       "ticker": "KXHIGHNY-26APR04-B68.5",
       "title": "Will the **high temp in NYC** be 68-69\u00b0 on Apr 4, 2026?",
-      "price": 27,
+      "price": 26,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHMIA-26APR04-T85",
       "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
-      "price": 6,
+      "price": 7,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1054,7 +1054,7 @@
     {
       "ticker": "KXHIGHMIA-26APR04-B84.5",
       "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-      "price": 32,
+      "price": 31,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1132,7 +1132,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 45,
-    "uptime_hours": 5.4
+    "cycles": 46,
+    "uptime_hours": 5.6
   }
 }
