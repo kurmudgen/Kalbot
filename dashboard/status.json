@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T00:01:52.884886+00:00",
+  "updated_at": "2026-04-04T00:12:55.582260+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T00:01:52.884886+00:00",
+    "last_updated": "2026-04-04T00:12:55.582260+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -103,7 +103,7 @@
       },
       {
         "date": "2026-04-04",
-        "trades": 15,
+        "trades": 118,
         "deployed": 0
       }
     ],
@@ -133,7 +133,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
         "category": "weather",
-        "time": "2026-04-04T00:01:52"
+        "time": "2026-04-04T00:12:55"
       },
       {
         "ticker": "KXHIGHNY-26APR04-T75",
@@ -148,7 +148,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:01:52"
+        "time": "2026-04-04T00:12:55"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
@@ -163,7 +163,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:01:52"
+        "time": "2026-04-04T00:12:55"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T78",
@@ -178,7 +178,7 @@
         "executed": false,
         "reasoning": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
         "category": "weather",
-        "time": "2026-04-04T00:01:52"
+        "time": "2026-04-04T00:12:55"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B66.5",
@@ -193,7 +193,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:01:52"
+        "time": "2026-04-04T00:12:55"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B51.5",
@@ -208,7 +208,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:01:52"
+        "time": "2026-04-04T00:12:54"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
@@ -223,7 +223,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:01:52"
+        "time": "2026-04-04T00:12:54"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B62.5",
@@ -238,7 +238,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:01:51"
+        "time": "2026-04-04T00:12:54"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B69.5",
@@ -253,7 +253,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:01:51"
+        "time": "2026-04-04T00:12:54"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T72",
@@ -268,7 +268,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:01:51"
+        "time": "2026-04-04T00:12:54"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B66.5",
@@ -283,7 +283,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:00:04"
+        "time": "2026-04-04T00:11:06"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
@@ -298,7 +298,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:00:04"
+        "time": "2026-04-04T00:11:06"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B62.5",
@@ -313,7 +313,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:00:04"
+        "time": "2026-04-04T00:11:06"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B69.5",
@@ -328,7 +328,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:00:04"
+        "time": "2026-04-04T00:11:05"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T72",
@@ -343,7 +343,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-04T00:00:04"
+        "time": "2026-04-04T00:11:05"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T85",
@@ -358,7 +358,7 @@
         "executed": false,
         "reasoning": "[city=miami] \nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weath",
         "category": "weather",
-        "time": "2026-04-03T23:58:49"
+        "time": "2026-04-04T00:09:53"
       },
       {
         "ticker": "KXHIGHNY-26APR04-T75",
@@ -373,7 +373,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T23:58:49"
+        "time": "2026-04-04T00:09:53"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
@@ -388,7 +388,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T23:58:49"
+        "time": "2026-04-04T00:09:53"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T78",
@@ -403,7 +403,7 @@
         "executed": false,
         "reasoning": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
         "category": "weather",
-        "time": "2026-04-03T23:58:49"
+        "time": "2026-04-04T00:09:53"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B66.5",
@@ -418,7 +418,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T23:58:49"
+        "time": "2026-04-04T00:09:53"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B51.5",
@@ -433,7 +433,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T23:58:49"
+        "time": "2026-04-04T00:09:53"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
@@ -448,7 +448,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T23:58:49"
+        "time": "2026-04-04T00:09:53"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B62.5",
@@ -463,7 +463,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T23:58:48"
+        "time": "2026-04-04T00:09:52"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B69.5",
@@ -478,7 +478,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T23:58:48"
+        "time": "2026-04-04T00:09:52"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T72",
@@ -493,7 +493,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. Weather\n- [weather",
         "category": "weather",
-        "time": "2026-04-03T23:58:48"
+        "time": "2026-04-04T00:09:52"
       },
       {
         "ticker": "KXGDP-26APR30-T1.5",
@@ -508,7 +508,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-03T23:57:00"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXGDP-26APR30-T2.0",
@@ -523,7 +523,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-03T23:57:00"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXGDP-26APR30-T2.5",
@@ -538,7 +538,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXGDP-26APR30-T3.0",
@@ -553,7 +553,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXGDP-26APR30-T3.5",
@@ -568,7 +568,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.00",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXGDP-26JUL30-T1.5",
@@ -583,7 +583,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.58",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.0",
@@ -598,7 +598,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.21",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXGDP-26JUL30-T2.5",
@@ -613,7 +613,7 @@
         "executed": false,
         "reasoning": "Atlanta Fed GDPNow: 1.6 \u2192 prob=0.04",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26JUL-T5.00",
@@ -628,7 +628,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26JUL-T5.25",
@@ -643,7 +643,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26JUN-T2.75",
@@ -658,7 +658,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26JUN-T3.75",
@@ -673,7 +673,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26JUN-T4.00",
@@ -688,7 +688,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26JUN-T4.25",
@@ -703,7 +703,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26JUN-T4.50",
@@ -718,7 +718,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26JUN-T4.75",
@@ -733,7 +733,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26JUN-T5.00",
@@ -748,7 +748,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26JUN-T5.25",
@@ -763,7 +763,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26SEP-T2.75",
@@ -778,7 +778,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:01"
       },
       {
         "ticker": "KXFED-26SEP-T3.00",
@@ -793,7 +793,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:00"
       },
       {
         "ticker": "KXFED-26SEP-T3.25",
@@ -808,7 +808,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:00"
       },
       {
         "ticker": "KXFED-26SEP-T3.50",
@@ -823,7 +823,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:00"
       },
       {
         "ticker": "KXFED-26SEP-T3.75",
@@ -838,7 +838,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:00"
       },
       {
         "ticker": "KXFED-26SEP-T4.00",
@@ -853,7 +853,7 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:00"
       },
       {
         "ticker": "KXFED-26SEP-T4.25",
@@ -868,28 +868,28 @@
         "executed": false,
         "reasoning": "CME FedWatch: cut=0.139, hold=0.861 \u2192 prob=0.86",
         "category": "economics",
-        "time": "2026-04-03T23:56:59"
+        "time": "2026-04-04T00:08:00"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 3201,
+      "trades": 3211,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
     "QUANT": {
-      "trades": 83326,
+      "trades": 83404,
       "executed": 258,
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 1394,
+      "trades": 1404,
       "executed": 2,
       "deployed": 2.42
     },
     "SNIPER": {
-      "trades": 20,
+      "trades": 25,
       "executed": 0,
       "deployed": 0
     }
@@ -916,70 +916,70 @@
         "claude": 0.15,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-04-04T00:01:50"
+        "time": "2026-04-04T00:12:52"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-04-04T00:01:47"
+        "time": "2026-04-04T00:12:50"
       },
       {
         "perplexity": 0.02,
         "claude": 0.15,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-04-04T00:01:45"
+        "time": "2026-04-04T00:12:48"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T00:01:43"
+        "time": "2026-04-04T00:12:45"
       },
       {
         "perplexity": null,
         "claude": 0.11,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T00:01:43"
+        "time": "2026-04-04T00:12:45"
       },
       {
         "perplexity": null,
         "claude": 0.14,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-04T00:01:43"
+        "time": "2026-04-04T00:12:45"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T00:01:43"
+        "time": "2026-04-04T00:12:45"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.02,
         "consensus": true,
-        "time": "2026-04-04T00:01:43"
+        "time": "2026-04-04T00:12:45"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T00:01:41"
+        "time": "2026-04-04T00:12:43"
       },
       {
         "perplexity": null,
         "claude": 0.18,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T00:01:41"
+        "time": "2026-04-04T00:12:43"
       }
     ]
   },
@@ -1073,6 +1073,36 @@
       "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
       "category": "weather",
       "source": "perplexity",
+      "time": "2026-04-04T00:12:48"
+    },
+    {
+      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-04T00:12:27"
+    },
+    {
+      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-04T00:11:04"
+    },
+    {
+      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-04T00:09:46"
+    },
+    {
+      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
+      "category": "weather",
+      "source": "perplexity",
+      "time": "2026-04-04T00:09:28"
+    },
+    {
+      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
+      "category": "weather",
+      "source": "perplexity",
       "time": "2026-04-04T00:01:45"
     },
     {
@@ -1098,43 +1128,13 @@
       "category": "weather",
       "source": "perplexity",
       "time": "2026-04-03T23:58:25"
-    },
-    {
-      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T23:51:04"
-    },
-    {
-      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T23:50:44"
-    },
-    {
-      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T23:48:14"
-    },
-    {
-      "text": "AccuWeather forecasts for Miami April 2026 show daily highs ranging 74\u00b0-82\u00b0 with average high 79\u00b0[1]. Specific forecasts: Miami Beach Apr 4 high 76\u00b0[6]; North Miami Beach Apr 4 high 84\u00b0[7]; Weathersho",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T23:47:57"
-    },
-    {
-      "text": "Today is April 3, 2026, 10 PM UTC. Latest report from KAUS (Austin airport) at 17:53 UTC shows high of 82.9\u00b0F with 6-hour high also 82.9\u00b0F[2]. WeatherShogun forecast for April 3: day high 91\u00b0F (but li",
-      "category": "weather",
-      "source": "perplexity",
-      "time": "2026-04-03T23:40:36"
     }
   ],
   "alerts": [],
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 11,
-    "uptime_hours": 1.9
+    "cycles": 12,
+    "uptime_hours": 2.1
   }
 }
