@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T18:48:39.993217+00:00",
+  "updated_at": "2026-04-04T18:55:50.110709+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T18:48:39.993217+00:00",
+    "last_updated": "2026-04-04T18:55:50.110709+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -916,70 +916,70 @@
         "claude": 0.08,
         "deepseek": 0.12,
         "consensus": false,
-        "time": "2026-04-04T18:48:39"
+        "time": "2026-04-04T18:55:50"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.18,
         "consensus": false,
-        "time": "2026-04-04T18:48:39"
+        "time": "2026-04-04T18:55:49"
       },
       {
         "perplexity": null,
         "claude": 0.65,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T18:48:39"
+        "time": "2026-04-04T18:55:49"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T18:48:39"
+        "time": "2026-04-04T18:55:49"
       },
       {
         "perplexity": null,
         "claude": 0.18,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-04T18:48:39"
+        "time": "2026-04-04T18:55:49"
       },
       {
         "perplexity": null,
         "claude": 0.22,
         "deepseek": 0.25,
         "consensus": false,
-        "time": "2026-04-04T18:48:39"
+        "time": "2026-04-04T18:55:49"
       },
       {
         "perplexity": null,
         "claude": 0.25,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T18:48:39"
+        "time": "2026-04-04T18:55:49"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T18:48:39"
+        "time": "2026-04-04T18:55:49"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T18:48:39"
+        "time": "2026-04-04T18:55:49"
       },
       {
         "perplexity": null,
         "claude": 0.16,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-04T18:48:39"
+        "time": "2026-04-04T18:55:49"
       }
     ]
   },
@@ -998,7 +998,7 @@
     {
       "ticker": "KXHIGHNY-26APR04-T75",
       "title": "Will the **high temp in NYC** be >75\u00b0 on Apr 4, 2026?",
-      "price": 2,
+      "price": 1,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1012,14 +1012,14 @@
     {
       "ticker": "KXHIGHNY-26APR04-B74.5",
       "title": "Will the **high temp in NYC** be 74-75\u00b0 on Apr 4, 2026?",
-      "price": 25,
+      "price": 2,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR04-B72.5",
       "title": "Will the **high temp in NYC** be 72-73\u00b0 on Apr 4, 2026?",
-      "price": 79,
+      "price": 93,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
@@ -1054,14 +1054,14 @@
     {
       "ticker": "KXHIGHMIA-26APR04-B84.5",
       "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-      "price": 28,
+      "price": 22,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHMIA-26APR04-B82.5",
       "title": "Will the **high temp in Miami** be 82-83\u00b0 on Apr 4, 2026?",
-      "price": 75,
+      "price": 78,
       "close_time": "2026-04-05T04:59:00Z",
       "category": "weather"
     }
@@ -1131,14 +1131,14 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "34 API retries this session",
-      "detail": "34 non-fatal exceptions across 31 cycles (~1.1/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "36 API retries this session",
+      "detail": "36 non-fatal exceptions across 32 cycles (~1.1/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 34,
-    "cycles": 31,
-    "uptime_hours": 3.9
+    "errors_24h": 36,
+    "cycles": 32,
+    "uptime_hours": 4.0
   }
 }
