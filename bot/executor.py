@@ -202,7 +202,7 @@ def _init_capital_tracker(conn: sqlite3.Connection):
 
 
 def get_live_kalshi_balance() -> float | None:
-    """Get current Kalshi account balance via API. Returns dollars."""
+    """Get total Kalshi account value (cash + positions) via API. Returns dollars."""
     try:
         from pykalshi import KalshiClient
         pk_path = os.getenv("KALSHI_PRIVATE_KEY", "")
@@ -214,10 +214,11 @@ def get_live_kalshi_balance() -> float | None:
         )
         bal = client.portfolio.get_balance()
         client.close()
-        # bal.balance is in cents
-        dollars = bal.balance / 100.0
-        print(f"  Capital: Kalshi balance = ${dollars:.2f} (portfolio_value=${bal.portfolio_value / 100.0:.2f})")
-        return dollars
+        cash = bal.balance / 100.0
+        portfolio = bal.portfolio_value / 100.0
+        total = cash + portfolio
+        print(f"  Capital: Kalshi cash=${cash:.2f} + positions=${portfolio:.2f} = ${total:.2f}")
+        return total
     except Exception as e:
         print(f"  Capital: Kalshi balance API error: {type(e).__name__}: {e}")
         return None
