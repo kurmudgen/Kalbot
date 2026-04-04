@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-04T08:15:53.551843+00:00",
+  "updated_at": "2026-04-04T08:23:25.782276+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
-      "balance": 187.51,
+      "balance": 187.41,
       "paper_mode": false
     },
     "alpaca": {
@@ -13,21 +13,21 @@
     }
   },
   "capital_status": {
-    "balance": 187.51,
+    "balance": 187.41,
     "peak_balance": 200.0,
     "floor_balance": 40.0,
-    "available_capital": 147.51,
+    "available_capital": 147.41,
     "performance_score": 50.0,
     "score_multiplier": 1.0,
     "daily_deployed": 30.0,
-    "daily_cap": 88.51,
+    "daily_cap": 88.45,
     "cycle_status": "active"
   },
   "treasury": {
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-04T08:15:53.551843+00:00",
+    "last_updated": "2026-04-04T08:23:25.782276+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -103,7 +103,7 @@
       },
       {
         "date": "2026-04-04",
-        "trades": 3955,
+        "trades": 4057,
         "deployed": 30.0
       }
     ],
@@ -133,7 +133,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:53"
+        "time": "2026-04-04T08:23:25"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-T80",
@@ -148,7 +148,7 @@
         "executed": false,
         "reasoning": "[city=austin] Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:53"
+        "time": "2026-04-04T08:23:25"
       },
       {
         "ticker": "KXHIGHDEN-26APR04-B65.5",
@@ -163,7 +163,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:53"
+        "time": "2026-04-04T08:23:25"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B78.5",
@@ -178,7 +178,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:53"
+        "time": "2026-04-04T08:23:25"
       },
       {
         "ticker": "KXHIGHCHI-26APR04-B57.5",
@@ -193,7 +193,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:52"
+        "time": "2026-04-04T08:23:25"
       },
       {
         "ticker": "KXHIGHCHI-26APR04-T55",
@@ -208,7 +208,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:52"
+        "time": "2026-04-04T08:23:25"
       },
       {
         "ticker": "KXHIGHDEN-26APR04-B63.5",
@@ -223,7 +223,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:52"
+        "time": "2026-04-04T08:23:24"
       },
       {
         "ticker": "KXHIGHDEN-26APR04-T68",
@@ -238,7 +238,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:52"
+        "time": "2026-04-04T08:23:24"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-B75.5",
@@ -253,7 +253,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:52"
+        "time": "2026-04-04T08:23:24"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-B77.5",
@@ -268,7 +268,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:52"
+        "time": "2026-04-04T08:23:24"
       },
       {
         "ticker": "KXHIGHNY-26APR04-B74.5",
@@ -283,7 +283,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:52"
+        "time": "2026-04-04T08:23:24"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-T73",
@@ -298,7 +298,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:52"
+        "time": "2026-04-04T08:23:24"
       },
       {
         "ticker": "KXHIGHCHI-26APR04-B59.5",
@@ -313,7 +313,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:51"
+        "time": "2026-04-04T08:23:24"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-B79.5",
@@ -328,7 +328,7 @@
         "executed": false,
         "reasoning": "[city=austin] Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:51"
+        "time": "2026-04-04T08:23:23"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-B73.5",
@@ -336,14 +336,14 @@
         "side": "NO",
         "amount": 0.0,
         "probability": 0.27,
-        "confidence": 0.77,
+        "confidence": 0.7314999999999999,
         "market_price": 0.28,
         "price_gap": 0.010000000000000009,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:51"
+        "time": "2026-04-04T08:23:23"
       },
       {
         "ticker": "KXHIGHCHI-26APR04-B55.5",
@@ -358,7 +358,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:51"
+        "time": "2026-04-04T08:23:23"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B80.5",
@@ -373,7 +373,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:51"
+        "time": "2026-04-04T08:23:23"
       },
       {
         "ticker": "KXHIGHNY-26APR04-B72.5",
@@ -388,7 +388,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:51"
+        "time": "2026-04-04T08:23:23"
       },
       {
         "ticker": "KXHIGHNY-26APR04-T75",
@@ -403,7 +403,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:51"
+        "time": "2026-04-04T08:23:23"
       },
       {
         "ticker": "KXHIGHNY-26APR04-B70.5",
@@ -418,7 +418,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:51"
+        "time": "2026-04-04T08:23:23"
       },
       {
         "ticker": "KXHIGHCHI-26APR04-B61.5",
@@ -433,7 +433,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:50"
+        "time": "2026-04-04T08:23:23"
       },
       {
         "ticker": "KXHIGHNY-26APR04-B68.5",
@@ -448,7 +448,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:50"
+        "time": "2026-04-04T08:23:22"
       },
       {
         "ticker": "KXHIGHCHI-26APR04-T62",
@@ -463,7 +463,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:50"
+        "time": "2026-04-04T08:23:22"
       },
       {
         "ticker": "KXHIGHNY-26APR04-T68",
@@ -478,7 +478,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:50"
+        "time": "2026-04-04T08:23:22"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
@@ -493,7 +493,7 @@
         "executed": false,
         "reasoning": "[city=miami] Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:50"
+        "time": "2026-04-04T08:23:22"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B67.5",
@@ -508,7 +508,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:50"
+        "time": "2026-04-04T08:23:22"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B65.5",
@@ -523,7 +523,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:50"
+        "time": "2026-04-04T08:23:22"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-T92",
@@ -538,7 +538,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:50"
+        "time": "2026-04-04T08:23:22"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T78",
@@ -553,7 +553,7 @@
         "executed": false,
         "reasoning": "[city=miami] Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:50"
+        "time": "2026-04-04T08:23:22"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B66.5",
@@ -568,7 +568,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-T67",
@@ -583,7 +583,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-B85.5",
@@ -598,7 +598,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-B89.5",
@@ -613,7 +613,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-B91.5",
@@ -628,7 +628,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-T85",
@@ -643,7 +643,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B51.5",
@@ -658,7 +658,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B53.5",
@@ -673,7 +673,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B55.5",
@@ -688,7 +688,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B57.5",
@@ -703,7 +703,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-T51",
@@ -718,7 +718,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-T58",
@@ -733,7 +733,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B78.5",
@@ -748,7 +748,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B80.5",
@@ -763,7 +763,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-B84.5",
@@ -778,7 +778,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHMIA-26APR03-T85",
@@ -793,7 +793,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B62.5",
@@ -808,7 +808,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHCHI-26APR03-B64.5",
@@ -823,7 +823,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B69.5",
@@ -838,7 +838,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHNY-26APR03-B71.5",
@@ -853,7 +853,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       },
       {
         "ticker": "KXHIGHNY-26APR03-T65",
@@ -868,13 +868,13 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-04T08:15:49"
+        "time": "2026-04-04T08:23:21"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 3816,
+      "trades": 3867,
       "executed": 9,
       "deployed": 3.1100000000000003
     },
@@ -884,7 +884,7 @@
       "deployed": 142.26999999999998
     },
     "WEATHER": {
-      "trades": 2023,
+      "trades": 2074,
       "executed": 4,
       "deployed": 32.42
     },
@@ -916,70 +916,70 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T08:15:47"
+        "time": "2026-04-04T08:23:19"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T08:15:47"
+        "time": "2026-04-04T08:23:19"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T08:15:47"
+        "time": "2026-04-04T08:23:19"
       },
       {
         "perplexity": null,
         "claude": 0.08,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-04T08:15:47"
+        "time": "2026-04-04T08:23:19"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T08:15:47"
+        "time": "2026-04-04T08:23:19"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T08:15:47"
+        "time": "2026-04-04T08:23:19"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T08:15:47"
+        "time": "2026-04-04T08:23:19"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T08:15:47"
+        "time": "2026-04-04T08:23:19"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T08:15:47"
+        "time": "2026-04-04T08:23:19"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-04T08:15:47"
+        "time": "2026-04-04T08:23:19"
       }
     ]
   },
@@ -1132,7 +1132,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 5,
-    "uptime_hours": 0.5
+    "cycles": 6,
+    "uptime_hours": 0.6
   }
 }
