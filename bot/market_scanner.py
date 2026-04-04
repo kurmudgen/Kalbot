@@ -134,29 +134,20 @@ def scan_markets(conn: sqlite3.Connection) -> int:
     total = 0
 
     TARGET_SERIES = [
-        # Economics / Fed / GDP
-        "KXCPI", "KXPCE", "KXFED", "KXFOMC", "KXGDP",
-        # Labor market
-        "KXJOBLESS", "KXNFP",
-        # Financial / Rates
-        "KXTREAS", "KX10Y",
-        # Energy
-        "KXGAS", "KXOIL", "KXWTI",
-        # Crypto
-        "KXBTC",
-        # Weather — city-specific (full city codes, verified working)
+        # Weather — validated (94% WR simulation)
         "KXHIGHNY", "KXHIGHCHI", "KXHIGHMIA", "KXHIGHHOU",
         "KXHIGHDEN", "KXHIGHAUS", "KXHIGHLA", "KXHIGHPHX",
         "KXHIGHSEA", "KXHIGHDFW", "KXHIGHPHI",
         "KXLOWNY", "KXLOWCHI", "KXLOWMIA", "KXLOWHOU",
         "KXLOWDEN", "KXLOWAUS",
-        # TSA
+        # TSA — validated (93.5% WR simulation)
         "TSA", "KXTSA",
-        # Congressional / Politics
-        "KXCONG", "KXSTOCK",
-        # Entertainment
-        "KXMOVIE", "KXBOX",
-        # Forex — DISABLED (1W/8L, -$18.80, bracket flooding)
+        # CPI/Inflation — validated (84% WR simulation)
+        "KXCPI", "KXPCE",
+        # DISABLED — no simulation validation:
+        # "KXFED", "KXFOMC", "KXGDP", "KXJOBLESS", "KXNFP",
+        # "KXTREAS", "KX10Y", "KXGAS", "KXOIL", "KXWTI", "KXBTC",
+        # "KXCONG", "KXSTOCK", "KXMOVIE", "KXBOX",
         # "KXEURUSD", "KXUSDJPY",
     ]
 
