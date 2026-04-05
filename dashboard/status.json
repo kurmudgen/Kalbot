@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05T06:09:31.117657+00:00",
+  "updated_at": "2026-04-05T06:16:45.420581+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T06:09:31.117657+00:00",
+    "last_updated": "2026-04-05T06:16:45.420581+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -1045,28 +1045,28 @@
     {
       "ticker": "KXHIGHNY-26APR05-T67",
       "title": "Will the **high temp in NYC** be >67\u00b0 on Apr 5, 2026?",
-      "price": 5,
+      "price": 4,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR05-T60",
       "title": "Will the **high temp in NYC** be <60\u00b0 on Apr 5, 2026?",
-      "price": 44,
+      "price": 38,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR05-B66.5",
       "title": "Will the **high temp in NYC** be 66-67\u00b0 on Apr 5, 2026?",
-      "price": 9,
+      "price": 8,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR05-B64.5",
       "title": "Will the **high temp in NYC** be 64-65\u00b0 on Apr 5, 2026?",
-      "price": 13,
+      "price": 14,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     }
@@ -1137,7 +1137,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 74,
-    "uptime_hours": 9.5
+    "cycles": 75,
+    "uptime_hours": 9.7
   }
 }
