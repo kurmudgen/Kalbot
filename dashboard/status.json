@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-05T23:20:17.570837+00:00",
+  "updated_at": "2026-04-05T23:27:34.833665+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
-      "balance": 652.62,
+      "balance": 642.76,
       "paper_mode": false
     },
     "alpaca": {
@@ -13,21 +13,21 @@
     }
   },
   "capital_status": {
-    "balance": 652.62,
+    "balance": 642.76,
     "peak_balance": 671.01,
     "floor_balance": 201.3,
-    "available_capital": 451.32,
+    "available_capital": 441.46,
     "performance_score": 40.0,
     "score_multiplier": 0.8,
     "daily_deployed": 238.39,
-    "daily_cap": 216.63,
+    "daily_cap": 211.9,
     "cycle_status": "active"
   },
   "treasury": {
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T23:20:17.570837+00:00",
+    "last_updated": "2026-04-05T23:27:34.833665+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -108,7 +108,7 @@
       },
       {
         "date": "2026-04-05",
-        "trades": 11460,
+        "trades": 11464,
         "deployed": 238.39000000000001
       }
     ],
@@ -125,6 +125,66 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHNY-26APR06-B60.5",
+        "title": "Will the **high temp in NYC** be 60-61\u00b0 on Apr 6, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.9025,
+        "market_price": 0.06,
+        "price_gap": 0.8899999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=nyc] Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-05T23:27:34"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR06-T61",
+        "title": "Will the **high temp in NYC** be >61\u00b0 on Apr 6, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05,
+        "confidence": 0.99275,
+        "market_price": 0.05,
+        "price_gap": 0.0,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-05T23:27:34"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR06-B60.5",
+        "title": "Will the **high temp in NYC** be 60-61\u00b0 on Apr 6, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.9025,
+        "market_price": 0.06,
+        "price_gap": 0.8899999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=nyc] Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-05T23:26:35"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR06-T61",
+        "title": "Will the **high temp in NYC** be >61\u00b0 on Apr 6, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05,
+        "confidence": 0.99275,
+        "market_price": 0.05,
+        "price_gap": 0.0,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-05T23:26:35"
+      },
       {
         "ticker": "KXHIGHNY-26APR06-B60.5",
         "title": "Will the **high temp in NYC** be 60-61\u00b0 on Apr 6, 2026?",
@@ -814,72 +874,12 @@
         "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.76",
         "category": "economics",
         "time": "2026-04-05T23:11:24"
-      },
-      {
-        "ticker": "KXCPI-26OCT-T0.4",
-        "title": "Will CPI rise more than 0.4% in October 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.09680048458561036,
-        "confidence": 0.8597597334779143,
-        "market_price": 0.28,
-        "price_gap": 0.18319951541438972,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.10",
-        "category": "economics",
-        "time": "2026-04-05T23:11:23"
-      },
-      {
-        "ticker": "KXCPI-26OCT-T0.5",
-        "title": "Will CPI rise more than 0.5% in October 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.010724110021675809,
-        "confidence": 0.8961017394880784,
-        "market_price": 0.26,
-        "price_gap": 0.24927588997832417,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.01",
-        "category": "economics",
-        "time": "2026-04-05T23:11:23"
-      },
-      {
-        "ticker": "KXCPI-26NOV-T0.0",
-        "title": "Will CPI rise more than 0.0% in November 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.9965330261969594,
-        "confidence": 0.8431863288166555,
-        "market_price": 0.83,
-        "price_gap": 0.16653302619695942,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=1.00",
-        "category": "economics",
-        "time": "2026-04-05T23:11:23"
-      },
-      {
-        "ticker": "KXCPI-26NOV-T0.1",
-        "title": "Will CPI rise more than 0.1% in November 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.955434537241457,
-        "confidence": 0.8609889954828014,
-        "market_price": 0.77,
-        "price_gap": 0.18543453724145698,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.96",
-        "category": "economics",
-        "time": "2026-04-05T23:11:23"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 10992,
+      "trades": 10994,
       "executed": 10,
       "deployed": 18.11
     },
@@ -889,7 +889,7 @@
       "deployed": 443.78
     },
     "WEATHER": {
-      "trades": 9176,
+      "trades": 9178,
       "executed": 4,
       "deployed": 32.42
     },
@@ -921,14 +921,14 @@
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T23:20:14"
+        "time": "2026-04-05T23:27:31"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T23:20:13"
+        "time": "2026-04-05T23:27:30"
       },
       {
         "perplexity": null,
@@ -1137,13 +1137,13 @@
     {
       "level": "warning",
       "message": "50 API retries this session",
-      "detail": "50 non-fatal exceptions across 68 cycles (~0.7/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "50 non-fatal exceptions across 69 cycles (~0.7/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 50,
-    "cycles": 68,
-    "uptime_hours": 8.3
+    "cycles": 69,
+    "uptime_hours": 8.4
   }
 }
