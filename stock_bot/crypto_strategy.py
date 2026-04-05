@@ -23,23 +23,42 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True
 
 CRYPTO_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "crypto_strategy.sqlite")
 
-# Blue chip crypto (Alpaca supports 73 crypto pairs)
-# Only symbols Alpaca actually supports — LINK/USD, DOT/USD, AVAX/USD, ADA/USD, XRP/USD
-# return "invalid symbol" errors and have been removed
+# Blue chip crypto — verified tradable via Alpaca paper API 2026-04-05
+# Alpaca now lists LINK/DOT/AVAX/ADA/XRP/BCH/FIL/XTZ as active on paper accounts
 BLUE_CHIPS = {
     "BTC/USD": "Bitcoin",
     "ETH/USD": "Ethereum",
     "SOL/USD": "Solana",
     "LTC/USD": "Litecoin",
     "DOGE/USD": "Dogecoin",
+    "BCH/USD": "Bitcoin Cash",
+    "LINK/USD": "Chainlink",
+    "DOT/USD": "Polkadot",
+    "AVAX/USD": "Avalanche",
+    "ADA/USD": "Cardano",
+    "XRP/USD": "XRP",
+    "XTZ/USD": "Tezos",
+    "FIL/USD": "Filecoin",
+    "YFI/USD": "Yearn Finance",
 }
 
-# Micro-cap / meme coins
-# Micro-cap / meme coins — only Alpaca-supported symbols
+# Mid/micro-cap — Alpaca-tradable alts and memes
 MICRO_CAPS = {
     "SHIB/USD": "Shiba Inu",
     "UNI/USD": "Uniswap",
     "AAVE/USD": "Aave",
+    "CRV/USD": "Curve",
+    "SUSHI/USD": "SushiSwap",
+    "GRT/USD": "The Graph",
+    "BAT/USD": "Basic Attention",
+    "LDO/USD": "Lido",
+    "ARB/USD": "Arbitrum",
+    "RENDER/USD": "Render",
+    "ONDO/USD": "Ondo",
+    "PEPE/USD": "Pepe",
+    "BONK/USD": "Bonk",
+    "WIF/USD": "Dogwifhat",
+    "POL/USD": "Polygon",
 }
 
 STOP_LOSS_PCT = 0.05     # 5% stop loss (tighter — cut losers fast)
@@ -70,7 +89,7 @@ def get_coingecko_data() -> list[dict]:
         params = {
             "vs_currency": "usd",
             "order": "volume_desc",
-            "per_page": 50,
+            "per_page": 100,
             "page": 1,
             "sparkline": False,
             "price_change_percentage": "1h,24h,7d",
@@ -102,10 +121,15 @@ def scan_blue_chips() -> list[dict]:
     if not market_data:
         return signals
 
-    # Map CoinGecko IDs to our symbols
+    # Map CoinGecko IDs to Alpaca symbols (must match BLUE_CHIPS keys)
     cg_map = {
         "bitcoin": "BTC/USD", "ethereum": "ETH/USD", "solana": "SOL/USD",
         "litecoin": "LTC/USD", "dogecoin": "DOGE/USD",
+        "bitcoin-cash": "BCH/USD", "chainlink": "LINK/USD",
+        "polkadot": "DOT/USD", "avalanche-2": "AVAX/USD",
+        "cardano": "ADA/USD", "ripple": "XRP/USD",
+        "tezos": "XTZ/USD", "filecoin": "FIL/USD",
+        "yearn-finance": "YFI/USD",
     }
 
     for coin in market_data:
@@ -119,27 +143,41 @@ def scan_blue_chips() -> list[dict]:
         change_7d = coin.get("price_change_percentage_7d_in_currency", 0) or 0
         volume = coin.get("total_volume", 0)
 
-        # Simple momentum signal
+        # Momentum signal — broadened to fire in calm markets too
         score = 0
         reasons = []
 
         if change_24h > 3:
+            score += 2
+            reasons.append(f"up {change_24h:.1f}% today")
+        elif change_24h > 1:
             score += 1
             reasons.append(f"up {change_24h:.1f}% today")
         elif change_24h < -5:
-            score += 1
+            score += 2
             reasons.append(f"dip {change_24h:.1f}% (buy the dip?)")
+        elif change_24h < -2:
+            score += 1
+            reasons.append(f"dip {change_24h:.1f}%")
 
         if change_7d and change_7d > 10:
+            score += 2
+            reasons.append(f"up {change_7d:.1f}% this week")
+        elif change_7d and change_7d > 3:
             score += 1
             reasons.append(f"up {change_7d:.1f}% this week")
 
-        # RSI proxy: if it dropped hard then bounced = potential reversal
+        # Bounce pattern: weekly dip then daily recovery
         if change_24h > 2 and (change_7d or 0) < -5:
             score += 2
             reasons.append("bounce after weekly dip")
 
-        if score >= 2:
+        # Momentum continuation: both timeframes positive
+        if change_24h > 0 and (change_7d or 0) > 0:
+            score += 1
+            reasons.append("uptrend continuation")
+
+        if score >= 1:
             signals.append({
                 "symbol": symbol,
                 "name": BLUE_CHIPS.get(symbol, cg_id),
@@ -179,13 +217,19 @@ def scan_micro_caps() -> list[dict]:
         score = 0
         reasons = []
 
-        # Big pump
+        # Pump signals — broadened for calm markets
         if change_24h > 10:
-            score += 2
+            score += 3
             reasons.append(f"pumping {change_24h:.1f}%")
         elif change_24h > 5:
+            score += 2
+            reasons.append(f"up {change_24h:.1f}%")
+        elif change_24h > 2:
             score += 1
             reasons.append(f"up {change_24h:.1f}%")
+        elif change_24h < -5:
+            score += 1
+            reasons.append(f"oversold dip {change_24h:.1f}%")
 
         # Trending on CoinGecko
         trending_ids = {t.get("id", "") for t in trending}
@@ -198,7 +242,7 @@ def scan_micro_caps() -> list[dict]:
             score += 1
             reasons.append("high volume relative to mcap")
 
-        if score >= 2:
+        if score >= 1:
             signals.append({
                 "symbol": alpaca_symbol,
                 "name": MICRO_CAPS.get(alpaca_symbol, symbol_raw),
@@ -279,6 +323,26 @@ Respond with JSON:
         except Exception as e:
             print(f"    Claude: {e}")
 
+    # DeepSeek (third opinion for majority vote)
+    api_key = os.getenv("DEEPSEEK_API_KEY", "")
+    if api_key:
+        try:
+            from openai import OpenAI
+            client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com", timeout=60.0)
+            r = client.chat.completions.create(
+                model="deepseek-chat",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.2,
+            )
+            raw = r.choices[0].message.content
+            start, end = raw.find("{"), raw.rfind("}") + 1
+            if start >= 0 and end > 0:
+                result = json.loads(raw[start:end])
+                result["_provider"] = "deepseek"
+                estimates.append(result)
+        except Exception as e:
+            print(f"    DeepSeek: {e}")
+
     if len(estimates) < 1:
         return None
 
@@ -303,8 +367,14 @@ Respond with JSON:
     }
 
 
-def run_crypto_scan(session_id: str = "") -> list[dict]:
-    """Run both crypto strategies and return trade signals."""
+def run_crypto_scan(session_id: str = "", capital: dict | None = None) -> list[dict]:
+    """Run both crypto strategies and return trade signals.
+
+    Args:
+        session_id: tracking ID
+        capital: optional capital state dict from stock_capital.get_capital_state.
+                 If provided, uses capital['max_per_trade'] for sizing (floor-protected).
+    """
     from alpaca_executor import execute_stock_trade, get_account_info
 
     print("  --- Crypto Blue Chip ---")
@@ -318,7 +388,7 @@ def run_crypto_scan(session_id: str = "") -> list[dict]:
     conn = init_crypto_db()
     trades = []
 
-    all_signals = blue_signals[:3] + micro_signals[:3]  # Top 3 each
+    all_signals = blue_signals[:5] + micro_signals[:5]  # Top 5 each
 
     # Get currently held crypto to avoid duplicate buys
     try:
@@ -340,14 +410,17 @@ def run_crypto_scan(session_id: str = "") -> list[dict]:
             print("skip")
             continue
 
-        if analysis["action"] != "buy" or analysis["confidence"] < 0.6:
+        if analysis["action"] != "buy" or analysis["confidence"] < 0.55:
             print(f"avoid (conf={analysis['confidence']:.2f})")
             continue
 
         print(f"BUY conf={analysis['confidence']:.2f}")
 
-        # Position size
-        max_position = float(os.getenv("STOCK_MAX_POSITION", "10"))
+        # Position size: prefer capital management cap, fallback to env
+        if capital and capital.get("max_per_trade"):
+            max_position = capital["max_per_trade"]
+        else:
+            max_position = float(os.getenv("STOCK_MAX_POSITION", "1000"))
         amount = max_position * analysis["confidence"]
         qty = max(0.001, amount / sig["price"])  # Crypto allows fractional
 

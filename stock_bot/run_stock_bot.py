@@ -145,9 +145,25 @@ def run_cycle(session_id: str) -> dict:
     if exits:
         print(f"  Exited {exits} positions")
 
-    # Crypto modules — disabled by default until crypto account is funded
-    # Set CRYPTO_ENABLED=true in .env to re-enable
+    # Crypto modules — runs 24/7, independent of stock market hours
+    # Set CRYPTO_ENABLED=true in .env to enable
     if CRYPTO_ENABLED:
+        # Compute capital state early for crypto sizing (floor-protected)
+        crypto_capital = None
+        try:
+            from stock_capital import get_capital_state
+            from alpaca_executor import init_stock_db, get_account_info as _get_info
+            _info = _get_info()
+            _cap_conn = init_stock_db()
+            crypto_capital = get_capital_state(
+                _cap_conn,
+                _info.get("portfolio_value", 100000),
+                _info.get("cash", 0),
+            )
+            _cap_conn.close()
+        except Exception as e:
+            print(f"  Crypto capital mgmt error: {e}")
+
         # BTC Range Trader (ISOLATED — own budget, own P&L)
         try:
             from btc_range_trader import run_range_cycle
@@ -169,25 +185,22 @@ def run_cycle(session_id: str) -> dict:
             print(f"  Momentum error: {e}")
 
         # Liquidation cascade check (before main crypto trades)
+        skip_crypto = False
         try:
             from liquidation_monitor import detect_cascade_risk
             cascade = detect_cascade_risk()
             if cascade["risk"] == "high":
                 print(f"  LIQUIDATION WARNING: {cascade['details']}")
                 print(f"  Skipping crypto trades this cycle")
-            else:
-                print("  --- Crypto Strategies ---")
-                try:
-                    from crypto_strategy import run_crypto_scan
-                    crypto_trades = run_crypto_scan(session_id)
-                    stats["traded"] += len(crypto_trades)
-                except Exception as e:
-                    print(f"  Crypto error: {e}")
+                skip_crypto = True
         except Exception:
+            pass
+
+        if not skip_crypto:
             print("  --- Crypto Strategies ---")
             try:
                 from crypto_strategy import run_crypto_scan
-                crypto_trades = run_crypto_scan(session_id)
+                crypto_trades = run_crypto_scan(session_id, capital=crypto_capital)
                 stats["traded"] += len(crypto_trades)
             except Exception as e:
                 print(f"  Crypto error: {e}")
