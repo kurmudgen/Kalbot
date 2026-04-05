@@ -26,7 +26,7 @@ STOCK_DECISIONS_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "stoc
 
 # Configurable via .env
 ACCOUNT_FLOOR_PCT = float(os.getenv("STOCK_ACCOUNT_FLOOR_PCT", "0.30"))
-MAX_SINGLE_TRADE_PCT = float(os.getenv("STOCK_MAX_SINGLE_TRADE_PCT", "0.02"))  # 2% of portfolio per trade
+MAX_SINGLE_TRADE_PCT = float(os.getenv("STOCK_MAX_SINGLE_TRADE_PCT", "0.05"))  # 5% of portfolio per trade (paper)
 PERF_SCORE_START = 50
 PERF_SCORE_MIN = 10
 PERF_SCORE_MAX = 100
@@ -88,7 +88,7 @@ def get_capital_state(conn: sqlite3.Connection, portfolio_value: float, cash: fl
     # Per-trade max
     max_per_trade = min(
         available_capital * MAX_SINGLE_TRADE_PCT * score_multiplier,
-        500  # Hard cap $500 per stock trade
+        1000  # Hard cap $1000 per stock trade (paper trading)
     )
 
     state = {

@@ -30,13 +30,17 @@ SWING_MODE = os.getenv("STOCK_SWING_MODE", "true").lower() == "true"
 # Core watchlist — high liquidity, well-covered by analysts, LLMs have deep knowledge
 WATCHLIST = {
     # Mega caps (most data, most LLM knowledge)
-    "tech": ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA"],
+    "tech": ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA", "CRM", "ORCL", "AVGO"],
     # Sector ETFs (diversified, liquid, less volatile)
-    "etfs": ["SPY", "QQQ", "IWM", "XLF", "XLE", "XLK", "XLV", "ARKK", "GLD", "TLT"],
+    "etfs": ["SPY", "QQQ", "IWM", "XLF", "XLE", "XLK", "XLV", "ARKK", "GLD", "TLT",
+             "SOXX", "XBI", "SMH", "EEM"],
     # High-vol momentum names (bigger moves, more opportunity)
-    "momentum": ["AMD", "PLTR", "SOFI", "COIN", "MARA", "RIOT", "SQ", "SNAP", "UBER"],
+    "momentum": ["AMD", "PLTR", "SOFI", "COIN", "MARA", "RIOT", "SQ", "SNAP", "UBER",
+                  "RKLB", "HOOD", "AFRM", "IONQ", "SMCI", "MU", "CRWD", "NET"],
     # Dividend / defensive (steady, lower risk)
-    "defensive": ["JNJ", "KO", "PG", "VZ", "T", "MO"],
+    "defensive": ["JNJ", "KO", "PG", "VZ", "T", "MO", "PEP", "WMT", "COST", "UNH"],
+    # Mid-cap growth (more volatility, more signal)
+    "midcap": ["DKNG", "ROKU", "TTD", "ABNB", "DASH", "ZS", "PANW", "SHOP", "MELI", "SE"],
 }
 
 # Position sizing by category
@@ -45,6 +49,8 @@ CATEGORY_MAX_POSITION_PCT = {
     "etfs": 0.12,       # 12% per ETF (safer)
     "momentum": 0.05,   # 5% per momentum name (volatile)
     "defensive": 0.10,  # 10% per defensive
+    "midcap": 0.06,     # 6% per midcap (moderate risk)
+    "congress": 0.06,   # 6% per congressional trade signal
 }
 
 # From ai-hedge-fund risk manager
@@ -263,26 +269,33 @@ Respond with JSON:
         except Exception:
             pass
 
-    # Require ALL models to agree for stocks (higher bar than Kalshi)
+    # 2/3 majority vote (was unanimous — too restrictive for paper trading)
     if len(estimates) < 2:
         return None
 
     actions = [e.get("action", "hold") for e in estimates]
-    if not all(a == actions[0] for a in actions):
-        return None  # Any disagreement = skip
+    from collections import Counter
+    action_counts = Counter(actions)
+    majority_action, majority_count = action_counts.most_common(1)[0]
 
-    if actions[0] == "hold":
+    # Need at least 2 models to agree (2/3 majority)
+    if majority_count < 2:
+        return None  # No majority = skip
+
+    if majority_action == "hold":
         return None  # No trade
 
-    avg_conf = sum(e.get("confidence", 0.5) for e in estimates) / len(estimates)
+    # Average confidence across agreeing models only
+    agreeing = [e for e in estimates if e.get("action") == majority_action]
+    avg_conf = sum(e.get("confidence", 0.5) for e in agreeing) / len(agreeing)
 
     return {
         "symbol": symbol,
-        "action": actions[0],
+        "action": majority_action,
         "confidence": avg_conf,
-        "target_price": estimates[0].get("target_price", price * 1.05),
-        "stop_loss": estimates[0].get("stop_loss", price * 0.95),
-        "reasoning": estimates[0].get("reasoning", ""),
+        "target_price": agreeing[0].get("target_price", price * 1.05),
+        "stop_loss": agreeing[0].get("stop_loss", price * 0.95),
+        "reasoning": agreeing[0].get("reasoning", ""),
     }
 
 
@@ -332,11 +345,11 @@ def scan_and_analyze() -> list[dict]:
         tech = analyze_technicals(data["prices"], data["volumes"])
         fund = check_fundamentals(data)
 
-        # Momentum confirmation: skip if price is trending down recently
+        # Momentum confirmation: skip if price is trending down hard
         prices = data["prices"]
         if len(prices) >= 5:
             recent_trend = (prices[-1] - prices[-5]) / prices[-5]
-            if recent_trend < -0.02:  # Down more than 2% in last 5 days = skip
+            if recent_trend < -0.05:  # Down more than 5% in last 5 days = skip
                 continue
 
         # Combined score: technicals (60%) + fundamentals (40%)
@@ -354,8 +367,8 @@ def scan_and_analyze() -> list[dict]:
     # Sort by absolute combined score (strongest signals first)
     scored.sort(key=lambda x: abs(x["combined_score"]), reverse=True)
 
-    # Analyze top 5 with ensemble LLMs
-    for item in scored[:5]:
+    # Analyze top 8 with ensemble LLMs (was 5 — need more throughput for paper trading)
+    for item in scored[:8]:
         symbol = item["symbol"]
         print(f"  Analyzing {symbol} (score: {item['combined_score']:+.2f})...")
 
@@ -364,7 +377,7 @@ def scan_and_analyze() -> list[dict]:
             print(f"    No consensus or hold")
             continue
 
-        if analysis["confidence"] < 0.6:
+        if analysis["confidence"] < 0.50:
             print(f"    Low confidence ({analysis['confidence']:.2f})")
             continue
 

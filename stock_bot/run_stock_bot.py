@@ -39,9 +39,9 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True
 sys.path.insert(0, os.path.dirname(__file__))
 
 SCAN_INTERVAL = 300  # 5 minutes
-MAX_POSITION_SIZE = float(os.getenv("STOCK_MAX_POSITION", "10"))  # $10 per trade to start
-MAX_DAILY_SPEND = float(os.getenv("STOCK_MAX_DAILY", "50"))
-MAX_POSITIONS = int(os.getenv("STOCK_MAX_POSITIONS", "5"))
+MAX_POSITION_SIZE = float(os.getenv("STOCK_MAX_POSITION", "1000"))  # $1000 per trade (paper)
+MAX_DAILY_SPEND = float(os.getenv("STOCK_MAX_DAILY", "5000"))  # $5K/day on $100K paper
+MAX_POSITIONS = int(os.getenv("STOCK_MAX_POSITIONS", "10"))  # 10 concurrent positions
 STOP_LOSS_PCT = 0.10  # 10% stop loss
 TAKE_PROFIT_PCT = 0.20  # 20% take profit
 
@@ -271,8 +271,8 @@ def run_cycle(session_id: str) -> dict:
             if sig["symbol"] in held_symbols:
                 continue
 
-            conf_floor = stocks_profile.confidence_floor if stocks_profile else 0.65
-            max_pos = stocks_profile.max_position_size if stocks_profile else 500
+            conf_floor = stocks_profile.confidence_floor if stocks_profile else 0.55
+            max_pos = stocks_profile.max_position_size if stocks_profile else 1000
 
             if sig["action"] == "buy" and sig["confidence"] > conf_floor:
                 # Use dynamic capital if available, else fallback
@@ -323,7 +323,7 @@ def run_cycle(session_id: str) -> dict:
         if analysis is None:
             continue
 
-        if analysis["action"] == "buy" and analysis["confidence"] > 0.65:
+        if analysis["action"] == "buy" and analysis["confidence"] > 0.55:
             # Kelly-ish sizing with capital management
             edge = analysis["confidence"] - 0.5
             bet_fraction = edge * 0.25  # Quarter-Kelly
