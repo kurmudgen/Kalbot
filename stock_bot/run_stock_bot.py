@@ -47,6 +47,7 @@ TAKE_PROFIT_PCT = 0.20  # 20% take profit
 
 
 AVOID_FIRST_30_MIN = True  # Don't trade in the first 30 min after open (noisy)
+CRYPTO_ENABLED = os.getenv("CRYPTO_ENABLED", "false").lower() == "true"
 
 
 def is_market_open() -> bool:
@@ -128,40 +129,45 @@ def run_cycle(session_id: str) -> dict:
     if exits:
         print(f"  Exited {exits} positions")
 
-    # BTC Range Trader (ISOLATED — own budget, own P&L)
-    try:
-        from btc_range_trader import run_range_cycle
-        print("  --- BTC Range Trader (isolated) ---")
-        range_stats = run_range_cycle()
-        if range_stats["entries"] or range_stats["exits"]:
-            print(f"  Range: {range_stats['entries']} entries, {range_stats['exits']} exits")
-    except Exception as e:
-        print(f"  Range trader error: {e}")
+    # Crypto modules — disabled by default until crypto account is funded
+    # Set CRYPTO_ENABLED=true in .env to re-enable
+    if CRYPTO_ENABLED:
+        # BTC Range Trader (ISOLATED — own budget, own P&L)
+        try:
+            from btc_range_trader import run_range_cycle
+            print("  --- BTC Range Trader (isolated) ---")
+            range_stats = run_range_cycle()
+            if range_stats["entries"] or range_stats["exits"]:
+                print(f"  Range: {range_stats['entries']} entries, {range_stats['exits']} exits")
+        except Exception as e:
+            print(f"  Range trader error: {e}")
 
-    # Crypto momentum module (ISOLATED — own budget, own P&L)
-    try:
-        from crypto_momentum import run_momentum_cycle
-        print("  --- Crypto Momentum (isolated, mid-cap) ---")
-        momentum = run_momentum_cycle()
-        if momentum["entries"] or momentum["exits"]:
-            print(f"  Momentum: {momentum['entries']} entries, {momentum['exits']} exits")
-    except Exception as e:
-        print(f"  Momentum error: {e}")
+        # Crypto momentum module (ISOLATED — own budget, own P&L)
+        try:
+            from crypto_momentum import run_momentum_cycle
+            print("  --- Crypto Momentum (isolated, mid-cap) ---")
+            momentum = run_momentum_cycle()
+            if momentum["entries"] or momentum["exits"]:
+                print(f"  Momentum: {momentum['entries']} entries, {momentum['exits']} exits")
+        except Exception as e:
+            print(f"  Momentum error: {e}")
 
-    # Liquidation cascade check (before main crypto trades)
-    try:
-        from liquidation_monitor import detect_cascade_risk
-        cascade = detect_cascade_risk()
-        if cascade["risk"] == "high":
-            print(f"  LIQUIDATION WARNING: {cascade['details']}")
-            print(f"  Skipping crypto trades this cycle")
-            try:
-                from telegram_alerts import system_alert
-                system_alert(f"Liquidation cascade risk HIGH: {cascade['details']}", "warning")
-            except Exception:
-                pass
-        else:
-            # Crypto runs 24/7 (doesn't need market hours)
+        # Liquidation cascade check (before main crypto trades)
+        try:
+            from liquidation_monitor import detect_cascade_risk
+            cascade = detect_cascade_risk()
+            if cascade["risk"] == "high":
+                print(f"  LIQUIDATION WARNING: {cascade['details']}")
+                print(f"  Skipping crypto trades this cycle")
+            else:
+                print("  --- Crypto Strategies ---")
+                try:
+                    from crypto_strategy import run_crypto_scan
+                    crypto_trades = run_crypto_scan(session_id)
+                    stats["traded"] += len(crypto_trades)
+                except Exception as e:
+                    print(f"  Crypto error: {e}")
+        except Exception:
             print("  --- Crypto Strategies ---")
             try:
                 from crypto_strategy import run_crypto_scan
@@ -169,15 +175,8 @@ def run_cycle(session_id: str) -> dict:
                 stats["traded"] += len(crypto_trades)
             except Exception as e:
                 print(f"  Crypto error: {e}")
-    except Exception:
-        # If cascade check fails, still trade crypto
-        print("  --- Crypto Strategies ---")
-        try:
-            from crypto_strategy import run_crypto_scan
-            crypto_trades = run_crypto_scan(session_id)
-            stats["traded"] += len(crypto_trades)
-        except Exception as e:
-            print(f"  Crypto error: {e}")
+    else:
+        print("  Crypto disabled (CRYPTO_ENABLED=false). Set to true in .env when funded.")
 
     # Reddit velocity check (adds trending stocks to scan)
     try:

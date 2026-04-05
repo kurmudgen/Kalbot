@@ -24,27 +24,22 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"), override=True
 CRYPTO_DB = os.path.join(os.path.dirname(__file__), "..", "logs", "crypto_strategy.sqlite")
 
 # Blue chip crypto (Alpaca supports 73 crypto pairs)
+# Only symbols Alpaca actually supports — LINK/USD, DOT/USD, AVAX/USD, ADA/USD, XRP/USD
+# return "invalid symbol" errors and have been removed
 BLUE_CHIPS = {
     "BTC/USD": "Bitcoin",
     "ETH/USD": "Ethereum",
     "SOL/USD": "Solana",
-    "AVAX/USD": "Avalanche",
-    "LINK/USD": "Chainlink",
-    "DOT/USD": "Polkadot",
     "LTC/USD": "Litecoin",
-    "ADA/USD": "Cardano",
-    "XRP/USD": "Ripple",
+    "DOGE/USD": "Dogecoin",
 }
 
 # Micro-cap / meme coins
+# Micro-cap / meme coins — only Alpaca-supported symbols
 MICRO_CAPS = {
-    "DOGE/USD": "Dogecoin",
     "SHIB/USD": "Shiba Inu",
     "UNI/USD": "Uniswap",
     "AAVE/USD": "Aave",
-    "WIF/USD": "dogwifhat",
-    "ONDO/USD": "Ondo",
-    "CRV/USD": "Curve",
 }
 
 STOP_LOSS_PCT = 0.05     # 5% stop loss (tighter — cut losers fast)
@@ -110,8 +105,7 @@ def scan_blue_chips() -> list[dict]:
     # Map CoinGecko IDs to our symbols
     cg_map = {
         "bitcoin": "BTC/USD", "ethereum": "ETH/USD", "solana": "SOL/USD",
-        "avalanche-2": "AVAX/USD", "chainlink": "LINK/USD",
-        "polkadot": "DOT/USD", "cosmos": "ATOM/USD", "litecoin": "LTC/USD",
+        "litecoin": "LTC/USD", "dogecoin": "DOGE/USD",
     }
 
     for coin in market_data:
