@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05T00:59:19.348221+00:00",
+  "updated_at": "2026-04-05T01:36:56.504474+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T00:59:19.348221+00:00",
+    "last_updated": "2026-04-05T01:36:56.504474+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -986,7 +986,7 @@
   "scanner": {
     "total_markets": 1112,
     "with_prices": 1104,
-    "passed_filter": 81,
+    "passed_filter": 80,
     "total_scored": 169,
     "categories": {
       "inflation": 101,
@@ -1132,7 +1132,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 36,
-    "uptime_hours": 4.4
+    "cycles": 37,
+    "uptime_hours": 5.0
   }
 }
