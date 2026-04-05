@@ -571,6 +571,49 @@ Deployable categories (from simulation):
   NOT deployable: Jobless (46.3%), Fed (14.3%)
 
 ================================================================
+STOCK BOT AUDIT — 2026-04-04
+================================================================
+
+Account: $99,965 portfolio ($98,905 cash), 2 open positions
+  JNJ: 2 shares, +$16.44 (+3.5%)
+  META: 1 share, -$23.38 (-3.9%)
+
+163 total trades: 89 successful, 74 errors (45% error rate)
+  crypto_blue_chip: 119 trades, 64 errors (54%) — ALL crypto errors
+  bluechip_defensive: 26 trades, 4 errors (15%) — UUID binding
+  bluechip_tech: 16 trades, 4 errors (25%) — UUID binding
+  crypto_micro_cap_sniper: 2 trades, 2 errors (100%)
+
+Error root causes (ALL FIXED):
+  35 — Crypto insufficient balance (-$96K paper balance)
+  14 — Invalid Alpaca symbols (LINK/DOT/AVAX/USD)
+  8  — UUID/enum binding in SQLite INSERT
+  17 — Symbol lookup failures for unsupported crypto
+
+Fixes applied:
+  1. Crypto disabled (CRYPTO_ENABLED=false) until paper account funded
+  2. Invalid symbols removed from crypto_strategy.py
+  3. UUID/enum binding fixed with explicit str() conversion
+  4. P&L tracking wired in: exit_price, exit_reason, exited_at columns
+     record_exit() matches sells to original buys, computes dollar P&L
+  5. Performance score (10-100, starts 50) + dynamic capital management
+     Mirrors Kalshi's system: floor protection, score multiplier, daily cap
+  6. is_safe_to_trade() bug fixed (was blocking entire 9:xx hour)
+  7. Penny stock sizing uses dynamic capital max_per_trade
+
+Projected error rate going forward: ~0% (stock-only, all patterns fixed)
+
+NOT READY for real money:
+  - 0 exits recorded (no P&L history to evaluate)
+  - Need 50+ exits with demonstrated >55% win rate
+  - Only 2 positions opened in 12 days
+  - No trailing stop-loss for locking in gains
+  - No Telegram alerts for stock bot errors
+  - Crypto paper balance needs reset
+
+RECOMMENDATION: Continue paper trading 2-4 weeks, monitor exits.
+
+================================================================
 TO CHECK STATUS: ask Claude "status"
 TO KILL: create S:\kalbot\STOP
 TO DEPLOY DASHBOARD: cd S:\kalbot\dashboard && npx vercel --prod
