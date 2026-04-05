@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05T17:13:45.061180+00:00",
+  "updated_at": "2026-04-05T17:20:45.185264+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T17:13:45.061180+00:00",
+    "last_updated": "2026-04-05T17:20:45.185264+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -921,70 +921,70 @@
         "claude": 0.12,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-05T17:13:44"
+        "time": "2026-04-05T17:20:45"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-05T17:13:44"
+        "time": "2026-04-05T17:20:45"
       },
       {
         "perplexity": null,
         "claude": 0.95,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-05T17:13:44"
+        "time": "2026-04-05T17:20:44"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": true,
-        "time": "2026-04-05T17:13:44"
+        "time": "2026-04-05T17:20:44"
       },
       {
         "perplexity": null,
         "claude": 0.0,
         "deepseek": 0.0,
         "consensus": true,
-        "time": "2026-04-05T17:13:41"
+        "time": "2026-04-05T17:20:40"
       },
       {
         "perplexity": null,
         "claude": 0.0,
         "deepseek": 0.0,
         "consensus": true,
-        "time": "2026-04-05T17:13:41"
+        "time": "2026-04-05T17:20:40"
       },
       {
         "perplexity": null,
         "claude": 1.0,
         "deepseek": 0.98,
         "consensus": true,
-        "time": "2026-04-05T17:13:41"
+        "time": "2026-04-05T17:20:40"
       },
       {
         "perplexity": null,
         "claude": 0.0,
         "deepseek": 0.0,
         "consensus": true,
-        "time": "2026-04-05T17:13:40"
+        "time": "2026-04-05T17:20:40"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T17:12:51"
+        "time": "2026-04-05T17:19:51"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T17:12:51"
+        "time": "2026-04-05T17:19:51"
       }
     ]
   },
@@ -1010,7 +1010,7 @@
     {
       "ticker": "KXHIGHNY-26APR05-T60",
       "title": "Will the **high temp in NYC** be <60\u00b0 on Apr 5, 2026?",
-      "price": 84,
+      "price": 83,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
@@ -1038,14 +1038,14 @@
     {
       "ticker": "KXHIGHNY-26APR05-B60.5",
       "title": "Will the **high temp in NYC** be 60-61\u00b0 on Apr 5, 2026?",
-      "price": 11,
+      "price": 10,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHMIA-26APR05-T84",
       "title": "Will the **high temp in Miami** be >84\u00b0 on Apr 5, 2026?",
-      "price": 2,
+      "price": 5,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
@@ -1066,7 +1066,7 @@
     {
       "ticker": "KXHIGHMIA-26APR05-B81.5",
       "title": "Will the **high temp in Miami** be 81-82\u00b0 on Apr 5, 2026?",
-      "price": 39,
+      "price": 26,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     }
@@ -1136,14 +1136,14 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "20 API retries this session",
-      "detail": "20 non-fatal exceptions across 18 cycles (~1.1/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "22 API retries this session",
+      "detail": "22 non-fatal exceptions across 19 cycles (~1.2/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 20,
-    "cycles": 18,
-    "uptime_hours": 2.1
+    "errors_24h": 22,
+    "cycles": 19,
+    "uptime_hours": 2.3
   }
 }
