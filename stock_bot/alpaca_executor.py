@@ -157,13 +157,16 @@ def execute_stock_trade(
         )
         order = client.submit_order(order_data)
 
+        order_id = str(order.id) if order.id else ""
+        order_status = str(order.status.value) if hasattr(order.status, 'value') else str(order.status or "submitted")
+
         result = {
             "symbol": symbol,
             "side": side,
             "qty": qty,
             "price": price,
-            "order_id": str(order.id) if order.id else "",
-            "status": str(order.status) if order.status else "submitted",
+            "order_id": order_id,
+            "status": order_status,
         }
 
         conn.execute(
@@ -172,7 +175,7 @@ def execute_stock_trade(
                 order_id, status, traded_at, session_id)
                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (symbol, side, float(qty), float(price), strategy, float(confidence), reasoning,
-             str(order.id) if order.id else "", str(order.status) if order.status else "submitted",
+             order_id, order_status,
              datetime.now(timezone.utc).isoformat(), session_id),
         )
         conn.commit()
@@ -187,9 +190,9 @@ def execute_stock_trade(
                (symbol, side, qty, price, strategy, confidence, reasoning,
                 order_id, status, traded_at, session_id)
                VALUES (?, ?, ?, ?, ?, ?, ?, NULL, ?, ?, ?)""",
-            (symbol, side, qty, 0, strategy, confidence, reasoning,
+            (symbol, side, float(qty), 0.0, strategy, float(confidence), str(reasoning),
              f"error: {e}",
-             datetime.now(timezone.utc).isoformat(), session_id),
+             datetime.now(timezone.utc).isoformat(), str(session_id)),
         )
         conn.commit()
         return None
