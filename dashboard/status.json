@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05T04:54:05.952030+00:00",
+  "updated_at": "2026-04-05T05:01:11.581587+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T04:54:05.952030+00:00",
+    "last_updated": "2026-04-05T05:01:11.581587+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -1001,73 +1001,73 @@
   },
   "sniper_markets": [
     {
-      "ticker": "KXHIGHNY-26APR04-T75",
-      "title": "Will the **high temp in NYC** be >75\u00b0 on Apr 4, 2026?",
+      "ticker": "KXHIGHCHI-26APR04-T62",
+      "title": "Will the high temp in Chicago be >62\u00b0 on Apr 4, 2026?",
       "price": 1,
-      "close_time": "2026-04-05T04:59:00Z",
+      "close_time": "2026-04-05T05:59:00Z",
       "category": "weather"
     },
     {
-      "ticker": "KXHIGHNY-26APR04-T68",
-      "title": "Will the **high temp in NYC** be <68\u00b0 on Apr 4, 2026?",
+      "ticker": "KXHIGHCHI-26APR04-T55",
+      "title": "Will the high temp in Chicago be <55\u00b0 on Apr 4, 2026?",
       "price": 1,
-      "close_time": "2026-04-05T04:59:00Z",
+      "close_time": "2026-04-05T05:59:00Z",
       "category": "weather"
     },
     {
-      "ticker": "KXHIGHNY-26APR04-B74.5",
-      "title": "Will the **high temp in NYC** be 74-75\u00b0 on Apr 4, 2026?",
+      "ticker": "KXHIGHCHI-26APR04-B61.5",
+      "title": "Will the high temp in Chicago be 61-62\u00b0 on Apr 4, 2026?",
       "price": 1,
-      "close_time": "2026-04-05T04:59:00Z",
+      "close_time": "2026-04-05T05:59:00Z",
       "category": "weather"
     },
     {
-      "ticker": "KXHIGHNY-26APR04-B72.5",
-      "title": "Will the **high temp in NYC** be 72-73\u00b0 on Apr 4, 2026?",
+      "ticker": "KXHIGHCHI-26APR04-B59.5",
+      "title": "Will the high temp in Chicago be 59-60\u00b0 on Apr 4, 2026?",
       "price": 99,
-      "close_time": "2026-04-05T04:59:00Z",
+      "close_time": "2026-04-05T05:59:00Z",
       "category": "weather"
     },
     {
-      "ticker": "KXHIGHNY-26APR04-B70.5",
-      "title": "Will the **high temp in NYC** be 70-71\u00b0 on Apr 4, 2026?",
+      "ticker": "KXHIGHCHI-26APR04-B57.5",
+      "title": "Will the high temp in Chicago be 57-58\u00b0 on Apr 4, 2026?",
       "price": 1,
-      "close_time": "2026-04-05T04:59:00Z",
+      "close_time": "2026-04-05T05:59:00Z",
       "category": "weather"
     },
     {
-      "ticker": "KXHIGHNY-26APR04-B68.5",
-      "title": "Will the **high temp in NYC** be 68-69\u00b0 on Apr 4, 2026?",
+      "ticker": "KXHIGHCHI-26APR04-B55.5",
+      "title": "Will the high temp in Chicago be 55-56\u00b0 on Apr 4, 2026?",
       "price": 1,
-      "close_time": "2026-04-05T04:59:00Z",
+      "close_time": "2026-04-05T05:59:00Z",
       "category": "weather"
     },
     {
-      "ticker": "KXHIGHMIA-26APR04-T85",
-      "title": "Will the **high temp in Miami** be >85\u00b0 on Apr 4, 2026?",
+      "ticker": "KXHIGHAUS-26APR04-T80",
+      "title": "Will the **high temp in Austin** be >80\u00b0 on Apr 4, 2026?",
       "price": 1,
-      "close_time": "2026-04-05T04:59:00Z",
+      "close_time": "2026-04-05T05:59:00Z",
       "category": "weather"
     },
     {
-      "ticker": "KXHIGHMIA-26APR04-T78",
-      "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
+      "ticker": "KXHIGHAUS-26APR04-T73",
+      "title": "Will the **high temp in Austin** be <73\u00b0 on Apr 4, 2026?",
       "price": 1,
-      "close_time": "2026-04-05T04:59:00Z",
+      "close_time": "2026-04-05T05:59:00Z",
       "category": "weather"
     },
     {
-      "ticker": "KXHIGHMIA-26APR04-B84.5",
-      "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
+      "ticker": "KXHIGHAUS-26APR04-B79.5",
+      "title": "Will the **high temp in Austin** be 79-80\u00b0 on Apr 4, 2026?",
       "price": 1,
-      "close_time": "2026-04-05T04:59:00Z",
+      "close_time": "2026-04-05T05:59:00Z",
       "category": "weather"
     },
     {
-      "ticker": "KXHIGHMIA-26APR04-B82.5",
-      "title": "Will the **high temp in Miami** be 82-83\u00b0 on Apr 4, 2026?",
+      "ticker": "KXHIGHAUS-26APR04-B77.5",
+      "title": "Will the **high temp in Austin** be 77-78\u00b0 on Apr 4, 2026?",
       "price": 99,
-      "close_time": "2026-04-05T04:59:00Z",
+      "close_time": "2026-04-05T05:59:00Z",
       "category": "weather"
     }
   ],
@@ -1137,7 +1137,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 64,
-    "uptime_hours": 8.3
+    "cycles": 65,
+    "uptime_hours": 8.4
   }
 }
