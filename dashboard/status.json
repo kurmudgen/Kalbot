@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05T18:31:59.552047+00:00",
+  "updated_at": "2026-04-05T18:39:27.283542+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T18:31:59.552047+00:00",
+    "last_updated": "2026-04-05T18:39:27.283542+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -921,70 +921,70 @@
         "claude": 0.12,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-05T18:31:59"
+        "time": "2026-04-05T18:39:27"
       },
       {
         "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.08,
         "consensus": false,
-        "time": "2026-04-05T18:31:59"
+        "time": "2026-04-05T18:39:27"
       },
       {
         "perplexity": null,
         "claude": 0.95,
         "deepseek": 0.15,
         "consensus": false,
-        "time": "2026-04-05T18:31:59"
+        "time": "2026-04-05T18:39:27"
       },
       {
         "perplexity": null,
         "claude": 0.15,
         "deepseek": 0.15,
         "consensus": true,
-        "time": "2026-04-05T18:31:59"
+        "time": "2026-04-05T18:39:26"
       },
       {
         "perplexity": null,
         "claude": 0.0,
         "deepseek": 0.0,
         "consensus": true,
-        "time": "2026-04-05T18:31:55"
+        "time": "2026-04-05T18:39:23"
       },
       {
         "perplexity": null,
         "claude": 0.0,
         "deepseek": 0.0,
         "consensus": true,
-        "time": "2026-04-05T18:31:55"
+        "time": "2026-04-05T18:39:23"
       },
       {
         "perplexity": null,
         "claude": 1.0,
         "deepseek": 0.98,
         "consensus": true,
-        "time": "2026-04-05T18:31:55"
+        "time": "2026-04-05T18:39:22"
       },
       {
         "perplexity": null,
         "claude": 0.0,
         "deepseek": 0.0,
         "consensus": true,
-        "time": "2026-04-05T18:31:55"
+        "time": "2026-04-05T18:39:22"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T18:31:05"
+        "time": "2026-04-05T18:38:33"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T18:31:05"
+        "time": "2026-04-05T18:38:33"
       }
     ]
   },
@@ -1038,14 +1038,14 @@
     {
       "ticker": "KXHIGHNY-26APR05-B60.5",
       "title": "Will the **high temp in NYC** be 60-61\u00b0 on Apr 5, 2026?",
-      "price": 30,
+      "price": 28,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHMIA-26APR05-T84",
       "title": "Will the **high temp in Miami** be >84\u00b0 on Apr 5, 2026?",
-      "price": 15,
+      "price": 7,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
@@ -1059,7 +1059,7 @@
     {
       "ticker": "KXHIGHMIA-26APR05-B83.5",
       "title": "Will the **high temp in Miami** be 83-84\u00b0 on Apr 5, 2026?",
-      "price": 83,
+      "price": 88,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
@@ -1136,14 +1136,14 @@
   "alerts": [
     {
       "level": "warning",
-      "message": "42 API retries this session",
-      "detail": "42 non-fatal exceptions across 29 cycles (~1.4/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "message": "44 API retries this session",
+      "detail": "44 non-fatal exceptions across 30 cycles (~1.5/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
-    "errors_24h": 42,
-    "cycles": 29,
-    "uptime_hours": 3.5
+    "errors_24h": 44,
+    "cycles": 30,
+    "uptime_hours": 3.6
   }
 }
