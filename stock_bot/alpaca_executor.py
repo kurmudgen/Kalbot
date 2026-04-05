@@ -60,8 +60,42 @@ def init_stock_db() -> sqlite3.Connection:
             session_id TEXT
         )
     """)
+    # Add exit tracking columns if not present
+    for col, ctype in [("exit_price", "REAL"), ("exit_reason", "TEXT"), ("exited_at", "TEXT")]:
+        try:
+            conn.execute(f"ALTER TABLE stock_trades ADD COLUMN {col} {ctype}")
+        except sqlite3.OperationalError:
+            pass  # Column already exists
     conn.commit()
     return conn
+
+
+def record_exit(symbol: str, exit_price: float, exit_reason: str, pnl: float):
+    """Record an exit (stop-loss, take-profit, or manual sell) against the open buy."""
+    conn = init_stock_db()
+    # Find the most recent unfilled buy for this symbol
+    row = conn.execute(
+        """SELECT id, price, qty FROM stock_trades
+           WHERE symbol = ? AND side = 'buy' AND exit_price IS NULL
+                 AND status NOT LIKE 'error%'
+           ORDER BY traded_at DESC LIMIT 1""",
+        (symbol,),
+    ).fetchone()
+    if row:
+        trade_id, entry_price, qty = row
+        actual_pnl = (exit_price - entry_price) * qty
+        conn.execute(
+            """UPDATE stock_trades SET pnl = ?, exit_price = ?, exit_reason = ?,
+               exited_at = ? WHERE id = ?""",
+            (actual_pnl, exit_price, exit_reason,
+             datetime.now(timezone.utc).isoformat(), trade_id),
+        )
+        conn.commit()
+        print(f"  P&L recorded: {symbol} entry=${entry_price:.2f} exit=${exit_price:.2f} pnl=${actual_pnl:+.2f}")
+    else:
+        print(f"  Warning: no open buy found for {symbol} to record exit against")
+    conn.close()
+    return
 
 
 def get_account_info() -> dict:

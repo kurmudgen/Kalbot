@@ -90,25 +90,41 @@ def is_safe_to_trade() -> bool:
 
 
 def check_exits() -> int:
-    """Check open positions for stop-loss or take-profit."""
+    """Check open positions for stop-loss or take-profit. Records P&L."""
     try:
-        from alpaca_executor import get_alpaca_client, init_stock_db
+        from alpaca_executor import get_alpaca_client, record_exit
+        from alpaca.trading.requests import MarketOrderRequest
+        from alpaca.trading.enums import OrderSide, TimeInForce
+
         api = get_alpaca_client()
         positions = api.list_positions()
         exits = 0
 
         for p in positions:
             pnl_pct = float(p.unrealized_plpc)
+            current_price = float(p.current_price)
+            is_crypto = "/" in p.symbol
 
+            exit_reason = None
             if pnl_pct <= -STOP_LOSS_PCT:
-                print(f"  STOP LOSS: {p.symbol} at {pnl_pct*100:.1f}%")
-                api.submit_order(p.symbol, qty=abs(float(p.qty)), side="sell", type="market", time_in_force="day")
-                exits += 1
-
+                exit_reason = f"stop_loss ({pnl_pct*100:.1f}%)"
             elif pnl_pct >= TAKE_PROFIT_PCT:
-                print(f"  TAKE PROFIT: {p.symbol} at {pnl_pct*100:.1f}%")
-                api.submit_order(p.symbol, qty=abs(float(p.qty)), side="sell", type="market", time_in_force="day")
-                exits += 1
+                exit_reason = f"take_profit ({pnl_pct*100:.1f}%)"
+
+            if exit_reason:
+                print(f"  EXIT: {p.symbol} — {exit_reason}")
+                try:
+                    order = MarketOrderRequest(
+                        symbol=p.symbol,
+                        qty=abs(float(p.qty)),
+                        side=OrderSide.SELL,
+                        time_in_force=TimeInForce.GTC if is_crypto else TimeInForce.DAY,
+                    )
+                    api.submit_order(order)
+                    record_exit(p.symbol, current_price, exit_reason, float(p.unrealized_pl))
+                    exits += 1
+                except Exception as e:
+                    print(f"  Exit order error for {p.symbol}: {e}")
 
         return exits
     except Exception as e:
