@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-05T13:25:58.242386+00:00",
+  "updated_at": "2026-04-05T13:33:46.352845+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
-      "balance": 669.21,
+      "balance": 667.93,
       "paper_mode": false
     },
     "alpaca": {
@@ -13,21 +13,21 @@
     }
   },
   "capital_status": {
-    "balance": 669.21,
+    "balance": 667.93,
     "peak_balance": 671.01,
     "floor_balance": 201.3,
-    "available_capital": 467.91,
+    "available_capital": 466.63,
     "performance_score": 40.0,
     "score_multiplier": 0.8,
     "daily_deployed": 145.42,
-    "daily_cap": 224.6,
+    "daily_cap": 223.98,
     "cycle_status": "active"
   },
   "treasury": {
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T13:25:58.242386+00:00",
+    "last_updated": "2026-04-05T13:33:46.352845+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -108,7 +108,7 @@
       },
       {
         "date": "2026-04-05",
-        "trades": 8338,
+        "trades": 8458,
         "deployed": 145.42000000000002
       }
     ],
@@ -138,7 +138,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:58"
+        "time": "2026-04-05T13:33:46"
       },
       {
         "ticker": "KXHIGHAUS-26APR05-B64.5",
@@ -153,7 +153,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:58"
+        "time": "2026-04-05T13:33:46"
       },
       {
         "ticker": "KXHIGHAUS-26APR05-B66.5",
@@ -168,7 +168,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:57"
+        "time": "2026-04-05T13:33:46"
       },
       {
         "ticker": "KXHIGHAUS-26APR05-B70.5",
@@ -183,7 +183,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:57"
+        "time": "2026-04-05T13:33:45"
       },
       {
         "ticker": "KXHIGHAUS-26APR05-T64",
@@ -198,7 +198,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:57"
+        "time": "2026-04-05T13:33:45"
       },
       {
         "ticker": "KXHIGHAUS-26APR05-T71",
@@ -213,7 +213,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:57"
+        "time": "2026-04-05T13:33:45"
       },
       {
         "ticker": "KXHIGHDEN-26APR05-B64.5",
@@ -228,7 +228,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:57"
+        "time": "2026-04-05T13:33:45"
       },
       {
         "ticker": "KXHIGHDEN-26APR05-B68.5",
@@ -243,7 +243,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:57"
+        "time": "2026-04-05T13:33:45"
       },
       {
         "ticker": "KXHIGHDEN-26APR05-B70.5",
@@ -258,7 +258,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:57"
+        "time": "2026-04-05T13:33:45"
       },
       {
         "ticker": "KXHIGHDEN-26APR05-T64",
@@ -273,7 +273,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:56"
+        "time": "2026-04-05T13:33:44"
       },
       {
         "ticker": "KXHIGHDEN-26APR05-T71",
@@ -288,7 +288,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:56"
+        "time": "2026-04-05T13:33:44"
       },
       {
         "ticker": "KXHIGHMIA-26APR05-B79.5",
@@ -303,7 +303,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:56"
+        "time": "2026-04-05T13:33:44"
       },
       {
         "ticker": "KXHIGHMIA-26APR05-B81.5",
@@ -318,7 +318,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:56"
+        "time": "2026-04-05T13:33:44"
       },
       {
         "ticker": "KXHIGHMIA-26APR05-T84",
@@ -333,7 +333,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:56"
+        "time": "2026-04-05T13:33:44"
       },
       {
         "ticker": "KXHIGHCHI-26APR05-B52.5",
@@ -348,7 +348,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:56"
+        "time": "2026-04-05T13:33:44"
       },
       {
         "ticker": "KXHIGHCHI-26APR05-B54.5",
@@ -363,7 +363,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:56"
+        "time": "2026-04-05T13:33:44"
       },
       {
         "ticker": "KXHIGHCHI-26APR05-B56.5",
@@ -378,7 +378,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:55"
+        "time": "2026-04-05T13:33:43"
       },
       {
         "ticker": "KXHIGHCHI-26APR05-T50",
@@ -393,7 +393,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:55"
+        "time": "2026-04-05T13:33:43"
       },
       {
         "ticker": "KXHIGHCHI-26APR05-T57",
@@ -408,7 +408,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:55"
+        "time": "2026-04-05T13:33:43"
       },
       {
         "ticker": "KXHIGHNY-26APR05-B60.5",
@@ -423,7 +423,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:55"
+        "time": "2026-04-05T13:33:43"
       },
       {
         "ticker": "KXHIGHNY-26APR05-B62.5",
@@ -438,7 +438,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:55"
+        "time": "2026-04-05T13:33:43"
       },
       {
         "ticker": "KXHIGHNY-26APR05-B64.5",
@@ -453,7 +453,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:55"
+        "time": "2026-04-05T13:33:43"
       },
       {
         "ticker": "KXHIGHNY-26APR05-B66.5",
@@ -468,7 +468,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:55"
+        "time": "2026-04-05T13:33:43"
       },
       {
         "ticker": "KXHIGHNY-26APR05-T60",
@@ -483,7 +483,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHNY-26APR05-T67",
@@ -498,7 +498,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHDEN-26APR04-B65.5",
@@ -513,7 +513,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B78.5",
@@ -528,7 +528,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHCHI-26APR04-B57.5",
@@ -543,7 +543,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHCHI-26APR04-T55",
@@ -558,7 +558,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHDEN-26APR04-B63.5",
@@ -573,7 +573,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHDEN-26APR04-T68",
@@ -588,7 +588,7 @@
         "executed": false,
         "reasoning": "April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on April 4, with a high of only 25\u00b0F[4]. This repres",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-B75.5",
@@ -603,7 +603,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Actual weather on April 4, 2026, in Austin featured thunderstorms, heavy rain (0.19 in), light rain, and mist, with a cold front causing afternoon hig\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-B77.5",
@@ -618,7 +618,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Actual weather on April 4, 2026, in Austin featured thunderstorms, heavy rain (0.19 in), light rain, and mist, with a cold front causing afternoon hig\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHAUS-26APR04-T73",
@@ -633,7 +633,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Actual weather on April 4, 2026, in Austin featured thunderstorms, heavy rain (0.19 in), light rain, and mist, with a cold front causing afternoon hig\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHCHI-26APR04-B59.5",
@@ -648,7 +648,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Actual weather on April 4, 2026, in Austin featured thunderstorms, heavy rain (0.19 in), light rain, and mist, with a cold front causing afternoon hig\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B80.5",
@@ -663,7 +663,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Multiple forecasting sources converge on April 4, 2026 high temperatures well below 75\u00b0F. Polymarket data shows trader consensus locked at 100% probab\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHNY-26APR04-T75",
@@ -678,7 +678,7 @@
         "executed": false,
         "reasoning": "Multiple forecasting sources converge on April 4, 2026 high temperatures well below 75\u00b0F. Polymarket data shows trader consensus locked at 100% probability for temperatures \u226558\u00b0F, with NOAA GFS and NA",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHNY-26APR04-B70.5",
@@ -693,7 +693,7 @@
         "executed": false,
         "reasoning": "Polymarket markets on NYC highest temperature on April 4, 2026, show 100% implied probability for 58\u00b0F or higher, with midday observations already in low 60s\u00b0F, NOAA GFS/NAM models forecasting 65-68\u00b0F",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHCHI-26APR04-B61.5",
@@ -708,7 +708,7 @@
         "executed": false,
         "reasoning": "April 4 normal high temp in Chicago is 54.4\u00b0F[4]. AccuWeather April 2026 monthly forecast shows daily highs ranging 38-65\u00b0F, average high 57\u00b0F[2]. Historical records: highest 79\u00b0F (1929), lowest high ",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHNY-26APR04-T68",
@@ -723,7 +723,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Market prices on Robinhood show >92\u00b0 at 3\u00a2 (implied 3%), with lower thresholds at 12\u00a2 (>83\u00b0) and 9\u00a2 (>85\u00b0)[1]. AccuWeather April 2026 forecast: highs \n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:42"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-B84.5",
@@ -738,7 +738,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] Market prices on Robinhood show >92\u00b0 at 3\u00a2 (implied 3%), with lower thresholds at 12\u00a2 (>83\u00b0) and 9\u00a2 (>85\u00b0)[1]. AccuWeather April 2026 forecast: highs \n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:54"
+        "time": "2026-04-05T13:33:41"
       },
       {
         "ticker": "KXHIGHMIA-26APR04-T78",
@@ -753,7 +753,7 @@
         "executed": false,
         "reasoning": "Actual high temperature in Miami on April 4, 2026, was 79.0\u00b0F as reported by WeatherSpark from KMIA station at 10:53 AM (UTC 14:53), confirming it exceeded 78\u00b0F[4]. Pre-forecasts from AccuWeather show",
         "category": "weather",
-        "time": "2026-04-05T13:25:53"
+        "time": "2026-04-05T13:33:41"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-B89.5",
@@ -768,7 +768,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:53"
+        "time": "2026-04-05T13:33:41"
       },
       {
         "ticker": "KXHIGHAUS-26APR03-T85",
@@ -783,7 +783,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:53"
+        "time": "2026-04-05T13:33:41"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B51.5",
@@ -798,7 +798,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:53"
+        "time": "2026-04-05T13:33:41"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B53.5",
@@ -813,7 +813,7 @@
         "executed": false,
         "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
         "category": "weather",
-        "time": "2026-04-05T13:25:53"
+        "time": "2026-04-05T13:33:41"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B55.5",
@@ -828,7 +828,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:53"
+        "time": "2026-04-05T13:33:41"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-B57.5",
@@ -843,7 +843,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:53"
+        "time": "2026-04-05T13:33:41"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-T51",
@@ -858,7 +858,7 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:53"
+        "time": "2026-04-05T13:33:41"
       },
       {
         "ticker": "KXHIGHDEN-26APR03-T58",
@@ -873,13 +873,13 @@
         "executed": false,
         "reasoning": "Weather NWS tier: Gemini + local with NWS data.",
         "category": "weather",
-        "time": "2026-04-05T13:25:53"
+        "time": "2026-04-05T13:33:41"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 9676,
+      "trades": 9736,
       "executed": 10,
       "deployed": 18.11
     },
@@ -889,7 +889,7 @@
       "deployed": 350.81
     },
     "WEATHER": {
-      "trades": 7860,
+      "trades": 7920,
       "executed": 4,
       "deployed": 32.42
     },
@@ -921,70 +921,70 @@
         "claude": 0.12,
         "deepseek": 0.02,
         "consensus": false,
-        "time": "2026-04-05T13:25:51"
+        "time": "2026-04-05T13:33:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T13:25:51"
+        "time": "2026-04-05T13:33:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T13:25:51"
+        "time": "2026-04-05T13:33:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T13:25:51"
+        "time": "2026-04-05T13:33:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T13:25:51"
+        "time": "2026-04-05T13:33:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T13:25:51"
+        "time": "2026-04-05T13:33:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T13:25:51"
+        "time": "2026-04-05T13:33:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T13:25:51"
+        "time": "2026-04-05T13:33:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T13:25:51"
+        "time": "2026-04-05T13:33:39"
       },
       {
         "perplexity": null,
         "claude": null,
         "deepseek": null,
         "consensus": true,
-        "time": "2026-04-05T13:25:51"
+        "time": "2026-04-05T13:33:39"
       }
     ]
   },
@@ -1010,14 +1010,14 @@
     {
       "ticker": "KXHIGHNY-26APR05-T60",
       "title": "Will the **high temp in NYC** be <60\u00b0 on Apr 5, 2026?",
-      "price": 37,
+      "price": 43,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR05-B66.5",
       "title": "Will the **high temp in NYC** be 66-67\u00b0 on Apr 5, 2026?",
-      "price": 6,
+      "price": 5,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
@@ -1031,21 +1031,21 @@
     {
       "ticker": "KXHIGHNY-26APR05-B62.5",
       "title": "Will the **high temp in NYC** be 62-63\u00b0 on Apr 5, 2026?",
-      "price": 18,
+      "price": 20,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR05-B60.5",
       "title": "Will the **high temp in NYC** be 60-61\u00b0 on Apr 5, 2026?",
-      "price": 25,
+      "price": 23,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHMIA-26APR05-T84",
       "title": "Will the **high temp in Miami** be >84\u00b0 on Apr 5, 2026?",
-      "price": 6,
+      "price": 5,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
@@ -1059,14 +1059,14 @@
     {
       "ticker": "KXHIGHMIA-26APR05-B83.5",
       "title": "Will the **high temp in Miami** be 83-84\u00b0 on Apr 5, 2026?",
-      "price": 52,
+      "price": 51,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHMIA-26APR05-B81.5",
       "title": "Will the **high temp in Miami** be 81-82\u00b0 on Apr 5, 2026?",
-      "price": 36,
+      "price": 39,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     }
@@ -1076,68 +1076,68 @@
       "text": "April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on April 4, with a high of only 25\u00b0F[4]. This repres",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-05T13:25:49"
+      "time": "2026-04-05T13:33:38"
     },
     {
       "text": "Actual weather on April 4, 2026, in Austin featured thunderstorms, heavy rain (0.19 in), light rain, and mist, with a cold front causing afternoon highs only in the 60s; morning temps in 50s. Historic",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-05T13:25:49"
+      "time": "2026-04-05T13:33:37"
     },
     {
       "text": "Multiple forecasting sources converge on April 4, 2026 high temperatures well below 75\u00b0F. Polymarket data shows trader consensus locked at 100% probability for temperatures \u226558\u00b0F, with NOAA GFS and NA",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-05T13:25:48"
+      "time": "2026-04-05T13:33:37"
     },
     {
       "text": "Polymarket markets on NYC highest temperature on April 4, 2026, show 100% implied probability for 58\u00b0F or higher, with midday observations already in low 60s\u00b0F, NOAA GFS/NAM models forecasting 65-68\u00b0F",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-05T13:25:48"
+      "time": "2026-04-05T13:33:37"
     },
     {
       "text": "April 4 normal high temp in Chicago is 54.4\u00b0F[4]. AccuWeather April 2026 monthly forecast shows daily highs ranging 38-65\u00b0F, average high 57\u00b0F[2]. Historical records: highest 79\u00b0F (1929), lowest high ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-05T13:25:48"
+      "time": "2026-04-05T13:33:36"
     },
     {
       "text": "Market prices on Robinhood show >92\u00b0 at 3\u00a2 (implied 3%), with lower thresholds at 12\u00a2 (>83\u00b0) and 9\u00a2 (>85\u00b0)[1]. AccuWeather April 2026 forecast: highs 67\u00b0-86\u00b0, average high 78\u00b0[2]. WeatherSpark hourly ",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-05T13:25:48"
+      "time": "2026-04-05T13:33:36"
     },
     {
       "text": "Actual high temperature in Miami on April 4, 2026, was 79.0\u00b0F as reported by WeatherSpark from KMIA station at 10:53 AM (UTC 14:53), confirming it exceeded 78\u00b0F[4]. Pre-forecasts from AccuWeather show",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-05T13:25:48"
+      "time": "2026-04-05T13:33:36"
     },
     {
       "text": "April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on April 4, with a high of only 25\u00b0F[4]. This repres",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-05T13:24:50"
+      "time": "2026-04-05T13:32:38"
     },
     {
       "text": "Actual weather on April 4, 2026, in Austin featured thunderstorms, heavy rain (0.19 in), light rain, and mist, with a cold front causing afternoon highs only in the 60s; morning temps in 50s. Historic",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-05T13:24:49"
+      "time": "2026-04-05T13:32:37"
     },
     {
       "text": "Multiple forecasting sources converge on April 4, 2026 high temperatures well below 75\u00b0F. Polymarket data shows trader consensus locked at 100% probability for temperatures \u226558\u00b0F, with NOAA GFS and NA",
       "category": "weather",
       "source": "perplexity",
-      "time": "2026-04-05T13:24:49"
+      "time": "2026-04-05T13:32:37"
     }
   ],
   "alerts": [],
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 131,
-    "uptime_hours": 16.8
+    "cycles": 132,
+    "uptime_hours": 16.9
   }
 }
