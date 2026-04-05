@@ -686,10 +686,52 @@ def execute_trades(scores: list[dict] | None = None, session_id: str = "") -> li
         amount = round(max(0, amount), 2)
 
         # Enforce minimum position size — don't bother with $3 bets
-        # Minimum position — lower for small accounts
         min_pos = 10 if capital["balance"] < 100 else MIN_POSITION_SIZE
         if 0 < amount < min_pos:
             amount = min_pos if effective_capital >= min_pos * 2 else 0
+
+        # Risk/reward check — reject trades where payout ratio is bad
+        # Potential loss = amount, potential win = contracts - amount
+        # Scale required ratio by days to resolution — longer holds need better payoff
+        if amount > 0:
+            _cost_per = market_price if side == "YES" else (1.0 - market_price)
+            _contracts = int(amount / _cost_per) if _cost_per > 0 else 0
+            _win_profit = _contracts - amount
+            _rr_ratio = _win_profit / amount if amount > 0 else 0
+
+            # Compute days to resolution from ticker date
+            _days_out = 0
+            try:
+                import re as _re
+                _MONTHS = {"JAN":1,"FEB":2,"MAR":3,"APR":4,"MAY":5,"JUN":6,
+                            "JUL":7,"AUG":8,"SEP":9,"OCT":10,"NOV":11,"DEC":12}
+                _dm = _re.search(r'(\d{2})([A-Z]{3})(\d{2})', ticker)
+                if _dm:
+                    from datetime import date as _date
+                    _rd = _date(2000 + int(_dm.group(1)),
+                                _MONTHS.get(_dm.group(2), 1),
+                                int(_dm.group(3)))
+                    _days_out = max(0, (_rd - _date.today()).days)
+            except Exception:
+                pass
+
+            # Required ratio scales with hold time:
+            #   0-7 days:    >= 0.7x (capital back fast, small edge ok)
+            #   8-30 days:   >= 1.2x
+            #   31-90 days:  >= 2.0x
+            #   91+ days:    >= 3.0x (long holds need big payoff)
+            if _days_out <= 7:
+                _min_ratio = 0.7
+            elif _days_out <= 30:
+                _min_ratio = 1.2
+            elif _days_out <= 90:
+                _min_ratio = 2.0
+            else:
+                _min_ratio = 3.0
+
+            if _rr_ratio < _min_ratio:
+                skip_reason = (f"risk/reward {_rr_ratio:.1f}x < {_min_ratio:.1f}x "
+                               f"required for {_days_out}-day hold")
 
         # Category-specific confidence threshold
         cat_conf_min = CATEGORY_CONFIDENCE.get(category, CONFIDENCE_MIN)
