@@ -75,14 +75,14 @@ def record_exit(symbol: str, exit_price: float, exit_reason: str, pnl: float):
     conn = init_stock_db()
     # Find the most recent unfilled buy for this symbol
     row = conn.execute(
-        """SELECT id, price, qty FROM stock_trades
+        """SELECT id, price, qty, confidence FROM stock_trades
            WHERE symbol = ? AND side = 'buy' AND exit_price IS NULL
                  AND status NOT LIKE 'error%'
            ORDER BY traded_at DESC LIMIT 1""",
         (symbol,),
     ).fetchone()
     if row:
-        trade_id, entry_price, qty = row
+        trade_id, entry_price, qty, confidence = row
         actual_pnl = (exit_price - entry_price) * qty
         conn.execute(
             """UPDATE stock_trades SET pnl = ?, exit_price = ?, exit_reason = ?,
@@ -92,6 +92,15 @@ def record_exit(symbol: str, exit_price: float, exit_reason: str, pnl: float):
         )
         conn.commit()
         print(f"  P&L recorded: {symbol} entry=${entry_price:.2f} exit=${exit_price:.2f} pnl=${actual_pnl:+.2f}")
+
+        # Update performance score
+        try:
+            from stock_capital import update_performance_score
+            won = actual_pnl > 0
+            new_score = update_performance_score(conn, won, confidence or 0.5)
+            print(f"  Performance score: {new_score} ({'win' if won else 'loss'})")
+        except Exception as e:
+            print(f"  Score update error: {e}")
     else:
         print(f"  Warning: no open buy found for {symbol} to record exit against")
     conn.close()

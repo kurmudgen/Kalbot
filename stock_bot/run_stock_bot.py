@@ -219,10 +219,29 @@ def run_cycle(session_id: str) -> dict:
         print("  Waiting for market to settle (first 30 min)...")
         return stats
 
-    # Get current state
+    # Get current state + capital management
     info = get_account_info()
     current_positions = len(info.get("positions", []))
     held_symbols = {p["symbol"] for p in info.get("positions", [])}
+
+    # Dynamic capital management (mirrors Kalshi's system)
+    try:
+        from stock_capital import get_capital_state
+        from alpaca_executor import init_stock_db
+        cap_conn = init_stock_db()
+        capital = get_capital_state(
+            cap_conn,
+            info.get("portfolio_value", 100000),
+            info.get("cash", 0),
+        )
+        cap_conn.close()
+        if capital["halt_reason"]:
+            print(f"  CAPITAL HALT: {capital['halt_reason']}")
+            return stats
+        print(f"  Capital: score={capital['performance_score']} max/trade=${capital['max_per_trade']:.0f} avail=${capital['available_capital']:.0f}")
+    except Exception as e:
+        print(f"  Capital mgmt error: {e}")
+        capital = None
 
     if current_positions >= MAX_POSITIONS:
         print(f"  Max positions ({MAX_POSITIONS}) reached, skipping scan")
@@ -256,7 +275,11 @@ def run_cycle(session_id: str) -> dict:
             max_pos = stocks_profile.max_position_size if stocks_profile else 500
 
             if sig["action"] == "buy" and sig["confidence"] > conf_floor:
-                amount = min(max_pos, account_val * 0.02)
+                # Use dynamic capital if available, else fallback
+                if capital:
+                    amount = min(capital["max_per_trade"], max_pos)
+                else:
+                    amount = min(max_pos, account_val * 0.02)
                 qty = max(1, int(amount / sig["price"]))
 
                 result = execute_stock_trade(
