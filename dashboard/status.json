@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05T04:10:40.493612+00:00",
+  "updated_at": "2026-04-05T04:17:54.965194+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T04:10:40.493612+00:00",
+    "last_updated": "2026-04-05T04:17:54.965194+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -108,7 +108,7 @@
       },
       {
         "date": "2026-04-05",
-        "trades": 192,
+        "trades": 251,
         "deployed": 76.75
       }
     ],
@@ -138,7 +138,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:59"
+        "time": "2026-04-05T04:16:27"
       },
       {
         "ticker": "KXCPI-26APR-T0.4",
@@ -153,7 +153,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:59"
+        "time": "2026-04-05T04:16:27"
       },
       {
         "ticker": "KXCPI-26APR-T0.5",
@@ -168,7 +168,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:59"
+        "time": "2026-04-05T04:16:27"
       },
       {
         "ticker": "KXCPI-26MAY-T0.0",
@@ -183,7 +183,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:59"
+        "time": "2026-04-05T04:16:27"
       },
       {
         "ticker": "KXCPI-26MAY-T-0.1",
@@ -198,7 +198,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:59"
+        "time": "2026-04-05T04:16:27"
       },
       {
         "ticker": "KXCPI-26MAY-T0.1",
@@ -213,7 +213,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:59"
+        "time": "2026-04-05T04:16:27"
       },
       {
         "ticker": "KXCPI-26MAY-T0.2",
@@ -228,7 +228,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:59"
+        "time": "2026-04-05T04:16:27"
       },
       {
         "ticker": "KXCPI-26MAY-T0.3",
@@ -243,7 +243,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:59"
+        "time": "2026-04-05T04:16:27"
       },
       {
         "ticker": "KXCPI-26MAY-T0.4",
@@ -258,7 +258,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:59"
+        "time": "2026-04-05T04:16:27"
       },
       {
         "ticker": "KXCPI-26MAY-T0.5",
@@ -273,7 +273,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:27"
       },
       {
         "ticker": "KXCPI-26JUN-T0.0",
@@ -288,7 +288,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUN-T-0.1",
@@ -303,7 +303,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUN-T0.1",
@@ -318,7 +318,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUN-T0.2",
@@ -333,7 +333,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUN-T0.3",
@@ -348,7 +348,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUN-T0.4",
@@ -363,7 +363,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUN-T0.5",
@@ -378,7 +378,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUL-T0.0",
@@ -393,7 +393,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUL-T-0.1",
@@ -408,7 +408,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUL-T0.1",
@@ -423,7 +423,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUL-T0.2",
@@ -438,7 +438,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUL-T0.3",
@@ -453,7 +453,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUL-T0.4",
@@ -468,7 +468,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26JUL-T0.5",
@@ -483,7 +483,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26AUG-T0.0",
@@ -498,7 +498,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26AUG-T0.1",
@@ -513,7 +513,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26AUG-T0.2",
@@ -528,7 +528,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26AUG-T0.3",
@@ -543,7 +543,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26AUG-T0.4",
@@ -558,7 +558,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:58"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26AUG-T0.5",
@@ -573,7 +573,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26SEP-T0.0",
@@ -588,7 +588,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26SEP-T0.1",
@@ -603,7 +603,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26SEP-T0.2",
@@ -618,7 +618,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:26"
       },
       {
         "ticker": "KXCPI-26SEP-T0.3",
@@ -633,7 +633,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26SEP-T0.4",
@@ -648,7 +648,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26SEP-T0.5",
@@ -663,7 +663,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26OCT-T-0.1",
@@ -678,7 +678,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26OCT-T0.1",
@@ -693,7 +693,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26OCT-T0.2",
@@ -708,7 +708,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26OCT-T0.3",
@@ -723,7 +723,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26OCT-T0.4",
@@ -738,7 +738,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26OCT-T0.5",
@@ -753,7 +753,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26NOV-T0.0",
@@ -768,7 +768,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26NOV-T-0.1",
@@ -783,7 +783,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26NOV-T0.1",
@@ -798,7 +798,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26NOV-T0.2",
@@ -813,7 +813,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26NOV-T0.3",
@@ -828,7 +828,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26NOV-T0.4",
@@ -843,7 +843,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26NOV-T0.5",
@@ -858,7 +858,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       },
       {
         "ticker": "KXCPI-26MAR-T0.7",
@@ -873,7 +873,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=0.73",
         "category": "economics",
-        "time": "2026-04-05T03:46:57"
+        "time": "2026-04-05T04:16:25"
       }
     ]
   },
@@ -884,7 +884,7 @@
       "deployed": 18.11
     },
     "QUANT": {
-      "trades": 86555,
+      "trades": 86614,
       "executed": 266,
       "deployed": 282.14
     },
@@ -1137,7 +1137,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 58,
-    "uptime_hours": 7.6
+    "cycles": 59,
+    "uptime_hours": 7.7
   }
 }
