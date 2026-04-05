@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-05T02:05:36.088938+00:00",
+  "updated_at": "2026-04-05T02:13:24.727263+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
-      "balance": 170.88,
+      "balance": 172.16,
       "paper_mode": false
     },
     "alpaca": {
@@ -13,21 +13,21 @@
     }
   },
   "capital_status": {
-    "balance": 170.88,
+    "balance": 172.16,
     "peak_balance": 218.42,
     "floor_balance": 43.68,
-    "available_capital": 127.2,
+    "available_capital": 128.48,
     "performance_score": 50.0,
     "score_multiplier": 1.0,
-    "daily_deployed": 108.12,
-    "daily_cap": 76.32,
+    "daily_deployed": 76.75,
+    "daily_cap": 77.09,
     "cycle_status": "active"
   },
   "treasury": {
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T02:05:36.088938+00:00",
+    "last_updated": "2026-04-05T02:13:24.727263+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -105,6 +105,11 @@
         "date": "2026-04-04",
         "trades": 8667,
         "deployed": 108.12
+      },
+      {
+        "date": "2026-04-05",
+        "trades": 59,
+        "deployed": 76.75
       }
     ],
     "resolved": {
@@ -117,324 +122,9 @@
   },
   "trades": {
     "total": 50,
-    "executed": 0,
-    "skipped": 50,
+    "executed": 4,
+    "skipped": 46,
     "recent": [
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.015741192664111215,
-        "confidence": 0.9995652173913044,
-        "market_price": 0.03,
-        "price_gap": 0.014258807335888801,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
-        "category": "weather",
-        "time": "2026-04-04T22:47:38"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.015741192664111215,
-        "confidence": 0.9995652173913044,
-        "market_price": 0.03,
-        "price_gap": 0.014258807335888801,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
-        "category": "weather",
-        "time": "2026-04-04T22:46:41"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.30131178792443086,
-        "confidence": 0.7045990099009902,
-        "market_price": 0.45,
-        "price_gap": 0.14868821207556904,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
-        "category": "weather",
-        "time": "2026-04-04T22:46:41"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.2831513759522865,
-        "confidence": 0.7115220588235295,
-        "market_price": 0.45,
-        "price_gap": 0.1668486240477134,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
-        "category": "weather",
-        "time": "2026-04-04T22:40:03"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.05784893404110852,
-        "confidence": 0.8016249999999999,
-        "market_price": 0.03,
-        "price_gap": 0.0,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
-        "category": "weather",
-        "time": "2026-04-04T22:40:03"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.015741192664111215,
-        "confidence": 0.9995652173913044,
-        "market_price": 0.03,
-        "price_gap": 0.014258807335888801,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
-        "category": "weather",
-        "time": "2026-04-04T22:40:03"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.015741192664111215,
-        "confidence": 0.9995652173913044,
-        "market_price": 0.03,
-        "price_gap": 0.014258807335888801,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
-        "category": "weather",
-        "time": "2026-04-04T22:39:07"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.2831513759522865,
-        "confidence": 0.7115220588235295,
-        "market_price": 0.45,
-        "price_gap": 0.1668486240477134,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
-        "category": "weather",
-        "time": "2026-04-04T22:39:07"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.05784893404110852,
-        "confidence": 0.8016249999999999,
-        "market_price": 0.03,
-        "price_gap": 0.0,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
-        "category": "weather",
-        "time": "2026-04-04T22:39:07"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.2831513759522865,
-        "confidence": 0.7115220588235295,
-        "market_price": 0.45,
-        "price_gap": 0.1668486240477134,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
-        "category": "weather",
-        "time": "2026-04-04T22:32:47"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.05784893404110852,
-        "confidence": 0.8016249999999999,
-        "market_price": 0.03,
-        "price_gap": 0.0,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
-        "category": "weather",
-        "time": "2026-04-04T22:32:47"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.015741192664111215,
-        "confidence": 0.9995652173913044,
-        "market_price": 0.03,
-        "price_gap": 0.014258807335888801,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
-        "category": "weather",
-        "time": "2026-04-04T22:32:47"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.015741192664111215,
-        "confidence": 0.9995652173913044,
-        "market_price": 0.03,
-        "price_gap": 0.014258807335888801,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
-        "category": "weather",
-        "time": "2026-04-04T22:31:50"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.2831513759522865,
-        "confidence": 0.7115220588235295,
-        "market_price": 0.45,
-        "price_gap": 0.1668486240477134,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
-        "category": "weather",
-        "time": "2026-04-04T22:31:50"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.05784893404110852,
-        "confidence": 0.8016249999999999,
-        "market_price": 0.03,
-        "price_gap": 0.0,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
-        "category": "weather",
-        "time": "2026-04-04T22:31:50"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.2831513759522865,
-        "confidence": 0.7115220588235295,
-        "market_price": 0.45,
-        "price_gap": 0.1668486240477134,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
-        "category": "weather",
-        "time": "2026-04-04T22:25:32"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.05784893404110852,
-        "confidence": 0.8016249999999999,
-        "market_price": 0.03,
-        "price_gap": 0.0,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
-        "category": "weather",
-        "time": "2026-04-04T22:25:32"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.015741192664111215,
-        "confidence": 0.9995652173913044,
-        "market_price": 0.03,
-        "price_gap": 0.014258807335888801,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
-        "category": "weather",
-        "time": "2026-04-04T22:25:32"
-      },
-      {
-        "ticker": "KXHIGHNY-26APR03-T72",
-        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.015741192664111215,
-        "confidence": 0.9995652173913044,
-        "market_price": 0.03,
-        "price_gap": 0.014258807335888801,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Polymarket reports 100% probability on 64-65\u00b0F as the highest temperature in NYC on April 3, 2026, based on official recorded maximum of 65\u00b0F at LaGuardia Airport (KLGA) from Weather Underground's NOA",
-        "category": "weather",
-        "time": "2026-04-04T22:24:36"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-B84.5",
-        "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.2831513759522865,
-        "confidence": 0.7115220588235295,
-        "market_price": 0.45,
-        "price_gap": 0.1668486240477134,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Forecasts for April 4, 2026, in Miami show highs of 28\u00b0C (82\u00b0F) from EaseWeather[1], 77\u00b0F from weathershogun[3], 76\u00b0F from AccuWeather Miami Beach[6], and 84\u00b0F from AccuWeather North Miami Beach[7]. C",
-        "category": "weather",
-        "time": "2026-04-04T22:24:36"
-      },
-      {
-        "ticker": "KXHIGHMIA-26APR04-T78",
-        "title": "Will the **high temp in Miami** be <78\u00b0 on Apr 4, 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.05784893404110852,
-        "confidence": 0.8016249999999999,
-        "market_price": 0.03,
-        "price_gap": 0.0,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "AccuWeather forecasts for Miami April 4, 2026, show high of 76\u00b0F in Miami Beach[7] and ranging 74-82\u00b0F monthly[1]; WeatherShogun predicts 77\u00b0F daytime high[4]; current conditions at 79\u00b0F (2:53 PM UTC)",
-        "category": "weather",
-        "time": "2026-04-04T22:24:36"
-      },
       {
         "ticker": "KXCPI-26APR-T0.2",
         "title": "Will CPI rise more than 0.2% in April 2026?",
@@ -448,7 +138,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:58"
       },
       {
         "ticker": "KXCPI-26APR-T0.4",
@@ -463,7 +153,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:58"
       },
       {
         "ticker": "KXCPI-26APR-T0.5",
@@ -478,7 +168,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:58"
       },
       {
         "ticker": "KXCPI-26MAY-T0.0",
@@ -493,7 +183,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:58"
       },
       {
         "ticker": "KXCPI-26MAY-T-0.1",
@@ -508,7 +198,22 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:58"
+      },
+      {
+        "ticker": "KXCPI-26MAY-T0.1",
+        "title": "Will CPI rise more than 0.1% in May 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999999794421,
+        "confidence": 0.9019999999886933,
+        "market_price": 0.74,
+        "price_gap": 0.2599999999794421,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:58"
       },
       {
         "ticker": "KXCPI-26MAY-T0.2",
@@ -517,13 +222,13 @@
         "amount": 0.0,
         "probability": 0.9999999892824097,
         "confidence": 0.85,
-        "market_price": 0.56,
-        "price_gap": 0.4399999892824097,
+        "market_price": 0.59,
+        "price_gap": 0.40999998928240977,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:58"
       },
       {
         "ticker": "KXCPI-26MAY-T0.3",
@@ -538,7 +243,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:57"
       },
       {
         "ticker": "KXCPI-26MAY-T0.4",
@@ -547,13 +252,13 @@
         "amount": 0.0,
         "probability": 0.9998408914098424,
         "confidence": 0.85,
-        "market_price": 0.22,
-        "price_gap": 0.7798408914098425,
+        "market_price": 0.3,
+        "price_gap": 0.6998408914098424,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:57"
       },
       {
         "ticker": "KXCPI-26MAY-T0.5",
@@ -562,13 +267,13 @@
         "amount": 0.0,
         "probability": 0.9953388119762813,
         "confidence": 0.85,
-        "market_price": 0.19,
-        "price_gap": 0.8053388119762812,
+        "market_price": 0.22,
+        "price_gap": 0.7753388119762813,
         "mode": "LIVE",
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:57"
       },
       {
         "ticker": "KXCPI-26JUN-T0.0",
@@ -583,7 +288,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:57"
       },
       {
         "ticker": "KXCPI-26JUN-T-0.1",
@@ -598,7 +303,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:03"
+        "time": "2026-04-05T02:11:57"
       },
       {
         "ticker": "KXCPI-26JUN-T0.1",
@@ -613,7 +318,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:02"
+        "time": "2026-04-05T02:11:57"
       },
       {
         "ticker": "KXCPI-26JUN-T0.2",
@@ -628,7 +333,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:02"
+        "time": "2026-04-05T02:11:57"
       },
       {
         "ticker": "KXCPI-26JUN-T0.3",
@@ -643,22 +348,22 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:02"
+        "time": "2026-04-05T02:11:57"
       },
       {
         "ticker": "KXCPI-26JUN-T0.4",
         "title": "Will CPI rise more than 0.4% in June 2026?",
         "side": "YES",
-        "amount": 0.0,
+        "amount": 19.27,
         "probability": 0.9998408914098424,
         "confidence": 0.85,
         "market_price": 0.22,
         "price_gap": 0.7798408914098425,
         "mode": "LIVE",
-        "executed": false,
+        "executed": true,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:02"
+        "time": "2026-04-05T02:11:57"
       },
       {
         "ticker": "KXCPI-26JUN-T0.5",
@@ -673,7 +378,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:02"
+        "time": "2026-04-05T02:11:54"
       },
       {
         "ticker": "KXCPI-26JUL-T0.0",
@@ -688,7 +393,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:02"
+        "time": "2026-04-05T02:11:54"
       },
       {
         "ticker": "KXCPI-26JUL-T-0.1",
@@ -703,7 +408,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:02"
+        "time": "2026-04-05T02:11:54"
       },
       {
         "ticker": "KXCPI-26JUL-T0.1",
@@ -718,7 +423,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:02"
+        "time": "2026-04-05T02:11:54"
       },
       {
         "ticker": "KXCPI-26JUL-T0.2",
@@ -733,7 +438,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:02"
+        "time": "2026-04-05T02:11:54"
       },
       {
         "ticker": "KXCPI-26JUL-T0.3",
@@ -748,7 +453,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:01"
+        "time": "2026-04-05T02:11:53"
       },
       {
         "ticker": "KXCPI-26JUL-T0.4",
@@ -763,22 +468,22 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:01"
+        "time": "2026-04-05T02:11:53"
       },
       {
         "ticker": "KXCPI-26JUL-T0.5",
         "title": "Will CPI rise more than 0.5% in July 2026?",
         "side": "YES",
-        "amount": 0.0,
+        "amount": 19.16,
         "probability": 0.9953388119762813,
         "confidence": 0.85,
         "market_price": 0.2,
         "price_gap": 0.7953388119762812,
         "mode": "LIVE",
-        "executed": false,
+        "executed": true,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:01"
+        "time": "2026-04-05T02:11:53"
       },
       {
         "ticker": "KXCPI-26AUG-T0.0",
@@ -793,7 +498,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:01"
+        "time": "2026-04-05T02:11:50"
       },
       {
         "ticker": "KXCPI-26AUG-T0.1",
@@ -808,7 +513,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:01"
+        "time": "2026-04-05T02:11:50"
       },
       {
         "ticker": "KXCPI-26AUG-T0.2",
@@ -823,7 +528,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:01"
+        "time": "2026-04-05T02:11:50"
       },
       {
         "ticker": "KXCPI-26AUG-T0.3",
@@ -838,7 +543,7 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:01"
+        "time": "2026-04-05T02:11:50"
       },
       {
         "ticker": "KXCPI-26AUG-T0.4",
@@ -853,22 +558,322 @@
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:00"
+        "time": "2026-04-05T02:11:50"
       },
       {
         "ticker": "KXCPI-26AUG-T0.5",
         "title": "Will CPI rise more than 0.5% in August 2026?",
         "side": "YES",
-        "amount": 0.0,
+        "amount": 19.16,
         "probability": 0.9953388119762813,
         "confidence": 0.85,
         "market_price": 0.21,
         "price_gap": 0.7853388119762813,
         "mode": "LIVE",
+        "executed": true,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:50"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.0",
+        "title": "Will CPI rise more than 0.0% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999999999852,
+        "confidence": 0.8249999999999839,
+        "market_price": 0.85,
+        "price_gap": 0.14999999999998526,
+        "mode": "LIVE",
         "executed": false,
         "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
         "category": "economics",
-        "time": "2026-04-04T22:24:00"
+        "time": "2026-04-05T02:11:47"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.1",
+        "title": "Will CPI rise more than 0.1% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999999794421,
+        "confidence": 0.8964999999886932,
+        "market_price": 0.75,
+        "price_gap": 0.2499999999794421,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:47"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.2",
+        "title": "Will CPI rise more than 0.2% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999892824097,
+        "confidence": 0.85,
+        "market_price": 0.62,
+        "price_gap": 0.37999998928240974,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:47"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.3",
+        "title": "Will CPI rise more than 0.3% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999978875452975,
+        "confidence": 0.85,
+        "market_price": 0.44,
+        "price_gap": 0.5599978875452976,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:47"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.4",
+        "title": "Will CPI rise more than 0.4% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9998408914098424,
+        "confidence": 0.85,
+        "market_price": 0.27,
+        "price_gap": 0.7298408914098424,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:47"
+      },
+      {
+        "ticker": "KXCPI-26SEP-T0.5",
+        "title": "Will CPI rise more than 0.5% in September 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9953388119762813,
+        "confidence": 0.85,
+        "market_price": 0.18,
+        "price_gap": 0.8153388119762812,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:47"
+      },
+      {
+        "ticker": "KXCPI-26OCT-T-0.1",
+        "title": "Will CPI rise more than -0.1% in October 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999999794421,
+        "confidence": 0.8249999999773864,
+        "market_price": 0.85,
+        "price_gap": 0.14999999997944213,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:47"
+      },
+      {
+        "ticker": "KXCPI-26OCT-T0.1",
+        "title": "Will CPI rise more than 0.1% in October 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999999794421,
+        "confidence": 0.9019999999886933,
+        "market_price": 0.74,
+        "price_gap": 0.2599999999794421,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:47"
+      },
+      {
+        "ticker": "KXCPI-26OCT-T0.2",
+        "title": "Will CPI rise more than 0.2% in October 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999892824097,
+        "confidence": 0.85,
+        "market_price": 0.63,
+        "price_gap": 0.36999998928240974,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:47"
+      },
+      {
+        "ticker": "KXCPI-26OCT-T0.3",
+        "title": "Will CPI rise more than 0.3% in October 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999978875452975,
+        "confidence": 0.85,
+        "market_price": 0.39,
+        "price_gap": 0.6099978875452975,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:46"
+      },
+      {
+        "ticker": "KXCPI-26OCT-T0.4",
+        "title": "Will CPI rise more than 0.4% in October 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9998408914098424,
+        "confidence": 0.85,
+        "market_price": 0.37,
+        "price_gap": 0.6298408914098425,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:46"
+      },
+      {
+        "ticker": "KXCPI-26OCT-T0.5",
+        "title": "Will CPI rise more than 0.5% in October 2026?",
+        "side": "YES",
+        "amount": 19.16,
+        "probability": 0.9953388119762813,
+        "confidence": 0.85,
+        "market_price": 0.17,
+        "price_gap": 0.8253388119762812,
+        "mode": "LIVE",
+        "executed": true,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:46"
+      },
+      {
+        "ticker": "KXCPI-26NOV-T0.0",
+        "title": "Will CPI rise more than 0.0% in November 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999999999852,
+        "confidence": 0.8469999999999839,
+        "market_price": 0.83,
+        "price_gap": 0.16999999999998527,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:43"
+      },
+      {
+        "ticker": "KXCPI-26NOV-T-0.1",
+        "title": "Will CPI rise more than -0.1% in November 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999999794421,
+        "confidence": 0.8249999999773864,
+        "market_price": 0.85,
+        "price_gap": 0.14999999997944213,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:43"
+      },
+      {
+        "ticker": "KXCPI-26NOV-T0.1",
+        "title": "Will CPI rise more than 0.1% in November 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999999794421,
+        "confidence": 0.8964999999886932,
+        "market_price": 0.75,
+        "price_gap": 0.2499999999794421,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:43"
+      },
+      {
+        "ticker": "KXCPI-26NOV-T0.2",
+        "title": "Will CPI rise more than 0.2% in November 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999999892824097,
+        "confidence": 0.85,
+        "market_price": 0.52,
+        "price_gap": 0.4799999892824097,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:43"
+      },
+      {
+        "ticker": "KXCPI-26NOV-T0.3",
+        "title": "Will CPI rise more than 0.3% in November 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9999978875452975,
+        "confidence": 0.85,
+        "market_price": 0.38,
+        "price_gap": 0.6199978875452975,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:43"
+      },
+      {
+        "ticker": "KXCPI-26NOV-T0.4",
+        "title": "Will CPI rise more than 0.4% in November 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9998408914098424,
+        "confidence": 0.85,
+        "market_price": 0.27,
+        "price_gap": 0.7298408914098424,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:43"
+      },
+      {
+        "ticker": "KXCPI-26NOV-T0.5",
+        "title": "Will CPI rise more than 0.5% in November 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.9953388119762813,
+        "confidence": 0.85,
+        "market_price": 0.22,
+        "price_gap": 0.7753388119762813,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=1.00",
+        "category": "economics",
+        "time": "2026-04-05T02:11:43"
+      },
+      {
+        "ticker": "KXCPI-26MAR-T0.7",
+        "title": "Will CPI rise more than 0.7% in March 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7257468822499266,
+        "confidence": 0.8933392147625404,
+        "market_price": 0.97,
+        "price_gap": 0.0,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Cleveland Fed: 0.76 \u2192 prob=0.73",
+        "category": "economics",
+        "time": "2026-04-05T02:11:43"
       }
     ]
   },
@@ -879,9 +884,9 @@
       "deployed": 18.11
     },
     "QUANT": {
-      "trades": 86363,
-      "executed": 262,
-      "deployed": 205.39
+      "trades": 86422,
+      "executed": 266,
+      "deployed": 282.14
     },
     "WEATHER": {
       "trades": 4155,
@@ -1132,7 +1137,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 41,
-    "uptime_hours": 5.5
+    "cycles": 42,
+    "uptime_hours": 5.6
   }
 }
