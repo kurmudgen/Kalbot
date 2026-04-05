@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-05T19:00:38.695496+00:00",
+  "updated_at": "2026-04-05T19:07:53.277849+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
-      "balance": 658.22,
+      "balance": 657.81,
       "paper_mode": false
     },
     "alpaca": {
@@ -13,21 +13,21 @@
     }
   },
   "capital_status": {
-    "balance": 658.22,
+    "balance": 657.81,
     "peak_balance": 671.01,
     "floor_balance": 201.3,
-    "available_capital": 456.92,
+    "available_capital": 456.51,
     "performance_score": 40.0,
     "score_multiplier": 0.8,
     "daily_deployed": 238.39,
-    "daily_cap": 219.32,
+    "daily_cap": 219.12,
     "cycle_status": "active"
   },
   "treasury": {
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T19:00:38.695496+00:00",
+    "last_updated": "2026-04-05T19:07:53.277849+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -108,7 +108,7 @@
       },
       {
         "date": "2026-04-05",
-        "trades": 10987,
+        "trades": 10996,
         "deployed": 238.39000000000001
       }
     ],
@@ -125,6 +125,141 @@
     "executed": 0,
     "skipped": 50,
     "recent": [
+      {
+        "ticker": "KXHIGHNY-26APR06-B60.5",
+        "title": "Will the **high temp in NYC** be 60-61\u00b0 on Apr 6, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.9025,
+        "market_price": 0.06,
+        "price_gap": 0.8899999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=nyc] Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-05T19:07:53"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR06-T61",
+        "title": "Will the **high temp in NYC** be >61\u00b0 on Apr 6, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05,
+        "confidence": 0.99275,
+        "market_price": 0.05,
+        "price_gap": 0.0,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-05T19:07:53"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B69.5",
+        "title": "Will the **high temp in NYC** be 69-70\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.01574119266411121,
+        "confidence": 1.0,
+        "market_price": 0.14,
+        "price_gap": 0.12425880733588879,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
+        "category": "weather",
+        "time": "2026-04-05T19:07:52"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B69.5",
+        "title": "Will the **high temp in NYC** be 69-70\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.01574119266411121,
+        "confidence": 1.0,
+        "market_price": 0.14,
+        "price_gap": 0.12425880733588879,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
+        "category": "weather",
+        "time": "2026-04-05T19:06:54"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-B71.5",
+        "title": "Will the **high temp in NYC** be 71-72\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 1.0,
+        "market_price": 0.04,
+        "price_gap": 0.02425880733588881,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
+        "category": "weather",
+        "time": "2026-04-05T19:06:54"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T65",
+        "title": "Will the **high temp in NYC** be <65\u00b0 on Apr 3, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.7071294036679443,
+        "confidence": 0.9670689655172414,
+        "market_price": 0.25,
+        "price_gap": 0.4571294036679443,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
+        "category": "weather",
+        "time": "2026-04-05T19:06:54"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR03-T72",
+        "title": "Will the **high temp in NYC** be >72\u00b0 on Apr 3, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.015741192664111215,
+        "confidence": 1.0,
+        "market_price": 0.03,
+        "price_gap": 0.014258807335888801,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "\nRecent research findings:\n- [weather] April 4, 2026 has already occurred (current date is April 5, 2026). Search results indicate that Denver experienced record low maximum temperatures on\n- [weather",
+        "category": "weather",
+        "time": "2026-04-05T19:06:54"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR06-B60.5",
+        "title": "Will the **high temp in NYC** be 60-61\u00b0 on Apr 6, 2026?",
+        "side": "YES",
+        "amount": 0.0,
+        "probability": 0.95,
+        "confidence": 0.9025,
+        "market_price": 0.06,
+        "price_gap": 0.8899999999999999,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "[city=nyc] Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-05T19:06:54"
+      },
+      {
+        "ticker": "KXHIGHNY-26APR06-T61",
+        "title": "Will the **high temp in NYC** be >61\u00b0 on Apr 6, 2026?",
+        "side": "NO",
+        "amount": 0.0,
+        "probability": 0.05,
+        "confidence": 0.99275,
+        "market_price": 0.05,
+        "price_gap": 0.0,
+        "mode": "LIVE",
+        "executed": false,
+        "reasoning": "Fast path: local model high confidence on obvious market.",
+        "category": "weather",
+        "time": "2026-04-05T19:06:54"
+      },
       {
         "ticker": "KXCPI-26MAR-T0.2",
         "title": "Will CPI rise more than 0.2% in March 2026?",
@@ -739,147 +874,12 @@
         "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.96",
         "category": "economics",
         "time": "2026-04-05T18:23:34"
-      },
-      {
-        "ticker": "KXCPI-26NOV-T0.2",
-        "title": "Will CPI rise more than 0.2% in November 2026?",
-        "side": "YES",
-        "amount": 0.0,
-        "probability": 0.758036347776927,
-        "confidence": 0.8090181738884634,
-        "market_price": 0.52,
-        "price_gap": 0.23803634777692695,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.76",
-        "category": "economics",
-        "time": "2026-04-05T18:23:34"
-      },
-      {
-        "ticker": "KXCPI-26NOV-T0.4",
-        "title": "Will CPI rise more than 0.4% in November 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.09680048458561036,
-        "confidence": 0.8505194669558286,
-        "market_price": 0.27,
-        "price_gap": 0.17319951541438972,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.10",
-        "category": "economics",
-        "time": "2026-04-05T18:23:34"
-      },
-      {
-        "ticker": "KXCPI-26NOV-T0.5",
-        "title": "Will CPI rise more than 0.5% in November 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.010724110021675809,
-        "confidence": 0.8741017394880783,
-        "market_price": 0.22,
-        "price_gap": 0.20927588997832414,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.01",
-        "category": "economics",
-        "time": "2026-04-05T18:23:34"
-      },
-      {
-        "ticker": "KXCPI-26MAR-T0.6",
-        "title": "Will CPI rise more than 0.6% in March 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.00048342414238377755,
-        "confidence": 0.85,
-        "market_price": 0.84,
-        "price_gap": 0.8395165758576162,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.00",
-        "category": "economics",
-        "time": "2026-04-05T18:23:34"
-      },
-      {
-        "ticker": "KXCPI-26MAR-T0.7",
-        "title": "Will CPI rise more than 0.7% in March 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 8.539905470991845e-06,
-        "confidence": 0.85,
-        "market_price": 0.94,
-        "price_gap": 0.9399914600945289,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.00",
-        "category": "economics",
-        "time": "2026-04-05T18:23:34"
-      },
-      {
-        "ticker": "KXCPI-26MAR-T0.8",
-        "title": "Will CPI rise more than 0.8% in March 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 5.790134039964578e-08,
-        "confidence": 0.85,
-        "market_price": 0.73,
-        "price_gap": 0.7299999420986596,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.00",
-        "category": "economics",
-        "time": "2026-04-05T18:23:34"
-      },
-      {
-        "ticker": "KXCPI-26MAR-T0.9",
-        "title": "Will CPI rise more than 0.9% in March 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 1.4882282217623072e-10,
-        "confidence": 0.935,
-        "market_price": 0.49,
-        "price_gap": 0.48999999985117715,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.00",
-        "category": "economics",
-        "time": "2026-04-05T18:23:33"
-      },
-      {
-        "ticker": "KXCPI-26MAR-T1.0",
-        "title": "Will CPI rise more than 1.0% in March 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 1.4388386381575764e-13,
-        "confidence": 0.8359999999998418,
-        "market_price": 0.16,
-        "price_gap": 0.15999999999985615,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.00",
-        "category": "economics",
-        "time": "2026-04-05T18:23:33"
-      },
-      {
-        "ticker": "KXCPI-26APR-T0.6",
-        "title": "Will CPI rise more than 0.6% in April 2026?",
-        "side": "NO",
-        "amount": 0.0,
-        "probability": 0.00048342414238377755,
-        "confidence": 0.85,
-        "market_price": 0.84,
-        "price_gap": 0.8395165758576162,
-        "mode": "LIVE",
-        "executed": false,
-        "reasoning": "Cleveland Fed: 0.27 \u2192 prob=0.00",
-        "category": "economics",
-        "time": "2026-04-05T18:23:33"
       }
     ]
   },
   "strategies": {
     "EMERGING": {
-      "trades": 10921,
+      "trades": 10924,
       "executed": 10,
       "deployed": 18.11
     },
@@ -889,7 +889,7 @@
       "deployed": 443.78
     },
     "WEATHER": {
-      "trades": 9102,
+      "trades": 9108,
       "executed": 4,
       "deployed": 32.42
     },
@@ -918,6 +918,48 @@
     "recent_votes": [
       {
         "perplexity": null,
+        "claude": null,
+        "deepseek": null,
+        "consensus": true,
+        "time": "2026-04-05T19:07:50"
+      },
+      {
+        "perplexity": null,
+        "claude": null,
+        "deepseek": null,
+        "consensus": true,
+        "time": "2026-04-05T19:07:49"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.0,
+        "deepseek": 0.0,
+        "consensus": true,
+        "time": "2026-04-05T19:07:43"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.0,
+        "deepseek": 0.0,
+        "consensus": true,
+        "time": "2026-04-05T19:06:49"
+      },
+      {
+        "perplexity": null,
+        "claude": 1.0,
+        "deepseek": 0.98,
+        "consensus": true,
+        "time": "2026-04-05T19:06:49"
+      },
+      {
+        "perplexity": null,
+        "claude": 0.0,
+        "deepseek": 0.0,
+        "consensus": true,
+        "time": "2026-04-05T19:06:49"
+      },
+      {
+        "perplexity": null,
         "claude": 0.12,
         "deepseek": 0.08,
         "consensus": false,
@@ -943,48 +985,6 @@
         "deepseek": 0.15,
         "consensus": true,
         "time": "2026-04-05T19:00:38"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.0,
-        "deepseek": 0.0,
-        "consensus": true,
-        "time": "2026-04-05T19:00:34"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.0,
-        "deepseek": 0.0,
-        "consensus": true,
-        "time": "2026-04-05T19:00:34"
-      },
-      {
-        "perplexity": null,
-        "claude": 1.0,
-        "deepseek": 0.98,
-        "consensus": true,
-        "time": "2026-04-05T19:00:34"
-      },
-      {
-        "perplexity": null,
-        "claude": 0.0,
-        "deepseek": 0.0,
-        "consensus": true,
-        "time": "2026-04-05T19:00:34"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": null,
-        "consensus": true,
-        "time": "2026-04-05T18:59:45"
-      },
-      {
-        "perplexity": null,
-        "claude": null,
-        "deepseek": null,
-        "consensus": true,
-        "time": "2026-04-05T18:59:45"
       }
     ]
   },
@@ -1010,7 +1010,7 @@
     {
       "ticker": "KXHIGHNY-26APR05-T60",
       "title": "Will the **high temp in NYC** be <60\u00b0 on Apr 5, 2026?",
-      "price": 90,
+      "price": 89,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
@@ -1031,21 +1031,21 @@
     {
       "ticker": "KXHIGHNY-26APR05-B62.5",
       "title": "Will the **high temp in NYC** be 62-63\u00b0 on Apr 5, 2026?",
-      "price": 2,
+      "price": 1,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR05-B60.5",
       "title": "Will the **high temp in NYC** be 60-61\u00b0 on Apr 5, 2026?",
-      "price": 13,
+      "price": 10,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHMIA-26APR05-T84",
       "title": "Will the **high temp in Miami** be >84\u00b0 on Apr 5, 2026?",
-      "price": 5,
+      "price": 6,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
@@ -1059,7 +1059,7 @@
     {
       "ticker": "KXHIGHMIA-26APR05-B83.5",
       "title": "Will the **high temp in Miami** be 83-84\u00b0 on Apr 5, 2026?",
-      "price": 91,
+      "price": 86,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
@@ -1137,13 +1137,13 @@
     {
       "level": "warning",
       "message": "50 API retries this session",
-      "detail": "50 non-fatal exceptions across 33 cycles (~1.5/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
+      "detail": "50 non-fatal exceptions across 34 cycles (~1.5/cycle). Typical causes: API timeouts, CoinGecko rate limits, model inference delays. Not trade rejections (those are tracked separately in the executor)."
     }
   ],
   "system": {
     "ollama": "ok",
     "errors_24h": 50,
-    "cycles": 33,
-    "uptime_hours": 3.9
+    "cycles": 34,
+    "uptime_hours": 4.1
   }
 }
