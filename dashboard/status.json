@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05T06:38:54.366840+00:00",
+  "updated_at": "2026-04-05T06:46:03.585959+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T06:38:54.366840+00:00",
+    "last_updated": "2026-04-05T06:46:03.585959+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -1045,21 +1045,21 @@
     {
       "ticker": "KXHIGHNY-26APR05-T67",
       "title": "Will the **high temp in NYC** be >67\u00b0 on Apr 5, 2026?",
-      "price": 3,
+      "price": 4,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR05-T60",
       "title": "Will the **high temp in NYC** be <60\u00b0 on Apr 5, 2026?",
-      "price": 36,
+      "price": 33,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
     {
       "ticker": "KXHIGHNY-26APR05-B66.5",
       "title": "Will the **high temp in NYC** be 66-67\u00b0 on Apr 5, 2026?",
-      "price": 8,
+      "price": 9,
       "close_time": "2026-04-06T04:59:00Z",
       "category": "weather"
     },
@@ -1137,7 +1137,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 78,
-    "uptime_hours": 10.0
+    "cycles": 79,
+    "uptime_hours": 10.1
   }
 }
