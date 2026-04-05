@@ -79,8 +79,8 @@ def is_safe_to_trade() -> bool:
         import pytz
         et = pytz.timezone("US/Eastern")
         now_et = datetime.now(et)
-        if now_et.hour == 9 and now_et.minute < 60:
-            return False  # Before 10:00 ET
+        if now_et.hour < 10:
+            return False  # Before 10:00 ET (skip noisy first 30 min)
         return True
     except Exception:
         # Fallback: just check local time roughly
@@ -324,10 +324,11 @@ def run_cycle(session_id: str) -> dict:
             continue
 
         if analysis["action"] == "buy" and analysis["confidence"] > 0.65:
-            # Kelly-ish sizing
+            # Kelly-ish sizing with capital management
             edge = analysis["confidence"] - 0.5
             bet_fraction = edge * 0.25  # Quarter-Kelly
-            amount = min(MAX_POSITION_SIZE, MAX_DAILY_SPEND * bet_fraction)
+            max_size = capital["max_per_trade"] if capital else MAX_POSITION_SIZE
+            amount = min(max_size, MAX_DAILY_SPEND * bet_fraction)
             qty = max(1, int(amount / stock["price"]))
 
             result = execute_stock_trade(
