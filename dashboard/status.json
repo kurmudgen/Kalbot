@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05T04:32:38.517499+00:00",
+  "updated_at": "2026-04-05T04:39:53.233372+00:00",
   "bot_status": "running",
   "accounts": {
     "kalshi": {
@@ -27,7 +27,7 @@
     "checking_balance": 0,
     "savings_balance": 0,
     "total": 0,
-    "last_updated": "2026-04-05T04:32:38.517499+00:00",
+    "last_updated": "2026-04-05T04:39:53.233372+00:00",
     "daily_burn": 0,
     "runway_days": 0,
     "ok": false
@@ -1137,7 +1137,7 @@
   "system": {
     "ollama": "ok",
     "errors_24h": 0,
-    "cycles": 61,
-    "uptime_hours": 7.9
+    "cycles": 62,
+    "uptime_hours": 8.0
   }
 }
